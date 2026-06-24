@@ -151,16 +151,22 @@ describe("Archive integrity", () => {
   test("Josiah Ramsey 1769 remains separate and carries memorial evidence", () => {
     const olderJosiah = personById.get("josiah-ramsey-1769");
     const elizabeth = personById.get("elizabeth-cowan");
+    const serviceRecord = documentById.get("josiah-ramsey-1782-military-service");
 
     expect(olderJosiah).toBeDefined();
     expect(olderJosiah?.summary).toMatch(/Thomas Ramsey/i);
     expect(olderJosiah?.sourceCitation).toMatch(/KP91-M2Y/i);
-    expect(olderJosiah?.evidenceSummary?.join(" ")).toMatch(/memorial records/i);
+    expect(olderJosiah?.evidenceSummary?.join(" ")).toMatch(/military service entry dated 16 August 1782/i);
     expect(olderJosiah?.attachedDocument).toMatch(/plaque/i);
+    expect(olderJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-1782-military-service")).toBe(true);
 
     expect(elizabeth).toBeDefined();
     expect(elizabeth?.attachedDocument).toMatch(/grave-marker/i);
     expect(elizabeth?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
+
+    expect(serviceRecord).toBeDefined();
+    expect(serviceRecord?.whatItProves).toMatch(/16 August 1782/i);
+    expect(serviceRecord?.people).toContain("Josiah Ramsey");
   });
 
   test("Charles Dyer preserves the 12th Virginia Regiment and Fort Randolph references", () => {

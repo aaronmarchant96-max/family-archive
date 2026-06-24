@@ -98,6 +98,21 @@
     "notes": "Use this as supporting memorial evidence. The inscription and FamilySearch profile disagree on Josiah's birth year."
   },
   {
+    "id": "josiah-ramsey-1782-military-service",
+    "filename": "josiah-ramsey-1782-military-service.png",
+    "type": "Military service record",
+    "date": "1782-08-16",
+    "era": "Revolutionary era",
+    "sourceUrl": "https://www.familysearch.org/ark:/61903/3:1:3QS7-L9WB-8XL5?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQ2WT-P9TJ&action=view&cc=1498361&lang=en&groupId=",
+    "sourceCitation": "FamilySearch image 419 of 912 in North Carolina Military Records 1779-1792, showing Josiah Ramsey and a military service entry dated 16 August 1782 in Washington, Beaufort, North Carolina.",
+    "previewUrl": "/documents/josiah-ramsey-1782-military-service.png",
+    "confidence": "Primary Source",
+    "people": ["Josiah Ramsey"],
+    "place": "Washington, Beaufort, North Carolina",
+    "whatItProves": "Josiah Ramsey appears in North Carolina military records with a service entry dated 16 August 1782.",
+    "notes": "Supporting primary record for the Revolutionary-era Josiah Ramsey profile. The image is a private screenshot of the FamilySearch record view."
+  },
+  {
     "id": "decatur-township-1860-census",
     "filename": "census-decatur-township.pdf",
     "type": "U.S. census page",

@@ -198,7 +198,7 @@
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
     "summary": "Revolutionary-era Ramsey ancestor and father of Thomas Ramsey.",
-    "keyEvent": "FamilySearch profile lists his birth in Baltimore in 1769, his death in Hancock County in 1834, and the family memorial plaque names him with Elizabeth Cowan and their children.",
+    "keyEvent": "FamilySearch profile lists his birth in Baltimore in 1769, and North Carolina military records show a service entry dated 16 August 1782.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Cowan", "FamilySearch", "Memorial"],
     "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
@@ -221,6 +221,14 @@
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
+        "title": "Military service record",
+        "date": "16 August 1782",
+        "place": "Washington, Beaufort, North Carolina",
+        "summary": "FamilySearch military records show Josiah Ramsey with a service entry on 16 August 1782.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-1782-military-service"
+      },
+      {
         "title": "Death in Hancock County",
         "date": "1834",
         "place": "Mulberry Gap, Hancock, Tennessee, United States",
@@ -233,6 +241,7 @@
       "Born 7 October 1769 in Baltimore, Maryland",
       "Spouse: Elizabeth Cowan",
       "Child Thomas Ramsey (1807-1872)",
+      "Military service entry dated 16 August 1782 in North Carolina records",
       "Died 1834 in Mulberry Gap, Hancock, Tennessee",
       "Family plaque and grave marker are supporting memorial records",
       "The memorial inscription birth year conflicts with the FamilySearch profile and should stay separate as a memorial source"
