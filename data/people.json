@@ -303,17 +303,17 @@
     "lifespan": "1799-1872",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Anna Hopkins Ramsey and children; Armina Ramsey's Ancestry profile identifies him as Thomas Ramsey, born 1799 and died 1872.",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa. The Ancestry profile shows him born in Tennessee and dying in Bentonville, Arkansas.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Anna Hopkins Ramsey and children; the Ancestry profile gives his birth as 9 December 1799 and notes that he died on 18 August 1872 in Bentonville, Arkansas while traveling as a huckster.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Davis County", "Iowa", "Generation 4"],
     "attachedDocument": "census-decatur-township.pdf",
-    "sourceCitation": "Ancestry profile for Armina Ramsey Edwards, showing father Thomas Ramsey 1799-1872 and mother Anna Hopkins, with the household continuing into the Iowa and Washington record trail.",
+    "sourceCitation": "Ancestry profile for Thomas (X) Ramsey, showing birth on 9 December 1799 in Tennessee, parents Josiah Ramsey and Elizabeth Cowen, marriage to Anna Hopkins, residence in Claiborne County, Tennessee, and death on 18 August 1872 in Bentonville, Arkansas. The profile for Armina Ramsey Edwards also supports the family linkage.",
     "timeline": [
       {
         "title": "Birth",
-        "date": "1799",
-        "place": "Maryland or Tennessee",
+        "date": "9 December 1799",
+        "place": "Tennessee, USA",
         "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan.",
         "confidence": "Strong Evidence"
       },
@@ -350,9 +350,9 @@
       },
       {
         "title": "Death",
-        "date": "1872",
-        "place": "Decatur County, Iowa",
-        "summary": "Died in Decatur County, Iowa, after establishing the Ramsey family in the Midwest.",
+        "date": "18 August 1872",
+        "place": "Bentonville, Benton County, Arkansas",
+        "summary": "Died in Bentonville, Arkansas while traveling as a huckster.",
         "confidence": "Strong Evidence"
       }
     ],
@@ -360,7 +360,7 @@
       "Child of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
       "Husband of Anna Hopkins (1807-1883)",
       "Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children",
-      "Armina Ramsey profile identifies Thomas Ramsey as 1799-1872",
+      "Ancestry profile gives birth as 9 December 1799 and death as 18 August 1872",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Anna Ramsey and children",
       "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
