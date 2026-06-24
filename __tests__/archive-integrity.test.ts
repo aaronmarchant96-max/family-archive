@@ -135,8 +135,8 @@ describe("Archive integrity", () => {
     expect(charles).toBeDefined();
     expect(charles?.keyEvent).toMatch(/12th Virginia Regiment/i);
     expect(charles?.keyEvent).toMatch(/Fort Randolph/i);
-    expect(charles?.sarLineStatus?.note).toMatch(/proof packet in progress/i);
-    expect(charles?.sarLineStatus?.status).toMatch(/Patriot line/i);
+    expect(charles?.sarLineStatus?.note).toMatch(/SAR proof packet is in progress/i);
+    expect(charles?.sarLineStatus?.status).toMatch(/Confirmed Direct Revolutionary War Line/i);
     expect(charles?.sarLineStatus?.status).not.toMatch(/\b(member|membership|accepted|acceptance)\b/i);
     expect(charles?.sarLineStatus?.note).not.toMatch(/\b(member|membership|accepted|acceptance)\b/i);
 

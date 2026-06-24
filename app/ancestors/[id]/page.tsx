@@ -12,6 +12,7 @@ export function generateStaticParams() {
 
 export default function AncestorPreviewPage({ params }: { params: { id: string } }) {
   const person = people.find((entry) => entry.id === params.id);
+  const isCharlesDyer = person?.id === "charles-dyer";
 
   if (!person) {
     return (
@@ -67,7 +68,15 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
 
       {person.sarLineStatus ? (
         <section className="space-y-4 pt-2">
-          <div className="archive-section__title">SAR Line Status</div>
+          <div className="archive-section__title">
+            {isCharlesDyer ? "Confirmed Direct Revolutionary War Line" : "SAR Line Status"}
+          </div>
+          {isCharlesDyer ? (
+            <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-4 text-sm leading-6 text-slate-300">
+              Charles Dyer&apos;s Revolutionary War service is supported by the 1778 discharge record, and the descent
+              through Jonathan Dyer is documented in the family evidence and census trail.
+            </div>
+          ) : null}
           <div className="grid gap-3 md:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
               <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Patriot ancestor</div>
@@ -85,6 +94,12 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
               <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Status</div>
               <div className="mt-1 text-slate-100">{person.sarLineStatus.status}</div>
             </div>
+            {isCharlesDyer ? (
+              <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300 md:col-span-2">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Descent</div>
+                <div className="mt-1 text-slate-100">Documented descent through Jonathan Dyer</div>
+              </div>
+            ) : null}
           </div>
           <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm leading-6 text-slate-300">
             <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Note</div>
