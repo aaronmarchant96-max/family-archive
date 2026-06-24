@@ -192,6 +192,90 @@
     ]
   },
   {
+    "id": "josiah-ramsey-1769",
+    "name": "Josiah Ramsey",
+    "lifespan": "1769-1834",
+    "era": "Revolutionary era Tennessee",
+    "branch": "Ramsey",
+    "summary": "Revolutionary-era Ramsey ancestor and father of Thomas Ramsey.",
+    "keyEvent": "FamilySearch profile lists his birth in Baltimore in 1769, his death in Hancock County in 1834, and the family memorial plaque names him with Elizabeth Cowan and their children.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "FamilySearch", "Memorial"],
+    "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
+    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (KP91-M2Y), showing birth on 7 October 1769 in Baltimore, Maryland, spouse Elizabeth Cowan, child Thomas Ramsey, and death in 1834 at Mulberry Gap, Hancock, Tennessee.",
+    "attachedDocument": "josiah-ramsey-family-plaque.jpg",
+    "timeline": [
+      {
+        "title": "Birth in Baltimore",
+        "date": "7 October 1769",
+        "place": "Baltimore, Maryland, United States",
+        "summary": "FamilySearch profile lists his birth on 7 October 1769 in Baltimore.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death in Hancock County",
+        "date": "1834",
+        "place": "Mulberry Gap, Hancock, Tennessee, United States",
+        "summary": "FamilySearch profile lists his death in 1834 at Mulberry Gap, Hancock, Tennessee.",
+        "confidence": "Primary Source"
+      }
+    ],
+    "evidenceSummary": [
+      "FamilySearch profile ID: KP91-M2Y",
+      "Born 7 October 1769 in Baltimore, Maryland",
+      "Spouse: Elizabeth Cowan",
+      "Child Thomas Ramsey (1807-1872)",
+      "Died 1834 in Mulberry Gap, Hancock, Tennessee",
+      "Family plaque and grave marker are supporting memorial records",
+      "The memorial inscription birth year conflicts with the FamilySearch profile and should stay separate as a memorial source"
+    ]
+  },
+  {
+    "id": "elizabeth-cowan",
+    "name": "Elizabeth Cowan",
+    "lifespan": "1770-1840",
+    "era": "Revolutionary era Tennessee",
+    "branch": "Cowan",
+    "summary": "Wife of Josiah Ramsey and mother in the Ramsey line.",
+    "keyEvent": "Named with Josiah Ramsey on the family memorial plaque and grave marker.",
+    "confidence": "Strong Evidence",
+    "tags": ["Cowan", "Ramsey", "Memorial"],
+    "attachedDocument": "josiah-ramsey-grave-marker.jpg",
+    "timeline": [
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Elizabeth Cowan with Josiah Ramsey and lists their children, including Thomas Ramsey.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Grave marker",
+        "date": "1993-09-05",
+        "place": "Ramsey memorial site",
+        "summary": "The grave marker names Elizabeth Cowan with Josiah C. Ramsey and records the memorial dedication date.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-grave-marker"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of Josiah Ramsey",
+      "Named on the Ramsey family memorial plaque",
+      "Named on the Josiah C. Ramsey and Elizabeth Cowan grave marker",
+      "Supports the Ramsey line through Thomas Ramsey",
+      "Key memorial records are private scans in the archive"
+    ]
+  },
+  {
     "id": "william-moore",
     "name": "William Moore",
     "lifespan": "Mid-19th century",

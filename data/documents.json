@@ -70,6 +70,34 @@
     "notes": "Useful collateral source for the Edwards/Ramsey line. Keep the obituary separate from primary civil records."
   },
   {
+    "id": "josiah-ramsey-family-plaque",
+    "filename": "josiah-ramsey-family-plaque.jpg",
+    "type": "Family memorial plaque",
+    "date": "Date not listed",
+    "era": "20th-century memorial",
+    "sourceCitation": "Private archive photo of the Ramsey family memorial plaque naming Josiah Ramsey and Elizabeth Cowan and listing their children.",
+    "previewUrl": "/documents/josiah-ramsey-family-plaque.jpg",
+    "confidence": "Strong Evidence",
+    "people": ["Josiah Ramsey", "Elizabeth Cowan", "Thomas Ramsey"],
+    "place": "Ramsey family memorial site",
+    "whatItProves": "Family memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey.",
+    "notes": "Memorial record supports the family group and burial memory. It is not a civil birth record."
+  },
+  {
+    "id": "josiah-ramsey-grave-marker",
+    "filename": "josiah-ramsey-grave-marker.jpg",
+    "type": "Gravestone / memorial marker",
+    "date": "1993-09-05",
+    "era": "20th-century memorial",
+    "sourceCitation": "Private archive photo of the Josiah C. Ramsey and Elizabeth Cowan grave marker, dedicated 05 Sept. 1993.",
+    "previewUrl": "/documents/josiah-ramsey-grave-marker.jpg",
+    "confidence": "Strong Evidence",
+    "people": ["Josiah Ramsey", "Elizabeth Cowan"],
+    "place": "Ramsey memorial site",
+    "whatItProves": "Gravestone for Josiah C. Ramsey and Elizabeth Cowan; supports burial memorial and family grouping. The inscription's Josiah birth year conflicts with the FamilySearch profile and should be treated as a memorial inscription, not the only birth-date source.",
+    "notes": "Use this as supporting memorial evidence. The inscription and FamilySearch profile disagree on Josiah's birth year."
+  },
+  {
     "id": "decatur-township-1860-census",
     "filename": "census-decatur-township.pdf",
     "type": "U.S. census page",
