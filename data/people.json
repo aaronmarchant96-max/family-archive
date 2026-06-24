@@ -244,8 +244,8 @@
     "lifespan": "1769-1834",
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
-    "summary": "Revolutionary-era Ramsey ancestor and father of Thomas Ramsey.",
-    "keyEvent": "FamilySearch profile lists his birth in Baltimore in 1769, and North Carolina military records show a service entry dated 16 August 1782.",
+    "summary": "When Josiah Ramsey was born on 7 October 1769, in Baltimore, Maryland, United States, his father, Josiah Ramsey, was 41 and his mother, Elizabeth Hollis, was 40. He had at least 6 sons and 8 daughters with Elizabeth Cowan. He lived in Claiborne, Tennessee, United States in 1830.",
+    "keyEvent": "FamilySearch profile says he registered for military service in 1782 and died in 1834 in Mulberry Gap, Hancock, Tennessee.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Cowan", "FamilySearch", "Memorial"],
     "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
@@ -256,8 +256,15 @@
         "title": "Birth in Baltimore",
         "date": "7 October 1769",
         "place": "Baltimore, Maryland, United States",
-        "summary": "FamilySearch profile lists his birth on 7 October 1769 in Baltimore.",
-        "confidence": "Primary Source"
+        "summary": "FamilySearch profile gives his birth on 7 October 1769 in Baltimore and names his parents as Josiah Ramsey and Elizabeth Hollis.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Claiborne residence",
+        "date": "1830",
+        "place": "Claiborne, Tennessee, United States",
+        "summary": "FamilySearch profile says he lived in Claiborne, Tennessee in 1830.",
+        "confidence": "Strong Evidence"
       },
       {
         "title": "Family memorial plaque",
@@ -279,17 +286,20 @@
         "title": "Death in Hancock County",
         "date": "1834",
         "place": "Mulberry Gap, Hancock, Tennessee, United States",
-        "summary": "FamilySearch profile lists his death in 1834 at Mulberry Gap, Hancock, Tennessee.",
-        "confidence": "Primary Source"
+        "summary": "FamilySearch profile says he died in 1834 in Mulberry Gap, Hancock, Tennessee, at age 65, and was buried in Hancock, Tennessee.",
+        "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
       "FamilySearch profile ID: KP91-M2Y",
-      "Born 7 October 1769 in Baltimore, Maryland",
+      "Born 7 October 1769 in Baltimore, Maryland, United States",
+      "Parents named as Josiah Ramsey and Elizabeth Hollis",
       "Spouse: Elizabeth Cowan",
+      "At least 6 sons and 8 daughters",
+      "Lived in Claiborne, Tennessee in 1830",
+      "Military service registration in 1782",
+      "Died in 1834 in Mulberry Gap, Hancock, Tennessee, and was buried in Hancock, Tennessee",
       "Child Thomas Ramsey (1807-1872)",
-      "Military service entry dated 16 August 1782 in North Carolina records",
-      "Died 1834 in Mulberry Gap, Hancock, Tennessee",
       "Family plaque and grave marker are supporting memorial records",
       "The memorial inscription birth year conflicts with the FamilySearch profile and should stay separate as a memorial source"
     ]

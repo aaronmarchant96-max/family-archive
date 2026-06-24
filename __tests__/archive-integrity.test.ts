@@ -155,9 +155,11 @@ describe("Archive integrity", () => {
     const thomas = personById.get("thomas-ramsey");
 
     expect(olderJosiah).toBeDefined();
-    expect(olderJosiah?.summary).toMatch(/Thomas Ramsey/i);
+    expect(olderJosiah?.summary).toMatch(/7 October 1769/i);
+    expect(olderJosiah?.summary).toMatch(/Elizabeth Hollis/i);
+    expect(olderJosiah?.summary).toMatch(/Claiborne, Tennessee/i);
     expect(olderJosiah?.sourceCitation).toMatch(/KP91-M2Y/i);
-    expect(olderJosiah?.evidenceSummary?.join(" ")).toMatch(/military service entry dated 16 August 1782/i);
+    expect(olderJosiah?.evidenceSummary?.join(" ")).toMatch(/Military service registration in 1782/i);
     expect(olderJosiah?.attachedDocument).toMatch(/plaque/i);
     expect(olderJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-1782-military-service")).toBe(true);
 
