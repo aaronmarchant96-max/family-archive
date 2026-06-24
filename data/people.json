@@ -93,14 +93,15 @@
   {
     "id": "thomas-ramsey",
     "name": "Thomas Ramsey",
-    "lifespan": "19th century",
+    "lifespan": "1799-1872",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey and Elizabeth Cowan; head of the 1860 Ramsey household in Decatur County, Iowa.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children, and the Ramsey memorial plaque names him among the children of Josiah Ramsey and Elizabeth Cowan.",
+    "summary": "Son of Josiah Ramsey and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children; Armina Ramsey's Ancestry profile identifies him as Thomas (X) Ramsey, born 1799 and died 1872.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Davis County", "Iowa"],
     "attachedDocument": "census-decatur-township.pdf",
+    "sourceCitation": "Ancestry profile for Armina (X) Ramsey Edwards, showing father Thomas (X) Ramsey 1799-1872 and mother Anna Hopkins, with the household continuing into the Iowa and Washington record trail.",
     "timeline": [
       {
         "title": "Family memorial plaque",
@@ -109,6 +110,12 @@
         "summary": "The memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Armina profile linkage",
+        "date": "1826",
+        "summary": "Armina (X) Ramsey's profile identifies Thomas Ramsey as her father and gives his life span as 1799-1872.",
+        "confidence": "Strong Evidence"
       },
       {
         "title": "1860 census household",
@@ -121,6 +128,8 @@
     ],
     "evidenceSummary": [
       "Child of Josiah Ramsey and Elizabeth Cowan",
+      "Father of Armina Ramsey",
+      "Armina (X) Ramsey profile identifies Thomas Ramsey as 1799-1872",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Anna Ramsey and children",
       "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
@@ -468,14 +477,22 @@
     "lifespan": "1826-1923",
     "era": "19th-century Midwest",
     "branch": "Ramsey",
-    "summary": "Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
-    "keyEvent": "Married Anderson Edwards in 1840 and later lived in Iowa and Washington.",
+    "summary": "Daughter of Thomas Ramsey and Anna Hopkins; Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
+    "keyEvent": "Married Anderson Edwards in 1840 and later lived in Iowa and Washington; the Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
+    "sourceCitation": "Ancestry profile for Armina (X) Ramsey, showing birth 26 Aug 1826 in Tennessee, parents Thomas Ramsey 1799-1872 and Anna Hopkins, marriage to Anderson Edwards, and later Iowa/Washington residence trail.",
     "portraitUrl": "/portraits/armina-ramsey.jpg",
     "portraitCaption": "Armina (Ramsey) Edwards, shown in the obituary source scan.",
     "timeline": [
+      {
+        "title": "Birth and parentage",
+        "date": "26 August 1826",
+        "place": "Tennessee, USA",
+        "summary": "Armina's profile identifies her as the daughter of Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Strong Evidence"
+      },
       {
         "title": "Marriage to Anderson Edwards",
         "date": "1840",
@@ -501,10 +518,12 @@
       }
     ],
     "evidenceSummary": [
+      "Daughter of Thomas Ramsey and Anna Hopkins",
       "Edwards/Ramsey line matriarch",
       "Marriage to Anderson Edwards in 1840",
       "Appears in the 1860 Decatur Township census trail",
       "Obituary dated July 26, 1923",
+      "Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins",
       "Key document: obituary-armina-ramsey.pdf",
       "Supporting census record: census-decatur-township.pdf"
     ]
