@@ -151,7 +151,7 @@ describe("Archive integrity", () => {
   test("Josiah Ramsey working profile stays separate from Josiah Sr.", () => {
     const workingJosiah = personById.get("josiah-ramsey-1769");
     const elizabeth = personById.get("elizabeth-cowan");
-    const serviceRecord = documentById.get("josiah-ramsey-1782-military-service");
+    const serviceRecord = documentById.get("josiah-ramsey-jr-1812-service");
     const thomas = personById.get("thomas-ramsey-1799");
 
     expect(workingJosiah).toBeDefined();
@@ -160,17 +160,27 @@ describe("Archive integrity", () => {
     expect(workingJosiah?.summary).toMatch(/Thomas Ramsey/i);
     expect(workingJosiah?.summary).not.toMatch(/Elizabeth Hollis/i);
     expect(workingJosiah?.sourceCitation).toMatch(/Ancestry profile/i);
+    expect(workingJosiah?.sourceCitation).toMatch(/Tennessee grant/i);
     expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/Pennsylvania attachment excluded/i);
     expect(workingJosiah?.attachedDocument).toMatch(/plaque/i);
     expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
+    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-tennessee-land-grant")).toBe(true);
 
     expect(elizabeth).toBeDefined();
     expect(elizabeth?.attachedDocument).toMatch(/grave-marker/i);
     expect(elizabeth?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
 
     expect(serviceRecord).toBeDefined();
-    expect(serviceRecord?.whatItProves).toMatch(/16 August 1782/i);
-    expect(serviceRecord?.people).toContain("Josiah Ramsey");
+    expect(serviceRecord?.sourceCitation).toMatch(/U\.S\., War of 1812 Service Records, 1812-1815/i);
+    expect(serviceRecord?.sourceCitation).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
+    expect(serviceRecord?.sourceCitation).toMatch(/Rank at induction: Lieutenant/i);
+    expect(serviceRecord?.sourceCitation).toMatch(/Rank at discharge: Adjutant/i);
+    expect(serviceRecord?.company).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
+    expect(serviceRecord?.rankInduction).toBe("Lieutenant");
+    expect(serviceRecord?.rankDischarge).toBe("Adjutant");
+    expect(serviceRecord?.rollBox).toBe("170");
+    expect(serviceRecord?.microfilmPublication).toBe("M602");
+    expect(serviceRecord?.people).toContain("Josiah Ramsey Jr.");
 
     expect(thomas).toBeDefined();
     expect(thomas?.summary).toMatch(/Josiah Ramsey/i);

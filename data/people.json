@@ -693,7 +693,7 @@
         "title": "War of 1812 Service",
         "date": "1812-1815",
         "place": "Kentucky",
-        "summary": "Served in the 14th Kentucky Militia during the War of 1812.",
+        "summary": "Service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia, with Lieutenant at induction and Adjutant at discharge.",
         "confidence": "Primary Source",
         "linkedDocumentId": "josiah-ramsey-jr-1812-service"
       },
@@ -794,11 +794,11 @@
     "lifespan": "c. 1765/1769-1834",
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
-    "summary": "Husband of Elizabeth Cowan; strongly supported father of Thomas Ramsey (1799-1872). Birth year and birthplace remain unresolved, and the 1810 Pennsylvania attachment is excluded from the working line.",
-    "keyEvent": "Appears in the Tennessee family trail with Elizabeth Cowan and Thomas Ramsey; candidate father of the Iowa line.",
+    "summary": "Husband of Elizabeth Cowan; strongly supported father of Thomas Ramsey (1799-1872). Birth year and birthplace remain unresolved, the 1810 Pennsylvania attachment is excluded from the working line, and the Tennessee land grant on Mulberry Creek anchors him in Claiborne County.",
+    "keyEvent": "Appears in the Tennessee family trail with Elizabeth Cowan and Thomas Ramsey; the Claiborne County land grant and family memorial anchor the Iowa line.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Cowan", "Working Profile", "Research Target", "Generation 3"],
-    "sourceCitation": "Ancestry profile for Josiah (X) Ramsey, c. 1765/1769-1834, spouse Elizabeth Cowan, and child Thomas Ramsey (1799-1872); birth year, birthplace, and exact death trail remain unresolved. The 1810 Pennsylvania attachment is excluded from the working line.",
+    "sourceCitation": "Ancestry profile for Josiah (X) Ramsey, c. 1765/1769-1834, spouse Elizabeth Cowan, and child Thomas Ramsey (1799-1872); birth year, birthplace, and exact death trail remain unresolved. The 1810 Pennsylvania attachment is excluded from the working line. U.S., War of 1812 Service Records, 1812-1815, name Josiah Ramsey, 14 REG'T (MITCHISSON'S) Kentucky Militia, Lieutenant at induction, Adjutant at discharge, Roll Box 170, Microfilm Publication M602. State of Tennessee grant to Josiah Ramsey and his heirs, Claiborne County, entry no. 371, dated 22 April 1827 and surveyed 21 May 1827, for land on the waters of Mulberry Creek.",
     "attachedDocument": "josiah-ramsey-family-plaque.jpg",
     "timeline": [
       {
@@ -831,6 +831,14 @@
         "confidence": "Strong Evidence"
       },
       {
+        "title": "Tennessee land grant",
+        "date": "1828",
+        "place": "Claiborne County, Tennessee",
+        "summary": "The State of Tennessee granted Josiah Ramsey and his heirs land on the waters of Mulberry Creek, placing him in the Claiborne County frontier zone before his death.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-tennessee-land-grant"
+      },
+      {
         "title": "Family memorial plaque",
         "date": "1993",
         "place": "Ramsey family memorial site",
@@ -852,6 +860,9 @@
       "Strongly supported father of Thomas Ramsey (1799-1872)",
       "Birth year and birthplace unresolved",
       "1810 Pennsylvania attachment excluded from the working line",
+      "War of 1812 service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia",
+      "Rank at induction: Lieutenant; rank at discharge: Adjutant",
+      "State of Tennessee land grant places Josiah Ramsey on Mulberry Creek in Claiborne County",
       "Tennessee residence trail",
       "Family memorial plaque supports the family group",
       "Open questions: exact birth year/place, exact military identity, and a contemporary probate/deed bridge"

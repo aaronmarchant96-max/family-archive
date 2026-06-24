@@ -42,6 +42,20 @@
     "notes": "Key document for SAR/DAR eligibility. Establishes Josiah Ramsey Sr. as a confirmed Revolutionary War veteran."
   },
   {
+    "id": "josiah-ramsey-tennessee-land-grant",
+    "filename": "josiah-ramsey-tennessee-land-grant.jpg",
+    "type": "Tennessee land grant",
+    "date": "1828-02-29",
+    "era": "Early Tennessee",
+    "sourceCitation": "State of Tennessee grant to Josiah Ramsey and his heirs, Claiborne County, entry no. 371, dated 22 April 1827 and surveyed 21 May 1827, for land on the waters of Mulberry Creek.",
+    "previewUrl": "/documents/josiah-ramsey-tennessee-land-grant.jpg",
+    "confidence": "Primary Source",
+    "people": ["Josiah Ramsey Jr."],
+    "place": "Claiborne County, Tennessee",
+    "whatItProves": "Josiah Ramsey held land in Claiborne County, Tennessee, on or near Mulberry Creek. The grant places his improvement there before his 1834 death and strengthens the Tennessee identity trail for the working Josiah profile.",
+    "notes": "Primary source identity anchor. Keep with the Claiborne County Tennessee evidence set and use alongside the family memorial and residence trail."
+  },
+  {
     "id": "thomas-ramsey-anna-hopkins-marriage",
     "filename": "thomas-ramsey-anna-hopkins-marriage.pdf",
     "type": "Marriage record",
@@ -61,13 +75,18 @@
     "type": "Military service record",
     "date": "1812-1815",
     "era": "War of 1812",
-    "sourceCitation": "Service Records: Josiah Ramsey Jr., 14th Kentucky Militia, War of 1812.",
+    "sourceCitation": "U.S., War of 1812 Service Records, 1812-1815. Name: Josiah Ramsey. Company: 14 REG'T (MITCHISSON'S) Kentucky Militia. Rank at induction: Lieutenant. Rank at discharge: Adjutant. Roll Box 170. Microfilm Publication M602.",
     "previewUrl": "/documents/josiah-ramsey-jr-1812-service.jpg",
     "confidence": "Primary Source",
     "people": ["Josiah Ramsey Jr."],
     "place": "Kentucky",
-    "whatItProves": "War of 1812 military service of Josiah Ramsey Jr. in the 14th Kentucky Militia.",
-    "notes": "Eligibility for War of 1812 Society. Son of Thomas Ramsey (died before 1805), grandson of Josiah Ramsey Sr."
+    "company": "14 REG'T (MITCHISSON'S) Kentucky Militia",
+    "rankInduction": "Lieutenant",
+    "rankDischarge": "Adjutant",
+    "rollBox": "170",
+    "microfilmPublication": "M602",
+    "whatItProves": "Josiah Ramsey served in the 14th Kentucky Militia during the War of 1812. The service record names him at induction as Lieutenant and at discharge as Adjutant.",
+    "notes": "Primary source military record. Keep this service trail separate from the Revolutionary Josiah line until the identity bridge is explicit."
   },
   {
     "id": "claiborne-county-1840-census",
