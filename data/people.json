@@ -96,12 +96,20 @@
     "lifespan": "19th century",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Head of a Ramsey household in the 1860 Decatur County census page.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children.",
+    "summary": "Son of Josiah Ramsey and Elizabeth Cowan; head of the 1860 Ramsey household in Decatur County, Iowa.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children, and the Ramsey memorial plaque names him among the children of Josiah Ramsey and Elizabeth Cowan.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Davis County", "Iowa"],
     "attachedDocument": "census-decatur-township.pdf",
     "timeline": [
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
       {
         "title": "1860 census household",
         "date": "1860",
@@ -112,9 +120,11 @@
       }
     ],
     "evidenceSummary": [
+      "Child of Josiah Ramsey and Elizabeth Cowan",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Anna Ramsey and children",
       "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
+      "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
       "Key document: census-decatur-township.pdf",
       "Status: Primary source household record"
     ]
