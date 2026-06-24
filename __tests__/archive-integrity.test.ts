@@ -135,7 +135,7 @@ describe("Archive integrity", () => {
   });
 
   test("Josiah Ramsey stays aligned to the FamilySearch profile wording", () => {
-    const josiah = personById.get("josiah-ramsey");
+    const josiah = personById.get("josiah-ramsey-1834");
 
     expect(josiah).toBeDefined();
     expect(josiah?.summary).toMatch(/Thomas Ramsey/i);
@@ -152,7 +152,7 @@ describe("Archive integrity", () => {
     const olderJosiah = personById.get("josiah-ramsey-1769");
     const elizabeth = personById.get("elizabeth-cowan");
     const serviceRecord = documentById.get("josiah-ramsey-1782-military-service");
-    const thomas = personById.get("thomas-ramsey");
+    const thomas = personById.get("thomas-ramsey-1799");
 
     expect(olderJosiah).toBeDefined();
     expect(olderJosiah?.summary).toMatch(/7 October 1769/i);
@@ -178,10 +178,10 @@ describe("Archive integrity", () => {
   });
 
   test("Anna Ramsey is linked to the Anna Hopkins FamilySearch evidence", () => {
-    const anna = personById.get("anna-ramsey");
+    const anna = personById.get("anna-hopkins-ramsey");
 
     expect(anna).toBeDefined();
-    expect(anna?.summary).toMatch(/Anna Hopkins/i);
+    expect(anna?.summary).toMatch(/Jabez Hopkins/i);
     expect(anna?.sourceUrl).toMatch(/familysearch\.org/i);
     expect(anna?.sourceCitation).toMatch(/L5G1-XJ3/i);
     expect(anna?.timeline?.some((entry) => entry.title === "FamilySearch linkage")).toBe(true);

@@ -1,5 +1,212 @@
 [
   {
+    "id": "william-ramsey-1675",
+    "name": "William Ramsey",
+    "lifespan": "1675-1745",
+    "era": "Colonial Virginia",
+    "branch": "Ramsey",
+    "summary": "Early Ramsey ancestor in Colonial Virginia, patriarch of the documented Ramsey line.",
+    "keyEvent": "Established the Ramsey family in Virginia in the late 17th century.",
+    "confidence": "Needs Review",
+    "tags": ["Colonial Virginia", "Ramsey Line", "Generation 1"],
+    "timeline": [
+      {
+        "title": "Birth in Colonial Virginia",
+        "date": "1675",
+        "place": "Virginia Colony",
+        "summary": "Born in Colonial Virginia, establishing the family's American roots.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "1745",
+        "place": "Virginia Colony",
+        "summary": "Died in Virginia, passing the family line to his son Josiah.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Earliest documented Ramsey ancestor in the family tree",
+      "Father of Josiah Ramsey Sr. (1728-1811)",
+      "Married to Elizabeth Kilker (1679-1750)",
+      "Status: Needs primary source verification"
+    ]
+  },
+  {
+    "id": "elizabeth-kilker",
+    "name": "Elizabeth Kilker",
+    "lifespan": "1679-1750",
+    "era": "Colonial Virginia",
+    "branch": "Kilker",
+    "summary": "Wife of William Ramsey and matriarch of the early Ramsey line.",
+    "keyEvent": "Married William Ramsey in Colonial Virginia.",
+    "confidence": "Needs Review",
+    "tags": ["Colonial Virginia", "Ramsey Line", "Generation 1"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1679",
+        "place": "Virginia Colony",
+        "summary": "Born in Colonial Virginia.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to William Ramsey",
+        "date": "circa 1695-1700",
+        "place": "Virginia Colony",
+        "summary": "Married William Ramsey, establishing the early Ramsey family.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "1750",
+        "place": "Virginia Colony",
+        "summary": "Died in Virginia Colony.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of William Ramsey (1675-1745)",
+      "Mother of Josiah Ramsey Sr. (1728-1811)",
+      "Status: Needs primary source verification"
+    ]
+  },
+  {
+    "id": "josiah-ramsey-sr-1728",
+    "name": "Josiah Ramsey Sr.",
+    "lifespan": "1728-1811",
+    "era": "Revolutionary War Era",
+    "branch": "Ramsey",
+    "summary": "Revolutionary War veteran and patriarch of the Ramsey family line. Served in North Carolina Militia with confirmed 1782 pay voucher.",
+    "keyEvent": "Served in North Carolina Militia during Revolutionary War; 1782 pay voucher confirms service.",
+    "confidence": "Confirmed",
+    "tags": ["Revolutionary War", "North Carolina Militia", "SAR Line", "Generation 2"],
+    "sourceCitation": "1782 North Carolina Pay Voucher for Josiah Ramsey; marriage record in Delaware (1744)",
+    "timeline": [
+      {
+        "title": "Birth in Delaware",
+        "date": "1728",
+        "place": "Delaware Colony",
+        "summary": "Born to William Ramsey and Elizabeth Kilker.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage in Delaware",
+        "date": "1744",
+        "place": "Delaware Colony",
+        "summary": "Married Alice Bower (or possibly Elizabeth Hollis/Grigsby - needs verification).",
+        "confidence": "Needs Review",
+        "linkedDocumentId": "josiah-ramsey-1744-marriage"
+      },
+      {
+        "title": "Revolutionary War Service",
+        "date": "1770s-1780s",
+        "place": "North Carolina",
+        "summary": "Served in North Carolina Militia during the Revolutionary War.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-1782-pay-voucher"
+      },
+      {
+        "title": "1782 Pay Voucher",
+        "date": "1782",
+        "place": "North Carolina",
+        "summary": "Confirmed Revolutionary War service with North Carolina pay voucher.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-1782-pay-voucher"
+      },
+      {
+        "title": "Death",
+        "date": "1811",
+        "place": "Davidson, Tennessee",
+        "summary": "Died in Tennessee after a long life spanning Colonial, Revolutionary, and early Republic eras.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Revolutionary War veteran with 1782 North Carolina pay voucher",
+      "Father of Thomas Ramsey (died before 1805) and Josiah Ramsey Jr. (1769-1835)",
+      "Marriage to Alice Bower in 1744 Delaware (needs verification)",
+      "Possible second marriage to Elizabeth Hollis/Grigsby",
+      "SAR/DAR eligible patriot ancestor",
+      "Status: Primary source confirmed for military service"
+    ],
+    "sarLineStatus": {
+      "patriotAncestor": "Josiah Ramsey Sr.",
+      "service": "North Carolina Militia",
+      "keyRecord": "1782 Pay Voucher",
+      "status": "Confirmed Direct Revolutionary War Line",
+      "note": "Documented service in North Carolina Militia. SAR proof packet in progress."
+    }
+  },
+  {
+    "id": "alice-bower",
+    "name": "Alice Bower",
+    "lifespan": "1730-?",
+    "era": "Revolutionary War Era",
+    "branch": "Bower",
+    "summary": "Wife of Josiah Ramsey Sr. and mother of Thomas Ramsey. Marriage recorded in Delaware in 1744.",
+    "keyEvent": "Married Josiah Ramsey Sr. in Delaware in 1744.",
+    "confidence": "Needs Review",
+    "tags": ["Ramsey", "Delaware", "Generation 2"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1730",
+        "place": "Delaware Colony",
+        "summary": "Born in Delaware Colony.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Josiah Ramsey Sr.",
+        "date": "1744",
+        "place": "Delaware Colony",
+        "summary": "Married Josiah Ramsey Sr., establishing the family line.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": "josiah-ramsey-1744-marriage"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of Josiah Ramsey Sr. (1728-1811)",
+      "Mother of Thomas Ramsey (died before 1805)",
+      "Marriage recorded in Delaware in 1744",
+      "Note: Some sources suggest Elizabeth Hollis/Grigsby may be the correct spouse - needs verification"
+    ]
+  },
+  {
+    "id": "thomas-ramsey-before-1805",
+    "name": "Thomas Ramsey",
+    "lifespan": "????-before 1805",
+    "era": "Revolutionary War Era",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Sr. and Alice Bower; father of Josiah Ramsey Jr. (1769-1835). Missing link in the Ramsey lineage.",
+    "keyEvent": "Identified as the father of Josiah Ramsey Jr., establishing the connection between Josiah Sr. and Josiah Jr.",
+    "confidence": "Needs Review",
+    "tags": ["Ramsey", "Missing Link", "Research Target", "Generation 3"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "circa 1750-1760",
+        "place": "Delaware or Virginia",
+        "summary": "Born to Josiah Ramsey Sr. and Alice Bower.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death before 1805",
+        "date": "before 1805",
+        "place": "Unknown",
+        "summary": "Died before 1805, before his father Josiah Sr. (who died in 1811).",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Sr. (1728-1811) and Alice Bower",
+      "Father of Josiah Ramsey Jr. (1769-1835)",
+      "Missing link between Generation 2 and Generation 3",
+      "RESEARCH PRIORITY: Find birth record, marriage record, and death record",
+      "Possible locations: Delaware, Virginia, Maryland, or North Carolina"
+    ]
+  },
+  {
     "id": "charles-dyer",
     "name": "Charles Dyer",
     "lifespan": "Revolutionary War era",
@@ -91,30 +298,46 @@
     ]
   },
   {
-    "id": "thomas-ramsey",
+    "id": "thomas-ramsey-1799",
     "name": "Thomas Ramsey",
     "lifespan": "1799-1872",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children; Armina Ramsey's Ancestry profile identifies him as Thomas (X) Ramsey, born 1799 and died 1872.",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Anna Hopkins Ramsey and children; Armina Ramsey's Ancestry profile identifies him as Thomas Ramsey, born 1799 and died 1872.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Census", "Davis County", "Iowa"],
+    "tags": ["Ramsey", "Census", "Davis County", "Iowa", "Generation 4"],
     "attachedDocument": "census-decatur-township.pdf",
-    "sourceCitation": "Ancestry profile for Armina (X) Ramsey Edwards, showing father Thomas (X) Ramsey 1799-1872 and mother Anna Hopkins, with the household continuing into the Iowa and Washington record trail.",
+    "sourceCitation": "Ancestry profile for Armina Ramsey Edwards, showing father Thomas Ramsey 1799-1872 and mother Anna Hopkins, with the household continuing into the Iowa and Washington record trail.",
     "timeline": [
+      {
+        "title": "Birth",
+        "date": "1799",
+        "place": "Maryland or Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence"
+      },
       {
         "title": "Family memorial plaque",
         "date": "1993",
         "place": "Ramsey family memorial site",
-        "summary": "The memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
-        "title": "Armina profile linkage",
+        "title": "Marriage to Anna Hopkins",
+        "date": "1824",
+        "place": "Hancock County, Tennessee",
+        "summary": "Married Anna Hopkins, establishing the family that would migrate to Iowa.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "thomas-ramsey-anna-hopkins-marriage"
+      },
+      {
+        "title": "Armina's birth",
         "date": "1826",
-        "summary": "Armina (X) Ramsey's profile identifies Thomas Ramsey as her father and gives his life span as 1799-1872.",
+        "place": "Tennessee",
+        "summary": "Armina Ramsey, first child with Anna Hopkins, born in Tennessee.",
         "confidence": "Strong Evidence"
       },
       {
@@ -124,87 +347,394 @@
         "summary": "Listed as head of household with Anna Ramsey and children including Alexander, Henderson, Cowan, Rachel, and William.",
         "confidence": "Primary Source",
         "linkedDocumentId": "decatur-township-1860-census"
+      },
+      {
+        "title": "Death",
+        "date": "1872",
+        "place": "Decatur County, Iowa",
+        "summary": "Died in Decatur County, Iowa, after establishing the Ramsey family in the Midwest.",
+        "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "Child of Josiah Ramsey and Elizabeth Cowan",
-      "Father of Armina Ramsey",
-      "Armina (X) Ramsey profile identifies Thomas Ramsey as 1799-1872",
+      "Child of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Husband of Anna Hopkins (1807-1883)",
+      "Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children",
+      "Armina Ramsey profile identifies Thomas Ramsey as 1799-1872",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Anna Ramsey and children",
       "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
-      "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
+      "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
       "Key document: census-decatur-township.pdf",
       "Status: Primary source household record"
     ]
   },
   {
-    "id": "anna-ramsey",
-    "name": "Anna Ramsey",
-    "lifespan": "19th century",
+    "id": "anna-hopkins-ramsey",
+    "name": "Anna Hopkins Ramsey",
+    "lifespan": "1807-1883",
     "era": "19th-century Iowa",
-    "branch": "Ramsey",
-    "summary": "Wife of Thomas Ramsey; identified in the FamilySearch profile for Josiah Ramsey as Anna Hopkins and shown in the 1860 Decatur County census household.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Thomas Ramsey and children; Josiah Ramsey's FamilySearch profile identifies her as Anna Hopkins.",
+    "branch": "Hopkins",
+    "summary": "Wife of Thomas Ramsey (1799-1872); daughter of Jabez Hopkins and Rachel Clouse. Mother of Armina Ramsey Edwards and other Ramsey children. Appears in the 1860 and 1880 Decatur County census records.",
+    "keyEvent": "Married Thomas Ramsey in 1824 in Hancock County, Tennessee. Mother of Armina Ramsey (1826-1923) and at least 8 other children. Died 1883 in Decatur County, Iowa.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Census", "Iowa"],
+    "tags": ["Hopkins", "Clouse", "Ramsey", "Census", "Iowa", "Generation 4"],
     "attachedDocument": "census-decatur-township.pdf",
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
-    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), which names Anna Hopkins as Josiah's mother and identifies the family in Bloomfield, Davis County, Iowa in 1850.",
+    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), which names Anna Hopkins as Josiah's mother and identifies the family in Bloomfield, Davis County, Iowa in 1850. Death record: Decatur County, Iowa, 1883.",
     "timeline": [
       {
         "title": "FamilySearch linkage",
         "date": "1850",
-        "summary": "FamilySearch profile for Josiah Ramsey identifies his mother as Anna Hopkins.",
+        "summary": "FamilySearch profile identifies Anna Hopkins as Josiah Ramsey's mother and places the family in Bloomfield, Davis County, Iowa.",
         "confidence": "Primary Source"
+      },
+      {
+        "title": "Birth",
+        "date": "1807",
+        "place": "Tennessee",
+        "summary": "Born to Jabez Hopkins and Rachel Clouse.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Thomas Ramsey",
+        "date": "1824",
+        "place": "Hancock County, Tennessee",
+        "summary": "Married Thomas Ramsey, establishing the family line that would migrate to Iowa.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "thomas-ramsey-anna-hopkins-marriage"
+      },
+      {
+        "title": "Armina's birth",
+        "date": "1826",
+        "place": "Tennessee",
+        "summary": "First child, Armina Ramsey, born in Tennessee.",
+        "confidence": "Strong Evidence"
       },
       {
         "title": "1860 census household",
         "date": "1860",
         "place": "Richland Township, Decatur County, Iowa",
-        "summary": "Listed in the Ramsey household with Thomas Ramsey and children.",
+        "summary": "Listed in the Ramsey household with Thomas Ramsey and children including Armina, Alexander, Henderson, Cowan, Rachel, and William.",
         "confidence": "Primary Source",
         "linkedDocumentId": "decatur-township-1860-census"
+      },
+      {
+        "title": "1880 census appearance",
+        "date": "1880",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Appears in the 1880 census as Anna Ramsey, widow of Thomas.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "richland-township-1880-census"
+      },
+      {
+        "title": "Death",
+        "date": "1883",
+        "place": "Decatur County, Iowa",
+        "summary": "Died in Decatur County, Iowa. Buried at Wheelis Cemetery.",
+        "confidence": "Primary Source"
       }
     ],
     "evidenceSummary": [
+      "Wife of Thomas Ramsey (1799-1872)",
+      "Daughter of Jabez Hopkins (1765-after 1856) and Rachel Clouse (1782-before 1856)",
+      "Mother of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey",
       "Identified as Anna Hopkins in the Josiah Ramsey FamilySearch profile",
-      "1860 federal census household in Richland Township, Decatur County, Iowa",
-      "Listed with Thomas Ramsey and children",
+      "1860 and 1880 federal census household in Richland Township, Decatur County, Iowa",
+      "Death record: Decatur County, Iowa, 1883",
+      "Burial: Wheelis Cemetery",
       "Key document: census-decatur-township.pdf",
       "Status: Primary source household record"
     ]
   },
   {
-    "id": "jonathan-dyer",
-    "name": "Jonathan Dyer",
-    "lifespan": "19th century",
-    "era": "19th-century Dyer line",
-    "branch": "Dyer",
-    "summary": "Heir named in Charles Dyer's pension packet and part of the documented Dyer descent trail.",
-    "keyEvent": "Named among the heirs in the county affidavit tied to Charles Dyer's Revolutionary War pension application.",
+    "id": "jabez-hopkins",
+    "name": "Jabez Hopkins",
+    "lifespan": "1765-after 1856",
+    "era": "Early Republic Tennessee",
+    "branch": "Hopkins",
+    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Lived in Tennessee and appears in records through at least 1856.",
+    "keyEvent": "Married Rachel Clouse in 1801 and fathered Anna Hopkins (1807-1883), establishing the Hopkins-Ramsey connection.",
     "confidence": "Strong Evidence",
-    "tags": ["Dyer", "Heir", "Pension affidavit", "Charles Dyer"],
-    "attachedDocument": "charles-dyer.pdf",
-    "sourceCitation": "The 1855 county affidavit in the Charles Dyer pension transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer.",
+    "tags": ["Hopkins", "Clouse", "Tennessee", "Generation 3"],
+    "sourceCitation": "FamilySearch-style profile for Rachel Clouse, showing her marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, Iowa residence by 1850, death before 1856, and burial at Grand River Cemetery.",
     "timeline": [
       {
-        "title": "Named in pension affidavit",
-        "date": "1855",
-        "summary": "The county affidavit in the Charles Dyer pension packet names Jonathan Dyer among the heirs.",
-        "confidence": "Strong Evidence",
-        "linkedDocumentId": "charles-dyer-discharge"
+        "title": "Birth",
+        "date": "1765",
+        "place": "Tennessee or Virginia",
+        "summary": "Born in early America, likely Tennessee or Virginia.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Rachel Clouse",
+        "date": "1801",
+        "place": "Tennessee",
+        "summary": "Married Rachel Clouse, establishing the Hopkins-Clouse family line.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Anna's birth",
+        "date": "1807",
+        "place": "Tennessee",
+        "summary": "Daughter Anna Hopkins born, who would marry Thomas Ramsey.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Appears in 1856 settlement records",
+        "date": "after 1856",
+        "place": "Tennessee",
+        "summary": "Jabez Hopkins appears in county settlement records dated December 19, 1854, and is alive after 1856.",
+        "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "Named among the heirs in the Charles Dyer pension packet",
-      "Tied to the Revolutionary War pension application",
-      "Part of the documented Dyer descent trail",
-      "Key document: charles-dyer.pdf"
+      "Father of Anna Hopkins (1807-1883)",
+      "Husband of Rachel Clouse (1782-before 1856)",
+      "Lived in Tennessee",
+      "Marriage to Rachel Clouse in 1801",
+      "Anna Hopkins born in 1807",
+      "Appears in 1854 county settlement records",
+      "Alive after 1856",
+      "Status: Strong evidence for the Hopkins-Clouse family trail"
     ]
   },
   {
-    "id": "josiah-ramsey",
+    "id": "rachel-clouse",
+    "name": "Rachel Clouse",
+    "lifespan": "1782-before 1856",
+    "era": "Early Republic Tennessee",
+    "branch": "Clouse",
+    "summary": "Mother of Anna Hopkins Ramsey. Married to Jabez Hopkins in 1801 and later appears in Tennessee and Iowa records.",
+    "keyEvent": "Married Jabez Hopkins in 1801, gave birth to Anna Hopkins in 1807, and later appears in Claiborne County, Tennessee and Iowa records.",
+    "confidence": "Strong Evidence",
+    "tags": ["Clouse", "Hopkins", "Tennessee", "Generation 3"],
+    "sourceCitation": "Profile record showing birth in 1782, marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, Iowa residence in 1850, death before 1856, and burial at Grand River Cemetery.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1782",
+        "place": "Tennessee or Virginia",
+        "summary": "Born in early America, likely Tennessee or Virginia.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Jabez Hopkins",
+        "date": "1801",
+        "place": "Tennessee",
+        "summary": "Married Jabez Hopkins, establishing the Hopkins-Clouse family line.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Anna's birth",
+        "date": "1807",
+        "place": "Tennessee",
+        "summary": "Daughter Anna Hopkins born, who would marry Thomas Ramsey.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Claiborne County residence",
+        "date": "1830",
+        "place": "Claiborne County, Tennessee",
+        "summary": "Appears in Claiborne County before the Iowa migration trail.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Iowa residence",
+        "date": "1850",
+        "place": "Washington/Appanoose, Iowa",
+        "summary": "Appears in Iowa records before death and burial in the Grand River area.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Death before 1856",
+        "date": "before 1856",
+        "place": "Unionville, Appanoose County, Iowa",
+        "summary": "Rachel Clouse died before the 1856 settlement records and before the 1856 census, with burial recorded at Grand River Cemetery.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Burial at Grand River Cemetery",
+        "date": "before 1856",
+        "place": "Grand River, Decatur, Iowa",
+        "summary": "Buried at Grand River Cemetery.",
+        "confidence": "Primary Source"
+      }
+    ],
+    "evidenceSummary": [
+      "Mother of Anna Hopkins (1807-1883)",
+      "Wife of Jabez Hopkins (1765-after 1856)",
+      "Marriage to Jabez Hopkins in 1801",
+      "Anna Hopkins born in 1807",
+      "Lived in Tennessee",
+      "Claiborne County residence in 1830",
+      "Iowa residence by 1850",
+      "Died before 1856",
+      "Burial at Grand River Cemetery",
+      "Status: Strong evidence from the profile, census, and burial trail"
+    ]
+  },
+  {
+    "id": "jonathan-dyer",
+    "name": "Jonathan Dyer",
+    "lifespan": "1780-1860",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Son of Charles Dyer (Revolutionary War veteran) and heir named in Charles Dyer's pension packet. Father of George Washington Dyer and part of the documented Dyer descent trail.",
+    "keyEvent": "Named among the heirs in the 1855 county affidavit tied to Charles Dyer's Revolutionary War pension application. Established the Dyer line in Ohio/Oregon.",
+    "confidence": "Strong Evidence",
+    "tags": ["Dyer", "Heir", "Pension affidavit", "Charles Dyer", "SAR Line", "Generation 3"],
+    "attachedDocument": "charles-dyer.pdf",
+    "sourceCitation": "The 1855 county affidavit in the Charles Dyer pension transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer. FamilySearch and Oregon records confirm his descent.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1780",
+        "place": "Virginia or Ohio",
+        "summary": "Born to Charles Dyer, Revolutionary War veteran of the 12th Virginia Regiment.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Named in pension affidavit",
+        "date": "1855",
+        "summary": "The county affidavit in the Charles Dyer pension packet names Jonathan Dyer among the heirs, confirming his descent from Charles Dyer.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "charles-dyer-discharge"
+      },
+      {
+        "title": "Death",
+        "date": "1860",
+        "place": "Ohio or Oregon",
+        "summary": "Died in 1860, father of George Washington Dyer who would serve in the Civil War.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1840s), Revolutionary War veteran",
+      "Named among the heirs in the Charles Dyer pension packet",
+      "Tied to the Revolutionary War pension application",
+      "Father of George Washington Dyer (Civil War veteran)",
+      "Part of the documented Dyer descent trail",
+      "Key document: charles-dyer.pdf",
+      "SAR/DAR eligible line"
+    ]
+  },
+  {
+    "id": "nancy-ann-dyer",
+    "name": "Nancy Ann Dyer",
+    "lifespan": "1820-1900",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Daughter of George Washington Dyer and granddaughter of Jonathan Dyer. Part of the Dyer-Edwards connection in the Marchant family line.",
+    "keyEvent": "Connects the Dyer Revolutionary War line to the Edwards/Moore/Marchant families.",
+    "confidence": "Strong Evidence",
+    "tags": ["Dyer", "Edwards", "Moore", "Marchant", "SAR Line", "Generation 4"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1820",
+        "place": "Ohio or Oregon",
+        "summary": "Born to George Washington Dyer, daughter of a Civil War veteran and granddaughter of a Revolutionary War veteran.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage",
+        "date": "circa 1840",
+        "place": "Oregon or Midwest",
+        "summary": "Married into the family line that connects to Edwards/Moore/Marchant.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1900",
+        "place": "Oregon or Washington",
+        "summary": "Died at age 80.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of George Washington Dyer (Civil War) and granddaughter of Jonathan Dyer",
+      "Great-granddaughter of Charles Dyer (Revolutionary War)",
+      "Part of the Dyer-Edwards connection",
+      "Ancestress of the Moore/Marchant line",
+      "SAR/DAR eligible through Charles Dyer"
+    ]
+  },
+  {
+    "id": "josiah-ramsey-jr-1769",
+    "name": "Josiah Ramsey Jr.",
+    "lifespan": "1769-1835",
+    "era": "Revolutionary era Tennessee",
+    "branch": "Ramsey",
+    "summary": "Son of Thomas Ramsey (died before 1805) and grandson of Josiah Ramsey Sr. Married Elizabeth Cowan and fathered Thomas Ramsey (1799-1872) and other children. Served in War of 1812 with 14th Kentucky Militia.",
+    "keyEvent": "Born 7 October 1769 in Baltimore, Maryland. Served in War of 1812. Father of Thomas Ramsey (1799-1872) who continued the Iowa line.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "War of 1812", "14th Kentucky Militia", "SAR Line", "Generation 3"],
+    "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
+    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (KP91-M2Y), showing birth on 7 October 1769 in Baltimore, Maryland, spouse Elizabeth Cowan, child Thomas Ramsey (1807-1872), and death in 1835 at Mulberry Gap, Hancock, Tennessee.",
+    "attachedDocument": "josiah-ramsey-family-plaque.jpg",
+    "timeline": [
+      {
+        "title": "Birth in Baltimore",
+        "date": "7 October 1769",
+        "place": "Baltimore, Maryland, United States",
+        "summary": "Born to Thomas Ramsey and grandson of Josiah Ramsey Sr.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Elizabeth Cowan",
+        "date": "circa 1790-1795",
+        "place": "Tennessee or Maryland",
+        "summary": "Married Elizabeth Cowan, establishing the family that would migrate to Tennessee.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "War of 1812 Service",
+        "date": "1812-1815",
+        "place": "Kentucky",
+        "summary": "Served in the 14th Kentucky Militia during the War of 1812.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-jr-1812-service"
+      },
+      {
+        "title": "Claiborne residence",
+        "date": "1830",
+        "place": "Claiborne, Tennessee, United States",
+        "summary": "FamilySearch profile says he lived in Claiborne, Tennessee in 1830.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey (1799-1872).",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death in Hancock County",
+        "date": "1835",
+        "place": "Mulberry Gap, Hancock, Tennessee, United States",
+        "summary": "Died in 1835 in Mulberry Gap, Hancock, Tennessee, at age 66.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "FamilySearch profile ID: KP91-M2Y",
+      "Born 7 October 1769 in Baltimore, Maryland, United States",
+      "Son of Thomas Ramsey (died before 1805) and Alice Bower",
+      "Spouse: Elizabeth Cowan",
+      "At least 6 sons and 8 daughters including Thomas Ramsey (1799-1872)",
+      "Lived in Claiborne, Tennessee in 1830",
+      "Served in 14th Kentucky Militia during War of 1812",
+      "Died in 1835 in Mulberry Gap, Hancock, Tennessee",
+      "Family plaque and grave marker are supporting memorial records",
+      "War of 1812 Society eligible"
+    ]
+  },
+  {
+    "id": "josiah-ramsey-1834",
     "name": "Josiah Ramsey",
     "lifespan": "1834-deceased",
     "era": "19th-century Iowa",
@@ -212,7 +742,7 @@
     "summary": "Son of Thomas Ramsey and Anna Hopkins; born in Tennessee in 1834 and living in Bloomfield, Davis County, Iowa in 1850.",
     "keyEvent": "FamilySearch lists him in Bloomfield, Davis County, Iowa in 1850 and gives his occupation as farmer.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Hopkins", "FamilySearch", "Census"],
+    "tags": ["Ramsey", "Hopkins", "FamilySearch", "Census", "Generation 5"],
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
     "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
     "timeline": [
@@ -238,7 +768,7 @@
       }
     ],
     "evidenceSummary": [
-      "Son of Thomas Ramsey and Anna Hopkins",
+      "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
       "Born 1834 in Tennessee",
       "Residence in Bloomfield, Davis County, Iowa in 1850",
       "Occupation listed as farmer",
@@ -246,6 +776,17 @@
       "FamilySearch source text ties him to Thomas Ramsey and Anna Hopkins",
       "Family note says he went to California in 1854; keep that separate until it is independently documented."
     ]
+  },
+  {
+    "id": "josiah-ramsey",
+    "name": "Josiah Ramsey",
+    "lifespan": "1834-deceased",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Redirect entry - use josiah-ramsey-1834 or josiah-ramsey-jr-1769",
+    "keyEvent": "See josiah-ramsey-1834 for the 1834-? Josiah, or josiah-ramsey-jr-1769 for the 1769-1835 Josiah",
+    "confidence": "Needs Review",
+    "tags": ["Redirect", "Duplicate"]
   },
   {
     "id": "josiah-ramsey-1769",
@@ -319,17 +860,40 @@
     "lifespan": "1770-1840",
     "era": "Revolutionary era Tennessee",
     "branch": "Cowan",
-    "summary": "Wife of Josiah Ramsey and mother in the Ramsey line.",
-    "keyEvent": "Named with Josiah Ramsey on the family memorial plaque and grave marker.",
+    "summary": "Wife of Josiah Ramsey Jr. (1769-1835) and mother of at least 10 children including Thomas Ramsey (1799-1872). Died in June 1840 in Mulberry Gap, Hancock, Tennessee.",
+    "keyEvent": "Married Josiah Ramsey Jr. circa 1790-1795. Mother of the Ramsey family line that migrated to Iowa. Named with Josiah Ramsey Jr. on the family memorial plaque and grave marker.",
     "confidence": "Strong Evidence",
-    "tags": ["Cowan", "Ramsey", "Memorial"],
+    "tags": ["Cowan", "Ramsey", "Memorial", "Tennessee", "Generation 3"],
     "attachedDocument": "josiah-ramsey-grave-marker.jpg",
+    "sourceCitation": "Family memorial plaque and grave marker for Josiah Ramsey Jr. and Elizabeth Cowan. FamilySearch profiles confirm their children including Thomas Ramsey (1799-1872).",
     "timeline": [
+      {
+        "title": "Birth",
+        "date": "1770",
+        "place": "Maryland or Tennessee",
+        "summary": "Born in Maryland or Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Josiah Ramsey Jr.",
+        "date": "circa 1790-1795",
+        "place": "Tennessee or Maryland",
+        "summary": "Married Josiah Ramsey Jr., establishing the Tennessee Ramsey family line.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Children's births",
+        "date": "1799-1853",
+        "place": "Tennessee",
+        "summary": "Mother of at least 10 children: Thomas (1799), Alexander (1832), Josiah (1834), Narvesta (1835), Franklin (1837), Henderson (1839), Cowan (1842), Rachel (1845), William (1853), and others.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
       {
         "title": "Family memorial plaque",
         "date": "1993",
         "place": "Ramsey family memorial site",
-        "summary": "The memorial plaque names Elizabeth Cowan with Josiah Ramsey and lists their children, including Thomas Ramsey.",
+        "summary": "The memorial plaque names Elizabeth Cowan with Josiah Ramsey Jr. and lists their children, including Thomas Ramsey (1799-1872).",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
@@ -337,17 +901,26 @@
         "title": "Grave marker",
         "date": "1993-09-05",
         "place": "Ramsey memorial site",
-        "summary": "The grave marker names Elizabeth Cowan with Josiah C. Ramsey and records the memorial dedication date.",
+        "summary": "The grave marker names Elizabeth Cowan with Josiah C. Ramsey Jr. and records the memorial dedication date.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-grave-marker"
+      },
+      {
+        "title": "Death",
+        "date": "June 1840",
+        "place": "Mulberry Gap, Hancock, Tennessee",
+        "summary": "Died in Mulberry Gap, Hancock, Tennessee at age 70.",
+        "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "Wife of Josiah Ramsey",
+      "Wife of Josiah Ramsey Jr. (1769-1835)",
+      "Mother of Thomas Ramsey (1799-1872) and at least 9 other children",
       "Named on the Ramsey family memorial plaque",
-      "Named on the Josiah C. Ramsey and Elizabeth Cowan grave marker",
-      "Supports the Ramsey line through Thomas Ramsey",
-      "Key memorial records are private scans in the archive"
+      "Named on the Josiah C. Ramsey Jr. and Elizabeth Cowan grave marker",
+      "Died June 1840 in Mulberry Gap, Hancock, Tennessee",
+      "Key memorial records are private scans in the archive",
+      "Supports the Ramsey line through Thomas Ramsey to Iowa"
     ]
   },
   {
@@ -437,17 +1010,352 @@
     ]
   },
   {
-    "id": "anderson-edwards",
-    "name": "Anderson Edwards",
-    "lifespan": "19th century",
+    "id": "lucinda-edwards",
+    "name": "Lucinda Edwards",
+    "lifespan": "1851-1933",
+    "era": "Late 19th-century Midwest",
+    "branch": "Edwards",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Eldest child of the Edwards family.",
+    "keyEvent": "Born 1851 in Iowa or Tennessee. Part of the Edwards family migration to Washington.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1851",
+        "place": "Iowa or Tennessee",
+        "summary": "First child of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Decatur County childhood",
+        "date": "1860",
+        "place": "Decatur County, Iowa",
+        "summary": "Appears in the 1860 census with the Edwards/Ramsey family cluster.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-township-1860-census"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1933",
+        "place": "Washington",
+        "summary": "Died in Washington.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1851, died 1933",
+      "Eldest child of 8 siblings",
+      "Appears in 1860 census in Decatur County, Iowa",
+      "Migrated to Washington with family",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "mary-ann-polly-edwards",
+    "name": "Mary Ann \"Polly\" Edwards",
+    "lifespan": "1853-1879",
     "era": "19th-century Midwest",
     "branch": "Edwards",
-    "summary": "Husband of Armina Ramsey and part of the Ramsey/Edwards line in Iowa and Washington records.",
-    "keyEvent": "Married Armina Ramsey in 1840.",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Died young at age 26.",
+    "keyEvent": "Born 1853, died 1879. Second child of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Obituary", "Census"],
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1853",
+        "place": "Iowa or Tennessee",
+        "summary": "Second child of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1879",
+        "place": "Iowa or Washington",
+        "summary": "Died young at age 26.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1853, died 1879",
+      "Nickname: Polly",
+      "Died at age 26",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "nervesta-edwards",
+    "name": "Nervesta Edwards",
+    "lifespan": "1855-1938",
+    "era": "Late 19th-20th century",
+    "branch": "Edwards",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Lived a long life into the 20th century.",
+    "keyEvent": "Born 1855, died 1938. Third child of the Edwards family.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1855",
+        "place": "Iowa or Tennessee",
+        "summary": "Third child of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1938",
+        "place": "Washington",
+        "summary": "Died in Washington at age 83.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1855, died 1938",
+      "Lived 83 years",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "john-wesley-edwards",
+    "name": "John Wesley Edwards",
+    "lifespan": "1858-1899",
+    "era": "19th-century Midwest",
+    "branch": "Edwards",
+    "summary": "Son of Armina Ramsey and Anderson Edwards. Died at age 41.",
+    "keyEvent": "Born 1858, died 1899. Fourth child and first son of the Edwards family.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1858",
+        "place": "Iowa or Tennessee",
+        "summary": "Fourth child and first son of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1899",
+        "place": "Washington",
+        "summary": "Died at age 41.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1858, died 1899",
+      "Died at age 41",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "silas-josiah-edwards",
+    "name": "Silas Josiah Edwards",
+    "lifespan": "1859-1943",
+    "era": "Late 19th-20th century",
+    "branch": "Edwards",
+    "summary": "Son of Armina Ramsey and Anderson Edwards. Lived a long life, named after his Ramsey ancestors.",
+    "keyEvent": "Born 1859, died 1943. Fifth child of the Edwards family, named after Josiah Ramsey.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1859",
+        "place": "Iowa or Tennessee",
+        "summary": "Fifth child of Armina Ramsey and Anderson Edwards. Named Josiah after his Ramsey ancestors.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1943",
+        "place": "Washington",
+        "summary": "Died in Washington at age 84.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1859, died 1943",
+      "Lived 84 years",
+      "Named after Josiah Ramsey ancestors",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "thomas-edwards-1859",
+    "name": "Thomas Edwards",
+    "lifespan": "1859-1936",
+    "era": "Late 19th-20th century",
+    "branch": "Edwards",
+    "summary": "Son of Armina Ramsey and Anderson Edwards. Lived to age 77, named after his Ramsey grandfather.",
+    "keyEvent": "Born 1859, died 1936. Sixth child of the Edwards family, named after Thomas Ramsey.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1859",
+        "place": "Iowa or Tennessee",
+        "summary": "Sixth child of Armina Ramsey and Anderson Edwards. Named Thomas after his grandfather Thomas Ramsey.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1936",
+        "place": "Washington",
+        "summary": "Died in Washington at age 77.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1859, died 1936",
+      "Lived 77 years",
+      "Named after Thomas Ramsey (1799-1872)",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "alzy-jane-edwards",
+    "name": "Alzy Jane Edwards",
+    "lifespan": "1863-1936",
+    "era": "Late 19th-20th century",
+    "branch": "Edwards",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Lived to age 73.",
+    "keyEvent": "Born 1863, died 1936. Seventh child of the Edwards family.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1863",
+        "place": "Iowa",
+        "summary": "Seventh child of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1936",
+        "place": "Washington",
+        "summary": "Died in Washington at age 73.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1863, died 1936",
+      "Lived 73 years",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "luella-edwards",
+    "name": "Luella Edwards",
+    "lifespan": "1866-1938",
+    "era": "Late 19th-20th century",
+    "branch": "Edwards",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Youngest child, lived to age 72.",
+    "keyEvent": "Born 1866, died 1938. Eighth and youngest child of the Edwards family.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1866",
+        "place": "Iowa",
+        "summary": "Eighth and youngest child of Armina Ramsey and Anderson Edwards.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "Migrated with the family from Iowa to Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1938",
+        "place": "Washington",
+        "summary": "Died in Washington at age 72.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
+      "Born 1866, died 1938",
+      "Lived 72 years",
+      "Youngest of 8 children",
+      "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "anderson-edwards",
+    "name": "Anderson Edwards",
+    "lifespan": "1832-1908",
+    "era": "19th-century Midwest",
+    "branch": "Edwards",
+    "summary": "Husband of Armina Ramsey and father of 8 children. Part of the Ramsey/Edwards line in Iowa and Washington records. The family migrated from Iowa to Washington.",
+    "keyEvent": "Married Armina Ramsey in 1840. Father of Lucinda, Mary Ann, Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Obituary", "Census", "Iowa", "Washington", "Generation 5"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
     "timeline": [
+      {
+        "title": "Birth",
+        "date": "1832",
+        "place": "Tennessee or Iowa",
+        "summary": "Born in 1832, exact location needs verification.",
+        "confidence": "Needs Review"
+      },
       {
         "title": "Marriage to Armina Ramsey",
         "date": "1840",
@@ -462,13 +1370,31 @@
         "summary": "Appears in the census trail associated with the Ramsey/Edwards household cluster.",
         "confidence": "Primary Source",
         "linkedDocumentId": "decatur-township-1860-census"
+      },
+      {
+        "title": "Migration to Washington",
+        "date": "circa 1870s-1880s",
+        "place": "Washington Territory",
+        "summary": "The Edwards family migrated from Iowa to Washington, eventually settling in Pine City area.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1908",
+        "place": "Washington",
+        "summary": "Died in Washington, buried beside his wife Armina.",
+        "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "Husband of Armina Ramsey",
+      "Husband of Armina Ramsey (1826-1923)",
+      "Born 1832, died 1908",
       "Marriage to Armina Ramsey in 1840",
-      "Appears in the Ramsey/Edwards census trail",
-      "Key document: obituary-armina-ramsey.pdf"
+      "Father of 8 children: Lucinda, Mary Ann 'Polly', Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards",
+      "Appears in the Ramsey/Edwards census trail in Iowa",
+      "Migrated from Iowa to Washington",
+      "Key document: obituary-armina-ramsey.pdf",
+      "RESEARCH NOTE: Parents and military service (if any) need verification"
     ]
   },
   {
@@ -526,6 +1452,339 @@
       "Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins",
       "Key document: obituary-armina-ramsey.pdf",
       "Supporting census record: census-decatur-township.pdf"
+    ]
+  },
+  {
+    "id": "alexander-ramsey-1832",
+    "name": "Alexander Ramsey",
+    "lifespan": "1832-1915",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Iowa", "Tennessee", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Alexander Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1832",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Alexander Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1915",
+        "place": "Iowa or Tennessee",
+        "summary": "Died at age 83.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1832, died 1915",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 83 years"
+    ]
+  },
+  {
+    "id": "josiah-ramsey-1834-memorial",
+    "name": "Josiah Ramsey",
+    "lifespan": "1834-1910",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Iowa", "Tennessee", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Josiah Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1834",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Josiah Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1910",
+        "place": "Iowa or Tennessee",
+        "summary": "Died at age 76.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1834, died 1910",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 76 years"
+    ]
+  },
+  {
+    "id": "narvesta-ramsey-1835",
+    "name": "Narvesta Ramsey",
+    "lifespan": "1835-?",
+    "era": "19th century",
+    "branch": "Ramsey",
+    "summary": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Narvesta Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1835",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Narvesta Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1835",
+      "Sister of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "RESEARCH NOTE: Death date unknown"
+    ]
+  },
+  {
+    "id": "franklin-ramsey-1837",
+    "name": "Franklin Ramsey",
+    "lifespan": "1837-1925",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Lived to age 88.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Franklin Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1837",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Franklin Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1925",
+        "place": "Iowa",
+        "summary": "Died at age 88.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1837, died 1925",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 88 years"
+    ]
+  },
+  {
+    "id": "henderson-ramsey-1839",
+    "name": "Henderson Ramsey",
+    "lifespan": "1839-1903",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Henderson Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1839",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Henderson Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1903",
+        "place": "Iowa",
+        "summary": "Died at age 64.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1839, died 1903",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 64 years"
+    ]
+  },
+  {
+    "id": "cowan-ramsey-1842",
+    "name": "Cowan Ramsey",
+    "lifespan": "1842-?",
+    "era": "19th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Named after his mother's family. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Cowan Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1842",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee. Named after his Cowan ancestors.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Cowan Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1842",
+      "Named after Cowan family",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "RESEARCH NOTE: Death date unknown"
+    ]
+  },
+  {
+    "id": "rachel-ramsey-1845",
+    "name": "Rachel Ramsey",
+    "lifespan": "1845-1933",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872). Lived to age 88.",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming Rachel Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1845",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names Rachel Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1933",
+        "place": "Iowa",
+        "summary": "Died at age 88.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1845, died 1933",
+      "Sister of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 88 years"
+    ]
+  },
+  {
+    "id": "william-ramsey-1853",
+    "name": "William Ramsey",
+    "lifespan": "1853-1941",
+    "era": "19th-20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Youngest child, lived to age 88. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Named after his great-grandfather William Ramsey (1675-1745).",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "sourceCitation": "Ramsey family memorial plaque naming William Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1853",
+        "place": "Tennessee",
+        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee. Named after his great-grandfather William Ramsey (1675-1745).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Family memorial plaque",
+        "date": "1993",
+        "place": "Ramsey family memorial site",
+        "summary": "The memorial plaque names William Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
+      },
+      {
+        "title": "Death",
+        "date": "1941",
+        "place": "Iowa",
+        "summary": "Died at age 88.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Born 1853, died 1941",
+      "Youngest child of Josiah Jr. and Elizabeth",
+      "Named after William Ramsey (1675-1745)",
+      "Brother of Thomas Ramsey (1799-1872)",
+      "Named on the Ramsey family memorial plaque",
+      "Lived 88 years"
     ]
   }
 ]
