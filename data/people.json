@@ -38,7 +38,7 @@
       "service": "12th Virginia Regiment",
       "keyRecord": "September 25, 1778 discharge at Fort Randolph",
       "status": "Confirmed direct Patriot line",
-      "note": "Proof packet in progress. SAR registrar review is still required for formal acceptance."
+      "note": "Proof packet in progress. SAR registrar review is still required."
     }
   },
   {
@@ -141,6 +141,67 @@
       "Marriage dated March 29, 1846",
       "Key document: real-certificate.pdf",
       "Status: Confirmed family record"
+    ]
+  },
+  {
+    "id": "andrew-moore",
+    "name": "Andrew Moore",
+    "lifespan": "19th-century Ireland",
+    "era": "19th-century Ireland",
+    "branch": "Moore",
+    "summary": "Moore family record under review.",
+    "keyEvent": "Birth registration currently being evaluated against the wider Moore and Law packet.",
+    "confidence": "Needs Review",
+    "tags": ["Moore line", "Birth registration", "Needs review"],
+    "attachedDocument": "andrew-moore.pdf",
+    "timeline": [
+      {
+        "title": "Birth registration under review",
+        "date": "Date not yet confirmed",
+        "summary": "The record may connect into the William Moore and Isabella Law family packet, but it is not yet treated as confirmed.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": "andrew-moore-birth-registration"
+      }
+    ],
+    "evidenceSummary": [
+      "Potential link to the William Moore and Isabella Law family packet",
+      "Birth registration currently under review",
+      "Key document: andrew-moore.pdf"
+    ]
+  },
+  {
+    "id": "anderson-edwards",
+    "name": "Anderson Edwards",
+    "lifespan": "19th century",
+    "era": "19th-century Midwest",
+    "branch": "Edwards",
+    "summary": "Husband of Armina Ramsey and part of the Ramsey/Edwards line in Iowa and Washington records.",
+    "keyEvent": "Married Armina Ramsey in 1840.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Ramsey", "Obituary", "Census"],
+    "attachedDocument": "obituary-armina-ramsey.pdf",
+    "timeline": [
+      {
+        "title": "Marriage to Armina Ramsey",
+        "date": "1840",
+        "summary": "Marriage reported in the family obituary record and supported by later census context.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "armina-ramsey-obituary"
+      },
+      {
+        "title": "Decatur Township household",
+        "date": "1860",
+        "place": "Decatur Township, Decatur County, Iowa",
+        "summary": "Appears in the census trail associated with the Ramsey/Edwards household cluster.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-township-1860-census"
+      }
+    ],
+    "evidenceSummary": [
+      "Husband of Armina Ramsey",
+      "Marriage to Armina Ramsey in 1840",
+      "Appears in the Ramsey/Edwards census trail",
+      "Key document: obituary-armina-ramsey.pdf"
     ]
   },
   {
