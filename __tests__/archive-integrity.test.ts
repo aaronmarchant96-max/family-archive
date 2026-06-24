@@ -125,13 +125,27 @@ describe("Archive integrity", () => {
     }
   });
 
-  test("William Moore remains a printer of Springwell Street, Ballymena", () => {
+  test("William Moore remains a painter of Springwell Street, Ballymena", () => {
     const william = personById.get("william-moore");
     expect(william).toBeDefined();
-    expect(william?.summary).toMatch(/printer/i);
-    expect(william?.summary).not.toMatch(/painter/i);
+    expect(william?.summary).toMatch(/painter/i);
+    expect(william?.summary).not.toMatch(/printer/i);
     expect(william?.summary).toMatch(/Springwell Street/i);
     expect(william?.summary).toMatch(/Ballymena/i);
+  });
+
+  test("Josiah Ramsey stays aligned to the FamilySearch profile wording", () => {
+    const josiah = personById.get("josiah-ramsey");
+
+    expect(josiah).toBeDefined();
+    expect(josiah?.summary).toMatch(/Thomas Ramsey/i);
+    expect(josiah?.summary).toMatch(/Anna Hopkins/i);
+    expect(josiah?.summary).toMatch(/Tennessee/i);
+    expect(josiah?.summary).toMatch(/1834/i);
+    expect(josiah?.summary).toMatch(/Bloomfield, Davis County, Iowa/i);
+    expect(josiah?.keyEvent).toMatch(/farmer/i);
+    expect(josiah?.sourceUrl).toMatch(/familysearch\.org/i);
+    expect(josiah?.sourceCitation).toMatch(/L5G1-XJ3/i);
   });
 
   test("Charles Dyer preserves the 12th Virginia Regiment and Fort Randolph references", () => {

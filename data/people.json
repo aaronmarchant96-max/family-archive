@@ -153,8 +153,8 @@
     "lifespan": "1834-deceased",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Son of Thomas Ramsey and Anna Hopkins; listed in the family profile with a Bloomfield, Davis County, Iowa residence.",
-    "keyEvent": "FamilySearch profile shows him as a child of Thomas Ramsey and Anna Hopkins and places him in Bloomfield, Iowa by 1850.",
+    "summary": "Son of Thomas Ramsey and Anna Hopkins; born in Tennessee in 1834 and living in Bloomfield, Davis County, Iowa in 1850.",
+    "keyEvent": "FamilySearch lists him in Bloomfield, Davis County, Iowa in 1850 and gives his occupation as farmer.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Hopkins", "FamilySearch", "Census"],
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
@@ -164,7 +164,7 @@
         "title": "Birth in Tennessee",
         "date": "1834",
         "place": "Tennessee, United States",
-        "summary": "FamilySearch profile lists his birth year as 1834 in Tennessee, with the reason given as the 1850 U.S. Census.",
+        "summary": "FamilySearch profile lists his birth year as 1834 in Tennessee and names Thomas Ramsey and Anna Hopkins as his parents.",
         "confidence": "Primary Source"
       },
       {
@@ -187,6 +187,7 @@
       "Residence in Bloomfield, Davis County, Iowa in 1850",
       "Occupation listed as farmer",
       "FamilySearch profile ID: L5G1-XJ3",
+      "FamilySearch source text ties him to Thomas Ramsey and Anna Hopkins",
       "Family note says he went to California in 1854; keep that separate until it is independently documented."
     ]
   },
@@ -196,10 +197,10 @@
     "lifespan": "Mid-19th century",
     "era": "1840s Ballymena",
     "branch": "Moore",
-    "summary": "Printer of Springwell Street, Ballymena, County Antrim.",
+    "summary": "Painter of Springwell Street, Ballymena, County Antrim.",
     "keyEvent": "Married Isabella Law on March 29, 1846.",
     "confidence": "Confirmed",
-    "tags": ["Printer", "Ballymena", "Marriage record", "Moore line"],
+    "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -213,7 +214,7 @@
     ],
     "evidenceSummary": [
       "Direct family line through the Ballymena Moore record set",
-      "Printer in Springwell Street, Ballymena, County Antrim",
+      "Painter in Springwell Street, Ballymena, County Antrim",
       "Marriage dated March 29, 1846",
       "Key document: real-certificate.pdf",
       "Status: Confirmed family record",
