@@ -14,6 +14,7 @@ export interface AncestorCardProps {
   id: string;
   name: string;
   lifespan: string;
+  era?: string;
   branch: string;
   summary: string;
   keyEvent: string;
@@ -31,7 +32,7 @@ export interface AncestorCardProps {
   };
 }
 
-export function AncestorCard({ id, name, lifespan, branch, summary, keyEvent, confidence, tags, attachedDocument }: AncestorCardProps) {
+export function AncestorCard({ id, name, lifespan, era, branch, summary, keyEvent, confidence, tags, attachedDocument }: AncestorCardProps) {
   return (
     <Link href={`/ancestors/${id}`} className="archive-panel flex flex-col gap-3 transition hover:border-amber-300/40 hover:bg-white/6">
       <div className="flex items-start justify-between gap-3">
@@ -40,6 +41,7 @@ export function AncestorCard({ id, name, lifespan, branch, summary, keyEvent, co
       </div>
       <h3 className="text-lg font-semibold text-white">{name}</h3>
       <div className="text-sm text-slate-300">{lifespan}</div>
+      {era ? <div className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">{era}</div> : null}
       <p className="text-sm leading-6 text-slate-400">{summary}</p>
       <div className="rounded-2xl border border-white/10 bg-black/20 p-3 text-sm text-slate-300">
         <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Key event</div>
