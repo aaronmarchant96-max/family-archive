@@ -148,6 +148,49 @@
     ]
   },
   {
+    "id": "josiah-ramsey",
+    "name": "Josiah Ramsey",
+    "lifespan": "1834-deceased",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Son of Thomas Ramsey and Anna Hopkins; listed in the family profile with a Bloomfield, Davis County, Iowa residence.",
+    "keyEvent": "FamilySearch profile shows him as a child of Thomas Ramsey and Anna Hopkins and places him in Bloomfield, Iowa by 1850.",
+    "confidence": "Primary Source",
+    "tags": ["Ramsey", "Hopkins", "FamilySearch", "Census"],
+    "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
+    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
+    "timeline": [
+      {
+        "title": "Birth in Tennessee",
+        "date": "1834",
+        "place": "Tennessee, United States",
+        "summary": "FamilySearch profile lists his birth year as 1834 in Tennessee, with the reason given as the 1850 U.S. Census.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Bloomfield residence",
+        "date": "1850",
+        "place": "Bloomfield, Davis, Iowa, United States",
+        "summary": "Profile lists him in Bloomfield, Davis County, Iowa, with occupation as farmer.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Family memory note",
+        "date": "1854",
+        "summary": "A family note says Josiah went to California in 1854 and was never heard from again.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Thomas Ramsey and Anna Hopkins",
+      "Born 1834 in Tennessee",
+      "Residence in Bloomfield, Davis County, Iowa in 1850",
+      "Occupation listed as farmer",
+      "FamilySearch profile ID: L5G1-XJ3",
+      "Family note says he went to California in 1854; keep that separate until it is independently documented."
+    ]
+  },
+  {
     "id": "william-moore",
     "name": "William Moore",
     "lifespan": "Mid-19th century",

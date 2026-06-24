@@ -41,6 +41,23 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
       <p className="max-w-2xl text-sm leading-6 text-slate-300">
         This is a placeholder detail page for future family notes, attached records, and timeline views.
       </p>
+      {(person.sourceUrl || person.sourceCitation) ? (
+        <section className="archive-panel space-y-3">
+          <div className="archive-section__title">Source citation</div>
+          {person.sourceUrl ? (
+            <a
+              href={person.sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex text-sm leading-6 text-slate-100 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+            >
+              {person.sourceCitation ?? person.sourceUrl}
+            </a>
+          ) : (
+            <p className="text-sm leading-6 text-slate-300">{person.sourceCitation}</p>
+          )}
+        </section>
+      ) : null}
       {person.portraitUrl ? (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Portrait</div>
@@ -68,6 +85,7 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
       <RecordFrame
         evidence={[
           person.attachedDocument ? `Attached record: ${person.attachedDocument}` : "Attached record: not listed",
+          person.sourceCitation ? `Source: ${person.sourceCitation}` : person.sourceUrl ? `Source: ${person.sourceUrl}` : "Source: not listed",
           person.timeline?.length ? `${person.timeline.length} linked timeline event(s)` : "No timeline entered yet",
           person.evidenceSummary?.length ? person.evidenceSummary.slice(0, 2).join(" · ") : "Supporting evidence is being organized"
         ].join(" · ")}

@@ -22,6 +22,8 @@ export interface AncestorCardProps {
   confidence: string;
   tags?: string[];
   attachedDocument?: string;
+  sourceUrl?: string;
+  sourceCitation?: string;
   portraitUrl?: string;
   portraitCaption?: string;
   timeline?: TimelineEntry[];
@@ -46,6 +48,8 @@ export function AncestorCard({
   confidence,
   tags,
   attachedDocument,
+  sourceUrl,
+  sourceCitation,
   previewUrl,
   previewLabel,
   portraitUrl,
@@ -83,6 +87,23 @@ export function AncestorCard({
         </div>
       ) : null}
       {attachedDocument ? <div className="text-xs text-slate-500">Attached record: {attachedDocument}</div> : null}
+      {(sourceUrl || sourceCitation) ? (
+        <div className="rounded-2xl border border-white/10 bg-black/20 p-3 text-xs leading-5 text-slate-300">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Source citation</div>
+          {sourceUrl ? (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-flex text-amber-200/80 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+            >
+              {sourceCitation ?? sourceUrl}
+            </a>
+          ) : (
+            <div className="mt-1 text-slate-100">{sourceCitation}</div>
+          )}
+        </div>
+      ) : null}
       <div className="flex flex-wrap gap-2 pt-1">
         <Link
           href={`/ancestors/${id}`}

@@ -29,6 +29,8 @@ function matchesQuery(person: AncestorCardProps, query: string) {
     person.keyEvent,
     person.confidence,
     person.attachedDocument,
+    person.sourceUrl,
+    person.sourceCitation,
     ...(person.tags ?? []),
     ...(person.timeline ?? []).flatMap((entry) => [entry.title, entry.date, entry.summary, entry.place, entry.confidence, entry.linkedDocumentId]),
     ...(person.evidenceSummary ?? []),
