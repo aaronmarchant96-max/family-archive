@@ -22,6 +22,8 @@ export interface AncestorCardProps {
   confidence: string;
   tags?: string[];
   attachedDocument?: string;
+  portraitUrl?: string;
+  portraitCaption?: string;
   timeline?: TimelineEntry[];
   evidenceSummary?: string[];
   sarLineStatus?: {
@@ -46,8 +48,10 @@ export function AncestorCard({
   attachedDocument,
   previewUrl,
   previewLabel,
+  portraitUrl,
+  portraitCaption,
   onPreview
-}: AncestorCardProps & { previewUrl?: string; previewLabel?: string; onPreview?: () => void }) {
+}: AncestorCardProps & { previewUrl?: string; previewLabel?: string; portraitUrl?: string; portraitCaption?: string; onPreview?: () => void }) {
   return (
     <article className="archive-panel flex flex-col gap-3 transition hover:border-amber-300/40 hover:bg-white/6">
       <div className="flex items-start justify-between gap-3">
@@ -55,7 +59,11 @@ export function AncestorCard({
         <ConfidenceBadge label={confidence} />
       </div>
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
-        <SourcePreview src={previewUrl} title={previewLabel ?? attachedDocument ?? name} className="h-44 w-full" />
+        <SourcePreview
+          src={portraitUrl ?? previewUrl}
+          title={portraitCaption ?? previewLabel ?? attachedDocument ?? name}
+          className="h-44 w-full"
+        />
       </div>
       <h3 className="text-lg font-semibold text-white">{name}</h3>
       <div className="text-sm text-slate-300">{lifespan}</div>

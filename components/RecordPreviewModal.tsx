@@ -86,6 +86,17 @@ export function RecordPreviewModal({
                 value={item.person.tags?.length ? item.person.tags.join(", ") : "Not listed"}
                 wide
               />
+              {item.person.portraitUrl ? (
+                <div className="md:col-span-2 rounded-2xl border border-white/10 bg-black/20 p-3">
+                  <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+                    Portrait
+                  </div>
+                  <SourcePreview src={item.person.portraitUrl} title={item.person.portraitCaption ?? item.person.name} className="h-[28rem] w-full rounded-xl" />
+                  {item.person.portraitCaption ? (
+                    <div className="mt-2 text-xs text-slate-500">{item.person.portraitCaption}</div>
+                  ) : null}
+                </div>
+              ) : null}
             </>
           ) : (
             <>

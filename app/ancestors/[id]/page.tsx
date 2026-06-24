@@ -41,6 +41,15 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
       <p className="max-w-2xl text-sm leading-6 text-slate-300">
         This is a placeholder detail page for future family notes, attached records, and timeline views.
       </p>
+      {person.portraitUrl ? (
+        <section className="archive-panel space-y-4">
+          <div className="archive-section__title">Portrait</div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+            <SourcePreview src={person.portraitUrl} title={person.portraitCaption ?? person.name} className="h-[28rem] w-full" />
+          </div>
+          {person.portraitCaption ? <div className="text-xs leading-5 text-slate-500">{person.portraitCaption}</div> : null}
+        </section>
+      ) : null}
       {attachedRecord?.previewUrl ? (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Primary source image</div>
