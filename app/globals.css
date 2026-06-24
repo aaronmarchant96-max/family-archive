@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  background:
+    radial-gradient(circle at top, rgba(148, 163, 184, 0.09), transparent 28%),
+    linear-gradient(180deg, #061019 0%, #07131c 55%, #050b12 100%);
+}
+
+a {
+  @apply transition-colors;
+}
+
+.archive-shell {
+  @apply mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-8 sm:px-8 lg:px-10;
+}
+
+.archive-header {
+  @apply mb-8 flex flex-col gap-4 border-b border-white/10 pb-6 md:flex-row md:items-center md:justify-between;
+}
+
+.archive-brand {
+  @apply flex flex-col gap-2;
+}
+
+.archive-brand__title {
+  @apply text-3xl font-semibold tracking-tight text-white sm:text-4xl;
+}
+
+.archive-brand__subtitle {
+  @apply max-w-2xl text-sm leading-6 text-slate-300;
+}
+
+.archive-nav {
+  @apply flex flex-wrap gap-2;
+}
+
+.archive-nav__link {
+  @apply rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 hover:border-white/20 hover:bg-white/10;
+}
+
+.archive-nav__link--active {
+  @apply border-amber-300/40 bg-amber-300/10 text-amber-100;
+}
+
+.archive-main {
+  @apply flex-1 pb-10;
+}
+
+.archive-hero {
+  @apply grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/20 backdrop-blur md:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)];
+}
+
+.archive-hero__copy {
+  @apply flex flex-col gap-3;
+}
+
+.archive-kicker {
+  @apply text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/70;
+}
+
+.archive-hero h1 {
+  @apply text-4xl font-semibold tracking-tight text-white sm:text-5xl;
+}
+
+.archive-hero p {
+  @apply max-w-2xl text-base leading-7 text-slate-300;
+}
+
+.archive-badge-row {
+  @apply flex flex-wrap gap-2 pt-2;
+}
+
+.archive-badge {
+  @apply rounded-full border border-white/10 bg-slate-900/70 px-3 py-1 text-xs text-slate-300;
+}
+
+.archive-panel {
+  @apply rounded-3xl border border-white/10 bg-slate-900/60 p-5 shadow-lg shadow-black/10;
+}
+
+.archive-section {
+  @apply mt-8;
+}
+
+.archive-section__head {
+  @apply mb-4 flex items-end justify-between gap-4;
+}
+
+.archive-section__title {
+  @apply text-xl font-semibold tracking-tight text-white;
+}
+
+.archive-section__copy {
+  @apply max-w-2xl text-sm leading-6 text-slate-400;
+}
+
+.archive-grid {
+  @apply grid gap-4 md:grid-cols-2 xl:grid-cols-3;
+}
+
+.archive-empty {
+  @apply rounded-2xl border border-dashed border-white/10 bg-white/5 p-5 text-sm leading-6 text-slate-400;
+}
+
+.archive-footer {
+  @apply border-t border-white/10 py-6 text-xs text-slate-500;
+}

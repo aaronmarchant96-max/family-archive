@@ -1,0 +1,186 @@
+[
+  {
+    "id": "charles-dyer",
+    "name": "Charles Dyer",
+    "lifespan": "Revolutionary War era",
+    "branch": "Dyer",
+    "summary": "Confirmed direct Revolutionary War ancestor.",
+    "keyEvent": "Honorably discharged September 25, 1778 after service in the 12th Virginia Regiment at Fort Randolph.",
+    "confidence": "Confirmed",
+    "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
+    "attachedDocument": "charles dyer.pdf",
+    "timeline": [
+      {
+        "title": "Revolutionary War service",
+        "date": "1770s",
+        "summary": "Served in Captain William McKee’s company of the 12th Virginia Regiment.",
+        "confidence": "Confirmed",
+        "linkedDocumentId": "charles-dyer-discharge"
+      },
+      {
+        "title": "Fort Randolph discharge",
+        "date": "September 25, 1778",
+        "place": "Fort Randolph",
+        "summary": "Honorably discharged after service in the 12th Virginia Regiment.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "charles-dyer-discharge"
+      },
+      {
+        "title": "Direct family line preserved",
+        "date": "Later generations",
+        "summary": "Charles Dyer’s direct descent through Jonathan Dyer, George Washington Dyer, Nancy Ann Dyer, and the Edwards/Moore/Marchant line is supported by family records, Anne’s book, and the assembled proof chain.",
+        "confidence": "Confirmed"
+      }
+    ],
+    "sarLineStatus": {
+      "patriotAncestor": "Charles Dyer",
+      "service": "12th Virginia Regiment",
+      "keyRecord": "September 25, 1778 discharge at Fort Randolph",
+      "status": "Confirmed direct Patriot line",
+      "note": "Proof packet in progress. SAR registrar review is still required for formal acceptance."
+    }
+  },
+  {
+    "id": "george-washington-dyer",
+    "name": "George Washington Dyer",
+    "lifespan": "Civil War era",
+    "branch": "Dyer",
+    "summary": "Direct ancestor and Union Army veteran.",
+    "keyEvent": "Served with the First Oregon Infantry in 1864.",
+    "confidence": "Confirmed",
+    "tags": ["Civil War", "First Oregon Infantry"],
+    "attachedDocument": "Dyer George W - Page 10.pdf",
+    "timeline": [
+      {
+        "title": "Oregon service",
+        "date": "1864",
+        "summary": "Served with the First Oregon Infantry during the Civil War.",
+        "confidence": "Confirmed",
+        "linkedDocumentId": "george-washington-dyer-military-record"
+      },
+      {
+        "title": "Military record",
+        "date": "1864",
+        "summary": "Existing military record identifies George W. Dyer in connection with the First Oregon Infantry.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-military-record"
+      },
+      {
+        "title": "Direct Dyer line",
+        "date": "Later generations",
+        "summary": "George Washington Dyer stands in the direct line from Revolutionary War veteran Charles Dyer through Jonathan Dyer, then forward through Nancy Ann Dyer and the Edwards, Moore, and Marchant families.",
+        "confidence": "Confirmed"
+      }
+    ],
+    "evidenceSummary": [
+      "Direct ancestor in the Dyer line",
+      "Civil War-era Oregon service",
+      "Unit: First Oregon Infantry",
+      "Key document: Dyer George W - Page 10.pdf",
+      "Status: Confirmed military record",
+      "Research note: Reported Indian War service is not yet treated as confirmed and remains separate until independently documented."
+    ]
+  },
+  {
+    "id": "william-moore",
+    "name": "William Moore",
+    "lifespan": "Mid-19th century",
+    "branch": "Moore",
+    "summary": "Painter of Springwell Street, Ballymena, County Antrim.",
+    "keyEvent": "Married Isabella Law on March 29, 1846.",
+    "confidence": "Confirmed",
+    "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
+    "attachedDocument": "real certifcate .pdf",
+    "timeline": [
+      {
+        "title": "Marriage to Isabella Law",
+        "date": "March 29, 1846",
+        "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+        "summary": "Married Isabella Law in the parish record.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "william-isabella-marriage-certificate"
+      }
+    ],
+    "evidenceSummary": [
+      "Direct family line through the Ballymena Moore record set",
+      "Painter in Springwell Street, Ballymena, County Antrim",
+      "Marriage dated March 29, 1846",
+      "Key document: real certifcate .pdf",
+      "Status: Confirmed family record",
+      "Research note: Additional family context is being organized into the archive packet."
+    ]
+  },
+  {
+    "id": "isabella-law",
+    "name": "Isabella Law",
+    "lifespan": "Mid-19th century",
+    "branch": "Law",
+    "summary": "Lived on Bridge Street, Ballymena, County Antrim. Daughter of Patrick Law, a brassfounder.",
+    "keyEvent": "Married William Moore on March 29, 1846.",
+    "confidence": "Confirmed",
+    "tags": ["Ballymena", "Bridge Street", "Brassfounder family"],
+    "attachedDocument": "real certifcate .pdf",
+    "timeline": [
+      {
+        "title": "Marriage to William Moore",
+        "date": "March 29, 1846",
+        "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+        "summary": "Married William Moore in the parish record.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "william-isabella-marriage-certificate"
+      }
+    ],
+    "evidenceSummary": [
+      "Direct family line through the Ballymena Moore record set",
+      "Resident of Bridge Street, Ballymena, County Antrim",
+      "Daughter of Patrick Law, a brassfounder",
+      "Marriage dated March 29, 1846",
+      "Key document: real certifcate .pdf",
+      "Status: Confirmed family record"
+    ]
+  },
+  {
+    "id": "armina-ramsey",
+    "name": "Armina Ramsey",
+    "lifespan": "1826-1923",
+    "branch": "Ramsey",
+    "summary": "Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
+    "keyEvent": "Married Anderson Edwards in 1840 and later lived in Iowa and Washington.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
+    "attachedDocument": "Obituary - Armina Ramsey.pdf",
+    "timeline": [
+      {
+        "title": "Marriage to Anderson Edwards",
+        "date": "1840",
+        "summary": "United in marriage to Anderson Edwards in the year of 1840.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "armina-ramsey-obituary"
+      },
+      {
+        "title": "Decatur Township household",
+        "date": "1860",
+        "place": "Decatur Township, Decatur County, Iowa",
+        "summary": "Appears in the 1860 U.S. census as part of the Ramsey/Edwards household cluster relevant to the family line.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-township-1860-census"
+      },
+      {
+        "title": "Obituary record",
+        "date": "July 26, 1923",
+        "place": "Pine City, Washington",
+        "summary": "The obituary records her birth in 1826, later moves, children, and burial beside her husband.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "armina-ramsey-obituary"
+      }
+    ],
+    "evidenceSummary": [
+      "Edwards/Ramsey line matriarch",
+      "Marriage to Anderson Edwards in 1840",
+      "Appears in the 1860 Decatur Township census trail",
+      "Obituary dated July 26, 1923",
+      "Key document: Obituary - Armina Ramsey.pdf",
+      "Supporting census record: censustom.pdf"
+    ]
+  }
+]

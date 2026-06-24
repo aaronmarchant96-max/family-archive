@@ -1,0 +1,72 @@
+[
+  {
+    "id": "charles-dyer-discharge",
+    "filename": "charles dyer.pdf",
+    "type": "Revolutionary War discharge record",
+    "date": "1778-09-25",
+    "previewUrl": "",
+    "confidence": "Primary Source",
+    "people": ["Charles Dyer"],
+    "place": "Fort Randolph",
+    "whatItProves": "Charles Dyer’s service and discharge from the 12th Virginia Regiment; supports the SAR proof chain.",
+    "notes": "Private scan stored separately. Use with the ancestor record and other proof materials."
+  },
+  {
+    "id": "george-washington-dyer-military-record",
+    "filename": "Dyer George W - Page 10.pdf",
+    "type": "Civil War military record",
+    "date": "1864",
+    "previewUrl": "",
+    "confidence": "Strong Evidence",
+    "people": ["George Washington Dyer"],
+    "whatItProves": "Service with the First Oregon Infantry in 1864.",
+    "notes": "Metadata only for now. Original record image stays private."
+  },
+  {
+    "id": "william-isabella-marriage-certificate",
+    "filename": "real certifcate .pdf",
+    "type": "Marriage certificate",
+    "date": "1846-03-29",
+    "previewUrl": "",
+    "confidence": "Primary Source",
+    "people": ["William Moore", "Isabella Law"],
+    "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+    "whatItProves": "Marriage, addresses, occupations, and parents.",
+    "notes": "Certified copy for the archive packet. Keep the scan outside public access."
+  },
+  {
+    "id": "andrew-moore-birth-registration",
+    "filename": "andrewmoore.pdf",
+    "type": "Birth registration",
+    "date": "Date not yet confirmed",
+    "previewUrl": "",
+    "confidence": "Needs Review",
+    "people": ["Andrew Moore"],
+    "whatItProves": "Potential link to the William Moore and Isabella Law family packet.",
+    "notes": "Review against the full family packet before treating as confirmed."
+  },
+  {
+    "id": "armina-ramsey-obituary",
+    "filename": "Obituary - Armina Ramsey.pdf",
+    "type": "Obituary",
+    "date": "1923-07-26",
+    "previewUrl": "",
+    "confidence": "Strong Evidence",
+    "people": ["Armina Ramsey", "Anderson Edwards"],
+    "place": "Pine City, Washington",
+    "whatItProves": "Armina Ramsey Edwards' obituary provides family memory and documented biographical details, including birth, marriage, children, moves to Iowa and Washington, and burial details.",
+    "notes": "Useful collateral source for the Edwards/Ramsey line. Keep the obituary separate from primary civil records."
+  },
+  {
+    "id": "decatur-township-1860-census",
+    "filename": "censustom.pdf",
+    "type": "U.S. census page",
+    "date": "1860-06-27",
+    "previewUrl": "",
+    "confidence": "Primary Source",
+    "people": ["Armina Ramsey", "Anderson Edwards"],
+    "place": "Decatur Township, Decatur County, Iowa",
+    "whatItProves": "A Decatur Township census page capturing Ramsey/Edwards household entries relevant to the Armina Ramsey research line.",
+    "notes": "FamilySearch export, page 47 of 537 in the source collection. Metadata only; no public file exposure."
+  }
+]

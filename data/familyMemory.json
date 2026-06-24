@@ -1,0 +1,35 @@
+[
+  {
+    "id": "kansas-city-story",
+    "title": "Kansas City story",
+    "sharedBy": "Family memory",
+    "era": "Passed down over generations",
+    "mode": "Passed down",
+    "relatedPeople": ["Marchant family"],
+    "relatedPlaces": ["Kansas City"],
+    "confidence": "Family Tradition",
+    "notes": "Useful as context, but keep separate from sourced records until a document or recorded testimony is added."
+  },
+  {
+    "id": "annes-book-notes",
+    "title": "Anne's book notes",
+    "sharedBy": "Anne",
+    "era": "Research years",
+    "mode": "Supported by another record",
+    "relatedPeople": ["Edwards", "Moore", "Marchant"],
+    "relatedPlaces": ["Family archive"],
+    "confidence": "Strong Evidence",
+    "notes": "Use as a guide to the archive structure, then verify each claim against a scan, certificate, census, or letter."
+  },
+  {
+    "id": "red-book-personal-material",
+    "title": "Red Book personal material",
+    "sharedBy": "Family notebook / Red Book",
+    "era": "Later family recording years",
+    "mode": "Partly supported",
+    "relatedPeople": ["Marchant line", "Ramsey line"],
+    "relatedPlaces": ["Family archive"],
+    "confidence": "Needs Review",
+    "notes": "Separate story material from evidence-grade records when you add this to the archive."
+  }
+]
