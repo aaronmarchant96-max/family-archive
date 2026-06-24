@@ -6,6 +6,7 @@ import { ConfidenceBadge } from "../../../components/ConfidenceBadge";
 import { RecordFrame } from "../../../components/RecordFrame";
 import type { DocumentCardProps } from "../../../components/DocumentCard";
 import type { AncestorCardProps } from "../../../components/AncestorCard";
+import { SourcePreview } from "../../../components/SourcePreview";
 
 const documents = documentsData as DocumentCardProps[];
 const people = peopleData as AncestorCardProps[];
@@ -42,9 +43,11 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
 
   const notes =
     document.notes ??
-    "Metadata only. The original scan is stored separately and is not publicly exposed from this archive.";
+    "The source scan is shown inline on this private record page and is not exposed as a public download.";
 
   const isCharlesDyer = document.filename.toLowerCase() === "charles-dyer.pdf";
+  const sourceUrl = (document as DocumentCardProps & { sourceUrl?: string }).sourceUrl;
+  const sourceCitation = (document as DocumentCardProps & { sourceCitation?: string }).sourceCitation;
 
   return (
     <section className="flex flex-col gap-6">
@@ -80,8 +83,28 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
           </div>
           <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
             <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Private note</div>
-            <div className="mt-1 text-slate-100">Original scan stored separately. No public file URL is exposed.</div>
+            <div className="mt-1 text-slate-100">
+              Primary source scan is shown on this page from the archive workspace. The file stays in the private
+              archive set.
+            </div>
           </div>
+          {(sourceUrl || sourceCitation) ? (
+            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300 md:col-span-2">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Source citation</div>
+              {sourceUrl ? (
+                <a
+                  href={sourceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 inline-flex text-slate-100 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+                >
+                  {sourceCitation ?? sourceUrl}
+                </a>
+              ) : (
+                <div className="mt-1 text-slate-100">{sourceCitation}</div>
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
 
@@ -90,12 +113,22 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
           `Filename: ${document.filename}`,
           `Linked people: ${document.people.join(", ") || "Not listed"}`,
           document.place ? `Place: ${document.place}` : "Place: not listed",
-          document.date ? `Date: ${document.date}` : "Date: not listed"
+          document.date ? `Date: ${document.date}` : "Date: not listed",
+          sourceCitation ? `Source: ${sourceCitation}` : sourceUrl ? `Source: ${sourceUrl}` : "Source: not listed"
         ].join(" · ")}
         claim={document.whatItProves}
         confidence={document.confidence}
         narrative={notes}
       />
+
+      {document.previewUrl ? (
+        <section className="archive-panel space-y-4">
+          <div className="archive-section__title">Primary source scan</div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+            <SourcePreview src={document.previewUrl} title={document.filename} className="h-[34rem] w-full" />
+          </div>
+        </section>
+      ) : null}
 
       <div className="grid gap-6 lg:grid-cols-[minmax(0,1.4fr)_minmax(320px,0.6fr)]">
         <div className="flex flex-col gap-6">
@@ -125,8 +158,11 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
               <ul className="space-y-3 text-sm leading-6 text-slate-300">
                 <li>Primary Revolutionary War discharge record</li>
                 <li>Charles Dyer was discharged September 25, 1778</li>
+                <li>Discharged at Fort Randolph [at Point Pleasant, now WV]</li>
+                <li>Bearer was Charles Dyer, soldier in Captain William McKee&apos;s company of the 12th Virginia Regiment</li>
+                <li>The discharge says his enlistment time had fully expired and that he had served upwards of two years</li>
                 <li>Service connected to the 12th Virginia Regiment</li>
-                <li>Fort Randolph connection</li>
+                <li>1855 county affidavit names Jonathan Dyer among the heirs and identifies the discharge certificate as Charles Dyer&apos;s</li>
                 <li>Supports Charles Dyer&apos;s confirmed military service and the Marchant Dyer SAR proof chain</li>
               </ul>
             </section>
@@ -136,11 +172,11 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
         <aside className="archive-panel space-y-4">
           <div className="archive-section__title">Private / local-only notice</div>
           <p className="text-sm leading-6 text-slate-300">
-            The original scan is stored separately in the private archive workspace and is not publicly exposed. This
-            page shows metadata only.
+            The archive keeps the source file with the record so you can inspect the scan and the metadata together.
+            The file is still part of the private family archive set.
           </p>
           <div className="rounded-2xl border border-dashed border-white/10 bg-white/5 p-4 text-sm leading-6 text-slate-400">
-            This is a record page, not a public document viewer.
+            This is a record page with an embedded source scan, not a public download list.
           </div>
           <Link className="archive-nav__link inline-flex" href="/documents">
             Back to Documents index

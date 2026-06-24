@@ -4,6 +4,14 @@ import { useMemo, useState } from "react";
 import { AncestorCard, type AncestorCardProps } from "./AncestorCard";
 import { Chronology, sortChronologyEntries } from "./Chronology";
 import { RecordPreviewModal } from "./RecordPreviewModal";
+import documentsData from "../data/documents.json";
+
+const documents = documentsData as Array<{ filename: string; previewUrl?: string }>;
+
+function findPreviewUrl(person: AncestorCardProps) {
+  const match = documents.find((document) => document.filename.toLowerCase() === person.attachedDocument?.toLowerCase());
+  return match?.previewUrl;
+}
 
 type ViewMode = "cards" | "timeline";
 
@@ -43,6 +51,16 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
     const normalized = query.trim().toLowerCase();
     return people.filter((person) => matchesQuery(person, normalized));
   }, [people, query]);
+
+  const peopleWithPreviews = useMemo(
+    () =>
+      filteredPeople.map((person) => ({
+        ...person,
+        previewUrl: findPreviewUrl(person),
+        previewLabel: person.attachedDocument ?? person.name
+      })),
+    [filteredPeople]
+  );
 
   const chronologyEntries = useMemo(() => {
     return sortChronologyEntries(
@@ -113,8 +131,8 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
 
       {viewMode === "cards" ? (
         <div className="archive-grid">
-          {filteredPeople.length ? (
-            filteredPeople.map((person) => (
+          {peopleWithPreviews.length ? (
+            peopleWithPreviews.map((person) => (
               <AncestorCard key={person.id} {...person} onPreview={() => setPreviewPerson(person)} />
             ))
           ) : (

@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ConfidenceBadge } from "./ConfidenceBadge";
+import { SourcePreview } from "./SourcePreview";
 
 export interface DocumentCardProps {
   id: string;
@@ -8,6 +8,8 @@ export interface DocumentCardProps {
   type: string;
   date: string;
   era?: string;
+  sourceUrl?: string;
+  sourceCitation?: string;
   previewUrl: string;
   confidence: string;
   people: string[];
@@ -22,6 +24,8 @@ export function DocumentCard({
   type,
   date,
   era,
+  sourceUrl,
+  sourceCitation,
   previewUrl,
   confidence,
   people,
@@ -37,19 +41,30 @@ export function DocumentCard({
         <ConfidenceBadge label={confidence} />
       </div>
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
-        {previewUrl ? (
-          <Image src={previewUrl} alt={filename} width={800} height={440} className="h-44 w-full object-cover" />
-        ) : (
-          <div className="flex h-44 items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 text-sm text-slate-500">
-            Private record
-          </div>
-        )}
+        <SourcePreview src={previewUrl} title={filename} className="h-44 w-full" />
       </div>
       <h3 className="text-lg font-semibold text-white">{filename}</h3>
       <div className="text-sm text-slate-300">{date}</div>
       {era ? <div className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">{era}</div> : null}
       {people.length ? <div className="text-sm text-slate-400">People: {people.join(", ")}</div> : null}
       {place ? <div className="text-sm text-slate-400">Place: {place}</div> : null}
+      {(sourceUrl || sourceCitation) ? (
+        <div className="rounded-2xl border border-white/10 bg-black/20 p-3 text-xs leading-5 text-slate-300">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Source citation</div>
+          {sourceUrl ? (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-1 inline-flex text-amber-200/80 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+            >
+              {sourceCitation ?? sourceUrl}
+            </a>
+          ) : (
+            <div className="mt-1 text-slate-100">{sourceCitation}</div>
+          )}
+        </div>
+      ) : null}
       <div className="rounded-2xl border border-amber-300/15 bg-amber-300/5 p-3 text-sm text-slate-300">
         <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-100/80">What it proves</div>
         <div className="mt-1 leading-6 text-slate-100">{whatItProves}</div>

@@ -5,12 +5,14 @@
     "type": "Revolutionary War discharge record",
     "date": "1778-09-25",
     "era": "Revolutionary War",
-    "previewUrl": "",
+    "sourceUrl": "https://revwarapps.org/r3176.pdf",
+    "sourceCitation": "Southern Campaign American Revolution Pension Statements & Rosters, Pension Application of Charles Dyer R3176, transcribed and annotated by C. Leon Harris.",
+    "previewUrl": "/documents/charles-dyer.pdf",
     "confidence": "Primary Source",
     "people": ["Charles Dyer"],
     "place": "Fort Randolph",
-    "whatItProves": "Charles Dyer’s service and discharge from the 12th Virginia Regiment; supports the SAR proof chain.",
-    "notes": "Private scan stored separately. Use with the ancestor record and other proof materials."
+    "whatItProves": "Charles Dyer’s discharge at Fort Randolph on September 25, 1778; his service in Captain William McKee’s company of the 12th Virginia Regiment; and the later county affidavit identifying his heirs and confirming the identity of the Revolutionary War pension applicant.",
+    "notes": "Primary source transcript and scan for the discharge record. Later affidavit material in the same transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer."
   },
   {
     "id": "george-washington-dyer-military-record",
@@ -18,7 +20,9 @@
     "type": "Civil War military record",
     "date": "1864",
     "era": "Civil War",
-    "previewUrl": "",
+    "sourceUrl": "https://www.fold3.com/image/115273007/dyer-george-w-page-10-us-civil-war-service-records-cmsr-unionoregon-1861-1865",
+    "sourceCitation": "Fold3 image 115273007, US Civil War Service Records, George W. Dyer, First Oregon Infantry, compiled from NARA carded records.",
+    "previewUrl": "/documents/dyer-george-w-page-10.pdf",
     "confidence": "Strong Evidence",
     "people": ["George Washington Dyer"],
     "whatItProves": "Service with the First Oregon Infantry in 1864.",
@@ -30,12 +34,13 @@
     "type": "Marriage certificate",
     "date": "1846-03-29",
     "era": "1840s Ballymena",
-    "previewUrl": "",
+    "sourceCitation": "Private archive scan of the marriage certificate for William Moore and Isabella Law, March 29, 1846, Kilconriola/Kirkinriola Parish, Ballymena, County Antrim.",
+    "previewUrl": "/documents/real-certificate.pdf",
     "confidence": "Primary Source",
     "people": ["William Moore", "Isabella Law"],
     "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
     "whatItProves": "Marriage, addresses, occupations, and parents.",
-    "notes": "Certified copy for the archive packet. Keep the scan outside public access."
+    "notes": "Certified copy for the archive packet. The scan is shown inline as the primary source record."
   },
   {
     "id": "andrew-moore-birth-registration",
@@ -43,7 +48,8 @@
     "type": "Birth registration",
     "date": "Date not yet confirmed",
     "era": "19th-century Ireland",
-    "previewUrl": "",
+    "sourceCitation": "Private archive scan of Andrew Moore birth registration.",
+    "previewUrl": "/documents/andrew-moore.pdf",
     "confidence": "Needs Review",
     "people": ["Andrew Moore"],
     "whatItProves": "Potential link to the William Moore and Isabella Law family packet.",
@@ -55,7 +61,8 @@
     "type": "Obituary",
     "date": "1923-07-26",
     "era": "20th-century obituary",
-    "previewUrl": "",
+    "sourceCitation": "Private archive scan of the Armina Ramsey Edwards obituary.",
+    "previewUrl": "/documents/obituary-armina-ramsey.pdf",
     "confidence": "Strong Evidence",
     "people": ["Armina Ramsey", "Anderson Edwards"],
     "place": "Pine City, Washington",
@@ -68,11 +75,13 @@
     "type": "U.S. census page",
     "date": "1860-06-27",
     "era": "19th-century census",
-    "previewUrl": "",
+    "sourceUrl": "https://www.familysearch.org/ark:/61903/3:1:33S7-9BSS-ZLC?view=index",
+    "sourceCitation": "\"Decatur, Iowa, United States records,\" images, FamilySearch, image 47 of 537; United States. National Archives and Records Administration. Image Group Number: 005166279.",
+    "previewUrl": "/documents/census-decatur-township.pdf",
     "confidence": "Primary Source",
-    "people": ["Armina Ramsey", "Anderson Edwards"],
+    "people": ["Thomas Ramsey", "Anna Ramsey", "Armina Ramsey", "Anderson Edwards"],
     "place": "Decatur Township, Decatur County, Iowa",
-    "whatItProves": "A Decatur Township census page capturing Ramsey/Edwards household entries relevant to the Armina Ramsey research line.",
-    "notes": "FamilySearch export, page 47 of 537 in the source collection. Metadata only; no public file exposure."
+    "whatItProves": "A Decatur County census page capturing the Thomas Ramsey household and the Ramsey/Edwards household entries relevant to the wider family line.",
+    "notes": "FamilySearch export, page 47 of 537 in the source collection. Private scan plus citation retained in the archive."
   }
 ]

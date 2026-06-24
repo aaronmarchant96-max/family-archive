@@ -10,6 +10,13 @@
     "confidence": "Confirmed",
     "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
     "attachedDocument": "charles-dyer.pdf",
+    "evidenceSummary": [
+      "Discharged at Fort Randolph [at Point Pleasant, now WV] on September 25, 1778",
+      "Served as a soldier in Captain William McKee's company of the 12th Virginia Regiment",
+      "The discharge says his enlistment time had fully expired and that he had served upwards of two years",
+      "A later county settlement record dated December 19, 1854 places a Charles Dyer settlement in the Virginia continental line pay records",
+      "The 1855 county affidavit names Jonathan Dyer among the heirs and identifies Charles Dyer as the Revolutionary War pension applicant"
+    ],
     "timeline": [
       {
         "title": "Revolutionary War service",
@@ -84,15 +91,72 @@
     ]
   },
   {
+    "id": "thomas-ramsey",
+    "name": "Thomas Ramsey",
+    "lifespan": "19th century",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Head of a Ramsey household in the 1860 Decatur County census page.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Anna Ramsey and children.",
+    "confidence": "Primary Source",
+    "tags": ["Ramsey", "Census", "Davis County", "Iowa"],
+    "attachedDocument": "census-decatur-township.pdf",
+    "timeline": [
+      {
+        "title": "1860 census household",
+        "date": "1860",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Listed as head of household with Anna Ramsey and children including Alexander, Henderson, Cowan, Rachel, and William.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-township-1860-census"
+      }
+    ],
+    "evidenceSummary": [
+      "1860 federal census household in Richland Township, Decatur County, Iowa",
+      "Listed with Anna Ramsey and children",
+      "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
+      "Key document: census-decatur-township.pdf",
+      "Status: Primary source household record"
+    ]
+  },
+  {
+    "id": "anna-ramsey",
+    "name": "Anna Ramsey",
+    "lifespan": "19th century",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Wife in the Thomas Ramsey household in the 1860 Decatur County census page.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Thomas Ramsey and children.",
+    "confidence": "Primary Source",
+    "tags": ["Ramsey", "Census", "Iowa"],
+    "attachedDocument": "census-decatur-township.pdf",
+    "timeline": [
+      {
+        "title": "1860 census household",
+        "date": "1860",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Listed in the Ramsey household with Thomas Ramsey and children.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-township-1860-census"
+      }
+    ],
+    "evidenceSummary": [
+      "1860 federal census household in Richland Township, Decatur County, Iowa",
+      "Listed with Thomas Ramsey and children",
+      "Key document: census-decatur-township.pdf",
+      "Status: Primary source household record"
+    ]
+  },
+  {
     "id": "william-moore",
     "name": "William Moore",
     "lifespan": "Mid-19th century",
     "era": "1840s Ballymena",
     "branch": "Moore",
-    "summary": "Painter of Springwell Street, Ballymena, County Antrim.",
+    "summary": "Printer of Springwell Street, Ballymena, County Antrim.",
     "keyEvent": "Married Isabella Law on March 29, 1846.",
     "confidence": "Confirmed",
-    "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
+    "tags": ["Printer", "Ballymena", "Marriage record", "Moore line"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -106,7 +170,7 @@
     ],
     "evidenceSummary": [
       "Direct family line through the Ballymena Moore record set",
-      "Painter in Springwell Street, Ballymena, County Antrim",
+      "Printer in Springwell Street, Ballymena, County Antrim",
       "Marriage dated March 29, 1846",
       "Key document: real-certificate.pdf",
       "Status: Confirmed family record",

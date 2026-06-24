@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import type { AncestorCardProps } from "./AncestorCard";
 import type { DocumentCardProps } from "./DocumentCard";
+import { SourcePreview } from "./SourcePreview";
+import documentsData from "../data/documents.json";
+
+const documents = documentsData as Array<{ filename: string; previewUrl?: string; id: string }>;
 
 type PreviewItem =
   | { kind: "ancestor"; person: AncestorCardProps }
@@ -41,6 +45,10 @@ export function RecordPreviewModal({
 
   const title = item.kind === "ancestor" ? item.person.name : item.document.filename;
   const confidence = item.kind === "ancestor" ? item.person.confidence : item.document.confidence;
+  const attachedDocument = item.kind === "ancestor" ? item.person.attachedDocument : undefined;
+  const attachedSource = attachedDocument
+    ? documents.find((document) => document.filename.toLowerCase() === attachedDocument.toLowerCase())
+    : undefined;
 
   return (
     <div
@@ -92,16 +100,41 @@ export function RecordPreviewModal({
               />
               <Info label="What it proves" value={item.document.whatItProves} wide />
               <Info label="Notes" value={item.document.notes ?? "Not listed"} wide />
+              <Info
+                label="Source citation"
+                value={
+                  item.document.sourceCitation ??
+                  (item.document.sourceUrl ?? "Not listed")
+                }
+                wide
+              />
             </>
           )}
         </div>
+
+        {item.kind === "document" ? (
+          <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-3">
+            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+              Primary source scan
+            </div>
+            <SourcePreview src={item.document.previewUrl} title={item.document.filename} className="h-[28rem] w-full rounded-xl" />
+          </div>
+        ) : attachedSource?.previewUrl ? (
+          <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-3">
+            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+              Primary source scan
+            </div>
+            <SourcePreview src={attachedSource.previewUrl} title={attachedDocument ?? item.person.name} className="h-[28rem] w-full rounded-xl" />
+          </div>
+        ) : null}
 
         <div className="mt-5 rounded-2xl border border-dashed border-amber-300/20 bg-amber-300/5 p-4 text-sm leading-6 text-slate-300">
           <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-100/80">
             Private / local-only notice
           </div>
           <p className="mt-2">
-            The original scan is stored separately and is not publicly exposed. This preview shows metadata only.
+            The archive keeps the source file with the record. This preview shows the metadata and the source scan
+            together.
           </p>
           <div className="mt-3 flex flex-wrap gap-2">
             <button

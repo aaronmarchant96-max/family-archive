@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ConfidenceBadge } from "./ConfidenceBadge";
+import { SourcePreview } from "./SourcePreview";
 
 export interface TimelineEntry {
   title: string;
@@ -43,13 +44,18 @@ export function AncestorCard({
   confidence,
   tags,
   attachedDocument,
+  previewUrl,
+  previewLabel,
   onPreview
-}: AncestorCardProps & { onPreview?: () => void }) {
+}: AncestorCardProps & { previewUrl?: string; previewLabel?: string; onPreview?: () => void }) {
   return (
     <article className="archive-panel flex flex-col gap-3 transition hover:border-amber-300/40 hover:bg-white/6">
       <div className="flex items-start justify-between gap-3">
         <div className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/70">{branch}</div>
         <ConfidenceBadge label={confidence} />
+      </div>
+      <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+        <SourcePreview src={previewUrl} title={previewLabel ?? attachedDocument ?? name} className="h-44 w-full" />
       </div>
       <h3 className="text-lg font-semibold text-white">{name}</h3>
       <div className="text-sm text-slate-300">{lifespan}</div>

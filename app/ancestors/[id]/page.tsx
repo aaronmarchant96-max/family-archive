@@ -1,10 +1,13 @@
 import Link from "next/link";
 import peopleData from "../../../data/people.json";
+import documentsData from "../../../data/documents.json";
 import type { AncestorCardProps } from "../../../components/AncestorCard";
 import { Timeline } from "../../../components/Timeline";
 import { RecordFrame } from "../../../components/RecordFrame";
+import { SourcePreview } from "../../../components/SourcePreview";
 
 const people = peopleData as AncestorCardProps[];
+const documents = documentsData as Array<{ id: string; filename: string; previewUrl?: string; sourceCitation?: string }>;
 
 export function generateStaticParams() {
   return people.map((person) => ({ id: person.id }));
@@ -13,6 +16,9 @@ export function generateStaticParams() {
 export default function AncestorPreviewPage({ params }: { params: { id: string } }) {
   const person = people.find((entry) => entry.id === params.id);
   const isCharlesDyer = person?.id === "charles-dyer";
+  const attachedRecord = person?.attachedDocument
+    ? documents.find((document) => document.filename.toLowerCase() === person.attachedDocument?.toLowerCase())
+    : undefined;
 
   if (!person) {
     return (
@@ -35,6 +41,21 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
       <p className="max-w-2xl text-sm leading-6 text-slate-300">
         This is a placeholder detail page for future family notes, attached records, and timeline views.
       </p>
+      {attachedRecord?.previewUrl ? (
+        <section className="archive-panel space-y-4">
+          <div className="archive-section__title">Primary source image</div>
+          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+            <SourcePreview
+              src={attachedRecord.previewUrl}
+              title={attachedRecord.filename}
+              className="h-[24rem] w-full"
+            />
+          </div>
+          <div className="text-xs leading-5 text-slate-500">
+            Source file: {attachedRecord.filename}
+          </div>
+        </section>
+      ) : null}
       <RecordFrame
         evidence={[
           person.attachedDocument ? `Attached record: ${person.attachedDocument}` : "Attached record: not listed",

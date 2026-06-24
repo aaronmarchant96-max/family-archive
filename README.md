@@ -16,5 +16,5 @@ npm run dev
 ## Notes
 
 - This archive is intended for private family research and metadata-first record keeping.
-- Document records are metadata only; original scans are stored separately and are not publicly exposed in the app.
+- Document records include inline source scans and visible source citations on the private record pages and preview cards. The archive stays private, and the original scans are not exposed as public downloads.
 - Confidence labels are used to separate confirmed records from family memory and items that still need proof.
