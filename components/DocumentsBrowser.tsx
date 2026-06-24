@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { DocumentCard, type DocumentCardProps } from "./DocumentCard";
 import { Chronology, sortChronologyEntries } from "./Chronology";
+import { RecordPreviewModal } from "./RecordPreviewModal";
 
 type ViewMode = "cards" | "timeline";
 
@@ -32,6 +33,7 @@ function matchesQuery(document: DocumentCardProps, query: string) {
 export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[] }) {
   const [query, setQuery] = useState("");
   const [viewMode, setViewMode] = useState<ViewMode>("cards");
+  const [previewDocument, setPreviewDocument] = useState<DocumentCardProps | null>(null);
 
   const filteredDocuments = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -106,7 +108,9 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
       {viewMode === "cards" ? (
         <div className="archive-grid">
           {filteredDocuments.length ? (
-            filteredDocuments.map((document) => <DocumentCard key={document.id} {...document} />)
+            filteredDocuments.map((document) => (
+              <DocumentCard key={document.id} {...document} onPreview={() => setPreviewDocument(document)} />
+            ))
           ) : (
             <div className="archive-empty">
               No document records match this search. Try a filename, era, person, or note keyword.
@@ -125,6 +129,11 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
           />
         </section>
       )}
+
+      <RecordPreviewModal
+        item={previewDocument ? { kind: "document", document: previewDocument } : null}
+        onClose={() => setPreviewDocument(null)}
+      />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 [
   {
     "id": "charles-dyer-discharge",
-    "filename": "charles dyer.pdf",
+    "filename": "charles-dyer.pdf",
     "type": "Revolutionary War discharge record",
     "date": "1778-09-25",
     "era": "Revolutionary War",
@@ -14,7 +14,7 @@
   },
   {
     "id": "george-washington-dyer-military-record",
-    "filename": "Dyer George W - Page 10.pdf",
+    "filename": "dyer-george-w-page-10.pdf",
     "type": "Civil War military record",
     "date": "1864",
     "era": "Civil War",
@@ -26,7 +26,7 @@
   },
   {
     "id": "william-isabella-marriage-certificate",
-    "filename": "real certifcate .pdf",
+    "filename": "real-certificate.pdf",
     "type": "Marriage certificate",
     "date": "1846-03-29",
     "era": "1840s Ballymena",
@@ -39,7 +39,7 @@
   },
   {
     "id": "andrew-moore-birth-registration",
-    "filename": "andrewmoore.pdf",
+    "filename": "andrew-moore.pdf",
     "type": "Birth registration",
     "date": "Date not yet confirmed",
     "era": "19th-century Ireland",
@@ -51,7 +51,7 @@
   },
   {
     "id": "armina-ramsey-obituary",
-    "filename": "Obituary - Armina Ramsey.pdf",
+    "filename": "obituary-armina-ramsey.pdf",
     "type": "Obituary",
     "date": "1923-07-26",
     "era": "20th-century obituary",
@@ -64,7 +64,7 @@
   },
   {
     "id": "decatur-township-1860-census",
-    "filename": "censustom.pdf",
+    "filename": "census-decatur-township.pdf",
     "type": "U.S. census page",
     "date": "1860-06-27",
     "era": "19th-century census",

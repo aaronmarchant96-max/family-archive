@@ -16,9 +16,22 @@ export interface DocumentCardProps {
   notes?: string;
 }
 
-export function DocumentCard({ id, filename, type, date, era, previewUrl, confidence, people, place, whatItProves, notes }: DocumentCardProps) {
+export function DocumentCard({
+  id,
+  filename,
+  type,
+  date,
+  era,
+  previewUrl,
+  confidence,
+  people,
+  place,
+  whatItProves,
+  notes,
+  onPreview
+}: DocumentCardProps & { onPreview?: () => void }) {
   return (
-    <Link href={`/documents/${id}`} className="archive-panel flex flex-col gap-3 transition hover:border-amber-300/40 hover:bg-white/6">
+    <article className="archive-panel flex flex-col gap-3 transition hover:border-amber-300/40 hover:bg-white/6">
       <div className="flex items-start justify-between gap-3">
         <div className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/70">{type}</div>
         <ConfidenceBadge label={confidence} />
@@ -28,7 +41,7 @@ export function DocumentCard({ id, filename, type, date, era, previewUrl, confid
           <Image src={previewUrl} alt={filename} width={800} height={440} className="h-44 w-full object-cover" />
         ) : (
           <div className="flex h-44 items-center justify-center bg-gradient-to-br from-slate-900 to-slate-800 text-sm text-slate-500">
-            Scan preview
+            Private record
           </div>
         )}
       </div>
@@ -42,7 +55,21 @@ export function DocumentCard({ id, filename, type, date, era, previewUrl, confid
         <div className="mt-1 leading-6 text-slate-100">{whatItProves}</div>
       </div>
       {notes ? <div className="text-xs leading-5 text-slate-500">{notes}</div> : null}
-      <div className="text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/60">Open record preview</div>
-    </Link>
+      <div className="flex flex-wrap gap-2 pt-1">
+        <Link
+          href={`/documents/${id}`}
+          className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-200 hover:border-amber-300/30 hover:bg-amber-300/10 hover:text-amber-100"
+        >
+          Open detail
+        </Link>
+        <button
+          type="button"
+          onClick={onPreview}
+          className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/80 hover:border-amber-300/30 hover:bg-amber-300/10 hover:text-amber-100"
+        >
+          Open record preview
+        </button>
+      </div>
+    </article>
   );
 }

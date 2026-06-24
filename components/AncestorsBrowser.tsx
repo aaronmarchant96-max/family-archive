@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { AncestorCard, type AncestorCardProps } from "./AncestorCard";
 import { Chronology, sortChronologyEntries } from "./Chronology";
+import { RecordPreviewModal } from "./RecordPreviewModal";
 
 type ViewMode = "cards" | "timeline";
 
@@ -36,6 +37,7 @@ function matchesQuery(person: AncestorCardProps, query: string) {
 export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
   const [query, setQuery] = useState("");
   const [viewMode, setViewMode] = useState<ViewMode>("cards");
+  const [previewPerson, setPreviewPerson] = useState<AncestorCardProps | null>(null);
 
   const filteredPeople = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -112,7 +114,9 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
       {viewMode === "cards" ? (
         <div className="archive-grid">
           {filteredPeople.length ? (
-            filteredPeople.map((person) => <AncestorCard key={person.id} {...person} />)
+            filteredPeople.map((person) => (
+              <AncestorCard key={person.id} {...person} onPreview={() => setPreviewPerson(person)} />
+            ))
           ) : (
             <div className="archive-empty">
               No ancestor records match this search. Try a branch name, tag, or era like Revolutionary War or Civil
@@ -133,6 +137,11 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
           />
         </section>
       )}
+
+      <RecordPreviewModal
+        item={previewPerson ? { kind: "ancestor", person: previewPerson } : null}
+        onClose={() => setPreviewPerson(null)}
+      />
     </div>
   );
 }

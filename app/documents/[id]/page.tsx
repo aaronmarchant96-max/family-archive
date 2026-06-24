@@ -44,7 +44,7 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
     document.notes ??
     "Metadata only. The original scan is stored separately and is not publicly exposed from this archive.";
 
-  const isCharlesDyer = document.filename.toLowerCase() === "charles dyer.pdf";
+  const isCharlesDyer = document.filename.toLowerCase() === "charles-dyer.pdf";
 
   return (
     <section className="flex flex-col gap-6">

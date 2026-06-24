@@ -9,7 +9,7 @@
     "keyEvent": "Honorably discharged September 25, 1778 after service in the 12th Virginia Regiment at Fort Randolph.",
     "confidence": "Confirmed",
     "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
-    "attachedDocument": "charles dyer.pdf",
+    "attachedDocument": "charles-dyer.pdf",
     "timeline": [
       {
         "title": "Revolutionary War service",
@@ -51,7 +51,7 @@
     "keyEvent": "Served with the First Oregon Infantry in 1864.",
     "confidence": "Confirmed",
     "tags": ["Civil War", "First Oregon Infantry"],
-    "attachedDocument": "Dyer George W - Page 10.pdf",
+    "attachedDocument": "dyer-george-w-page-10.pdf",
     "timeline": [
       {
         "title": "Oregon service",
@@ -78,7 +78,7 @@
       "Direct ancestor in the Dyer line",
       "Civil War-era Oregon service",
       "Unit: First Oregon Infantry",
-      "Key document: Dyer George W - Page 10.pdf",
+      "Key document: dyer-george-w-page-10.pdf",
       "Status: Confirmed military record",
       "Research note: Reported Indian War service is not yet treated as confirmed and remains separate until independently documented."
     ]
@@ -93,7 +93,7 @@
     "keyEvent": "Married Isabella Law on March 29, 1846.",
     "confidence": "Confirmed",
     "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
-    "attachedDocument": "real certifcate .pdf",
+    "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
         "title": "Marriage to Isabella Law",
@@ -108,7 +108,7 @@
       "Direct family line through the Ballymena Moore record set",
       "Painter in Springwell Street, Ballymena, County Antrim",
       "Marriage dated March 29, 1846",
-      "Key document: real certifcate .pdf",
+      "Key document: real-certificate.pdf",
       "Status: Confirmed family record",
       "Research note: Additional family context is being organized into the archive packet."
     ]
@@ -123,7 +123,7 @@
     "keyEvent": "Married William Moore on March 29, 1846.",
     "confidence": "Confirmed",
     "tags": ["Ballymena", "Bridge Street", "Brassfounder family"],
-    "attachedDocument": "real certifcate .pdf",
+    "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
         "title": "Marriage to William Moore",
@@ -139,7 +139,7 @@
       "Resident of Bridge Street, Ballymena, County Antrim",
       "Daughter of Patrick Law, a brassfounder",
       "Marriage dated March 29, 1846",
-      "Key document: real certifcate .pdf",
+      "Key document: real-certificate.pdf",
       "Status: Confirmed family record"
     ]
   },
@@ -153,7 +153,7 @@
     "keyEvent": "Married Anderson Edwards in 1840 and later lived in Iowa and Washington.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
-    "attachedDocument": "Obituary - Armina Ramsey.pdf",
+    "attachedDocument": "obituary-armina-ramsey.pdf",
     "timeline": [
       {
         "title": "Marriage to Anderson Edwards",
@@ -184,8 +184,8 @@
       "Marriage to Anderson Edwards in 1840",
       "Appears in the 1860 Decatur Township census trail",
       "Obituary dated July 26, 1923",
-      "Key document: Obituary - Armina Ramsey.pdf",
-      "Supporting census record: censustom.pdf"
+      "Key document: obituary-armina-ramsey.pdf",
+      "Supporting census record: census-decatur-township.pdf"
     ]
   }
 ]
