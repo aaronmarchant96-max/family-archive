@@ -791,67 +791,70 @@
   {
     "id": "josiah-ramsey-1769",
     "name": "Josiah Ramsey",
-    "lifespan": "1769-1834",
+    "lifespan": "c. 1765/1769-1834",
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
-    "summary": "When Josiah Ramsey was born on 7 October 1769, in Baltimore, Maryland, United States, his father, Josiah Ramsey, was 41 and his mother, Elizabeth Hollis, was 40. He had at least 6 sons and 8 daughters with Elizabeth Cowan. He lived in Claiborne, Tennessee, United States in 1830.",
-    "keyEvent": "FamilySearch profile says he registered for military service in 1782 and died in 1834 in Mulberry Gap, Hancock, Tennessee.",
+    "summary": "Husband of Elizabeth Cowan; strongly supported father of Thomas Ramsey (1799-1872). Birth year and birthplace remain unresolved, and the 1810 Pennsylvania attachment is excluded from the working line.",
+    "keyEvent": "Appears in the Tennessee family trail with Elizabeth Cowan and Thomas Ramsey; candidate father of the Iowa line.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "FamilySearch", "Memorial"],
-    "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
-    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (KP91-M2Y), showing birth on 7 October 1769 in Baltimore, Maryland, spouse Elizabeth Cowan, child Thomas Ramsey, and death in 1834 at Mulberry Gap, Hancock, Tennessee.",
+    "tags": ["Ramsey", "Cowan", "Working Profile", "Research Target", "Generation 3"],
+    "sourceCitation": "Ancestry profile for Josiah (X) Ramsey, c. 1765/1769-1834, spouse Elizabeth Cowan, and child Thomas Ramsey (1799-1872); birth year, birthplace, and exact death trail remain unresolved. The 1810 Pennsylvania attachment is excluded from the working line.",
     "attachedDocument": "josiah-ramsey-family-plaque.jpg",
     "timeline": [
       {
-        "title": "Birth in Baltimore",
-        "date": "7 October 1769",
-        "place": "Baltimore, Maryland, United States",
-        "summary": "FamilySearch profile gives his birth on 7 October 1769 in Baltimore and names his parents as Josiah Ramsey and Elizabeth Hollis.",
+        "title": "Birth uncertain",
+        "date": "c. 1765/1769",
+        "place": "Ireland or Maryland",
+        "summary": "Birth year and birthplace remain unresolved in the current working profile.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Elizabeth Cowan",
+        "date": "c. 1787",
+        "place": "Unknown",
+        "summary": "Marriage to Elizabeth Cowan anchors the Tennessee family group that continues into Thomas Ramsey.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Thomas's birth",
+        "date": "1799",
+        "place": "Tennessee",
+        "summary": "Father of Thomas Ramsey (1799-1872), the line that continues to Armina Ramsey.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
         "title": "Claiborne residence",
         "date": "1830",
-        "place": "Claiborne, Tennessee, United States",
-        "summary": "FamilySearch profile says he lived in Claiborne, Tennessee in 1830.",
+        "place": "Claiborne County, Tennessee",
+        "summary": "Appears in the Tennessee residence trail that aligns with the Ramsey family group.",
         "confidence": "Strong Evidence"
       },
       {
         "title": "Family memorial plaque",
         "date": "1993",
         "place": "Ramsey family memorial site",
-        "summary": "The memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey.",
+        "summary": "The memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey (1799-1872).",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
-        "title": "Military service record",
-        "date": "16 August 1782",
-        "place": "Washington, Beaufort, North Carolina",
-        "summary": "FamilySearch military records show Josiah Ramsey with a service entry on 16 August 1782.",
-        "confidence": "Primary Source",
-        "linkedDocumentId": "josiah-ramsey-1782-military-service"
-      },
-      {
-        "title": "Death in Hancock County",
+        "title": "Death",
         "date": "1834",
-        "place": "Mulberry Gap, Hancock, Tennessee, United States",
-        "summary": "FamilySearch profile says he died in 1834 in Mulberry Gap, Hancock, Tennessee, at age 65, and was buried in Hancock, Tennessee.",
+        "place": "Mulberry Gap, Hancock County, Tennessee",
+        "summary": "Death in 1834 remains part of the working profile, but the exact contemporary record still needs to be bridged.",
         "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "FamilySearch profile ID: KP91-M2Y",
-      "Born 7 October 1769 in Baltimore, Maryland, United States",
-      "Parents named as Josiah Ramsey and Elizabeth Hollis",
+      "Husband of Elizabeth Cowan",
       "Spouse: Elizabeth Cowan",
-      "At least 6 sons and 8 daughters",
-      "Lived in Claiborne, Tennessee in 1830",
-      "Military service registration in 1782",
-      "Died in 1834 in Mulberry Gap, Hancock, Tennessee, and was buried in Hancock, Tennessee",
-      "Child Thomas Ramsey (1807-1872)",
-      "Family plaque and grave marker are supporting memorial records",
-      "The memorial inscription birth year conflicts with the FamilySearch profile and should stay separate as a memorial source"
+      "Strongly supported father of Thomas Ramsey (1799-1872)",
+      "Birth year and birthplace unresolved",
+      "1810 Pennsylvania attachment excluded from the working line",
+      "Tennessee residence trail",
+      "Family memorial plaque supports the family group",
+      "Open questions: exact birth year/place, exact military identity, and a contemporary probate/deed bridge"
     ]
   },
   {

@@ -148,20 +148,21 @@ describe("Archive integrity", () => {
     expect(josiah?.sourceCitation).toMatch(/L5G1-XJ3/i);
   });
 
-  test("Josiah Ramsey 1769 remains separate and carries memorial evidence", () => {
-    const olderJosiah = personById.get("josiah-ramsey-1769");
+  test("Josiah Ramsey working profile stays separate from Josiah Sr.", () => {
+    const workingJosiah = personById.get("josiah-ramsey-1769");
     const elizabeth = personById.get("elizabeth-cowan");
     const serviceRecord = documentById.get("josiah-ramsey-1782-military-service");
     const thomas = personById.get("thomas-ramsey-1799");
 
-    expect(olderJosiah).toBeDefined();
-    expect(olderJosiah?.summary).toMatch(/7 October 1769/i);
-    expect(olderJosiah?.summary).toMatch(/Elizabeth Hollis/i);
-    expect(olderJosiah?.summary).toMatch(/Claiborne, Tennessee/i);
-    expect(olderJosiah?.sourceCitation).toMatch(/KP91-M2Y/i);
-    expect(olderJosiah?.evidenceSummary?.join(" ")).toMatch(/Military service registration in 1782/i);
-    expect(olderJosiah?.attachedDocument).toMatch(/plaque/i);
-    expect(olderJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-1782-military-service")).toBe(true);
+    expect(workingJosiah).toBeDefined();
+    expect(workingJosiah?.lifespan).toMatch(/1765\/1769-1834/i);
+    expect(workingJosiah?.summary).toMatch(/Elizabeth Cowan/i);
+    expect(workingJosiah?.summary).toMatch(/Thomas Ramsey/i);
+    expect(workingJosiah?.summary).not.toMatch(/Elizabeth Hollis/i);
+    expect(workingJosiah?.sourceCitation).toMatch(/Ancestry profile/i);
+    expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/Pennsylvania attachment excluded/i);
+    expect(workingJosiah?.attachedDocument).toMatch(/plaque/i);
+    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
 
     expect(elizabeth).toBeDefined();
     expect(elizabeth?.attachedDocument).toMatch(/grave-marker/i);
