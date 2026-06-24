@@ -175,6 +175,26 @@ describe("Archive integrity", () => {
     expect(thomas?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
   });
 
+  test("Anna Ramsey is linked to the Anna Hopkins FamilySearch evidence", () => {
+    const anna = personById.get("anna-ramsey");
+
+    expect(anna).toBeDefined();
+    expect(anna?.summary).toMatch(/Anna Hopkins/i);
+    expect(anna?.sourceUrl).toMatch(/familysearch\.org/i);
+    expect(anna?.sourceCitation).toMatch(/L5G1-XJ3/i);
+    expect(anna?.timeline?.some((entry) => entry.title === "FamilySearch linkage")).toBe(true);
+  });
+
+  test("Jonathan Dyer is carried as a separate heir record in the Charles Dyer packet", () => {
+    const jonathan = personById.get("jonathan-dyer");
+
+    expect(jonathan).toBeDefined();
+    expect(jonathan?.summary).toMatch(/heir/i);
+    expect(jonathan?.summary).toMatch(/Dyer descent trail/i);
+    expect(jonathan?.timeline?.some((entry) => entry.linkedDocumentId === "charles-dyer-discharge")).toBe(true);
+    expect(jonathan?.sourceCitation).toMatch(/1855 county affidavit/i);
+  });
+
   test("Charles Dyer preserves the 12th Virginia Regiment and Fort Randolph references", () => {
     const charles = personById.get("charles-dyer");
     const discharge = documentById.get("charles-dyer-discharge");

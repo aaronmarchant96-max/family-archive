@@ -135,12 +135,20 @@
     "lifespan": "19th century",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Wife in the Thomas Ramsey household in the 1860 Decatur County census page.",
-    "keyEvent": "Appears in the 1860 Richland Township household with Thomas Ramsey and children.",
+    "summary": "Wife of Thomas Ramsey; identified in the FamilySearch profile for Josiah Ramsey as Anna Hopkins and shown in the 1860 Decatur County census household.",
+    "keyEvent": "Appears in the 1860 Richland Township household with Thomas Ramsey and children; Josiah Ramsey's FamilySearch profile identifies her as Anna Hopkins.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Iowa"],
     "attachedDocument": "census-decatur-township.pdf",
+    "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
+    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), which names Anna Hopkins as Josiah's mother and identifies the family in Bloomfield, Davis County, Iowa in 1850.",
     "timeline": [
+      {
+        "title": "FamilySearch linkage",
+        "date": "1850",
+        "summary": "FamilySearch profile for Josiah Ramsey identifies his mother as Anna Hopkins.",
+        "confidence": "Primary Source"
+      },
       {
         "title": "1860 census household",
         "date": "1860",
@@ -151,10 +159,39 @@
       }
     ],
     "evidenceSummary": [
+      "Identified as Anna Hopkins in the Josiah Ramsey FamilySearch profile",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Thomas Ramsey and children",
       "Key document: census-decatur-township.pdf",
       "Status: Primary source household record"
+    ]
+  },
+  {
+    "id": "jonathan-dyer",
+    "name": "Jonathan Dyer",
+    "lifespan": "19th century",
+    "era": "19th-century Dyer line",
+    "branch": "Dyer",
+    "summary": "Heir named in Charles Dyer's pension packet and part of the documented Dyer descent trail.",
+    "keyEvent": "Named among the heirs in the county affidavit tied to Charles Dyer's Revolutionary War pension application.",
+    "confidence": "Strong Evidence",
+    "tags": ["Dyer", "Heir", "Pension affidavit", "Charles Dyer"],
+    "attachedDocument": "charles-dyer.pdf",
+    "sourceCitation": "The 1855 county affidavit in the Charles Dyer pension transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer.",
+    "timeline": [
+      {
+        "title": "Named in pension affidavit",
+        "date": "1855",
+        "summary": "The county affidavit in the Charles Dyer pension packet names Jonathan Dyer among the heirs.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "charles-dyer-discharge"
+      }
+    ],
+    "evidenceSummary": [
+      "Named among the heirs in the Charles Dyer pension packet",
+      "Tied to the Revolutionary War pension application",
+      "Part of the documented Dyer descent trail",
+      "Key document: charles-dyer.pdf"
     ]
   },
   {
