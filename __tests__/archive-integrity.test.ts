@@ -5,6 +5,7 @@ import familyMemoryData from "../data/familyMemory.json";
 type Confidence =
   | "Primary Source"
   | "Confirmed"
+  | "Corroborated Compilation"
   | "Strong Evidence"
   | "Family-Confirmed Oral History"
   | "Needs Review"
@@ -83,6 +84,7 @@ const familyMemory = familyMemoryData as FamilyMemoryRecord[];
 const allowedConfidence = new Set<Confidence>([
   "Primary Source",
   "Confirmed",
+  "Corroborated Compilation",
   "Strong Evidence",
   "Family-Confirmed Oral History",
   "Needs Review",
@@ -260,5 +262,34 @@ describe("Archive integrity", () => {
     expect(serviceRecord?.rollBox).toBe("170");
     expect(serviceRecord?.microfilmPublication).toBe("M602");
     expect(serviceRecord?.people).toContain("Josiah Ramsey Jr.");
+  });
+
+  test("compilations use Corroborated Compilation tier and are not marked Primary Source", () => {
+    // Red Book and similar syntheses should use the new tier
+    const redBook = familyMemory.find((entry) => entry.id === "red-book-personal-material");
+    expect(redBook).toBeDefined();
+    expect(redBook?.confidence).toBe("Corroborated Compilation");
+
+    // Individual primary items inside (letters) should remain Primary Source
+    const annesLetters = familyMemory.find((entry) => entry.id === "annes-book-notes");
+    expect(annesLetters).toBeDefined();
+    expect(annesLetters?.confidence).toBe("Primary Source");
+
+    // Guard: no document or familyMemory entry that looks like a compilation should be Primary Source
+    const compilationIndicators = ["compilation", "research book", "research archive", "red book"];
+    const offenders = [
+      ...documents.filter((doc) => {
+        const text = `${doc.type ?? ""} ${doc.notes ?? ""} ${doc.whatItProves ?? ""}`.toLowerCase();
+        const looksLike = compilationIndicators.some((kw) => text.includes(kw));
+        return looksLike && doc.confidence === "Primary Source";
+      }),
+      ...familyMemory.filter((entry) => {
+        const text = `${entry.title ?? ""} ${entry.notes ?? ""} ${entry.evidenceMode ?? ""}`.toLowerCase();
+        const looksLike = compilationIndicators.some((kw) => text.includes(kw));
+        return looksLike && entry.confidence === "Primary Source";
+      })
+    ];
+
+    expect(offenders).toEqual([]);
   });
 });
