@@ -24,8 +24,8 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
     return (
       <section className="archive-panel space-y-4">
         <div className="archive-kicker">Ancestor record</div>
-        <h1 className="text-3xl font-semibold tracking-tight text-white">Record not found</h1>
-        <p className="text-sm leading-6 text-slate-300">This placeholder route will be replaced when full profiles are ready.</p>
+        <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">Record not found</h1>
+        <p className="text-sm leading-6 text-[var(--archive-text-soft)]">This placeholder route will be replaced when full profiles are ready.</p>
         <Link className="archive-nav__link inline-flex" href="/ancestors">
           Back to ancestor cards
         </Link>
@@ -36,9 +36,9 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
   return (
     <section className="archive-panel space-y-4">
       <div className="archive-kicker">Ancestor record preview</div>
-      <h1 className="text-3xl font-semibold tracking-tight text-white">{person.name}</h1>
-      <div className="text-sm text-slate-300">{person.branch}</div>
-      <p className="max-w-2xl text-sm leading-6 text-slate-300">
+      <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{person.name}</h1>
+      <div className="text-sm text-[var(--archive-text-soft)]">{person.branch}</div>
+      <p className="max-w-2xl text-sm leading-6 text-[var(--archive-text-soft)]">
         This is a placeholder detail page for future family notes, attached records, and timeline views.
       </p>
       {(person.sourceUrl || person.sourceCitation) ? (
@@ -49,35 +49,35 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
               href={person.sourceUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex text-sm leading-6 text-slate-100 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+              className="inline-flex text-sm leading-6 underline decoration-[rgba(127,29,45,0.35)] underline-offset-4 hover:text-[var(--archive-accent)]"
             >
               {person.sourceCitation ?? person.sourceUrl}
             </a>
           ) : (
-            <p className="text-sm leading-6 text-slate-300">{person.sourceCitation}</p>
+            <p className="text-sm leading-6 text-[var(--archive-text)]">{person.sourceCitation}</p>
           )}
         </section>
       ) : null}
       {person.portraitUrl ? (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Portrait</div>
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+          <div className="overflow-hidden rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)]">
             <SourcePreview src={person.portraitUrl} title={person.portraitCaption ?? person.name} className="h-[28rem] w-full" />
           </div>
-          {person.portraitCaption ? <div className="text-xs leading-5 text-slate-500">{person.portraitCaption}</div> : null}
+          {person.portraitCaption ? <div className="text-xs leading-5 text-[var(--archive-text-soft)]">{person.portraitCaption}</div> : null}
         </section>
       ) : null}
       {attachedRecord?.previewUrl ? (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Primary source image</div>
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+          <div className="overflow-hidden rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)]">
             <SourcePreview
               src={attachedRecord.previewUrl}
               title={attachedRecord.filename}
               className="h-[24rem] w-full"
             />
           </div>
-          <div className="text-xs leading-5 text-slate-500">
+          <div className="text-xs leading-5 text-[var(--archive-text-soft)]">
             Source file: {attachedRecord.filename}
           </div>
         </section>
@@ -120,38 +120,38 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
             {isCharlesDyer ? "Confirmed Direct Revolutionary War Line" : "SAR Line Status"}
           </div>
           {isCharlesDyer ? (
-            <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-4 text-sm leading-6 text-slate-300">
+            <div className="rounded-2xl border border-[rgba(127,29,45,0.12)] bg-[rgba(127,29,45,0.05)] p-4 text-sm leading-6 text-[var(--archive-text)]">
               Charles Dyer&apos;s Revolutionary War service is supported by the 1778 discharge record, and the descent
               through Jonathan Dyer is documented in the family evidence and census trail.
             </div>
           ) : null}
           <div className="grid gap-3 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Patriot ancestor</div>
-              <div className="mt-1 text-slate-100">{person.sarLineStatus.patriotAncestor}</div>
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Patriot ancestor</div>
+              <div className="mt-1">{person.sarLineStatus.patriotAncestor}</div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Service</div>
-              <div className="mt-1 text-slate-100">{person.sarLineStatus.service}</div>
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Service</div>
+              <div className="mt-1">{person.sarLineStatus.service}</div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Key record</div>
-              <div className="mt-1 text-slate-100">{person.sarLineStatus.keyRecord}</div>
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Key record</div>
+              <div className="mt-1">{person.sarLineStatus.keyRecord}</div>
             </div>
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Status</div>
-              <div className="mt-1 text-slate-100">{person.sarLineStatus.status}</div>
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Status</div>
+              <div className="mt-1">{person.sarLineStatus.status}</div>
             </div>
             {isCharlesDyer ? (
-              <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300 md:col-span-2">
-                <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Descent</div>
-                <div className="mt-1 text-slate-100">Documented descent through Jonathan Dyer</div>
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)] md:col-span-2">
+                <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Descent</div>
+                <div className="mt-1">Documented descent through Jonathan Dyer</div>
               </div>
             ) : null}
           </div>
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm leading-6 text-slate-300">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Note</div>
-            <div className="mt-1 text-slate-200">{person.sarLineStatus.note}</div>
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm leading-6 text-[var(--archive-text)]">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Note</div>
+            <div className="mt-1">{person.sarLineStatus.note}</div>
           </div>
         </section>
       ) : null}

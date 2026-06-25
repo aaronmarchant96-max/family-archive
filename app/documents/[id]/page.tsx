@@ -55,8 +55,8 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <div className="archive-kicker">Document record</div>
-            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white">{document.type}</h1>
-            <p className="mt-3 max-w-3xl text-sm leading-6 text-slate-300">
+            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{document.type}</h1>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
               Title is shown from the archive metadata. The source file itself stays private and is not exposed here.
             </p>
           </div>
@@ -64,44 +64,44 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Filename</div>
-          <div className="mt-1 text-base font-medium text-slate-100">{document.filename}</div>
+            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Filename</div>
+          <div className="mt-1 text-base font-medium text-[var(--archive-text)]">{document.filename}</div>
         </div>
 
         <div className="grid gap-3 md:grid-cols-2">
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Type</div>
-            <div className="mt-1 text-slate-100">{document.type}</div>
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Type</div>
+            <div className="mt-1">{document.type}</div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Date</div>
-            <div className="mt-1 text-slate-100">{document.date || "Not listed"}</div>
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Date</div>
+            <div className="mt-1">{document.date || "Not listed"}</div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Place</div>
-            <div className="mt-1 text-slate-100">{document.place || "Not listed"}</div>
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Place</div>
+            <div className="mt-1">{document.place || "Not listed"}</div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300">
-            <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Private note</div>
-            <div className="mt-1 text-slate-100">
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Private note</div>
+            <div className="mt-1">
               Primary source scan is shown on this page from the archive workspace. The file stays in the private
               archive set.
             </div>
           </div>
           {(sourceUrl || sourceCitation) ? (
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300 md:col-span-2">
-              <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">Source citation</div>
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)] md:col-span-2">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Source citation</div>
               {sourceUrl ? (
                 <a
                   href={sourceUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-1 inline-flex text-slate-100 underline decoration-amber-300/40 underline-offset-4 hover:text-amber-100"
+                  className="mt-1 inline-flex underline decoration-[rgba(127,29,45,0.35)] underline-offset-4 hover:text-[var(--archive-accent)]"
                 >
                   {sourceCitation ?? sourceUrl}
                 </a>
               ) : (
-                <div className="mt-1 text-slate-100">{sourceCitation}</div>
+                <div className="mt-1">{sourceCitation}</div>
               )}
             </div>
           ) : null}
@@ -124,7 +124,7 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
       {document.previewUrl ? (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Primary source scan</div>
-          <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950">
+          <div className="overflow-hidden rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)]">
             <SourcePreview src={document.previewUrl} title={document.filename} className="h-[34rem] w-full" />
           </div>
         </section>
@@ -139,7 +139,7 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
                 <Link
                   key={`${document.id}-${person.name}`}
                   href={person.href}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 hover:border-amber-300/30 hover:bg-amber-300/10"
+                  className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/60 px-4 py-2 text-sm text-[var(--archive-text)] hover:border-[rgba(127,29,45,0.35)] hover:bg-white"
                 >
                   {person.name}
                 </Link>
@@ -149,13 +149,13 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
 
           <section className="archive-panel space-y-3">
             <div className="archive-section__title">Notes</div>
-            <p className="text-sm leading-6 text-slate-300">{notes}</p>
+            <p className="text-sm leading-6 text-[var(--archive-text)]">{notes}</p>
           </section>
 
           {isCharlesDyer ? (
             <section className="archive-panel space-y-4">
               <div className="archive-section__title">Evidence Summary</div>
-              <ul className="space-y-3 text-sm leading-6 text-slate-300">
+              <ul className="space-y-3 text-sm leading-6 text-[var(--archive-text)]">
                 <li>Primary Revolutionary War discharge record</li>
                 <li>Charles Dyer was discharged September 25, 1778</li>
                 <li>Discharged at Fort Randolph [at Point Pleasant, now WV]</li>
@@ -171,11 +171,11 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
 
         <aside className="archive-panel space-y-4">
           <div className="archive-section__title">Private / local-only notice</div>
-          <p className="text-sm leading-6 text-slate-300">
+          <p className="text-sm leading-6 text-[var(--archive-text)]">
             The archive keeps the source file with the record so you can inspect the scan and the metadata together.
             The file is still part of the private family archive set.
           </p>
-          <div className="rounded-2xl border border-dashed border-white/10 bg-white/5 p-4 text-sm leading-6 text-slate-400">
+          <div className="rounded-2xl border border-dashed border-[rgba(18,20,24,0.12)] bg-white/40 p-4 text-sm leading-6 text-[var(--archive-text-soft)]">
             This is a record page with an embedded source scan, not a public download list.
           </div>
           <Link className="archive-nav__link inline-flex" href="/documents">

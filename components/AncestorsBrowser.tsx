@@ -87,9 +87,9 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
       <div className="archive-panel space-y-4">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-2">
-            <div className="archive-kicker">Ancestors</div>
-            <h1 className="text-3xl font-semibold tracking-tight text-white">Ancestor cards</h1>
-            <p className="max-w-3xl text-sm leading-6 text-slate-300">
+            <div className="archive-kicker">Documented lines</div>
+            <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">Ancestor cards</h1>
+            <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
               Search by name, era, branch, tag, or note. Switch to timeline view to read the family record in
               chronological order.
             </p>
@@ -100,8 +100,8 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
               onClick={() => setViewMode("cards")}
               className={`rounded-full border px-4 py-2 text-sm ${
                 viewMode === "cards"
-                  ? "border-amber-300/40 bg-amber-300/10 text-amber-100"
-                  : "border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                  ? "border-[rgba(127,29,45,0.35)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
+                  : "border-[rgba(18,20,24,0.08)] bg-white/60 text-[var(--archive-text)] hover:bg-white"
               }`}
             >
               Cards
@@ -111,8 +111,8 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
               onClick={() => setViewMode("timeline")}
               className={`rounded-full border px-4 py-2 text-sm ${
                 viewMode === "timeline"
-                  ? "border-amber-300/40 bg-amber-300/10 text-amber-100"
-                  : "border-white/10 bg-white/5 text-slate-200 hover:bg-white/10"
+                  ? "border-[rgba(127,29,45,0.35)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
+                  : "border-[rgba(18,20,24,0.08)] bg-white/60 text-[var(--archive-text)] hover:bg-white"
               }`}
             >
               Timeline
@@ -126,7 +126,7 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search ancestors by name, era, branch, tag, or note"
-            className="w-full rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-amber-300/40"
+            className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
       </div>
@@ -147,7 +147,7 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
       ) : (
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Chronological view</div>
-          <p className="text-sm leading-6 text-slate-400">
+          <p className="text-sm leading-6 text-[var(--archive-text-soft)]">
             Timeline events from the filtered ancestors, ordered by date. This is a reading view, not a proof
             verdict.
           </p>

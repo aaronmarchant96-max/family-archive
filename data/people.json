@@ -207,6 +207,102 @@
     ]
   },
   {
+    "id": "james-ramsey-1825",
+    "name": "James Ramsey",
+    "lifespan": "1825-1909",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Son of Thomas Ramsey (1799-1872) and Anna Hopkins; lived in Iowa and appears on the 1863 Civil War draft registration page in Long Creek, Decatur County.",
+    "keyEvent": "Born 19 February 1825 in Tennessee and later listed on the 1863 Iowa draft registration page as a Long Creek farmer.",
+    "confidence": "Primary Source",
+    "tags": ["Ramsey", "Iowa", "Civil War Draft", "Generation 5"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "19 February 1825",
+        "place": "Tennessee, USA",
+        "summary": "Born in Tennessee to Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Civil War draft registration",
+        "date": "1863",
+        "place": "Iowa",
+        "summary": "Listed on the Iowa Civil War draft registration page as James Ramsey, age 38, farmer, born in Tennessee.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "james-ramsey-draft-registration"
+      },
+      {
+        "title": "Residence",
+        "date": "1863",
+        "place": "Long Creek, Decatur County, Iowa",
+        "summary": "Appears in the Long Creek area of Decatur County, Iowa on the draft registration page.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "james-ramsey-draft-registration"
+      },
+      {
+        "title": "Death",
+        "date": "1909",
+        "place": "Iowa",
+        "summary": "Died in Iowa in 1909.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Born 19 February 1825 in Tennessee",
+      "Listed on the 1863 Iowa Civil War draft registration page",
+      "Draft page places James in Long Creek, Decatur County, Iowa",
+      "Age 38 and occupation farmer on the draft page",
+      "Residence trail in Iowa",
+      "Key document: 32178_1220705228_0032-00400.jpg",
+      "Status: Primary source draft registration record"
+    ]
+  },
+  {
+    "id": "thomas-bentley-ramsey-1846",
+    "name": "Thomas Bentley Ramsey",
+    "lifespan": "1846-1922",
+    "era": "19th-century Iowa",
+    "branch": "Ramsey",
+    "summary": "Son of James Ramsey and Margaret Baker. Lived in Long Creek, Decatur County, Iowa, and appears in the 1880 census household there.",
+    "keyEvent": "Born 7 April 1846 in Tennessee and later headed a Long Creek, Decatur County, Iowa household in 1880.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Iowa", "Long Creek", "Generation 6"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "07 April 1846",
+        "place": "Tennessee, USA",
+        "summary": "Born in Tennessee to James Ramsey and Margaret Baker.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage",
+        "date": "07 May 1876",
+        "place": "Unknown",
+        "summary": "Married Mary Alice Boles.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "1880 census residence",
+        "date": "1880",
+        "place": "Long Creek Township, Decatur County, Iowa",
+        "summary": "Appears as head of household in Long Creek Township, Decatur County, Iowa.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "thomas-bentley-ramsey-1880-census"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of James Ramsey (1825-1909) and Margaret Baker (1818-1905)",
+      "Born 7 April 1846 in Tennessee",
+      "Married Mary Alice Boles in 1876",
+      "Head of household in Long Creek Township, Decatur County, Iowa in 1880",
+      "Key document: long-creek-1880-census-thomas-bentley-ramsey.jpg",
+      "Status: Strong evidence household record"
+    ]
+  },
+  {
     "id": "charles-dyer",
     "name": "Charles Dyer",
     "lifespan": "Revolutionary War era",
@@ -453,11 +549,11 @@
     "lifespan": "1765-after 1856",
     "era": "Early Republic Tennessee",
     "branch": "Hopkins",
-    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Lived in Tennessee and appears in records through at least 1856.",
-    "keyEvent": "Married Rachel Clouse in 1801 and fathered Anna Hopkins (1807-1883), establishing the Hopkins-Ramsey connection.",
+    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Appears in Tennessee and Iowa records from 1830 through 1856, including the 1840 Hawkins County census and later Iowa residence trail.",
+    "keyEvent": "Married Rachel Clouse in 1801, fathered Anna Hopkins (1807-1883), and remained in the Tennessee-to-Iowa Hopkins trail through later life.",
     "confidence": "Strong Evidence",
     "tags": ["Hopkins", "Clouse", "Tennessee", "Generation 3"],
-    "sourceCitation": "FamilySearch-style profile for Rachel Clouse, showing her marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, Iowa residence by 1850, death before 1856, and burial at Grand River Cemetery.",
+    "sourceCitation": "FamilySearch-style profile for Rachel Clouse, showing her marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, an 1840 Hawkins County census image naming Jabez Hopkins, Iowa residence by 1850, death before 1856, and burial at Grand River Cemetery.",
     "timeline": [
       {
         "title": "Birth",
@@ -481,6 +577,28 @@
         "confidence": "Strong Evidence"
       },
       {
+        "title": "Claiborne County residence",
+        "date": "1830",
+        "place": "Claiborne County, Tennessee",
+        "summary": "Appears in Claiborne County in the early Tennessee residence trail.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Hawkins County census",
+        "date": "1840",
+        "place": "Hawkins County, Tennessee",
+        "summary": "Appears on the 1840 census image with a Hawkins County household schedule, supporting the continued Tennessee trail.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "claiborne-county-1840-census"
+      },
+      {
+        "title": "Iowa residence",
+        "date": "1850",
+        "place": "Washington / Appanoose, Iowa",
+        "summary": "Appears in Iowa residence records before and after the middle of the century.",
+        "confidence": "Primary Source"
+      },
+      {
         "title": "Appears in 1856 settlement records",
         "date": "after 1856",
         "place": "Tennessee",
@@ -494,6 +612,11 @@
       "Lived in Tennessee",
       "Marriage to Rachel Clouse in 1801",
       "Anna Hopkins born in 1807",
+      "Claiborne County residence in 1830",
+      "Hawkins County census appearance in 1840",
+      "1840 Hawkins County census image",
+      "Hawkins County page sits among Collins and Gipson households",
+      "Iowa residence by 1850",
       "Appears in 1854 county settlement records",
       "Alive after 1856",
       "Status: Strong evidence for the Hopkins-Clouse family trail"
@@ -1358,7 +1481,7 @@
     "era": "19th-century Midwest",
     "branch": "Edwards",
     "summary": "Husband of Armina Ramsey and father of 8 children. Part of the Ramsey/Edwards line in Iowa and Washington records. The family migrated from Iowa to Washington.",
-    "keyEvent": "Married Armina Ramsey in 1840. Father of Lucinda, Mary Ann, Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards.",
+    "keyEvent": "Married Armina Ramsey; the exact marriage date still needs verification. Father of Lucinda, Mary Ann, Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards.",
     "confidence": "Strong Evidence",
     "tags": ["Edwards", "Ramsey", "Obituary", "Census", "Iowa", "Washington", "Generation 5"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
@@ -1372,9 +1495,9 @@
       },
       {
         "title": "Marriage to Armina Ramsey",
-        "date": "1840",
-        "summary": "Marriage reported in the family obituary record and supported by later census context.",
-        "confidence": "Strong Evidence",
+        "date": "Needs verification",
+        "summary": "The obituary and later family context suggest a marriage to Armina Ramsey, but the date needs confirmation from a record closer to the event.",
+        "confidence": "Needs Review",
         "linkedDocumentId": "armina-ramsey-obituary"
       },
       {
@@ -1403,7 +1526,8 @@
     "evidenceSummary": [
       "Husband of Armina Ramsey (1826-1923)",
       "Born 1832, died 1908",
-      "Marriage to Armina Ramsey in 1840",
+      "Marriage to Armina Ramsey needs verification",
+      "Armina obituary states the marriage year as 1840",
       "Father of 8 children: Lucinda, Mary Ann 'Polly', Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards",
       "Appears in the Ramsey/Edwards census trail in Iowa",
       "Migrated from Iowa to Washington",
@@ -1417,9 +1541,9 @@
     "lifespan": "1826-1923",
     "era": "19th-century Midwest",
     "branch": "Ramsey",
-    "summary": "Daughter of Thomas Ramsey and Anna Hopkins; Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
-    "keyEvent": "Married Anderson Edwards in 1840 and later lived in Iowa and Washington; the Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins.",
-    "confidence": "Strong Evidence",
+    "summary": "Confirmed daughter of Thomas Ramsey and Anna Hopkins; Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
+    "keyEvent": "Married Anderson Edwards; the exact marriage date still needs verification. Later lived in Iowa and Washington. The profile and obituary identify her parents as Thomas Ramsey 1799-1872 and Anna Hopkins.",
+    "confidence": "Confirmed",
     "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
     "sourceCitation": "Ancestry profile for Armina (X) Ramsey, showing birth 26 Aug 1826 in Tennessee, parents Thomas Ramsey 1799-1872 and Anna Hopkins, marriage to Anderson Edwards, and later Iowa/Washington residence trail.",
@@ -1431,13 +1555,13 @@
         "date": "26 August 1826",
         "place": "Tennessee, USA",
         "summary": "Armina's profile identifies her as the daughter of Thomas Ramsey and Anna Hopkins.",
-        "confidence": "Strong Evidence"
+        "confidence": "Confirmed"
       },
       {
         "title": "Marriage to Anderson Edwards",
-        "date": "1840",
-        "summary": "United in marriage to Anderson Edwards in the year of 1840.",
-        "confidence": "Strong Evidence",
+        "date": "Needs verification",
+        "summary": "Armina is linked to Anderson Edwards as her husband, but the marriage date should be confirmed from a primary record before treating it as settled.",
+        "confidence": "Needs Review",
         "linkedDocumentId": "armina-ramsey-obituary"
       },
       {
@@ -1458,9 +1582,10 @@
       }
     ],
     "evidenceSummary": [
-      "Daughter of Thomas Ramsey and Anna Hopkins",
+      "Confirmed daughter of Thomas Ramsey and Anna Hopkins",
       "Edwards/Ramsey line matriarch",
-      "Marriage to Anderson Edwards in 1840",
+      "Marriage to Anderson Edwards needs verification",
+      "Armina obituary states she was united in marriage to Anderson Edwards in 1840",
       "Appears in the 1860 Decatur Township census trail",
       "Obituary dated July 26, 1923",
       "Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins",

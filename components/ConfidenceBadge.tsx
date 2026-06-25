@@ -7,9 +7,17 @@ const badgeStyles: Record<string, string> = {
   "Needs Proof": "border-slate-400/30 bg-slate-400/10 text-slate-100",
 };
 
-export function ConfidenceBadge({ label }: { label: string }) {
-  const className =
-    badgeStyles[label] ?? "border-white/10 bg-white/5 text-slate-200";
+const badgeAliases: Record<string, string> = {
+  Verified: "Confirmed",
+};
 
-  return <span className={`rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] ${className}`}>{label}</span>;
+export function ConfidenceBadge({ label }: { label: string }) {
+  const normalizedLabel = badgeAliases[label] ?? label;
+  const className = badgeStyles[normalizedLabel] ?? "border-white/10 bg-white/5 text-slate-200";
+
+  return (
+    <span className={`rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] ${className}`}>
+      {normalizedLabel}
+    </span>
+  );
 }

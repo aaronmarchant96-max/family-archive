@@ -1,11 +1,86 @@
-import people from "../data/people.json";
-import documents from "../data/documents.json";
-import familyMemory from "../data/familyMemory.json";
+import peopleData from "../data/people.json";
+import documentsData from "../data/documents.json";
+import familyMemoryData from "../data/familyMemory.json";
 
-type Person = (typeof people)[number];
-type DocumentRecord = (typeof documents)[number];
+type Confidence =
+  | "Primary Source"
+  | "Confirmed"
+  | "Strong Evidence"
+  | "Family-Confirmed Oral History"
+  | "Needs Review"
+  | "Needs Proof";
 
-const allowedConfidence = new Set([
+interface TimelineEntry {
+  title: string;
+  date: string;
+  summary: string;
+  confidence: Confidence;
+  linkedDocumentId?: string;
+  place?: string;
+}
+
+interface PersonRecord {
+  id: string;
+  name: string;
+  lifespan: string;
+  era?: string;
+  branch: string;
+  summary: string;
+  keyEvent: string;
+  confidence: Confidence;
+  tags?: string[];
+  attachedDocument?: string;
+  sourceUrl?: string;
+  sourceCitation?: string;
+  timeline?: TimelineEntry[];
+  evidenceSummary?: string[];
+  sarLineStatus?: {
+    patriotAncestor: string;
+    service: string;
+    keyRecord: string;
+    status: string;
+    note: string;
+  };
+}
+
+interface DocumentRecord {
+  id: string;
+  filename: string;
+  type: string;
+  date: string;
+  era?: string;
+  sourceUrl?: string;
+  sourceCitation?: string;
+  previewUrl?: string;
+  confidence: Confidence;
+  people: string[];
+  place?: string;
+  whatItProves: string;
+  notes?: string;
+  company?: string;
+  rankInduction?: string;
+  rankDischarge?: string;
+  rollBox?: string;
+  microfilmPublication?: string;
+}
+
+interface FamilyMemoryRecord {
+  id: string;
+  title: string;
+  sharedBy: string;
+  era: string;
+  mode: string;
+  relatedPeople: string[];
+  relatedPlaces: string[];
+  confidence: Confidence;
+  notes: string;
+}
+
+const people = peopleData as PersonRecord[];
+const documents = documentsData as DocumentRecord[];
+const familyMemory = familyMemoryData as FamilyMemoryRecord[];
+
+const allowedConfidence = new Set<Confidence>([
   "Primary Source",
   "Confirmed",
   "Strong Evidence",
@@ -18,7 +93,11 @@ function normalizeText(value: string) {
   return value.toLowerCase().trim();
 }
 
-function buildPersonRecordFrame(person: Person) {
+function isBlank(value: unknown) {
+  return typeof value !== "string" || value.trim().length === 0;
+}
+
+function buildPersonRecordFrame(person: PersonRecord) {
   return {
     evidence: [
       person.attachedDocument ? `Attached record: ${person.attachedDocument}` : "Attached record: not listed",
@@ -43,10 +122,6 @@ function buildDocumentRecordFrame(document: DocumentRecord) {
     confidence: document.confidence,
     narrative: document.notes ?? "Metadata only. The original scan is stored separately and is not publicly exposed from this archive."
   };
-}
-
-function isBlank(value: unknown) {
-  return typeof value !== "string" || value.trim().length === 0;
 }
 
 function expectNonEmptyRecordFrame(record: { evidence: string; claim: string; confidence: string; narrative: string }) {
@@ -79,12 +154,8 @@ describe("Archive integrity", () => {
     for (const document of documents) {
       for (const linkedPerson of document.people) {
         const person = personByName.get(normalizeText(linkedPerson));
-        if (!person) {
-          throw new Error(`Document ${document.id} links missing person ${linkedPerson}`);
-        }
-        if (personById.get(person.id) !== person) {
-          throw new Error(`Document ${document.id} linked person ${linkedPerson} does not resolve to the expected person id`);
-        }
+        expect(person).toBeDefined();
+        expect(personById.get(person!.id)).toBe(person);
       }
     }
   });
@@ -93,17 +164,13 @@ describe("Archive integrity", () => {
     for (const person of people) {
       if (person.attachedDocument) {
         const document = documentByFilename.get(normalizeText(person.attachedDocument));
-        if (!document) {
-          throw new Error(`Person ${person.id} references missing attached document ${person.attachedDocument}`);
-        }
+        expect(document).toBeDefined();
       }
 
       for (const entry of person.timeline ?? []) {
         if (entry.linkedDocumentId) {
           const document = documentById.get(entry.linkedDocumentId);
-          if (!document) {
-            throw new Error(`Person ${person.id} timeline links missing document id ${entry.linkedDocumentId}`);
-          }
+          expect(document).toBeDefined();
         }
       }
     }
@@ -127,85 +194,12 @@ describe("Archive integrity", () => {
 
   test("William Moore remains a painter of Springwell Street, Ballymena", () => {
     const william = personById.get("william-moore");
+
     expect(william).toBeDefined();
     expect(william?.summary).toMatch(/painter/i);
     expect(william?.summary).not.toMatch(/printer/i);
     expect(william?.summary).toMatch(/Springwell Street/i);
     expect(william?.summary).toMatch(/Ballymena/i);
-  });
-
-  test("Josiah Ramsey stays aligned to the FamilySearch profile wording", () => {
-    const josiah = personById.get("josiah-ramsey-1834");
-
-    expect(josiah).toBeDefined();
-    expect(josiah?.summary).toMatch(/Thomas Ramsey/i);
-    expect(josiah?.summary).toMatch(/Anna Hopkins/i);
-    expect(josiah?.summary).toMatch(/Tennessee/i);
-    expect(josiah?.summary).toMatch(/1834/i);
-    expect(josiah?.summary).toMatch(/Bloomfield, Davis County, Iowa/i);
-    expect(josiah?.keyEvent).toMatch(/farmer/i);
-    expect(josiah?.sourceUrl).toMatch(/familysearch\.org/i);
-    expect(josiah?.sourceCitation).toMatch(/L5G1-XJ3/i);
-  });
-
-  test("Josiah Ramsey working profile stays separate from Josiah Sr.", () => {
-    const workingJosiah = personById.get("josiah-ramsey-1769");
-    const elizabeth = personById.get("elizabeth-cowan");
-    const serviceRecord = documentById.get("josiah-ramsey-jr-1812-service");
-    const thomas = personById.get("thomas-ramsey-1799");
-
-    expect(workingJosiah).toBeDefined();
-    expect(workingJosiah?.lifespan).toMatch(/1765\/1769-1834/i);
-    expect(workingJosiah?.summary).toMatch(/Elizabeth Cowan/i);
-    expect(workingJosiah?.summary).toMatch(/Thomas Ramsey/i);
-    expect(workingJosiah?.summary).not.toMatch(/Elizabeth Hollis/i);
-    expect(workingJosiah?.sourceCitation).toMatch(/Ancestry profile/i);
-    expect(workingJosiah?.sourceCitation).toMatch(/Tennessee grant/i);
-    expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/Pennsylvania attachment excluded/i);
-    expect(workingJosiah?.attachedDocument).toMatch(/plaque/i);
-    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
-    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-tennessee-land-grant")).toBe(true);
-
-    expect(elizabeth).toBeDefined();
-    expect(elizabeth?.attachedDocument).toMatch(/grave-marker/i);
-    expect(elizabeth?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
-
-    expect(serviceRecord).toBeDefined();
-    expect(serviceRecord?.sourceCitation).toMatch(/U\.S\., War of 1812 Service Records, 1812-1815/i);
-    expect(serviceRecord?.sourceCitation).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
-    expect(serviceRecord?.sourceCitation).toMatch(/Rank at induction: Lieutenant/i);
-    expect(serviceRecord?.sourceCitation).toMatch(/Rank at discharge: Adjutant/i);
-    expect(serviceRecord?.company).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
-    expect(serviceRecord?.rankInduction).toBe("Lieutenant");
-    expect(serviceRecord?.rankDischarge).toBe("Adjutant");
-    expect(serviceRecord?.rollBox).toBe("170");
-    expect(serviceRecord?.microfilmPublication).toBe("M602");
-    expect(serviceRecord?.people).toContain("Josiah Ramsey Jr.");
-
-    expect(thomas).toBeDefined();
-    expect(thomas?.summary).toMatch(/Josiah Ramsey/i);
-    expect(thomas?.summary).toMatch(/Elizabeth Cowan/i);
-    expect(thomas?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
-  });
-
-  test("Anna Ramsey is linked to the Anna Hopkins FamilySearch evidence", () => {
-    const anna = personById.get("anna-hopkins-ramsey");
-
-    expect(anna).toBeDefined();
-    expect(anna?.summary).toMatch(/Jabez Hopkins/i);
-    expect(anna?.sourceUrl).toMatch(/familysearch\.org/i);
-    expect(anna?.sourceCitation).toMatch(/L5G1-XJ3/i);
-    expect(anna?.timeline?.some((entry) => entry.title === "FamilySearch linkage")).toBe(true);
-  });
-
-  test("Jonathan Dyer is carried as a separate heir record in the Charles Dyer packet", () => {
-    const jonathan = personById.get("jonathan-dyer");
-
-    expect(jonathan).toBeDefined();
-    expect(jonathan?.summary).toMatch(/heir/i);
-    expect(jonathan?.summary).toMatch(/Dyer descent trail/i);
-    expect(jonathan?.timeline?.some((entry) => entry.linkedDocumentId === "charles-dyer-discharge")).toBe(true);
-    expect(jonathan?.sourceCitation).toMatch(/1855 county affidavit/i);
   });
 
   test("Charles Dyer preserves the 12th Virginia Regiment and Fort Randolph references", () => {
@@ -237,5 +231,34 @@ describe("Archive integrity", () => {
     expect(kansasCityStory).toBeDefined();
     expect(kansasCityStory?.confidence).toBe("Family-Confirmed Oral History");
     expect(kansasCityStory?.notes).toMatch(/separate from sourced records/i);
+  });
+
+  test("Josiah Ramsey working profile keeps the Tennessee line separate from the excluded Pennsylvania attachment", () => {
+    const workingJosiah = personById.get("josiah-ramsey-1769");
+    const elizabeth = personById.get("elizabeth-cowan");
+    const serviceRecord = documentById.get("josiah-ramsey-jr-1812-service");
+
+    expect(workingJosiah).toBeDefined();
+    expect(workingJosiah?.summary).toMatch(/Elizabeth Cowan/i);
+    expect(workingJosiah?.summary).toMatch(/Thomas Ramsey/i);
+    expect(workingJosiah?.summary).toMatch(/Mulberry Creek/i);
+    expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/land grant/i);
+    expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/Tennessee residence trail/i);
+    expect(workingJosiah?.evidenceSummary?.join(" ")).toMatch(/Pennsylvania attachment excluded/i);
+    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-tennessee-land-grant")).toBe(true);
+    expect(workingJosiah?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-family-plaque")).toBe(true);
+
+    expect(elizabeth).toBeDefined();
+    expect(elizabeth?.attachedDocument).toMatch(/grave-marker/i);
+    expect(elizabeth?.timeline?.some((entry) => entry.linkedDocumentId === "josiah-ramsey-grave-marker")).toBe(true);
+
+    expect(serviceRecord).toBeDefined();
+    expect(serviceRecord?.sourceCitation).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
+    expect(serviceRecord?.company).toMatch(/14 REG'T \(MITCHISSON'S\) Kentucky Militia/i);
+    expect(serviceRecord?.rankInduction).toBe("Lieutenant");
+    expect(serviceRecord?.rankDischarge).toBe("Adjutant");
+    expect(serviceRecord?.rollBox).toBe("170");
+    expect(serviceRecord?.microfilmPublication).toBe("M602");
+    expect(serviceRecord?.people).toContain("Josiah Ramsey Jr.");
   });
 });

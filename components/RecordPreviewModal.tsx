@@ -59,13 +59,13 @@ export function RecordPreviewModal({
       aria-labelledby="record-preview-title"
     >
       <div
-        className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-white/10 bg-slate-950 p-6 shadow-2xl shadow-black/60"
+        className="max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-[2rem] border border-[rgba(18,20,24,0.08)] bg-[#f4efe7] p-6 shadow-2xl shadow-black/60"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <div className="archive-kicker">Record preview</div>
-            <h2 id="record-preview-title" className="mt-2 text-2xl font-semibold tracking-tight text-white">
+            <div className="archive-kicker">Private record preview</div>
+            <h2 id="record-preview-title" className="mt-2 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
               {title}
             </h2>
           </div>
@@ -132,23 +132,23 @@ export function RecordPreviewModal({
         </div>
 
         {item.kind === "document" ? (
-          <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-3">
-            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+          <div className="mt-5 rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-3">
+            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">
               Primary source scan
             </div>
             <SourcePreview src={item.document.previewUrl} title={item.document.filename} className="h-[28rem] w-full rounded-xl" />
           </div>
         ) : attachedSource?.previewUrl ? (
-          <div className="mt-5 rounded-2xl border border-white/10 bg-black/20 p-3">
-            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">
+          <div className="mt-5 rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-3">
+            <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">
               Primary source scan
             </div>
             <SourcePreview src={attachedSource.previewUrl} title={attachedDocument ?? item.person.name} className="h-[28rem] w-full rounded-xl" />
           </div>
         ) : null}
 
-        <div className="mt-5 rounded-2xl border border-dashed border-amber-300/20 bg-amber-300/5 p-4 text-sm leading-6 text-slate-300">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-100/80">
+        <div className="mt-5 rounded-2xl border border-dashed border-[rgba(127,29,45,0.18)] bg-[rgba(127,29,45,0.05)] p-4 text-sm leading-6 text-[var(--archive-text)]">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">
             Private / local-only notice
           </div>
           <p className="mt-2">
@@ -158,15 +158,15 @@ export function RecordPreviewModal({
           <div className="mt-3 flex flex-wrap gap-2">
             <button
               type="button"
-              onClick={() => setScanNoticeVisible(true)}
-              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-200"
+            onClick={() => setScanNoticeVisible(true)}
+              className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--archive-text)]"
             >
-              View / Download full scan
+              Open private scan
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/80"
+              className="rounded-full border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--archive-accent)]"
             >
               Close
             </button>
@@ -184,9 +184,9 @@ export function RecordPreviewModal({
 
 function Info({ label, value, wide }: { label: string; value: string; wide?: boolean }) {
   return (
-    <div className={`rounded-2xl border border-white/10 bg-black/20 p-4 text-sm text-slate-300 ${wide ? "md:col-span-2" : ""}`}>
-      <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">{label}</div>
-      <div className="mt-1 leading-6 text-slate-100">{value}</div>
+    <div className={`rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)] ${wide ? "md:col-span-2" : ""}`}>
+      <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">{label}</div>
+      <div className="mt-1 leading-6">{value}</div>
     </div>
   );
 }

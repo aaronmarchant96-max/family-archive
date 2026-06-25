@@ -4,6 +4,17 @@
 
 :root {
   color-scheme: dark;
+  --archive-ink: #e1d8cb;
+  --archive-surface: #f3ede4;
+  --archive-surface-alt: #e9dfd1;
+  --archive-surface-deep: #d9ccb8;
+  --archive-line: rgba(16, 18, 21, 0.14);
+  --archive-text: #13161a;
+  --archive-text-soft: #57616b;
+  --archive-accent: #7d1e2f;
+  --archive-accent-soft: #9b7849;
+  --archive-display-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --archive-sans-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 html {
@@ -11,10 +22,13 @@ html {
 }
 
 body {
-  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  @apply min-h-screen antialiased;
+  color: var(--archive-ink);
+  font-family: var(--archive-sans-font);
   background:
-    radial-gradient(circle at top, rgba(148, 163, 184, 0.09), transparent 28%),
-    linear-gradient(180deg, #061019 0%, #07131c 55%, #050b12 100%);
+    radial-gradient(circle at top, rgba(125, 30, 47, 0.18), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(155, 120, 73, 0.1), transparent 22%),
+    linear-gradient(180deg, #080a0d 0%, #0c1115 48%, #08090c 100%);
 }
 
 a {
@@ -22,11 +36,11 @@ a {
 }
 
 .archive-shell {
-  @apply mx-auto flex min-h-screen w-full max-w-6xl flex-col px-6 py-8 sm:px-8 lg:px-10;
+  @apply mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 py-4 sm:px-8 lg:px-10;
 }
 
 .archive-header {
-  @apply mb-8 flex flex-col gap-4 border-b border-white/10 pb-6 md:flex-row md:items-center md:justify-between;
+  @apply mb-8 flex flex-col gap-4 border-b border-white/10 pb-5 pt-2 lg:flex-row lg:items-end lg:justify-between;
 }
 
 .archive-brand {
@@ -34,23 +48,31 @@ a {
 }
 
 .archive-brand__title {
-  @apply text-3xl font-semibold tracking-tight text-white sm:text-4xl;
+  @apply text-3xl font-semibold tracking-tight sm:text-4xl;
+  color: var(--archive-ink);
+  font-family: var(--archive-display-font);
 }
 
 .archive-brand__subtitle {
-  @apply max-w-2xl text-sm leading-6 text-slate-300;
+  @apply max-w-2xl text-sm leading-6;
+  color: rgba(217, 208, 195, 0.78);
 }
 
 .archive-nav {
-  @apply flex flex-wrap gap-2;
+  @apply flex flex-wrap gap-2 lg:justify-end;
 }
 
 .archive-nav__link {
-  @apply rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 hover:border-white/20 hover:bg-white/10;
+  @apply rounded-full border px-4 py-2 text-sm transition;
+  border-color: rgba(225, 216, 203, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(243, 237, 228, 0.94);
 }
 
 .archive-nav__link--active {
-  @apply border-amber-300/40 bg-amber-300/10 text-amber-100;
+  border-color: rgba(127, 29, 45, 0.45);
+  background: rgba(127, 29, 45, 0.18);
+  color: #fff6f4;
 }
 
 .archive-main {
@@ -58,7 +80,12 @@ a {
 }
 
 .archive-hero {
-  @apply grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/20 backdrop-blur md:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)];
+  @apply grid gap-6 rounded-[2rem] border p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-7 lg:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.65fr)];
+  border-color: rgba(18, 20, 24, 0.12);
+  background:
+    linear-gradient(180deg, rgba(244, 239, 231, 0.99), rgba(236, 228, 216, 0.96)),
+    radial-gradient(circle at top right, rgba(125, 30, 47, 0.06), transparent 28%);
+  color: var(--archive-text);
 }
 
 .archive-hero__copy {
@@ -66,15 +93,19 @@ a {
 }
 
 .archive-kicker {
-  @apply text-xs font-semibold uppercase tracking-[0.22em] text-amber-200/70;
+  @apply text-[11px] font-semibold uppercase tracking-[0.28em];
+  color: var(--archive-accent);
 }
 
 .archive-hero h1 {
-  @apply text-4xl font-semibold tracking-tight text-white sm:text-5xl;
+  @apply text-4xl font-semibold tracking-tight sm:text-5xl;
+  color: var(--archive-text);
+  font-family: var(--archive-display-font);
 }
 
 .archive-hero p {
-  @apply max-w-2xl text-base leading-7 text-slate-300;
+  @apply max-w-2xl text-base leading-7;
+  color: var(--archive-text-soft);
 }
 
 .archive-badge-row {
@@ -82,11 +113,19 @@ a {
 }
 
 .archive-badge {
-  @apply rounded-full border border-white/10 bg-slate-900/70 px-3 py-1 text-xs text-slate-300;
+  @apply rounded-full border px-3 py-1 text-xs;
+  border-color: rgba(18, 20, 24, 0.08);
+  background: rgba(18, 20, 24, 0.04);
+  color: var(--archive-text-soft);
 }
 
 .archive-panel {
-  @apply rounded-3xl border border-white/10 bg-slate-900/60 p-5 shadow-lg shadow-black/10;
+  @apply rounded-[1.75rem] border p-5 shadow-lg shadow-black/10;
+  border-color: rgba(18, 20, 24, 0.11);
+  background:
+    linear-gradient(180deg, rgba(244, 239, 231, 0.98), rgba(234, 226, 214, 0.98)),
+    radial-gradient(circle at top right, rgba(155, 120, 73, 0.04), transparent 20%);
+  color: var(--archive-text);
 }
 
 .archive-section {
@@ -98,11 +137,14 @@ a {
 }
 
 .archive-section__title {
-  @apply text-xl font-semibold tracking-tight text-white;
+  @apply text-xl font-semibold tracking-tight;
+  color: var(--archive-text);
+  font-family: var(--archive-display-font);
 }
 
 .archive-section__copy {
-  @apply max-w-2xl text-sm leading-6 text-slate-400;
+  @apply max-w-2xl text-sm leading-6;
+  color: var(--archive-text-soft);
 }
 
 .archive-grid {
@@ -110,9 +152,163 @@ a {
 }
 
 .archive-empty {
-  @apply rounded-2xl border border-dashed border-white/10 bg-white/5 p-5 text-sm leading-6 text-slate-400;
+  @apply rounded-2xl border border-dashed p-5 text-sm leading-6;
+  border-color: rgba(18, 20, 24, 0.12);
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--archive-text-soft);
 }
 
 .archive-footer {
-  @apply border-t border-white/10 py-6 text-xs text-slate-500;
+  @apply border-t py-6 text-xs;
+  border-color: rgba(217, 208, 195, 0.12);
+  color: rgba(217, 208, 195, 0.54);
+}
+
+.archive-display {
+  font-family: var(--archive-display-font);
+  letter-spacing: -0.03em;
+}
+
+.archive-shell .archive-panel .text-white,
+.archive-shell .archive-panel .text-slate-100,
+.archive-shell .archive-panel .text-slate-200,
+.archive-shell .archive-panel .text-slate-300,
+.archive-shell .archive-panel .text-slate-400,
+.archive-shell .archive-panel .text-slate-500 {
+  color: inherit;
+}
+
+.archive-surfaces {
+  @apply grid gap-4 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)];
+}
+
+.archive-eyebrow {
+  @apply text-[11px] font-semibold uppercase tracking-[0.28em];
+  color: var(--archive-accent);
+}
+
+.archive-stat-grid {
+  @apply grid gap-3 sm:grid-cols-2;
+}
+
+.archive-stat {
+  @apply rounded-2xl border p-4;
+  border-color: rgba(18, 20, 24, 0.08);
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.archive-stat__value {
+  @apply text-2xl font-semibold tracking-tight;
+  color: var(--archive-text);
+  font-family: var(--archive-display-font);
+}
+
+.archive-stat__label {
+  @apply mt-1 text-xs font-semibold uppercase tracking-[0.22em];
+  color: var(--archive-text-soft);
+}
+
+.archive-home-hero {
+  @apply grid gap-6 rounded-[2.2rem] border p-6 shadow-2xl shadow-black/25 lg:grid-cols-[minmax(0,1.1fr)_minmax(360px,0.9fr)];
+  border-color: rgba(18, 20, 24, 0.12);
+  background:
+    linear-gradient(180deg, rgba(18, 22, 25, 0.98), rgba(10, 12, 15, 0.98)),
+    radial-gradient(circle at top left, rgba(125, 30, 47, 0.22), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(155, 120, 73, 0.16), transparent 26%);
+}
+
+.archive-home-hero__copy {
+  @apply flex flex-col gap-4;
+}
+
+.archive-home-hero__wall {
+  @apply rounded-[1.6rem] border p-4;
+  border-color: rgba(243, 237, 228, 0.12);
+  background: rgba(243, 237, 228, 0.04);
+}
+
+.archive-pill {
+  @apply rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em];
+  border-color: rgba(243, 237, 228, 0.12);
+  background: rgba(243, 237, 228, 0.06);
+  color: rgba(243, 237, 228, 0.84);
+}
+
+.archive-home-stat {
+  @apply rounded-[1.2rem] border p-4;
+  border-color: rgba(243, 237, 228, 0.12);
+  background: rgba(243, 237, 228, 0.06);
+}
+
+.archive-home-stat__value {
+  @apply text-2xl font-semibold tracking-tight;
+  color: rgba(243, 237, 228, 0.96);
+  font-family: var(--archive-display-font);
+}
+
+.archive-home-stat__label {
+  @apply mt-1 text-[11px] font-semibold uppercase tracking-[0.22em];
+  color: rgba(243, 237, 228, 0.64);
+}
+
+.archive-hero-button {
+  @apply inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition;
+  border-color: rgba(243, 237, 228, 0.14);
+  background: rgba(243, 237, 228, 0.08);
+  color: rgba(243, 237, 228, 0.96);
+}
+
+.archive-hero-button:hover,
+.archive-hero-button:focus-visible {
+  border-color: rgba(155, 120, 73, 0.45);
+  background: rgba(243, 237, 228, 0.12);
+  outline: none;
+}
+
+.archive-hero-button--ghost {
+  background: rgba(243, 237, 228, 0.04);
+}
+
+.archive-place-card {
+  @apply h-full rounded-[1.6rem] border p-5 shadow-lg shadow-black/10 transition;
+  border-color: rgba(18, 20, 24, 0.11);
+  background: linear-gradient(180deg, rgba(244, 239, 231, 0.98), rgba(236, 228, 216, 0.96));
+}
+
+.archive-place-card:hover,
+.archive-place-card:focus-within {
+  border-color: rgba(125, 30, 47, 0.28);
+  transform: translateY(-1px);
+}
+
+.archive-range {
+  accent-color: var(--archive-accent);
+}
+
+.archive-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background: var(--archive-accent);
+  border: 2px solid rgba(243, 237, 228, 0.96);
+  box-shadow: 0 0 0 5px rgba(125, 30, 47, 0.15);
+}
+
+.archive-range::-moz-range-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background: var(--archive-accent);
+  border: 2px solid rgba(243, 237, 228, 0.96);
+  box-shadow: 0 0 0 5px rgba(125, 30, 47, 0.15);
+}
+
+.archive-range--secondary {
+  filter: saturate(0.8);
+}
+
+.archive-focus {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(155,120,73,0.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent;
 }

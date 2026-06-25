@@ -90,17 +90,31 @@
   },
   {
     "id": "claiborne-county-1840-census",
-    "filename": "claiborne-county-1840-census.pdf",
+    "filename": "claiborne-county-1840-census.jpg",
     "type": "U.S. census page",
     "date": "1840",
     "era": "19th-century census",
-    "sourceCitation": "1840 U.S. Federal Census, Claiborne County, Tennessee - Elizabeth Ramsey household.",
+    "sourceCitation": "1840 U.S. Federal Census, Hawkins County, Tennessee - Jabez Hopkins household schedule.",
     "previewUrl": "/documents/claiborne-county-1840-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Elizabeth Cowan"],
-    "place": "Claiborne County, Tennessee",
-    "whatItProves": "Elizabeth Ramsey as head of household in Claiborne County, Tennessee, with children aged 1787-1813 birth years. Helps identify the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
-    "notes": "RESEARCH PRIORITY: Examine the census image to identify all children in the household and match to the known Ramsey line."
+    "people": ["Jabez Hopkins"],
+    "place": "Hawkins County, Tennessee",
+    "whatItProves": "Jabez Hopkins appears in Hawkins County, Tennessee in 1840, supporting the Tennessee residence trail for the Hopkins family.",
+    "notes": "Private census image in the archive. The page places Jabez Hopkins within the Hawkins County schedule among neighboring Collins and Gipson households, which helps anchor the Hopkins residence trail."
+  },
+  {
+    "id": "james-ramsey-draft-registration",
+    "filename": "32178_1220705228_0032-00400.jpg",
+    "type": "Civil War draft registration",
+    "date": "1863",
+    "era": "Civil War",
+    "sourceCitation": "U.S. Civil War Draft Registration Records, 1863, 5th Congressional District of Iowa, listing James Ramsey, age 38, farmer, born in Tennessee.",
+    "previewUrl": "/documents/32178_1220705228_0032-00400.jpg",
+    "confidence": "Primary Source",
+    "people": ["James Ramsey"],
+    "place": "Long Creek, Decatur County, Iowa",
+    "whatItProves": "James Ramsey appears on the Iowa Civil War draft registration page in 1863, giving his age, occupation, birthplace, and Iowa residence context.",
+    "notes": "Private image of the draft registration page. Use as a primary source for James Ramsey's Iowa residence and Civil War-era identity trail."
   },
   {
     "id": "richland-township-1880-census",
@@ -115,6 +129,20 @@
     "place": "Richland Township, Decatur County, Iowa",
     "whatItProves": "Anna Ramsey (1807-1883) appears as a widow in Richland Township, Decatur County, Iowa, confirming her residence after Thomas Ramsey's death.",
     "notes": "Supports the Ramsey family presence in Decatur County, Iowa."
+  },
+  {
+    "id": "thomas-bentley-ramsey-1880-census",
+    "filename": "long-creek-1880-census-thomas-bentley-ramsey.jpg",
+    "type": "U.S. census page",
+    "date": "1880",
+    "era": "19th-century census",
+    "sourceCitation": "1880 U.S. Federal Census, Long Creek Township, Decatur County, Iowa, Thomas Bentley Ramsey household.",
+    "previewUrl": "/documents/long-creek-1880-census-thomas-bentley-ramsey.jpg",
+    "confidence": "Primary Source",
+    "people": ["Thomas Bentley Ramsey"],
+    "place": "Long Creek Township, Decatur County, Iowa",
+    "whatItProves": "Thomas Bentley Ramsey appears as a head of household in Long Creek Township, Decatur County, Iowa in 1880, supporting his Iowa residence trail and family grouping.",
+    "notes": "Private census image in the archive. Use this as a residence and household anchor for Thomas Bentley Ramsey."
   },
   {
     "id": "charles-dyer-discharge",
@@ -183,8 +211,8 @@
     "confidence": "Strong Evidence",
     "people": ["Armina Ramsey", "Anderson Edwards"],
     "place": "Pine City, Washington",
-    "whatItProves": "Armina Ramsey Edwards' obituary provides family memory and documented biographical details, including birth, marriage, children, moves to Iowa and Washington, and burial details.",
-    "notes": "Useful collateral source for the Edwards/Ramsey line. Keep the obituary separate from primary civil records."
+    "whatItProves": "Armina Ramsey Edwards' obituary states that she was born August 27, 1826, died July 10, 1923, was united in marriage to Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, and was buried beside her husband in Pine City Cemetery.",
+    "notes": "Useful collateral source for the Edwards/Ramsey line. Keep the obituary separate from primary civil records. The marriage date comes from the obituary and still needs a primary record for confirmation."
   },
   {
     "id": "josiah-ramsey-family-plaque",
