@@ -130,7 +130,7 @@ a {
 }
 
 .archive-panel {
-  @apply rounded-[1.75rem] border p-5 shadow-lg shadow-black/10;
+  @apply rounded-[1.75rem] border p-6 shadow-lg shadow-black/10;
   border-color: rgba(18, 20, 24, 0.11);
   background:
     linear-gradient(180deg, rgba(244, 239, 231, 0.98), rgba(234, 226, 214, 0.98)),
@@ -153,12 +153,12 @@ a {
 }
 
 .archive-section__copy {
-  @apply max-w-2xl text-sm leading-6;
+  @apply max-w-2xl text-sm leading-7;
   color: var(--archive-text-soft);
 }
 
 .archive-grid {
-  @apply grid gap-4 md:grid-cols-2 xl:grid-cols-3;
+  @apply grid gap-6 md:grid-cols-2 xl:grid-cols-3;
 }
 
 .archive-empty {

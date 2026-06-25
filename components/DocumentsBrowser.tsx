@@ -40,6 +40,19 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
     return documents.filter((document) => matchesQuery(document, normalized));
   }, [documents, query]);
 
+  const sortedDocuments = useMemo(() => {
+    const isScreenshot = (d: DocumentCardProps) => {
+      const hay = `${d.type} ${d.filename} ${d.previewUrl || ''}`.toLowerCase();
+      return hay.includes('.png') || /grave|plaque|screenshot|marker|memorial|photo/.test(hay);
+    };
+    return [...filteredDocuments].sort((a, b) => {
+      const aShot = isScreenshot(a) ? 0 : 1;
+      const bShot = isScreenshot(b) ? 0 : 1;
+      if (aShot !== bShot) return aShot - bShot;
+      return 0; // preserve original relative order for non-screenshots
+    });
+  }, [filteredDocuments]);
+
   const chronologyEntries = useMemo(() => {
     return sortChronologyEntries(
       filteredDocuments.map((document, index) => ({
@@ -107,8 +120,8 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
 
       {viewMode === "cards" ? (
         <div className="archive-grid">
-          {filteredDocuments.length ? (
-            filteredDocuments.map((document) => (
+          {sortedDocuments.length ? (
+            sortedDocuments.map((document) => (
               <DocumentCard key={document.id} {...document} onPreview={() => setPreviewDocument(document)} />
             ))
           ) : (

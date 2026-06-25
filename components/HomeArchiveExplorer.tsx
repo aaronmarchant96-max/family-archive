@@ -45,6 +45,45 @@ const eraJumps: ArchiveEraJump[] = [
   { label: "Alberta / present", startYear: 1980, endYear: 2026 }
 ];
 
+const chapters = [
+  {
+    label: "Roots & Revolution",
+    range: "1675–1800",
+    intro: "Early colonial roots in Virginia and Revolutionary War service that anchors the Ramsey and Dyer lines.",
+    events: [] as any[] // populated from timelineEvents
+  },
+  {
+    label: "Tennessee Families",
+    range: "1801–1850",
+    intro: "Hopkins, Clouse, and Ramsey families establish roots in Tennessee with land grants, marriages, and births.",
+    events: [] as any[]
+  },
+  {
+    label: "Southern Iowa Migration",
+    range: "1851–1900",
+    intro: "The great move west: Ramsey and Edwards families settle in Iowa, with census and draft records.",
+    events: [] as any[]
+  },
+  {
+    label: "Oregon & Washington",
+    range: "1901–1950",
+    intro: "Dyer and Edwards lines reach the Pacific Northwest. Military service, marriages, and household continuity.",
+    events: [] as any[]
+  },
+  {
+    label: "Ballymena & Moore",
+    range: "1840s–1920s",
+    intro: "The Irish Moore and Law connection through marriage records in Ballymena, linking to the main line.",
+    events: [] as any[]
+  },
+  {
+    label: "The Marchant Legacy",
+    range: "1950–Present",
+    intro: "Edith Ann Edwards and Hugh Moore's long life, the Red Book, and the living archive today.",
+    events: [] as any[]
+  }
+];
+
 type PlaceCard = {
   id: string;
   title: string;
@@ -135,12 +174,20 @@ function memoryInRange(entry: FamilyMemoryEntry, startYear: number, endYear: num
   return year >= startYear && year <= endYear;
 }
 
+function confidenceStyle(confidence: string) {
+  if (confidence === "Primary Source" || confidence === "Confirmed") return "solid";
+  if (confidence === "Strong Evidence") return "strong";
+  if (confidence === "Family-Confirmed Oral History") return "oral";
+  return "dotted";
+}
+
 export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, maxYear }: ArchiveHomeProps) {
   const [startYear, setStartYear] = useState(minYear);
   const [endYear, setEndYear] = useState(maxYear);
   const [viewMode, setViewMode] = useState<"timeline" | "web">("timeline");
   const [selectedEventId, setSelectedEventId] = useState<string | null>(null);
   const [selectedNodeId, setSelectedNodeId] = useState<string>("thomas-ramsey-1799");
+  const [activeChapter, setActiveChapter] = useState(0);
   const documentsById = useMemo(() => new Map(documents.map((document) => [document.id, document])), [documents]);
   const documentsByFilename = useMemo(
     () => new Map(documents.map((document) => [document.filename.toLowerCase(), document])),
@@ -399,6 +446,14 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
     [timelineEvents, startYear, endYear]
   );
 
+  // Populate chapters dynamically from timeline data (simple year-based grouping)
+  chapters[0].events = timelineEvents.filter((e: any) => e.year && e.year <= 1800).slice(0, 6);
+  chapters[1].events = timelineEvents.filter((e: any) => e.year && e.year > 1800 && e.year <= 1850).slice(0, 6);
+  chapters[2].events = timelineEvents.filter((e: any) => e.year && e.year > 1850 && e.year <= 1900).slice(0, 6);
+  chapters[3].events = timelineEvents.filter((e: any) => e.year && e.year > 1900 && e.year <= 1950).slice(0, 6);
+  chapters[4].events = timelineEvents.filter((e: any) => e.year && e.year >= 1840 && e.year <= 1925).slice(0, 5);
+  chapters[5].events = timelineEvents.filter((e: any) => e.year && e.year >= 1950).slice(0, 5);
+
   useEffect(() => {
     if (!filteredTimelineEvents.length) {
       setSelectedEventId(null);
@@ -412,6 +467,19 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
 
   const visiblePeople = useMemo(() => people.filter((person) => personInRange(person, startYear, endYear)), [people, startYear, endYear]);
   const visibleDocuments = useMemo(() => documents.filter((document) => documentInRange(document, startYear, endYear)), [documents, startYear, endYear]);
+
+  const sortedVisibleDocuments = useMemo(() => {
+    const isScreenshot = (d: DocumentCardProps) => {
+      const hay = `${d.type} ${d.filename} ${d.previewUrl || ''}`.toLowerCase();
+      return hay.includes('.png') || /grave|plaque|screenshot|marker|memorial|photo/.test(hay);
+    };
+    return [...visibleDocuments].sort((a, b) => {
+      const aShot = isScreenshot(a) ? 0 : 1;
+      const bShot = isScreenshot(b) ? 0 : 1;
+      if (aShot !== bShot) return aShot - bShot;
+      return 0;
+    });
+  }, [visibleDocuments]);
   const visibleMemory = useMemo(() => familyMemory.filter((entry) => memoryInRange(entry, startYear, endYear)), [familyMemory, startYear, endYear]);
 
   const featuredRecordItems = useMemo<FeaturedRecord[]>(
@@ -728,20 +796,68 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         </div>
 
         {viewMode === "timeline" ? (
-          <ArchiveTimeline
-            events={timelineEvents}
-            minYear={minYear}
-            maxYear={maxYear}
-            startYear={startYear}
-            endYear={endYear}
-            onRangeChange={(nextStart, nextEnd) => {
-              setStartYear(nextStart);
-              setEndYear(nextEnd);
-            }}
-            selectedEventId={selectedEventId}
-            onSelectEvent={(event) => setSelectedEventId(event.id)}
-            eraJumps={eraJumps}
-          />
+          <div className="space-y-4">
+            {/* Red Book Chapters tabs */}
+            <div className="flex flex-wrap gap-1 border-b border-[rgba(18,20,24,0.1)] pb-2 overflow-x-auto">
+              {chapters.map((chapter, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  onClick={() => setActiveChapter(index)}
+                  className={`px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] border-b-2 transition whitespace-nowrap min-h-[36px] ${
+                    activeChapter === index
+                      ? "border-[var(--archive-accent)] text-[var(--archive-text)] bg-[rgba(139,31,43,0.05)]"
+                      : "border-transparent text-[var(--archive-text-soft)] hover:text-[var(--archive-text)] hover:border-[rgba(139,31,43,0.2)]"
+                  }`}
+                >
+                  {chapter.label}
+                </button>
+              ))}
+            </div>
+
+            {/* Active chapter panel with visual thread */}
+            <div className="archive-panel space-y-4">
+              <div>
+                <div className="flex items-baseline justify-between gap-2">
+                  <div>
+                    <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">{chapters[activeChapter].range}</div>
+                    <h3 className="text-2xl font-semibold tracking-tight archive-display">{chapters[activeChapter].label}</h3>
+                  </div>
+                  <Link href="#timeline" className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--archive-accent)] hover:underline">
+                    Full timeline →
+                  </Link>
+                </div>
+                <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">{chapters[activeChapter].intro}</p>
+              </div>
+
+              <div className="relative pl-6 border-l-2 border-[rgba(139,31,43,0.15)] space-y-3">
+                {chapters[activeChapter].events.map((event: any, idx: number) => {
+                  const certainty = event.certainty ?? confidenceStyle(event.confidence);
+                  return (
+                    <div key={idx} className="relative">
+                      <div className="absolute -left-[7px] top-1.5 h-2.5 w-2.5 rounded-full border border-[var(--archive-accent)] bg-white" />
+                      <div className={`rounded-xl border p-3 text-sm transition min-h-[90px] ${
+                        certainty === "solid" ? "border-[rgba(233,217,205,0.24)] bg-[rgba(244,239,231,0.94)] text-[var(--archive-text)]" :
+                        certainty === "strong" ? "border-[rgba(160,123,70,0.28)] bg-[rgba(237,229,217,0.95)] text-[var(--archive-text)]" :
+                        "border border-dashed border-[rgba(139,31,43,0.38)] bg-[rgba(139,31,43,0.1)] text-[rgba(244,239,231,0.94)]"
+                      }`}>
+                        <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-[0.24em] opacity-70">
+                          <span>{event.dateLabel}</span>
+                          <span>{event.category}</span>
+                        </div>
+                        <div className="mt-1 font-semibold leading-tight archive-display line-clamp-1">{event.title}</div>
+                        {event.place && <div className="mt-0.5 text-xs opacity-70 line-clamp-1">{event.place}</div>}
+                        <div className="mt-1.5 text-xs leading-5 line-clamp-2 opacity-90">{event.summary}</div>
+                        <div className="mt-2">
+                          <ConfidenceBadge label={event.confidence} />
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         ) : (
           <section className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_360px]">
             <FamilyWeb
@@ -839,8 +955,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
           <div>
             <div className="archive-section__title">Look by place</div>
             <div className="archive-section__copy">
-              Use the place cards as entry points. Each card filters the archive toward the years and records tied
-              to that location.
+              Click a place to jump into the matching Red Book chapter. These cards highlight the migration trails and record clusters tied to each region.
             </div>
           </div>
         </div>
@@ -854,9 +969,9 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
                 key={place.id}
                 type="button"
                 onClick={() => {
-                  setStartYear(place.jump.startYear);
-                  setEndYear(place.jump.endYear);
                   setViewMode("timeline");
+                  const chapterIndex = place.id.includes("tennessee") ? 1 : place.id.includes("iowa") ? 2 : (place.id.includes("oregon") || place.id.includes("washington")) ? 3 : 0;
+                  setActiveChapter(chapterIndex);
                 }}
                 className="group text-left"
               >
@@ -878,7 +993,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
                       {place.accent}
                     </div>
                     <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--archive-accent)] underline decoration-[rgba(139,31,43,0.28)] underline-offset-4">
-                      Jump to {place.jump.label}
+                      Jump to chapter
                     </span>
                   </div>
                 </div>
@@ -925,8 +1040,8 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
           </Link>
         </div>
         <div className="archive-grid">
-          {visibleDocuments.length ? (
-            visibleDocuments.map((document) => <DocumentCard key={document.id} {...document} />)
+          {sortedVisibleDocuments.length ? (
+            sortedVisibleDocuments.map((document) => <DocumentCard key={document.id} {...document} />)
           ) : (
             <div className="archive-empty">
               No document records fall inside the selected year range. Widen the filter or choose a place card.

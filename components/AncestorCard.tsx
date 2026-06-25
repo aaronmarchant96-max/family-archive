@@ -73,7 +73,7 @@ export function AncestorCard({
       <h3 className="text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{name}</h3>
       <div className="text-sm text-[var(--archive-text-soft)]">{lifespan}</div>
       {era ? <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent-soft)]">{era}</div> : null}
-      <p className="text-sm leading-6 text-[var(--archive-text-soft)]">{summary}</p>
+      <p className="text-sm leading-6 text-[var(--archive-text-soft)] line-clamp-3">{summary}</p>
       <div className="border-t border-[rgba(18,20,24,0.08)] pt-4 text-sm text-[var(--archive-text)]">
         <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Key event</div>
         <div className="mt-1 leading-6">{keyEvent}</div>

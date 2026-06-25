@@ -34,12 +34,14 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
   }
 
   return (
-    <section className="archive-panel space-y-4">
+    <section className="archive-panel space-y-8">
       <div className="archive-kicker">Ancestor record preview</div>
-      <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{person.name}</h1>
-      <div className="text-sm text-[var(--archive-text-soft)]">{person.branch}</div>
-      <p className="max-w-2xl text-sm leading-6 text-[var(--archive-text-soft)]">
-        This is a placeholder detail page for future family notes, attached records, and timeline views.
+      <div>
+        <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{person.name}</h1>
+        <div className="mt-1 text-sm text-[var(--archive-text-soft)]">{person.branch} · {person.lifespan}</div>
+      </div>
+      <p className="max-w-2xl text-sm leading-7 text-[var(--archive-text-soft)]">
+        This page shows the known facts and evidence for {person.name}. The timeline below highlights key life events backed by documents where available.
       </p>
       {(person.sourceUrl || person.sourceCitation) ? (
         <section className="archive-panel space-y-3">
@@ -95,27 +97,30 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
       />
 
       {person.timeline?.length ? (
-        <section className="space-y-4 pt-2">
+        <section className="space-y-4 pt-4">
           <div className="archive-section__title">Life &amp; Evidence Timeline</div>
           <Timeline entries={person.timeline} />
         </section>
       ) : null}
 
       {person.evidenceSummary?.length ? (
-        <section className="space-y-4 pt-2">
+        <section className="space-y-4 pt-4">
           <div className="archive-section__title">Evidence Summary</div>
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-            <ul className="space-y-2 text-sm leading-6 text-slate-300">
-              {person.evidenceSummary.map((item) => (
-                <li key={item}>{item}</li>
+          <div className="rounded-2xl border border-white/10 bg-black/20 p-5">
+            <div className="grid gap-x-6 gap-y-2 text-sm leading-7 text-[var(--archive-text)] sm:grid-cols-2">
+              {person.evidenceSummary.map((item, index) => (
+                <div key={index} className="flex items-start gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--archive-accent)]" />
+                  <span>{item}</span>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
       ) : null}
 
       {person.sarLineStatus ? (
-        <section className="space-y-4 pt-2">
+        <section className="space-y-6 pt-4">
           <div className="archive-section__title">
             {isCharlesDyer ? "Confirmed Direct Revolutionary War Line" : "SAR Line Status"}
           </div>
@@ -126,30 +131,30 @@ export default function AncestorPreviewPage({ params }: { params: { id: string }
             </div>
           ) : null}
           <div className="grid gap-3 md:grid-cols-2">
-            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)]">
               <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Patriot ancestor</div>
               <div className="mt-1">{person.sarLineStatus.patriotAncestor}</div>
             </div>
-            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)]">
               <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Service</div>
               <div className="mt-1">{person.sarLineStatus.service}</div>
             </div>
-            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)]">
               <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Key record</div>
               <div className="mt-1">{person.sarLineStatus.keyRecord}</div>
             </div>
-            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)]">
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)]">
               <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Status</div>
               <div className="mt-1">{person.sarLineStatus.status}</div>
             </div>
             {isCharlesDyer ? (
-              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)] md:col-span-2">
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)] md:col-span-2">
                 <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Descent</div>
                 <div className="mt-1">Documented descent through Jonathan Dyer</div>
               </div>
             ) : null}
           </div>
-          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm leading-6 text-[var(--archive-text)]">
+          <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-5 text-sm leading-7 text-[var(--archive-text)]">
             <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Note</div>
             <div className="mt-1">{person.sarLineStatus.note}</div>
           </div>

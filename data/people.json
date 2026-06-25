@@ -79,7 +79,7 @@
     "branch": "Ramsey",
     "summary": "Revolutionary War veteran and patriarch of the Ramsey family line. Served in North Carolina Militia with confirmed 1782 pay voucher.",
     "keyEvent": "Served in North Carolina Militia during Revolutionary War; 1782 pay voucher confirms service.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": ["Revolutionary War", "North Carolina Militia", "SAR Line", "Generation 2"],
     "sourceCitation": "1782 North Carolina Pay Voucher for Josiah Ramsey; marriage record in Delaware (1744)",
     "timeline": [
@@ -319,7 +319,7 @@
     "branch": "Dyer",
     "summary": "Confirmed direct Revolutionary War ancestor.",
     "keyEvent": "Honorably discharged September 25, 1778 after service in the 12th Virginia Regiment at Fort Randolph.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
     "attachedDocument": "charles-dyer.pdf",
     "evidenceSummary": [
@@ -334,7 +334,7 @@
         "title": "Revolutionary War service",
         "date": "1770s",
         "summary": "Served in Captain William McKee’s company of the 12th Virginia Regiment.",
-        "confidence": "Confirmed",
+        "confidence": "Primary Source",
         "linkedDocumentId": "charles-dyer-discharge"
       },
       {
@@ -1025,6 +1025,14 @@
         "place": "Mulberry Gap, Hancock, Tennessee, United States",
         "summary": "Died in 1835 in Mulberry Gap, Hancock, Tennessee, at age 66.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Will recorded",
+        "date": "1835",
+        "place": "Washington County, Pennsylvania",
+        "summary": "Last will and testament recorded in Will Book No. 5, detailing heirs and estate distribution.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-ramsey-will-1835"
       }
     ],
     "evidenceSummary": [
@@ -1037,6 +1045,7 @@
       "Served in 14th Kentucky Militia during War of 1812",
       "Died in 1835 in Mulberry Gap, Hancock, Tennessee",
       "Family plaque and grave marker are supporting memorial records",
+      "Will recorded in Washington County, Pennsylvania will book (Primary Source)",
       "War of 1812 Society eligible"
     ]
   },
@@ -1252,7 +1261,7 @@
     "branch": "Moore",
     "summary": "Painter of Springwell Street, Ballymena, County Antrim.",
     "keyEvent": "Married Isabella Law on March 29, 1846.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
@@ -1282,7 +1291,7 @@
     "branch": "Law",
     "summary": "Lived on Bridge Street, Ballymena, County Antrim. Daughter of Patrick Law, a brassfounder.",
     "keyEvent": "Married William Moore on March 29, 1846.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": ["Ballymena", "Bridge Street", "Brassfounder family"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
@@ -1526,6 +1535,30 @@
         "linkedDocumentId": "josiah-edwards-pine-city-marriage"
       },
       {
+        "title": "Marriage record",
+        "date": "1895",
+        "place": "Colfax, Washington",
+        "summary": "Marriage return for Josiah Edwards (age 38, third marriage, farmer) recorded. Provides additional family record for the Edwards line.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-edwards-marriage-return-1895"
+      },
+      {
+        "title": "Family census evidence",
+        "date": "1880",
+        "place": "Oregon",
+        "summary": "Edwards household in Oregon census during migration period.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-oregon-census"
+      },
+      {
+        "title": "Family census evidence",
+        "date": "1900",
+        "place": "Washington",
+        "summary": "Edwards family continuity in Washington state census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-washington-census-evidence"
+      },
+      {
         "title": "Death",
         "date": "1943",
         "place": "Washington",
@@ -1539,6 +1572,8 @@
       "Lived 84 years",
       "Named after Josiah Ramsey ancestors",
       "Married Nancy Ann Dyer; marriage return in Pine City with parent names written in (Primary Source)",
+      "Additional 1895 marriage record for Josiah Edwards in Colfax (Primary Source)",
+      "Family census evidence in Oregon (1880) and Washington (1900) supporting migration trail (Primary Source)",
       "Mentioned in Armina Ramsey Edwards obituary"
     ]
   },
@@ -1639,6 +1674,13 @@
         "place": "Saskatchewan, Canada",
         "summary": "Born in Saskatchewan, Canada.",
         "confidence": "Primary Source"
+      },
+      {
+        "title": "Birth of sister Janet Hazel Moore",
+        "date": "9 April 1903",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Sister Janet Hazel Moore born.",
+        "confidence": "Strong Evidence"
       },
       {
         "title": "Residence",
@@ -1745,8 +1787,201 @@
       "Served in the Canadian Expeditionary Force (attestation 1917) and registered for U.S. WWI draft in Montana",
       "Married Edith Ann Edwards on 26 May 1924 in Colfax, Washington (Primary Source marriage return)",
       "Lived 84 years; died 1979 in Calgary, Alberta; buried in Calgary",
-      "Parents: James Moore (1860-1942) and Jessie Bowen (1874-1958)",
+      "Parents: James Moore (1860-1942) and Jessie Bowen (1874-1958); maternal grandparents Hugh Bowen (1843–1936) and Jennet Souster (1847–1903)",
+      "Sister Janet Hazel Moore born 9 April 1903 in Sintaluta, Saskatchewan (father James age 43, mother Jessie age 29)",
       "Key documents: multiple Canadian censuses (1901, 1906, 1916, 1921), WWI records, and Washington marriage return"
+    ]
+  },
+  {
+    "id": "janet-hazel-moore",
+    "name": "Janet Hazel Moore",
+    "lifespan": "1903-1992",
+    "era": "20th century",
+    "branch": "Moore",
+    "summary": "Younger sister of Hugh Christopher Moore. Born 9 April 1903 in Sintaluta, Saskatchewan, Canada (father James age 43, mother Jessie age 29). The Moore family moved to Medicine Hat, Alberta by 1916 and later to Calgary. Married William Kirkwood in 1933 in Calgary (widowed 1949). Died 22 January 1992 in Calgary, Alberta, Canada at age 88.",
+    "keyEvent": "Married William Kirkwood in 1933 in Calgary, Alberta. Died in Calgary in 1992. Part of the Moore family's migration from Saskatchewan to Alberta.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "Saskatchewan", "Alberta", "Calgary"],
+    "sourceCitation": "1906 and 1916 Canadian censuses; family records for marriages and death.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "9 April 1903",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Born in Sintaluta, Saskatchewan, Canada. Her father James was 43 and her mother Jessie was 29 at the time of her birth.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1906",
+        "place": "Qu'Appelle area, Saskatchewan, Canada",
+        "summary": "Living in the Moore household in Qu'Appelle, Saskatchewan (census).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      },
+      {
+        "title": "Residence",
+        "date": "abt 1916",
+        "place": "11th Street, Medicine Hat, Alberta, Canada",
+        "summary": "Living with family on 11th Street, Medicine Hat (census).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1916-medicine-hat-census"
+      },
+      {
+        "title": "Marriage to William Kirkwood",
+        "date": "1933",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Married William Kirkwood in Calgary, Alberta, Canada.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Widowed",
+        "date": "1949",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Widowed upon the death of William Kirkwood.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Stanley Gillis",
+        "date": "After 1949",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Later married Stanley Gillis (1906-1978).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Widowed",
+        "date": "1978",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Widowed upon the death of Stanley Gillis.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "22 January 1992",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Died in Calgary, Alberta, Canada, at the age of 88.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 9 April 1903 in Sintaluta, Saskatchewan, Canada (father James Moore age 43, mother Jessie Bowen age 29)",
+      "Lived in Qu'Appelle, Saskatchewan (1906 census) and Medicine Hat, Alberta (1916 census) with parents James Moore and Jessie Bowen and siblings including Hugh Christopher Moore",
+      "Married William Kirkwood in 1933 in Calgary, Alberta, Canada",
+      "Died 22 January 1992 in Calgary, Alberta, Canada at the age of 88",
+      "Sister of Hugh Christopher Moore (1895-1979); part of the Moore family migration from Saskatchewan to Alberta. Maternal grandparents: Hugh Bowen (1843–1936) and Jennet Souster (1847–1903)"
+    ]
+  },
+  {
+    "id": "jessie-bowen",
+    "name": "Jessie Bowen",
+    "lifespan": "1874-1958",
+    "era": "Late 19th-20th century",
+    "branch": "Bowen / Moore",
+    "summary": "Daughter of Hugh Bowen (1843–1936) and Jennet Souster (1847–1903). Born in Ontario, moved west with family to Manitoba and Saskatchewan. Wife of James Moore (1860-1942). Mother of Hugh Christopher Moore, Janet Hazel Moore, and other children. Lived in Ellisboro, Saskatchewan; later Medicine Hat, Alberta; died in Calgary in 1958 and buried there.",
+    "keyEvent": "Married James Moore; mother of Hugh Christopher Moore (1895-1979) and Janet Hazel Moore (1903-1992). Daughter of Hugh Bowen and Jennet Souster. Part of the family's migration from Ontario through the prairies to Alberta.",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Moore", "Ontario", "Saskatchewan", "Alberta", "Calgary"],
+    "sourceCitation": "1881, 1901, 1906, 1916, 1921 Canadian censuses; Find A Grave.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1 March 1874",
+        "place": "Ontario, Canada",
+        "summary": "Born in Ontario.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1881",
+        "place": "Western Extension, Manitoba Extension, Manitoba, Canada",
+        "summary": "Living with parents Hugh Bowen and Jennet Souster and siblings.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "bowen-family-1881-manitoba-census"
+      },
+      {
+        "title": "Birth of son William Robert More",
+        "date": "22 March 1894",
+        "place": "Ellisboro, Saskatchewan, Canada",
+        "summary": "Son William Robert More born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Hugh Christopher Moore",
+        "date": "22 July 1895",
+        "place": "Saskatchewan, Canada",
+        "summary": "Son Hugh Christopher Moore born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1901",
+        "place": "Ellisboro, Assiniboia (east/est), The Territories, Canada",
+        "summary": "Living with husband and children. Marital Status: Single (listed); Relation to Head of House: Wife.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1901-ellisboro-census"
+      },
+      {
+        "title": "Birth of daughter Janet Hazel Moore",
+        "date": "9 April 1903",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Daughter Janet Hazel Moore born (father James age 43, mother age 29).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1906",
+        "place": "Townships 15, 16, 17, 18 in ranges 11, 12 west of the 2nd M, Qu'Appelle, Saskatchewan, Canada",
+        "summary": "Living with husband James Moore and family. Relation to Head of House: Wife; Marital Status: Married.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      },
+      {
+        "title": "Residence",
+        "date": "abt 1916",
+        "place": "11th Street, Medicine Hat, Alberta, Canada",
+        "summary": "Living with husband and family. Marital Status: Married; Relation to Head of House: Wife.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1916-medicine-hat-census"
+      },
+      {
+        "title": "Birth of son Norman James Moore",
+        "date": "1917",
+        "place": "Alberta",
+        "summary": "Son Norman James Moore born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1 Jun 1921",
+        "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
+        "summary": "Living with husband and family. Marital Status: Married; Relation to Head of House: Wife.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1921-medicine-hat-census"
+      },
+      {
+        "title": "Death of husband James Moore",
+        "date": "6 June 1942",
+        "place": "Calgary, Calgary Census Division, Alberta, Canada",
+        "summary": "Husband James Moore passed away in Calgary.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "25 September 1958",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Died in Calgary, Alberta. Buried in Calgary.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1 March 1874 in Ontario, Canada",
+      "Daughter of Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903); paternal grandfather Israel Bowen (1798–1887, see israel-bowen-1798); parents married 27 November 1870 in South Crosby, Ontario (Primary Source)",
+      "Lived with family in Manitoba by 1881 (census)",
+      "Married James Moore; mother of William Robert More (1894), Hugh Christopher Moore (1895), Kathleen Emma Moore (1897), Janet Hazel Moore (1903), Norman James Moore (1917) and others",
+      "Resided in Ellisboro, Saskatchewan (1901); Qu'Appelle, Saskatchewan (1906); Medicine Hat, Alberta (1916-1921)",
+      "Husband James Moore died 1942 in Calgary",
+      "Died 25 September 1958 in Calgary, Alberta; buried in Calgary",
+      "Key sources: Canadian censuses 1881-1921; Find A Grave; parents' marriage register"
     ]
   },
   {
@@ -2003,7 +2238,7 @@
     "branch": "Ramsey",
     "summary": "Confirmed daughter of Thomas Ramsey and Anna Hopkins; Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
     "keyEvent": "Married Anderson Edwards; the exact marriage date still needs verification. Later lived in Iowa and Washington. The profile and obituary identify her parents as Thomas Ramsey 1799-1872 and Anna Hopkins.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
     "sourceCitation": "Ancestry profile for Armina (X) Ramsey, showing birth 26 Aug 1826 in Tennessee, parents Thomas Ramsey 1799-1872 and Anna Hopkins, marriage to Anderson Edwards, and later Iowa/Washington residence trail.",
@@ -2604,6 +2839,788 @@
       "Wife of Arthur Edwards in 1850 Iowa census",
       "Mother of Elizabeth (age 17 in 1850, born Tennessee)",
       "Note: This is Freelove Clouse. Separate from Freelove Mason (Cole/Hopkins parentage)."
+    ]
+  },
+  {
+    "id": "jennet-souster",
+    "name": "Jennet Souster",
+    "lifespan": "1847–1903",
+    "era": "Late 19th century",
+    "branch": "Souster / Bowen",
+    "summary": "Wife of Hugh Bowen (1843–1936). Born in Crosby, Ontario area. Married 1870, moved west with family to Manitoba and Saskatchewan. Mother of Emeline, Jessie, John, Christina, William Daniel, Herbert, Thomas Hugh, Eunice Sarah, Katherine Booth, and George Stanley Bowen. Died May 1903 in Delta, British Columbia.",
+    "keyEvent": "Married Hugh Bowen in 1870 in Leeds and Grenville, Ontario. Mother of ten children including Jessie Bowen (1874–1958).",
+    "confidence": "Strong Evidence",
+    "tags": ["Souster", "Bowen", "Ontario", "Manitoba", "Saskatchewan"],
+    "sourceCitation": "Ontario marriage register 1870; family census records.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1847",
+        "place": "Crosby, Leeds County, Ontario, Canada",
+        "summary": "Born in Crosby, Leeds County, Ontario.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Hugh Bowen",
+        "date": "27 November 1870",
+        "place": "South Crosby, Leeds and Grenville, Ontario, Canada",
+        "summary": "Married Hugh Bowen (age 27, farmer, born South Elmsley).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-bowen-jennet-souster-marriage-1870"
+      },
+      {
+        "title": "Birth of daughter Emeline Bowen",
+        "date": "22 August 1873",
+        "place": "Ontario",
+        "summary": "Daughter Emeline Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Jessie Bowen",
+        "date": "1 March 1874",
+        "place": "Ontario",
+        "summary": "Daughter Jessie Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son John Bowen",
+        "date": "abt 1876",
+        "place": "Ontario",
+        "summary": "Son John Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Christina Bowen",
+        "date": "23 May 1879",
+        "place": "Manitoba, Canada",
+        "summary": "Daughter Christina Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son William Daniel Bowen",
+        "date": "9 June 1882",
+        "place": "Minnedosa, Manitoba, Canada",
+        "summary": "Son William Daniel Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Herbert Bowen",
+        "date": "13 September 1884",
+        "place": "Moosomin, Saskatchewan",
+        "summary": "Son Herbert Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Thomas Hugh Bowen",
+        "date": "24 March 1886",
+        "place": "Moosomin, Saskatchewan",
+        "summary": "Son Thomas Hugh Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Eunice Sarah Bowen",
+        "date": "13 October 1888",
+        "place": "Manitoba, Canada",
+        "summary": "Daughter Eunice Sarah Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Katherine Booth Bowen",
+        "date": "2 June 1892",
+        "place": "Saskatchewan",
+        "summary": "Daughter Katherine Booth Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son George Stanley Bowen",
+        "date": "27 December 1893",
+        "place": "Steep Creek, Saskatchewan",
+        "summary": "Son George Stanley Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "May 1903",
+        "place": "Delta, British Columbia, Canada",
+        "summary": "Died in Delta, British Columbia.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1847 in Crosby, Leeds County, Ontario",
+      "Married Hugh Bowen 27 November 1870 in South Crosby, Leeds and Grenville, Ontario (Primary Source marriage register)",
+      "Mother of ten children: Emeline (1873), Jessie (1874), John (1876), Christina (1879), William Daniel (1882), Herbert (1884), Thomas Hugh (1886), Eunice Sarah (1888), Katherine Booth (1892), George Stanley (1893)",
+      "Moved west with family to Manitoba and Saskatchewan",
+      "Died May 1903 in Delta, British Columbia",
+      "Key sources: Ontario marriage register; family censuses and records"
+    ]
+  },
+  {
+    "id": "hugh-bowen-1843",
+    "name": "Hugh Bowen",
+    "lifespan": "1843–1936",
+    "era": "19th-20th century",
+    "branch": "Bowen",
+    "summary": "Son of Israel Bowen and Margaret Wood. Born in South Elmsley, Leeds, Ontario. Married Jennet Souster in 1870. Father of ten children including Jessie Bowen (1874–1958). Moved west to Manitoba and Saskatchewan. Died in 1936.",
+    "keyEvent": "Married Jennet Souster in 1870 in Leeds and Grenville, Ontario. Father of Emeline, Jessie, John, Christina, William Daniel, Herbert, Thomas Hugh, Eunice Sarah, Katherine Booth, and George Stanley Bowen.",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Ontario", "Manitoba", "Saskatchewan"],
+    "sourceCitation": "Ontario marriage register 1870; family census and vital records.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "3 May 1843",
+        "place": "South Elmsley, Leeds, Ontario, Canada",
+        "summary": "Born in South Elmsley, Leeds, Ontario.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of sister Rhoda Bowen",
+        "date": "1847",
+        "place": "Elmsley",
+        "summary": "Sister Rhoda Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of sister Emmeline Bowen",
+        "date": "1 April 1852",
+        "place": "Canada West",
+        "summary": "Sister Emmeline Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of sister Charlotte Bowen",
+        "date": "10 September 1854",
+        "place": "North Crosby Township, Leeds County, Ontario, Canada",
+        "summary": "Sister Charlotte Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of sister Isabel Bowen",
+        "date": "1856",
+        "place": "Crosby Township, Leeds County, Ontario, Canada",
+        "summary": "Sister Isabel Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Jennet Souster",
+        "date": "27 November 1870",
+        "place": "South Crosby, Leeds and Grenville, Ontario, Canada",
+        "summary": "Married Jennet Souster (age 23, born Crosby).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-bowen-jennet-souster-marriage-1870"
+      },
+      {
+        "title": "Birth of daughter Emeline Bowen",
+        "date": "22 August 1873",
+        "place": "Ontario",
+        "summary": "Daughter Emeline Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Jessie Bowen",
+        "date": "1 March 1874",
+        "place": "Ontario",
+        "summary": "Daughter Jessie Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son John Bowen",
+        "date": "abt 1876",
+        "place": "Ontario",
+        "summary": "Son John Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Christina Bowen",
+        "date": "23 May 1879",
+        "place": "Manitoba, Canada",
+        "summary": "Daughter Christina Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son William Daniel Bowen",
+        "date": "9 June 1882",
+        "place": "Minnedosa, Manitoba, Canada",
+        "summary": "Son William Daniel Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Herbert Bowen",
+        "date": "13 September 1884",
+        "place": "Moosomin, Saskatchewan",
+        "summary": "Son Herbert Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Thomas Hugh Bowen",
+        "date": "24 March 1886",
+        "place": "Moosomin, Saskatchewan",
+        "summary": "Son Thomas Hugh Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of father Israel Bowen",
+        "date": "6 November 1887",
+        "place": "North Crosby, Leeds, Ontario, Canada",
+        "summary": "Father Israel Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Eunice Sarah Bowen",
+        "date": "13 October 1888",
+        "place": "Manitoba, Canada",
+        "summary": "Daughter Eunice Sarah Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Katherine Booth Bowen",
+        "date": "2 June 1892",
+        "place": "Saskatchewan",
+        "summary": "Daughter Katherine Booth Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son George Stanley Bowen",
+        "date": "27 December 1893",
+        "place": "Steep Creek, Saskatchewan",
+        "summary": "Son George Stanley Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of mother Margaret Wood",
+        "date": "4 February 1902",
+        "place": "North Crosby, Leeds County, Ontario",
+        "summary": "Mother Margaret Wood passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of wife Jennet Souster",
+        "date": "May 1903",
+        "place": "Delta, British Columbia, Canada",
+        "summary": "Wife Jennet Souster passed away in Delta, British Columbia.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of sister Rhoda Bowen",
+        "date": "12 October 1905",
+        "place": "Leeds",
+        "summary": "Sister Rhoda Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of daughter Christina Bowen",
+        "date": "26 November 1913",
+        "place": "New Westminster, British Columbia, Canada",
+        "summary": "Daughter Christina Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of son Herbert Bowen",
+        "date": "25 June 1916",
+        "place": "Prince Albert, Saskatchewan, Canada",
+        "summary": "Son Herbert Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of son Thomas Hugh Bowen",
+        "date": "12 April 1919",
+        "place": "Chapelle-St-Lambert Commune Cemetery",
+        "summary": "Son Thomas Hugh Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of sister Isabel Bowen",
+        "date": "26 May 1923",
+        "place": "Frontenac",
+        "summary": "Sister Isabel Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of brother Daniel Neil Bowen",
+        "date": "1923",
+        "place": "Kitscoty, Alberta, Canada",
+        "summary": "Brother Daniel Neil Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of sister Emmeline Bowen",
+        "date": "13 September 1932",
+        "place": "Kinderhook, Columbia, New York, USA",
+        "summary": "Sister Emmeline Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of daughter Emeline Bowen",
+        "date": "12 April 1933",
+        "place": "Saskatchewan, Canada",
+        "summary": "Daughter Emeline Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of sister Charlotte Bowen",
+        "date": "16 November 1935",
+        "place": "Leeds, Ontario, Canada",
+        "summary": "Sister Charlotte Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1936",
+        "place": "Unknown",
+        "summary": "Died in 1936 at age 93.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 3 May 1843 in South Elmsley, Leeds, Ontario, Canada",
+      "Married Jennet Souster 27 November 1870 in South Crosby, Leeds and Grenville, Ontario (Primary Source marriage register)",
+      "Father of ten children: Emeline (1873–1933), Jessie (1874–1958), John (1876–1962), Christina (1879–1913), William Daniel (1882–1956), Herbert (1884–1916), Thomas Hugh (1886–1919), Eunice Sarah (1888–1958), Katherine Booth (1892–1983), George Stanley (1893–1979)",
+      "Moved with family to Manitoba and Saskatchewan",
+      "Parents: Israel Bowen (1798–1887, see israel-bowen-1798) and Margaret Wood (1815–1902)",
+      "Died 1936",
+      "Key sources: Ontario marriage register; family vital records and censuses"
+    ]
+  },
+  {
+    "id": "israel-bowen-1798",
+    "name": "Israel Bowen",
+    "lifespan": "1798–1887",
+    "era": "19th century",
+    "branch": "Bowen",
+    "summary": "Son of Isreal Bowen and Isabella Lamb. Born in Lansdowne Township, Leeds County, Ontario. Married Margaret Wood in 1836. Father of Hugh Bowen (1843–1936), Daniel Neil Bowen, and other children. Died in North Crosby, Leeds, Ontario in 1887.",
+    "keyEvent": "Married Margaret Wood in 1836 in Leeds Co., Ontario. Father of Hugh Bowen and several other children. Part of the early Bowen line in Ontario.",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Ontario", "Leeds County"],
+    "sourceCitation": "Ancestry Family Tree; Public Member Trees.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "Sep 1798",
+        "place": "Lansdowne Township, Leeds County, Ontario, Canada",
+        "summary": "Born in Lansdowne Township, Leeds County, Ontario.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of mother Isabella Lamb",
+        "date": "Abt. 1830",
+        "place": "Unknown",
+        "summary": "Mother Isabella Lamb passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son John Bowen",
+        "date": "April 1836",
+        "place": "Ontario, Canada",
+        "summary": "Son John Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to Margaret Wood",
+        "date": "1836",
+        "place": "Leeds Co., Ontario, Canada",
+        "summary": "Married Margaret Wood (1815–1902).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Hugh Bowen",
+        "date": "3 May 1843",
+        "place": "South Elmseley, Leeds, Ontario, Canada",
+        "summary": "Son Hugh Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Daniel Neil Bowen",
+        "date": "1843",
+        "place": "Ontario, Canada",
+        "summary": "Son Daniel Neil Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Rhoda Bowen",
+        "date": "1847",
+        "place": "Elmsley",
+        "summary": "Daughter Rhoda Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of father Isreal Bowen",
+        "date": "05 Apr 1848",
+        "place": "Mooretown, Ontario, Canada",
+        "summary": "Father Isreal Bowen passed away. Buried in Old Sutherland Cemetery, Mooretown.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "isreal-bowen-1748-grave-marker"
+      },
+      {
+        "title": "Birth of daughter Emmeline Bowen",
+        "date": "1 Apr 1852",
+        "place": "Canada West",
+        "summary": "Daughter Emmeline Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Charlotte Bowen",
+        "date": "10 Sep 1854",
+        "place": "N Crosby Twp, Leeds Cty, ON, Can",
+        "summary": "Daughter Charlotte Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Isabel Bowen",
+        "date": "1856",
+        "place": "Crosby Twp, Leeds Cty, Ontario, Canada",
+        "summary": "Daughter Isabel Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of brother John Lamb Bowen",
+        "date": "1862",
+        "place": "Lansdowne Twp, Leeds County, Ontario, Canada",
+        "summary": "Brother John Lamb Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of brother David Bowen",
+        "date": "Sep 1871",
+        "place": "Moore, Ontario, Canada",
+        "summary": "Brother David Bowen passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "06 Nov 1887",
+        "place": "North Crosby, Leeds, Ontario, Canada",
+        "summary": "Died in North Crosby, Leeds, Ontario, Canada at age 89.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born Sep 1798 in Lansdowne Township, Leeds County, Ontario, Canada",
+      "Married Margaret Wood in 1836 in Leeds Co., Ontario",
+      "Father of John (1836), Hugh (1843), Daniel Neil (1843), Rhoda (1847), Emmeline (1852), Charlotte (1854), Isabel (1856)",
+      "Parents: Isreal Bowen (1748–1848, see isreal-bowen-1748) and Isabella Lamb (1750–1830)",
+      "Died 06 Nov 1887 in North Crosby, Leeds, Ontario, Canada",
+      "Key sources: Ancestry Family Tree; Public Member Trees; Ontario records"
+    ]
+  },
+  {
+    "id": "isreal-bowen-1748",
+    "name": "Isreal Bowen",
+    "lifespan": "1748–1848",
+    "era": "18th-19th century",
+    "branch": "Bowen",
+    "summary": "Son of Nathan Bowen (1715–, Rehoboth MA) and Mary Mason. Born in Swansea, Bristol, Massachusetts. Married Isabella Lamb in 1794 in Shawangunk, New York. Father of John Lamb Bowen, David Bowen, Israel Bowen, and Peter Bowen. Served in militia. Died in Mooretown, Ontario, Canada in 1848 at age 100.",
+    "keyEvent": "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York. Father of four children including Israel Bowen (1798–1887). Lived in Ontario, Canada after moving from Massachusetts/New York.",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Massachusetts", "Ontario", "New York", "Militia"],
+    "sourceCitation": "U.S. Dutch Reformed Church Records; Canada British Army and Canadian Militia Muster Rolls; Ontario and Nova Scotia Census 1800-1842; Ancestry Family Tree.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1748",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Born in Swansea, Bristol, Massachusetts.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death record of mother Mary Bowen",
+        "date": "1745-07-11",
+        "place": "Booth Maine",
+        "summary": "Death record for Mary Bowen, wife of Nathan Bowen, age 43 in Booth Maine. Supports parentage for Isreal Bowen (note tree conflict on Mary's later death date).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "nathan-bowen-mary-bowen-death-1745"
+      },
+      {
+        "title": "Marriage to Isabella Lamb",
+        "date": "02 Feb 1794",
+        "place": "Shawangunk, Ulster, New York, United States",
+        "summary": "Married Isabella Lamb (1750–1830).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son John Lamb Bowen",
+        "date": "14 Nov 1794",
+        "place": "Montgomery, Orange County, New York, USA",
+        "summary": "Son John Lamb Bowen born (baptism record Dec 1794).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "isreal-bowen-dutch-reformed-1794"
+      },
+      {
+        "title": "Birth of son David Bowen",
+        "date": "1796",
+        "place": "Lansdowne Twp, Leeds, Ontario, Canada",
+        "summary": "Son David Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Israel Bowen",
+        "date": "Sep 1798",
+        "place": "Lansdowne Township, Leeds County, Ontario, Canada",
+        "summary": "Son Israel Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Peter Bowen",
+        "date": "1798",
+        "place": "Canada",
+        "summary": "Son Peter Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1805",
+        "place": "Leeds Township",
+        "summary": "Residing in Leeds Township.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1813",
+        "place": "Leeds and Lansdowne Johnstown Dist.",
+        "summary": "Residing in Leeds and Lansdowne.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Military service",
+        "date": "Jan 1819",
+        "place": "Canada",
+        "summary": "Private in Ashby Loyal Volunteers, pay list for January 1819.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "isreal-bowen-1819-ashby-loyal-volunteers"
+      },
+      {
+        "title": "Residence",
+        "date": "1839",
+        "place": "Canada",
+        "summary": "Military or militia record in Canada.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of wife Isabella Lamb",
+        "date": "Abt. 1830",
+        "place": "Unknown",
+        "summary": "Wife Isabella Lamb passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "05 Apr 1848",
+        "place": "Mooretown, Ontario, Canada",
+        "summary": "Died in Mooretown, Ontario, Canada at age 100. Buried in Anglican Sutherland Cemetery.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "isreal-bowen-1748-grave-marker"
+      },
+      {
+        "title": "Burial site",
+        "date": "1848",
+        "place": "Old Sutherland Cemetery (Old Trinity), Mooretown, Lambton County, Ontario, Canada",
+        "summary": "Buried in the Old Trinity Anglican Cemetery (Sutherland Cemetery). Historic plaque marks the location of the original church and burial ground.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "isreal-bowen-1748-sutherland-cemetery-plaque"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1748 in Swansea, Bristol, Massachusetts, USA",
+      "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York",
+      "Father of John Lamb Bowen (1794), David Bowen (1796), Israel Bowen (1798), Peter Bowen (1798)",
+      "Parents: Nathan Bowen (1715–, born 18 Dec 1715 Rehoboth MA, m. Mary Mason 18 Dec 1737 Swansea MA, d. Cohansey NJ; see nathan-bowen) and Mary Mason (1713–1848); 1745 Maine death record for a Mary Bowen wife of Nathan (Primary Source, conflicts with tree 1848 date for some children)",
+      "Military service in Ashby Loyal Volunteers, 1819 (Primary Source pay list)",
+      "Residences in Leeds Township area, Ontario (1805, 1813, 1839)",
+      "Died 5 April 1848 in Mooretown, Ontario, Canada at age 100",
+      "Gravestone inscription confirms death 5 Apr 1848 at age 100, native of Swansea, Mass. (Strong Evidence)",
+      "Buried in Old Sutherland / Old Trinity Cemetery, Mooretown, Ontario (gravestone + historic plaque)",
+      "Key sources: U.S. Dutch Reformed Church Records 1794; Canada Militia Pay List 1819; Ontario/Nova Scotia Census; Ancestry Family Tree; cemetery gravestone and historic plaque photos"
+    ]
+  },
+  {
+    "id": "nathan-bowen",
+    "name": "Nathan Bowen",
+    "lifespan": "1715–",
+    "era": "18th century",
+    "branch": "Bowen",
+    "summary": "Born 18 December 1715 in Rehoboth, Bristol, Massachusetts. Married Mary Mason on 18 December 1737 in Swansea, Bristol, Massachusetts. Father of Isreal Bowen (1748–1848) and other children including Rachel, Anna, and Rhoda. Died in Cohansey, Cumberland, New Jersey.",
+    "keyEvent": "Married Mary Mason 18 Dec 1737 in Swansea, Massachusetts; father of Isreal Bowen (1748–1848).",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Massachusetts", "New Jersey"],
+    "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900; Maine, U.S., Death Records, 1761-1922 (wife).",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "18 Dec 1715",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Born in Rehoboth, Bristol, Massachusetts.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of half-sister Lydia Bowen",
+        "date": "24 Feb 1719",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Half-sister Lydia Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of half-brother Valentine Bowen",
+        "date": "25 Nov 1722",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Half-brother Valentine Bowen born (d. 1799).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of half-sister Elizabeth BOWEN",
+        "date": "24 May 1724",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Half-sister Elizabeth Bowen born (d. 1790).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of half-sister Amey Bowen",
+        "date": "18 Jun 1728",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Half-sister Amey Bowen born (d. 1811).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of half-brother Peleg Bowen",
+        "date": "10 Nov 1729",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Half-brother Peleg Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Israel Bowen",
+        "date": "1732",
+        "place": "Swansea area, Massachusetts",
+        "summary": "Daughter Israel Bowen born (d. 1738).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Mary Mason",
+        "date": "18 Dec 1737",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Married Mary Mason (1713–1848).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Peleg Bowen",
+        "date": "26 Jan 1738",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Son Peleg Bowen born (d. 1739).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Rachel Bowen",
+        "date": "29 Nov 1738",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Daughter Rachel Bowen born (d. 1819).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Anna Bowen",
+        "date": "10 Jul 1744",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Daughter Anna Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Rhoda Bowen",
+        "date": "28 Jun 1746",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Daughter Rhoda Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Isreal Bowen",
+        "date": "1748",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Son Isreal Bowen born (1748–1848).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of wife Mary (record)",
+        "date": "11 Jul 1745",
+        "place": "Booth Maine",
+        "summary": "Copy of old death record for Mary Bowen, wife of Nathan Bowen, age 43. (Note: some trees list Mary Mason living to 1848 with later children; record conflicts with tree data for post-1745 births.)",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "nathan-bowen-mary-bowen-death-1745"
+      },
+      {
+        "title": "Death of father Hezekiah Bowen",
+        "date": "12 May 1751",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Father Hezekiah Bowen died.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of mother Elizabeth Randall",
+        "date": "12 May 1751",
+        "place": "Massachusetts, United States",
+        "summary": "Mother Elizabeth Randall died.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "after 1748",
+        "place": "Cohansey, Cumberland, New Jersey, USA",
+        "summary": "Died in Cohansey, Cumberland, New Jersey.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 18 Dec 1715 in Rehoboth, Bristol, Massachusetts, USA (3 sources)",
+      "Married Mary Mason 18 Dec 1737 in Swansea, Bristol, Massachusetts (1 source)",
+      "Father of children including Israel (1732–1738), Peleg (1738–1739), Rachel (1738–1819), Anna (1744–), Rhoda (1746–), and Isreal (1748–1848)",
+      "Parents: Hezekiah Bowen (1682–1751) and Elizabeth Randall (1686–1751)",
+      "Death in Cohansey, Cumberland, New Jersey (2 sources); half-siblings include Lydia, Valentine, Elizabeth, Amos, Amey, Peleg, Rachel, Seth",
+      "Wife's 1745 Maine death record (Primary Source) conflicts with some tree data listing Mary Mason to 1848 and post-1745 children — needs resolution",
+      "Key sources: Public Member Trees; U.S. and International Marriage Records, 1560-1900; Maine, U.S., Death Records, 1761-1922"
+    ]
+  },
+  {
+    "id": "mary-bowen",
+    "name": "Mary Bowen",
+    "lifespan": "1713–1848",
+    "era": "18th century",
+    "branch": "Bowen",
+    "summary": "Wife of Nathan Bowen (m. 1737). Mother of Isreal Bowen (1748–1848) and other children per tree. A Primary Source death record exists for a Mary Bowen (wife of Nathan) in Maine 1745 age 43.",
+    "keyEvent": "Married Nathan Bowen 18 Dec 1737 in Swansea, Massachusetts. Mother of Isreal Bowen.",
+    "confidence": "Strong Evidence",
+    "tags": ["Bowen", "Massachusetts"],
+    "timeline": [
+      {
+        "title": "Marriage to Nathan Bowen",
+        "date": "18 Dec 1737",
+        "place": "Swansea, Bristol, Massachusetts, United States",
+        "summary": "Married Nathan Bowen.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of son Isreal Bowen",
+        "date": "1748",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Son Isreal Bowen born.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death (tree)",
+        "date": "1848",
+        "place": "Unknown",
+        "summary": "Per some Ancestry trees, died 1848.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death record (Primary Source image)",
+        "date": "11 Jul 1745",
+        "place": "Booth Maine",
+        "summary": "Copy of old death record for Mary Bowen, wife of Nathan, age 43. Conflicts with 1848 tree data.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "nathan-bowen-mary-bowen-death-1745"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of Nathan Bowen (married 18 Dec 1737, Swansea, MA)",
+      "Mother of Isreal Bowen (1748–1848) and listed siblings per tree",
+      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — discrepancy noted for further research",
+      "Key sources: Public Member Trees; Maine death record image (Primary)"
     ]
   }
 ]
