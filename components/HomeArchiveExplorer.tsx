@@ -324,19 +324,31 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         category: "memory",
         summary: "Passed-down family recollection about the Marchant line.",
         supports: "Context for later family memory, not a primary source.",
-        linkedDocuments: [{ label: "Family memory", href: "/ancestors" }]
+        linkedDocuments: [{ label: "Oral history note", href: "/ancestors" }]
       },
       {
         id: "memory-annes-notes",
-        title: "Anne's book notes",
+        title: "Anne's original letters",
         dateLabel: "Archive context: research years",
         year: memoryContextYears["annes-book-notes"],
         place: "Family archive",
-        confidence: "Strong Evidence",
-        category: "memory",
-        summary: "Anne's working notes on Edwards, Moore, and Marchant lines.",
-        supports: "A research guide that still needs matching against primary records.",
-        linkedDocuments: [{ label: "Family notes", href: "/ancestors" }]
+        confidence: "Primary Source",
+        category: "research",
+        summary: "Original handwritten correspondence preserved with the Red Book material.",
+        supports: "Source-grade letters that can be checked against the family timeline and the Red Book compilation.",
+        linkedDocuments: [{ label: "Original correspondence", href: "/ancestors" }]
+      },
+      {
+        id: "memory-red-book",
+        title: "Anne's Red Book research compilation",
+        dateLabel: "Archive context: later family compilation",
+        year: memoryContextYears["red-book-personal-material"],
+        place: "Family archive",
+        confidence: "Confirmed",
+        category: "research",
+        summary: "A confirmed family research compilation built from correspondence, inherited material, and checked chronology.",
+        supports: "The Red Book is corroborated family archive material rather than unsupported oral history.",
+        linkedDocuments: [{ label: "Research archive note", href: "/ancestors" }]
       }
     ];
 
@@ -609,7 +621,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
           <div className="archive-stat-grid pt-2">
             <Stat value={people.length} label="Ancestor profiles" />
             <Stat value={documents.length} label="Document records" />
-            <Stat value={familyMemory.length} label="Family memory entries" />
+            <Stat value={familyMemory.length} label="Memory / research entries" />
             <Stat value={visiblePeople.length} label="Visible people" />
             <Stat value={visibleDocuments.length} label="Visible documents" />
             <Stat value={visibleMemory.length} label="Visible stories" />
@@ -888,10 +900,10 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
       <section className="archive-section">
         <div className="archive-section__head">
           <div>
-            <div className="archive-section__title">Family Memory / Oral History</div>
+            <div className="archive-section__title">Family Memory / Research Archive</div>
             <div className="archive-section__copy">
-              Story material, family recollection, and notebook content that may guide research but stays distinct
-              from sourced records.
+              Oral history stays separate. Anne&apos;s Red Book appears here as a corroborated family research
+              compilation, while genuinely oral items remain visibly distinct from source-grade records.
             </div>
           </div>
         </div>

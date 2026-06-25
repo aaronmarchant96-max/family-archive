@@ -13,7 +13,7 @@ export type ArchiveTimelineEvent = {
   supports: string;
   linkedPeople?: Array<{ name: string; href?: string }>;
   linkedDocuments?: Array<{ label: string; href?: string }>;
-  category: "record" | "person" | "memory" | "milestone";
+  category: "record" | "person" | "memory" | "research" | "milestone";
   certainty?: "solid" | "strong" | "dotted" | "oral";
 };
 
@@ -95,8 +95,9 @@ export function ArchiveTimeline({
           <div className="archive-kicker">Interactive family timeline</div>
           <h2 className="archive-section__title text-3xl">Timeline View</h2>
           <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-            Drag the range to narrow the archive. Solid markers are documentary anchors; dotted markers are
-            bridge material or oral history that should stay visually separate from primary evidence.
+            Drag the range to narrow the archive. Solid markers are documentary anchors; confirmed Red Book
+            compilation entries stay distinct from original letters, and dotted markers are bridge material or oral
+            history that should remain visually separate from primary evidence.
           </p>
         </div>
         <div className="rounded-full border border-[rgba(18,20,24,0.1)] bg-[rgba(18,20,24,0.03)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
@@ -212,7 +213,7 @@ export function ArchiveTimeline({
           </div>
 
           <div className="archive-panel space-y-4">
-            <div className="archive-section__title">Record detail</div>
+          <div className="archive-section__title">Record detail</div>
             <p className="text-sm leading-6 text-[var(--archive-text-soft)]">
               Click any event to open the compact evidence panel here. This keeps the timeline readable while still
               showing what the record supports.
@@ -242,7 +243,9 @@ function SelectedEventCard({ event }: { event: ArchiveTimelineEvent | null }) {
     <div className="space-y-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <div className="archive-eyebrow">{event.category === "memory" ? "Family memory" : "Archive event"}</div>
+          <div className="archive-eyebrow">
+            {event.category === "research" ? "Research archive" : event.category === "memory" ? "Family memory" : "Archive event"}
+          </div>
           <h3 className="mt-1 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
             {event.title}
           </h3>
