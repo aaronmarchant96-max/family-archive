@@ -1798,24 +1798,24 @@
     "lifespan": "1903-1992",
     "era": "20th century",
     "branch": "Moore",
-    "summary": "Younger sister of Hugh Christopher Moore. Born 9 April 1903 in Sintaluta, Saskatchewan, Canada (father James age 43, mother Jessie age 29). The Moore family moved to Medicine Hat, Alberta by 1916 and later to Calgary. Married William Kirkwood in 1933 in Calgary (widowed 1949). Died 22 January 1992 in Calgary, Alberta, Canada at age 88.",
-    "keyEvent": "Married William Kirkwood in 1933 in Calgary, Alberta. Died in Calgary in 1992. Part of the Moore family's migration from Saskatchewan to Alberta.",
+    "summary": "Daughter of James Moore and Jessie Bowen. Born 9 April 1903 in Sintaluta, Saskatchewan. Lived in Saskatchewan and Alberta (Medicine Hat, Calgary). Married William Kirkwood (1933, widowed 1949) and later Stanley Gillis. Died in Calgary 1992 at age 88. Sister of Hugh Christopher Moore.",
+    "keyEvent": "Married William Kirkwood in 1933 in Calgary (widowed 1949); later Stanley Gillis. Died in Calgary 1992. Daughter of James Moore and Jessie Bowen; sister of Hugh Christopher Moore.",
     "confidence": "Strong Evidence",
     "tags": ["Moore", "Saskatchewan", "Alberta", "Calgary"],
-    "sourceCitation": "1906 and 1916 Canadian censuses; family records for marriages and death.",
+    "sourceCitation": "1906 and 1916 Canadian censuses (Saskatchewan and Alberta); family records for marriages and death.",
     "timeline": [
       {
         "title": "Birth",
         "date": "9 April 1903",
         "place": "Sintaluta, Saskatchewan, Canada",
-        "summary": "Born in Sintaluta, Saskatchewan, Canada. Her father James was 43 and her mother Jessie was 29 at the time of her birth.",
+        "summary": "Born in Sintaluta, Saskatchewan (father James Moore age 43, mother Jessie Bowen age 29, per family records).",
         "confidence": "Strong Evidence"
       },
       {
         "title": "Residence",
         "date": "1906",
         "place": "Qu'Appelle area, Saskatchewan, Canada",
-        "summary": "Living in the Moore household in Qu'Appelle, Saskatchewan (census).",
+        "summary": "Living in the Moore household in Qu'Appelle, Saskatchewan with parents and siblings (1906 census, Primary Source).",
         "confidence": "Primary Source",
         "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
       },
@@ -1823,7 +1823,7 @@
         "title": "Residence",
         "date": "abt 1916",
         "place": "11th Street, Medicine Hat, Alberta, Canada",
-        "summary": "Living with family on 11th Street, Medicine Hat (census).",
+        "summary": "Living with family on 11th Street, Medicine Hat, Alberta (1916 census, Primary Source).",
         "confidence": "Primary Source",
         "linkedDocumentId": "hugh-christopher-moore-1916-medicine-hat-census"
       },
@@ -1831,7 +1831,7 @@
         "title": "Marriage to William Kirkwood",
         "date": "1933",
         "place": "Calgary, Alberta, Canada",
-        "summary": "Married William Kirkwood in Calgary, Alberta, Canada.",
+        "summary": "Married William Kirkwood (1907–1949) in Calgary, Alberta (currently light sourcing).",
         "confidence": "Strong Evidence"
       },
       {
@@ -1845,7 +1845,7 @@
         "title": "Marriage to Stanley Gillis",
         "date": "After 1949",
         "place": "Calgary, Alberta, Canada",
-        "summary": "Later married Stanley Gillis (1906-1978).",
+        "summary": "Later married Stanley Gillis (1906-1978) (currently light sourcing, Needs Review).",
         "confidence": "Needs Review"
       },
       {
@@ -1864,12 +1864,17 @@
       }
     ],
     "evidenceSummary": [
-      "Born 9 April 1903 in Sintaluta, Saskatchewan, Canada (father James Moore age 43, mother Jessie Bowen age 29)",
-      "Lived in Qu'Appelle, Saskatchewan (1906 census) and Medicine Hat, Alberta (1916 census) with parents James Moore and Jessie Bowen and siblings including Hugh Christopher Moore",
-      "Married William Kirkwood in 1933 in Calgary, Alberta, Canada",
-      "Died 22 January 1992 in Calgary, Alberta, Canada at the age of 88",
-      "Sister of Hugh Christopher Moore (1895-1979); part of the Moore family migration from Saskatchewan to Alberta. Maternal grandparents: Hugh Bowen (1843–1936) and Jennet Souster (1847–1903)"
-    ]
+      "Born 9 April 1903 in Sintaluta, Saskatchewan, Canada (father James Moore age 43, mother Jessie Bowen age 29, per family records)",
+      "Living in Qu'Appelle, Saskatchewan household with parents and siblings including Hugh Christopher Moore (1906 census, Primary Source)",
+      "Living with family in Medicine Hat, Alberta (1916 census, Primary Source)",
+      "Married William Kirkwood in 1933 in Calgary, Alberta (family records); widowed 1949",
+      "Later married Stanley Gillis (1906-1978); widowed 1978 (Needs Review for details)",
+      "Died 22 January 1992 in Calgary, Alberta at age 88 (family records)",
+      "Sister of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore); maternal grandparents Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903)",
+      "First marriage (William Kirkwood): currently light sourcing — needs more checking",
+      "Second marriage (Stanley Gillis): currently light sourcing — needs more checking"
+    ],
+    "notes": "Research Priorities: Confirm marriage records for both William Kirkwood (1933) and Stanley Gillis; Locate death registration or obituary for January 1992. First and second marriages currently light sourcing — needs more checking."
   },
   {
     "id": "jessie-bowen",
@@ -1877,24 +1882,24 @@
     "lifespan": "1874-1958",
     "era": "Late 19th-20th century",
     "branch": "Bowen / Moore",
-    "summary": "Daughter of Hugh Bowen (1843–1936) and Jennet Souster (1847–1903). Born in Ontario, moved west with family to Manitoba and Saskatchewan. Wife of James Moore (1860-1942). Mother of Hugh Christopher Moore, Janet Hazel Moore, and other children. Lived in Ellisboro, Saskatchewan; later Medicine Hat, Alberta; died in Calgary in 1958 and buried there.",
-    "keyEvent": "Married James Moore; mother of Hugh Christopher Moore (1895-1979) and Janet Hazel Moore (1903-1992). Daughter of Hugh Bowen and Jennet Souster. Part of the family's migration from Ontario through the prairies to Alberta.",
+    "summary": "Daughter of Hugh Bowen (1843–1936) and Jennet Souster (1847–1903). Wife of James Moore (1860-1942). Mother of Hugh Christopher Moore (1895-1979) and Janet Hazel Moore (1903-1992). Migrated from Ontario to the Canadian prairies; died in Calgary 1958.",
+    "keyEvent": "Married James Moore; mother of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore) and Janet Hazel Moore (1903-1992, see janet-hazel-moore). Daughter of Hugh Bowen (1843–1936) and Jennet Souster.",
     "confidence": "Strong Evidence",
     "tags": ["Bowen", "Moore", "Ontario", "Saskatchewan", "Alberta", "Calgary"],
-    "sourceCitation": "1881, 1901, 1906, 1916, 1921 Canadian censuses; Find A Grave.",
+    "sourceCitation": "1881 Census of Canada (Manitoba); 1901 and 1906 censuses (Saskatchewan); 1916 and 1921 censuses (Alberta); family vital records.",
     "timeline": [
       {
         "title": "Birth",
         "date": "1 March 1874",
         "place": "Ontario, Canada",
-        "summary": "Born in Ontario.",
+        "summary": "Born in Ontario, Canada (age consistent with 1881 census and later records).",
         "confidence": "Strong Evidence"
       },
       {
-        "title": "Residence",
+        "title": "Residence with parents",
         "date": "1881",
         "place": "Western Extension, Manitoba Extension, Manitoba, Canada",
-        "summary": "Living with parents Hugh Bowen and Jennet Souster and siblings.",
+        "summary": "Living with parents Hugh Bowen and Jennet Souster and siblings (1881 Census of Canada, Primary Source).",
         "confidence": "Primary Source",
         "linkedDocumentId": "bowen-family-1881-manitoba-census"
       },
@@ -1902,7 +1907,7 @@
         "title": "Birth of son William Robert More",
         "date": "22 March 1894",
         "place": "Ellisboro, Saskatchewan, Canada",
-        "summary": "Son William Robert More born.",
+        "summary": "Son William Robert More born. Marriage to James Moore inferred ~1893–1894 based on first child.",
         "confidence": "Strong Evidence"
       },
       {
@@ -1913,10 +1918,10 @@
         "confidence": "Strong Evidence"
       },
       {
-        "title": "Residence",
+        "title": "Residence in Saskatchewan",
         "date": "1901",
         "place": "Ellisboro, Assiniboia (east/est), The Territories, Canada",
-        "summary": "Living with husband and children. Marital Status: Single (listed); Relation to Head of House: Wife.",
+        "summary": "Living with husband James Moore and children (1901 census, Primary Source).",
         "confidence": "Primary Source",
         "linkedDocumentId": "hugh-christopher-moore-1901-ellisboro-census"
       },
@@ -1974,15 +1979,17 @@
       }
     ],
     "evidenceSummary": [
-      "Born 1 March 1874 in Ontario, Canada",
-      "Daughter of Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903); paternal grandfather Israel Bowen (1798–1887, see israel-bowen-1798); parents married 27 November 1870 in South Crosby, Ontario (Primary Source)",
-      "Lived with family in Manitoba by 1881 (census)",
-      "Married James Moore; mother of William Robert More (1894), Hugh Christopher Moore (1895), Kathleen Emma Moore (1897), Janet Hazel Moore (1903), Norman James Moore (1917) and others",
-      "Resided in Ellisboro, Saskatchewan (1901); Qu'Appelle, Saskatchewan (1906); Medicine Hat, Alberta (1916-1921)",
-      "Husband James Moore died 1942 in Calgary",
-      "Died 25 September 1958 in Calgary, Alberta; buried in Calgary",
-      "Key sources: Canadian censuses 1881-1921; Find A Grave; parents' marriage register"
-    ]
+      "Born 1 March 1874 in Ontario, Canada (age consistent with 1881 and later censuses)",
+      "Daughter of Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903); present in 1881 Manitoba census household (Primary Source)",
+      "Wife of James Moore (1860-1942); mother of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore) and Janet Hazel Moore (1903-1992, see janet-hazel-moore)",
+      "Residences confirmed by Primary Source censuses: Manitoba 1881, Saskatchewan (Ellisboro/Qu'Appelle) 1901-1906, Alberta (Medicine Hat) 1916-1921",
+      "Husband James Moore died 6 June 1942 in Calgary (family records)",
+      "Died 25 September 1958 in Calgary, Alberta; buried in Calgary (family records)",
+      "Key sources: 1881 Census of Canada (Manitoba), 1901-1921 Canadian censuses (Primary Source for family composition and migration)",
+      "Marriage to James Moore: date/location currently unconfirmed — appears ~1893–1894 based on first child (William Robert More, 1894). Needs more checking.",
+      "Death & burial: currently light sourcing — needs more checking"
+    ],
+    "notes": "Research Priorities: Locate marriage record or registration for Jessie Bowen + James Moore; Find death registration or obituary for September 1958."
   },
   {
     "id": "thomas-edwards-1859",

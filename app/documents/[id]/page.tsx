@@ -129,6 +129,12 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
             <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Type</div>
             <div className="mt-1 font-medium">{document.type}</div>
           </div>
+          { (document as any).branch && (
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-3 text-sm">
+              <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Branch</div>
+              <div className="mt-1 font-medium">{(document as any).branch}</div>
+            </div>
+          )}
           <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-3 text-sm">
             <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">Date Range</div>
             <div className="mt-1 font-medium">{dateRange}</div>
@@ -174,7 +180,7 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
           document.date ? `Date: ${document.date}` : "Date: not listed",
           sourceCitation ? `Source: ${sourceCitation}` : sourceUrl ? `Source: ${sourceUrl}` : "Source: not listed"
         ].join(" · ")}
-        claim={document.whatItProves}
+        claim={ (document as any).fact && (document as any).meaning ? `${(document as any).fact} ${(document as any).meaning}` : (document.whatItProves || "Details in record.") }
         confidence={document.confidence}
         narrative={notes}
       />

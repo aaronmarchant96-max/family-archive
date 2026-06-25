@@ -33,12 +33,22 @@ function matchesQuery(document: DocumentCardProps, query: string) {
 export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[] }) {
   const [query, setQuery] = useState("");
   const [viewMode, setViewMode] = useState<ViewMode>("cards");
+  const [filterType, setFilterType] = useState("");
+  const [filterBranch, setFilterBranch] = useState("");
   const [previewDocument, setPreviewDocument] = useState<DocumentCardProps | null>(null);
+
+  const uniqueTypes = useMemo(() => Array.from(new Set(documents.map(d => d.type))).sort(), [documents]);
+  const uniqueBranches = useMemo(() => Array.from(new Set(documents.map(d => d.branch).filter(Boolean))).sort() as string[], [documents]);
 
   const filteredDocuments = useMemo(() => {
     const normalized = query.trim().toLowerCase();
-    return documents.filter((document) => matchesQuery(document, normalized));
-  }, [documents, query]);
+    return documents.filter((document) => {
+      if (!matchesQuery(document, normalized)) return false;
+      if (filterType && document.type !== filterType) return false;
+      if (filterBranch && document.branch !== filterBranch) return false;
+      return true;
+    });
+  }, [documents, query, filterType, filterBranch]);
 
   const sortedDocuments = useMemo(() => {
     const isScreenshot = (d: DocumentCardProps) => {
@@ -59,12 +69,15 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
         id: `${document.id}-${index}`,
         title: document.filename,
         date: document.date,
-        summary: document.whatItProves,
+        summary: document.fact && document.meaning ? `${document.fact} ${document.meaning}` : (document.whatItProves || ""),
         confidence: document.confidence,
         sourceLabel: document.type,
         href: `/documents/${document.id}`,
         place: document.place,
-        extra: document.people.length ? `People: ${document.people.join(", ")}` : "Metadata-only record"
+        extra: [
+          document.people.length ? `People: ${document.people.join(", ")}` : "",
+          document.branch ? `Branch: ${document.branch}` : ""
+        ].filter(Boolean).join(" · ") || "Metadata-only record"
       }))
     );
   }, [filteredDocuments]);
@@ -116,6 +129,28 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
             className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
+
+        <div className="flex flex-wrap gap-3">
+          <select
+            value={filterType}
+            onChange={(e) => setFilterType(e.target.value)}
+            className="rounded-xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1.5 text-sm text-[var(--archive-text)]"
+          >
+            <option value="">All Record Types</option>
+            {uniqueTypes.map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+          <select
+            value={filterBranch}
+            onChange={(e) => setFilterBranch(e.target.value)}
+            className="rounded-xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1.5 text-sm text-[var(--archive-text)]"
+          >
+            <option value="">All Branches</option>
+            {uniqueBranches.map(b => <option key={b} value={b}>{b}</option>)}
+          </select>
+          {(filterType || filterBranch) && (
+            <button onClick={() => { setFilterType(""); setFilterBranch(""); }} className="text-xs underline text-[var(--archive-accent)]">Clear filters</button>
+          )}
+        </div>
       </div>
 
       {viewMode === "cards" ? (

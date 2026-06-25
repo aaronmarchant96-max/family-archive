@@ -5,13 +5,17 @@
     "type": "Marriage certificate",
     "date": "1846-03-29",
     "era": "1840s Ballymena",
-    "sourceCitation": "PRONI Certified Copy: Kilconriola Parish Marriage Register, William Moore and Isabella Law, March 29, 1846, Kirkinriola/Kilconriola Parish, Ballymena, County Antrim.",
+    "sourceCitation": "Public Record Office of Northern Ireland (PRONI), Kilconriola Parish Marriage Register, marriage of William Moore and Isabella Law, 29 March 1846, Kirkinriola/Kilconriola Parish, Ballymena, County Antrim.",
     "previewUrl": "/documents/real-certificate.jpg",
     "confidence": "Primary Source",
     "people": ["William Moore", "Isabella Law"],
     "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
-    "whatItProves": "Marriage of William Moore (painter, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street), with addresses and occupations.",
-    "notes": "Certified copy from Public Record Office of Northern Ireland (PRONI). Primary source for the Moore-Law family connection."
+    "branch": "Moore",
+    "researchPriority": false,
+    "fact": "Certified copy of the marriage register entry for William Moore (painter, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street) on 29 March 1846.",
+    "meaning": "Establishes the marriage of the Moore-Law couple with specific addresses, occupations, and parent details for the Irish branch.",
+    "whatItProves": "Fact: Certified copy of the marriage register entry for William Moore (painter, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street) on 29 March 1846. Meaning: Establishes the marriage of the Moore-Law couple with specific addresses, occupations, and parent details for the Irish branch.",
+    "notes": "Certified copy from PRONI. Primary source for the Moore-Law family connection."
   },
   {
     "id": "josiah-ramsey-1744-marriage",
@@ -19,13 +23,17 @@
     "type": "Marriage record",
     "date": "1744",
     "era": "Colonial Delaware",
-    "sourceCitation": "Delaware Marriage Records, 1744, for Josiah Ramsey and Alice Bower (or possibly Elizabeth Hollis/Grigsby - needs verification).",
+    "sourceCitation": "Delaware Marriage Records, 1744, Josiah Ramsey and spouse, Delaware Colony.",
     "previewUrl": "/documents/josiah-ramsey-1744-marriage.jpg",
     "confidence": "Needs Review",
     "people": ["Josiah Ramsey Sr.", "Alice Bower"],
     "place": "Delaware Colony",
-    "whatItProves": "Marriage of Josiah Ramsey Sr. in Delaware, establishing the early Ramsey family line. Exact spouse name needs verification.",
-    "notes": "RESEARCH PRIORITY: Verify the exact name of Josiah Sr.'s wife from the original marriage record. Some sources suggest Alice Bower, others suggest Elizabeth Hollis or Elizabeth Grigsby."
+    "branch": "Ramsey",
+    "researchPriority": "Verify the exact name of Josiah Sr.'s wife (Alice Bower vs. Elizabeth Hollis/Grigsby) from original Delaware records.",
+    "fact": "Marriage record for Josiah Ramsey Sr. in Delaware Colony in 1744, spouse listed as Alice Bower (or possibly Elizabeth Hollis or Grigsby in some sources).",
+    "meaning": "Establishes the early Ramsey family line in Colonial America but requires verification of the spouse's exact identity.",
+    "whatItProves": "Fact: Marriage record for Josiah Ramsey Sr. in Delaware Colony in 1744, spouse listed as Alice Bower (or possibly Elizabeth Hollis or Grigsby in some sources). Meaning: Establishes the early Ramsey family line in Colonial America but requires verification of the spouse's exact identity.",
+    "notes": "Research priority: Confirm exact spouse name from original records."
   },
   {
     "id": "josiah-ramsey-1782-pay-voucher",
@@ -33,13 +41,18 @@
     "type": "Military pay voucher",
     "date": "1782",
     "era": "Revolutionary War",
-    "sourceCitation": "North Carolina Revolutionary War Pay Voucher for Josiah Ramsey, 1782, North Carolina Militia service.",
+    "sourceCitation": "North Carolina State Archives, Revolutionary War Pay Vouchers, Josiah Ramsey pay voucher, 1782, North Carolina Militia.",
     "previewUrl": "/documents/josiah-ramsey-1782-pay-voucher.jpg",
     "confidence": "Primary Source",
     "people": ["Josiah Ramsey Sr."],
     "place": "North Carolina",
-    "whatItProves": "Revolutionary War service of Josiah Ramsey Sr. in the North Carolina Militia, confirming his status as a patriot ancestor.",
-    "notes": "Key document for SAR/DAR eligibility. Establishes Josiah Ramsey Sr. as a confirmed Revolutionary War veteran."
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia in 1782.",
+    "meaning": "Confirms Josiah Ramsey Sr.'s Revolutionary War service in North Carolina, supporting patriot ancestor status.",
+    "whatItProves": "Fact: Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia in 1782. Meaning: Confirms Josiah Ramsey Sr.'s Revolutionary War service in North Carolina, supporting patriot ancestor status.",
+    "notes": "Key document for SAR/DAR eligibility. See also the related military service record image.",
+    "seeAlso": ["josiah-ramsey-1782-military-service"]
   },
   {
     "id": "josiah-ramsey-tennessee-land-grant",
@@ -176,20 +189,6 @@
     "notes": "Metadata only for now. Original record image stays private."
   },
   {
-    "id": "william-isabella-marriage-certificate",
-    "filename": "real-certificate.pdf",
-    "type": "Marriage certificate",
-    "date": "1846-03-29",
-    "era": "1840s Ballymena",
-    "sourceCitation": "Private archive scan of the marriage certificate for William Moore and Isabella Law, March 29, 1846, Kilconriola/Kirkinriola Parish, Ballymena, County Antrim.",
-    "previewUrl": "/documents/real-certificate.jpg",
-    "confidence": "Primary Source",
-    "people": ["William Moore", "Isabella Law"],
-    "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
-    "whatItProves": "Marriage, addresses, occupations, and parents.",
-    "notes": "Certified copy for the archive packet. The scan is shown inline as the primary source record."
-  },
-  {
     "id": "andrew-moore-birth-registration",
     "filename": "andrew-moore.pdf",
     "type": "Birth registration",
@@ -213,8 +212,12 @@
     "confidence": "Strong Evidence",
     "people": ["Armina Ramsey", "Anderson Edwards"],
     "place": "Pine City, Washington",
-    "whatItProves": "Armina Ramsey Edwards' obituary states that she was born August 27, 1826, died July 10, 1923, was united in marriage to Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, and was buried beside her husband in Pine City Cemetery.",
-    "notes": "Useful collateral source for the Edwards/Ramsey line. Keep the obituary separate from primary civil records. The marriage date comes from the obituary and still needs a primary record for confirmation."
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Obituary for Armina Ramsey Edwards states born August 27, 1826, died July 10, 1923, married Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, buried beside husband in Pine City Cemetery.",
+    "meaning": "Provides collateral evidence for the life events and migration of Armina Ramsey and Anderson Edwards, including marriage year (needs primary confirmation).",
+    "whatItProves": "Fact: Obituary for Armina Ramsey Edwards states born August 27, 1826, died July 10, 1923, married Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, buried beside husband in Pine City Cemetery. Meaning: Provides collateral evidence for the life events and migration of Armina Ramsey and Anderson Edwards, including marriage year (needs primary confirmation).",
+    "notes": "Useful collateral source for the Edwards/Ramsey line. The marriage date from obituary still needs primary record confirmation."
   },
   {
     "id": "josiah-ramsey-family-plaque",
@@ -251,13 +254,18 @@
     "date": "1782-08-16",
     "era": "Revolutionary era",
     "sourceUrl": "https://www.familysearch.org/ark:/61903/3:1:3QS7-L9WB-8XL5?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQ2WT-P9TJ&action=view&cc=1498361&lang=en&groupId=",
-    "sourceCitation": "FamilySearch image 419 of 912 in North Carolina Military Records 1779-1792, showing Josiah Ramsey and a military service entry dated 16 August 1782 in Washington, Beaufort, North Carolina.",
+    "sourceCitation": "North Carolina State Archives via FamilySearch, Revolutionary War Military Records 1779-1792, service entry for Josiah Ramsey, 16 August 1782, Washington, Beaufort, North Carolina.",
     "previewUrl": "/documents/josiah-ramsey-1782-military-service.png",
     "confidence": "Primary Source",
     "people": ["Josiah Ramsey"],
     "place": "Washington, Beaufort, North Carolina",
-    "whatItProves": "Josiah Ramsey appears in North Carolina military records with a service entry dated 16 August 1782.",
-    "notes": "Supporting primary record for the Revolutionary-era Josiah Ramsey profile. The image is a private screenshot of the FamilySearch record view."
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Military service record showing Josiah Ramsey with an entry dated 16 August 1782 in North Carolina records.",
+    "meaning": "Provides additional detail on the Revolutionary War service of the Josiah Ramsey line, complementing the pay voucher.",
+    "whatItProves": "Fact: Military service record showing Josiah Ramsey with an entry dated 16 August 1782 in North Carolina records. Meaning: Provides additional detail on the Revolutionary War service of the Josiah Ramsey line, complementing the pay voucher.",
+    "notes": "Private screenshot of FamilySearch record. See also the related pay voucher.",
+    "seeAlso": ["josiah-ramsey-1782-pay-voucher"]
   },
   {
     "id": "decatur-township-1860-census",
@@ -705,7 +713,11 @@
     "confidence": "Primary Source",
     "people": ["Josiah Ramsey"],
     "place": "Washington County, Pennsylvania",
-    "whatItProves": "Last will and testament of Josiah Ramsey, detailing distribution of property to heirs. Direct primary evidence for the Ramsey family in Pennsylvania around 1835.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey’s will.",
+    "meaning": "Proves his estate and heirs in Pennsylvania (confirms identity trail).",
+    "whatItProves": "Fact: Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey’s will. Meaning: Proves his estate and heirs in Pennsylvania (confirms identity trail).",
     "notes": "Primary Source. Page from official will book recording the probate of Josiah Ramsey's will, including signatures and executor details."
   },
   {
@@ -719,7 +731,11 @@
     "confidence": "Primary Source",
     "people": ["Silas Josiah Edwards"],
     "place": "Colfax, Whitman, Washington, USA",
-    "whatItProves": "Marriage of Josiah Edwards (age 38, farmer, third marriage) to Minnie Jennings (age 27, second marriage). Provides family record for the Edwards line.",
+    "branch": "Edwards",
+    "researchPriority": false,
+    "fact": "Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA.",
+    "meaning": "Establishes Josiah’s third marriage and family continuity in the Edwards line.",
+    "whatItProves": "Fact: Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA. Meaning: Establishes Josiah’s third marriage and family continuity in the Edwards line.",
     "notes": "Primary Source. Official marriage return recording the union, with ages, occupations, and previous marriages noted."
   },
   {

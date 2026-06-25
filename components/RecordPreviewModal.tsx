@@ -117,7 +117,7 @@ export function RecordPreviewModal({
                 value={item.document.people.length ? item.document.people.join(", ") : "Not listed"}
                 wide
               />
-              <Info label="What it proves" value={item.document.whatItProves} wide />
+              <Info label="What it proves" value={item.document.fact && item.document.meaning ? `${item.document.fact} ${item.document.meaning}` : (item.document.whatItProves ?? "Not listed")} wide />
               <Info label="Notes" value={item.document.notes ?? "Not listed"} wide />
               <Info
                 label="Source citation"

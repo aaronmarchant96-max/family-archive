@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import "./globals.css";
+import { BottomActions } from "../components/BottomActions";
 
 export const metadata: Metadata = {
   title: "The Living Red Book",
@@ -43,6 +44,7 @@ export default function RootLayout({
             </div>
           </header>
           <main className="archive-main">{children}</main>
+          <BottomActions />
           <footer className="archive-footer">Private family collection. For our use only.</footer>
         </div>
       </body>
