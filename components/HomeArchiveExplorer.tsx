@@ -315,6 +315,45 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         linkedDocuments: [{ label: "josiah-ramsey-family-plaque.jpg", href: "/documents/josiah-ramsey-family-plaque" }]
       },
       {
+        id: "george-washington-dyer-1850-liberty-iowa-census",
+        title: "George Washington Dyer 1850 Iowa residence",
+        dateLabel: "1850",
+        year: 1850,
+        place: "Liberty, Jefferson County, Iowa",
+        confidence: "Primary Source",
+        category: "record",
+        summary: "George Washington Dyer, age 15, residing in Liberty, Jefferson County, Iowa.",
+        supports: "Confirms the early move from Illinois birth place to Iowa.",
+        linkedPeople: [{ name: "George Washington Dyer", href: "/ancestors/george-washington-dyer" }],
+        linkedDocuments: [{ label: "1850 census image", href: "/documents/george-washington-dyer-1850-liberty-iowa-census" }]
+      },
+      {
+        id: "george-washington-dyer-1880-whitman-census",
+        title: "George Washington Dyer 1880 Washington residence",
+        dateLabel: "1880",
+        year: 1880,
+        place: "Whitman County, Washington",
+        confidence: "Primary Source",
+        category: "record",
+        summary: "George Washington Dyer (age ~45), wife Elizabeth Ellen Conley, and family including daughter Nancy Ann Dyer.",
+        supports: "Primary confirmation of the family in Whitman County after the Oregon years.",
+        linkedPeople: [{ name: "George Washington Dyer", href: "/ancestors/george-washington-dyer" }, { name: "Elizabeth Ellen Conley", href: "/ancestors/elizabeth-ellen-conley" }, { name: "Nancy Ann Dyer", href: "/ancestors/nancy-ann-dyer" }],
+        linkedDocuments: [{ label: "1880 census image", href: "/documents/george-washington-dyer-1880-whitman-census" }]
+      },
+      {
+        id: "george-washington-dyer-1900-pine-city-census",
+        title: "George Washington Dyer 1900 Pine City household",
+        dateLabel: "1900",
+        year: 1900,
+        place: "Pine, Whitman County, Washington",
+        confidence: "Primary Source",
+        category: "record",
+        summary: "George Washington Dyer (head, b. Nov 1835 Illinois, age 64, married 34 years) and household in Pine City precinct.",
+        supports: "Detailed household and nativity confirmation matching the profile facts.",
+        linkedPeople: [{ name: "George Washington Dyer", href: "/ancestors/george-washington-dyer" }, { name: "Elizabeth Ellen Conley", href: "/ancestors/elizabeth-ellen-conley" }],
+        linkedDocuments: [{ label: "1900 census image", href: "/documents/george-washington-dyer-1900-pine-city-census" }]
+      },
+      {
         id: "memory-kansas-city",
         title: "Kansas City story",
         dateLabel: "Archive context: ~1900",
@@ -605,36 +644,36 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
     <div className="space-y-10">
       <section className="archive-home-hero">
         <div className="archive-home-hero__copy">
-          <div className="archive-eyebrow">Private research archive</div>
+          <div className="archive-eyebrow">Our family’s records</div>
           <h1 className="archive-display text-5xl font-semibold tracking-tight text-[var(--archive-ink)] sm:text-6xl">
             The Living Red Book
           </h1>
           <p className="max-w-2xl text-base leading-7 text-[rgba(244,239,231,0.8)] sm:text-lg">
-            A living archive of records, stories, migrations, and the people behind them.
+            A collection of real family documents, letters, and stories from the people who came before us.
           </p>
           <div className="flex flex-wrap gap-2 pt-2">
-            <span className="archive-pill">Private</span>
-            <span className="archive-pill">Record-led</span>
-            <span className="archive-pill">Evidence separated from narrative</span>
-            <span className="archive-pill">Living family archive</span>
+            <span className="archive-pill">Private family use</span>
+            <span className="archive-pill">Built from old records</span>
+            <span className="archive-pill">Facts kept separate from stories</span>
+            <span className="archive-pill">Still being added to</span>
           </div>
           <div className="archive-stat-grid pt-2">
-            <Stat value={people.length} label="Ancestor profiles" />
-            <Stat value={documents.length} label="Document records" />
-            <Stat value={familyMemory.length} label="Memory / research entries" />
-            <Stat value={visiblePeople.length} label="Visible people" />
-            <Stat value={visibleDocuments.length} label="Visible documents" />
-            <Stat value={visibleMemory.length} label="Visible stories" />
+            <Stat value={people.length} label="People we know about" />
+            <Stat value={documents.length} label="Original documents" />
+            <Stat value={familyMemory.length} label="Family stories & notes" />
+            <Stat value={visiblePeople.length} label="People in this view" />
+            <Stat value={visibleDocuments.length} label="Documents in this view" />
+            <Stat value={visibleMemory.length} label="Stories in this view" />
           </div>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="#timeline" className="archive-hero-button">
-              Explore timeline
+              See the timeline
             </Link>
             <Link href="#featured-record" className="archive-hero-button archive-hero-button--ghost">
-              Featured record
+              A record worth noting
             </Link>
             <Link href="#places" className="archive-hero-button archive-hero-button--ghost">
-              Explore by place
+              Look by place
             </Link>
           </div>
         </div>
@@ -647,7 +686,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             <RecordTile src={fourthPreview} title="Moore and Law marriage record" caption="Certified marriage copy" />
           </div>
           <div className="mt-4 rounded-[1.5rem] border border-[rgba(244,239,231,0.12)] bg-[rgba(244,239,231,0.04)] p-4 text-sm leading-6 text-[rgba(244,239,231,0.76)]">
-            The hero wall uses real scans, census fragments, and certificates. Nothing here turns a story into proof.
+            These are real old documents and photos from the family. We show the original pieces, not just stories.
           </div>
         </div>
       </section>
@@ -655,12 +694,11 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
       <section id="timeline" className="space-y-6">
         <div className="archive-panel flex flex-wrap items-center justify-between gap-3">
           <div className="space-y-2">
-            <div className="archive-kicker">Main centerpiece</div>
-            <h2 className="archive-section__title text-3xl">Family history timeline</h2>
+            <div className="archive-kicker">The main part of the site</div>
+            <h2 className="archive-section__title text-3xl">Family events over time</h2>
             <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-              Move the year range, jump by era, and switch between the dated timeline and the family web. Solid
-              markers indicate documentary anchors. Dotted markers stay visually separate when the archive is still
-              building the proof.
+              Drag the sliders to focus on certain years. Solid markers mean we have original documents. Dotted ones
+              are from family stories or less certain information.
             </p>
           </div>
           <div className="flex rounded-full border border-[rgba(18,20,24,0.1)] bg-[rgba(18,20,24,0.03)] p-1">
@@ -673,7 +711,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
                   : "text-[var(--archive-text-soft)] hover:text-[var(--archive-text)]"
               }`}
             >
-              Timeline View
+              See the timeline
             </button>
             <button
               type="button"
@@ -684,7 +722,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
                   : "text-[var(--archive-text-soft)] hover:text-[var(--archive-text)]"
               }`}
             >
-              Family Web
+              See family connections
             </button>
           </div>
         </div>
@@ -747,7 +785,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
       <section id="featured-record" className="space-y-4">
         <div className="archive-section__head">
           <div>
-            <div className="archive-section__title">Featured record</div>
+            <div className="archive-section__title">A record worth noting</div>
             <div className="archive-section__copy">
               One record at a time. The scan is prominent, and the explanation keeps direct statement, support, and
               uncertainty separate.
@@ -799,7 +837,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
       <section id="places" className="space-y-4">
         <div className="archive-section__head">
           <div>
-            <div className="archive-section__title">Explore by place</div>
+            <div className="archive-section__title">Look by place</div>
             <div className="archive-section__copy">
               Use the place cards as entry points. Each card filters the archive toward the years and records tied
               to that location.

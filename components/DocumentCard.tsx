@@ -5,8 +5,10 @@ import { SourcePreview } from "./SourcePreview";
 export interface DocumentCardProps {
   id: string;
   filename: string;
+  title?: string;
   type: string;
   date: string;
+  dateRange?: string;
   era?: string;
   sourceUrl?: string;
   sourceCitation?: string;
@@ -21,6 +23,7 @@ export interface DocumentCardProps {
 export function DocumentCard({
   id,
   filename,
+  title,
   type,
   date,
   era,
@@ -43,7 +46,7 @@ export function DocumentCard({
       <div className="overflow-hidden rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.04)]">
         <SourcePreview src={previewUrl} title={filename} className="h-44 w-full" />
       </div>
-      <h3 className="text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{filename}</h3>
+      <h3 className="text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">{title || filename}</h3>
       <div className="text-sm text-[var(--archive-text-soft)]">{date}</div>
       {era ? <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent-soft)]">{era}</div> : null}
       {people.length ? <div className="text-sm text-[var(--archive-text-soft)]">People: {people.join(", ")}</div> : null}
@@ -66,7 +69,7 @@ export function DocumentCard({
         </div>
       ) : null}
       <div className="rounded-2xl border border-[rgba(127,29,45,0.12)] bg-[rgba(127,29,45,0.05)] p-3 text-sm text-[var(--archive-text)]">
-        <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">What it proves</div>
+        <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">What this record shows about the family</div>
         <div className="mt-1 leading-6">{whatItProves}</div>
       </div>
       {notes ? <div className="text-xs leading-5 text-[var(--archive-text-soft)]">{notes}</div> : null}

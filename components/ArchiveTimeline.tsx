@@ -86,18 +86,36 @@ export function ArchiveTimeline({
   onSelectEvent: (event: ArchiveTimelineEvent) => void;
   eraJumps: ArchiveEraJump[];
 }) {
-  const visibleCount = events.filter((event) => event.year != null && event.year >= startYear && event.year <= endYear).length;
+  const majorEventIds = [
+    "charles-dyer-discharge",
+    "jabez-hopkins-marriage",
+    "thomas-anna-marriage",
+    "decatur-township-1860",
+    "william-isabella-marriage",
+    "george-washington-dyer-1850-liberty-iowa-census",
+    "george-washington-dyer-1880-whitman-census",
+    "george-washington-dyer-1900-pine-city-census",
+    "memory-red-book"
+  ];
+
+  const filteredEvents = events.filter((event) => event.year != null && event.year >= startYear && event.year <= endYear);
+  const visibleCount = filteredEvents.length;
+
+  const isFullRange = startYear === minYear && endYear === maxYear;
+  let displayEvents = filteredEvents;
+  if (isFullRange) {
+    displayEvents = filteredEvents.filter((e) => majorEventIds.includes(e.id));
+  }
 
   return (
     <section className="archive-panel space-y-5">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-2">
-          <div className="archive-kicker">Interactive family timeline</div>
-          <h2 className="archive-section__title text-3xl">Timeline View</h2>
+          <div className="archive-kicker">See events through the years</div>
+          <h2 className="archive-section__title text-3xl">Timeline</h2>
           <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-            Drag the range to narrow the archive. Solid markers are documentary anchors; confirmed Red Book
-            compilation entries stay distinct from original letters, and dotted markers are bridge material or oral
-            history that should remain visually separate from primary evidence.
+            Drag the sliders to focus on different years. Solid markers mean we have original documents for that
+            event. Other markers are from family stories or research that needs more checking.
           </p>
         </div>
         <div className="rounded-full border border-[rgba(18,20,24,0.1)] bg-[rgba(18,20,24,0.03)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
@@ -112,115 +130,125 @@ export function ArchiveTimeline({
               key={jump.label}
               type="button"
               onClick={() => onRangeChange(jump.startYear, jump.endYear)}
-              className="rounded-full border border-[rgba(18,20,24,0.1)] bg-white/55 px-3 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--archive-text)] transition hover:border-[rgba(139,31,43,0.35)] hover:bg-white"
+              className="rounded-full border border-[rgba(18,20,24,0.1)] bg-white/55 px-2.5 py-1.5 sm:px-3 sm:py-2 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.2em] text-[var(--archive-text)] transition hover:border-[rgba(139,31,43,0.35)] hover:bg-white min-h-[36px]"
             >
               {jump.label}
             </button>
           ))}
         </div>
 
-        <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="flex flex-col gap-4 xl:grid xl:grid-cols-[minmax(0,1fr)_240px]">
           <div className="rounded-[1.5rem] border border-[rgba(18,20,24,0.1)] bg-[rgba(12,14,18,0.72)] p-4 text-[var(--archive-ink)]">
             <div className="flex items-center justify-between gap-3 pb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[rgba(244,239,231,0.72)]">
               <span>{startYear}</span>
               <span className="text-[var(--archive-accent-soft)]">Selected year range</span>
               <span>{endYear}</span>
             </div>
-            <div className="relative h-16">
-              <input
-                aria-label="Timeline start year"
-                type="range"
-                min={minYear}
-                max={maxYear}
-                value={startYear}
-                onChange={(event) => {
-                  const nextStart = Math.min(Number(event.target.value), endYear - 1);
-                  onRangeChange(nextStart, endYear);
-                }}
-                className="archive-range absolute inset-x-0 top-3 z-20 h-3 w-full appearance-none bg-transparent"
-              />
-              <input
-                aria-label="Timeline end year"
-                type="range"
-                min={minYear}
-                max={maxYear}
-                value={endYear}
-                onChange={(event) => {
-                  const nextEnd = Math.max(Number(event.target.value), startYear + 1);
-                  onRangeChange(startYear, nextEnd);
-                }}
-                className="archive-range archive-range--secondary absolute inset-x-0 top-3 z-10 h-3 w-full appearance-none bg-transparent"
-              />
+
+            <div className="space-y-4">
+              <div>
+                <div className="flex justify-between text-[10px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-accent-soft)] mb-1">
+                  <span>Start year</span>
+                  <span>{startYear}</span>
+                </div>
+                <input
+                  aria-label="Timeline start year"
+                  type="range"
+                  min={minYear}
+                  max={maxYear}
+                  value={startYear}
+                  onChange={(event) => {
+                    const nextStart = Math.min(Number(event.target.value), endYear - 1);
+                    onRangeChange(nextStart, endYear);
+                  }}
+                  className="archive-range w-full"
+                />
+              </div>
+              <div>
+                <div className="flex justify-between text-[10px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-accent-soft)] mb-1">
+                  <span>End year</span>
+                  <span>{endYear}</span>
+                </div>
+                <input
+                  aria-label="Timeline end year"
+                  type="range"
+                  min={minYear}
+                  max={maxYear}
+                  value={endYear}
+                  onChange={(event) => {
+                    const nextEnd = Math.max(Number(event.target.value), startYear + 1);
+                    onRangeChange(startYear, nextEnd);
+                  }}
+                  className="archive-range archive-range--secondary w-full"
+                />
+              </div>
             </div>
-            <div className="mt-2 flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.2em] text-[rgba(244,239,231,0.56)]">
-              <span>{minYear}</span>
-              <span>{maxYear}</span>
+
+            <div className="text-[10px] text-[var(--archive-accent-soft)]">
+              Full range: {minYear} – {maxYear}
             </div>
 
-            <div className="mt-5 overflow-x-auto pb-2">
-              <div className="relative min-w-[1200px] select-none pt-3">
-                <div className="absolute left-0 right-0 top-1/2 h-px -translate-y-1/2 bg-[rgba(244,239,231,0.18)]" aria-hidden="true" />
-                {events.map((event, index) => {
-                  if (event.year == null || event.year < startYear || event.year > endYear) {
-                    return null;
-                  }
+            {isFullRange && filteredEvents.length > displayEvents.length && (
+              <div className="mb-3 text-xs text-[var(--archive-text-soft)]">
+                Zoom in to see all {filteredEvents.length} records.
+              </div>
+            )}
 
-                  const percent = maxYear === minYear ? 0 : ((event.year - minYear) / (maxYear - minYear)) * 100;
-                  const selected = event.id === selectedEventId;
-                  const certainty = event.certainty ?? confidenceStyle(event.confidence);
-                  const isTopRow = index % 2 === 0;
-
-                  return (
-                    <button
-                      key={event.id}
-                      type="button"
-                      onClick={() => onSelectEvent(event)}
-                      className={`archive-timeline-node absolute w-[200px] -translate-x-1/2 text-left transition ${
-                        selected ? "scale-[1.03]" : "hover:-translate-y-0.5"
-                      }`}
-                      style={{
-                        left: `${percent}%`,
-                        top: isTopRow ? "1rem" : "7.75rem"
-                      }}
-                    >
-                      <div
-                        className={`rounded-2xl border p-3 shadow-lg shadow-black/20 ${
+            {displayEvents.length === 0 ? (
+              <div className="text-sm text-[var(--archive-text-soft)]">No events in this range.</div>
+            ) : (
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+                {displayEvents
+                  .sort((a, b) => (a.year ?? 0) - (b.year ?? 0))
+                  .map((event) => {
+                    const certainty = event.certainty ?? confidenceStyle(event.confidence);
+                    const isSelected = event.id === selectedEventId;
+                    return (
+                      <button
+                        key={event.id}
+                        type="button"
+                        onClick={() => onSelectEvent(event)}
+                        className={`text-left rounded-xl border p-4 transition text-sm min-h-[118px] ${
+                          isSelected ? "ring-2 ring-[rgba(160,123,70,0.45)]" : "hover:-translate-y-px"
+                        } ${
                           certainty === "solid"
                             ? "border-[rgba(233,217,205,0.24)] bg-[rgba(244,239,231,0.94)] text-[var(--archive-text)]"
                             : certainty === "strong"
                               ? "border-[rgba(160,123,70,0.28)] bg-[rgba(237,229,217,0.95)] text-[var(--archive-text)]"
-                              : certainty === "oral"
-                                ? "border border-dashed border-[rgba(190,174,215,0.4)] bg-[rgba(37,29,46,0.9)] text-[rgba(244,239,231,0.94)]"
-                                : "border border-dashed border-[rgba(139,31,43,0.38)] bg-[rgba(139,31,43,0.1)] text-[rgba(244,239,231,0.94)]"
-                        } ${selected ? "ring-2 ring-[rgba(160,123,70,0.45)]" : ""}`}
+                            : certainty === "oral"
+                              ? "border border-dashed border-[rgba(190,174,215,0.4)] bg-[rgba(37,29,46,0.9)] text-[rgba(244,239,231,0.94)]"
+                              : "border border-dashed border-[rgba(139,31,43,0.38)] bg-[rgba(139,31,43,0.1)] text-[rgba(244,239,231,0.94)]"
+                        }`}
                       >
-                        <div className="flex items-start justify-between gap-2">
-                          <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[rgba(244,239,231,0.72)]">
-                            {event.category}
-                          </div>
-                          <ConfidenceBadge label={event.confidence} />
+                        <div className="flex items-center justify-between text-[10px] font-semibold uppercase tracking-[0.24em] opacity-70">
+                          <span>{event.dateLabel}</span>
+                          <span>{event.category}</span>
                         </div>
-                        <div className="mt-2 text-sm font-semibold leading-5 archive-display">{event.title}</div>
-                        <div className="mt-1 text-xs uppercase tracking-[0.2em] text-[rgba(244,239,231,0.64)]">{event.dateLabel}</div>
-                        {event.place ? <div className="mt-2 text-xs leading-5 text-[rgba(244,239,231,0.72)]">{event.place}</div> : null}
-                      </div>
-                      <div className={`mt-2 h-3 w-3 rounded-full ${certainty === "oral" || certainty === "dotted" ? "border border-dashed border-[rgba(244,239,231,0.6)] bg-transparent" : "border border-[rgba(244,239,231,0.7)] bg-[var(--archive-accent)]"} ${selected ? "shadow-[0_0_0_6px_rgba(160,123,70,0.14)]" : ""}`} aria-hidden="true" />
-                    </button>
-                  );
-                })}
+                        <div className="mt-1 font-semibold leading-tight archive-display">{event.title}</div>
+                        {event.place && <div className="mt-1 text-xs opacity-70">{event.place}</div>}
+                        <div className="mt-2 flex items-center gap-2">
+                          <ConfidenceBadge label={event.confidence} />
+                          {isSelected && <span className="text-[10px] opacity-60">selected</span>}
+                        </div>
+                      </button>
+                    );
+                  })}
               </div>
-            </div>
+            )}
           </div>
 
           <div className="archive-panel space-y-4">
-          <div className="archive-section__title">Record detail</div>
+            <div className="archive-section__title">Record detail</div>
             <p className="text-sm leading-6 text-[var(--archive-text-soft)]">
               Click any event to open the compact evidence panel here. This keeps the timeline readable while still
               showing what the record supports.
             </p>
             <div className="rounded-[1.5rem] border border-[rgba(18,20,24,0.1)] bg-[rgba(18,20,24,0.03)] p-4">
               {selectedEventId ? (
-                <SelectedEventCard event={events.find((entry) => entry.id === selectedEventId) ?? null} />
+                <div>
+                  <div className="text-sm font-semibold">{events.find((e) => e.id === selectedEventId)?.title}</div>
+                  <div className="text-xs mt-1">{events.find((e) => e.id === selectedEventId)?.summary}</div>
+                </div>
               ) : (
                 <div className="text-sm leading-6 text-[var(--archive-text-soft)]">
                   Select an event to view place, confidence, linked records, and a short research note.
@@ -231,87 +259,5 @@ export function ArchiveTimeline({
         </div>
       </div>
     </section>
-  );
-}
-
-function SelectedEventCard({ event }: { event: ArchiveTimelineEvent | null }) {
-  if (!event) {
-    return null;
-  }
-
-  return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <div className="archive-eyebrow">
-            {event.category === "research" ? "Research archive" : event.category === "memory" ? "Family memory" : "Archive event"}
-          </div>
-          <h3 className="mt-1 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
-            {event.title}
-          </h3>
-        </div>
-        <ConfidenceBadge label={event.confidence} />
-      </div>
-      <div className="grid gap-3 sm:grid-cols-2">
-        <Info label="Date" value={event.dateLabel} />
-        <Info label="Place" value={event.place ?? "Not listed"} />
-        <Info label="Supports" value={event.supports} wide />
-        <Info label="Narrative" value={event.summary} wide />
-      </div>
-      {event.linkedPeople?.length ? (
-        <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-accent)]">
-            Linked people
-          </div>
-          <div className="mt-2 flex flex-wrap gap-2">
-            {event.linkedPeople.map((person) => (
-              person.href ? (
-                <a
-                  key={person.name}
-                  href={person.href}
-                  className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/55 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--archive-text)] transition hover:border-[rgba(139,31,43,0.35)] hover:bg-white"
-                >
-                  {person.name}
-                </a>
-              ) : (
-                <span
-                  key={person.name}
-                  className="rounded-full border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--archive-text-soft)]"
-                >
-                  {person.name}
-                </span>
-              )
-            ))}
-          </div>
-        </div>
-      ) : null}
-      {event.linkedDocuments?.length ? (
-        <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-accent)]">
-            Linked records
-          </div>
-          <div className="mt-2 flex flex-wrap gap-2">
-            {event.linkedDocuments.map((document) => (
-              <a
-                key={document.label}
-                href={document.href}
-                className="rounded-full border border-[rgba(127,29,45,0.18)] bg-[rgba(127,29,45,0.06)] px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--archive-accent)] transition hover:border-[rgba(127,29,45,0.34)] hover:bg-[rgba(127,29,45,0.1)]"
-              >
-                {document.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      ) : null}
-    </div>
-  );
-}
-
-function Info({ label, value, wide }: { label: string; value: string; wide?: boolean }) {
-  return (
-    <div className={`rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4 text-sm text-[var(--archive-text)] ${wide ? "sm:col-span-2" : ""}`}>
-      <div className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-accent)]">{label}</div>
-      <div className="mt-1 leading-6">{value}</div>
-    </div>
   );
 }

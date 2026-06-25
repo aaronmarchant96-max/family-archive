@@ -33,11 +33,11 @@ export function FamilyWeb({
     <section className="archive-panel space-y-5">
       <div className="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-between">
         <div className="space-y-2">
-          <div className="archive-kicker">Relationship view</div>
-          <h2 className="archive-section__title text-3xl">Family Web</h2>
+          <div className="archive-kicker">How everyone fits together</div>
+          <h2 className="archive-section__title text-3xl">How the family connects</h2>
           <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-            Dotted lanes mark research bridges. Solid lanes trace loaded profiles and source-backed family links.
-            Use the web to keep the direct line visible without pretending every bridge is settled.
+            Solid connections show where we have good documents. Dotted ones are research that still needs more
+            checking. This view helps keep the main family line clear.
           </p>
         </div>
         <div className="rounded-full border border-[rgba(18,20,24,0.1)] bg-[rgba(18,20,24,0.03)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
@@ -63,13 +63,13 @@ export function FamilyWeb({
             </div>
 
             <div className="mt-4 overflow-x-auto pb-2">
-              <div className="min-w-[1100px]">
+              <div className="min-w-[900px] sm:min-w-[1100px]">
                 <div className="flex items-stretch">
                   {lane.nodes.map((node, index) => {
                     const selected = selectedNodeId === node.id;
                     return (
                       <div key={node.id} className="flex items-stretch">
-                        <div className="w-[230px]">
+                        <div className="w-[180px] sm:w-[230px]">
                           <button
                             type="button"
                             onClick={() => onSelectNode(node)}

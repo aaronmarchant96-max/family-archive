@@ -11,13 +11,23 @@ const badgeAliases: Record<string, string> = {
   Verified: "Confirmed",
 };
 
+const friendlyLabels: Record<string, string> = {
+  "Primary Source": "Strong original document",
+  "Strong Evidence": "Very reliable",
+  "Confirmed": "Well confirmed",
+  "Family-Confirmed Oral History": "Trusted family story",
+  "Needs Review": "Needs more checking",
+  "Needs Proof": "Still looking for proof",
+};
+
 export function ConfidenceBadge({ label }: { label: string }) {
   const normalizedLabel = badgeAliases[label] ?? label;
+  const displayLabel = friendlyLabels[normalizedLabel] ?? normalizedLabel;
   const className = badgeStyles[normalizedLabel] ?? "border-white/10 bg-white/5 text-slate-200";
 
   return (
     <span className={`rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] ${className}`}>
-      {normalizedLabel}
+      {displayLabel}
     </span>
   );
 }

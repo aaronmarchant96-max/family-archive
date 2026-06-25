@@ -225,6 +225,14 @@
         "confidence": "Primary Source"
       },
       {
+        "title": "Marriage to Margaret Baker",
+        "date": "8 June 1845",
+        "place": "Claiborne County, Tennessee",
+        "summary": "Married Margaret Baker. Primary source from Claiborne County marriage register (license 2 June, marriage performed 8 June 1845).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "james-ramsey-margaret-baker-marriage"
+      },
+      {
         "title": "Civil War draft registration",
         "date": "1863",
         "place": "Iowa",
@@ -250,13 +258,14 @@
     ],
     "evidenceSummary": [
       "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Married Margaret Baker 8 June 1845 in Claiborne County, Tennessee",
       "Born 19 February 1825 in Tennessee",
       "Listed on the 1863 Iowa Civil War draft registration page",
       "Draft page places James in Long Creek, Decatur County, Iowa",
       "Age 38 and occupation farmer on the draft page",
       "Residence trail in Iowa",
-      "Key document: 32178_1220705228_0032-00400.jpg",
-      "Status: Primary source draft registration record"
+      "Key documents: marriage register 1845 and draft registration 1863",
+      "Status: Primary source marriage and draft records"
     ]
   },
   {
@@ -354,43 +363,170 @@
   {
     "id": "george-washington-dyer",
     "name": "George Washington Dyer",
-    "lifespan": "Civil War era",
-    "era": "Civil War",
+    "lifespan": "1835-1906",
+    "era": "19th century",
     "branch": "Dyer",
-    "summary": "Direct ancestor and Union Army veteran.",
-    "keyEvent": "Served with the First Oregon Infantry in 1864.",
-    "confidence": "Confirmed",
-    "tags": ["Civil War", "First Oregon Infantry"],
-    "attachedDocument": "dyer-george-w-page-10.pdf",
+    "summary": "Son of the Revolutionary War line through Jonathan Dyer. Husband of Elizabeth Ellen Conley. Father of Nancy Ann Dyer who connects to the Edwards and Moore families. Lived in Illinois, Iowa, Oregon, and Washington.",
+    "keyEvent": "Served with the First Oregon Infantry in 1864 during the Civil War. Married Elizabeth Ellen Conley in 1866. Father of Nancy Ann Dyer (1871-1939).",
+    "confidence": "Strong Evidence",
+    "tags": ["Dyer", "Civil War", "Oregon", "Washington", "Generation 3"],
+    "sourceCitation": "Multiple U.S. censuses (1850 Illinois, 1880 and 1900 Washington), Washington State and Territorial Censuses (1883, 1887), Washington death and probate records, Oregon Early Oregonians Index, Find A Grave, Washington marriage and death certificates.",
     "timeline": [
       {
-        "title": "Oregon service",
-        "date": "1864",
-        "summary": "Served with the First Oregon Infantry during the Civil War.",
-        "confidence": "Confirmed",
-        "linkedDocumentId": "george-washington-dyer-military-record"
+        "title": "Birth",
+        "date": "27 November 1835",
+        "place": "McDonough County, Illinois, USA",
+        "summary": "Born in McDonough County, Illinois.",
+        "confidence": "Strong Evidence"
       },
       {
-        "title": "Military record",
-        "date": "1864",
-        "summary": "Existing military record identifies George W. Dyer in connection with the First Oregon Infantry.",
+        "title": "Residence",
+        "date": "1850",
+        "place": "Liberty, Jefferson, Iowa, USA",
+        "summary": "Living in Liberty, Jefferson County, Iowa at age 15.",
         "confidence": "Primary Source",
-        "linkedDocumentId": "george-washington-dyer-military-record"
+        "linkedDocumentId": "george-washington-dyer-1850-liberty-iowa-census"
       },
       {
-        "title": "Direct Dyer line",
-        "date": "Later generations",
-        "summary": "George Washington Dyer stands in the direct line from Revolutionary War veteran Charles Dyer through Jonathan Dyer, then forward through Nancy Ann Dyer and the Edwards, Moore, and Marchant families.",
-        "confidence": "Confirmed"
+        "title": "Marriage to Elizabeth Ellen Conley",
+        "date": "1866",
+        "place": "Unknown",
+        "summary": "Married Elizabeth Ellen Conley.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Nancy Ann Dyer",
+        "date": "1 October 1871",
+        "place": "Benton County, Oregon, USA",
+        "summary": "Nancy Ann Dyer born in Benton County, Oregon.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1880",
+        "place": "Whitman, Washington, USA",
+        "summary": "Living in Whitman County, Washington. Marital status: Married.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1880-whitman-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1883",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Resident of Whitman County, Washington.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Residence",
+        "date": "1887",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Resident of Whitman County, Washington.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Residence",
+        "date": "1900",
+        "place": "Pine, Whitman, Washington, USA",
+        "summary": "Head of household in Pine, Whitman County, Washington. Marital status: Married.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1900-pine-city-census"
+      },
+      {
+        "title": "Death",
+        "date": "21 October 1906",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Died in Pine City, Whitman County, Washington.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Burial",
+        "date": "1906",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Buried in Pine City Cemetery.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Probate",
+        "date": "8 December 1906",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Probate records filed in Whitman County.",
+        "confidence": "Primary Source"
       }
     ],
     "evidenceSummary": [
-      "Direct ancestor in the Dyer line",
-      "Civil War-era Oregon service",
-      "Unit: First Oregon Infantry",
-      "Key document: dyer-george-w-page-10.pdf",
-      "Status: Confirmed military record",
-      "Research note: Reported Indian War service is not yet treated as confirmed and remains separate until independently documented."
+      "Born 27 November 1835 in McDonough County, Illinois",
+      "Married Elizabeth Ellen Conley in 1866",
+      "Father of Nancy Ann Dyer (born 1 October 1871 in Benton County, Oregon)",
+      "Civil War service with First Oregon Infantry (1864)",
+      "Resided in Illinois (1835), Iowa (1850), Oregon (1871), Washington (1880-1906)",
+      "Died 21 October 1906 in Pine City, Whitman County, Washington",
+      "Buried in Pine City Cemetery",
+      "Probate filed December 1906 in Whitman County",
+      "Key sources: U.S. Federal Censuses (1850, 1880, 1900 images), Washington State and Territorial Censuses, Washington Death Certificate, Washington Wills and Probate, Find A Grave, Oregon Early Oregonians Index"
+    ]
+  },
+  {
+    "id": "elizabeth-ellen-conley",
+    "name": "Elizabeth Ellen Conley",
+    "lifespan": "1850-1909",
+    "era": "19th-20th century",
+    "branch": "Conley",
+    "summary": "Wife of George Washington Dyer (1835-1906). Mother of Nancy Ann Dyer (1871-1939). Lived with her family in Oregon and then Washington, appearing with George in the 1880 and 1900 censuses in Whitman County.",
+    "keyEvent": "Married George Washington Dyer in 1866. Mother of Nancy Ann Dyer born 1 October 1871 in Benton County, Oregon. Lived to 1909.",
+    "confidence": "Strong Evidence",
+    "tags": ["Conley", "Dyer", "Oregon", "Washington"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1850",
+        "place": "Unknown",
+        "summary": "Born circa 1850.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Marriage to George Washington Dyer",
+        "date": "1866",
+        "place": "Unknown",
+        "summary": "Married George Washington Dyer.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Nancy Ann Dyer",
+        "date": "1 October 1871",
+        "place": "Benton County, Oregon, USA",
+        "summary": "Nancy Ann Dyer born in Benton County, Oregon.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1880",
+        "place": "Whitman, Washington, USA",
+        "summary": "Living with husband and family in Whitman County, Washington. Marital status: Married.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1880-whitman-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1900",
+        "place": "Pine, Whitman, Washington, USA",
+        "summary": "Living in Pine, Whitman County, Washington as part of the household headed by George Washington Dyer.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1900-pine-city-census"
+      },
+      {
+        "title": "Death",
+        "date": "1909",
+        "place": "Unknown",
+        "summary": "Died at age 59.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of George Washington Dyer (1835-1906)",
+      "Married 1866",
+      "Mother of Nancy Ann Dyer (1871-1939)",
+      "Resided with family in Oregon (1871 birth of daughter) and Washington (1880, 1900 censuses in Whitman County)",
+      "Key sources: U.S. Federal Censuses (1880, 1900 images), Oregon Early Oregonians Index, Washington records"
     ]
   },
   {
@@ -437,6 +573,14 @@
         "confidence": "Strong Evidence"
       },
       {
+        "title": "1850 census household",
+        "date": "1850",
+        "place": "Bloomfield Township, Davis County, Iowa",
+        "summary": "Thomas Ramsey and Anna with younger children; Anderson Edwards and Armina appear in nearby separate households.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "thomas-ramsey-1850-bloomfield-iowa-census"
+      },
+      {
         "title": "1860 census household",
         "date": "1860",
         "place": "Richland Township, Decatur County, Iowa",
@@ -457,12 +601,13 @@
       "Husband of Anna Hopkins (1807-1883)",
       "Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children",
       "Ancestry profile gives birth as 9 December 1799 and death as 18 August 1872",
+      "1850 federal census household in Bloomfield Township, Davis County, Iowa (with nearby Edwards households)",
       "1860 federal census household in Richland Township, Decatur County, Iowa",
       "Listed with Anna Ramsey and children",
       "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
       "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
-      "Key document: census-decatur-township.pdf",
-      "Status: Primary source household record"
+      "Key documents: 1850 Bloomfield census and 1860 Decatur census",
+      "Status: Primary source household records"
     ]
   },
   {
@@ -533,7 +678,7 @@
     ],
     "evidenceSummary": [
       "Wife of Thomas Ramsey (1799-1872)",
-      "Daughter of Jabez Hopkins (1765-after 1856) and Rachel Clouse (1782-before 1856)",
+      "Presumed daughter of Jabez Hopkins and Rachel Clouse (parentage still unproven; working connection from profiles and census)",
       "Mother of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey",
       "Identified as Anna Hopkins in the Josiah Ramsey FamilySearch profile",
       "1860 and 1880 federal census household in Richland Township, Decatur County, Iowa",
@@ -549,8 +694,8 @@
     "lifespan": "1765-after 1856",
     "era": "Early Republic Tennessee",
     "branch": "Hopkins",
-    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Appears in Tennessee and Iowa records from 1830 through 1856, including the 1840 Hawkins County census and later Iowa residence trail.",
-    "keyEvent": "Married Rachel Clouse in 1801, fathered Anna Hopkins (1807-1883), and remained in the Tennessee-to-Iowa Hopkins trail through later life.",
+    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Strongly anchored in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain) by 1846–1849 state land grant. Appears in Tennessee and Iowa records from 1830 through 1856.",
+    "keyEvent": "Married Rachel Clouse in 1801, fathered Anna Hopkins (1807-1883), and held land in Hancock County, Tennessee (Mulberry Creek area) where he resided by the late 1840s.",
     "confidence": "Strong Evidence",
     "tags": ["Hopkins", "Clouse", "Tennessee", "Generation 3"],
     "sourceCitation": "FamilySearch-style profile for Rachel Clouse, showing her marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, an 1840 Hawkins County census image naming Jabez Hopkins, Iowa residence by 1850, death before 1856, and burial at Grand River Cemetery.",
@@ -564,16 +709,17 @@
       },
       {
         "title": "Marriage to Rachel Clouse",
-        "date": "1801",
-        "place": "Tennessee",
-        "summary": "Married Rachel Clouse, establishing the Hopkins-Clouse family line.",
-        "confidence": "Strong Evidence"
+        "date": "14 April 1801",
+        "place": "Washington County, Virginia",
+        "summary": "Jabis Hopkins married Rachel Clouse on 14 April 1801 (Washington County, Virginia marriage register). Minister: Charles Hardy. Primary source confirming spelling variant Jabis.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "jabez-hopkins-rachel-clouse-marriage"
       },
       {
-        "title": "Anna's birth",
+        "title": "Anna Hopkins born",
         "date": "1807",
         "place": "Tennessee",
-        "summary": "Daughter Anna Hopkins born, who would marry Thomas Ramsey.",
+        "summary": "Anna Hopkins (later married Thomas Ramsey) born in 1807. Parentage (whether daughter of this Jabez and Rachel) still unproven.",
         "confidence": "Strong Evidence"
       },
       {
@@ -592,6 +738,22 @@
         "linkedDocumentId": "claiborne-county-1840-census"
       },
       {
+        "title": "Hancock County land grant",
+        "date": "1849-08-03",
+        "place": "Hancock County, Tennessee",
+        "summary": "Tennessee state land grant to Jabez Hopkins (entry 14 Sep 1846, issued 3 Aug 1849), three acres on north side of Powell’s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop. Wording: “whereon he now lives”. Strong locality and identity anchor.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "jabez-hopkins-hancock-tennessee-land-grant"
+      },
+      {
+        "title": "Hopkins family tax list cluster",
+        "date": "Date not confirmed",
+        "place": "Hancock County, Tennessee area",
+        "summary": "Tax list page (poor scan) showing Hopkins Jabez Jr, Wm, widow, George and others. Suggests a family cluster in the locality. Strong Evidence only if year/county context confirmed.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "hopkins-family-hancock-tennessee-tax-list"
+      },
+      {
         "title": "Iowa residence",
         "date": "1850",
         "place": "Washington / Appanoose, Iowa",
@@ -607,19 +769,13 @@
       }
     ],
     "evidenceSummary": [
-      "Father of Anna Hopkins (1807-1883)",
-      "Husband of Rachel Clouse (1782-before 1856)",
-      "Lived in Tennessee",
-      "Marriage to Rachel Clouse in 1801",
-      "Anna Hopkins born in 1807",
-      "Claiborne County residence in 1830",
-      "Hawkins County census appearance in 1840",
-      "1840 Hawkins County census image",
-      "Hawkins County page sits among Collins and Gipson households",
-      "Iowa residence by 1850",
-      "Appears in 1854 county settlement records",
-      "Alive after 1856",
-      "Status: Strong evidence for the Hopkins-Clouse family trail"
+      "Jabis/Jabez Hopkins married Rachel Clouse 14 Apr 1801 in Washington County, Virginia (minister Charles Hardy) — Primary Source",
+      "Jabez Hopkins established in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain area) by land-grant period (entry 1846, issued 1849) — Primary Source, strong locality anchor",
+      "Hopkins family cluster suggested by tax list page in same locality (Jabez Jr, Wm, widow, George) — Strong Evidence if source context confirmed",
+      "Nehemiah Hopkins married Elizabeth 11 Mar 1762 in Warren, Rhode Island — Primary Source support for earlier generation",
+      "Stronger Rhode Island → Virginia → Tennessee → Iowa coherence in the Hopkins research lane",
+      "Still not directly proven: Anna Hopkins Ramsey was daughter of Jabez and Rachel; Jabez was son of Nehemiah and Elizabeth; disputed Elizabeth Cole parentage",
+      "Status: Jabez as real Tennessee figure strengthened. Anna as daughter and Nehemiah + Elizabeth as parents still unproven."
     ]
   },
   {
@@ -643,16 +799,16 @@
       },
       {
         "title": "Marriage to Jabez Hopkins",
-        "date": "1801",
-        "place": "Tennessee",
-        "summary": "Married Jabez Hopkins, establishing the Hopkins-Clouse family line.",
-        "confidence": "Strong Evidence"
+        "date": "14 April 1801",
+        "place": "Washington County, Virginia",
+        "summary": "Married Jabis/Jabez Hopkins (Washington County, Virginia register). Primary source for the marriage and spelling variant.",
+        "confidence": "Primary Source"
       },
       {
-        "title": "Anna's birth",
+        "title": "Anna Hopkins born",
         "date": "1807",
         "place": "Tennessee",
-        "summary": "Daughter Anna Hopkins born, who would marry Thomas Ramsey.",
+        "summary": "Anna Hopkins (later married Thomas Ramsey) born in 1807. Parentage (whether daughter of this Jabez and Rachel) still unproven.",
         "confidence": "Strong Evidence"
       },
       {
@@ -685,16 +841,10 @@
       }
     ],
     "evidenceSummary": [
-      "Mother of Anna Hopkins (1807-1883)",
-      "Wife of Jabez Hopkins (1765-after 1856)",
-      "Marriage to Jabez Hopkins in 1801",
-      "Anna Hopkins born in 1807",
-      "Lived in Tennessee",
-      "Claiborne County residence in 1830",
+      "Married Jabez Hopkins (recorded as Jabis) 14 April 1801 in Washington County, Virginia — Primary Source",
+      "Lived in Tennessee (Claiborne/Hancock area)",
       "Iowa residence by 1850",
-      "Died before 1856",
-      "Burial at Grand River Cemetery",
-      "Status: Strong evidence from the profile, census, and burial trail"
+      "Status: Jabez + Rachel marriage is solid. Anna as their daughter still unproven."
     ]
   },
   {
@@ -745,42 +895,76 @@
   {
     "id": "nancy-ann-dyer",
     "name": "Nancy Ann Dyer",
-    "lifespan": "1820-1900",
-    "era": "19th century",
+    "lifespan": "1871-1939",
+    "era": "Late 19th-20th century",
     "branch": "Dyer",
-    "summary": "Daughter of George Washington Dyer and granddaughter of Jonathan Dyer. Part of the Dyer-Edwards connection in the Marchant family line.",
-    "keyEvent": "Connects the Dyer Revolutionary War line to the Edwards/Moore/Marchant families.",
+    "summary": "Daughter of George Washington Dyer and Elizabeth Ellen Conley. Wife of Silas Josiah Edwards. Mother of Edith Ann Edwards, the deeply respected anchor of the family and the inspiring force behind the 1978 Red Book. Born in Benton County, Oregon, she built her life in Washington and passed in Pine City in 1939 at age 68.",
+    "keyEvent": "Mother of Edith Ann Edwards (1901-1995). Married Silas Josiah Edwards; lived in Pine City, Washington. Her daughter Edith became the central figure of the family Red Book.",
     "confidence": "Strong Evidence",
-    "tags": ["Dyer", "Edwards", "Moore", "Marchant", "SAR Line", "Generation 4"],
+    "tags": ["Dyer", "Edwards", "Moore", "Washington", "Generation 4"],
     "timeline": [
       {
         "title": "Birth",
-        "date": "1820",
-        "place": "Ohio or Oregon",
-        "summary": "Born to George Washington Dyer, daughter of a Civil War veteran and granddaughter of a Revolutionary War veteran.",
+        "date": "1 October 1871",
+        "place": "Benton County, Oregon, USA",
+        "summary": "Born to George Washington Dyer and Elizabeth Ellen Conley.",
         "confidence": "Strong Evidence"
       },
       {
-        "title": "Marriage",
-        "date": "circa 1840",
-        "place": "Oregon or Midwest",
-        "summary": "Married into the family line that connects to Edwards/Moore/Marchant.",
+        "title": "Residence with parents",
+        "date": "1880",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Living with parents George Washington Dyer and Elizabeth Ellen Conley in Whitman County, Washington.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1880-whitman-census"
+      },
+      {
+        "title": "Residence with parents",
+        "date": "1900",
+        "place": "Pine, Whitman County, Washington, USA",
+        "summary": "Living with parents in the Pine, Whitman County household (around age 29).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-washington-dyer-1900-pine-city-census"
+      },
+      {
+        "title": "Marriage to Silas Josiah Edwards",
+        "date": "Date not listed",
+        "place": "Pine City, Washington, USA",
+        "summary": "Married Silas Josiah Edwards. The marriage return in Pine City is a preserved primary family record listing parent names.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-edwards-pine-city-marriage"
+      },
+      {
+        "title": "Birth of daughter Edith Ann Edwards",
+        "date": "1901",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Gave birth to daughter Edith Ann Edwards at about age 30. Edith would live 94 years and inspire the family Red Book.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1920",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Living in Pine City, Washington.",
+        "confidence": "Primary Source"
       },
       {
         "title": "Death",
-        "date": "1900",
-        "place": "Oregon or Washington",
-        "summary": "Died at age 80.",
+        "date": "20 October 1939",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Died at age 68 in Pine City, Washington.",
         "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
-      "Daughter of George Washington Dyer (Civil War) and granddaughter of Jonathan Dyer",
-      "Great-granddaughter of Charles Dyer (Revolutionary War)",
-      "Part of the Dyer-Edwards connection",
-      "Ancestress of the Moore/Marchant line",
-      "SAR/DAR eligible through Charles Dyer"
+      "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909)",
+      "Born 1 October 1871 in Benton County, Oregon",
+      "Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images)",
+      "Married Silas Josiah Edwards (1859-1943) (Primary Source marriage return in Pine City)",
+      "Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978",
+      "Resided in Pine City, Whitman County, Washington",
+      "Died 20 October 1939 in Pine City, Washington at age 68",
+      "Key sources include family records, censuses, and the preserved marriage return"
     ]
   },
   {
@@ -1334,6 +1518,14 @@
         "confidence": "Strong Evidence"
       },
       {
+        "title": "Marriage",
+        "date": "Date not listed",
+        "place": "Pine City, Washington",
+        "summary": "Married Nancy Ann Dyer. Marriage return for Josiah (Silas Josiah) Edwards in Pine City, with parent names written in. Direct family record.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "josiah-edwards-pine-city-marriage"
+      },
+      {
         "title": "Death",
         "date": "1943",
         "place": "Washington",
@@ -1346,7 +1538,215 @@
       "Born 1859, died 1943",
       "Lived 84 years",
       "Named after Josiah Ramsey ancestors",
+      "Married Nancy Ann Dyer; marriage return in Pine City with parent names written in (Primary Source)",
       "Mentioned in Armina Ramsey Edwards obituary"
+    ]
+  },
+  {
+    "id": "edith-ann-edwards",
+    "name": "Edith Ann Edwards",
+    "lifespan": "1901-1995",
+    "era": "20th century",
+    "branch": "Edwards",
+    "summary": "Edith Ann Edwards Moore was a beloved and highly respected anchor of the family across many generations. Born in 1901 in Pine City, Washington, she married Hugh Christopher Moore in 1924 and lived a long life of 94 years, passing in Canmore, Alberta, in 1995. She is remembered with deep affection and admiration as the inspiring force behind the Red Book compiled in 1978, a treasured family archive that preserves the stories and records of those who came before. Her warmth, strength, and dedication touched many families, and she remains a central figure of respect and love in our history.",
+    "keyEvent": "Married Hugh Christopher Moore on May 26, 1924, in Colfax, Washington. A deeply respected family matriarch and the inspiration for the Red Book.",
+    "confidence": "Primary Source",
+    "tags": ["Edwards", "Moore", "Washington", "Alberta", "Generation 7", "Red Book"],
+    "sourceCitation": "Family records, marriage return, and obituary context compiled for the Red Book.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1901",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Edith Ann Edwards was born in 1901 in Pine City, Washington, to Nancy Ann Dyer, age 30, and Silas Josiah Edwards, age 42. A cherished daughter who would become the heart of the family.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1920",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Edith Ann Edwards lived in Pine City, Washington, in 1920 as a single daughter in the family home.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Marriage to Hugh Christopher Moore",
+        "date": "26 May 1924",
+        "place": "Colfax, Whitman, Washington, USA",
+        "summary": "Edith Ann Edwards married Hugh Christopher Moore on May 26, 1924, in Colfax, Washington, at age 23. A union that anchored the next chapter of the family.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edith-ann-edwards-hugh-moore-marriage"
+      },
+      {
+        "title": "Death of mother Nancy Ann Dyer",
+        "date": "20 October 1939",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Her mother Nancy Ann passed away on October 20, 1939, in Pine City, Washington, at the age of 68.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of father Silas Josiah Edwards",
+        "date": "29 August 1943",
+        "place": "Spokane, Spokane, Washington, USA",
+        "summary": "Her father Silas Josiah passed away on August 29, 1943, in Spokane, Washington, at the age of 84.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of husband Hugh Christopher Moore",
+        "date": "1979",
+        "place": "Unknown",
+        "summary": "Her husband Hugh Christopher passed away in 1979 at the age of 84, after 55 years of marriage.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1995",
+        "place": "Canmore, Alberta, Canada",
+        "summary": "Edith Ann Edwards died in 1995 in Canmore, Alberta, Canada, at the age of 94. She lived a life of grace, strength, and deep family devotion.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Burial",
+        "date": "1995",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Buried at Union Cemetery in Calgary, Alberta, Canada, beside her beloved husband.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1901 in Pine City, Washington, daughter of Silas Josiah Edwards and Nancy Ann Dyer",
+      "Married Hugh Christopher Moore on May 26, 1924, in Colfax, Washington (Primary Source marriage return)",
+      "Lived a remarkable 94 years, passing in Canmore, Alberta, in 1995",
+      "Highly respected anchor of the family and the inspiring reason the Red Book was compiled in 1978",
+      "A woman of grace and strength whose memory is cherished across many families",
+      "Key document: clear marriage return for Edith Ann Edwards and Hugh Christopher Moore"
+    ]
+  },
+  {
+    "id": "hugh-christopher-moore",
+    "name": "Hugh Christopher Moore",
+    "lifespan": "1895-1979",
+    "era": "20th century",
+    "branch": "Moore",
+    "summary": "Husband of Edith Ann Edwards (1901-1995), the deeply respected family anchor and inspiration for the 1978 Red Book. Born in 1895 in Saskatchewan, Canada, Hugh lived in the Canadian prairies (Saskatchewan and Alberta's Medicine Hat area), served during the First World War, married Edith in 1924 in Washington state, and shared 55 years of marriage. He passed in 1979 in Calgary, Alberta, and is buried there alongside his wife. Remembered with respect as part of the Moore-Edwards legacy that connects the Canadian and American branches of the family.",
+    "keyEvent": "Married Edith Ann Edwards on May 26, 1924, in Colfax, Washington. Served in the Canadian Expeditionary Force during WWI.",
+    "confidence": "Primary Source",
+    "tags": ["Moore", "Edwards", "WWI", "Saskatchewan", "Alberta", "Washington"],
+    "sourceCitation": "1901-1921 Canadian censuses, WWI attestation and U.S. draft records, Washington marriage return, Find A Grave.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "22 July 1895",
+        "place": "Saskatchewan, Canada",
+        "summary": "Born in Saskatchewan, Canada.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Residence",
+        "date": "1901",
+        "place": "Ellisboro, Assiniboia (east/est), The Territories, Canada",
+        "summary": "Living with parents. Marital Status: Single; Relation to Head of House: Son.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1901-ellisboro-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1906",
+        "place": "Townships 15, 16, 17, 18 in ranges 11, 12 west of the 2nd M, Qu'Appelle, Saskatchewan, Canada",
+        "summary": "Living with family. Relation to Head of House: Son; Marital Status: Single.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      },
+      {
+        "title": "Residence",
+        "date": "abt 1916",
+        "place": "11th Street, Medicine Hat, Alberta, Canada",
+        "summary": "Living with family. Marital Status: Single; Relation to Head of House: Son.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1916-medicine-hat-census"
+      },
+      {
+        "title": "Military service - Canadian Expeditionary Force",
+        "date": "1917",
+        "place": "Medicine Hat, Alberta, Canada",
+        "summary": "Attested for service in the Canadian Over-Seas Expeditionary Force. Born 22 Jul 1895, Sintaluta, Sask.; next of kin father James Moore.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-canadian-attestation-1917"
+      },
+      {
+        "title": "Residence / U.S. WWI Draft",
+        "date": "1917-1918",
+        "place": "Cascade, Montana, USA",
+        "summary": "Residing in Cascade, Montana; registered for U.S. WWI draft. Occupation: Lee Forest Garage, Great Falls. Single.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1917-us-wwi-draft"
+      },
+      {
+        "title": "Residence",
+        "date": "1 Jun 1921",
+        "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
+        "summary": "Living with family. Marital Status: Single; Relation to Head of House: Son.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1921-medicine-hat-census"
+      },
+      {
+        "title": "Marriage to Edith Ann Edwards",
+        "date": "26 May 1924",
+        "place": "Colfax, Whitman, Washington, USA",
+        "summary": "Married Edith Ann Edwards. A union that formed a cherished partnership lasting over five decades and connecting the Canadian Moore line to the Edwards family.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edith-ann-edwards-hugh-moore-marriage"
+      },
+      {
+        "title": "Death of brother Norman James Moore",
+        "date": "15 March 1935",
+        "place": "Unknown",
+        "summary": "Brother Norman James Moore (1917-1935) passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of father James Moore",
+        "date": "6 June 1942",
+        "place": "Calgary, Calgary Census Division, Alberta, Canada",
+        "summary": "Father James Moore (1860-1942) passed away in Calgary.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of mother Jessie Bowen",
+        "date": "25 September 1958",
+        "place": "Unknown",
+        "summary": "Mother Jessie Bowen (1874-1958) passed away.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death of brother William Robert Moore",
+        "date": "Oct 1978",
+        "place": "Coeur D Alene, Kootenai, Idaho, USA",
+        "summary": "Brother William Robert Moore (1894-1978) passed away in Idaho.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1979",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Passed away in 1979 at the age of 84 in Calgary, Alberta.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Burial",
+        "date": "1979",
+        "place": "Calgary, Calgary Census Division, Alberta, Canada",
+        "summary": "Buried in Calgary alongside his wife Edith Ann Edwards.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 22 July 1895 in Saskatchewan, Canada",
+      "Lived in Saskatchewan (Sintaluta, Ellisboro, Qu'Appelle) and Alberta (Medicine Hat area)",
+      "Served in the Canadian Expeditionary Force (attestation 1917) and registered for U.S. WWI draft in Montana",
+      "Married Edith Ann Edwards on 26 May 1924 in Colfax, Washington (Primary Source marriage return)",
+      "Lived 84 years; died 1979 in Calgary, Alberta; buried in Calgary",
+      "Parents: James Moore (1860-1942) and Jessie Bowen (1874-1958)",
+      "Key documents: multiple Canadian censuses (1901, 1906, 1916, 1921), WWI records, and Washington marriage return"
     ]
   },
   {
@@ -1509,11 +1909,67 @@
         "linkedDocumentId": "decatur-township-1860-census"
       },
       {
+        "title": "1870 Iowa census household",
+        "date": "1870",
+        "place": "Iowa",
+        "summary": "Strong Edwards household continuity in Iowa. Supports the Iowa phase and migration west.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1870-iowa-census"
+      },
+      {
+        "title": "1880 Oregon census household",
+        "date": "1880",
+        "place": "Oregon",
+        "summary": "Good downstream proof for the later Edwards branch and continuity after the Iowa period.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1880-oregon-census"
+      },
+      {
         "title": "Migration to Washington",
         "date": "circa 1870s-1880s",
         "place": "Washington Territory",
         "summary": "The Edwards family migrated from Iowa to Washington, eventually settling in Pine City area.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "1900 Washington census",
+        "date": "1900",
+        "place": "Washington",
+        "summary": "Later Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1900-washington-census"
+      },
+      {
+        "title": "1920 Washington census",
+        "date": "1920",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1920-washington-census"
+      },
+      {
+        "title": "1930 Washington census",
+        "date": "1930",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1930-washington-census"
+      },
+      {
+        "title": "1940 Washington census",
+        "date": "1940",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1940-washington-census"
+      },
+      {
+        "title": "Washington Territory census cluster",
+        "date": "Date not listed",
+        "place": "Washington Territory",
+        "summary": "Broad Edwards cluster evidence in Washington Territory.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": "washington-territory-edwards-census"
       },
       {
         "title": "Death",
@@ -1529,10 +1985,14 @@
       "Marriage to Armina Ramsey needs verification",
       "Armina obituary states the marriage year as 1840",
       "Father of 8 children: Lucinda, Mary Ann 'Polly', Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards",
+      "1870 Iowa census - Strong Edwards household continuity (Primary Source)",
+      "1880 Oregon census - Downstream proof after Iowa period (Primary Source)",
+      "1900-1940 Washington census trail - Later continuity",
+      "Washington Territory census - Broad cluster evidence (Needs Review)",
       "Appears in the Ramsey/Edwards census trail in Iowa",
       "Migrated from Iowa to Washington",
       "Key document: obituary-armina-ramsey.pdf",
-      "RESEARCH NOTE: Parents and military service (if any) need verification"
+      "RESEARCH NOTE: These records support the Edwards migration Iowa -> Oregon -> Washington. No new Hopkins proof in this batch."
     ]
   },
   {
@@ -1573,6 +2033,62 @@
         "linkedDocumentId": "decatur-township-1860-census"
       },
       {
+        "title": "1870 Iowa census household",
+        "date": "1870",
+        "place": "Iowa",
+        "summary": "Strong Edwards household continuity in Iowa. Supports the Iowa phase and migration west.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1870-iowa-census"
+      },
+      {
+        "title": "1880 Oregon census household",
+        "date": "1880",
+        "place": "Oregon",
+        "summary": "Good downstream proof for the later Edwards branch and continuity after the Iowa period.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1880-oregon-census"
+      },
+      {
+        "title": "1900 Washington census",
+        "date": "1900",
+        "place": "Washington",
+        "summary": "Later Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1900-washington-census"
+      },
+      {
+        "title": "1920 Washington census",
+        "date": "1920",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1920-washington-census"
+      },
+      {
+        "title": "1930 Washington census",
+        "date": "1930",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1930-washington-census"
+      },
+      {
+        "title": "1940 Washington census",
+        "date": "1940",
+        "place": "Washington",
+        "summary": "Edwards-line continuity in Washington.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "edwards-1940-washington-census"
+      },
+      {
+        "title": "Washington Territory census cluster",
+        "date": "Date not listed",
+        "place": "Washington Territory",
+        "summary": "Broad Edwards cluster evidence in Washington Territory.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": "washington-territory-edwards-census"
+      },
+      {
         "title": "Obituary record",
         "date": "July 26, 1923",
         "place": "Pine City, Washington",
@@ -1586,11 +2102,15 @@
       "Edwards/Ramsey line matriarch",
       "Marriage to Anderson Edwards needs verification",
       "Armina obituary states she was united in marriage to Anderson Edwards in 1840",
+      "1870 Iowa census - Strong Edwards household continuity (Primary Source)",
+      "1880 Oregon census - Downstream proof after Iowa (Primary Source)",
+      "1900-1940 Washington census trail - Later continuity",
+      "Washington Territory census - Broad cluster evidence (Needs Review)",
       "Appears in the 1860 Decatur Township census trail",
       "Obituary dated July 26, 1923",
       "Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins",
       "Key document: obituary-armina-ramsey.pdf",
-      "Supporting census record: census-decatur-township.pdf"
+      "These records support the Edwards migration Iowa -> Oregon -> Washington. No new Hopkins proof in this batch."
     ]
   },
   {
@@ -1924,6 +2444,166 @@
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
       "Lived 88 years"
+    ]
+  },
+  {
+    "id": "nehemiah-hopkins",
+    "name": "Nehemiah Hopkins",
+    "lifespan": "c. 1740 - after 1826",
+    "era": "Colonial to Early Republic",
+    "branch": "Hopkins",
+    "summary": "Husband of Elizabeth Cole. Married in Rhode Island 1762 (both of Scituate). Tennessee land grant 1825–1826 mentioning Stephen Hopkins's corner. Vermont militia 1778 record exists.",
+    "keyEvent": "Married Elizabeth Cole 11 Mar 1762 in Warren, RI. Later associated with Tennessee land grant.",
+    "confidence": "Strong Evidence",
+    "tags": ["Hopkins", "Cole", "Rhode Island", "Tennessee", "Generation 1-2"],
+    "timeline": [
+      {
+        "title": "Marriage to Elizabeth Cole",
+        "date": "11 March 1762",
+        "place": "Warren, Rhode Island",
+        "summary": "Married Mrs. Elizabeth Cole (both of Scituate) by John Kennicutt, Justice.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "nehemiah-hopkins-elizabeth-1762-warren-ri"
+      },
+      {
+        "title": "Tennessee land grant",
+        "date": "5 June 1826",
+        "place": "Tennessee",
+        "summary": "Grant issued following survey in December 1825. Boundary reference to Stephen Hopkins's corner.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "nehemiah-hopkins-tennessee-land-grant"
+      },
+      {
+        "title": "Vermont militia payroll",
+        "date": "November 1778",
+        "place": "Vermont",
+        "summary": "Includes Nehm Hopkins, Capt. Cooley’s company, Col. Warren’s regiment. Real Revolutionary-era record, but identity bridge still needed.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "nehemiah-hopkins-vermont-militia-1778"
+      }
+    ],
+    "evidenceSummary": [
+      "Married Elizabeth 11 March 1762 in Warren, Rhode Island — Primary Source support",
+      "Tennessee land grant surveyed Dec 1825, issued June 1826",
+      "Mentions Stephen Hopkins corner in grant",
+      "Possible Nehm Hopkins in 1778 Vermont militia payroll (identity bridge still needed)",
+      "Primary sources for marriage and land grant",
+      "Identity bridge to Jabez still under research. Not yet proven."
+    ]
+  },
+  {
+    "id": "elizabeth-cole-hopkins",
+    "name": "Elizabeth Cole",
+    "lifespan": "b. 1739",
+    "era": "Colonial New England",
+    "branch": "Cole",
+    "summary": "Wife of Nehemiah Hopkins. 1739 birth/baptism in Massachusetts/Rhode Island area. Married in Rhode Island 1762. Mother of children recorded in parish christenings.",
+    "keyEvent": "Born or baptized 1739 (early New England record); married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island.",
+    "confidence": "Strong Evidence",
+    "tags": ["Cole", "Hopkins", "Rhode Island", "Massachusetts"],
+    "timeline": [
+      {
+        "title": "Birth / baptism",
+        "date": "1739",
+        "place": "Massachusetts / Rhode Island area",
+        "summary": "Baptism or birth entry for Elizabeth Cole in 1739. Supports early family context in New England.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "elizabeth-cole-1739-baptism"
+      },
+      {
+        "title": "Marriage to Nehemiah Hopkins",
+        "date": "11 March 1762",
+        "place": "Warren, Rhode Island",
+        "summary": "Married Nehemiah Hopkins (both of Scituate).",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "nehemiah-hopkins-elizabeth-1762-warren-ri"
+      }
+    ],
+    "evidenceSummary": [
+      "Birth/baptism 1739 (Scituate record shows daughter of David and Sarah — conflicts with working tree of Joseph Cole Sr + Freelove Mason). Needs Review until reconciled.",
+      "Married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island — Primary Source support",
+      "Children recorded in parish (including a daughter Elizabeth of Broughton)",
+      "Key documents: 1739 baptism record (under review), marriage record, and parish christenings",
+      "Note: 1739 record attached only as context for Elizabeth Cole’s early life. Not used to prove Jabez parentage or later lineage until parent conflict resolved."
+    ]
+  },
+  {
+    "id": "margaret-baker",
+    "name": "Margaret Baker",
+    "lifespan": "1818-1905",
+    "era": "19th-century Iowa",
+    "branch": "Baker",
+    "summary": "Wife of James Ramsey (1825-1909). Mother of Thomas Bentley Ramsey and other children. Married in Claiborne County, Tennessee.",
+    "keyEvent": "Married James Ramsey on 8 June 1845 in Claiborne County, Tennessee.",
+    "confidence": "Primary Source",
+    "tags": ["Baker", "Ramsey", "Tennessee", "Iowa"],
+    "timeline": [
+      {
+        "title": "Marriage to James Ramsey",
+        "date": "8 June 1845",
+        "place": "Claiborne County, Tennessee",
+        "summary": "Married James Ramsey. Primary source from county marriage register.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "james-ramsey-margaret-baker-marriage"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of James Ramsey (1825-1909)",
+      "Mother of Thomas Bentley Ramsey (1846-1922)",
+      "Marriage 8 June 1845 in Claiborne County, Tennessee",
+      "Primary marriage register record"
+    ]
+  },
+  {
+    "id": "arthur-edwards",
+    "name": "Arthur Edwards",
+    "lifespan": "c. 1787 - after 1850",
+    "era": "Early Republic to mid-19th century",
+    "branch": "Edwards",
+    "summary": "Husband of Freelove. In Davis County, Iowa by 1850 with family including Elizabeth age 17 born Tennessee.",
+    "keyEvent": "1850 census in Soap Creek Township, Davis County, Iowa with wife Freelove and children.",
+    "confidence": "Primary Source",
+    "tags": ["Edwards", "Clouse", "Iowa", "Tennessee"],
+    "timeline": [
+      {
+        "title": "1850 census household",
+        "date": "1850",
+        "place": "Soap Creek Township, Davis County, Iowa",
+        "summary": "Arthur Edwards, age 63 born Tennessee, Freelove age 62 born Virginia, Elizabeth age 17 born Tennessee, plus younger children.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "arthur-edwards-freelove-1850-soap-creek-census"
+      }
+    ],
+    "evidenceSummary": [
+      "1850 census with wife Freelove (Clouse lane) and daughter Elizabeth born Tennessee",
+      "Supports Edwards/Clouse family in Iowa by 1850",
+      "Note: Freelove here is Clouse, distinct from Freelove Mason in Cole/Hopkins lane"
+    ]
+  },
+  {
+    "id": "freelove-clouse",
+    "name": "Freelove Clouse",
+    "lifespan": "c. 1788 - after 1850",
+    "era": "Early Republic to mid-19th century",
+    "branch": "Clouse",
+    "summary": "Wife of Arthur Edwards. In Davis County, Iowa household in 1850, born Virginia.",
+    "keyEvent": "1850 census in Iowa with husband Arthur Edwards and family.",
+    "confidence": "Primary Source",
+    "tags": ["Clouse", "Edwards", "Iowa"],
+    "timeline": [
+      {
+        "title": "1850 census household",
+        "date": "1850",
+        "place": "Soap Creek Township, Davis County, Iowa",
+        "summary": "Freelove, age 62 born Virginia, wife of Arthur Edwards.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "arthur-edwards-freelove-1850-soap-creek-census"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of Arthur Edwards in 1850 Iowa census",
+      "Mother of Elizabeth (age 17 in 1850, born Tennessee)",
+      "Note: This is Freelove Clouse. Separate from Freelove Mason (Cole/Hopkins parentage)."
     ]
   }
 ]

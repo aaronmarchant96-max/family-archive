@@ -63,10 +63,20 @@ a {
 }
 
 .archive-nav__link {
-  @apply rounded-full border px-4 py-2 text-sm transition;
+  @apply rounded-full border px-3 py-1.5 text-sm transition min-h-[40px] flex items-center;
   border-color: rgba(225, 216, 203, 0.14);
   background: rgba(255, 255, 255, 0.04);
   color: rgba(243, 237, 228, 0.94);
+}
+
+@media (max-width: 640px) {
+  .archive-nav__link {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    font-size: 0.75rem;
+  }
 }
 
 .archive-nav__link--active {
@@ -235,24 +245,24 @@ a {
 }
 
 .archive-home-stat {
-  @apply rounded-[1.2rem] border p-4;
+  @apply rounded-[1rem] sm:rounded-[1.2rem] border p-3 sm:p-4;
   border-color: rgba(243, 237, 228, 0.12);
   background: rgba(243, 237, 228, 0.06);
 }
 
 .archive-home-stat__value {
-  @apply text-2xl font-semibold tracking-tight;
+  @apply text-xl sm:text-2xl font-semibold tracking-tight;
   color: rgba(243, 237, 228, 0.96);
   font-family: var(--archive-display-font);
 }
 
 .archive-home-stat__label {
-  @apply mt-1 text-[11px] font-semibold uppercase tracking-[0.22em];
+  @apply mt-0.5 sm:mt-1 text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.22em];
   color: rgba(243, 237, 228, 0.64);
 }
 
 .archive-hero-button {
-  @apply inline-flex items-center justify-center rounded-full border px-5 py-2.5 text-sm font-semibold transition;
+  @apply inline-flex items-center justify-center rounded-full border px-4 py-2 sm:px-5 sm:py-2.5 text-sm font-semibold transition min-h-[42px];
   border-color: rgba(243, 237, 228, 0.14);
   background: rgba(243, 237, 228, 0.08);
   color: rgba(243, 237, 228, 0.96);
@@ -283,13 +293,35 @@ a {
 
 .archive-range {
   accent-color: var(--archive-accent);
+  touch-action: pan-x;
+  height: 1.5rem;
+}
+
+.archive-range::-webkit-slider-runnable-track {
+  height: 4px;
+  background: rgba(244, 239, 231, 0.3);
+  border-radius: 999px;
+}
+
+@media (max-width: 640px) {
+  .archive-range {
+    height: 2rem;
+  }
+  .archive-range::-webkit-slider-thumb {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .archive-range::-moz-range-thumb {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
 }
 
 .archive-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 9999px;
   background: var(--archive-accent);
   border: 2px solid rgba(243, 237, 228, 0.96);
@@ -297,8 +329,8 @@ a {
 }
 
 .archive-range::-moz-range-thumb {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 9999px;
   background: var(--archive-accent);
   border: 2px solid rgba(243, 237, 228, 0.96);

@@ -61,11 +61,11 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
       <div className="archive-panel space-y-4">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-2">
-            <div className="archive-kicker">Evidence vault</div>
-            <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">Document records</h1>
+            <div className="archive-kicker">Family documents</div>
+            <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">Our family documents</h1>
             <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-              Search by filename, era, person, type, place, or proof note. Switch to timeline view to see the record
-              set in date order.
+              Search for people, places, or types of records. You can also switch to timeline view to see everything
+              in date order.
             </p>
           </div>
           <div className="flex gap-2">
@@ -99,7 +99,7 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search documents by filename, era, person, place, type, or note"
+            placeholder="Search by person, place, year, or type of record"
             className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
@@ -129,6 +129,11 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
           />
         </section>
       )}
+
+      <div className="text-xs text-[var(--archive-text-soft)] mt-2">
+        Labels we use: “Strong original document” means we have the actual paper or scan. “Very reliable” means
+        good supporting evidence. “Trusted family story” comes from people who were there.
+      </div>
 
       <RecordPreviewModal
         item={previewDocument ? { kind: "document", document: previewDocument } : null}
