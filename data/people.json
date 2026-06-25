@@ -323,6 +323,7 @@
     "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
     "attachedDocument": "charles-dyer.pdf",
     "evidenceSummary": [
+      "Birth approximately 1755 (cited in son Jonathan Dyer's profile; primary birth record not located — needs verification)",
       "Discharged at Fort Randolph [at Point Pleasant, now WV] on September 25, 1778",
       "Served as a soldier in Captain William McKee's company of the 12th Virginia Regiment",
       "The discharge says his enlistment time had fully expired and that he had served upwards of two years",
@@ -330,6 +331,13 @@
       "The 1855 county affidavit names Jonathan Dyer among the heirs and identifies Charles Dyer as the Revolutionary War pension applicant"
     ],
     "timeline": [
+      {
+        "title": "Birth",
+        "date": "c. 1755",
+        "place": "Virginia or surrounding area",
+        "summary": "Birth year approximately 1755 (per family records cited in son's profile; primary source not located).",
+        "confidence": "Needs Review"
+      },
       {
         "title": "Revolutionary War service",
         "date": "1770s",
@@ -1163,14 +1171,14 @@
       "Husband of Elizabeth Cowan",
       "Spouse: Elizabeth Cowan",
       "Strongly supported father of Thomas Ramsey (1799-1872)",
-      "Birth year and birthplace unresolved",
+      "Birth year and birthplace unresolved (cross-referenced duplicate profile josiah-ramsey-jr-1769 with 1769-1835 dates)",
       "1810 Pennsylvania attachment excluded from the working line",
       "War of 1812 service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia",
       "Rank at induction: Lieutenant; rank at discharge: Adjutant",
       "State of Tennessee land grant places Josiah Ramsey on Mulberry Creek in Claiborne County",
       "Tennessee residence trail",
       "Family memorial plaque supports the family group",
-      "Open questions: exact birth year/place, exact military identity, and a contemporary probate/deed bridge"
+      "Open questions: exact birth year/place, exact military identity, and a contemporary probate/deed bridge. Duplicate representation in josiah-ramsey-jr-1769 should be merged or one marked canonical."
     ]
   },
   {
@@ -3615,7 +3623,7 @@
     "evidenceSummary": [
       "Wife of Nathan Bowen (married 18 Dec 1737, Swansea, MA)",
       "Mother of Isreal Bowen (1748–1848) and listed siblings per tree",
-      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — chronological conflict with 1748 birth of son Isreal; likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation.",
+      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — chronological conflict with 1748 birth of son Isreal (3 years after death); likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation. Open contradiction.",
       "Key sources: Public Member Trees; Maine death record image (Primary)"
     ]
   }
