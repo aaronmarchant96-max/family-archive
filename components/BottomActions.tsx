@@ -9,17 +9,18 @@ export function BottomActions() {
     const main = document.querySelector('.archive-main');
     if (!main) return;
 
-    // Get clean text content, excluding some nav if needed but keep simple
+    const title = document.title || 'The Living Red Book';
     const text = (main.textContent || '').trim();
 
+    const full = `${title}\n\n${text}`;
+
     try {
-      await navigator.clipboard.writeText(text);
+      await navigator.clipboard.writeText(full);
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      // Fallback for older browsers
       const ta = document.createElement('textarea');
-      ta.value = text;
+      ta.value = full;
       document.body.appendChild(ta);
       ta.select();
       document.execCommand('copy');
