@@ -540,7 +540,7 @@
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Davis County", "Iowa", "Generation 4"],
     "attachedDocument": "census-decatur-township.pdf",
-    "sourceCitation": "Ancestry profile for Thomas (X) Ramsey, showing birth on 9 December 1799 in Tennessee, parents Josiah Ramsey and Elizabeth Cowen, marriage to Anna Hopkins, residence in Claiborne County, Tennessee, and death on 18 August 1872 in Bentonville, Arkansas. The profile for Armina Ramsey Edwards also supports the family linkage.",
+    "sourceCitation": "1850 and 1860 U.S. Federal Censuses (Iowa households); Family memorial plaque; Ancestry profile (secondary for vitals: birth 9 Dec 1799 TN, death 18 Aug 1872 Bentonville AR). Primary household records confirm residence and family group; vitals from secondary aggregator need primary confirmation.",
     "timeline": [
       {
         "title": "Birth",
@@ -600,14 +600,12 @@
       "Child of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
       "Husband of Anna Hopkins (1807-1883)",
       "Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children",
-      "Ancestry profile gives birth as 9 December 1799 and death as 18 August 1872",
-      "1850 federal census household in Bloomfield Township, Davis County, Iowa (with nearby Edwards households)",
-      "1860 federal census household in Richland Township, Decatur County, Iowa",
-      "Listed with Anna Ramsey and children",
-      "Children named on the page include Alexander, Henderson, Cowan, Rachel, and William",
+      "1850 federal census household in Bloomfield Township, Davis County, Iowa (Primary Source, with nearby Edwards households)",
+      "1860 federal census household in Richland Township, Decatur County, Iowa (Primary Source)",
       "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
-      "Key documents: 1850 Bloomfield census and 1860 Decatur census",
-      "Status: Primary source household records"
+      "Ancestry profile gives birth 9 Dec 1799 TN and death 18 Aug 1872 Bentonville AR (secondary source; vitals need primary confirmation)",
+      "Key documents: 1850 and 1860 censuses (strong for residence and family); memorial plaque",
+      "Status: Strong evidence for family group and Iowa residence; birth/death dates from secondary Ancestry profile"
     ]
   },
   {
@@ -685,7 +683,8 @@
       "Death record: Decatur County, Iowa, 1883",
       "Burial: Wheelis Cemetery",
       "Key document: census-decatur-township.pdf",
-      "Status: Primary source household record"
+      "Status: Primary source household record",
+      "Hopkins ancestry chain (Nehemiah/Elizabeth Cole → Jabez → Anna) currently has zero solid primary links — all connections hedged as unproven. Treat as research target, not established lineage."
     ]
   },
   {
@@ -1025,28 +1024,18 @@
         "place": "Mulberry Gap, Hancock, Tennessee, United States",
         "summary": "Died in 1835 in Mulberry Gap, Hancock, Tennessee, at age 66.",
         "confidence": "Strong Evidence"
-      },
-      {
-        "title": "Will recorded",
-        "date": "1835",
-        "place": "Washington County, Pennsylvania",
-        "summary": "Last will and testament recorded in Will Book No. 5, detailing heirs and estate distribution.",
-        "confidence": "Primary Source",
-        "linkedDocumentId": "josiah-ramsey-will-1835"
       }
     ],
     "evidenceSummary": [
-      "FamilySearch profile ID: KP91-M2Y",
-      "Born 7 October 1769 in Baltimore, Maryland, United States",
-      "Son of Thomas Ramsey (died before 1805) and Alice Bower",
+      "FamilySearch profile ID: KP91-M2Y (birth 7 Oct 1769 Baltimore MD, death 1835 Mulberry Gap TN)",
       "Spouse: Elizabeth Cowan",
-      "At least 6 sons and 8 daughters including Thomas Ramsey (1799-1872)",
+      "Father of Thomas Ramsey (1799-1872) and others",
       "Lived in Claiborne, Tennessee in 1830",
-      "Served in 14th Kentucky Militia during War of 1812",
-      "Died in 1835 in Mulberry Gap, Hancock, Tennessee",
-      "Family plaque and grave marker are supporting memorial records",
-      "Will recorded in Washington County, Pennsylvania will book (Primary Source)",
-      "War of 1812 Society eligible"
+      "Served in 14th Kentucky Militia during War of 1812 (Lieutenant to Adjutant)",
+      "See working profile 'josiah-ramsey-1769' (c.1765/1769-1834) – these two entries represent the same person from different sources with minor date discrepancies (1834 vs 1835 death year)",
+      "Family plaque and grave marker supporting",
+      "War of 1812 service confirmed by M602",
+      "Note: PA will attachment (Washington Co. PA 1835) excluded from this line as it conflicts with TN residence and death trail"
     ]
   },
   {
@@ -1099,8 +1088,8 @@
     "lifespan": "1834-deceased",
     "era": "19th-century Iowa",
     "branch": "Ramsey",
-    "summary": "Redirect entry - use josiah-ramsey-1834 or josiah-ramsey-jr-1769",
-    "keyEvent": "See josiah-ramsey-1834 for the 1834-? Josiah, or josiah-ramsey-jr-1769 for the 1769-1835 Josiah",
+    "summary": "Redirect stub. The War of 1812 / TN Josiah is represented in both 'josiah-ramsey-jr-1769' (FS-sourced) and 'josiah-ramsey-1769' (working profile with exclusions); see those for details. The 1834 Iowa one is 'josiah-ramsey-1834'.",
+    "keyEvent": "See josiah-ramsey-1769 (working) or josiah-ramsey-jr-1769 for the c.1769-1834/5 Josiah; josiah-ramsey-1834 for the later son.",
     "confidence": "Needs Review",
     "tags": ["Redirect", "Duplicate"]
   },
@@ -2766,7 +2755,7 @@
       "Married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island — Primary Source support",
       "Children recorded in parish (including a daughter Elizabeth of Broughton)",
       "Key documents: 1739 baptism record (under review), marriage record, and parish christenings",
-      "Note: 1739 record attached only as context for Elizabeth Cole’s early life. Not used to prove Jabez parentage or later lineage until parent conflict resolved."
+      "Note: 1739 record attached only as context for Elizabeth Cole’s early life. Not used to prove Jabez parentage or later lineage until parent conflict resolved. Freelove Mason (claimed mother) is distinct from Freelove Clouse (wife of Arthur Edwards) — do not merge across generations/lines."
     ]
   },
   {
@@ -3316,7 +3305,7 @@
     "lifespan": "1748–1848",
     "era": "18th-19th century",
     "branch": "Bowen",
-    "summary": "Son of Nathan Bowen (1715–, Rehoboth MA) and Mary Mason. Born in Swansea, Bristol, Massachusetts. Married Isabella Lamb in 1794 in Shawangunk, New York. Father of John Lamb Bowen, David Bowen, Israel Bowen, and Peter Bowen. Served in militia. Died in Mooretown, Ontario, Canada in 1848 at age 100.",
+    "summary": "Son of Nathan Bowen (1715–, Rehoboth MA) and Mary Mason. Born in Swansea, Bristol, Massachusetts. Married Isabella Lamb in 1794 in Shawangunk, New York. Father of John Lamb Bowen, David Bowen, Israel Bowen, and Peter Bowen. Served in militia. Died in Mooretown, Ontario, Canada in 1848 at age 100. Note: Name spelled 'Isreal' in this profile and many records (common variant of Israel).",
     "keyEvent": "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York. Father of four children including Israel Bowen (1798–1887). Lived in Ontario, Canada after moving from Massachusetts/New York.",
     "confidence": "Strong Evidence",
     "tags": ["Bowen", "Massachusetts", "Ontario", "New York", "Militia"],
@@ -3626,7 +3615,7 @@
     "evidenceSummary": [
       "Wife of Nathan Bowen (married 18 Dec 1737, Swansea, MA)",
       "Mother of Isreal Bowen (1748–1848) and listed siblings per tree",
-      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — discrepancy noted for further research",
+      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — chronological conflict with 1748 birth of son Isreal; likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation.",
       "Key sources: Public Member Trees; Maine death record image (Primary)"
     ]
   }
