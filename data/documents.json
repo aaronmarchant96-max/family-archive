@@ -1277,5 +1277,21 @@
     "sourceCitation": "Polk County, Oregon newspaper obituary, February 15, 1886. Published record of Phoebe Morris Dyer death.",
     "whatItProves": "Confirms Phoebe Morris (b. October 16, 1804 in Belmont County, Ohio) married Jonathan (John) Dyer on May 31, 1866 in Polk County, Oregon. Also documents her first marriage to Asa Morris (Dec 6, 1823) and eight children from that union.",
     "notes": "Obituary states she was \"aged 81 years and 4 months\" at death. Details her life in Ohio (24 years), migration to Iowa (1853), and settlement in Oregon (1860). Lists surviving children: Wm. Morris (Eddyville, Iowa), Eliza Morris (Stockton, CA), Lydia A. D'Lashmatt (Dallas), Mary A. Graham (Salem), John Morris (Dallas)."
+  },
+  {
+    "id": "dyer-early-land-ownership-plat",
+    "title": "Early Land Ownership and Township Plats - Dyer Property",
+    "filename": "dyer-early-land-ownership-plat.jpg",
+    "type": "Land Record",
+    "date": "1872-1873",
+    "era": "19th century",
+    "previewUrl": "/documents/dyer-early-land-ownership-plat.jpg",
+    "confidence": "Primary Source",
+    "people": [
+      "Jonathan Dyer"
+    ],
+    "sourceCitation": "U.S., Indexed Early Land Ownership and Township Plats, 1785-1898. Historical land survey plat showing property ownership.",
+    "whatItProves": "Documents early land ownership records during Jonathan Dyer era of residence in Iowa/Oregon region.",
+    "notes": "Township plat showing property divisions and owner names circa 1872-1873. Part of indexed historical land records."
   }
 ]
