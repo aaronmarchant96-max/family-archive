@@ -1,10 +1,15 @@
 const badgeStyles: Record<string, string> = {
   Confirmed: "border-emerald-300 bg-emerald-100 text-emerald-800",
   "Primary Source": "border-emerald-300 bg-emerald-100 text-emerald-800",
+  PRIMARY: "border-emerald-300 bg-emerald-100 text-emerald-800",
   "Corroborated Compilation": "border-violet-300 bg-violet-100 text-violet-800",
+  CORROBORATED_COMPILATION: "border-violet-300 bg-violet-100 text-violet-800",
   "Strong Evidence": "border-sky-300 bg-sky-100 text-sky-800",
+  STRONG: "border-sky-300 bg-sky-100 text-sky-800",
   "Family-Confirmed Oral History": "border-amber-300 bg-amber-100 text-amber-800",
+  FAMILY_MEMORY: "border-amber-300 bg-amber-100 text-amber-800",
   "Needs Review": "border-orange-300 bg-orange-100 text-orange-800",
+  NEEDS_REVIEW: "border-orange-300 bg-orange-100 text-orange-800",
   "Needs Proof": "border-orange-300 bg-orange-100 text-orange-800",
 };
 
@@ -14,11 +19,16 @@ const badgeAliases: Record<string, string> = {
 
 const friendlyLabels: Record<string, string> = {
   "Primary Source": "🟢 Primary Source",
+  PRIMARY: "🟢 Primary",
   "Strong Evidence": "🔵 Strong Evidence",
+  STRONG: "🔵 Strong",
   "Corroborated Compilation": "🟣 Corroborated Compilation",
+  CORROBORATED_COMPILATION: "🟣 Corroborated Compilation",
   "Confirmed": "🟢 Primary Source",
   "Family-Confirmed Oral History": "🟡 Family Memory",
+  FAMILY_MEMORY: "🟡 Family Memory",
   "Needs Review": "🟠 Needs Review",
+  NEEDS_REVIEW: "🟠 Needs Review",
   "Needs Proof": "🟠 Needs Review",
 };
 

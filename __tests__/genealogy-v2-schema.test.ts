@@ -6,6 +6,9 @@ type Row = Record<string, string>;
 const V2_DIR = "/home/potatoking/genealogy_research/v2";
 const PEOPLE_JSON = path.join(V2_DIR, "people.json");
 const DOCUMENTS_JSON = path.join(V2_DIR, "documents.json");
+const FULL_EVENTS_JSON = path.join(V2_DIR, "full_events.json");
+const CANONICAL_EVENTS_JSON = path.join(V2_DIR, "canonical_events.json");
+const REVIEW_EVENTS_JSON = path.join(V2_DIR, "review_events.json");
 const LOCKED_FACTS = path.join(V2_DIR, "locked_facts.json");
 const CHRONOLOGY_EXCEPTIONS = path.join(V2_DIR, "chronology_exceptions.json");
 
@@ -31,6 +34,9 @@ describe("Genealogy V2 schema", () => {
   expect(fs.existsSync(path.join(V2_DIR, "people.csv"))).toBe(true);
   expect(fs.existsSync(path.join(V2_DIR, "documents.csv"))).toBe(true);
   expect(fs.existsSync(path.join(V2_DIR, "timeline.csv"))).toBe(true);
+  expect(fs.existsSync(FULL_EVENTS_JSON)).toBe(true);
+  expect(fs.existsSync(CANONICAL_EVENTS_JSON)).toBe(true);
+  expect(fs.existsSync(REVIEW_EVENTS_JSON)).toBe(true);
 
   const people = JSON.parse(fs.readFileSync(PEOPLE_JSON, "utf8")) as Row[];
   const documents = JSON.parse(fs.readFileSync(DOCUMENTS_JSON, "utf8")) as Row[];

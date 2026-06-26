@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import { AncestorCard, type AncestorCardProps } from "./AncestorCard";
-import { Chronology, sortChronologyEntries } from "./Chronology";
+import { AncestorsTimeline } from "./AncestorsTimeline";
 import { RecordPreviewModal } from "./RecordPreviewModal";
+import { peopleInQueue } from "../lib/mrcm";
 import documentsData from "../data/documents.json";
 
 const documents = documentsData as Array<{ filename: string; previewUrl?: string }>;
@@ -70,6 +71,7 @@ function matchesQuery(person: AncestorCardProps, query: string) {
 export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
   const [query, setQuery] = useState("");
   const [viewMode, setViewMode] = useState<ViewMode>("cards");
+  const [queueOnly, setQueueOnly] = useState(false);
   const [previewPerson, setPreviewPerson] = useState<AncestorCardProps | null>(null);
 
   const vocab = useMemo(() => {
@@ -91,6 +93,16 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
     const normalized = query.trim().toLowerCase();
     return people.filter((person) => matchesQuery(person, normalized));
   }, [people, query]);
+
+  const queuePeople = useMemo(() => {
+    const ids = new Set(filteredPeople.map((person) => person.id));
+    return peopleInQueue(ids);
+  }, [filteredPeople]);
+
+  const visiblePeople = useMemo(() => {
+    if (!queueOnly) return filteredPeople;
+    return filteredPeople.filter((person) => queuePeople.has(person.id) || person.confidence === "Needs Review");
+  }, [filteredPeople, queueOnly, queuePeople]);
 
   const suggestion = useMemo(() => {
     const normalized = query.trim().toLowerCase();
@@ -128,31 +140,13 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
 
   const peopleWithPreviews = useMemo(
     () =>
-      filteredPeople.map((person) => ({
+      visiblePeople.map((person) => ({
         ...person,
         previewUrl: findPreviewUrl(person),
         previewLabel: person.attachedDocument ?? person.name
       })),
-    [filteredPeople]
+    [visiblePeople]
   );
-
-  const chronologyEntries = useMemo(() => {
-    return sortChronologyEntries(
-      filteredPeople.flatMap((person) =>
-        (person.timeline ?? []).map((entry, index) => ({
-          id: `${person.id}-${entry.title}-${entry.date}-${index}`,
-          title: `${person.name} · ${entry.title}`,
-          date: entry.date,
-          summary: entry.summary,
-          confidence: entry.confidence,
-          sourceLabel: person.branch,
-          href: `/ancestors/${person.id}`,
-          place: entry.place,
-          extra: entry.linkedDocumentId ? `Linked document: ${entry.linkedDocumentId}` : `Ancestor: ${person.name}`
-        }))
-      )
-    );
-  }, [filteredPeople]);
 
   return (
     <div className="flex flex-col gap-6">
@@ -162,11 +156,11 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
             <div className="archive-kicker">Documented lines</div>
             <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">Ancestor cards</h1>
             <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-              Search by name, era, branch, tag, or note. Switch to timeline view to read the family record in
-              chronological order.
+              Search by name, era, branch, tag, or note. Keep cards as the default proof interface and switch to the
+              timeline for canonical, triage-friendly reading.
             </p>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
             <button
               type="button"
               onClick={() => setViewMode("cards")}
@@ -189,6 +183,27 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
             >
               Timeline
             </button>
+            <button
+              type="button"
+              onClick={() => {
+                setQueueOnly((current) => !current);
+                setViewMode("cards");
+              }}
+              className={`rounded-full border px-4 py-2 text-sm ${
+                queueOnly
+                  ? "border-[rgba(127,29,45,0.35)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
+                  : "border-[rgba(18,20,24,0.08)] bg-white/60 text-[var(--archive-text)] hover:bg-white"
+              }`}
+            >
+              Research Queue ({queuePeople.size})
+            </button>
+            <button
+              type="button"
+              onClick={() => setQueueOnly(false)}
+              className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/60 px-4 py-2 text-sm text-[var(--archive-text)] hover:bg-white"
+            >
+              Clear queue
+            </button>
           </div>
         </div>
 
@@ -201,6 +216,14 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
             className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
+
+        <div className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
+          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟢 Primary</span>
+          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🔵 Strong</span>
+          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟠 Needs Review</span>
+          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟡 Family Memory</span>
+          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟣 Compilation</span>
+        </div>
 
         {suggestion && (
           <div className="text-sm text-[var(--archive-text-soft)] mt-1">
@@ -233,12 +256,13 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
         <section className="archive-panel space-y-4">
           <div className="archive-section__title">Chronological view</div>
           <p className="text-sm leading-6 text-[var(--archive-text-soft)]">
-            Timeline events from the filtered ancestors, ordered by date. This is a reading view, not a proof
-            verdict.
+            Timeline events from the filtered ancestors, ordered by date. Canonical events stay in front;
+            relational echoes stay optional; unresolved records route into the research queue.
           </p>
-          <Chronology
-            entries={chronologyEntries}
-            emptyLabel="No timeline events match this search. Try clearing the search or switching back to cards."
+          <AncestorsTimeline
+            people={visiblePeople}
+            queueOnly={queueOnly}
+            onClearQueue={() => setQueueOnly(false)}
           />
         </section>
       )}

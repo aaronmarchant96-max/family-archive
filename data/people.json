@@ -198,7 +198,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "alice-bower"
+      ],
       "child_ids": [
         "josiah-ramsey-jr-1769"
       ]
@@ -401,7 +403,9 @@
       "father_id": "",
       "mother_name": "Anna Hopkins",
       "father_name": "Thomas Ramsey (1799-1872)",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "margaret-baker"
+      ],
       "child_ids": [
         "thomas-bentley-ramsey-1846"
       ]
@@ -551,7 +555,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "mary-hurst"
+      ],
       "child_ids": [
         "charles-dyer-jr",
         "elijah-dyer",
@@ -699,9 +705,15 @@
       "father_id": "jonathan-dyer",
       "mother_name": "Nancy Boley Dyer",
       "father_name": "Jonathan Dyer",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "elizabeth-ellen-conley"
+      ],
       "child_ids": [
-        "nancy-ann-dyer"
+        "nancy-ann-dyer",
+        "carpus-melvin-dyer",
+        "george-hollis-dyer",
+        "glenn-milton-dyer",
+        "fredrich-marion-dyer"
       ]
     },
     "relationships_summary": {
@@ -1147,8 +1159,8 @@
     "relationships": {
       "mother_id": "",
       "father_id": "",
-      "mother_name": "Rachel",
-      "father_name": "Jabez",
+      "mother_name": "",
+      "father_name": "",
       "spouse_ids": [
         "rachel-clouse"
       ],
@@ -1162,7 +1174,7 @@
     },
     "v2_birth_year": "1765",
     "v2_death_year": "1856",
-    "v2_notes": "Jabis/Jabez Hopkins married Rachel Clouse 14 Apr 1801 in Washington County, Virginia (minister Charles Hardy) — Primary Source | Jabez Hopkins established in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain area) by land-grant period (entry 1846, issued 1849) — Primary Source, strong locality anchor | Hopkins family cluster suggested by tax list page in same locality (Jabez Jr, Wm, widow, George) — Strong Evidence if source context confirmed | Nehemiah Hopkins married Elizabeth 11 Mar 1762 in Warren, Rhode Island — Primary Source support for earlier generation | Stronger Rhode Island → Virginia → Tennessee → Iowa coherence in the Hopkins research lane | Still not directly proven: Anna Hopkins Ramsey was daughter of Jabez and Rachel; Jabez was son of Nehemiah and Elizabeth; disputed Elizabeth Cole parentage | Status: Jabez as real Tennessee figure strengthened. Anna as daughter and Nehemiah + Elizabeth as parents still unproven."
+    "v2_notes": "Jabis/Jabez Hopkins married Rachel Clouse 14 Apr 1801 in Washington County, Virginia (minister Charles Hardy) — Primary Source | Jabez Hopkins established in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain area) by land-grant period (entry 1846, issued 1849) — Primary Source, strong locality anchor | Hopkins family cluster suggested by tax list page in same locality (Jabez Jr, Wm, widow, George) — Strong Evidence if source context confirmed | Nehemiah Hopkins married Elizabeth 11 Mar 1762 in Warren, Rhode Island — Primary Source support for earlier generation | Stronger Rhode Island → Virginia → Tennessee → Iowa coherence in the Hopkins research lane | Still not directly proven: Anna Hopkins Ramsey was daughter of Jabez and Rachel; Jabez was son of Nehemiah and Elizabeth; disputed Elizabeth Cole parentage | ID_CONFLICT: parent names were corrupted in source CSV, so no parent IDs were inferred. | Status: Jabez as real Tennessee figure strengthened. Anna as daughter and Nehemiah + Elizabeth as parents still unproven. | ID_CONFLICT: cleared impossible father_id | ID_CONFLICT: cleared ambiguous mother_name placeholder"
   },
   {
     "id": "rachel-clouse",
@@ -1247,9 +1259,11 @@
     "relationships": {
       "mother_id": "",
       "father_id": "",
-      "mother_name": "Rachel) still unproven",
-      "father_name": "this Jabez",
-      "spouse_ids": [],
+      "mother_name": "",
+      "father_name": "",
+      "spouse_ids": [
+        "jabez-hopkins"
+      ],
       "child_ids": [
         "anna-hopkins-ramsey"
       ]
@@ -1260,7 +1274,7 @@
     },
     "v2_birth_year": "1782",
     "v2_death_year": "1856",
-    "v2_notes": "Married Jabez Hopkins (recorded as Jabis) 14 April 1801 in Washington County, Virginia — Primary Source | Lived in Tennessee (Claiborne/Hancock area) | Iowa residence by 1850 | Status: Jabez + Rachel marriage is solid. Anna as their daughter still unproven."
+    "v2_notes": "Married Jabez Hopkins (recorded as Jabis) 14 April 1801 in Washington County, Virginia — Primary Source | Lived in Tennessee (Claiborne/Hancock area) | Iowa residence by 1850 | Status: Jabez + Rachel marriage is solid. Anna as their daughter still unproven. | ID_CONFLICT: parent names were corrupted in source CSV, so no parent IDs were inferred. | ID_CONFLICT: cleared ambiguous mother_name placeholder | ID_CONFLICT: cleared ambiguous father_name placeholder"
   },
   {
     "id": "jonathan-dyer",
@@ -1326,7 +1340,11 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "fannie-bufford",
+        "nancy-boley-dyer",
+        "phoebe-morris-dyer"
+      ],
       "child_ids": [
         "anthony-wayne-dyer",
         "dennis-patrick-dyer",
@@ -1469,9 +1487,9 @@
     ],
     "relationships": {
       "mother_id": "elizabeth-ellen-conley",
-      "father_id": "george-washington-dyer",
+      "father_id": "",
       "mother_name": "Elizabeth Ellen Conlee Dyer",
-      "father_name": "George Washington Dyer",
+      "father_name": "",
       "spouse_ids": [],
       "child_ids": [
         "george-washington-dyer"
@@ -1479,11 +1497,11 @@
     },
     "relationships_summary": {
       "mother_id": "elizabeth-ellen-conley",
-      "father_id": "george-washington-dyer"
+      "father_id": ""
     },
     "v2_birth_year": "1871",
     "v2_death_year": "1939",
-    "v2_notes": "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909) | Also appears as Nancy Ann Dyer Jennings in later compiled and FamilySearch material | Born 1 October 1871 in Benton County, Oregon | Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images) | First married Augustus Grant Jennings and had daughter Ora Ellen Jennings | Later married Silas Josiah Edwards (1859-1943); preserved family marriage return and related records anchor the Edwards connection | Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards | Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978 | Resided in Pine City, Whitman County, Washington | Died 20 October 1939 in Whitman County, Washington and was buried in Pine City Cemetery | Key sources include family records, censuses, FamilySearch profile evidence, and the preserved marriage return"
+    "v2_notes": "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909) | Also appears as Nancy Ann Dyer Jennings in later compiled and FamilySearch material | Born 1 October 1871 in Benton County, Oregon | Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images) | First married Augustus Grant Jennings and had daughter Ora Ellen Jennings | Later married Silas Josiah Edwards (1859-1943); preserved family marriage return and related records anchor the Edwards connection | Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards | Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978 | Resided in Pine City, Whitman County, Washington | Died 20 October 1939 in Whitman County, Washington and was buried in Pine City Cemetery | Key sources include family records, censuses, FamilySearch profile evidence, and the preserved marriage return | ID_CONFLICT: cleared impossible father_id"
   },
   {
     "id": "josiah-ramsey-jr-1769",
@@ -1513,7 +1531,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "elizabeth-cowan"
+      ],
       "child_ids": []
     },
     "relationships_summary": {
@@ -1815,7 +1835,8 @@
       "mother_name": "",
       "father_name": "",
       "spouse_ids": [
-        "josiah-ramsey-jr-1769"
+        "josiah-ramsey-jr-1769",
+        "josiah-ramsey-1769"
       ],
       "child_ids": []
     },
@@ -1867,7 +1888,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "isabella-law"
+      ],
       "child_ids": [
         "alec-moore",
         "bella-moore",
@@ -3419,7 +3442,9 @@
       "father_id": "",
       "mother_name": "Anna Hopkins (1807-1883)",
       "father_name": "Thomas Ramsey (1799-1872)",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "anderson-edwards"
+      ],
       "child_ids": [
         "alzy-jane-edwards",
         "john-wesley-edwards",
@@ -4663,7 +4688,9 @@
       "father_id": "israel-bowen-1798",
       "mother_name": "Margaret Wood",
       "father_name": "Israel Bowen",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "jennet-souster"
+      ],
       "child_ids": [
         "jessie-bowen"
       ]
@@ -5436,7 +5463,6 @@
       "mother_name": "Isabella Law",
       "father_name": "William Moore",
       "spouse_ids": [
-        "janet-hazel-moore",
         "jessie-bowen"
       ],
       "child_ids": [
@@ -5453,7 +5479,7 @@
     },
     "v2_birth_year": "1860",
     "v2_death_year": "1942",
-    "v2_notes": "Son of William Moore and Isabella Law, anchoring the migration timeline from Ireland to Canada | Husband of Jessie Bowen (1874-1958) and father of Hugh Christopher Moore (1895-1979) | Appears in Canadian censuses (1901, 1906, 1916) confirming residence and family groupings"
+    "v2_notes": "Son of William Moore and Isabella Law, anchoring the migration timeline from Ireland to Canada | Husband of Jessie Bowen (1874-1958) and father of Hugh Christopher Moore (1895-1979) | Appears in Canadian censuses (1901, 1906, 1916) confirming residence and family groupings | ID_CONFLICT: Janet Hazel Moore was removed from spouse_ids because she is a child, not a spouse. | ID_CONFLICT: removed self/role-collision relationship ids"
   },
   {
     "id": "alec-moore",
@@ -6595,7 +6621,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "ann-born"
+      ],
       "child_ids": []
     },
     "relationships_summary": {
@@ -6921,9 +6949,7 @@
       "father_id": "david-marchant",
       "mother_name": "Nancy Moore Marchant",
       "father_name": "David Marchant",
-      "spouse_ids": [
-        "aaron-marchant"
-      ],
+      "spouse_ids": [],
       "child_ids": [
         "aaron-marchant",
         "shawn-marchant"
@@ -6935,7 +6961,7 @@
     },
     "v2_birth_year": "",
     "v2_death_year": "",
-    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy"
+    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
   },
   {
     "id": "aaron-marchant",
@@ -8252,5 +8278,191 @@
     "v2_birth_year": "1881",
     "v2_death_year": "1966",
     "v2_notes": "Fourth child of George Washington Dyer and Elizabeth Ellen Conlee. First child born in Washington (not Oregon) — confirms family relocated to Pine City by 1881. Birth confirmed via Ancestry profile 2026-06-26."
+  },
+  {
+    "id": "james-reuben-conlee",
+    "name": "James Reuben Conlee",
+    "lifespan": "1825-1915",
+    "era": "Conlee",
+    "branch": "Conlee",
+    "summary": "Born 9 May 1825 in McCracken, Warren County, Kentucky. Married Susan Ann Barney on 28 March 1848 in Ft. Madison, Lee County, Iowa. Led family on the Oregon Trail circa 1851-1852 — son William Harlow Conlee was born on the trail. Settled in Polk County, Oregon, where most children were born in Dallas. Susan died 1872; James listed as widower in 1880 census in Harrison County, Indiana. Married Melissa Buell Hinshaw Van Horn on 13 June 1894 in Dallas, Polk County, Oregon. Died 23 January 1915 in Dallas, Oregon. Probate filed 10 February 1915, Polk County.",
+    "keyEvent": "Led family on Oregon Trail circa 1851-1852; settled Dallas, Polk County, Oregon; father of Elizabeth Ellen Conlee Dyer",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Conlee",
+      "Oregon Trail",
+      "Oregon"
+    ],
+    "timeline": [
+      {
+        "title": "Birth in Warren County, Kentucky",
+        "date": "9 May 1825",
+        "summary": "Born 9 May 1825 in McCracken, Warren County, Kentucky.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "McCracken, Warren County, Kentucky, USA"
+      },
+      {
+        "title": "Marriage to Susan Ann Barney",
+        "date": "28 Mar 1848",
+        "summary": "Married Susan Ann Barney on 28 March 1848 in Ft. Madison, Lee County, Iowa.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Ft. Madison, Lee County, Iowa, USA"
+      },
+      {
+        "title": "Oregon Trail Migration",
+        "date": "1851",
+        "summary": "Led family on Oregon Trail crossing circa 1851-1852. Son William Harlow Conlee born on the trail. Family settled in Polk County, Oregon.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Oregon Trail, USA"
+      },
+      {
+        "title": "Residence — Polk County, Oregon",
+        "date": "1856",
+        "summary": "Settled in Dallas, Polk County, Oregon, where multiple children were born 1856-1868.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Dallas, Polk County, Oregon, USA"
+      },
+      {
+        "title": "Death of wife Susan Ann Barney",
+        "date": "26 Nov 1872",
+        "summary": "First wife Susan Ann Barney Conlee died 26 November 1872.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Dallas, Polk County, Oregon, USA"
+      },
+      {
+        "title": "Residence — Harrison County, Indiana",
+        "date": "1880",
+        "summary": "Listed as widower, head of household in Laconia, Harrison County, Indiana in 1880 census.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Laconia, Harrison County, Indiana, USA"
+      },
+      {
+        "title": "Marriage to Melissa Buell Hinshaw Van Horn",
+        "date": "13 Jun 1894",
+        "summary": "Married Melissa Buell Hinshaw Van Horn on 13 June 1894 in Dallas, Polk County, Oregon.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Dallas, Polk County, Oregon, USA"
+      },
+      {
+        "title": "Death in Dallas, Oregon",
+        "date": "23 Jan 1915",
+        "summary": "Died 23 January 1915 in Dallas, Polk County, Oregon, at age 89. Probate filed 10 February 1915.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Dallas, Polk County, Oregon, USA"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 9 May 1825, McCracken, Warren County, Kentucky",
+      "Married Susan Ann Barney 28 Mar 1848, Ft. Madison, Iowa",
+      "Oregon Trail crossing circa 1851-1852 — son William born on trail",
+      "Settled Dallas, Polk County, Oregon",
+      "Father of Elizabeth Ellen Conlee Dyer (1850–1909)",
+      "Died 23 January 1915, Dallas, Oregon",
+      "Sources: 1850/1880/1900/1910 Census, Oregon Death Index, Find A Grave"
+    ],
+    "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "Nancy Doyle",
+      "father_name": "Reuben Samuel Conlee",
+      "spouse_ids": [
+        "susan-ann-barney-conlee"
+      ],
+      "child_ids": [
+        "elizabeth-ellen-conley"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1825",
+    "v2_death_year": "1915",
+    "v2_notes": "Father of Elizabeth Ellen Conlee Dyer (1850–1909). Oregon Trail migration confirmed: son William Harlow Conlee born on trail 1851. First wife Susan Ann Barney died 1872. Second marriage to Melissa Buell Hinshaw Van Horn Conlee 1894 (1859 marriage entry in Ancestry likely a data error — Susan still alive that year). Sources to verify: Oregon Wills and Probate Records 1849-1963, 1900/1910 census images."
+  },
+  {
+    "id": "susan-ann-barney-conlee",
+    "name": "Susan Ann Barney Conlee",
+    "lifespan": "1830-1872",
+    "era": "Conlee",
+    "branch": "Conlee",
+    "summary": "Wife of James Reuben Conlee. Born 1830. Married James on 28 March 1848 in Ft. Madison, Lee County, Iowa. Made the Oregon Trail crossing with her family circa 1851-1852. Settled in Polk County, Oregon. Mother of at least eleven children, including Elizabeth Ellen Conlee Dyer (1850–1909). Died 26 November 1872 in Dallas, Polk County, Oregon.",
+    "keyEvent": "Oregon Trail crossing circa 1851-1852; mother of Elizabeth Ellen Conlee Dyer; died Dallas, Polk County, Oregon 1872",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Conlee",
+      "Oregon Trail",
+      "Oregon"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1830",
+        "summary": "Born 1830.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "USA"
+      },
+      {
+        "title": "Marriage to James Reuben Conlee",
+        "date": "28 Mar 1848",
+        "summary": "Married James Reuben Conlee on 28 March 1848 in Ft. Madison, Lee County, Iowa.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Ft. Madison, Lee County, Iowa, USA"
+      },
+      {
+        "title": "Oregon Trail Migration",
+        "date": "1851",
+        "summary": "Made the Oregon Trail crossing with family circa 1851-1852. Settled in Polk County, Oregon.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Oregon Trail, USA"
+      },
+      {
+        "title": "Death in Dallas, Oregon",
+        "date": "26 Nov 1872",
+        "summary": "Died 26 November 1872 in Dallas, Polk County, Oregon.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Dallas, Polk County, Oregon, USA"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1830",
+      "Married James Reuben Conlee 28 Mar 1848, Ft. Madison, Iowa",
+      "Oregon Trail crossing circa 1851-1852",
+      "Mother of Elizabeth Ellen Conlee Dyer (1850–1909)",
+      "Died 26 November 1872, Dallas, Polk County, Oregon"
+    ],
+    "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "",
+      "father_name": "",
+      "spouse_ids": [
+        "james-reuben-conlee"
+      ],
+      "child_ids": [
+        "elizabeth-ellen-conley"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1830",
+    "v2_death_year": "1872",
+    "v2_notes": "Mother of Elizabeth Ellen Conlee Dyer (1850–1909). Death date 26 Nov 1872 confirmed via Elizabeth's Ancestry profile timeline. Maiden name Barney. Sources to verify: Oregon death records, Find A Grave burial record."
   }
 ]

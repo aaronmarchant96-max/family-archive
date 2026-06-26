@@ -1,0 +1,515 @@
+[
+  {
+    "event_id": "richard-bowen-0",
+    "person_id": "richard-bowen",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "ann-born-0",
+    "person_id": "ann-born",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "ann-born-1",
+    "person_id": "ann-born",
+    "title": "Marriage to Richard Bowen",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "richard-bowen-1",
+    "person_id": "richard-bowen",
+    "title": "Marriage to Ann Born",
+    "event_class": "RESEARCH_NOTE",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "ann-born-2",
+    "person_id": "ann-born",
+    "title": "Birth of son Obadiah Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "obadiah-bowen-1627-0",
+    "person_id": "obadiah-bowen-1627",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "richard-bowen-2",
+    "person_id": "richard-bowen",
+    "title": "Birth of son Obadiah Bowen",
+    "event_class": "RESEARCH_NOTE",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "mary-clifton-0",
+    "person_id": "mary-clifton",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "richard-bowen-3",
+    "person_id": "richard-bowen",
+    "title": "Arrival in New England",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "mary-clifton-1",
+    "person_id": "mary-clifton",
+    "title": "Marriage",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "obadiah-bowen-1627-1",
+    "person_id": "obadiah-bowen-1627",
+    "title": "Marriage",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "ann-born-3",
+    "person_id": "ann-born",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "richard-bowen-4",
+    "person_id": "richard-bowen",
+    "title": "Death of wife Ann Born",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "mary-clifton-2",
+    "person_id": "mary-clifton",
+    "title": "Birth of son Obadiah Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "obadiah-bowen-0",
+    "person_id": "obadiah-bowen",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "obadiah-bowen-1627-2",
+    "person_id": "obadiah-bowen-1627",
+    "title": "Birth of son Obadiah Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "abigail-bullock-0",
+    "person_id": "abigail-bullock",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "richard-bowen-5",
+    "person_id": "richard-bowen",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "william-ramsey-1675-0",
+    "person_id": "william-ramsey-1675",
+    "title": "Birth in Colonial Virginia",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "abigail-bullock-1",
+    "person_id": "abigail-bullock",
+    "title": "Marriage",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "obadiah-bowen-1",
+    "person_id": "obadiah-bowen",
+    "title": "Marriage",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "elizabeth-kilker-0",
+    "person_id": "elizabeth-kilker",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "elizabeth-kilker-1",
+    "person_id": "elizabeth-kilker",
+    "title": "Marriage to William Ramsey",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "mary-clifton-3",
+    "person_id": "mary-clifton",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "obadiah-bowen-1627-3",
+    "person_id": "obadiah-bowen-1627",
+    "title": "Death of wife Mary Clifton",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "abigail-bullock-2",
+    "person_id": "abigail-bullock",
+    "title": "Birth of son Nathan Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "obadiah-bowen-2",
+    "person_id": "obadiah-bowen",
+    "title": "Birth of son Nathan Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "obadiah-bowen-3",
+    "person_id": "obadiah-bowen",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "abigail-bullock-3",
+    "person_id": "abigail-bullock",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "obadiah-bowen-1627-4",
+    "person_id": "obadiah-bowen-1627",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "josiah-ramsey-sr-1728-0",
+    "person_id": "josiah-ramsey-sr-1728",
+    "title": "Birth in Delaware",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "alice-bower-0",
+    "person_id": "alice-bower",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "nathan-bowen-6",
+    "person_id": "nathan-bowen",
+    "title": "Birth of daughter Israel Bowen",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "alice-bower-1",
+    "person_id": "alice-bower",
+    "title": "Marriage to Josiah Ramsey Sr.",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "josiah-ramsey-sr-1728-1",
+    "person_id": "josiah-ramsey-sr-1728",
+    "title": "Marriage in Delaware",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "william-ramsey-1675-1",
+    "person_id": "william-ramsey-1675",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "nathan-bowen-16",
+    "person_id": "nathan-bowen",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "thomas-ramsey-before-1805-0",
+    "person_id": "thomas-ramsey-before-1805",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "elizabeth-kilker-2",
+    "person_id": "elizabeth-kilker",
+    "title": "Death",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "charles-dyer-0",
+    "person_id": "charles-dyer",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "josiah-ramsey-1769-0",
+    "person_id": "josiah-ramsey-1769",
+    "title": "Birth uncertain",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "escalate",
+    "reason": "Explicit contradiction or unresolved identity claim; needs human review before promotion."
+  },
+  {
+    "event_id": "jabez-hopkins-0",
+    "person_id": "jabez-hopkins",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "escalate",
+    "reason": "Explicit contradiction or unresolved identity claim; needs human review before promotion."
+  },
+  {
+    "event_id": "rachel-clouse-0",
+    "person_id": "rachel-clouse",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "escalate",
+    "reason": "Explicit contradiction or unresolved identity claim; needs human review before promotion."
+  },
+  {
+    "event_id": "simon-moore-0",
+    "person_id": "simon-moore",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "escalate",
+    "reason": "Explicit contradiction or unresolved identity claim; needs human review before promotion."
+  },
+  {
+    "event_id": "thomas-ramsey-before-1805-1",
+    "person_id": "thomas-ramsey-before-1805",
+    "title": "Death before 1805",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "anderson-edwards-0",
+    "person_id": "anderson-edwards",
+    "title": "Birth",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "mary-bowen-2",
+    "person_id": "mary-bowen",
+    "title": "Death (tree)",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "josiah-ramsey-1834-2",
+    "person_id": "josiah-ramsey-1834",
+    "title": "Family memory note",
+    "event_class": "RESEARCH_NOTE",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "suppress",
+    "reason": "Research note or glossary-style noise; not a standalone timeline anchor."
+  },
+  {
+    "event_id": "james-moore-1860-1",
+    "person_id": "james-moore-1860",
+    "title": "Marriage to Jessie Bowen",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "janet-hazel-moore-5",
+    "person_id": "janet-hazel-moore",
+    "title": "Marriage to Stanley Gillis",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "merge",
+    "reason": "Mirrored relation echo; keep the direct profile event and merge this duplicate viewpoint."
+  },
+  {
+    "event_id": "alec-moore-0",
+    "person_id": "alec-moore",
+    "title": "Birth registration under review",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "andrew-moore-0",
+    "person_id": "andrew-moore",
+    "title": "Birth registration under review",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "bella-moore-0",
+    "person_id": "bella-moore",
+    "title": "Birth registration under review",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "john-jack-moore-0",
+    "person_id": "john-jack-moore",
+    "title": "Birth registration under review",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "mary-moore-0",
+    "person_id": "mary-moore",
+    "title": "Birth registration under review",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "anderson-edwards-12",
+    "person_id": "anderson-edwards",
+    "title": "Washington Territory census cluster",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  },
+  {
+    "event_id": "armina-ramsey-11",
+    "person_id": "armina-ramsey",
+    "title": "Washington Territory census cluster",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "decision": "keep",
+    "reason": "Direct anchor fact; retain in queue until source review is complete."
+  }
+]

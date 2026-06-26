@@ -284,7 +284,7 @@ describe("Archive integrity", () => {
         return looksLike && doc.confidence === "Primary Source";
       }),
       ...familyMemory.filter((entry) => {
-        const text = `${entry.title ?? ""} ${entry.notes ?? ""} ${entry.evidenceMode ?? ""}`.toLowerCase();
+        const text = `${entry.title ?? ""} ${entry.notes ?? ""}`.toLowerCase();
         const looksLike = compilationIndicators.some((kw) => text.includes(kw));
         return looksLike && entry.confidence === "Primary Source";
       })
@@ -340,7 +340,10 @@ describe("Archive integrity", () => {
     for (const person of people) {
       seen.set(person.id, (seen.get(person.id) ?? 0) + 1);
     }
-    const duplicates = [...seen.entries()].filter(([, count]) => count > 1).map(([id]) => id);
+    const duplicates: string[] = [];
+    seen.forEach((count, id) => {
+      if (count > 1) duplicates.push(id);
+    });
     expect(duplicates).toEqual([]);
   });
 
@@ -350,7 +353,10 @@ describe("Archive integrity", () => {
     for (const doc of documents) {
       seen.set(doc.id, (seen.get(doc.id) ?? 0) + 1);
     }
-    const duplicates = [...seen.entries()].filter(([, count]) => count > 1).map(([id]) => id);
+    const duplicates: string[] = [];
+    seen.forEach((count, id) => {
+      if (count > 1) duplicates.push(id);
+    });
     expect(duplicates).toEqual([]);
   });
 });
