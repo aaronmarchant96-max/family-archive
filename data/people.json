@@ -4129,8 +4129,120 @@
       "Died 18 Feb 1697 in Swansea, Massachusetts at age 69",
       "Sourced from Public Member Trees and marriage index records; requires primary source confirmation"
     ]
+  },
+  {
+    "id": "richard-bowen",
+    "name": "Richard Bowen",
+    "lifespan": "1590–1674",
+    "era": "17th-century New England",
+    "branch": "Bowen",
+    "summary": "Early settler in Weymouth and Rehoboth, Massachusetts. Emigrated from Glamorganshire, Wales. Married Ann Born; father of Obadiah Bowen (1627–1710).",
+    "keyEvent": "Emigrated to New England around 1640; became a prominent early resident of Rehoboth, Massachusetts.",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Wales", "Massachusetts", "Immigrant", "Needs review"],
+    "sourceCitation": "Public Member Trees; Weymouth and Rehoboth town records.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1590",
+        "place": "Swansea, Glamorganshire, Wales",
+        "summary": "Born to James Bevan (Sir) Bowen (1550–1629) and Eleanor Griffith of Penryn (1559–1600).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Ann Born",
+        "date": "about 1615",
+        "place": "Wales",
+        "summary": "Married Ann Born (1592–1648). Note: Tree records showing marriage in Nov 1648 conflict chronologically with children's births (1616–1637) and her death (02 Nov 1648); likely represents a typo in compilation.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Obadiah Bowen",
+        "date": "3 January 1627",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Son Obadiah Bowen born. (Note: place likely Wales, as emigration occurred later; Massachusetts listed in compiled trees).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Arrival in New England",
+        "date": "1640",
+        "place": "New England",
+        "summary": "Emigrated from Wales to New England, settling in Weymouth and later Rehoboth.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death of wife Ann Born",
+        "date": "2 November 1648",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Wife Ann Born passed away.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "4 February 1674",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Passed away at age 84.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1590 in Wales to James Bevan Bowen and Eleanor Griffith",
+      "Emigrated to New England around 1640, residing in Weymouth and Rehoboth, Massachusetts",
+      "Father of 8 children, including Obadiah Bowen (1627–1710)",
+      "Rehoboth town records confirm death on 4 Feb 1674 at age 84",
+      "Chronological conflict: Marriage to Ann Born compiled as Nov 1648 in some databases conflicts with children's births (1616–1637) and her death date of 2 Nov 1648. Treated as an approximate 1615 marriage."
+    ]
+  },
+  {
+    "id": "ann-born",
+    "name": "Ann Born",
+    "lifespan": "1592–1648",
+    "era": "17th century",
+    "branch": "Bowen",
+    "summary": "Wife of Richard Bowen (1590–1674); mother of Obadiah Bowen (1627–1710). Emigrated from Wales to New England.",
+    "keyEvent": "Married Richard Bowen in Wales; mother of Obadiah Bowen (1627–1710).",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Born", "Wales", "Massachusetts", "Needs review"],
+    "sourceCitation": "Public Member Trees; Rehoboth town records.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1592",
+        "place": "Wales (likely)",
+        "summary": "Born (approximate year).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Richard Bowen",
+        "date": "about 1615",
+        "place": "Wales",
+        "summary": "Married Richard Bowen (1590–1674).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Obadiah Bowen",
+        "date": "3 January 1627",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Son Obadiah Bowen born.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "2 November 1648",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Passed away in Rehoboth.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1592 (approximate year)",
+      "Married Richard Bowen in Wales",
+      "Mother of 8 children, including Obadiah Bowen (1627–1710)",
+      "Rehoboth town records confirm death on 2 Nov 1648"
+    ]
   }
 ]
+
 
 
 
