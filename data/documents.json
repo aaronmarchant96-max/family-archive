@@ -1000,5 +1000,23 @@
     "meaning": "Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
     "whatItProves": "Fact: Calgary city directory page (81981 Page 3) for 48th Avenue NE lists David Marchant (draughtsman) and Mrs. Nancy Carol Marchant at 315. Meaning: Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
     "notes": "Primary Source. Calgary city directory scan from Henderson's Directory c. 1958."
+  },
+  {
+    "id": "obituary-colleen-lattin-2020",
+    "filename": "obituary-colleen-lattin-2020.txt",
+    "type": "Obituary",
+    "date": "2020-11-20",
+    "era": "21st century",
+    "sourceCitation": "United States, Obituary Records, 2014-2023, FamilySearch, obituary of Colleen Gay Lattin, published 20 November 2020, Calgary, Alberta, Canada.",
+    "previewUrl": "/documents/obituary-colleen-lattin-2020.txt",
+    "confidence": "Primary Source",
+    "people": ["Colleen Gay Lattin", "David Marchant", "Nancy Moore Marchant", "Brett Marchant", "Aaron Marchant", "Shawn Marchant"],
+    "place": "Calgary, Alberta, Canada",
+    "branch": "Marchant",
+    "researchPriority": false,
+    "fact": "Obituary for Colleen Gay Lattin (died 5 November 2020, age 58), naming parents David and Nancy Marchant, brother Brett, and nephews Shawn and Aaron.",
+    "meaning": "Provides primary evidence for the death of Colleen Gay Lattin and her relationship to her parents (David and Nancy Marchant), brother (Brett), and nephews (Shawn and Aaron), establishing the multi-generational link for the Marchant line.",
+    "whatItProves": "Fact: Obituary for Colleen Gay Lattin (died 5 November 2020, age 58), naming parents David and Nancy Marchant, brother Brett, and nephews Shawn and Aaron. Meaning: Provides primary evidence for the death of Colleen Gay Lattin and her relationship to her parents (David and Nancy Marchant), brother (Brett), and nephews (Shawn and Aaron), establishing the multi-generational link for the Marchant line.",
+    "notes": "Primary Source. Obituary transcription from familysearch.org."
   }
 ]

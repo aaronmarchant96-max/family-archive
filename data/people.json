@@ -4487,11 +4487,11 @@
     "lifespan": "unknown",
     "era": "20th century",
     "branch": "Marchant",
-    "summary": "Husband of Nancy Moore Marchant. Lived in Calgary, Alberta, where he worked as a draughtsman in the late 1950s.",
-    "keyEvent": "Listed in the 1958 Henderson's Calgary City Directory at 315 48th Avenue NE with wife Nancy Carol.",
+    "summary": "Husband of Nancy Moore Marchant. Lived in Calgary, Alberta, where he worked as a draughtsman in the late 1950s. Father of Colleen Gay Lattin and Brett Marchant.",
+    "keyEvent": "Listed in the 1958 Henderson's Calgary City Directory at 315 48th Avenue NE with wife Nancy Carol. Father of Colleen Lattin and Brett Marchant.",
     "confidence": "Strong Evidence",
     "tags": ["Marchant", "Alberta", "Calgary"],
-    "sourceCitation": "1958 Henderson's Calgary City Directory.",
+    "sourceCitation": "1958 Henderson's Calgary City Directory; 2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
         "title": "Residence in Calgary",
@@ -4500,11 +4500,28 @@
         "summary": "Listed in the Henderson's Calgary City Directory as a draughtsman residing at 315 48th Avenue NE.",
         "confidence": "Primary Source",
         "linkedDocumentId": "calgary-directory-1958-marchant"
+      },
+      {
+        "title": "Birth of daughter Colleen Gay Marchant",
+        "date": "22 December 1961",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Daughter Colleen Gay Marchant (later Lattin) born at Calgary General Hospital.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      },
+      {
+        "title": "Death of daughter Colleen Gay Lattin",
+        "date": "5 November 2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Daughter Colleen Gay Lattin passed away in Calgary.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
       }
     ],
     "evidenceSummary": [
       "Occupation: Draughtsman",
-      "Resided at 315 48th Avenue NE, Calgary, in 1958 with wife Nancy Carol (Mrs. Nancy Carol Marchant)"
+      "Resided at 315 48th Avenue NE, Calgary, in 1958 with wife Nancy Carol (Mrs. Nancy Carol Marchant)",
+      "Father of Colleen Gay Lattin (1961-2020) and Brett Marchant per Colleen's 2020 obituary"
     ]
   },
   {
@@ -4513,11 +4530,11 @@
     "lifespan": "unknown",
     "era": "20th century",
     "branch": "Marchant",
-    "summary": "Daughter of Hugh Christopher Moore and Edith Ann Edwards. Wife of David Marchant. Resided in Calgary, Alberta, in the late 1950s.",
-    "keyEvent": "Listed as Mrs. Nancy Carol Marchant in the 1958 Calgary City Directory at 315 48th Avenue NE.",
+    "summary": "Daughter of Hugh Christopher Moore and Edith Ann Edwards. Wife of David Marchant. Resided in Calgary, Alberta, in the late 1950s. Mother of Colleen Gay Lattin and Brett Marchant.",
+    "keyEvent": "Listed as Mrs. Nancy Carol Marchant in the 1958 Calgary City Directory at 315 48th Avenue NE. Mother of Colleen Lattin and Brett Marchant.",
     "confidence": "Strong Evidence",
     "tags": ["Marchant", "Moore", "Edwards", "Alberta", "Calgary"],
-    "sourceCitation": "1958 Henderson's Calgary City Directory.",
+    "sourceCitation": "1958 Henderson's Calgary City Directory; 2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
         "title": "Residence in Calgary",
@@ -4526,12 +4543,153 @@
         "summary": "Listed in the Henderson's Calgary City Directory at 315 48th Avenue NE as Mrs. Nancy Carol Marchant.",
         "confidence": "Primary Source",
         "linkedDocumentId": "calgary-directory-1958-marchant"
+      },
+      {
+        "title": "Birth of daughter Colleen Gay Marchant",
+        "date": "22 December 1961",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Daughter Colleen Gay Marchant (later Lattin) born at Calgary General Hospital.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      },
+      {
+        "title": "Death of daughter Colleen Gay Lattin",
+        "date": "5 November 2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Daughter Colleen Gay Lattin passed away in Calgary.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
       }
     ],
     "evidenceSummary": [
       "Wife of David Marchant (draughtsman)",
       "Resided at 315 48th Avenue NE, Calgary, in 1958 (listed as Mrs. Nancy Carol Marchant)",
-      "Parents: Hugh Christopher Moore and Edith Ann Edwards"
+      "Parents: Hugh Christopher Moore and Edith Ann Edwards",
+      "Mother of Colleen Gay Lattin (1961-2020) and Brett Marchant per Colleen's 2020 obituary"
+    ]
+  },
+  {
+    "id": "colleen-gay-lattin",
+    "name": "Colleen Gay Lattin",
+    "lifespan": "1961-2020",
+    "era": "Late 20th to early 21st century",
+    "branch": "Marchant",
+    "summary": "Daughter of David Marchant and Nancy Moore Marchant. Worked in city planning for fiber optic communications at Telus. Remembered for her dedication to the merger of AGT and Telus and volunteering at the 1988 Winter Olympics with her father Dave.",
+    "keyEvent": "Worked at Telus in city planning; dedicated volunteer at the 1988 Calgary Winter Olympics.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Alberta", "Calgary"],
+    "sourceCitation": "Obituary of Colleen Gay Lattin, published 20 November 2020, Calgary, Alberta.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "22 December 1961",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Born at the Calgary General Hospital to David and Nancy Marchant.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      },
+      {
+        "title": "Volunteering at the Olympics",
+        "date": "1988",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Volunteered at the Calgary Winter Olympics for two weeks with her father Dave, earning 'volunteer of the day' honors.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      },
+      {
+        "title": "Death",
+        "date": "5 November 2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Passed away in Calgary, Alberta, after a courageous battle with diabetes.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of David and Nancy Marchant",
+      "Sister of Brett Marchant; aunt of Shawn and Aaron Marchant",
+      "Profession: City planning at Telus (member of TWU-USW)",
+      "Olympic volunteer in 1988 alongside her father Dave Marchant"
+    ]
+  },
+  {
+    "id": "brett-marchant",
+    "name": "Brett Marchant",
+    "lifespan": "Living",
+    "era": "Late 20th to 21st century",
+    "branch": "Marchant",
+    "summary": "Son of David Marchant and Nancy Moore Marchant. Brother of Colleen Gay Lattin. Husband of Christine and father of Shawn and Aaron.",
+    "keyEvent": "Husband of Christine; father of Shawn and Aaron Marchant.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Alberta", "Calgary"],
+    "sourceCitation": "2020 Obituary of Colleen Gay Lattin.",
+    "timeline": [
+      {
+        "title": "Mentioned in sister's obituary",
+        "date": "2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Survived his sister Colleen Gay Lattin, listed as brother Brett (Christine) with sons Shawn and Aaron.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of David and Nancy Marchant; brother of Colleen Lattin",
+      "Husband of Christine; father of Shawn and Aaron Marchant"
+    ]
+  },
+  {
+    "id": "aaron-marchant",
+    "name": "Aaron Marchant",
+    "lifespan": "Living",
+    "era": "21st century",
+    "branch": "Marchant",
+    "summary": "AI evaluator and builder in Calgary, Alberta. Son of Brett Marchant and Christine. Grandson of David Marchant and Nancy Moore Marchant.",
+    "keyEvent": "AI security and evaluation builder in Calgary; creator of PromptHound Labs.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Alberta", "Calgary", "Developer"],
+    "sourceCitation": "2020 Obituary of Colleen Gay Lattin; PromptHound Labs README.",
+    "timeline": [
+      {
+        "title": "Mentioned in aunt's obituary",
+        "date": "2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Listed as surviving nephew Aaron, son of Brett and Christine, in Colleen Lattin's obituary.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Brett and Christine Marchant; brother of Shawn",
+      "Grandson of David and Nancy Marchant",
+      "Nephew of Colleen Lattin"
+    ]
+  },
+  {
+    "id": "shawn-marchant",
+    "name": "Shawn Marchant",
+    "lifespan": "Living",
+    "era": "21st century",
+    "branch": "Marchant",
+    "summary": "Son of Brett Marchant and Christine. Grandson of David Marchant and Nancy Moore Marchant.",
+    "keyEvent": "Son of Brett Marchant and Christine; brother of Aaron.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Alberta", "Calgary"],
+    "sourceCitation": "2020 Obituary of Colleen Gay Lattin.",
+    "timeline": [
+      {
+        "title": "Mentioned in aunt's obituary",
+        "date": "2020",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Listed as surviving nephew Shawn, son of Brett and Christine, in Colleen Lattin's obituary.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "obituary-colleen-lattin-2020"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Brett and Christine Marchant; brother of Aaron",
+      "Grandson of David and Nancy Marchant",
+      "Nephew of Colleen Lattin"
     ]
   }
 ]

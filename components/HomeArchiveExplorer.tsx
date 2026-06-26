@@ -577,22 +577,6 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         laneStyle: "bridge",
         nodes: [
           {
-            id: "aaron-marchant",
-            label: "Aaron Marchant",
-            subtitle: "bridge node",
-            confidence: "Needs Proof",
-            note: "Current archive anchor for the Marchant side of the line.",
-            bridge: true
-          },
-          {
-            id: "brett-marchant",
-            label: "Brett Marchant",
-            subtitle: "bridge node",
-            confidence: "Needs Proof",
-            note: "A working connection in the family web, not yet loaded as a profile.",
-            bridge: true
-          },
-          {
             id: "edith-ann-edwards-moore",
             label: "Edith Ann Edwards Moore",
             subtitle: "bridge node",
@@ -615,6 +599,38 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         subtitle: "Loaded profiles and records already present in the archive. Dotted items are still treated carefully.",
         laneStyle: "documented",
         nodes: [
+          {
+            id: "aaron-marchant",
+            label: "Aaron Marchant",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "AI evaluator and builder in Calgary, son of Brett Marchant.",
+            href: "/ancestors/aaron-marchant"
+          },
+          {
+            id: "shawn-marchant",
+            label: "Shawn Marchant",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Grandson of David and Nancy Marchant, son of Brett.",
+            href: "/ancestors/shawn-marchant"
+          },
+          {
+            id: "brett-marchant",
+            label: "Brett Marchant",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Son of David and Nancy Marchant, father of Aaron and Shawn.",
+            href: "/ancestors/brett-marchant"
+          },
+          {
+            id: "colleen-gay-lattin",
+            label: "Colleen Gay Lattin",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Daughter of David and Nancy, worked at Telus, Olympic volunteer.",
+            href: "/ancestors/colleen-gay-lattin"
+          },
           {
             id: "nancy-moore-marchant",
             label: "Nancy Moore Marchant",
