@@ -1229,13 +1229,13 @@
   {
     "id": "isabella-law",
     "name": "Isabella Law",
-    "lifespan": "Mid-19th century",
-    "era": "1840s Ballymena",
+    "lifespan": "circa 1823-after 1880",
+    "era": "19th century",
     "branch": "Law",
-    "summary": "Lived on Bridge Street, Ballymena, County Antrim. Daughter of Patrick Law, a brassfounder.",
-    "keyEvent": "Married William Moore on March 29, 1846.",
-    "confidence": "Primary Source",
-    "tags": ["Ballymena", "Bridge Street", "Brassfounder family"],
+    "summary": "Wife of William Moore (printer). Born in Ireland, married in Ballymena in 1846, emigrated to Quebec, Canada, and later moved to New York City by 1865. Resided in New York City in 1880.",
+    "keyEvent": "Married William Moore on 29 March 1846 in Ballymena, Ireland. Emigrated to Canada shortly after.",
+    "confidence": "Confirmed",
+    "tags": ["Ballymena", "Bridge Street", "Brassfounder family", "New York"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -1245,6 +1245,13 @@
         "summary": "Married William Moore in the parish record.",
         "confidence": "Primary Source",
         "linkedDocumentId": "william-isabella-marriage-certificate"
+      },
+      {
+        "title": "Residence in New York City",
+        "date": "1880",
+        "place": "New York City, New York, USA",
+        "summary": "Recorded residing in New York City in the 1880 Census.",
+        "confidence": "Primary Source"
       }
     ],
     "evidenceSummary": [
@@ -1253,7 +1260,7 @@
       "Daughter of Patrick Law, a brassfounder",
       "Marriage dated March 29, 1846",
       "Key document: real-certificate.pdf",
-      "Status: Confirmed family record"
+      "Status: Confirmed family record per marriage certificate and 1880 Census"
     ]
   },
   {
@@ -3665,11 +3672,11 @@
     "tags": ["Moore line", "Quebec", "Saskatchewan", "Alberta", "Matriarch/Patriarch"],
     "timeline": [
       {
-        "title": "Birth in Hull",
-        "date": "circa 1860",
-        "place": "Hull, Quebec, Canada",
-        "summary": "Born in Hull, Quebec, Canada to William Moore and Isabella Law.",
-        "confidence": "Needs Review"
+        "title": "Birth",
+        "date": "22 March 1860",
+        "place": "Quebec, Canada",
+        "summary": "Born to William Moore and Isabella Law.",
+        "confidence": "Strong Evidence"
       },
       {
         "title": "Marriage to Jessie Bowen",
@@ -3746,26 +3753,87 @@
     ]
   },
   {
-    "id": "robert-moore",
-    "name": "Robert Moore",
-    "lifespan": "19th-century Ireland",
-    "era": "19th-century Ireland",
+    "id": "robert-harvey-moore",
+    "name": "Robert Harvey Moore",
+    "lifespan": "1847-1921",
+    "era": "Late 19th-century New York",
     "branch": "Moore",
-    "summary": "Son of William Moore and Isabella Law. Under research review.",
-    "keyEvent": "Birth/baptism records currently being evaluated.",
-    "confidence": "Needs Review",
-    "tags": ["Moore line", "Needs review"],
+    "summary": "Son of William Moore and Isabella Law. Born in Quebec, Canada shortly after his parents emigrated from Ireland. Later moved with the family to New York City and lived there until his death in 1921.",
+    "keyEvent": "Born 12 March 1847 in Quebec. Resided in New York City in 1880.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "Quebec", "New York"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "12 March 1847",
+        "place": "Quebec, Canada",
+        "summary": "Born to William Moore and Isabella Law shortly after their emigration from Ireland.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1880",
+        "place": "New York City, New York, USA",
+        "summary": "Living with parents and siblings. Relation to Head of House: Son.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Death",
+        "date": "1921",
+        "place": "New York, USA",
+        "summary": "Passed away at age 74.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of William Moore and Isabella Law; brother of James Moore",
+      "Resided in New York City in 1880 per U.S. Federal Census"
+    ]
+  },
+  {
+    "id": "mary-agnes-moore",
+    "name": "Mary Agnes Moore",
+    "lifespan": "1865-Deceased",
+    "era": "Late 19th-century New York",
+    "branch": "Moore",
+    "summary": "Daughter of William Moore and Isabella Law. Born in Brooklyn, New York City, and resided there with her family.",
+    "keyEvent": "Born in 1865 in Brooklyn, New York City. Married McCoy.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "New York"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1865",
+        "place": "Brooklyn, New York City, New York, USA",
+        "summary": "Born to William Moore and Isabella Law.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of William Moore and Isabella Law per census and marriage records",
+      "Resided with parents in New York"
+    ]
+  },
+  {
+    "id": "bella-moore",
+    "name": "Bella Moore",
+    "lifespan": "19th-century",
+    "era": "19th-century",
+    "branch": "Moore",
+    "summary": "Daughter of William Moore and Isabella Law. Listed in family records.",
+    "keyEvent": "Daughter of William Moore and Isabella Law.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore"],
     "timeline": [
       {
         "title": "Birth registration under review",
         "date": "Date not yet confirmed",
-        "summary": "Evaluating potential baptism entries in Ballymena/Kirkinriola parish.",
+        "summary": "Daughter of William Moore and Isabella Law.",
         "confidence": "Needs Review"
       }
     ],
     "evidenceSummary": [
-      "Listed as child of William Moore and Isabella Law in family tradition records",
-      "Status: No baptism record yet confirmed in Mid-Antrim parish registers"
+      "Listed as child of William Moore and Isabella Law in family tradition records"
     ]
   },
   {
