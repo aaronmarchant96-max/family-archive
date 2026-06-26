@@ -7,10 +7,16 @@
     "era": "Passed down over generations",
     "mode": "Passed down",
     "evidenceMode": "Oral tradition",
-    "relatedPeople": ["Marchant family"],
-    "relatedPlaces": ["Kansas City"],
+    "relatedPeople": [
+      "Marchant family"
+    ],
+    "relatedPlaces": [
+      "Kansas City"
+    ],
     "confidence": "Family-Confirmed Oral History",
-    "notes": "Useful as context, but keep separate from sourced records until a document or recorded testimony is added."
+    "notes": "Useful as context, but keep separate from sourced records until a document or recorded testimony is added.",
+    "claim": "[Placeholder] Kansas City story",
+    "narrative": "[To be documented] Kansas City story"
   },
   {
     "id": "annes-book-notes",
@@ -22,11 +28,34 @@
     "mode": "Primary correspondence",
     "evidenceMode": "Primary letters",
     "chronology": "Dated letters that align with the family timeline and support the Red Book compilation.",
-    "relatedPeople": ["Marchant", "Moore", "Edwards", "Dyer", "Ramsey", "Hopkins"],
-    "relatedPlaces": ["Northern Ireland", "Tennessee", "Iowa", "Oregon", "Washington", "Alberta"],
-    "relatedLines": ["Marchant", "Moore", "Edwards", "Dyer", "Ramsey", "Hopkins"],
+    "relatedPeople": [
+      "Marchant",
+      "Moore",
+      "Edwards",
+      "Dyer",
+      "Ramsey",
+      "Hopkins"
+    ],
+    "relatedPlaces": [
+      "Northern Ireland",
+      "Tennessee",
+      "Iowa",
+      "Oregon",
+      "Washington",
+      "Alberta"
+    ],
+    "relatedLines": [
+      "Marchant",
+      "Moore",
+      "Edwards",
+      "Dyer",
+      "Ramsey",
+      "Hopkins"
+    ],
     "confidence": "Primary Source",
-    "notes": "Original handwritten letters preserved within Anne's material. These letters can be used as source-grade evidence when the people, places, dates, and handwriting context are directly supported by the record."
+    "notes": "Original handwritten letters preserved within Anne's material. These letters can be used as source-grade evidence when the people, places, dates, and handwriting context are directly supported by the record.",
+    "claim": "[Placeholder] Anne's original letters",
+    "narrative": "[To be documented] Anne's original letters"
   },
   {
     "id": "red-book-personal-material",
@@ -39,10 +68,31 @@
     "mode": "Corroborated family archive material",
     "evidenceMode": "Corroborated family archive material",
     "chronology": "Supported by dated letters, matching people, places, and independently verified historical timelines.",
-    "relatedPeople": ["Marchant line", "Ramsey line", "Moore line", "Edwards line"],
-    "relatedPlaces": ["Family archive", "Northern Ireland", "Tennessee", "Iowa", "Washington", "Alberta"],
-    "relatedLines": ["Marchant", "Moore", "Edwards", "Dyer", "Ramsey", "Hopkins"],
+    "relatedPeople": [
+      "Marchant line",
+      "Ramsey line",
+      "Moore line",
+      "Edwards line"
+    ],
+    "relatedPlaces": [
+      "Family archive",
+      "Northern Ireland",
+      "Tennessee",
+      "Iowa",
+      "Washington",
+      "Alberta"
+    ],
+    "relatedLines": [
+      "Marchant",
+      "Moore",
+      "Edwards",
+      "Dyer",
+      "Ramsey",
+      "Hopkins"
+    ],
     "confidence": "Corroborated Compilation",
-    "notes": "Anne's research book combines family correspondence, inherited documents, recorded recollections, and compiled genealogy. Its dated letters and chronology have been cross-checked against known people, places, and historical records. Individual claims may still carry their own evidence status, but the Red Book itself should not be presented as an unsupported oral-history source."
+    "notes": "Anne's research book combines family correspondence, inherited documents, recorded recollections, and compiled genealogy. Its dated letters and chronology have been cross-checked against known people, places, and historical records. Individual claims may still carry their own evidence status, but the Red Book itself should not be presented as an unsupported oral-history source.",
+    "claim": "[Placeholder] Anne's Red Book research compilation",
+    "narrative": "[To be documented] Anne's Red Book research compilation"
   }
 ]

@@ -18,7 +18,10 @@
     "fact": "Certified copy of the marriage register entry for William Moore (printer, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street) on 29 March 1846.",
     "meaning": "Establishes the marriage of the Moore-Law couple with specific addresses, occupations, and parent details for the Irish branch.",
     "whatItProves": "Fact: Certified copy of the marriage register entry for William Moore (printer, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street) on 29 March 1846. Meaning: Establishes the marriage of the Moore-Law couple with specific addresses, occupations, and parent details for the Irish branch.",
-    "notes": "Certified copy from PRONI. Primary source for the Moore-Law family connection."
+    "notes": "Certified copy from PRONI. Primary source for the Moore-Law family connection.",
+    "claim": "Document",
+    "evidence": "Public Record Office of Northern Ireland (PRONI), Kilconriola Parish Marriage Register, marriage of William Moore and Isabella Law, 29 March 1846, Kir",
+    "narrative": "[To be documented] william-isabella-marriage-certificate"
   },
   {
     "id": "josiah-ramsey-1744-marriage",
@@ -39,7 +42,10 @@
     "fact": "Marriage record for Josiah Ramsey Sr. in Delaware Colony in 1744, spouse listed as Alice Bower (or possibly Elizabeth Hollis or Grigsby in some sources).",
     "meaning": "Establishes the early Ramsey family line in Colonial America but requires verification of the spouse's exact identity.",
     "whatItProves": "Fact: Marriage record for Josiah Ramsey Sr. in Delaware Colony in 1744, spouse listed as Alice Bower (or possibly Elizabeth Hollis or Grigsby in some sources). Meaning: Establishes the early Ramsey family line in Colonial America but requires verification of the spouse's exact identity.",
-    "notes": "Research priority: Confirm exact spouse name from original records."
+    "notes": "Research priority: Confirm exact spouse name from original records.",
+    "claim": "Document",
+    "evidence": "Delaware Marriage Records, 1744, Josiah Ramsey and spouse, Delaware Colony.",
+    "narrative": "[To be documented] josiah-ramsey-1744-marriage"
   },
   {
     "id": "josiah-ramsey-1782-pay-voucher",
@@ -62,7 +68,10 @@
     "notes": "Key document for SAR/DAR eligibility. See also the related military service record image.",
     "seeAlso": [
       "josiah-ramsey-1782-military-service"
-    ]
+    ],
+    "claim": "Document",
+    "evidence": "North Carolina State Archives, Revolutionary War Pay Vouchers, Josiah Ramsey pay voucher, 1782, North Carolina Militia.",
+    "narrative": "[To be documented] josiah-ramsey-1782-pay-voucher"
   },
   {
     "id": "josiah-ramsey-tennessee-land-grant",
@@ -82,7 +91,10 @@
     "fact": "State of Tennessee grant to Josiah Ramsey and heirs for land in Claiborne County, entry 371, dated 22 April 1827, surveyed 21 May 1827 on waters of Mulberry Creek.",
     "meaning": "Confirms Josiah Ramsey held land in Tennessee before his 1834 death, strengthening the Tennessee identity trail for this Josiah.",
     "whatItProves": "Fact: State of Tennessee grant to Josiah Ramsey and heirs for land in Claiborne County, entry 371, dated 22 April 1827, surveyed 21 May 1827 on waters of Mulberry Creek. Meaning: Confirms Josiah Ramsey held land in Tennessee before his 1834 death, strengthening the Tennessee identity trail for this Josiah.",
-    "notes": "Primary source identity anchor. Keep with the Claiborne County Tennessee evidence set and use alongside the family memorial and residence trail."
+    "notes": "Primary source identity anchor. Keep with the Claiborne County Tennessee evidence set and use alongside the family memorial and residence trail.",
+    "claim": "Document",
+    "evidence": "State of Tennessee, Land Grants, entry no. 371, Josiah Ramsey, Claiborne County, surveyed 21 May 1827 for land on Mulberry Creek.",
+    "narrative": "[To be documented] josiah-ramsey-tennessee-land-grant"
   },
   {
     "id": "thomas-ramsey-anna-hopkins-marriage",
@@ -103,7 +115,10 @@
     "fact": "Marriage record of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) in Hancock County, Tennessee.",
     "meaning": "Establishes the marriage connecting the Ramsey and Hopkins lines in early Tennessee.",
     "whatItProves": "Fact: Marriage record of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) in Hancock County, Tennessee. Meaning: Establishes the marriage connecting the Ramsey and Hopkins lines in early Tennessee.",
-    "notes": "Research priority: Locate and verify this marriage record in Tennessee county archives."
+    "notes": "Research priority: Locate and verify this marriage record in Tennessee county archives.",
+    "claim": "Document",
+    "evidence": "Tennessee County Marriages, Hancock County, marriage of Thomas Ramsey and Anna Hopkins, 1824.",
+    "narrative": "[To be documented] thomas-ramsey-anna-hopkins-marriage"
   },
   {
     "id": "josiah-ramsey-jr-1812-service",
@@ -128,7 +143,10 @@
     "rankInduction": "Lieutenant",
     "rankDischarge": "Adjutant",
     "rollBox": "170",
-    "microfilmPublication": "M602"
+    "microfilmPublication": "M602",
+    "claim": "Document",
+    "evidence": "U.S., War of 1812 Service Records, 1812-1815. Name: Josiah Ramsey. Company: 14 REG'T (MITCHISSON'S) Kentucky Militia. Rank at induction: Lieutenant. R",
+    "narrative": "[To be documented] josiah-ramsey-jr-1812-service"
   },
   {
     "id": "claiborne-county-1840-census",
@@ -148,7 +166,10 @@
     "fact": "Jabez Hopkins household appears in the 1840 U.S. Federal Census for Hawkins County, Tennessee.",
     "meaning": "Confirms the Hopkins family's presence in Tennessee during the migration from Virginia/Rhode Island area.",
     "whatItProves": "Fact: Jabez Hopkins household appears in the 1840 U.S. Federal Census for Hawkins County, Tennessee. Meaning: Confirms the Hopkins family's presence in Tennessee during the migration from Virginia/Rhode Island area.",
-    "notes": "Private census image in the archive. The page places Jabez Hopkins within the Hawkins County schedule among neighboring Collins and Gipson households, which helps anchor the Hopkins residence trail."
+    "notes": "Private census image in the archive. The page places Jabez Hopkins within the Hawkins County schedule among neighboring Collins and Gipson households, which helps anchor the Hopkins residence trail.",
+    "claim": "Document",
+    "evidence": "1840 U.S. Federal Census, Hawkins County, Tennessee - Jabez Hopkins household schedule.",
+    "narrative": "[To be documented] claiborne-county-1840-census"
   },
   {
     "id": "james-ramsey-draft-registration",
@@ -168,7 +189,10 @@
     "fact": "James Ramsey appears on the 1863 Iowa Civil War draft registration, listing age, occupation, birthplace, and residence.",
     "meaning": "Provides primary evidence for James Ramsey's identity, age, occupation, and Iowa location during the Civil War era.",
     "whatItProves": "Fact: James Ramsey appears on the 1863 Iowa Civil War draft registration, listing age, occupation, birthplace, and residence. Meaning: Provides primary evidence for James Ramsey's identity, age, occupation, and Iowa location during the Civil War era.",
-    "notes": "Private image of the draft registration page. Use as a primary source for James Ramsey's Iowa residence and Civil War-era identity trail."
+    "notes": "Private image of the draft registration page. Use as a primary source for James Ramsey's Iowa residence and Civil War-era identity trail.",
+    "claim": "Document",
+    "evidence": "U.S. Civil War Draft Registration Records, 1863, 5th Congressional District of Iowa, listing James Ramsey, age 38, farmer, born in Tennessee.",
+    "narrative": "[To be documented] james-ramsey-draft-registration"
   },
   {
     "id": "richland-township-1880-census",
@@ -188,7 +212,10 @@
     "fact": "Anna Ramsey (1807-1883) is listed as a widow in the 1880 U.S. Federal Census for Richland Township, Decatur County, Iowa.",
     "meaning": "Confirms her residence and widow status in Iowa after Thomas Ramsey's death, supporting the family migration to Iowa.",
     "whatItProves": "Fact: Anna Ramsey (1807-1883) is listed as a widow in the 1880 U.S. Federal Census for Richland Township, Decatur County, Iowa. Meaning: Confirms her residence and widow status in Iowa after Thomas Ramsey's death, supporting the family migration to Iowa.",
-    "notes": "Supports the Ramsey family presence in Decatur County, Iowa."
+    "notes": "Supports the Ramsey family presence in Decatur County, Iowa.",
+    "claim": "Document",
+    "evidence": "1880 U.S. Federal Census, Richland Township, Decatur County, Iowa - Anna Ramsey household.",
+    "narrative": "[To be documented] richland-township-1880-census"
   },
   {
     "id": "thomas-bentley-ramsey-1880-census",
@@ -208,7 +235,10 @@
     "fact": "Thomas Bentley Ramsey is recorded as head of household in the 1880 U.S. Federal Census for Long Creek Township, Decatur County, Iowa.",
     "meaning": "Provides primary evidence for his residence, household composition, and the Ramsey presence in Iowa.",
     "whatItProves": "Fact: Thomas Bentley Ramsey is recorded as head of household in the 1880 U.S. Federal Census for Long Creek Township, Decatur County, Iowa. Meaning: Provides primary evidence for his residence, household composition, and the Ramsey presence in Iowa.",
-    "notes": "Private census image in the archive. Use this as a residence and household anchor for Thomas Bentley Ramsey."
+    "notes": "Private census image in the archive. Use this as a residence and household anchor for Thomas Bentley Ramsey.",
+    "claim": "Document",
+    "evidence": "1880 U.S. Federal Census, Long Creek Township, Decatur County, Iowa, Thomas Bentley Ramsey household.",
+    "narrative": "[To be documented] thomas-bentley-ramsey-1880-census"
   },
   {
     "id": "charles-dyer-discharge",
@@ -228,7 +258,10 @@
     ],
     "place": "Fort Randolph",
     "whatItProves": "Charles Dyer\u2019s discharge at Fort Randolph on September 25, 1778; his service in Captain William McKee\u2019s company of the 12th Virginia Regiment; and the later county affidavit identifying his heirs and confirming the identity of the Revolutionary War pension applicant.",
-    "notes": "Primary source transcript and scan for the discharge record. Later affidavit material in the same transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer."
+    "notes": "Primary source transcript and scan for the discharge record. Later affidavit material in the same transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer.",
+    "claim": "Charles Dyer Pension Application R3176",
+    "evidence": "Southern Campaign American Revolution Pension Statements & Rosters, Pension Application of Charles Dyer R3176, transcribed and annotated by C. Leon Ha",
+    "narrative": "[To be documented] Charles Dyer Pension Application R3176"
   },
   {
     "id": "george-washington-dyer-military-record",
@@ -244,7 +277,10 @@
       "George Washington Dyer"
     ],
     "whatItProves": "Service with the First Oregon Infantry in 1864.",
-    "notes": "Metadata only for now. Original record image stays private."
+    "notes": "Metadata only for now. Original record image stays private.",
+    "claim": "Document",
+    "evidence": "Fold3 image 115273007, US Civil War Service Records, George W. Dyer, First Oregon Infantry, compiled from NARA carded records.",
+    "narrative": "[To be documented] george-washington-dyer-military-record"
   },
   {
     "id": "andrew-moore-birth-registration",
@@ -259,7 +295,10 @@
       "Andrew Moore"
     ],
     "whatItProves": "Potential link to the William Moore and Isabella Law family packet.",
-    "notes": "Review against the full family packet before treating as confirmed."
+    "notes": "Review against the full family packet before treating as confirmed.",
+    "claim": "Document",
+    "evidence": "Private archive scan of Andrew Moore birth registration.",
+    "narrative": "[To be documented] andrew-moore-birth-registration"
   },
   {
     "id": "armina-ramsey-obituary",
@@ -280,7 +319,10 @@
     "fact": "Obituary for Armina Ramsey Edwards states born August 27, 1826, died July 10, 1923, married Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, buried beside husband in Pine City Cemetery.",
     "meaning": "Provides collateral evidence for the life events and migration of Armina Ramsey and Anderson Edwards, including marriage year (needs primary confirmation).",
     "whatItProves": "Fact: Obituary for Armina Ramsey Edwards states born August 27, 1826, died July 10, 1923, married Anderson Edwards in 1840, had eight children, lived in Iowa and Washington, buried beside husband in Pine City Cemetery. Meaning: Provides collateral evidence for the life events and migration of Armina Ramsey and Anderson Edwards, including marriage year (needs primary confirmation).",
-    "notes": "Useful collateral source for the Edwards/Ramsey line. The marriage date from obituary still needs primary record confirmation."
+    "notes": "Useful collateral source for the Edwards/Ramsey line. The marriage date from obituary still needs primary record confirmation.",
+    "claim": "Document",
+    "evidence": "Private archive scan of the Armina Ramsey Edwards obituary.",
+    "narrative": "[To be documented] armina-ramsey-obituary"
   },
   {
     "id": "josiah-ramsey-family-plaque",
@@ -302,7 +344,10 @@
     "fact": "Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey.",
     "meaning": "Provides supporting evidence for the family group and burial of the Tennessee/Iowa Ramsey line.",
     "whatItProves": "Fact: Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey. Meaning: Provides supporting evidence for the family group and burial of the Tennessee/Iowa Ramsey line.",
-    "notes": "Memorial record supports the family group and burial memory. It is not a civil birth record."
+    "notes": "Memorial record supports the family group and burial memory. It is not a civil birth record.",
+    "claim": "Document",
+    "evidence": "Private archive photo of the Ramsey family memorial plaque naming Josiah Ramsey and Elizabeth Cowan and listing their children.",
+    "narrative": "[To be documented] josiah-ramsey-family-plaque"
   },
   {
     "id": "josiah-ramsey-grave-marker",
@@ -323,7 +368,10 @@
     "fact": "Gravestone for Josiah C. Ramsey and Elizabeth Cowan in the family memorial site.",
     "meaning": "Supports the burial and family grouping for the Tennessee branch; birth year on stone conflicts with other sources and should be treated as memorial inscription only.",
     "whatItProves": "Fact: Gravestone for Josiah C. Ramsey and Elizabeth Cowan in the family memorial site. Meaning: Supports the burial and family grouping for the Tennessee branch; birth year on stone conflicts with other sources and should be treated as memorial inscription only.",
-    "notes": "Use this as supporting memorial evidence. The inscription and FamilySearch profile disagree on Josiah's birth year."
+    "notes": "Use this as supporting memorial evidence. The inscription and FamilySearch profile disagree on Josiah's birth year.",
+    "claim": "Document",
+    "evidence": "Private archive photo of the Josiah C. Ramsey and Elizabeth Cowan grave marker, dedicated 05 Sept. 1993.",
+    "narrative": "[To be documented] josiah-ramsey-grave-marker"
   },
   {
     "id": "josiah-ramsey-1782-military-service",
@@ -348,7 +396,10 @@
     "seeAlso": [
       "josiah-ramsey-1782-pay-voucher"
     ],
-    "title": "Josiah Ramsey military service record (1782)"
+    "title": "Josiah Ramsey military service record (1782)",
+    "claim": "Josiah Ramsey military service record (1782)",
+    "evidence": "North Carolina State Archives via FamilySearch, Revolutionary War Military Records 1779-1792, service entry for Josiah Ramsey, 16 August 1782, Washing",
+    "narrative": "[To be documented] Josiah Ramsey military service record (1782)"
   },
   {
     "id": "decatur-township-1860-census",
@@ -372,7 +423,10 @@
     "fact": "1860 U.S. Federal Census page for Decatur Township, Iowa, showing Thomas Ramsey and nearby Ramsey/Edwards households.",
     "meaning": "Provides primary evidence for the Ramsey and Edwards families living in close proximity in Iowa in 1860.",
     "whatItProves": "Fact: 1860 U.S. Federal Census page for Decatur Township, Iowa, showing Thomas Ramsey and nearby Ramsey/Edwards households. Meaning: Provides primary evidence for the Ramsey and Edwards families living in close proximity in Iowa in 1860.",
-    "notes": "FamilySearch export, page 47 of 537 in the source collection. Private scan plus citation retained in the archive."
+    "notes": "FamilySearch export, page 47 of 537 in the source collection. Private scan plus citation retained in the archive.",
+    "claim": "Document",
+    "evidence": "\"Decatur, Iowa, United States records,\" images, FamilySearch, image 47 of 537; United States. National Archives and Records Administration. Image Grou",
+    "narrative": "[To be documented] decatur-township-1860-census"
   },
   {
     "id": "james-ramsey-margaret-baker-marriage",
@@ -389,7 +443,10 @@
     ],
     "place": "Claiborne County, Tennessee",
     "whatItProves": "James Ramsey + Margaret Baker marriage. License 2 Jun 1845, performed 8 Jun 1845. Strong Tennessee anchor.",
-    "notes": "Primary source from marriage register. Strong Tennessee anchor for the James Ramsey / Margaret Baker line."
+    "notes": "Primary source from marriage register. Strong Tennessee anchor for the James Ramsey / Margaret Baker line.",
+    "claim": "Document",
+    "evidence": "Claiborne County, Tennessee marriage register. License dated 2 June 1845 for James Ramsey. Return states marriage was performed 8 June 1845.",
+    "narrative": "[To be documented] james-ramsey-margaret-baker-marriage"
   },
   {
     "id": "thomas-ramsey-1850-bloomfield-iowa-census",
@@ -408,7 +465,10 @@
     ],
     "place": "Bloomfield Township, Davis County, Iowa",
     "whatItProves": "Thomas Ramsey + Anna + children together in 1850. Anderson Edwards / Armina nearby. Strong family-cluster record.",
-    "notes": "Primary census page. Strong family-cluster record supporting the Ramsey/Edwards group and Iowa migration."
+    "notes": "Primary census page. Strong family-cluster record supporting the Ramsey/Edwards group and Iowa migration.",
+    "claim": "Document",
+    "evidence": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa. Thomas Ramsey + Anna + children together. Anderson Edwards / Armina nearby in separ",
+    "narrative": "[To be documented] thomas-ramsey-1850-bloomfield-iowa-census"
   },
   {
     "id": "jabez-hopkins-rachel-clouse-marriage",
@@ -429,7 +489,10 @@
     "fact": "Jabis Hopkins (spelling variant of Jabez) married Rachel Clouse on 14 April 1801 in Washington County, Virginia (minister Charles Hardy).",
     "meaning": "Primary record of the marriage that anchors the Hopkins family in Virginia before the Tennessee move.",
     "whatItProves": "Fact: Jabis Hopkins (spelling variant of Jabez) married Rachel Clouse on 14 April 1801 in Washington County, Virginia (minister Charles Hardy). Meaning: Primary record of the marriage that anchors the Hopkins family in Virginia before the Tennessee move.",
-    "notes": "Primary Source. Confirms Jabis as a documented spelling variant and the marriage date/place/minister. Does not prove alone that this is the later Tennessee/Iowa Jabez, that Anna Hopkins Ramsey was their daughter, or that Nehemiah Hopkins and Elizabeth Cole were his parents."
+    "notes": "Primary Source. Confirms Jabis as a documented spelling variant and the marriage date/place/minister. Does not prove alone that this is the later Tennessee/Iowa Jabez, that Anna Hopkins Ramsey was their daughter, or that Nehemiah Hopkins and Elizabeth Cole were his parents.",
+    "claim": "Document",
+    "evidence": "Washington County, Virginia marriage register / printed register extraction: Jabis Hopkins and Rachel Clouse, married 14 April 1801 by minister Charle",
+    "narrative": "[To be documented] jabez-hopkins-rachel-clouse-marriage"
   },
   {
     "id": "nehemiah-hopkins-elizabeth-1762-warren-ri",
@@ -450,7 +513,10 @@
     "fact": "Nehemiah Hopkins married Elizabeth on 11 March 1762 in Warren, Rhode Island.",
     "meaning": "Primary record anchoring the Hopkins family in Rhode Island before the move to Virginia and Tennessee.",
     "whatItProves": "Fact: Nehemiah Hopkins married Elizabeth on 11 March 1762 in Warren, Rhode Island. Meaning: Primary record anchoring the Hopkins family in Rhode Island before the move to Virginia and Tennessee.",
-    "notes": "Primary Source. Supports the marriage. Note: Elizabeth's full surname (Cole) needs direct confirmation in this lane. Does not prove Jabez was their son."
+    "notes": "Primary Source. Supports the marriage. Note: Elizabeth's full surname (Cole) needs direct confirmation in this lane. Does not prove Jabez was their son.",
+    "claim": "Document",
+    "evidence": "Printed Warren, Rhode Island intentions and marriages page. Nehemiah Hopkins and Elizabeth, March 11, 1762.",
+    "narrative": "[To be documented] nehemiah-hopkins-elizabeth-1762-warren-ri"
   },
   {
     "id": "nehemiah-hopkins-tennessee-land-grant",
@@ -466,7 +532,10 @@
     ],
     "place": "Tennessee",
     "whatItProves": "Tennessee land grant to Nehemiah Hopkins, 1825\u20131826. Mentions Stephen Hopkins's corner. Strong locality record, not a parentage proof by itself.",
-    "notes": "Strong locality record for Nehemiah Hopkins in Tennessee. Not a parentage proof by itself."
+    "notes": "Strong locality record for Nehemiah Hopkins in Tennessee. Not a parentage proof by itself.",
+    "claim": "Document",
+    "evidence": "Tennessee land grant to Nehemiah Hopkins, 1825\u20131826. Mentions Stephen Hopkins's corner.",
+    "narrative": "[To be documented] nehemiah-hopkins-tennessee-land-grant"
   },
   {
     "id": "nehemiah-hopkins-vermont-militia-1778",
@@ -482,7 +551,10 @@
     ],
     "place": "Vermont",
     "whatItProves": "Vermont militia payroll includes Nehm Hopkins, Nov 1778. Real Revolutionary-era record, but identity bridge still needed.",
-    "notes": "Real Revolutionary-era record. Identity bridge to the Rhode Island / Tennessee Nehemiah still needed."
+    "notes": "Real Revolutionary-era record. Identity bridge to the Rhode Island / Tennessee Nehemiah still needed.",
+    "claim": "Document",
+    "evidence": "Vermont militia payroll. Includes Nehm Hopkins, Capt. Cooley\u2019s company, Col. Warren\u2019s regiment, Nov 1778.",
+    "narrative": "[To be documented] nehemiah-hopkins-vermont-militia-1778"
   },
   {
     "id": "nehemiah-elizabeth-hopkins-parish-christenings",
@@ -499,7 +571,10 @@
     ],
     "place": "Broughton parish",
     "whatItProves": "Parish christening page appears to contain children of Nehemiah and Elizabeth Hopkins.",
-    "notes": "Potentially useful. Needs careful transcription before using. Could matter a lot if the entries line up."
+    "notes": "Potentially useful. Needs careful transcription before using. Could matter a lot if the entries line up.",
+    "claim": "Document",
+    "evidence": "Parish christening page. Appears to contain children of Nehemiah and Elizabeth Hopkins.",
+    "narrative": "[To be documented] nehemiah-elizabeth-hopkins-parish-christenings"
   },
   {
     "id": "washington-county-virginia-historical-map",
@@ -513,7 +588,10 @@
     "people": [],
     "place": "Washington County, Virginia area",
     "whatItProves": "Useful geography and context for the region.",
-    "notes": "Context only. Useful for geography but not lineage proof."
+    "notes": "Context only. Useful for geography but not lineage proof.",
+    "claim": "Document",
+    "evidence": "Historical map of Washington County, Virginia area.",
+    "narrative": "[To be documented] washington-county-virginia-historical-map"
   },
   {
     "id": "jabez-hopkins-hancock-tennessee-land-grant",
@@ -529,7 +607,10 @@
     ],
     "place": "Hancock County, Tennessee (north side of Powell\u2019s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop)",
     "whatItProves": "Jabez Hopkins was residing in the Hancock County / Mulberry Creek area by the mid-1840s. Strong locality and identity anchor for the Tennessee phase.",
-    "notes": "Primary Source. Does not prove alone that Anna Hopkins Ramsey was his daughter, that this bridges to the Iowa man without continuity records, or that Nehemiah and Elizabeth were his parents."
+    "notes": "Primary Source. Does not prove alone that Anna Hopkins Ramsey was his daughter, that this bridges to the Iowa man without continuity records, or that Nehemiah and Elizabeth were his parents.",
+    "claim": "Document",
+    "evidence": "Tennessee state land grant to Jabez Hopkins, Hancock County, entry no. 1237. Entry dated 14 September 1846, grant issued 3 August 1849. Three-acre tra",
+    "narrative": "[To be documented] jabez-hopkins-hancock-tennessee-land-grant"
   },
   {
     "id": "hopkins-family-hancock-tennessee-tax-list",
@@ -545,7 +626,10 @@
     ],
     "place": "Hancock County, Tennessee area",
     "whatItProves": "Probable Hopkins family cluster in the same tax district / locality. Supports that this was not an isolated single-person record.",
-    "notes": "Strong Evidence only if the year/county/source context is confirmed from collection metadata; otherwise Needs Review. Poor scan. Does not prove which Hopkins entry is the exact line, Anna\u2019s parentage, or Rhode Island parentage."
+    "notes": "Strong Evidence only if the year/county/source context is confirmed from collection metadata; otherwise Needs Review. Poor scan. Does not prove which Hopkins entry is the exact line, Anna\u2019s parentage, or Rhode Island parentage.",
+    "claim": "Document",
+    "evidence": "Tax list page (poor scan quality) showing multiple Hopkins entries: Hopkins Jabez Jr, Wm, widow, George, and likely additional Hopkins households near",
+    "narrative": "[To be documented] hopkins-family-hancock-tennessee-tax-list"
   },
   {
     "id": "elizabeth-cole-1739-baptism",
@@ -561,7 +645,10 @@
     ],
     "place": "Scituate / Massachusetts area",
     "whatItProves": "Real Cole-family context source showing an Elizabeth born/baptized 1739. Requires reconciliation before direct-line use.",
-    "notes": "Needs Review for direct-line use. Context only unless the parent conflict (David & Sarah vs Joseph Cole Sr + Freelove Mason) is resolved. Do not attach to prove Jabez parentage or later lineage."
+    "notes": "Needs Review for direct-line use. Context only unless the parent conflict (David & Sarah vs Joseph Cole Sr + Freelove Mason) is resolved. Do not attach to prove Jabez parentage or later lineage.",
+    "claim": "Document",
+    "evidence": "Scituate births / church register page showing \u201cElizabeth, d. David and Sarah, Feb. 9, 1739.\u201d (conflicts with working tree claiming daughter of Joseph",
+    "narrative": "[To be documented] elizabeth-cole-1739-baptism"
   },
   {
     "id": "arthur-edwards-freelove-1850-soap-creek-census",
@@ -578,7 +665,10 @@
     ],
     "place": "Soap Creek Township, Davis County, Iowa",
     "whatItProves": "Arthur Edwards and Freelove household in Davis County, Iowa by 1850, with Elizabeth age 17 born Tennessee. Strong evidence for the Edwards/Clouse Iowa household and migration context.",
-    "notes": "Primary Source. Supports Arthur Edwards + Freelove in Iowa. Note: Freelove Clouse (this lane) is distinct from Freelove Mason (Cole/Hopkins parentage lane). Do not merge the two women."
+    "notes": "Primary Source. Supports Arthur Edwards + Freelove in Iowa. Note: Freelove Clouse (this lane) is distinct from Freelove Mason (Cole/Hopkins parentage lane). Do not merge the two women.",
+    "claim": "Document",
+    "evidence": "1850 U.S. Federal Census, Soap Creek Township, Davis County, Iowa. Arthur Edwards, age 63, born Tennessee; Freelove, age 62, born Virginia; Elizabeth,",
+    "narrative": "[To be documented] arthur-edwards-freelove-1850-soap-creek-census"
   },
   {
     "id": "edwards-1870-iowa-census",
@@ -595,7 +685,10 @@
     ],
     "place": "Iowa",
     "whatItProves": "Strong Edwards household continuity in Iowa. Supports the Iowa phase of the Edwards line and the migration west from Tennessee/Iowa into the Pacific Northwest branch.",
-    "notes": "Primary Source for Edwards household continuity. Part of the Edwards migration trail across Iowa -> Oregon -> Washington."
+    "notes": "Primary Source for Edwards household continuity. Part of the Edwards migration trail across Iowa -> Oregon -> Washington.",
+    "claim": "Document",
+    "evidence": "1870 U.S. Federal Census, Iowa. Edwards household.",
+    "narrative": "[To be documented] edwards-1870-iowa-census"
   },
   {
     "id": "edwards-1880-oregon-census",
@@ -612,7 +705,10 @@
     ],
     "place": "Oregon",
     "whatItProves": "Good downstream proof for the later Edwards branch and continuity after the Iowa period.",
-    "notes": "Primary Source. Downstream proof for the Edwards branch continuity after Iowa."
+    "notes": "Primary Source. Downstream proof for the Edwards branch continuity after Iowa.",
+    "claim": "Document",
+    "evidence": "1880 U.S. Federal Census, Oregon. Edwards household.",
+    "narrative": "[To be documented] edwards-1880-oregon-census"
   },
   {
     "id": "edwards-1900-washington-census",
@@ -629,7 +725,10 @@
     ],
     "place": "Washington",
     "whatItProves": "Later Edwards-line continuity in Washington.",
-    "notes": "Strong context / continuity record for the Edwards migration into Washington. Not a clean proof record by itself."
+    "notes": "Strong context / continuity record for the Edwards migration into Washington. Not a clean proof record by itself.",
+    "claim": "Document",
+    "evidence": "1900 U.S. Federal Census, Washington. Later Edwards-line household.",
+    "narrative": "[To be documented] edwards-1900-washington-census"
   },
   {
     "id": "edwards-1920-washington-census",
@@ -649,7 +748,10 @@
     "fact": "1920 U.S. census page for Pine City Precinct, Whitman County, Washington, showing the Silas J. Edwards household with wife Nancy and daughter Edith in Pine City.",
     "meaning": "Confirms the Edwards household remained in Pine City, Whitman County, Washington in 1920 and places Nancy Ann Dyer and Edith Ann Edwards together in the family home before Edith's 1924 marriage to Hugh Christopher Moore.",
     "whatItProves": "Fact: 1920 U.S. census page for Pine City Precinct, Whitman County, Washington, showing the Silas J. Edwards household with wife Nancy and daughter Edith in Pine City. Meaning: Confirms the Edwards household remained in Pine City, Whitman County, Washington in 1920 and places Nancy Ann Dyer and Edith Ann Edwards together in the family home before Edith's 1924 marriage to Hugh Christopher Moore.",
-    "notes": "Primary census image for the Silas Josiah Edwards household. Useful for the Dyer -> Edwards -> Moore proof chain."
+    "notes": "Primary census image for the Silas Josiah Edwards household. Useful for the Dyer -> Edwards -> Moore proof chain.",
+    "claim": "Document",
+    "evidence": "1920 U.S. Federal Census, Pine City Precinct, Whitman County, Washington, Silas Josiah Edwards household.",
+    "narrative": "[To be documented] edwards-1920-washington-census"
   },
   {
     "id": "edwards-1930-washington-census",
@@ -668,7 +770,10 @@
     "fact": "1930 U.S. census page for Whitman County, Washington, showing the Silas Josiah Edwards and Nancy Edwards household.",
     "meaning": "Confirms Silas Josiah Edwards and Nancy Ann Dyer were still residing in Whitman County, Washington in 1930, extending the Edwards household timeline after the 1920 Pine City census.",
     "whatItProves": "Fact: 1930 U.S. census page for Whitman County, Washington, showing the Silas Josiah Edwards and Nancy Edwards household. Meaning: Confirms Silas Josiah Edwards and Nancy Ann Dyer were still residing in Whitman County, Washington in 1930, extending the Edwards household timeline after the 1920 Pine City census.",
-    "notes": "Primary census image for the later Edwards household in Whitman County. Useful as a residence continuity record for Silas and Nancy."
+    "notes": "Primary census image for the later Edwards household in Whitman County. Useful as a residence continuity record for Silas and Nancy.",
+    "claim": "Document",
+    "evidence": "1930 U.S. Federal Census, Erie Voting Precinct No. 1, Whitman County, Washington, Silas Josiah Edwards household.",
+    "narrative": "[To be documented] edwards-1930-washington-census"
   },
   {
     "id": "edwards-1940-washington-census",
@@ -684,7 +789,10 @@
     ],
     "place": "Washington",
     "whatItProves": "Edwards-line continuity in Washington.",
-    "notes": "Continuity record only."
+    "notes": "Continuity record only.",
+    "claim": "Document",
+    "evidence": "1940 U.S. Federal Census, Washington. Edwards-line household.",
+    "narrative": "[To be documented] edwards-1940-washington-census"
   },
   {
     "id": "washington-territory-edwards-census",
@@ -701,7 +809,10 @@
     ],
     "place": "Washington Territory",
     "whatItProves": "Broad Edwards cluster evidence in Washington Territory.",
-    "notes": "Broad cluster evidence only, not a clean proof record by itself. Context only."
+    "notes": "Broad cluster evidence only, not a clean proof record by itself. Context only.",
+    "claim": "Document",
+    "evidence": "Washington Territory census page showing Edwards cluster.",
+    "narrative": "[To be documented] washington-territory-edwards-census"
   },
   {
     "id": "josiah-edwards-pine-city-marriage",
@@ -720,7 +831,10 @@
     ],
     "place": "Pine City, Washington",
     "whatItProves": "Marriage of Silas Josiah Edwards and Nancy Ann Dyer in Pine City. Parent names (Anderson Edwards and Armina Ramsey) are written in the return. This is a direct family record supporting the Dyer to Edwards connection.",
-    "notes": "Primary Source. Direct family record of the marriage return for Josiah (Silas Josiah) Edwards and Nancy Ann Dyer in Pine City, with parent names written in. This anchors the link between the Dyer and Edwards families."
+    "notes": "Primary Source. Direct family record of the marriage return for Josiah (Silas Josiah) Edwards and Nancy Ann Dyer in Pine City, with parent names written in. This anchors the link between the Dyer and Edwards families.",
+    "claim": "Document",
+    "evidence": "Marriage return for Josiah Edwards (Silas Josiah Edwards) and Nancy Ann Dyer in Pine City, with parent names written in.",
+    "narrative": "[To be documented] josiah-edwards-pine-city-marriage"
   },
   {
     "id": "edith-ann-edwards-hugh-moore-marriage",
@@ -743,7 +857,10 @@
     "fact": "Marriage entry for Hugh Christopher Moore (age 28) and Edith Ann Edwards (age 23) on 26 May 1924 in Colfax, Whitman County, Washington, naming parents James Moore and Jesse Bowen for Hugh, and Josiah Edwards and Nancy Dyer for Edith.",
     "meaning": "Confirms the Moore and Edwards marriage in 1924 and directly ties Hugh Christopher Moore to James Moore and Jessie Bowen, and Edith Ann Edwards to Silas Josiah Edwards and Nancy Ann Dyer.",
     "whatItProves": "Fact: Marriage entry for Hugh Christopher Moore (age 28) and Edith Ann Edwards (age 23) on 26 May 1924 in Colfax, Whitman County, Washington, naming parents James Moore and Jesse Bowen for Hugh, and Josiah Edwards and Nancy Dyer for Edith. Meaning: Confirms the Moore and Edwards marriage in 1924 and directly ties Hugh Christopher Moore to James Moore and Jessie Bowen, and Edith Ann Edwards to Silas Josiah Edwards and Nancy Ann Dyer.",
-    "notes": "Primary Source. FamilySearch extracts Edith's mother as Nancy Dyer; this aligns with the family profile for Nancy Ann Dyer Jennings. Strong bridge record for the Dyer -> Edwards -> Moore line."
+    "notes": "Primary Source. FamilySearch extracts Edith's mother as Nancy Dyer; this aligns with the family profile for Nancy Ann Dyer Jennings. Strong bridge record for the Dyer -> Edwards -> Moore line.",
+    "claim": "Document",
+    "evidence": "Washington, County Marriages, 1855-2008, FamilySearch, entry for Hugh Christopher Moore and Edith Ann Edwards, 26 May 1924, Colfax, Whitman, Washingto",
+    "narrative": "[To be documented] edith-ann-edwards-hugh-moore-marriage"
   },
   {
     "id": "george-washington-dyer-1850-liberty-iowa-census",
@@ -759,7 +876,10 @@
     ],
     "place": "Liberty, Jefferson County, Iowa, USA",
     "whatItProves": "George Washington Dyer, age 15, residing in Liberty, Jefferson County, Iowa in 1850.",
-    "notes": "Primary Source. This census page confirms the 1850 residence of George Washington Dyer (age 15) in Iowa, as recorded in the profile facts."
+    "notes": "Primary Source. This census page confirms the 1850 residence of George Washington Dyer (age 15) in Iowa, as recorded in the profile facts.",
+    "claim": "Document",
+    "evidence": "1850 United States Federal Census, Liberty, Jefferson County, Iowa.",
+    "narrative": "[To be documented] george-washington-dyer-1850-liberty-iowa-census"
   },
   {
     "id": "george-washington-dyer-1880-whitman-census",
@@ -777,7 +897,10 @@
     ],
     "place": "Whitman County, Washington, USA",
     "whatItProves": "George Washington Dyer, age 45, residing in Whitman County, Washington in 1880. Marital status: Married; Relation to Head of House: Self. Includes wife Elizabeth Ellen Conley and family including daughter Nancy Ann Dyer.",
-    "notes": "Primary Source. Direct image of the 1880 census page confirming residence in Whitman County, Washington for George Washington Dyer and household, matching the profile facts."
+    "notes": "Primary Source. Direct image of the 1880 census page confirming residence in Whitman County, Washington for George Washington Dyer and household, matching the profile facts.",
+    "claim": "Document",
+    "evidence": "1880 United States Federal Census, Whitman County, Washington.",
+    "narrative": "[To be documented] george-washington-dyer-1880-whitman-census"
   },
   {
     "id": "george-washington-dyer-1900-pine-city-census",
@@ -795,7 +918,10 @@
     ],
     "place": "Pine, Whitman County, Washington, USA",
     "whatItProves": "George Washington Dyer (head of household), born November 1835 in Illinois, age 64, married 34 years, residing in Pine, Whitman County, Washington in 1900. Relation to Head of House: Head. Includes wife Elizabeth Ellen Conley.",
-    "notes": "Primary Source. This census image confirms the 1900 residence details for George Washington Dyer as head in Pine, Whitman County, including birth month and year and marital status from the profile facts."
+    "notes": "Primary Source. This census image confirms the 1900 residence details for George Washington Dyer as head in Pine, Whitman County, including birth month and year and marital status from the profile facts.",
+    "claim": "Document",
+    "evidence": "1900 United States Federal Census, Pine City Precinct, Whitman County, Washington.",
+    "narrative": "[To be documented] george-washington-dyer-1900-pine-city-census"
   },
   {
     "id": "hugh-christopher-moore-1901-ellisboro-census",
@@ -815,7 +941,10 @@
     ],
     "place": "Ellisboro, Assiniboia, The Territories, Canada",
     "whatItProves": "James Moore (head of household), wife Jessie Bowen, and children Hugh C., Norman, and Janet M. (Catherine) residing in Ellisboro. Confirms 1901 residence fact and family composition.",
-    "notes": "Primary Source. 1901 Census page for the Moore family."
+    "notes": "Primary Source. 1901 Census page for the Moore family.",
+    "claim": "Document",
+    "evidence": "1901 Census of Canada, Ellisboro, Assiniboia (east/est), The Territories, Canada.",
+    "narrative": "[To be documented] hugh-christopher-moore-1901-ellisboro-census"
   },
   {
     "id": "hugh-christopher-moore-1906-quappelle-census",
@@ -836,7 +965,10 @@
     ],
     "place": "Townships 15, 16, 17, 18 in ranges 11, 12 west of the 2nd M, Qu'Appelle, Saskatchewan, Canada",
     "whatItProves": "James Moore household including wife Jessie and children H C R (Hugh Christopher), Norman, Catherine, and Jeanette M. (Janet Hazel) in rural Saskatchewan.",
-    "notes": "Primary Source. 1906 Canada Census page confirming the Moore family residence in rural Saskatchewan."
+    "notes": "Primary Source. 1906 Canada Census page confirming the Moore family residence in rural Saskatchewan.",
+    "claim": "Document",
+    "evidence": "1906 Census of Manitoba, Saskatchewan, and Alberta, Qu'Appelle, Saskatchewan.",
+    "narrative": "[To be documented] hugh-christopher-moore-1906-quappelle-census"
   },
   {
     "id": "hugh-christopher-moore-1916-medicine-hat-census",
@@ -857,7 +989,10 @@
     ],
     "place": "11th Street, Medicine Hat, Alberta, Canada",
     "whatItProves": "James Moore and wife Jessie Bowen residing in Medicine Hat with children William R., Hugh C., Kathleen (Catherine), and Janet H.",
-    "notes": "Primary Source. 1916 Census page for the Moore household in Medicine Hat, Alberta, showing the family cluster with military service notes for the sons."
+    "notes": "Primary Source. 1916 Census page for the Moore household in Medicine Hat, Alberta, showing the family cluster with military service notes for the sons.",
+    "claim": "Document",
+    "evidence": "1916 Canada Census of Manitoba, Saskatchewan, and Alberta, Medicine Hat, Alberta.",
+    "narrative": "[To be documented] hugh-christopher-moore-1916-medicine-hat-census"
   },
   {
     "id": "hugh-christopher-moore-1921-medicine-hat-census",
@@ -876,7 +1011,10 @@
     ],
     "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
     "whatItProves": "James Moore and wife Jessie Bowen residing with sons Hugh and Norman J. in Alberta. Confirms 1921 residence and household composition.",
-    "notes": "Primary Source. 1921 Canada Census page for the Moore household in Medicine Hat."
+    "notes": "Primary Source. 1921 Canada Census page for the Moore household in Medicine Hat.",
+    "claim": "Document",
+    "evidence": "1921 Census of Canada, Township 11 Range 7W4, Medicine Hat, Alberta.",
+    "narrative": "[To be documented] hugh-christopher-moore-1921-medicine-hat-census"
   },
   {
     "id": "hugh-christopher-moore-1917-us-wwi-draft",
@@ -892,7 +1030,10 @@
     ],
     "place": "Cascade, Montana, USA",
     "whatItProves": "Hugh C. Moore, age ~21-22, born July 22 1895 (or 1896) in Blackwood, Canada; residing Cascade, Montana; occupation Lee Forest Garage, Great Falls; single. Matches 1917 residence fact.",
-    "notes": "Primary Source. U.S. WWI Draft card for Hugh during his time in Montana."
+    "notes": "Primary Source. U.S. WWI Draft card for Hugh during his time in Montana.",
+    "claim": "Document",
+    "evidence": "U.S., World War I Draft Registration Cards, 1917-1918, Cascade, Montana for Hugh C. Moore.",
+    "narrative": "[To be documented] hugh-christopher-moore-1917-us-wwi-draft"
   },
   {
     "id": "hugh-christopher-moore-canadian-attestation-1917",
@@ -908,7 +1049,10 @@
     ],
     "place": "Medicine Hat, Alberta, Canada",
     "whatItProves": "Hugh Christopher Moore, born 22 Jul 1895 Sintaluta, Sask; next of kin father James Moore at 11th St, Medicine Hat; willing to serve in Canadian Over-Seas Expeditionary Force.",
-    "notes": "Primary Source. Canadian Attestation Paper for Hugh's WWI service, confirming birth details and family."
+    "notes": "Primary Source. Canadian Attestation Paper for Hugh's WWI service, confirming birth details and family.",
+    "claim": "Document",
+    "evidence": "Canada, Soldiers of the First World War, 1914-1918, attestation for Hugh Christopher Moore, CEF.",
+    "narrative": "[To be documented] hugh-christopher-moore-canadian-attestation-1917"
   },
   {
     "id": "josiah-ramsey-will-1835",
@@ -928,7 +1072,10 @@
     "fact": "Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey\u2019s will.",
     "meaning": "Proves his estate and heirs in Pennsylvania (confirms identity trail).",
     "whatItProves": "Fact: Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey\u2019s will. Meaning: Proves his estate and heirs in Pennsylvania (confirms identity trail).",
-    "notes": "Primary Source. Page from official will book recording the probate of Josiah Ramsey's will, including signatures and executor details. Note: This PA 1835 will is not linked to the working Tennessee Josiah Ramsey (c.1765/69-1834 or 1769-1835) profiles; it conflicts with TN residence/land grant/death trail and may be a different person or excluded attachment."
+    "notes": "Primary Source. Page from official will book recording the probate of Josiah Ramsey's will, including signatures and executor details. Note: This PA 1835 will is not linked to the working Tennessee Josiah Ramsey (c.1765/69-1834 or 1769-1835) profiles; it conflicts with TN residence/land grant/death trail and may be a different person or excluded attachment.",
+    "claim": "Document",
+    "evidence": "Will Book No. 5, Washington County, Pennsylvania, page containing the will of Josiah Ramsey.",
+    "narrative": "[To be documented] josiah-ramsey-will-1835"
   },
   {
     "id": "josiah-edwards-marriage-return-1895",
@@ -948,7 +1095,10 @@
     "fact": "Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA.",
     "meaning": "Establishes Josiah\u2019s third marriage and family continuity in the Edwards line.",
     "whatItProves": "Fact: Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA. Meaning: Establishes Josiah\u2019s third marriage and family continuity in the Edwards line.",
-    "notes": "Primary Source. Official marriage return recording the union, with ages, occupations, and previous marriages noted."
+    "notes": "Primary Source. Official marriage return recording the union, with ages, occupations, and previous marriages noted.",
+    "claim": "Document",
+    "evidence": "Marriage return for Josiah Edwards, Colfax, Washington, October 17, 1895.",
+    "narrative": "[To be documented] josiah-edwards-marriage-return-1895"
   },
   {
     "id": "edwards-washington-census-evidence",
@@ -965,7 +1115,10 @@
     ],
     "place": "Washington",
     "whatItProves": "Edwards family presence and continuity in Washington state. Supports migration from Iowa/Oregon.",
-    "notes": "Primary Source. Census evidence for the Edwards line in Washington."
+    "notes": "Primary Source. Census evidence for the Edwards line in Washington.",
+    "claim": "Document",
+    "evidence": "U.S. Federal Census, Washington, Edwards family continuity.",
+    "narrative": "[To be documented] edwards-washington-census-evidence"
   },
   {
     "id": "edwards-oregon-census",
@@ -982,7 +1135,10 @@
     ],
     "place": "Oregon",
     "whatItProves": "Edwards family in Oregon during the migration period. Continuity evidence.",
-    "notes": "Primary Source. Oregon census page showing the family during westward movement."
+    "notes": "Primary Source. Oregon census page showing the family during westward movement.",
+    "claim": "Document",
+    "evidence": "1880 U.S. Federal Census, Oregon, Edwards household.",
+    "narrative": "[To be documented] edwards-oregon-census"
   },
   {
     "id": "bowen-family-1881-manitoba-census",
@@ -998,7 +1154,10 @@
     ],
     "place": "Western Extension, Manitoba Extension, Manitoba, Canada",
     "whatItProves": "Jessie Bowen (age 7) living with parents Hugh Bowen and Jennet Souster and siblings in Manitoba. Confirms the 1881 residence fact and early family composition in western Canada.",
-    "notes": "Primary Source. 1881 Census page for the Bowen family, listing young Jessie Bowen born in Ontario."
+    "notes": "Primary Source. 1881 Census page for the Bowen family, listing young Jessie Bowen born in Ontario.",
+    "claim": "Document",
+    "evidence": "1881 Census of Canada, Western Extension, Manitoba Extension, Manitoba, Canada.",
+    "narrative": "[To be documented] bowen-family-1881-manitoba-census"
   },
   {
     "id": "hugh-bowen-jennet-souster-marriage-1870",
@@ -1015,7 +1174,10 @@
     ],
     "place": "South Crosby, Leeds and Grenville, Ontario, Canada",
     "whatItProves": "Marriage of Hugh Bowen (age 27, farmer, born South Elmsley) and Jennet Souster (age 23, born Crosby). Confirms the 1870 marriage fact and parentage details from the register.",
-    "notes": "Primary Source. Ontario marriage register page recording the union of Hugh Bowen and Jennet Souster in South Crosby, with ages, residences, and parents' names."
+    "notes": "Primary Source. Ontario marriage register page recording the union of Hugh Bowen and Jennet Souster in South Crosby, with ages, residences, and parents' names.",
+    "claim": "Document",
+    "evidence": "Ontario, Canada, Marriages, 1801-1928, Leeds and Grenville Counties, marriage of Hugh Bowen and Jennet Souster, 27 November 1870.",
+    "narrative": "[To be documented] hugh-bowen-jennet-souster-marriage-1870"
   },
   {
     "id": "isreal-bowen-dutch-reformed-1794",
@@ -1031,7 +1193,10 @@
     ],
     "place": "Shawangunk or Ulster area, New York",
     "whatItProves": "Baptism or birth record for John (son of Israel Bowen and Isabella) born 7 Dec 1794. Confirms family presence in New York around 1794 and parentage.",
-    "notes": "Primary Source. Dutch Reformed Church record listing parents Israel Bowen & Isabella and child John born Dec 1794."
+    "notes": "Primary Source. Dutch Reformed Church record listing parents Israel Bowen & Isabella and child John born Dec 1794.",
+    "claim": "Document",
+    "evidence": "U.S., Dutch Reformed Church Records in Selected States, 1639-1989, baptism record for child of Israel Bowen and Isabella, 1794.",
+    "narrative": "[To be documented] isreal-bowen-dutch-reformed-1794"
   },
   {
     "id": "isreal-bowen-1819-ashby-loyal-volunteers",
@@ -1047,7 +1212,10 @@
     ],
     "place": "Canada (Ashby Loyal Volunteers)",
     "whatItProves": "Military service record showing Israel Bowen as Private in Ashby Loyal Volunteers, serving January 1819 (31 days). Confirms military involvement in Canada around 1819.",
-    "notes": "Primary Source. Pay list and acquittance roll for the Ashby Loyal Volunteers, January 1819, with Israel Bowen listed."
+    "notes": "Primary Source. Pay list and acquittance roll for the Ashby Loyal Volunteers, January 1819, with Israel Bowen listed.",
+    "claim": "Document",
+    "evidence": "Canada, British Army and Canadian Militia Muster Rolls and Pay Lists, 1795-1850, Ashby Loyal Volunteers, pay list for January 1819 listing Israel Bowe",
+    "narrative": "[To be documented] isreal-bowen-1819-ashby-loyal-volunteers"
   },
   {
     "id": "nathan-bowen-mary-bowen-death-1745",
@@ -1064,7 +1232,10 @@
     ],
     "place": "Booth Maine",
     "whatItProves": "Death of Mary Bowen, wife of Nathan Bowen, on July 11, 1745, at age 43. Supports the family line for Isreal Bowen as son of Nathan and Mary.",
-    "notes": "Primary Source. Official copy of an old death record for Mary Bowen, wife of Nathan Bowen."
+    "notes": "Primary Source. Official copy of an old death record for Mary Bowen, wife of Nathan Bowen.",
+    "claim": "Document",
+    "evidence": "Copy of an old record of a death for Mary Bowen, wife of Nathan Bowen, died July 11, 1745, age 43.",
+    "narrative": "[To be documented] nathan-bowen-mary-bowen-death-1745"
   },
   {
     "id": "isreal-bowen-1748-grave-marker",
@@ -1080,7 +1251,10 @@
     ],
     "place": "Old Sutherland Cemetery (Old Trinity Anglican), Mooretown, Lambton County, Ontario, Canada",
     "whatItProves": "Gravestone confirms Israel (Isreal) Bowen died 5 April 1848 at age 100; native of Swansea, Massachusetts, USA. Provides visual evidence for death date, age at death, and place of burial.",
-    "notes": "Strong evidence from cemetery monument. Spelling on stone is 'Israel Bowen'. Photo linked in Ancestry to Isreal Bowen (1748-1848)."
+    "notes": "Strong evidence from cemetery monument. Spelling on stone is 'Israel Bowen'. Photo linked in Ancestry to Isreal Bowen (1748-1848).",
+    "claim": "Document",
+    "evidence": "Ancestry shared photograph of the gravestone of Israel Bowen in Old Sutherland Cemetery (Old Trinity), Mooretown, Lambton County, Ontario, Canada. Ins",
+    "narrative": "[To be documented] isreal-bowen-1748-grave-marker"
   },
   {
     "id": "isreal-bowen-1748-sutherland-cemetery-plaque",
@@ -1096,7 +1270,10 @@
     ],
     "place": "Mooretown, Lambton County, Ontario, Canada",
     "whatItProves": "Identifies the exact historic burial location (Old Trinity / Sutherland Cemetery) in Mooretown where Isreal Bowen was interred in 1848. Confirms the place of death and burial stated in other records.",
-    "notes": "Contextual evidence for burial site. The plaque was erected by the Ontario Archaeological and Historic Sites Board. Linked to Isreal Bowen in Ancestry."
+    "notes": "Contextual evidence for burial site. The plaque was erected by the Ontario Archaeological and Historic Sites Board. Linked to Isreal Bowen in Ancestry.",
+    "claim": "Document",
+    "evidence": "Ancestry shared photograph of the historic plaque for 'Old Trinity' Old Sutherland Cemetery, Mooretown, Lambton County, Ontario. Notes the church buil",
+    "narrative": "[To be documented] isreal-bowen-1748-sutherland-cemetery-plaque"
   },
   {
     "id": "name-variants-glossary",
@@ -1113,7 +1290,10 @@
     "fact": "Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people.",
     "meaning": "Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
     "whatItProves": "Fact: Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people. Meaning: Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
-    "notes": "Observed variants:\n- Bowen line: Isreal (1748\u20131848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences."
+    "notes": "Observed variants:\n- Bowen line: Isreal (1748\u20131848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences.",
+    "claim": "Document",
+    "evidence": "Compiled from profile notes, census transcriptions, and record images in the Living Red Book archive.",
+    "narrative": "[To be documented] name-variants-glossary"
   },
   {
     "id": "1850-bloomfield-davis-iowa-census-ramsey-edwards",
@@ -1136,7 +1316,10 @@
     "fact": "1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (enumerated 18 Oct 1850) shows household of Thomas Ramsey (50, VA) and Anna (40, TN) with children Josiah (16, VA), Franklin (14, TN), Henderson (12, TN), Cowen (10, TN), Rachel (5, TN); and adjacent household of Anderson Edwards (18, TN) and Armina (23, TN).",
     "meaning": "Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
     "whatItProves": "Fact: 1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (enumerated 18 Oct 1850) shows household of Thomas Ramsey (50, VA) and Anna (40, TN) with children Josiah (16, VA), Franklin (14, TN), Henderson (12, TN), Cowen (10, TN), Rachel (5, TN); and adjacent household of Anderson Edwards (18, TN) and Armina (23, TN). Meaning: Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
-    "notes": "Primary Source. 1850 census image. Directly supports the 1850 census entry in the attached FamilySearch tree record for Armina Edwards. See also 1860 Decatur census and later Washington censuses for continuity."
+    "notes": "Primary Source. 1850 census image. Directly supports the 1850 census entry in the attached FamilySearch tree record for Armina Edwards. See also 1860 Decatur census and later Washington censuses for continuity.",
+    "claim": "Document",
+    "evidence": "\"Davis, Iowa, United States records,\" images, FamilySearch (https://www.familysearch.org/ark:/61903/3:1:S3HT-D489-3HD?view=index : Jun 26, 2026), imag",
+    "narrative": "[To be documented] 1850-bloomfield-davis-iowa-census-ramsey-edwards"
   },
   {
     "id": "richland-township-1880-iowa-census-ramsey-edwards",
@@ -1159,7 +1342,10 @@
     "fact": "1880 U.S. Federal Census page for Richland Township, Decatur County, Iowa shows Thomas Ramsey (age 80, VA), Anna (age ~70, TN), Rachel, William and other Ramsey family members; also lists Anderson Edwards (~48, TN) and Armina (~53, TN) with household details.",
     "meaning": "Provides primary evidence of the Ramsey and Edwards families still residing in Decatur County, Iowa in 1880, with Thomas and Anna Ramsey advanced in age, and the next generation (Anderson/Armina) with family, supporting long-term Iowa settlement before full move to Washington.",
     "whatItProves": "Fact: 1880 U.S. Federal Census page for Richland Township, Decatur County, Iowa shows Thomas Ramsey (age 80, VA), Anna (age ~70, TN), Rachel, William and other Ramsey family members; also lists Anderson Edwards (~48, TN) and Armina (~53, TN) with household details. Meaning: Provides primary evidence of the Ramsey and Edwards families still residing in Decatur County, Iowa in 1880, with Thomas and Anna Ramsey advanced in age, and the next generation (Anderson/Armina) with family, supporting long-term Iowa settlement before full move to Washington.",
-    "notes": "Primary Source. 1880 census image. Complements the 1850 Bloomfield census and shows continuity of the combined Ramsey/Edwards line in Iowa. See also later Washington censuses and obituary for migration."
+    "notes": "Primary Source. 1880 census image. Complements the 1850 Bloomfield census and shows continuity of the combined Ramsey/Edwards line in Iowa. See also later Washington censuses and obituary for migration.",
+    "claim": "Document",
+    "evidence": "1880 U.S. Federal Census, Richland Township, Decatur County, Iowa - Thomas Ramsey and Anderson Edwards households.",
+    "narrative": "[To be documented] richland-township-1880-iowa-census-ramsey-edwards"
   },
   {
     "id": "luella-edwards-jennings-death-1938",
@@ -1181,7 +1367,10 @@
     "fact": "Death certificate for Luella Jennings (widow of James Jennings), born 1 July 1866 in Iowa, died 30 September 1938 in St. John, Washington, age 68. Father Anderson Edwards born Tennessee, mother Armina Ramsey born Tennessee. Informant Mrs. Chester Smith. Burial St. John, Washington.",
     "meaning": "Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
     "whatItProves": "Fact: Death certificate for Luella Jennings (widow of James Jennings), born 1 July 1866 in Iowa, died 30 September 1938 in St. John, Washington, age 68. Father Anderson Edwards born Tennessee, mother Armina Ramsey born Tennessee. Informant Mrs. Chester Smith. Burial St. John, Washington. Meaning: Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
-    "notes": "Primary Source. Washington State death certificate. Directly supports Luella's death details, birth place/year, and parentage as listed in the FamilySearch tree for Armina Edwards' children."
+    "notes": "Primary Source. Washington State death certificate. Directly supports Luella's death details, birth place/year, and parentage as listed in the FamilySearch tree for Armina Edwards' children.",
+    "claim": "Document",
+    "evidence": "Washington State Board of Health, Bureau of Vital Statistics, Certificate of Death for Luella Jennings, St. John, Whitman County, Washington, 30 Septe",
+    "narrative": "[To be documented] luella-edwards-jennings-death-1938"
   },
   {
     "id": "calgary-directory-1958-marchant",
@@ -1202,7 +1391,10 @@
     "fact": "Calgary city directory page (81981 Page 3) for 48th Avenue NE lists David Marchant (draughtsman) and Mrs. Nancy Carol Marchant at 315.",
     "meaning": "Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
     "whatItProves": "Fact: Calgary city directory page (81981 Page 3) for 48th Avenue NE lists David Marchant (draughtsman) and Mrs. Nancy Carol Marchant at 315. Meaning: Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
-    "notes": "Primary Source. Calgary city directory scan from Henderson's Directory c. 1958."
+    "notes": "Primary Source. Calgary city directory scan from Henderson's Directory c. 1958.",
+    "claim": "Document",
+    "evidence": "Henderson's Calgary City Directory, 1958, page 81981, Page 3, '48TH AVENUE NORTH EAST' section, listing David Marchant at 315, and Mrs. Nancy Carol Ma",
+    "narrative": "[To be documented] calgary-directory-1958-marchant"
   },
   {
     "id": "decatur-county-1856-census",
@@ -1233,7 +1425,10 @@
     "fact": "1856 Iowa State Census page for Richland Township, Decatur County, showing the Thomas Ramsey household (no. 23) and the adjacent Anderson Edwards household (no. 26).",
     "meaning": "Confirms the adjacent residence of the Ramsey and Edwards families in Richland Township, Decatur County in 1856, and lists all children in both households including ages, birthplaces, and years resident in Iowa.",
     "whatItProves": "Fact: 1856 Iowa State Census page for Richland Township, Decatur County, showing the Thomas Ramsey household (no. 23) and the adjacent Anderson Edwards household (no. 26). Meaning: Confirms the adjacent residence of the Ramsey and Edwards families in Richland Township, Decatur County in 1856, and lists all children in both households including ages, birthplaces, and years resident in Iowa.",
-    "notes": "Primary Source. Iowa State Census schedule scan. Links the entire Thomas Ramsey and Anderson Edwards family groups during their Iowa residency."
+    "notes": "Primary Source. Iowa State Census schedule scan. Links the entire Thomas Ramsey and Anderson Edwards family groups during their Iowa residency.",
+    "claim": "Document",
+    "evidence": "1856 Iowa State Census, Richland Township, Decatur County, Iowa, households 23 and 26.",
+    "narrative": "[To be documented] decatur-county-1856-census"
   },
   {
     "id": "obituary-colleen-lattin-2020",
@@ -1258,7 +1453,10 @@
     "fact": "Obituary for Colleen Gay Lattin (died 5 November 2020, age 58), naming parents David and Nancy Marchant, brother Brett, and nephews Shawn and Aaron.",
     "meaning": "Provides primary evidence for the death of Colleen Gay Lattin and her relationship to her parents (David and Nancy Marchant), brother (Brett), and nephews (Shawn and Aaron), establishing the multi-generational link for the Marchant line.",
     "whatItProves": "Fact: Obituary for Colleen Gay Lattin (died 5 November 2020, age 58), naming parents David and Nancy Marchant, brother Brett, and nephews Shawn and Aaron. Meaning: Provides primary evidence for the death of Colleen Gay Lattin and her relationship to her parents (David and Nancy Marchant), brother (Brett), and nephews (Shawn and Aaron), establishing the multi-generational link for the Marchant line.",
-    "notes": "Primary Source. Obituary transcription from familysearch.org."
+    "notes": "Primary Source. Obituary transcription from familysearch.org.",
+    "claim": "Document",
+    "evidence": "United States, Obituary Records, 2014-2023, FamilySearch, obituary of Colleen Gay Lattin, published 20 November 2020, Calgary, Alberta, Canada.",
+    "narrative": "[To be documented] obituary-colleen-lattin-2020"
   },
   {
     "id": "phoebe-morris-dyer-obituary",
@@ -1276,7 +1474,10 @@
     ],
     "sourceCitation": "Polk County, Oregon newspaper obituary, February 15, 1886. Published record of Phoebe Morris Dyer death.",
     "whatItProves": "Confirms Phoebe Morris (b. October 16, 1804 in Belmont County, Ohio) married Jonathan (John) Dyer on May 31, 1866 in Polk County, Oregon. Also documents her first marriage to Asa Morris (Dec 6, 1823) and eight children from that union.",
-    "notes": "Obituary states she was \"aged 81 years and 4 months\" at death. Details her life in Ohio (24 years), migration to Iowa (1853), and settlement in Oregon (1860). Lists surviving children: Wm. Morris (Eddyville, Iowa), Eliza Morris (Stockton, CA), Lydia A. D'Lashmatt (Dallas), Mary A. Graham (Salem), John Morris (Dallas)."
+    "notes": "Obituary states she was \"aged 81 years and 4 months\" at death. Details her life in Ohio (24 years), migration to Iowa (1853), and settlement in Oregon (1860). Lists surviving children: Wm. Morris (Eddyville, Iowa), Eliza Morris (Stockton, CA), Lydia A. D'Lashmatt (Dallas), Mary A. Graham (Salem), John Morris (Dallas).",
+    "claim": "Phoebe Morris Dyer Obituary",
+    "evidence": "Polk County, Oregon newspaper obituary, February 15, 1886. Published record of Phoebe Morris Dyer death.",
+    "narrative": "[To be documented] Phoebe Morris Dyer Obituary"
   },
   {
     "id": "dyer-early-land-ownership-plat",
@@ -1292,7 +1493,10 @@
     ],
     "sourceCitation": "Oregon General Land Office, Donation Land Claim Records. U.S., Indexed Early Land Ownership and Township Plats, 1785-1898.",
     "whatItProves": "Certifies Jonathan Dyer held land in Polk County, Oregon (Township 6S Range 6W Willamette Meridian), DLC parcel ~5065. Directly corroborates his Oregon settlement and residence during 1866 marriage to Phoebe Morris. Consistent with Phoebe dying in Polk County (1865, 1886) and George Washington Dyer's documented Oregon/Washington residences.",
-    "notes": "Oregon GLO (General Land Office) donation land claim plat, certified copy. Township 6S Range 6W Willamette Meridian - the exact Polk County area where Jonathan married Phoebe (1866) and where Phoebe later died (1886). DLC number approximately 5065."
+    "notes": "Oregon GLO (General Land Office) donation land claim plat, certified copy. Township 6S Range 6W Willamette Meridian - the exact Polk County area where Jonathan married Phoebe (1866) and where Phoebe later died (1886). DLC number approximately 5065.",
+    "claim": "Jonathan Dyer Donation Land Claim - Polk County, Oregon",
+    "evidence": "Oregon General Land Office, Donation Land Claim Records. U.S., Indexed Early Land Ownership and Township Plats, 1785-1898.",
+    "narrative": "[To be documented] Jonathan Dyer Donation Land Claim - Polk County, Oregon"
   },
   {
     "id": "robert-f-dyer-death-certificate",
@@ -1310,7 +1514,10 @@
     ],
     "sourceCitation": "Death Certificate, Form V.S. No. 5-12 M, 6-15-17. County of Oregon. Bureau of Vital Statistics.",
     "whatItProves": "Confirms Robert F. Dyer (born May 14, 1843 in Iowa) was son of Jonathan Dyer and Nancy [Boley]. Farmer. Died of senility at age 76 years 3 months 6 days. Burial at Mount Hill Cemetery.",
-    "notes": "Death certificate filed 1920. Confirms parentage and birth year matching archive records for Robert F. Dyer (1843-1920)."
+    "notes": "Death certificate filed 1920. Confirms parentage and birth year matching archive records for Robert F. Dyer (1843-1920).",
+    "claim": "Robert F. Dyer Death Certificate (1920)",
+    "evidence": "Death Certificate, Form V.S. No. 5-12 M, 6-15-17. County of Oregon. Bureau of Vital Statistics.",
+    "narrative": "[To be documented] Robert F. Dyer Death Certificate (1920)"
   },
   {
     "id": "jonathan-dyer-phoebe-morris-marriage-record",
@@ -1327,6 +1534,114 @@
     ],
     "sourceCitation": "Oregon Vital Statistics Record (ORE STAT 18 Je 66, 3:2). Official marriage registration.",
     "whatItProves": "Official Oregon vital statistics record confirming marriage of Jonathan Dyer to Phoebe Morris on May 31, 1866 in Polk County, Oregon. Ceremony performed by Elder G W Richardson at residence of E L D'Lashmitt (Phoebe's son-in-law, per obituary). Matches Phoebe Morris Dyer obituary date and location exactly.",
-    "notes": "Recorded 18 June 1866. Name used as \"Jonathan Dyer\" (vs \"John\" in some records). Vital Statistics confirm Polk County residence. Reference to D'Lashmitt aligns with Phoebe obituary narrative of migration with son-in-law."
+    "notes": "Recorded 18 June 1866. Name used as \"Jonathan Dyer\" (vs \"John\" in some records). Vital Statistics confirm Polk County residence. Reference to D'Lashmitt aligns with Phoebe obituary narrative of migration with son-in-law.",
+    "claim": "Jonathan Dyer & Phoebe Morris Marriage Record (1866)",
+    "evidence": "Oregon Vital Statistics Record (ORE STAT 18 Je 66, 3:2). Official marriage registration.",
+    "narrative": "[To be documented] Jonathan Dyer & Phoebe Morris Marriage Record (1866)"
+  },
+  {
+    "id": "1778-15th-virginia-regiment-muster-roll",
+    "title": "1778 Muster Roll - 15th Virginia Regiment",
+    "filename": "1778-15th-virginia-regiment-muster-roll.jpg",
+    "date": "1778-04-16",
+    "archiveCategory": "Primary Source",
+    "confidence": "Primary Source",
+    "sourceCitation": "U.S. National Archives. Revolutionary War Era Muster Rolls of the Continental Army. Record Group 93. Microfilm Publication M881. Unit: 15th Virginia Regiment of Foot, Ensign George Menzies' detachment, April 1778. Private William Dyer, #28 (recorded as 'Sick' in 15th Regiment). National Archives catalog: miusa1775a_113662-00157.",
+    "people": [
+      "William Dyer"
+    ],
+    "description": "Hand-written muster roll from April 1778 recording soldiers of the 15th Virginia Regiment under Ensign George Menzies, including a Private William Dyer listed as 'Sick'. NOTE: Geographic analysis indicates this coastal-Virginia-recruited unit does not match the known Shenandoah Valley Dyer family branch (Charles Dyer's line). This appears to be a different William Dyer; conflation on Ancestry requires source verification.",
+    "researchNotes": "IMPORTANT NEGATIVE FINDING: Ancestry.com conflated this muster roll record with Charles Dyer's family line. The 15th Virginia Regiment was recruited almost exclusively from coastal and eastern Virginia (Norfolk, Westmoreland). The documented Dyer family (Charles Dyer b.1755) resided in the Shenandoah Valley (Washington/Montgomery County). No primary evidence links this William Dyer to Charles Dyer or the archive's Dyer line. Kept as primary source to document the conflation and prevent duplication errors.",
+    "extractedData": {
+      "militaryUnit": "15th Virginia Regiment of Foot",
+      "commander": "Ensign George Menzies",
+      "mustering_date": "1778-04-16",
+      "soldier_name": "William Dyer",
+      "rank": "Private",
+      "military_status": "Sick",
+      "regimental_number": "28",
+      "estimated_recruitment_region": "Coastal/Eastern Virginia (Norfolk, Westmoreland counties)"
+    },
+    "claim": "William Dyer recorded as Private in 15th Virginia Regiment (April 1778, sick) \u2014 NOT connected to Shenandoah Valley Dyer family branch due to geographic origin mismatch (coastal Virginia recruitment vs. western Virginia residence).",
+    "evidence": "U.S. National Archives. Revolutionary War Era Muster Rolls of the Continental Army. Record Group 93. Microfilm Publication M881. Unit: 15th Virginia R",
+    "narrative": "Hand-written muster roll from April 1778 recording soldiers of the 15th Virginia Regiment under Ensign George Menzies, including a Private William Dyer listed as 'Sick'. NOTE: Geographic analysis indicates this coastal-Virginia-recruited unit does not match the known Shenandoah Valley Dyer family branch (Charles Dyer's line). This appears to be a different William Dyer; conflation on Ancestry requires source verification.",
+    "whatItProves": "Proves: William Dyer served as Private in 15th Virginia Regiment in April 1778, recorded as sick. Disproves: NOT connected to archive's Shenandoah Valley Dyer line due to coastal-Virginia recruitment and geographic discontinuity."
+  },
+  {
+    "id": "1828-william-dyer-land-patent-morgan-county-illinois",
+    "title": "1828 Land Patent - William Dyer, Morgan County, Illinois (John Quincy Adams)",
+    "filename": "1828-william-dyer-land-patent-illinois.jpg",
+    "date": "1828-01-01",
+    "archiveCategory": "Primary Source",
+    "confidence": "Primary Source",
+    "sourceCitation": "United States General Land Office. Land Patent Certificate #881. Issued 1 January 1828. Patentee: William Dyer, Morgan County, Illinois. Property Description: The west half of the southwest quarter of Section 34, Township 13 North, Range 8 West, Edwardsville Land District, 80 acres. Initialed by President John Quincy Adams ('J. Q. A.'), signed by GLO Commissioner George Graham. National Archives catalog: RHUSA2007B_IL0120-00415.",
+    "people": [],
+    "description": "Federal land patent signed by President John Quincy Adams (during his administration 1825-1829) granting 80 acres to William Dyer in Morgan County, Illinois. NOTE: SIGNIFICANT CONFLATION DETECTED on Ancestry. The profile being reviewed claimed this William Dyer died in Pope County, Illinois in 1821\u201414 years before this 1828 patent. A deceased man cannot purchase land 7 years after death. Morgan County (west-central Illinois) and Pope County (southern Illinois border) are 200+ miles apart. This document proves a completely separate William Dyer was homesteading in Morgan County in 1828. NOT related to archive's Dyer family line.",
+    "researchNotes": "IMPORTANT NEGATIVE FINDING & ANCESTRY CONFLATION ALERT: The Ancestry profile conflated a William Dyer who (allegedly) died in 1821 with an active homesteader in 1828. These are different people. This patent belongs to a younger William Dyer engaged in westward expansion homesteading. No connection to Charles Dyer (b.1755) or Jonathan Dyer (b.1802, Oregon). Kept as primary source to document the conflation and demonstrate Ancestry genealogy limitations in distinguishing same-name individuals across different regions and generations.",
+    "extractedData": {
+      "patent_number": "881",
+      "patentee": "William Dyer",
+      "residence_at_grant": "Morgan County, Illinois",
+      "patent_date": "1828-01-01",
+      "acreage": 80,
+      "property_description": "W 1/2 SW 1/4, Section 34, T13N R8W",
+      "land_district": "Edwardsville",
+      "signed_by_president": "John Quincy Adams",
+      "glo_commissioner": "George Graham",
+      "geographic_note": "West-central Illinois (distinct from Pope County, southern Illinois)"
+    },
+    "claim": "William Dyer granted 80 acres in Morgan County, Illinois (1 Jan 1828, signed by President John Quincy Adams) \u2014 separate individual from deceased Pope County Dyer (conflation alert), not related to Jonathan Dyer's Oregon settlement.",
+    "evidence": "United States General Land Office. Land Patent Certificate #881. Issued 1 January 1828. Patentee: William Dyer, Morgan County, Illinois. Property Desc",
+    "narrative": "Federal land patent signed by President John Quincy Adams (during his administration 1825-1829) granting 80 acres to William Dyer in Morgan County, Illinois. NOTE: SIGNIFICANT CONFLATION DETECTED on Ancestry. The profile being reviewed claimed this William Dyer died in Pope County, Illinois in 1821\u201414 years before this 1828 patent. A deceased man cannot purchase land 7 years after death. Morgan County (west-central Illinois) and Pope County (southern Illinois border) are 200+ miles apart. This document proves a completely separate William Dyer was homesteading in Morgan County in 1828. NOT related to archive's Dyer family line.",
+    "whatItProves": "Proves: William Dyer of Morgan County, Illinois received 80-acre land grant from Federal GLO (signed by President John Quincy Adams, 1 January 1828). Disproves: Ancestry conflation\u2014different person from Pope County Dyer (alleged 1821 death vs. 1828 active homesteading), not related to Jonathan Dyer's Oregon settlement."
+  },
+  {
+    "id": "1850-davis-county-iowa-census-ramsey-edwards-proximity",
+    "title": "1850 Federal Census - Davis County, Iowa (Thomas Ramsey, Anderson Edwards households)",
+    "filename": "1850-davis-county-iowa-census-ramsey-edwards.pdf",
+    "date": "1850-10-18",
+    "archiveCategory": "Primary Source",
+    "confidence": "Primary Source",
+    "sourceCitation": "United States Census Bureau. Population Schedule of the Seventh Decennial Census of the United States (1850). County: Davis, State: Iowa, Township: Bloomfield, Enumeration Date: 18 October 1850. Page containing dwellings #27-29. Head of Households: Thomas Ramsay (age 50, born Virginia), Anderson Edwards (age 18, born Tennessee). National Archives microfilm publication M432, Roll 192.",
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey",
+      "Anderson Edwards",
+      "Armina Ramsey",
+      "Josiah Ramsey"
+    ],
+    "description": "1850 Federal Census page (Bloomfield Township, Davis County, Iowa) showing Thomas Ramsey and Anna Hopkins Ramsey household (dwelling #27) with children including Josiah Ramsey (age 16, born Indiana). Adjacent dwellings #28 and #29 list Anderson Edwards and Abel Edwards households, establishing the Ramsey and Edwards families as immediate neighbors on the Iowa frontier.",
+    "researchNotes": "CRITICAL FAMILY CONNECTION ANCHOR: This census page provides primary evidence for how the Ramsey and Edwards family lines connected. Physical proximity on the census (consecutive dwellings) indicates these families were neighbors who would later intermarry. Thomas Ramsey (b.1799 Virginia) and Anna Hopkins (b.1807 Tennessee) had migrated from Indiana to Iowa by 1850. Anderson Edwards (b.~1832 Tennessee, later married Armina Ramsey) was listed as age 18 in 1850, placing him in the same generation as Josiah Ramsey (age 16). This proximity proves the logical connection for courtship and marriage that followed.",
+    "extractedData": {
+      "census_date": "1850-10-18",
+      "location": "Bloomfield Township, Davis County, Iowa",
+      "dwelling_27_ramsey": {
+        "head_of_household": "Thomas Ramsay",
+        "age": 50,
+        "birthplace": "Virginia",
+        "spouse": "Anna",
+        "spouse_age": 40,
+        "spouse_birthplace": "Tennessee",
+        "children": [
+          "Josiah Ramsay (16, born Indiana)",
+          "Additional children listed"
+        ]
+      },
+      "dwelling_28_edwards": {
+        "head_of_household": "Abel Edwards",
+        "age": 28,
+        "birthplace": "Tennessee"
+      },
+      "dwelling_29_edwards": {
+        "head_of_household": "Anderson Edwards",
+        "age": 18,
+        "birthplace": "Tennessee"
+      },
+      "critical_finding": "Ramsey and Edwards families listed in consecutive dwellings (27, 28, 29) = immediate neighbors on frontier, establishing family connection logic"
+    },
+    "claim": "Ramsey and Edwards families listed in consecutive dwellings (#27, #28, #29) in Bloomfield Township, Davis County, Iowa (18 Oct 1850) \u2014 proves frontier proximity enabling family meeting and later intermarriage between Josiah Ramsey and Armina Edwards.",
+    "evidence": "United States Census Bureau. Population Schedule of the Seventh Decennial Census of the United States (1850). County: Davis, State: Iowa, Township: Bl",
+    "narrative": "1850 Federal Census page (Bloomfield Township, Davis County, Iowa) showing Thomas Ramsey and Anna Hopkins Ramsey household (dwelling #27) with children including Josiah Ramsey (age 16, born Indiana). Adjacent dwellings #28 and #29 list Anderson Edwards and Abel Edwards households, establishing the Ramsey and Edwards families as immediate neighbors on the Iowa frontier.",
+    "whatItProves": "Proves: Ramsey (Thomas, Anna, Josiah) and Edwards (Anderson, Abel) families were immediate neighbors in Bloomfield Township, Davis County, Iowa (18 October 1850, dwellings #27-29). Establishes frontier proximity enabling family courtship and later Ramsey-Edwards intermarriage."
   }
 ]
