@@ -5372,5 +5372,16 @@
     "keyEvent": "Born 10 January 1829 in Harrison, Indiana. Died 28 December 1863 in Brown County, Texas.",
     "confidence": "Strong Evidence",
     "sourceCitation": "U.S. Federal Census records, Texas vital records"
+  },
+  {
+    "id": "asa-morris",
+    "name": "Asa Morris",
+    "lifespan": "?-1848",
+    "era": "19th century",
+    "branch": "Morris",
+    "summary": "First husband of Phoebe Morris. Married Phoebe on December 6, 1823. Lived in Ohio for nearly 24 years. Father of eight children.",
+    "keyEvent": "Married Phoebe on December 6, 1823. Died August 24, 1848 in Ohio.",
+    "confidence": "Primary Source",
+    "sourceCitation": "Phoebe Morris Dyer obituary (Polk County, Oregon newspaper, February 15, 1886)"
   }
 ]
