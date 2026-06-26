@@ -639,25 +639,41 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
   const familyWebLanes = useMemo<FamilyWebLane[]>(
     () => [
       {
-        title: "Research bridge",
-        subtitle: "These are the working names that help trace the line across family story, notebook material, and later records.",
-        laneStyle: "bridge",
+        title: "Confirmed connections",
+        subtitle: "This line is already tied together by marriage returns, census entries, and the Red Book trail.",
+        laneStyle: "documented",
         nodes: [
           {
-            id: "edith-ann-edwards-moore",
-            label: "Edith Ann Edwards Moore",
-            subtitle: "bridge node",
-            confidence: "Needs Review",
-            note: "Still a research bridge until a primary record lands.",
-            bridge: true
+            id: "silas-josiah-edwards",
+            label: "Silas Josiah Edwards",
+            subtitle: "documented profile",
+            confidence: "Primary Source",
+            note: "Marriage return, census records, and obituary context line up on this profile.",
+            href: "/ancestors/silas-josiah-edwards"
           },
           {
-            id: "josiah-si-edwards",
-            label: "Josiah “Si” Edwards",
-            subtitle: "bridge node",
-            confidence: "Needs Review",
-            note: "Placed here to keep the working line visible while proof is assembled.",
-            bridge: true
+            id: "nancy-ann-dyer",
+            label: "Nancy Ann Dyer",
+            subtitle: "documented profile",
+            confidence: "Strong Evidence",
+            note: "Anchored by the marriage and household records in Washington.",
+            href: "/ancestors/nancy-ann-dyer"
+          },
+          {
+            id: "edith-ann-edwards",
+            label: "Edith Ann Edwards Moore",
+            subtitle: "documented profile",
+            confidence: "Primary Source",
+            note: "Marriage record and later family material place Edith as a confirmed Moore branch anchor.",
+            href: "/ancestors/edith-ann-edwards"
+          },
+          {
+            id: "hugh-christopher-moore",
+            label: "Hugh Christopher Moore",
+            subtitle: "documented profile",
+            confidence: "Primary Source",
+            note: "His marriage to Edith and later records connect the Canadian and Washington branches.",
+            href: "/ancestors/hugh-christopher-moore"
           }
         ]
       },
@@ -671,7 +687,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             label: "Aaron Marchant",
             subtitle: "loaded profile",
             confidence: "Strong Evidence",
-            note: "AI evaluator and builder in Calgary, son of Brett Marchant.",
+            note: "AI evaluator and builder in Calgary, son of Brett and Christine, grandson of David and Nancy, brother of Shawn.",
             href: "/ancestors/aaron-marchant"
           },
           {
@@ -679,7 +695,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             label: "Shawn Marchant",
             subtitle: "loaded profile",
             confidence: "Strong Evidence",
-            note: "Grandson of David and Nancy Marchant, son of Brett.",
+            note: "Son of Brett and Christine, grandson of David and Nancy, brother of Aaron.",
             href: "/ancestors/shawn-marchant"
           },
           {
@@ -687,7 +703,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             label: "Brett Marchant",
             subtitle: "loaded profile",
             confidence: "Strong Evidence",
-            note: "Son of David and Nancy Marchant, father of Aaron and Shawn.",
+            note: "Son of David and Nancy Marchant, husband of Christine, and father of Aaron and Shawn.",
             href: "/ancestors/brett-marchant"
           },
           {
@@ -703,7 +719,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             label: "Nancy Moore Marchant",
             subtitle: "loaded profile",
             confidence: "Strong Evidence",
-            note: "Bridges the Moore line to the Marchant family in Calgary.",
+            note: "Mother of Brett and Colleen, grandmother of Aaron and Shawn, and bridge from Moore into the Marchant family.",
             href: "/ancestors/nancy-moore-marchant"
           },
           {
@@ -711,16 +727,8 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             label: "David Marchant",
             subtitle: "loaded profile",
             confidence: "Strong Evidence",
-            note: "Calgary draughtsman, husband of Nancy Carol Moore.",
+            note: "Calgary draughtsman, husband of Nancy Carol Moore, and grandfather of Aaron and Shawn.",
             href: "/ancestors/david-marchant"
-          },
-          {
-            id: "nancy-ann-dyer",
-            label: "Nancy Ann Dyer",
-            subtitle: "loaded profile",
-            confidence: "Strong Evidence",
-            note: "Connects the Dyer line to the Edwards / Moore / Marchant branch.",
-            href: "/ancestors/nancy-ann-dyer"
           },
           {
             id: "george-washington-dyer",
@@ -994,8 +1002,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             <div className="archive-panel space-y-4">
               <div className="archive-section__title">Web detail</div>
               <p className="text-sm leading-6 text-[var(--archive-text-soft)]">
-                The family web keeps the direct path visible while marking bridge names differently from loaded
-                profiles.
+                The family web keeps the direct path visible and puts confirmed profiles first.
               </p>
               {selectedWebNode ? (
                 <div className="space-y-4 rounded-[1.5rem] border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)] p-4">
