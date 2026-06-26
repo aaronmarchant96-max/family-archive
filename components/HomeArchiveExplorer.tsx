@@ -826,9 +826,12 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
 
   const selectedWebNode = familyWebLanes.flatMap((lane) => lane.nodes).find((node) => node.id === selectedNodeId) ?? familyWebLanes.flatMap((lane) => lane.nodes)[0] ?? null;
   const georgeWashingtonDyer = people.find((person) => person.id === "george-washington-dyer");
+  const jonathanDyer = people.find((person) => person.id === "jonathan-dyer");
 
   const heroPortrait = georgeWashingtonDyer?.portraitUrl ?? "/portraits/george-washington-dyer.png";
   const heroPortraitCaption = georgeWashingtonDyer?.portraitCaption ?? "Descendant-shared family portrait of George Washington Dyer.";
+  const featuredPortrait2 = jonathanDyer?.portraitUrl ?? "/portraits/jonathan-dyer-feature.jpg";
+  const featuredPortrait2Caption = jonathanDyer?.portraitCaption ?? "Jonathan Dyer";
   const secondaryPreview = documentsById.get("george-washington-dyer-1880-whitman-census")?.previewUrl;
   const tertiaryPreview = documentsById.get("george-washington-dyer-1900-pine-city-census")?.previewUrl;
   const fourthPreview = documentsById.get("charles-dyer-discharge")?.previewUrl ?? "/documents/charles-dyer.pdf";
@@ -872,14 +875,26 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         </div>
 
         <div className="archive-home-hero__wall">
-          <div className="archive-home-hero__portrait-frame">
-            <SourcePreview src={heroPortrait} title="George Washington Dyer" className="archive-home-hero__portrait" />
-            <div className="archive-home-hero__portrait-meta">
-              <div>
-                <div className="archive-kicker">Front-door family anchor</div>
-                <div className="archive-home-hero__portrait-name">George Washington Dyer</div>
+          <div className="flex gap-4">
+            <div className="archive-home-hero__portrait-frame flex-1">
+              <SourcePreview src={heroPortrait} title="George Washington Dyer" className="archive-home-hero__portrait" />
+              <div className="archive-home-hero__portrait-meta">
+                <div>
+                  <div className="archive-kicker">Front-door family anchor</div>
+                  <div className="archive-home-hero__portrait-name">George Washington Dyer</div>
+                </div>
+                <div className="archive-home-hero__portrait-note">{heroPortraitCaption}</div>
               </div>
-              <div className="archive-home-hero__portrait-note">{heroPortraitCaption}</div>
+            </div>
+            <div className="archive-home-hero__portrait-frame flex-1">
+              <SourcePreview src={featuredPortrait2} title={featuredPortrait2Caption} className="archive-home-hero__portrait" />
+              <div className="archive-home-hero__portrait-meta">
+                <div>
+                  <div className="archive-kicker">Descendant legacy</div>
+                  <div className="archive-home-hero__portrait-name">{featuredPortrait2Caption}</div>
+                </div>
+                <div className="archive-home-hero__portrait-note">{featuredPortrait2Caption}</div>
+              </div>
             </div>
           </div>
           <div className="archive-home-hero__evidence-grid">
@@ -888,7 +903,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             <RecordTile src={fourthPreview} title="Charles Dyer discharge" caption="Revolutionary line anchor" />
           </div>
           <div className="mt-4 rounded-[1.5rem] border border-[rgba(244,239,231,0.12)] bg-[rgba(244,239,231,0.04)] p-4 text-sm leading-6 text-[rgba(244,239,231,0.76)]">
-            George Washington Dyer now leads the front page, with the Dyer household records and the earlier Charles Dyer discharge kept close by as the proof trail behind the portrait.
+            George Washington Dyer and Jonathan Dyer lead the front page, with the Dyer household records and the earlier Charles Dyer discharge kept close by as the proof trail behind their portraits.
           </div>
         </div>
       </section>

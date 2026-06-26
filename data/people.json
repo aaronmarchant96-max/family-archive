@@ -995,7 +995,9 @@
       "Part of the documented Dyer descent trail",
       "Key document: charles-dyer.pdf",
       "SAR/DAR eligible line"
-    ]
+    ],
+    "featured": true,
+    "portraitUrl": "/portraits/jonathan-dyer-feature.jpg"
   },
   {
     "id": "nancy-ann-dyer",
