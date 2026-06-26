@@ -946,5 +946,41 @@
     "meaning": "Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
     "whatItProves": "Fact: 1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (enumerated 18 Oct 1850) shows household of Thomas Ramsey (50, VA) and Anna (40, TN) with children Josiah (16, VA), Franklin (14, TN), Henderson (12, TN), Cowen (10, TN), Rachel (5, TN); and adjacent household of Anderson Edwards (18, TN) and Armina (23, TN). Meaning: Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
     "notes": "Primary Source. 1850 census image. Directly supports the 1850 census entry in the attached FamilySearch tree record for Armina Edwards. See also 1860 Decatur census and later Washington censuses for continuity."
+  },
+  {
+    "id": "richland-township-1880-iowa-census-ramsey-edwards",
+    "filename": "richland-township-1880-iowa-census-ramsey-edwards.jpg",
+    "type": "U.S. census page",
+    "date": "1880",
+    "era": "19th-century census",
+    "sourceCitation": "1880 U.S. Federal Census, Richland Township, Decatur County, Iowa - Thomas Ramsey and Anderson Edwards households.",
+    "previewUrl": "/documents/richland-township-1880-iowa-census-ramsey-edwards.jpg",
+    "confidence": "Primary Source",
+    "people": ["Thomas Ramsey", "Anna Hopkins Ramsey", "Anderson Edwards", "Armina Ramsey"],
+    "place": "Richland Township, Decatur County, Iowa, United States",
+    "branch": "Ramsey / Edwards",
+    "researchPriority": false,
+    "fact": "1880 U.S. Federal Census page for Richland Township, Decatur County, Iowa shows Thomas Ramsey (age 80, VA), Anna (age ~70, TN), Rachel, William and other Ramsey family members; also lists Anderson Edwards (~48, TN) and Armina (~53, TN) with household details.",
+    "meaning": "Provides primary evidence of the Ramsey and Edwards families still residing in Decatur County, Iowa in 1880, with Thomas and Anna Ramsey advanced in age, and the next generation (Anderson/Armina) with family, supporting long-term Iowa settlement before full move to Washington.",
+    "whatItProves": "Fact: 1880 U.S. Federal Census page for Richland Township, Decatur County, Iowa shows Thomas Ramsey (age 80, VA), Anna (age ~70, TN), Rachel, William and other Ramsey family members; also lists Anderson Edwards (~48, TN) and Armina (~53, TN) with household details. Meaning: Provides primary evidence of the Ramsey and Edwards families still residing in Decatur County, Iowa in 1880, with Thomas and Anna Ramsey advanced in age, and the next generation (Anderson/Armina) with family, supporting long-term Iowa settlement before full move to Washington.",
+    "notes": "Primary Source. 1880 census image. Complements the 1850 Bloomfield census and shows continuity of the combined Ramsey/Edwards line in Iowa. See also later Washington censuses and obituary for migration."
+  },
+  {
+    "id": "luella-edwards-jennings-death-1938",
+    "filename": "luella-edwards-jennings-death-1938.jpg",
+    "type": "death certificate",
+    "date": "1938-09-30",
+    "era": "20th century",
+    "sourceCitation": "Washington State Board of Health, Bureau of Vital Statistics, Certificate of Death for Luella Jennings, St. John, Whitman County, Washington, 30 September 1938. Father: Anderson Edwards (Tennessee), Mother: Armina Ramsey (Tennessee).",
+    "previewUrl": "/documents/luella-edwards-jennings-death-1938.jpg",
+    "confidence": "Primary Source",
+    "people": ["Luella Edwards", "Anderson Edwards", "Armina Ramsey"],
+    "place": "St. John, Whitman County, Washington, United States",
+    "branch": "Edwards / Ramsey",
+    "researchPriority": false,
+    "fact": "Death certificate for Luella Jennings (widow of James Jennings), born 1 July 1866 in Iowa, died 30 September 1938 in St. John, Washington, age 68. Father Anderson Edwards born Tennessee, mother Armina Ramsey born Tennessee. Informant Mrs. Chester Smith. Burial St. John, Washington.",
+    "meaning": "Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
+    "whatItProves": "Fact: Death certificate for Luella Jennings (widow of James Jennings), born 1 July 1866 in Iowa, died 30 September 1938 in St. John, Washington, age 68. Father Anderson Edwards born Tennessee, mother Armina Ramsey born Tennessee. Informant Mrs. Chester Smith. Burial St. John, Washington. Meaning: Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
+    "notes": "Primary Source. Washington State death certificate. Directly supports Luella's death details, birth place/year, and parentage as listed in the FamilySearch tree for Armina Edwards' children."
   }
 ]

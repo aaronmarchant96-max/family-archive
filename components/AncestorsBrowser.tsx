@@ -15,10 +15,33 @@ function findPreviewUrl(person: AncestorCardProps) {
 
 type ViewMode = "cards" | "timeline";
 
+function levenshtein(a: string, b: string): number {
+  const m = a.length;
+  const n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost
+      );
+    }
+  }
+  return dp[m][n];
+}
+
 function matchesQuery(person: AncestorCardProps, query: string) {
   if (!query) {
     return true;
   }
+  const tokens = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return true;
 
   const haystack = [
     person.name,
@@ -41,7 +64,7 @@ function matchesQuery(person: AncestorCardProps, query: string) {
     .join(" ")
     .toLowerCase();
 
-  return haystack.includes(query);
+  return tokens.every(token => haystack.includes(token));
 }
 
 export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
@@ -49,10 +72,59 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
   const [viewMode, setViewMode] = useState<ViewMode>("cards");
   const [previewPerson, setPreviewPerson] = useState<AncestorCardProps | null>(null);
 
+  const vocab = useMemo(() => {
+    const set = new Set<string>();
+    people.forEach((p) => {
+      const text = [
+        p.name, p.lifespan, p.era, p.branch, p.summary, p.keyEvent, p.confidence, p.attachedDocument, p.sourceUrl, p.sourceCitation,
+        ...(p.tags ?? []),
+        ...(p.timeline ?? []).flatMap(e => [e.title, e.date, e.summary, e.place]),
+        ...(p.evidenceSummary ?? []),
+        p.sarLineStatus?.status, p.sarLineStatus?.note
+      ].filter(Boolean).join(" ").toLowerCase();
+      text.split(/[\s,.-]+/).forEach(w => { if (w.length > 2) set.add(w); });
+    });
+    return Array.from(set);
+  }, [people]);
+
   const filteredPeople = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return people.filter((person) => matchesQuery(person, normalized));
   }, [people, query]);
+
+  const suggestion = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    if (!normalized || filteredPeople.length > 0) return null;
+    const tokens = normalized.split(/\s+/).filter(Boolean);
+    if (tokens.length === 0) return null;
+    if (tokens.length === 1) {
+      let best: string | null = null;
+      let bestDist = 3;
+      for (const term of vocab) {
+        const dist = levenshtein(normalized, term);
+        if (dist > 0 && dist < bestDist) {
+          bestDist = dist;
+          best = term;
+        }
+      }
+      return best;
+    } else {
+      const last = tokens[tokens.length - 1];
+      let bestLast: string | null = null;
+      let bestDist = 3;
+      for (const term of vocab) {
+        const dist = levenshtein(last, term);
+        if (dist > 0 && dist < bestDist) {
+          bestDist = dist;
+          bestLast = term;
+        }
+      }
+      if (bestLast) {
+        return [...tokens.slice(0, -1), bestLast].join(" ");
+      }
+    }
+    return null;
+  }, [query, vocab, filteredPeople.length]);
 
   const peopleWithPreviews = useMemo(
     () =>
@@ -129,6 +201,19 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
             className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
+
+        {suggestion && (
+          <div className="text-sm text-[var(--archive-text-soft)] mt-1">
+            Did you mean{" "}
+            <button
+              onClick={() => setQuery(suggestion)}
+              className="underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
+            >
+              {suggestion}
+            </button>
+            ?
+          </div>
+        )}
       </div>
 
       {viewMode === "cards" ? (

@@ -7,10 +7,33 @@ import { RecordPreviewModal } from "./RecordPreviewModal";
 
 type ViewMode = "cards" | "timeline";
 
+function levenshtein(a: string, b: string): number {
+  const m = a.length;
+  const n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  const dp: number[][] = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+  for (let i = 0; i <= m; i++) dp[i][0] = i;
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost
+      );
+    }
+  }
+  return dp[m][n];
+}
+
 function matchesQuery(document: DocumentCardProps, query: string) {
   if (!query) {
     return true;
   }
+  const tokens = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  if (tokens.length === 0) return true;
 
   const haystack = [
     document.filename,
@@ -27,7 +50,7 @@ function matchesQuery(document: DocumentCardProps, query: string) {
     .join(" ")
     .toLowerCase();
 
-  return haystack.includes(query);
+  return tokens.every(token => haystack.includes(token));
 }
 
 export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[] }) {
@@ -40,6 +63,26 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
   const uniqueTypes = useMemo(() => Array.from(new Set(documents.map(d => d.type))).sort(), [documents]);
   const uniqueBranches = useMemo(() => Array.from(new Set(documents.map(d => d.branch).filter(Boolean))).sort() as string[], [documents]);
 
+  const vocab = useMemo(() => {
+    const set = new Set<string>();
+    documents.forEach((doc) => {
+      const text = [
+        doc.filename,
+        doc.type,
+        doc.place,
+        doc.era,
+        doc.confidence,
+        ...(doc.people ?? []),
+        doc.whatItProves,
+        doc.notes
+      ].filter(Boolean).join(" ").toLowerCase();
+      text.split(/[\s,.-]+/).forEach(w => {
+        if (w.length > 2) set.add(w);
+      });
+    });
+    return Array.from(set);
+  }, [documents]);
+
   const filteredDocuments = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return documents.filter((document) => {
@@ -49,6 +92,41 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
       return true;
     });
   }, [documents, query, filterType, filterBranch]);
+
+  const suggestion = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    if (!normalized || filteredDocuments.length > 0) return null;
+    const tokens = normalized.split(/\s+/).filter(Boolean);
+    if (tokens.length === 0) return null;
+    if (tokens.length === 1) {
+      let best: string | null = null;
+      let bestDist = 3;
+      for (const term of vocab) {
+        const dist = levenshtein(normalized, term);
+        if (dist > 0 && dist < bestDist) {
+          bestDist = dist;
+          best = term;
+        }
+      }
+      return best;
+    } else {
+      // correct the last token
+      const last = tokens[tokens.length - 1];
+      let bestLast: string | null = null;
+      let bestDist = 3;
+      for (const term of vocab) {
+        const dist = levenshtein(last, term);
+        if (dist > 0 && dist < bestDist) {
+          bestDist = dist;
+          bestLast = term;
+        }
+      }
+      if (bestLast) {
+        return [...tokens.slice(0, -1), bestLast].join(" ");
+      }
+    }
+    return null;
+  }, [query, vocab, filteredDocuments.length]);
 
   const sortedDocuments = useMemo(() => {
     const isScreenshot = (d: DocumentCardProps) => {
@@ -129,6 +207,19 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
             className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
           />
         </label>
+
+        {suggestion && (
+          <div className="text-sm text-[var(--archive-text-soft)] mt-1">
+            Did you mean{" "}
+            <button
+              onClick={() => setQuery(suggestion)}
+              className="underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
+            >
+              {suggestion}
+            </button>
+            ?
+          </div>
+        )}
 
         <div className="flex flex-wrap gap-3">
           <select

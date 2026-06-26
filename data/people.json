@@ -672,7 +672,7 @@
         "place": "Richland Township, Decatur County, Iowa",
         "summary": "Appears in the 1880 census as Anna Ramsey, widow of Thomas.",
         "confidence": "Primary Source",
-        "linkedDocumentId": "richland-township-1880-census"
+        "linkedDocumentId": "richland-township-1880-iowa-census-ramsey-edwards"
       },
       {
         "title": "Death",
@@ -2031,9 +2031,9 @@
     "timeline": [
       {
         "title": "Birth",
-        "date": "1866",
-        "place": "Iowa",
-        "summary": "Eighth and youngest child of Armina Ramsey and Anderson Edwards.",
+        "date": "1 July 1866",
+        "place": "Iowa, United States",
+        "summary": "Born 1 July 1866 in Iowa (per death certificate). Eighth and youngest child of Armina Ramsey and Anderson Edwards.",
         "confidence": "Strong Evidence"
       },
       {
@@ -2045,18 +2045,21 @@
       },
       {
         "title": "Death",
-        "date": "1938",
-        "place": "Washington",
-        "summary": "Died in Washington at age 72.",
-        "confidence": "Strong Evidence"
+        "date": "30 September 1938",
+        "place": "St. John, Whitman County, Washington, United States",
+        "summary": "Died 30 September 1938 at age 68 in St. John, WA. Widow of James Jennings. Father Anderson Edwards (TN), mother Armina Ramsey (TN). Buried St. John, WA.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "luella-edwards-jennings-death-1938"
       }
     ],
     "evidenceSummary": [
       "Daughter of Armina Ramsey (1826-1923) and Anderson Edwards (1832-1908)",
-      "Born 1866, died 1938",
-      "Lived 72 years",
-      "Youngest of 8 children",
-      "Mentioned in Armina Ramsey Edwards obituary"
+      "Born 1 July 1866 in Iowa (Primary Source death certificate)",
+      "Died 30 September 1938 at age 68 in St. John, Whitman County, Washington (Primary Source death certificate). Widow of James Jennings. Buried St. John, WA. Informant Mrs. Chester Smith.",
+      "Father: Anderson Edwards born Tennessee; Mother: Armina Ramsey born Tennessee",
+      "Lived 72 years; youngest of 8 children",
+      "Mentioned in Armina Ramsey Edwards obituary",
+      "Key document: luella-edwards-jennings-death-1938.jpg"
     ]
   },
   {
@@ -2180,7 +2183,8 @@
       "1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: with Armina next to her parents Thomas/Anna Ramsey and siblings (Primary Source, linked)",
       "1860-1880 Iowa census trail - household continuity (Primary Source)",
       "1880-1920+ Washington census trail and 1923 obituary - migration to WA, lists children and burial in Pine City (Primary Source)",
-      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses",
+      "Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked)",
+      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg",
       "Armina's siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
     ]
   },
@@ -2247,6 +2251,14 @@
         "linkedDocumentId": "edwards-1880-oregon-census"
       },
       {
+        "title": "1880 Iowa census household",
+        "date": "1880",
+        "place": "Richland Township, Decatur County, Iowa, United States",
+        "summary": "The family (or parents/siblings) appears in the 1880 U.S. census for Richland Twp, Decatur Co, Iowa, with Thomas and Anna Ramsey advanced in age and Anderson/Armina Edwards listed (Primary Source).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "richland-township-1880-iowa-census-ramsey-edwards"
+      },
+      {
         "title": "1900 Washington census",
         "date": "1900",
         "place": "Washington",
@@ -2302,7 +2314,8 @@
       "1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: living with Anderson Edwards next to parents Thomas/Anna Ramsey and siblings (Primary Source, linked)",
       "1860-1880 Iowa census trail - household continuity (Primary Source)",
       "1880-1920+ Washington census trail and 1923 obituary (Leon Journal-Reporter) - migration to WA, lists children and burial in Pine City (Primary Source)",
-      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses",
+      "Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked)",
+      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg",
       "Siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
     ]
   },
