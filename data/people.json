@@ -952,7 +952,7 @@
     "era": "19th century",
     "branch": "Dyer",
     "summary": "Son of Charles Dyer (Revolutionary War veteran). Father of George Washington Dyer and 13 other children across three marriages. Lived in Kentucky, Indiana, Iowa, and Oregon. Major branch anchor for the Dyer descent.",
-    "keyEvent": "Born 2 January 1802 in Rolling Fork, Washington, Kentucky. Married three times: Fannie Bufford (1822-1834), Nancy Boley Dyer (1834-1865), Phoebe Morris Dyer (1866-1886). Died 20 January 1892 in Polk, Oregon.",
+    "keyEvent": "Born 2 January 1802 in Rolling Fork, Washington County, Kentucky. Son of Charles Dyer (Revolutionary War veteran) and Mary Hurst. Married three times: Fannie Bufford (1822-1834, Indiana), Nancy Boley (1834-1865, Indiana/Iowa), Phoebe Morris (1866-1886, Oregon). Settled Ballston, Polk County, Oregon 1873. Died 20 January 1892 in Polk County. Buried Salt Creek Cemetery, Polk County. Donated land for Bethlehem Cemetery in Indiana where father Charles Dyer is buried.",
     "confidence": "Strong Evidence",
     "tags": [
       "Dyer",
@@ -998,7 +998,9 @@
     ],
     "featured": true,
     "portraitUrl": "/portraits/jonathan-dyer-feature.jpg",
-    "portraitCaption": "Son of Charles Dyer (Revolutionary War veteran); father of George Washington Dyer."
+    "portraitCaption": "Son of Charles Dyer (Revolutionary War veteran); father of George Washington Dyer.",
+    "burial": "Salt Creek Cemetery, Polk County, Oregon",
+    "birthPlace": "Rolling Fork, Washington County, Kentucky"
   },
   {
     "id": "nancy-ann-dyer",
@@ -5272,7 +5274,8 @@
     "summary": "Second wife of Jonathan Dyer. Married 25 September 1834 in Harrison, Indiana. Mother of George Washington Dyer and eight other children. Lived in Illinois, Iowa, and Oregon.",
     "keyEvent": "Married Jonathan Dyer on 25 September 1834. Mother of George Washington Dyer (b. 1835) and other children. Died 21 July 1865 in Dallas, Polk, Oregon.",
     "confidence": "Primary Source",
-    "sourceCitation": "U.S. Federal Census records, Indiana marriage records, Oregon death records, Find A Grave Index"
+    "sourceCitation": "U.S. Federal Census records, Indiana marriage records, Oregon death records, Find A Grave Index",
+    "burial": "Salt Creek Cemetery, Polk County, Oregon"
   },
   {
     "id": "phoebe-morris-dyer",
