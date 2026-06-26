@@ -537,7 +537,7 @@
         "title": "Direct family line preserved",
         "date": "Later generations",
         "summary": "Charles Dyer’s direct descent through Jonathan Dyer, George Washington Dyer, Nancy Ann Dyer, and the Edwards/Moore/Marchant line is supported by family records, Anne’s book, and the assembled proof chain.",
-        "confidence": "Confirmed",
+        "confidence": "Corroborated Compilation",
         "linkedDocumentId": null,
         "place": null
       }
@@ -3325,7 +3325,7 @@
         "title": "Birth and parentage",
         "date": "26 August 1826",
         "summary": "Armina's profile identifies her as the daughter of Thomas Ramsey and Anna Hopkins.",
-        "confidence": "Confirmed",
+        "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee, USA"
       },
@@ -6961,7 +6961,7 @@
     },
     "v2_birth_year": "",
     "v2_death_year": "",
-    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
+    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
   },
   {
     "id": "aaron-marchant",
@@ -8369,6 +8369,9 @@
       "Sources: 1850/1880/1900/1910 Census, Oregon Death Index, Find A Grave"
     ],
     "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "attachedDocument": "james-reuben-conlee.png",
+    "portraitUrl": "/portraits/james-reuben-conlee.png",
+    "portraitCaption": "Family-shared portrait image of James Reuben Conlee.",
     "relationships": {
       "mother_id": "",
       "father_id": "",

@@ -7063,7 +7063,7 @@
     "record_id": "canonical-armina-ramsey-birth-and-parentage-1826-01-01-tennessee-usa",
     "title": "Birth and parentage",
     "record_type": "RELATION_EVENT",
-    "evidence_tier": "PRIMARY",
+    "evidence_tier": "STRONG",
     "date": {
       "raw": "26 August 1826",
       "iso_start": "1826-01-01",
@@ -7113,7 +7113,7 @@
     },
     "canonical_event_id": "canonical-armina-ramsey-birth-and-parentage-1826-01-01-tennessee-usa",
     "event_class": "RELATION_EVENT",
-    "confidence_tier": "PRIMARY",
+    "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
@@ -26983,7 +26983,7 @@
     "record_id": "canonical-charles-dyer-direct-family-line-preserved",
     "title": "Direct family line preserved",
     "record_type": "FACT_EVENT",
-    "evidence_tier": "PRIMARY",
+    "evidence_tier": "CORROBORATED_COMPILATION",
     "date": {
       "raw": "Later generations",
       "iso_start": null,
@@ -27024,7 +27024,7 @@
     },
     "canonical_event_id": "canonical-charles-dyer-direct-family-line-preserved",
     "event_class": "FACT_EVENT",
-    "confidence_tier": "PRIMARY",
+    "confidence_tier": "CORROBORATED_COMPILATION",
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [],

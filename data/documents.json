@@ -1953,5 +1953,30 @@
     "extractedSnippet": "Last Will and Testament of Elizabeth E. Dyer, Pine City, Whitman County, Washington — Probate 11 March 1909",
     "v2_date_year": "1909",
     "evidence_tier": "Primary Source"
+  },
+  {
+    "id": "james-reuben-conlee-portrait",
+    "filename": "james-reuben-conlee.png",
+    "type": "Portrait photograph",
+    "date": "Date not listed",
+    "era": "19th-20th century",
+    "sourceCitation": "Private family portrait image shared in session 2026-06-26; identity inferred from the supplied Conlee photo file and restoration context.",
+    "previewUrl": "/portraits/james-reuben-conlee.png",
+    "confidence": "Confirmed",
+    "people": [
+      "James Reuben Conlee"
+    ],
+    "place": "",
+    "whatItProves": "Provides a family-shared portrait image for James Reuben Conlee.",
+    "notes": "Identity is based on the user-supplied file name and the Conlee restoration context; confirm with an external caption if one becomes available.",
+    "claim": "Document",
+    "evidence": "Private family portrait image shared in session 2026-06-26; identity inferred from the supplied Conlee photo file and restoration context.",
+    "narrative": "[To be documented] james-reuben-conlee-portrait",
+    "fact": "Portrait photograph of James Reuben Conlee.",
+    "meaning": "Provides a visual profile image for James Reuben Conlee in the archive.",
+    "branch": "Conlee",
+    "extractedSnippet": "Portrait photograph of James Reuben Conlee.",
+    "v2_date_year": "",
+    "evidence_tier": "Confirmed"
   }
 ]
