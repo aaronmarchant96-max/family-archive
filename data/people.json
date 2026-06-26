@@ -4024,7 +4024,113 @@
       "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
       "Brother of Armina Ramsey and James Ramsey (1825-1909)"
     ]
+  },
+  {
+    "id": "obadiah-bowen-1627",
+    "name": "Obadiah Bowen",
+    "lifespan": "1627–1710",
+    "era": "17th-century New England",
+    "branch": "Bowen",
+    "summary": "Early Swansea and Rehoboth settler. Married Mary Clifton; father of Obadiah Bowen (1651–1699).",
+    "keyEvent": "Married Mary Clifton in 1647 in Swansea, Massachusetts. Father of Obadiah Bowen (1651–1699).",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Massachusetts", "Needs review"],
+    "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "3 January 1627",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Born to Richard Bowen (1590–1674) and Ann Born (1592–1648).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage",
+        "date": "1647",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Married Mary Clifton (1628–1697).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Obadiah Bowen",
+        "date": "18 September 1651",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Son Obadiah Bowen born.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death of wife Mary Clifton",
+        "date": "18 February 1697",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Wife Mary Clifton passed away.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "10 September 1710",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Passed away at age 83.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 3 Jan 1627 to Richard Bowen and Ann Born",
+      "Married Mary Clifton (1628–1697) in 1647",
+      "Father of 7 children including Obadiah Bowen (1651–1699)",
+      "Died 10 Sep 1710 in Swansea, Massachusetts at age 83",
+      "Sourced from Public Member Trees and marriage index records; requires primary source confirmation"
+    ]
+  },
+  {
+    "id": "mary-clifton",
+    "name": "Mary Clifton",
+    "lifespan": "1628–1697",
+    "era": "17th-century New England",
+    "branch": "Bowen",
+    "summary": "Wife of Obadiah Bowen (1627–1710); mother of Obadiah Bowen (1651–1699).",
+    "keyEvent": "Married Obadiah Bowen in 1647 in Swansea, Massachusetts.",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Clifton", "Massachusetts", "Needs review"],
+    "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1628",
+        "place": "Swansea, Bristol, Massachusetts, USA (likely)",
+        "summary": "Born (approximate year).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage",
+        "date": "1647",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Married Obadiah Bowen (1627–1710).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Obadiah Bowen",
+        "date": "18 September 1651",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Son Obadiah Bowen born.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "18 February 1697",
+        "place": "Swansea, Bristol, Massachusetts, USA",
+        "summary": "Passed away at age 69.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1628 (approximate year and birthplace)",
+      "Married Obadiah Bowen (1627–1710) in 1647",
+      "Mother of 7 children including Obadiah Bowen (1651–1699)",
+      "Died 18 Feb 1697 in Swansea, Massachusetts at age 69",
+      "Sourced from Public Member Trees and marriage index records; requires primary source confirmation"
+    ]
   }
 ]
+
 
 
