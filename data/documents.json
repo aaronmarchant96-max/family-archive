@@ -982,5 +982,23 @@
     "meaning": "Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
     "whatItProves": "Fact: Death certificate for Luella Jennings (widow of James Jennings), born 1 July 1866 in Iowa, died 30 September 1938 in St. John, Washington, age 68. Father Anderson Edwards born Tennessee, mother Armina Ramsey born Tennessee. Informant Mrs. Chester Smith. Burial St. John, Washington. Meaning: Provides primary evidence for the death of Luella Edwards (daughter of Anderson Edwards and Armina Ramsey), her birth in Iowa 1866, and confirms parentage and origins in Tennessee for the parents. Supports the migration of the Edwards family from Iowa to Washington.",
     "notes": "Primary Source. Washington State death certificate. Directly supports Luella's death details, birth place/year, and parentage as listed in the FamilySearch tree for Armina Edwards' children."
+  },
+  {
+    "id": "calgary-directory-1958-marchant",
+    "filename": "calgary-directory-1958-marchant.jpg",
+    "type": "City directory page",
+    "date": "1958",
+    "era": "20th century",
+    "sourceCitation": "Henderson's Calgary City Directory, 1958, page 81981, Page 3, '48TH AVENUE NORTH EAST' section, listing David Marchant at 315, and Mrs. Nancy Carol Marchant at 315.",
+    "previewUrl": "/documents/calgary-directory-1958-marchant.jpg",
+    "confidence": "Primary Source",
+    "people": ["David Marchant", "Nancy Moore Marchant"],
+    "place": "Calgary, Alberta, Canada",
+    "branch": "Marchant",
+    "researchPriority": false,
+    "fact": "Calgary city directory page (81981 Page 3) for 48th Avenue NE lists David Marchant (draughtsman) and Mrs. Nancy Carol Marchant at 315.",
+    "meaning": "Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
+    "whatItProves": "Fact: Calgary city directory page (81981 Page 3) for 48th Avenue NE lists David Marchant (draughtsman) and Mrs. Nancy Carol Marchant at 315. Meaning: Provides primary directory evidence of David Marchant and Nancy Carol (Moore) Marchant residing together in Calgary at 315 48th Avenue NE in 1958, anchoring their Calgary residence and David's occupation as a draughtsman.",
+    "notes": "Primary Source. Calgary city directory scan from Henderson's Directory c. 1958."
   }
 ]

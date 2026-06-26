@@ -4480,6 +4480,59 @@
       "Mother of 8 children, including Obadiah Bowen (1627–1710)",
       "Rehoboth town records confirm death on 2 Nov 1648"
     ]
+  },
+  {
+    "id": "david-marchant",
+    "name": "David Marchant",
+    "lifespan": "unknown",
+    "era": "20th century",
+    "branch": "Marchant",
+    "summary": "Husband of Nancy Moore Marchant. Lived in Calgary, Alberta, where he worked as a draughtsman in the late 1950s.",
+    "keyEvent": "Listed in the 1958 Henderson's Calgary City Directory at 315 48th Avenue NE with wife Nancy Carol.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Alberta", "Calgary"],
+    "sourceCitation": "1958 Henderson's Calgary City Directory.",
+    "timeline": [
+      {
+        "title": "Residence in Calgary",
+        "date": "1958",
+        "place": "315 48th Avenue NE, Calgary, Alberta, Canada",
+        "summary": "Listed in the Henderson's Calgary City Directory as a draughtsman residing at 315 48th Avenue NE.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "calgary-directory-1958-marchant"
+      }
+    ],
+    "evidenceSummary": [
+      "Occupation: Draughtsman",
+      "Resided at 315 48th Avenue NE, Calgary, in 1958 with wife Nancy Carol (Mrs. Nancy Carol Marchant)"
+    ]
+  },
+  {
+    "id": "nancy-moore-marchant",
+    "name": "Nancy Moore Marchant",
+    "lifespan": "unknown",
+    "era": "20th century",
+    "branch": "Marchant",
+    "summary": "Daughter of Hugh Christopher Moore and Edith Ann Edwards. Wife of David Marchant. Resided in Calgary, Alberta, in the late 1950s.",
+    "keyEvent": "Listed as Mrs. Nancy Carol Marchant in the 1958 Calgary City Directory at 315 48th Avenue NE.",
+    "confidence": "Strong Evidence",
+    "tags": ["Marchant", "Moore", "Edwards", "Alberta", "Calgary"],
+    "sourceCitation": "1958 Henderson's Calgary City Directory.",
+    "timeline": [
+      {
+        "title": "Residence in Calgary",
+        "date": "1958",
+        "place": "315 48th Avenue NE, Calgary, Alberta, Canada",
+        "summary": "Listed in the Henderson's Calgary City Directory at 315 48th Avenue NE as Mrs. Nancy Carol Marchant.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "calgary-directory-1958-marchant"
+      }
+    ],
+    "evidenceSummary": [
+      "Wife of David Marchant (draughtsman)",
+      "Resided at 315 48th Avenue NE, Calgary, in 1958 (listed as Mrs. Nancy Carol Marchant)",
+      "Parents: Hugh Christopher Moore and Edith Ann Edwards"
+    ]
   }
 ]
 

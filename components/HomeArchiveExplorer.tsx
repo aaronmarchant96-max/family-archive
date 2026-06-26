@@ -593,14 +593,6 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             bridge: true
           },
           {
-            id: "nancy-moore-marchant",
-            label: "Nancy Moore Marchant",
-            subtitle: "bridge node",
-            confidence: "Needs Review",
-            note: "A bridge node for the Moore / Marchant side of the family.",
-            bridge: true
-          },
-          {
             id: "edith-ann-edwards-moore",
             label: "Edith Ann Edwards Moore",
             subtitle: "bridge node",
@@ -623,6 +615,22 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         subtitle: "Loaded profiles and records already present in the archive. Dotted items are still treated carefully.",
         laneStyle: "documented",
         nodes: [
+          {
+            id: "nancy-moore-marchant",
+            label: "Nancy Moore Marchant",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Bridges the Moore line to the Marchant family in Calgary.",
+            href: "/ancestors/nancy-moore-marchant"
+          },
+          {
+            id: "david-marchant",
+            label: "David Marchant",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Calgary draughtsman, husband of Nancy Carol Moore.",
+            href: "/ancestors/david-marchant"
+          },
           {
             id: "nancy-ann-dyer",
             label: "Nancy Ann Dyer",
