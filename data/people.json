@@ -411,7 +411,7 @@
     "lifespan": "1835-1906",
     "era": "19th century",
     "branch": "Dyer",
-    "summary": "Son of the Revolutionary War line through Jonathan Dyer. Husband of Elizabeth Ellen Conley. Father of Nancy Ann Dyer who connects to the Edwards and Moore families. Lived in Illinois, Iowa, Oregon, and Washington.",
+    "summary": "Son of Jonathan Dyer and Nancy Boley Dyer. Lived in Illinois, Iowa, Oregon, and Washington. Served with First Oregon Infantry in Civil War. Married Elizabeth Ellen Conley. Father of Nancy Ann Dyer who connects to Edwards and Moore families.",
     "keyEvent": "Served with the First Oregon Infantry in 1864 during the Civil War. Married Elizabeth Ellen Conley in 1866. Father of Nancy Ann Dyer (1871-1939).",
     "confidence": "Strong Evidence",
     "tags": [
@@ -948,11 +948,11 @@
   {
     "id": "jonathan-dyer",
     "name": "Jonathan Dyer",
-    "lifespan": "1780-1860",
-    "era": "Early Republic",
+    "lifespan": "1802-1892",
+    "era": "19th century",
     "branch": "Dyer",
-    "summary": "Son of Charles Dyer (Revolutionary War veteran) and heir named in Charles Dyer's pension packet. Father of George Washington Dyer and part of the documented Dyer descent trail.",
-    "keyEvent": "Named among the heirs in the 1855 county affidavit tied to Charles Dyer's Revolutionary War pension application. Established the Dyer line in Ohio/Oregon.",
+    "summary": "Son of Charles Dyer (Revolutionary War veteran). Father of George Washington Dyer and 13 other children across three marriages. Lived in Kentucky, Indiana, Iowa, and Oregon. Major branch anchor for the Dyer descent.",
+    "keyEvent": "Born 2 January 1802 in Rolling Fork, Washington, Kentucky. Married three times: Fannie Bufford (1822-1834), Nancy Boley Dyer (1834-1865), Phoebe Morris Dyer (1866-1886). Died 20 January 1892 in Polk, Oregon.",
     "confidence": "Strong Evidence",
     "tags": [
       "Dyer",
@@ -5251,5 +5251,126 @@
       "Grandson of David and Nancy Marchant",
       "Nephew of Colleen Lattin"
     ]
+  },
+  {
+    "id": "fannie-bufford",
+    "name": "Fannie Bufford",
+    "lifespan": "1801-1834",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "First wife of Jonathan Dyer. Married 18 March 1822 in Harrison County, Indiana. Mother of six children including Milton, Nimrod, Jackson, Mary Ann, and Harvey.",
+    "keyEvent": "Married Jonathan Dyer on 18 March 1822. Died 16 June 1834 in Floyd, Indiana.",
+    "confidence": "Primary Source",
+    "sourceCitation": "U.S. Federal Census records, Indiana marriage and death records, Find A Grave Index"
+  },
+  {
+    "id": "nancy-boley-dyer",
+    "name": "Nancy Boley Dyer",
+    "lifespan": "1811-1865",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Second wife of Jonathan Dyer. Married 25 September 1834 in Harrison, Indiana. Mother of George Washington Dyer and eight other children. Lived in Illinois, Iowa, and Oregon.",
+    "keyEvent": "Married Jonathan Dyer on 25 September 1834. Mother of George Washington Dyer (b. 1835) and other children. Died 21 July 1865 in Dallas, Polk, Oregon.",
+    "confidence": "Primary Source",
+    "sourceCitation": "U.S. Federal Census records, Indiana marriage records, Oregon death records, Find A Grave Index"
+  },
+  {
+    "id": "phoebe-morris-dyer",
+    "name": "Phoebe Morris Dyer",
+    "lifespan": "1804-1886",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Third wife of Jonathan Dyer. Married 31 May 1866 in Polk, Oregon. Lived with Jonathan in Jackson, Polk, Oregon until her death.",
+    "keyEvent": "Married Jonathan Dyer on 31 May 1866 in Polk, Oregon. Died 1886 in Oregon.",
+    "confidence": "Primary Source",
+    "sourceCitation": "Oregon marriage and death records, U.S. Federal Census, Find A Grave Index"
+  },
+  {
+    "id": "dennis-patrick-dyer",
+    "name": "Dennis Patrick Dyer",
+    "lifespan": "1839-1917",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Son of Jonathan Dyer and Nancy Boley Dyer. Born 4 November 1839 in Jefferson, Iowa. Lived through Civil War era in Iowa and later areas.",
+    "keyEvent": "Born 4 November 1839 in Jefferson, Iowa. Died 1917.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "william-greenberry-dyer",
+    "name": "William Greenberry Dyer",
+    "lifespan": "1841-1927",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Son of Jonathan Dyer and Nancy Boley Dyer. Born 24 April 1841 in Jefferson, Iowa. Lived into early 20th century.",
+    "keyEvent": "Born 24 April 1841 in Jefferson, Iowa. Died 1927.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "robert-f-dyer",
+    "name": "Robert F. Dyer",
+    "lifespan": "1843-1920",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Son of Jonathan Dyer and Nancy Boley Dyer. Born 12 May 1843 in Lockridge, Jefferson County, Iowa. Part of the Dyer settlement in Iowa.",
+    "keyEvent": "Born 12 May 1843 in Lockridge, Jefferson County, Iowa. Died 1920.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "elizabeth-jane-dyer",
+    "name": "Elizabeth Jane Dyer",
+    "lifespan": "1845-1898",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Daughter of Jonathan Dyer and Nancy Boley Dyer. Born 11 March 1845 in Jefferson, Iowa. Part of the Iowa Dyer branch.",
+    "keyEvent": "Born 11 March 1845 in Jefferson, Iowa. Died 1898.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "julia-ann-dyer-muncy",
+    "name": "Julia Ann Dyer Muncy",
+    "lifespan": "1848-1932",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Daughter of Jonathan Dyer and Nancy Boley Dyer. Born 19 January 1848 in Jefferson, Iowa. Married name Muncy.",
+    "keyEvent": "Born 19 January 1848 in Jefferson, Iowa. Married and lived under name Muncy. Died 1932.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "anthony-wayne-dyer",
+    "name": "Anthony Wayne Dyer",
+    "lifespan": "1850-1895",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Son of Jonathan Dyer and Nancy Boley Dyer. Born 7 April 1850 in Jefferson, Iowa. Lived during Civil War era.",
+    "keyEvent": "Born 7 April 1850 in Jefferson, Iowa. Died 1895.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Iowa vital records"
+  },
+  {
+    "id": "nimrod-hurst-dyer",
+    "name": "Nimrod Hurst Dyer",
+    "lifespan": "1825-1911",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Son of Jonathan Dyer and Fannie Bufford. Born 8 January 1825 in Harrison, Indiana. Eldest surviving son from first marriage.",
+    "keyEvent": "Born 8 January 1825 in Harrison, Indiana. Lived 86 years. Died 1911.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Indiana and Iowa vital records"
+  },
+  {
+    "id": "mary-ann-dyer",
+    "name": "Mary Ann Dyer",
+    "lifespan": "1829-1863",
+    "era": "19th century",
+    "branch": "Dyer",
+    "summary": "Daughter of Jonathan Dyer and Nancy Boley Dyer. Born 10 January 1829 in Harrison, Indiana. Died during Civil War era.",
+    "keyEvent": "Born 10 January 1829 in Harrison, Indiana. Died 28 December 1863 in Brown County, Texas.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Federal Census records, Texas vital records"
   }
 ]
