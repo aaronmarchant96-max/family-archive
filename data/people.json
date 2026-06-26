@@ -1409,7 +1409,7 @@
     "branch": "Law",
     "summary": "Wife of William Moore (printer). Born in Ireland, married in Ballymena in 1846, emigrated to Quebec, Canada, and later moved to New York City by 1865. Resided in New York City in 1880.",
     "keyEvent": "Married William Moore on 29 March 1846 in Ballymena, Ireland. Emigrated to Canada shortly after.",
-    "confidence": "Confirmed",
+    "confidence": "Primary Source",
     "tags": [
       "Ballymena",
       "Bridge Street",
@@ -5397,5 +5397,447 @@
     "keyEvent": "Married Charles Dyer. Mother of Jonathan Dyer (b. 1802). Died 14 October 1835 in Crandall, Harrison County, Indiana, age 73.",
     "confidence": "Strong Evidence",
     "sourceCitation": "Multiple genealogy databases (WikiTree, genealogy.com); Jonathan Dyer family records; Ancestry.com profiles citing consistent Mary Hurst + Charles Dyer marriage"
+  },
+  {
+    "id": "john-hurst-sr",
+    "name": "John Hurst Sr. (Captain)",
+    "lifespan": "1732-1825",
+    "era": "Late Colonial / Early Republic",
+    "branch": "Hurst",
+    "summary": "Captain John Hurst Sr., father of Mary Hurst Dyer. Lived in Virginia and Harrison County, Indiana.",
+    "keyEvent": "Father of Mary Hurst (b. 1762), who married Charles Dyer.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Hurst Line",
+      "Generation 1",
+      "Virginia",
+      "Indiana",
+      "Captain"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1732",
+        "place": "Virginia",
+        "summary": "Born in Virginia.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Military Service",
+        "date": "1775-1783",
+        "place": "Virginia",
+        "summary": "Lived during Revolutionary War period.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Later life",
+        "date": "1800-1825",
+        "place": "Harrison County, Indiana",
+        "summary": "Lived in Harrison County, Indiana in later years.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1825",
+        "place": "Hurst Town, Harrison County, Indiana",
+        "summary": "Died in Hurst Town, Harrison County, Indiana (town named after the family).",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Father of Mary Hurst (1762-1835)",
+      "Grandfather of Jonathan Dyer",
+      "Associated with Hurst Town, Indiana"
+    ]
+  },
+  {
+    "id": "lydia-smith-hurst",
+    "name": "Lydia Smith Hurst",
+    "lifespan": "1736-1786",
+    "era": "Colonial / Revolutionary",
+    "branch": "Hurst",
+    "summary": "Lydia Smith Hurst, mother of Mary Hurst Dyer. Died 1786 in Virginia.",
+    "keyEvent": "Mother of Mary Hurst (b. 1762).",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Hurst Line",
+      "Generation 1",
+      "Virginia"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1736",
+        "place": "Virginia",
+        "summary": "Born in Virginia.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1786",
+        "place": "Virginia",
+        "summary": "Died in Virginia. Mother had limited lifespan, influencing the Hurst children's upbringing.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Mother of Mary Hurst (1762-1835)",
+      "Grandmother of Jonathan Dyer",
+      "Died young in 1786"
+    ]
+  },
+  {
+    "id": "elizabeth-betsy-dyer-vaughn",
+    "name": "Elizabeth 'Betsy' Dyer Vaughn",
+    "lifespan": "1777-?",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Elizabeth 'Betsy' Dyer Vaughn, daughter of Charles Dyer and Mary Hurst. Married into the Vaughn family.",
+    "keyEvent": "Daughter of Charles Dyer and Mary Hurst, sister of Jonathan Dyer.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1777",
+        "place": "Washington, Kentucky",
+        "summary": "Born in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Sister of Jonathan Dyer",
+      "Born Washington, Kentucky"
+    ]
+  },
+  {
+    "id": "william-dyer-1779",
+    "name": "William Dyer",
+    "lifespan": "1779-1837",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "William Dyer (1779-1837), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, lived in Washington, Kentucky.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1779",
+        "place": "Washington, Kentucky",
+        "summary": "Born in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1837",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1837 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Lived Washington, Kentucky"
+    ]
+  },
+  {
+    "id": "mary-dyer-1781",
+    "name": "Mary Dyer",
+    "lifespan": "1781-1836",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Mary Dyer (1781-1836), daughter of Charles Dyer and Mary Hurst. Sister of Jonathan Dyer.",
+    "keyEvent": "Daughter of Charles Dyer, born in Montgomery, Virginia.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Virginia"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1781",
+        "place": "Montgomery, Virginia",
+        "summary": "Born in Montgomery, Virginia.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1836",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1836 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Sister of Jonathan Dyer",
+      "Born Montgomery, Virginia; died Washington, Kentucky"
+    ]
+  },
+  {
+    "id": "john-dyer-1785",
+    "name": "John Dyer",
+    "lifespan": "1785-1855",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "John Dyer (1785-1855), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, lived in Washington, Kentucky.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1785",
+        "place": "Washington, Kentucky",
+        "summary": "Born in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1855",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1855 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Lived Washington, Kentucky"
+    ]
+  },
+  {
+    "id": "james-dyer-1789",
+    "name": "James Dyer",
+    "lifespan": "1789-1849",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "James Dyer (1789-1849), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, lived in Washington, Kentucky.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1789",
+        "place": "Washington, Kentucky",
+        "summary": "Born in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1849",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1849 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Lived Washington, Kentucky"
+    ]
+  },
+  {
+    "id": "hugh-dyer",
+    "name": "Hugh Dyer",
+    "lifespan": "1791-1866",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Hugh Dyer (1791-1866), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, born in Wythe, Virginia.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Virginia"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1791",
+        "place": "Wythe, Virginia",
+        "summary": "Born 12 Dec 1791 in Wythe, Virginia.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1866",
+        "place": "Unknown",
+        "summary": "Died 1866.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Born Wythe, Virginia; lived 75 years"
+    ]
+  },
+  {
+    "id": "charles-dyer-jr",
+    "name": "Charles Dyer Jr.",
+    "lifespan": "1792-1867",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Charles Dyer Jr. (1792-1867), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, lived in Washington, Kentucky.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1792",
+        "place": "Washington, Kentucky",
+        "summary": "Born 9 Aug 1792 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1867",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1867 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Named after father; lived 75 years"
+    ]
+  },
+  {
+    "id": "nancy-dyer-1797",
+    "name": "Nancy Dyer",
+    "lifespan": "1797-1866",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Nancy Dyer (1797-1866), daughter of Charles Dyer and Mary Hurst. Sister of Jonathan Dyer.",
+    "keyEvent": "Daughter of Charles Dyer, lived in Washington, Kentucky and Indiana.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky",
+      "Indiana"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1797",
+        "place": "Washington, Kentucky",
+        "summary": "Born 16 Mar 1797 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1866",
+        "place": "Harrison County, Indiana",
+        "summary": "Died 1866 in Harrison County, Indiana.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Sister of Jonathan Dyer",
+      "Lived 69 years"
+    ]
+  },
+  {
+    "id": "elijah-dyer",
+    "name": "Elijah Dyer",
+    "lifespan": "1799-1862",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Elijah Dyer (1799-1862), son of Charles Dyer and Mary Hurst. Brother of Jonathan Dyer.",
+    "keyEvent": "Son of Charles Dyer, lived in Washington, Kentucky.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1799",
+        "place": "Washington, Kentucky",
+        "summary": "Born 6 Sep 1799 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1862",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1862 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Brother of Jonathan Dyer",
+      "Lived 63 years"
+    ]
+  },
+  {
+    "id": "letitia-dyer-hackley",
+    "name": "Letitia Dyer Hackley",
+    "lifespan": "1803-1855",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Letitia Dyer Hackley (1803-1855), daughter of Charles Dyer and Mary Hurst. Sister of Jonathan Dyer.",
+    "keyEvent": "Daughter of Charles Dyer, married into the Hackley family.",
+    "confidence": "Strong Evidence",
+    "tags": [
+      "Dyer Line",
+      "Charles & Mary's Children",
+      "Washington Kentucky"
+    ],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1803",
+        "place": "Washington, Kentucky",
+        "summary": "Born in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1855",
+        "place": "Washington, Kentucky",
+        "summary": "Died 1855 in Washington, Kentucky.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Charles Dyer (1755-1831) and Mary Hurst (1762-1835)",
+      "Sister of Jonathan Dyer",
+      "Married surname Hackley"
+    ]
   }
 ]
