@@ -194,12 +194,12 @@ describe("Archive integrity", () => {
     }
   });
 
-  test("William Moore remains a printer of Springwell Street, Ballymena", () => {
+  test("William Moore remains a painter of Springwell Street, Ballymena", () => {
     const william = personById.get("william-moore");
 
     expect(william).toBeDefined();
-    expect(william?.summary).toMatch(/printer/i);
-    expect(william?.summary).not.toMatch(/painter/i);
+    expect(william?.summary).toMatch(/painter/i);
+    expect(william?.summary).not.toMatch(/printer/i);
     expect(william?.summary).toMatch(/Springwell Street/i);
     expect(william?.summary).toMatch(/Ballymena/i);
   });
