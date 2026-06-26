@@ -675,10 +675,10 @@
     "sourceCitation": "1901 Census of Canada, Ellisboro, Assiniboia (east/est), The Territories, Canada.",
     "previewUrl": "/documents/hugh-christopher-moore-1901-ellisboro-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore", "Jessie Bowen"],
+    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore", "Catherine Moore"],
     "place": "Ellisboro, Assiniboia, The Territories, Canada",
-    "whatItProves": "Hugh Christopher Moore (age 6) and mother Jessie Bowen (wife, age 27) in the household in Ellisboro. Confirms 1901 residence fact.",
-    "notes": "Primary Source. 1901 Census page for the Moore family, showing Jessie Bowen as wife."
+    "whatItProves": "James Moore (head of household), wife Jessie Bowen, and children Hugh C., Norman, and Janet M. (Catherine) residing in Ellisboro. Confirms 1901 residence fact and family composition.",
+    "notes": "Primary Source. 1901 Census page for the Moore family."
   },
   {
     "id": "hugh-christopher-moore-1906-quappelle-census",
@@ -689,10 +689,10 @@
     "sourceCitation": "1906 Census of Manitoba, Saskatchewan, and Alberta, Qu'Appelle, Saskatchewan.",
     "previewUrl": "/documents/hugh-christopher-moore-1906-quappelle-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore", "Janet Hazel Moore"],
+    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore", "Catherine Moore", "Janet Hazel Moore"],
     "place": "Townships 15, 16, 17, 18 in ranges 11, 12 west of the 2nd M, Qu'Appelle, Saskatchewan, Canada",
-    "whatItProves": "Hugh Christopher Moore (age ~11) and sister Janet Hazel Moore (born 1903, age ~3) in the James Moore household. Relation to Head of House: Son/Daughter; Marital Status: Single.",
-    "notes": "Primary Source. 1906 Canada Census page confirming the Moore family residence in rural Saskatchewan, including Janet as a young child."
+    "whatItProves": "James Moore household including wife Jessie and children H C R (Hugh Christopher), Norman, Catherine, and Jeanette M. (Janet Hazel) in rural Saskatchewan.",
+    "notes": "Primary Source. 1906 Canada Census page confirming the Moore family residence in rural Saskatchewan."
   },
   {
     "id": "hugh-christopher-moore-1916-medicine-hat-census",
@@ -703,10 +703,10 @@
     "sourceCitation": "1916 Canada Census of Manitoba, Saskatchewan, and Alberta, Medicine Hat, Alberta.",
     "previewUrl": "/documents/hugh-christopher-moore-1916-medicine-hat-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore", "Janet Hazel Moore"],
+    "people": ["James Moore", "Jessie Bowen", "William Robert Moore", "Hugh Christopher Moore", "Catherine Moore", "Janet Hazel Moore"],
     "place": "11th Street, Medicine Hat, Alberta, Canada",
-    "whatItProves": "Hugh Christopher Moore (age 21) and sister Janet Hazel Moore in the family home on 11th Street, Medicine Hat. Relation to Head of House: Son/Daughter; Marital Status: Single.",
-    "notes": "Primary Source. 1916 Census page for the Moore household in Medicine Hat, Alberta, showing Janet living with the family."
+    "whatItProves": "James Moore and wife Jessie Bowen residing in Medicine Hat with children William R., Hugh C., Kathleen (Catherine), and Janet H.",
+    "notes": "Primary Source. 1916 Census page for the Moore household in Medicine Hat, Alberta, showing the family cluster with military service notes for the sons."
   },
   {
     "id": "hugh-christopher-moore-1921-medicine-hat-census",
@@ -717,10 +717,10 @@
     "sourceCitation": "1921 Census of Canada, Township 11 Range 7W4, Medicine Hat, Alberta.",
     "previewUrl": "/documents/hugh-christopher-moore-1921-medicine-hat-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore", "Jessie Bowen"],
+    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore"],
     "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
-    "whatItProves": "Hugh Christopher Moore (age 25) and mother Jessie Bowen (wife) in the household. Confirms 1921 residence fact for the family.",
-    "notes": "Primary Source. 1921 Canada Census page for the Moore household in Medicine Hat, showing Jessie as wife."
+    "whatItProves": "James Moore and wife Jessie Bowen residing with sons Hugh and Norman J. in Alberta. Confirms 1921 residence and household composition.",
+    "notes": "Primary Source. 1921 Canada Census page for the Moore household in Medicine Hat."
   },
   {
     "id": "hugh-christopher-moore-1917-us-wwi-draft",

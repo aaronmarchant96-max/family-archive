@@ -1684,8 +1684,8 @@
       {
         "title": "Death of brother Norman James Moore",
         "date": "15 March 1935",
-        "place": "Unknown",
-        "summary": "Brother Norman James Moore (1917-1935) passed away.",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Brother Norman James Moore (1899-1935) passed away.",
         "confidence": "Strong Evidence"
       },
       {
@@ -1893,8 +1893,8 @@
       },
       {
         "title": "Birth of son Norman James Moore",
-        "date": "1917",
-        "place": "Alberta",
+        "date": "26 October 1899",
+        "place": "Sintaluta, Saskatchewan, Canada",
         "summary": "Son Norman James Moore born.",
         "confidence": "Strong Evidence"
       },
@@ -3766,6 +3766,134 @@
     "evidenceSummary": [
       "Listed as child of William Moore and Isabella Law in family tradition records",
       "Status: No baptism record yet confirmed in Mid-Antrim parish registers"
+    ]
+  },
+  {
+    "id": "norman-james-moore",
+    "name": "Norman James Moore",
+    "lifespan": "1899-1935",
+    "era": "Early 20th century",
+    "branch": "Moore",
+    "summary": "Son of James Moore and Jessie Bowen. Born in Saskatchewan, he lived in the Canadian prairies and passed away in Calgary in 1935 at the age of 35.",
+    "keyEvent": "Born 26 Oct 1899 in Assiniboia, NWT. Identified as son of James Moore and Jessie Bowen in census records.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "Saskatchewan", "Alberta"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "26 October 1899",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Born to James Moore and Jessie Bowen.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1901",
+        "place": "Ellisboro, Assiniboia, The Territories, Canada",
+        "summary": "Living with parents and siblings. Relation to Head of House: Son.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1901-ellisboro-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1906",
+        "place": "Qu'Appelle, Saskatchewan, Canada",
+        "summary": "Living with parents and siblings. Relation to Head of House: Son.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1 June 1921",
+        "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
+        "summary": "Living with parents and brother Hugh. Relation to Head of House: Son; Marital Status: Single.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1921-medicine-hat-census"
+      },
+      {
+        "title": "Death",
+        "date": "15 March 1935",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Passed away in Calgary, Alberta, at age 35.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of James Moore and Jessie Bowen; brother of Hugh Christopher Moore",
+      "Appears in 1901 Census of Canada (age 1) and 1906 Census (age 6) in Saskatchewan",
+      "Appears in 1921 Census of Canada (age 21) in the James Moore household in Alberta",
+      "Death date of 1935 preserved from family records"
+    ]
+  },
+  {
+    "id": "catherine-moore",
+    "name": "Catherine Moore",
+    "lifespan": "1897-Deceased",
+    "era": "Early 20th century",
+    "branch": "Moore",
+    "summary": "Daughter of James Moore and Jessie Bowen. Born in Saskatchewan, she is documented in early Canadian census schedules.",
+    "keyEvent": "Born 4 Nov 1897 in Assiniboia, NWT. Identified as daughter of James Moore and Jessie Bowen.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "Saskatchewan"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "4 November 1897",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Born to James Moore and Jessie Bowen.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence",
+        "date": "1901",
+        "place": "Ellisboro, Assiniboia, The Territories, Canada",
+        "summary": "Living with parents and siblings (listed as Janet M., age 3). Relation to Head of House: Daughter.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1901-ellisboro-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1906",
+        "place": "Qu'Appelle, Saskatchewan, Canada",
+        "summary": "Living with parents and siblings (listed as Catherine, age 9). Relation to Head of House: Daughter.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of James Moore and Jessie Bowen; sister of Hugh Christopher Moore",
+      "Appears in 1901 Census of Canada (as Janet M., age 3) and 1906 Census (as Catherine, age 9) in Saskatchewan"
+    ]
+  },
+  {
+    "id": "william-robert-moore",
+    "name": "William Robert Moore",
+    "lifespan": "1894-1978",
+    "era": "20th century",
+    "branch": "Moore",
+    "summary": "Son of James Moore and Jessie Bowen. Born on the Canadian prairies, he later moved to Idaho and passed away there in 1978.",
+    "keyEvent": "Born 22 Mar 1894 in Assiniboia, NWT. Brother of Hugh Christopher Moore.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore", "Saskatchewan", "Idaho"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "22 March 1894",
+        "place": "Ellisboro, Saskatchewan, Canada",
+        "summary": "Born to James Moore and Jessie Bowen (listed as William Robert More in birth records).",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "October 1978",
+        "place": "Coeur d'Alene, Kootenai, Idaho, USA",
+        "summary": "Passed away in Idaho at age 84.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of James Moore and Jessie Bowen; brother of Hugh Christopher Moore",
+      "Birth and death dates documented in family records"
     ]
   },
   {
