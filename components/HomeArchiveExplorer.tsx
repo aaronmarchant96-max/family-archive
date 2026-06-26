@@ -694,6 +694,30 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             confidence: "Confirmed",
             note: "The Ballymena marriage record is already in the archive.",
             href: "/ancestors/william-moore"
+          },
+          {
+            id: "james-moore-1860",
+            label: "James Moore × Jessie Bowen",
+            subtitle: "loaded profile",
+            confidence: "Strong Evidence",
+            note: "Bridges the Irish branch to the Canadian prairies.",
+            href: "/ancestors/james-moore-1860"
+          },
+          {
+            id: "simon-moore",
+            label: "Simon Moore",
+            subtitle: "loaded profile",
+            confidence: "Needs Review",
+            note: "Schoolmaster in Ballymena, father of William.",
+            href: "/ancestors/simon-moore"
+          },
+          {
+            id: "patrick-law-ballymena",
+            label: "Patrick Law",
+            subtitle: "loaded profile",
+            confidence: "Needs Review",
+            note: "Brass founder in Ballymena, father of Isabella.",
+            href: "/ancestors/patrick-law-ballymena"
           }
         ]
       }

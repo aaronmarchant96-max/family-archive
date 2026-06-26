@@ -1202,10 +1202,10 @@
     "lifespan": "Mid-19th century",
     "era": "1840s Ballymena",
     "branch": "Moore",
-    "summary": "Painter of Springwell Street, Ballymena, County Antrim.",
+    "summary": "Printer of Springwell Street, Ballymena, County Antrim.",
     "keyEvent": "Married Isabella Law on March 29, 1846.",
     "confidence": "Primary Source",
-    "tags": ["Painter", "Ballymena", "Marriage record", "Moore line"],
+    "tags": ["Printer", "Ballymena", "Marriage record", "Moore line"],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -1219,7 +1219,7 @@
     ],
     "evidenceSummary": [
       "Direct family line through the Ballymena Moore record set",
-      "Painter in Springwell Street, Ballymena, County Antrim",
+      "Printer in Springwell Street, Ballymena, County Antrim",
       "Marriage dated March 29, 1846",
       "Key document: real-certificate.pdf",
       "Status: Confirmed family record",
@@ -3592,6 +3592,180 @@
       "Mother of Isreal Bowen (1748–1848) and listed siblings per tree",
       "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — chronological conflict with 1748 birth of son Isreal (3 years after death); likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation. Open contradiction.",
       "Key sources: Public Member Trees; Maine death record image (Primary)"
+    ]
+  },
+  {
+    "id": "simon-moore",
+    "name": "Simon Moore",
+    "lifespan": "circa 1798-unknown",
+    "era": "Early 19th-century Ballymena",
+    "branch": "Moore",
+    "summary": "Schoolmaster in Ballymena, County Antrim. Father of William Moore (printer).",
+    "keyEvent": "Identified as schoolmaster and father on William Moore's 1846 marriage record.",
+    "confidence": "Needs Review",
+    "tags": ["Schoolmaster", "Ballymena", "Moore line", "Needs review"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "circa 1798",
+        "place": "Ireland",
+        "summary": "Born in Ireland, likely County Antrim.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Son's Marriage",
+        "date": "March 29, 1846",
+        "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+        "summary": "Listed as father and schoolmaster on the marriage record of William Moore and Isabella Law.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "william-isabella-marriage-certificate"
+      }
+    ],
+    "evidenceSummary": [
+      "Father of William Moore per 1846 certified copy of marriage entry",
+      "Occupation: schoolmaster in Ballymena",
+      "Status: Needs contemporary primary source verification (school or directory records)"
+    ]
+  },
+  {
+    "id": "patrick-law-ballymena",
+    "name": "Patrick Law",
+    "lifespan": "Mid-19th century",
+    "era": "1840s Ballymena",
+    "branch": "Law",
+    "summary": "Brass founder of Bridge Street, Ballymena, County Antrim. Father of Isabella Law.",
+    "keyEvent": "Identified as brass founder and father on Isabella Law's 1846 marriage record.",
+    "confidence": "Needs Review",
+    "tags": ["Brass founder", "Ballymena", "Bridge Street", "Needs review"],
+    "timeline": [
+      {
+        "title": "Daughter's Marriage",
+        "date": "March 29, 1846",
+        "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+        "summary": "Listed as father and brass founder on the marriage record of William Moore and Isabella Law.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "william-isabella-marriage-certificate"
+      }
+    ],
+    "evidenceSummary": [
+      "Father of Isabella Law per 1846 certified copy of marriage entry",
+      "Occupation: brass founder in Ballymena, associated with Bridge Street",
+      "Status: Connection to Patrick Law, brass founder in Strabane, is possible but unproven; kept as separate working profiles."
+    ]
+  },
+  {
+    "id": "james-moore-1860",
+    "name": "James Moore",
+    "lifespan": "1860-1942",
+    "era": "Late 19th to early 20th century",
+    "branch": "Moore",
+    "summary": "Son of William Moore and Isabella Law. Born in Hull, Quebec; migrated west to the Canadian prairies; husband of Jessie Bowen and father of Hugh Christopher Moore and Janet Hazel Moore.",
+    "keyEvent": "Married Jessie Bowen; established the Moore family in Sintaluta, Saskatchewan and later Medicine Hat/Calgary, Alberta.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore line", "Quebec", "Saskatchewan", "Alberta", "Matriarch/Patriarch"],
+    "timeline": [
+      {
+        "title": "Birth in Hull",
+        "date": "circa 1860",
+        "place": "Hull, Quebec, Canada",
+        "summary": "Born in Hull, Quebec, Canada to William Moore and Isabella Law.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage to Jessie Bowen",
+        "date": "circa 1893-1894",
+        "place": "Canada",
+        "summary": "Married Jessie Bowen, establishing the family on the Canadian prairies.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Hugh Christopher Moore",
+        "date": "22 July 1895",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Son Hugh Christopher Moore born.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Birth of daughter Janet Hazel Moore",
+        "date": "9 April 1903",
+        "place": "Sintaluta, Saskatchewan, Canada",
+        "summary": "Daughter Janet Hazel Moore born.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Residence in Saskatchewan",
+        "date": "1906",
+        "place": "Qu'Appelle, Saskatchewan, Canada",
+        "summary": "Living with family in rural Saskatchewan.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1906-quappelle-census"
+      },
+      {
+        "title": "Residence in Medicine Hat",
+        "date": "1916",
+        "place": "11th Street, Medicine Hat, Alberta, Canada",
+        "summary": "Living with wife Jessie and children.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "hugh-christopher-moore-1916-medicine-hat-census"
+      },
+      {
+        "title": "Death",
+        "date": "6 June 1942",
+        "place": "Calgary, Alberta, Canada",
+        "summary": "Passed away in Calgary, Alberta, at age 82.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of William Moore and Isabella Law, anchoring the migration timeline from Ireland to Canada",
+      "Husband of Jessie Bowen (1874-1958) and father of Hugh Christopher Moore (1895-1979)",
+      "Appears in Canadian censuses (1901, 1906, 1916) confirming residence and family groupings"
+    ]
+  },
+  {
+    "id": "alec-moore",
+    "name": "Alec/Alexander Moore",
+    "lifespan": "19th-century Ireland",
+    "era": "19th-century Ireland",
+    "branch": "Moore",
+    "summary": "Son of William Moore and Isabella Law. Under research review.",
+    "keyEvent": "Birth/baptism records currently being evaluated.",
+    "confidence": "Needs Review",
+    "tags": ["Moore line", "Needs review"],
+    "timeline": [
+      {
+        "title": "Birth registration under review",
+        "date": "Date not yet confirmed",
+        "summary": "Evaluating potential baptism entries in Ballymena/Kirkinriola parish.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Listed as child of William Moore and Isabella Law in family tradition records",
+      "Status: No baptism record yet confirmed in Mid-Antrim parish registers"
+    ]
+  },
+  {
+    "id": "robert-moore",
+    "name": "Robert Moore",
+    "lifespan": "19th-century Ireland",
+    "era": "19th-century Ireland",
+    "branch": "Moore",
+    "summary": "Son of William Moore and Isabella Law. Under research review.",
+    "keyEvent": "Birth/baptism records currently being evaluated.",
+    "confidence": "Needs Review",
+    "tags": ["Moore line", "Needs review"],
+    "timeline": [
+      {
+        "title": "Birth registration under review",
+        "date": "Date not yet confirmed",
+        "summary": "Evaluating potential baptism entries in Ballymena/Kirkinriola parish.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Listed as child of William Moore and Isabella Law in family tradition records",
+      "Status: No baptism record yet confirmed in Mid-Antrim parish registers"
     ]
   }
 ]
