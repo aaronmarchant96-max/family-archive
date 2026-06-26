@@ -2,8 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { AncestorCard, type AncestorCardProps } from "./AncestorCard";
-import { DocumentCard, type DocumentCardProps } from "./DocumentCard";
+import type { AncestorCardProps } from "./AncestorCard";
+import type { DocumentCardProps } from "./DocumentCard";
 import { ConfidenceBadge } from "./ConfidenceBadge";
 import { MemoryCard, type FamilyMemoryEntry } from "./MemoryCard";
 import { RecordFrame } from "./RecordFrame";
@@ -34,6 +34,20 @@ type FeaturedRecord = {
   linkHref?: string;
   people?: string[];
   place?: string;
+};
+
+type StrongRecord = {
+  id: string;
+  kind: "ancestor" | "document" | "memory";
+  title: string;
+  subtitle: string;
+  confidence: string;
+  summary: string;
+  href: string;
+  actionLabel: string;
+  place?: string;
+  year?: number;
+  rankScore: number;
 };
 
 const eraJumps: ArchiveEraJump[] = [
@@ -179,6 +193,15 @@ function confidenceStyle(confidence: string) {
   if (confidence === "Strong Evidence") return "strong";
   if (confidence === "Family-Confirmed Oral History") return "oral";
   return "dotted";
+}
+
+function confidenceRank(confidence: string) {
+  if (confidence === "Primary Source" || confidence === "Confirmed") return 5;
+  if (confidence === "Strong Evidence") return 4;
+  if (confidence === "Corroborated Compilation") return 3;
+  if (confidence === "Family-Confirmed Oral History") return 2;
+  if (confidence === "Needs Review" || confidence === "Needs Proof") return 1;
+  return 0;
 }
 
 export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, maxYear }: ArchiveHomeProps) {
@@ -467,20 +490,64 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
 
   const visiblePeople = useMemo(() => people.filter((person) => personInRange(person, startYear, endYear)), [people, startYear, endYear]);
   const visibleDocuments = useMemo(() => documents.filter((document) => documentInRange(document, startYear, endYear)), [documents, startYear, endYear]);
-
-  const sortedVisibleDocuments = useMemo(() => {
-    const isScreenshot = (d: DocumentCardProps) => {
-      const hay = `${d.type} ${d.filename} ${d.previewUrl || ''}`.toLowerCase();
-      return hay.includes('.png') || /grave|plaque|screenshot|marker|memorial|photo/.test(hay);
-    };
-    return [...visibleDocuments].sort((a, b) => {
-      const aShot = isScreenshot(a) ? 0 : 1;
-      const bShot = isScreenshot(b) ? 0 : 1;
-      if (aShot !== bShot) return aShot - bShot;
-      return 0;
-    });
-  }, [visibleDocuments]);
   const visibleMemory = useMemo(() => familyMemory.filter((entry) => memoryInRange(entry, startYear, endYear)), [familyMemory, startYear, endYear]);
+
+  const strongestRecords = useMemo<StrongRecord[]>(
+    () => {
+      const peopleRecords = visiblePeople.map((person) => ({
+        id: `person-${person.id}`,
+        kind: "ancestor" as const,
+        title: person.name,
+        subtitle: person.branch,
+        confidence: person.confidence,
+        summary: person.summary,
+        href: `/ancestors/${person.id}`,
+        actionLabel: "Open profile",
+        place: person.era,
+        year: person.timeline?.map((entry) => parseArchiveYear(entry.date)).find((year): year is number => year != null) ?? parseArchiveYear(person.lifespan) ?? undefined,
+        rankScore: confidenceRank(person.confidence) + (person.evidenceSummary?.length ? 0.25 : 0)
+      }));
+
+      const documentRecords = visibleDocuments.map((document) => ({
+        id: `document-${document.id}`,
+        kind: "document" as const,
+        title: document.title || document.filename,
+        subtitle: document.type,
+        confidence: document.confidence,
+        summary: document.fact || document.whatItProves || document.meaning || document.notes || document.sourceCitation || "Document record",
+        href: `/documents/${document.id}`,
+        actionLabel: "Open record",
+        place: document.place,
+        year: parseArchiveYear(document.date) ?? undefined,
+        rankScore: confidenceRank(document.confidence) + (document.sourceUrl ? 0.25 : 0)
+      }));
+
+      const memoryRecords = visibleMemory.map((entry) => ({
+        id: `memory-${entry.id}`,
+        kind: "memory" as const,
+        title: entry.title,
+        subtitle: entry.categoryLabel ?? "Family memory",
+        confidence: entry.confidence,
+        summary: entry.description ?? entry.notes,
+        href: "/ancestors",
+        actionLabel: "See context",
+        place: entry.era,
+        year: memoryContextYears[entry.id],
+        rankScore: confidenceRank(entry.confidence) - 0.5
+      }));
+
+      return [...peopleRecords, ...documentRecords, ...memoryRecords]
+        .sort((a, b) => {
+          if (b.rankScore !== a.rankScore) return b.rankScore - a.rankScore;
+          const aYear = a.year ?? Number.POSITIVE_INFINITY;
+          const bYear = b.year ?? Number.POSITIVE_INFINITY;
+          if (aYear !== bYear) return aYear - bYear;
+          return a.title.localeCompare(b.title);
+        })
+        .slice(0, 10);
+    },
+    [visibleDocuments, visibleMemory, visiblePeople]
+  );
 
   const featuredRecordItems = useMemo<FeaturedRecord[]>(
     () => [
@@ -1065,48 +1132,59 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
       <section className="archive-section">
         <div className="archive-section__head">
           <div>
-            <div className="archive-section__title">Documented lines</div>
+            <div className="archive-section__title">Top ten strongest records</div>
             <div className="archive-section__copy">
-              Ancestor profiles that fall inside the selected year window. These remain profile cards, not a
-              generic family-tree dashboard.
+              A shorter front-page list. These are the most reliable people, records, and archive notes in the
+              current year window.
             </div>
           </div>
-          <Link className="archive-nav__link inline-flex" href="/ancestors">
-            Open page
-          </Link>
-        </div>
-        <div className="archive-grid">
-          {visiblePeople.length ? (
-            visiblePeople.map((person) => <AncestorCard key={person.id} {...person} />)
-          ) : (
-            <div className="archive-empty">
-              No ancestor records fall inside the selected year range. Widen the filter or jump by era.
-            </div>
-          )}
-        </div>
-      </section>
-
-      <section className="archive-section">
-        <div className="archive-section__head">
-          <div>
-            <div className="archive-section__title">Evidence vault</div>
-            <div className="archive-section__copy">
-              Document records are metadata-first. The source file stays private and the claim is stated plainly.
-            </div>
+          <div className="flex flex-wrap gap-2">
+            <Link className="archive-nav__link inline-flex" href="/ancestors">
+              Browse people
+            </Link>
+            <Link className="archive-nav__link inline-flex" href="/documents">
+              Browse records
+            </Link>
           </div>
-          <Link className="archive-nav__link inline-flex" href="/documents">
-            Open page
-          </Link>
         </div>
-        <div className="archive-grid">
-          {sortedVisibleDocuments.length ? (
-            sortedVisibleDocuments.map((document) => <DocumentCard key={document.id} {...document} />)
-          ) : (
-            <div className="archive-empty">
-              No document records fall inside the selected year range. Widen the filter or choose a place card.
-            </div>
-          )}
-        </div>
+        {strongestRecords.length ? (
+          <div className="grid gap-3 lg:grid-cols-2">
+            {strongestRecords.map((record, index) => (
+              <article
+                key={record.id}
+                className="rounded-[1.5rem] border border-[rgba(18,20,24,0.08)] bg-[rgba(244,239,231,0.96)] p-4 shadow-sm transition hover:-translate-y-0.5 hover:border-[rgba(127,29,45,0.25)] hover:shadow-md"
+              >
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <div className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent-soft)]">
+                      #{index + 1} {record.kind}
+                    </div>
+                    <h3 className="mt-1 text-xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
+                      {record.title}
+                    </h3>
+                  </div>
+                  <ConfidenceBadge label={record.confidence} />
+                </div>
+                <div className="mt-2 text-sm font-medium text-[var(--archive-text-soft)]">{record.subtitle}</div>
+                <div className="mt-1 text-sm text-[var(--archive-text-soft)]">
+                  {record.year ? `${record.year} • ` : ""}
+                  {record.place ?? "Archive item"}
+                </div>
+                <p className="mt-3 line-clamp-3 text-sm leading-6 text-[var(--archive-text)]">{record.summary}</p>
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <Link
+                    href={record.href}
+                    className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--archive-text)] hover:border-[rgba(127,29,45,0.35)] hover:bg-white"
+                  >
+                    {record.actionLabel}
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="archive-empty">No strong records fall inside the current year range.</div>
+        )}
       </section>
 
       <section className="archive-section">
@@ -1114,21 +1192,26 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
           <div>
             <div className="archive-section__title">Family Memory / Research Archive</div>
             <div className="archive-section__copy">
-              Oral history stays separate. Anne&apos;s Red Book appears here as a corroborated family research
-              compilation, while genuinely oral items remain visibly distinct from source-grade records.
+              Oral history stays separate. The full archive pages hold the long-form material; the homepage keeps
+              only the strongest shortlist and the visual entry points.
             </div>
           </div>
+          <Link className="archive-nav__link inline-flex" href="#timeline">
+            Back to timeline
+          </Link>
         </div>
-        <div className="archive-grid">
-          {visibleMemory.length ? (
-            visibleMemory.map((entry) => <MemoryCard key={entry.id} {...entry} />)
-          ) : (
-            <div className="archive-empty">
-              No family memory entries fit the current context window. Jump to the later archive years to bring
-              them back into view.
-            </div>
-          )}
-        </div>
+        {visibleMemory.length ? (
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+            {visibleMemory.slice(0, 3).map((entry) => (
+              <MemoryCard key={entry.id} {...entry} />
+            ))}
+          </div>
+        ) : (
+          <div className="archive-empty">
+            No family memory entries fit the current context window. Jump to the later archive years to bring them
+            back into view.
+          </div>
+        )}
       </section>
     </div>
   );
