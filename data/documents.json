@@ -124,7 +124,11 @@
     "confidence": "Primary Source",
     "people": ["Jabez Hopkins"],
     "place": "Hawkins County, Tennessee",
-    "whatItProves": "Jabez Hopkins appears in Hawkins County, Tennessee in 1840, supporting the Tennessee residence trail for the Hopkins family.",
+    "branch": "Hopkins",
+    "researchPriority": false,
+    "fact": "Jabez Hopkins household appears in the 1840 U.S. Federal Census for Hawkins County, Tennessee.",
+    "meaning": "Confirms the Hopkins family's presence in Tennessee during the migration from Virginia/Rhode Island area.",
+    "whatItProves": "Fact: Jabez Hopkins household appears in the 1840 U.S. Federal Census for Hawkins County, Tennessee. Meaning: Confirms the Hopkins family's presence in Tennessee during the migration from Virginia/Rhode Island area.",
     "notes": "Private census image in the archive. The page places Jabez Hopkins within the Hawkins County schedule among neighboring Collins and Gipson households, which helps anchor the Hopkins residence trail."
   },
   {
@@ -138,7 +142,11 @@
     "confidence": "Primary Source",
     "people": ["James Ramsey"],
     "place": "Long Creek, Decatur County, Iowa",
-    "whatItProves": "James Ramsey appears on the Iowa Civil War draft registration page in 1863, giving his age, occupation, birthplace, and Iowa residence context.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "James Ramsey appears on the 1863 Iowa Civil War draft registration, listing age, occupation, birthplace, and residence.",
+    "meaning": "Provides primary evidence for James Ramsey's identity, age, occupation, and Iowa location during the Civil War era.",
+    "whatItProves": "Fact: James Ramsey appears on the 1863 Iowa Civil War draft registration, listing age, occupation, birthplace, and residence. Meaning: Provides primary evidence for James Ramsey's identity, age, occupation, and Iowa location during the Civil War era.",
     "notes": "Private image of the draft registration page. Use as a primary source for James Ramsey's Iowa residence and Civil War-era identity trail."
   },
   {
@@ -152,7 +160,11 @@
     "confidence": "Primary Source",
     "people": ["Anna Hopkins Ramsey"],
     "place": "Richland Township, Decatur County, Iowa",
-    "whatItProves": "Anna Ramsey (1807-1883) appears as a widow in Richland Township, Decatur County, Iowa, confirming her residence after Thomas Ramsey's death.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Anna Ramsey (1807-1883) is listed as a widow in the 1880 U.S. Federal Census for Richland Township, Decatur County, Iowa.",
+    "meaning": "Confirms her residence and widow status in Iowa after Thomas Ramsey's death, supporting the family migration to Iowa.",
+    "whatItProves": "Fact: Anna Ramsey (1807-1883) is listed as a widow in the 1880 U.S. Federal Census for Richland Township, Decatur County, Iowa. Meaning: Confirms her residence and widow status in Iowa after Thomas Ramsey's death, supporting the family migration to Iowa.",
     "notes": "Supports the Ramsey family presence in Decatur County, Iowa."
   },
   {
@@ -166,7 +178,11 @@
     "confidence": "Primary Source",
     "people": ["Thomas Bentley Ramsey"],
     "place": "Long Creek Township, Decatur County, Iowa",
-    "whatItProves": "Thomas Bentley Ramsey appears as a head of household in Long Creek Township, Decatur County, Iowa in 1880, supporting his Iowa residence trail and family grouping.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Thomas Bentley Ramsey is recorded as head of household in the 1880 U.S. Federal Census for Long Creek Township, Decatur County, Iowa.",
+    "meaning": "Provides primary evidence for his residence, household composition, and the Ramsey presence in Iowa.",
+    "whatItProves": "Fact: Thomas Bentley Ramsey is recorded as head of household in the 1880 U.S. Federal Census for Long Creek Township, Decatur County, Iowa. Meaning: Provides primary evidence for his residence, household composition, and the Ramsey presence in Iowa.",
     "notes": "Private census image in the archive. Use this as a residence and household anchor for Thomas Bentley Ramsey."
   },
   {
@@ -242,7 +258,11 @@
     "confidence": "Strong Evidence",
     "people": ["Josiah Ramsey", "Elizabeth Cowan", "Thomas Ramsey"],
     "place": "Ramsey family memorial site",
-    "whatItProves": "Family memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey.",
+    "meaning": "Provides supporting evidence for the family group and burial of the Tennessee/Iowa Ramsey line.",
+    "whatItProves": "Fact: Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey. Meaning: Provides supporting evidence for the family group and burial of the Tennessee/Iowa Ramsey line.",
     "notes": "Memorial record supports the family group and burial memory. It is not a civil birth record."
   },
   {
@@ -256,7 +276,11 @@
     "confidence": "Strong Evidence",
     "people": ["Josiah Ramsey", "Elizabeth Cowan"],
     "place": "Ramsey memorial site",
-    "whatItProves": "Gravestone for Josiah C. Ramsey and Elizabeth Cowan; supports burial memorial and family grouping. The inscription's Josiah birth year conflicts with the FamilySearch profile and should be treated as a memorial inscription, not the only birth-date source.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "Gravestone for Josiah C. Ramsey and Elizabeth Cowan in the family memorial site.",
+    "meaning": "Supports the burial and family grouping for the Tennessee branch; birth year on stone conflicts with other sources and should be treated as memorial inscription only.",
+    "whatItProves": "Fact: Gravestone for Josiah C. Ramsey and Elizabeth Cowan in the family memorial site. Meaning: Supports the burial and family grouping for the Tennessee branch; birth year on stone conflicts with other sources and should be treated as memorial inscription only.",
     "notes": "Use this as supporting memorial evidence. The inscription and FamilySearch profile disagree on Josiah's birth year."
   },
   {
@@ -291,7 +315,11 @@
     "confidence": "Primary Source",
     "people": ["Thomas Ramsey", "Anna Hopkins Ramsey", "Armina Ramsey", "Anderson Edwards"],
     "place": "Decatur Township, Decatur County, Iowa",
-    "whatItProves": "A Decatur County census page capturing the Thomas Ramsey household and the Ramsey/Edwards household entries relevant to the wider family line.",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "1860 U.S. Federal Census page for Decatur Township, Iowa, showing Thomas Ramsey and nearby Ramsey/Edwards households.",
+    "meaning": "Provides primary evidence for the Ramsey and Edwards families living in close proximity in Iowa in 1860.",
+    "whatItProves": "Fact: 1860 U.S. Federal Census page for Decatur Township, Iowa, showing Thomas Ramsey and nearby Ramsey/Edwards households. Meaning: Provides primary evidence for the Ramsey and Edwards families living in close proximity in Iowa in 1860.",
     "notes": "FamilySearch export, page 47 of 537 in the source collection. Private scan plus citation retained in the archive."
   },
   {
@@ -333,7 +361,11 @@
     "confidence": "Primary Source",
     "people": ["Jabez Hopkins", "Rachel Clouse"],
     "place": "Washington County, Virginia",
-    "whatItProves": "Jabis Hopkins (spelling variant of Jabez) married Rachel Clouse on 14 April 1801 in Washington County, Virginia. Minister: Charles Hardy.",
+    "branch": "Hopkins",
+    "researchPriority": false,
+    "fact": "Jabis Hopkins (spelling variant of Jabez) married Rachel Clouse on 14 April 1801 in Washington County, Virginia (minister Charles Hardy).",
+    "meaning": "Primary record of the marriage that anchors the Hopkins family in Virginia before the Tennessee move.",
+    "whatItProves": "Fact: Jabis Hopkins (spelling variant of Jabez) married Rachel Clouse on 14 April 1801 in Washington County, Virginia (minister Charles Hardy). Meaning: Primary record of the marriage that anchors the Hopkins family in Virginia before the Tennessee move.",
     "notes": "Primary Source. Confirms Jabis as a documented spelling variant and the marriage date/place/minister. Does not prove alone that this is the later Tennessee/Iowa Jabez, that Anna Hopkins Ramsey was their daughter, or that Nehemiah Hopkins and Elizabeth Cole were his parents."
   },
   {
@@ -347,7 +379,11 @@
     "confidence": "Primary Source",
     "people": ["Nehemiah Hopkins", "Elizabeth Cole"],
     "place": "Warren, Rhode Island",
-    "whatItProves": "Nehemiah Hopkins married Elizabeth on 11 March 1762 in Warren, Rhode Island. Supports the early Rhode Island marriage anchor for Nehemiah Hopkins.",
+    "branch": "Hopkins",
+    "researchPriority": false,
+    "fact": "Nehemiah Hopkins married Elizabeth on 11 March 1762 in Warren, Rhode Island.",
+    "meaning": "Primary record anchoring the Hopkins family in Rhode Island before the move to Virginia and Tennessee.",
+    "whatItProves": "Fact: Nehemiah Hopkins married Elizabeth on 11 March 1762 in Warren, Rhode Island. Meaning: Primary record anchoring the Hopkins family in Rhode Island before the move to Virginia and Tennessee.",
     "notes": "Primary Source. Supports the marriage. Note: Elizabeth's full surname (Cole) needs direct confirmation in this lane. Does not prove Jabez was their son."
   },
   {
@@ -875,5 +911,22 @@
     "place": "Mooretown, Lambton County, Ontario, Canada",
     "whatItProves": "Identifies the exact historic burial location (Old Trinity / Sutherland Cemetery) in Mooretown where Isreal Bowen was interred in 1848. Confirms the place of death and burial stated in other records.",
     "notes": "Contextual evidence for burial site. The plaque was erected by the Ontario Archaeological and Historic Sites Board. Linked to Isreal Bowen in Ancestry."
+  },
+  {
+    "id": "name-variants-glossary",
+    "filename": "name-variants-glossary.txt",
+    "type": "Research note / glossary",
+    "date": "n.d.",
+    "era": "n/a",
+    "sourceCitation": "Compiled from profile notes, census transcriptions, and record images in the Living Red Book archive.",
+    "confidence": "Corroborated Compilation",
+    "people": [],
+    "place": "n/a",
+    "branch": "n/a",
+    "researchPriority": false,
+    "fact": "Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people.",
+    "meaning": "Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
+    "whatItProves": "Fact: Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people. Meaning: Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
+    "notes": "Observed variants:\n- Bowen line: Isreal (1748–1848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences."
   }
 ]

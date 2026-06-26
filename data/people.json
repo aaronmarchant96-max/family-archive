@@ -977,73 +977,19 @@
   {
     "id": "josiah-ramsey-jr-1769",
     "name": "Josiah Ramsey Jr.",
-    "lifespan": "1769-1835",
+    "lifespan": "1769-1835 (see josiah-ramsey-1769)",
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
-    "summary": "Son of Thomas Ramsey (died before 1805) and grandson of Josiah Ramsey Sr. Married Elizabeth Cowan and fathered Thomas Ramsey (1799-1872) and other children. Served in War of 1812 with 14th Kentucky Militia.",
-    "keyEvent": "Born 7 October 1769 in Baltimore, Maryland. Served in War of 1812. Father of Thomas Ramsey (1799-1872) who continued the Iowa line.",
-    "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "War of 1812", "14th Kentucky Militia", "SAR Line", "Generation 3"],
+    "summary": "Redirect / duplicate entry. See canonical working profile 'josiah-ramsey-1769' for the reconciled Tennessee Josiah Ramsey (c.1765/1769–1834/5, husband of Elizabeth Cowan, War of 1812 service, land grant). This FS-sourced version (1769-1835) is kept for reference but should be merged into the working profile.",
+    "keyEvent": "See josiah-ramsey-1769 for the working profile of this individual.",
+    "confidence": "Needs Review",
+    "tags": ["Ramsey", "Cowan", "War of 1812", "Duplicate", "Redirect"],
     "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
-    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (KP91-M2Y), showing birth on 7 October 1769 in Baltimore, Maryland, spouse Elizabeth Cowan, child Thomas Ramsey (1807-1872), and death in 1835 at Mulberry Gap, Hancock, Tennessee.",
-    "attachedDocument": "josiah-ramsey-family-plaque.jpg",
-    "timeline": [
-      {
-        "title": "Birth in Baltimore",
-        "date": "7 October 1769",
-        "place": "Baltimore, Maryland, United States",
-        "summary": "Born to Thomas Ramsey and grandson of Josiah Ramsey Sr.",
-        "confidence": "Strong Evidence"
-      },
-      {
-        "title": "Marriage to Elizabeth Cowan",
-        "date": "circa 1790-1795",
-        "place": "Tennessee or Maryland",
-        "summary": "Married Elizabeth Cowan, establishing the family that would migrate to Tennessee.",
-        "confidence": "Strong Evidence",
-        "linkedDocumentId": "josiah-ramsey-family-plaque"
-      },
-      {
-        "title": "War of 1812 Service",
-        "date": "1812-1815",
-        "place": "Kentucky",
-        "summary": "Service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia, with Lieutenant at induction and Adjutant at discharge.",
-        "confidence": "Primary Source",
-        "linkedDocumentId": "josiah-ramsey-jr-1812-service"
-      },
-      {
-        "title": "Claiborne residence",
-        "date": "1830",
-        "place": "Claiborne, Tennessee, United States",
-        "summary": "FamilySearch profile says he lived in Claiborne, Tennessee in 1830.",
-        "confidence": "Strong Evidence"
-      },
-      {
-        "title": "Family memorial plaque",
-        "date": "1993",
-        "place": "Ramsey family memorial site",
-        "summary": "The memorial plaque names Josiah Ramsey and Elizabeth Cowan and lists their children, including Thomas Ramsey (1799-1872).",
-        "confidence": "Strong Evidence",
-        "linkedDocumentId": "josiah-ramsey-family-plaque"
-      },
-      {
-        "title": "Death in Hancock County",
-        "date": "1835",
-        "place": "Mulberry Gap, Hancock, Tennessee, United States",
-        "summary": "Died in 1835 in Mulberry Gap, Hancock, Tennessee, at age 66.",
-        "confidence": "Strong Evidence"
-      }
-    ],
+    "sourceCitation": "See josiah-ramsey-1769 for canonical details. This entry duplicates data from FamilySearch KP91-M2Y.",
+    "timeline": [],
     "evidenceSummary": [
-      "FamilySearch profile ID: KP91-M2Y (birth 7 Oct 1769 Baltimore MD, death 1835 Mulberry Gap TN)",
-      "Spouse: Elizabeth Cowan",
-      "Father of Thomas Ramsey (1799-1872) and others",
-      "Lived in Claiborne, Tennessee in 1830",
-      "Served in 14th Kentucky Militia during War of 1812 (Lieutenant to Adjutant)",
-      "See working profile 'josiah-ramsey-1769' (c.1765/1769-1834) – these two entries represent the same person from different sources with minor date discrepancies (1834 vs 1835 death year)",
-      "Family plaque and grave marker supporting",
-      "War of 1812 service confirmed by M602",
-      "Note: PA will attachment (Washington Co. PA 1835) excluded from this line as it conflicts with TN residence and death trail"
+      "Duplicate of working profile josiah-ramsey-1769. See that entry for full reconciled evidence, timeline, and exclusions (including PA will).",
+      "FamilySearch ID: KP91-M2Y"
     ]
   },
   {
