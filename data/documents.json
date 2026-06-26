@@ -1293,5 +1293,40 @@
     "sourceCitation": "Oregon General Land Office, Donation Land Claim Records. U.S., Indexed Early Land Ownership and Township Plats, 1785-1898.",
     "whatItProves": "Certifies Jonathan Dyer held land in Polk County, Oregon (Township 6S Range 6W Willamette Meridian), DLC parcel ~5065. Directly corroborates his Oregon settlement and residence during 1866 marriage to Phoebe Morris. Consistent with Phoebe dying in Polk County (1865, 1886) and George Washington Dyer's documented Oregon/Washington residences.",
     "notes": "Oregon GLO (General Land Office) donation land claim plat, certified copy. Township 6S Range 6W Willamette Meridian - the exact Polk County area where Jonathan married Phoebe (1866) and where Phoebe later died (1886). DLC number approximately 5065."
+  },
+  {
+    "id": "robert-f-dyer-death-certificate",
+    "title": "Robert F. Dyer Death Certificate (1920)",
+    "filename": "robert-f-dyer-death-certificate.jpg",
+    "type": "Death Certificate",
+    "date": "June 15, 1920",
+    "era": "20th century",
+    "previewUrl": "/documents/robert-f-dyer-death-certificate.jpg",
+    "confidence": "Primary Source",
+    "people": [
+      "Robert F. Dyer",
+      "Jonathan Dyer",
+      "Nancy Boley Dyer"
+    ],
+    "sourceCitation": "Death Certificate, Form V.S. No. 5-12 M, 6-15-17. County of Oregon. Bureau of Vital Statistics.",
+    "whatItProves": "Confirms Robert F. Dyer (born May 14, 1843 in Iowa) was son of Jonathan Dyer and Nancy [Boley]. Farmer. Died of senility at age 76 years 3 months 6 days. Burial at Mount Hill Cemetery.",
+    "notes": "Death certificate filed 1920. Confirms parentage and birth year matching archive records for Robert F. Dyer (1843-1920)."
+  },
+  {
+    "id": "jonathan-dyer-phoebe-morris-marriage-record",
+    "title": "Jonathan Dyer & Phoebe Morris Marriage Record (1866)",
+    "filename": "jonathan-dyer-phoebe-morris-marriage-record.jpg",
+    "type": "Vital Statistics",
+    "date": "May 31, 1866 (recorded June 18, 1866)",
+    "era": "19th century",
+    "previewUrl": "/documents/jonathan-dyer-phoebe-morris-marriage-record.jpg",
+    "confidence": "Primary Source",
+    "people": [
+      "Jonathan Dyer",
+      "Phoebe Morris Dyer"
+    ],
+    "sourceCitation": "Oregon Vital Statistics Record (ORE STAT 18 Je 66, 3:2). Official marriage registration.",
+    "whatItProves": "Official Oregon vital statistics record confirming marriage of Jonathan Dyer to Phoebe Morris on May 31, 1866 in Polk County, Oregon. Ceremony performed by Elder G W Richardson at residence of E L D'Lashmitt (Phoebe's son-in-law, per obituary). Matches Phoebe Morris Dyer obituary date and location exactly.",
+    "notes": "Recorded 18 June 1866. Name used as \"Jonathan Dyer\" (vs \"John\" in some records). Vital Statistics confirm Polk County residence. Reference to D'Lashmitt aligns with Phoebe obituary narrative of migration with son-in-law."
   }
 ]
