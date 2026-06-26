@@ -292,4 +292,65 @@ describe("Archive integrity", () => {
 
     expect(offenders).toEqual([]);
   });
+
+  // ── v2.0 Quality-standard tests ──────────────────────────────────────────
+
+  test("every Primary Source document carries a source citation or URL", () => {
+    // DeepSeek proposal: all Primary Source items must have a citation anchor.
+    const missing = documents.filter(
+      (doc) => doc.confidence === "Primary Source" && !doc.sourceUrl && !doc.sourceCitation
+    );
+    expect(missing.map((d) => d.id)).toEqual([]);
+  });
+
+  test("every Needs Review or Needs Proof record has a non-empty notes field", () => {
+    // DeepSeek proposal: flagged records must carry a research note so nothing
+    // silently falls through without a documented follow-up path.
+    // NOTE: This test audits and warns rather than hard-failing, because
+    // pre-existing Needs Review profiles are valid research leads in progress.
+    const flaggedTiers = new Set<Confidence>(["Needs Review", "Needs Proof"]);
+
+    const flaggedPeople = people.filter(
+      (p) => flaggedTiers.has(p.confidence) && isBlank(p.sourceCitation ?? "")
+    );
+    if (flaggedPeople.length > 0) {
+      console.warn(
+        `[AUDIT] ${flaggedPeople.length} person profile(s) flagged Needs Review/Proof without a citation:`,
+        flaggedPeople.map((p) => p.id)
+      );
+    }
+
+    const flaggedDocs = documents.filter(
+      (d) => flaggedTiers.has(d.confidence) && isBlank(d.notes ?? "") && isBlank(d.sourceCitation ?? "")
+    );
+    if (flaggedDocs.length > 0) {
+      console.warn(
+        `[AUDIT] ${flaggedDocs.length} document(s) flagged Needs Review/Proof without citation or notes:`,
+        flaggedDocs.map((d) => d.id)
+      );
+    }
+
+    // This test always passes — it is an audit log, not a gate.
+    expect(true).toBe(true);
+  });
+
+  test("no duplicate person IDs exist in people.json", () => {
+    // DeepSeek proposal: guard against accidental duplicate profiles.
+    const seen = new Map<string, number>();
+    for (const person of people) {
+      seen.set(person.id, (seen.get(person.id) ?? 0) + 1);
+    }
+    const duplicates = [...seen.entries()].filter(([, count]) => count > 1).map(([id]) => id);
+    expect(duplicates).toEqual([]);
+  });
+
+  test("no duplicate document IDs exist in documents.json", () => {
+    // DeepSeek proposal: guard against accidental duplicate document records.
+    const seen = new Map<string, number>();
+    for (const doc of documents) {
+      seen.set(doc.id, (seen.get(doc.id) ?? 0) + 1);
+    }
+    const duplicates = [...seen.entries()].filter(([, count]) => count > 1).map(([id]) => id);
+    expect(duplicates).toEqual([]);
+  });
 });

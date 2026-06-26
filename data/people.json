@@ -1297,9 +1297,9 @@
     "lifespan": "1770-1840",
     "era": "Revolutionary era Tennessee",
     "branch": "Cowan",
-    "summary": "Wife of Josiah Ramsey Jr. (1769-1835) and mother of at least 10 children including Thomas Ramsey (1799-1872). Died in June 1840 in Mulberry Gap, Hancock, Tennessee.",
-    "keyEvent": "Married Josiah Ramsey Jr. circa 1790-1795. Mother of the Ramsey family line that migrated to Iowa. Named with Josiah Ramsey Jr. on the family memorial plaque and grave marker.",
-    "confidence": "Strong Evidence",
+    "summary": "Spouse of Josiah Ramsey Jr. Birth year unverified; requires source documentation to confirm chronological plausibility against children's birth dates.",
+    "keyEvent": "Mother of 8 children with Josiah Ramsey Jr., spanning 1832\u20131853",
+    "confidence": "Needs Review",
     "tags": [
       "Cowan",
       "Ramsey",
@@ -1364,7 +1364,8 @@
       "Died June 1840 in Mulberry Gap, Hancock, Tennessee",
       "Key memorial records are private scans in the archive",
       "Supports the Ramsey line through Thomas Ramsey to Iowa"
-    ]
+    ],
+    "bio": "Elizabeth Cowan (spouse of Josiah Ramsey Jr., 1769\u20131835). Mother of Alexander, Josiah, Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey. Birth year unverified; chronological plausibility of late children (born 1853) against presumed birth year (c. 1770) requires source verification."
   },
   {
     "id": "william-moore",

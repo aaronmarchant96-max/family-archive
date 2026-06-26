@@ -836,11 +836,17 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
   const secondaryPreview = documentsById.get("george-washington-dyer-1880-whitman-census")?.previewUrl;
   const tertiaryPreview = documentsById.get("george-washington-dyer-1900-pine-city-census")?.previewUrl;
   const fourthPreview = documentsById.get("charles-dyer-discharge")?.previewUrl ?? "/documents/charles-dyer.pdf";
+  const heroProofTrail = [
+    { label: "George Washington Dyer", detail: "1880 Whitman County census" },
+    { label: "Silas Josiah Edwards", detail: "Pine City marriage return" },
+    { label: "Edith Ann Edwards Moore", detail: "1924 Colfax marriage" }
+  ];
 
   return (
     <div className="space-y-10">
       <section className="archive-home-hero">
         <div className="archive-home-hero__copy">
+          <div className="archive-home-hero__ribbon">Front page / proof-first archive / verified family line</div>
           <div className="archive-eyebrow">Our family’s records</div>
           <h1 className="archive-display text-5xl font-semibold tracking-tight text-[var(--archive-ink)] sm:text-6xl">
             The Living Red Book
@@ -870,9 +876,28 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
               Look by place
             </Link>
           </div>
+          <div className="archive-home-hero__signal">
+            <div className="archive-home-hero__signal-label">What the front page is doing</div>
+            <div className="archive-home-hero__signal-copy">
+              It opens on George Washington Dyer, then follows the line through the records that actually prove the
+              connection, instead of burying the page in cards.
+            </div>
+          </div>
         </div>
 
         <div className="archive-home-hero__wall">
+          <div className="archive-home-hero__proof-chain">
+            <div className="archive-home-hero__proof-chain-label">Proof trail</div>
+            <div className="archive-home-hero__proof-chain-track">
+              {heroProofTrail.map((step, index) => (
+                <div key={step.label} className="archive-home-hero__proof-step">
+                  <div className="archive-home-hero__proof-step-label">{step.label}</div>
+                  <div className="archive-home-hero__proof-step-detail">{step.detail}</div>
+                  {index < heroProofTrail.length - 1 ? <div className="archive-home-hero__proof-step-arrow">→</div> : null}
+                </div>
+              ))}
+            </div>
+          </div>
           <div className="flex gap-4">
             <div className="archive-home-hero__portrait-frame flex-1">
               <SourcePreview src={heroPortrait} title="George Washington Dyer" className="archive-home-hero__portrait" />
