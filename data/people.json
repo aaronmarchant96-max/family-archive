@@ -5386,5 +5386,16 @@
     "keyEvent": "Married Phoebe on December 6, 1823. Died August 24, 1848 in Ohio.",
     "confidence": "Primary Source",
     "sourceCitation": "Phoebe Morris Dyer obituary (Polk County, Oregon newspaper, February 15, 1886)"
+  },
+  {
+    "id": "mary-hurst",
+    "name": "Mary Hurst",
+    "lifespan": "1762-1835",
+    "era": "Early Republic",
+    "branch": "Dyer",
+    "summary": "Wife of Charles Dyer (Revolutionary War veteran). Mother of Jonathan Dyer and other children. Lived in Virginia, Ohio, and Indiana.",
+    "keyEvent": "Married Charles Dyer. Mother of Jonathan Dyer (b. 1802). Died 14 October 1835 in Crandall, Harrison County, Indiana, age 73.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Multiple genealogy databases (WikiTree, genealogy.com); Jonathan Dyer family records; Ancestry.com profiles citing consistent Mary Hurst + Charles Dyer marriage"
   }
 ]
