@@ -1002,6 +1002,37 @@
     "notes": "Primary Source. Calgary city directory scan from Henderson's Directory c. 1958."
   },
   {
+    "id": "decatur-county-1856-census",
+    "filename": "decatur-county-1856-census.jpg",
+    "type": "State census page",
+    "date": "1856",
+    "era": "19th-century census",
+    "sourceCitation": "1856 Iowa State Census, Richland Township, Decatur County, Iowa, households 23 and 26.",
+    "previewUrl": "/documents/decatur-county-1856-census.jpg",
+    "confidence": "Primary Source",
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey",
+      "Franklin Ramsey",
+      "Henderson Ramsey",
+      "Cowen Ramsey",
+      "Rachael Ramsey",
+      "William Allen Ramsey",
+      "Anderson Edwards",
+      "Armina Ramsey",
+      "Lucinda Edwards",
+      "Mary Ann Edwards",
+      "Nervesta Edwards"
+    ],
+    "place": "Richland Township, Decatur County, Iowa",
+    "branch": "Ramsey",
+    "researchPriority": false,
+    "fact": "1856 Iowa State Census page for Richland Township, Decatur County, showing the Thomas Ramsey household (no. 23) and the adjacent Anderson Edwards household (no. 26).",
+    "meaning": "Confirms the adjacent residence of the Ramsey and Edwards families in Richland Township, Decatur County in 1856, and lists all children in both households including ages, birthplaces, and years resident in Iowa.",
+    "whatItProves": "Fact: 1856 Iowa State Census page for Richland Township, Decatur County, showing the Thomas Ramsey household (no. 23) and the adjacent Anderson Edwards household (no. 26). Meaning: Confirms the adjacent residence of the Ramsey and Edwards families in Richland Township, Decatur County in 1856, and lists all children in both households including ages, birthplaces, and years resident in Iowa.",
+    "notes": "Primary Source. Iowa State Census schedule scan. Links the entire Thomas Ramsey and Anderson Edwards family groups during their Iowa residency."
+  },
+  {
     "id": "obituary-colleen-lattin-2020",
     "filename": "obituary-colleen-lattin-2020.txt",
     "type": "Obituary",

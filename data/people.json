@@ -548,7 +548,7 @@
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Census", "Davis County", "Iowa", "Generation 4"],
     "attachedDocument": "census-decatur-township.pdf",
-    "sourceCitation": "1850 and 1860 U.S. Federal Censuses (Iowa households); Family memorial plaque; Ancestry profile (secondary for vitals: birth 9 Dec 1799 TN, death 18 Aug 1872 Bentonville AR). Primary household records confirm residence and family group; vitals from secondary aggregator need primary confirmation.",
+    "sourceCitation": "1850 & 1860 U.S. Federal Censuses; 1856 Iowa State Census; Family memorial plaque; Ancestry profile (secondary for vitals: birth 9 Dec 1799 TN, death 18 Aug 1872 Bentonville AR). Primary household records confirm residence and family group; vitals from secondary aggregator need primary confirmation.",
     "timeline": [
       {
         "title": "Birth",
@@ -589,6 +589,14 @@
         "linkedDocumentId": "thomas-ramsey-1850-bloomfield-iowa-census"
       },
       {
+        "title": "1856 state census household",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Listed as head of household in the 1856 Iowa State Census with wife Anna and children Franklin, Henderson, Cowen, Rachel, and William.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
+      },
+      {
         "title": "1860 census household",
         "date": "1860",
         "place": "Richland Township, Decatur County, Iowa",
@@ -609,10 +617,11 @@
       "Husband of Anna Hopkins (1807-1883)",
       "Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children",
       "1850 federal census household in Bloomfield Township, Davis County, Iowa (Primary Source, with nearby Edwards households)",
+      "1856 state census household in Richland Township, Decatur County, Iowa (Primary Source)",
       "1860 federal census household in Richland Township, Decatur County, Iowa (Primary Source)",
       "Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
       "Ancestry profile gives birth 9 Dec 1799 TN and death 18 Aug 1872 Bentonville AR (secondary source; vitals need primary confirmation)",
-      "Key documents: 1850 and 1860 censuses (strong for residence and family); memorial plaque",
+      "Key documents: 1850, 1856, and 1860 censuses (strong for residence and family); memorial plaque",
       "Status: Strong evidence for family group and Iowa residence; birth/death dates from secondary Ancestry profile"
     ]
   },
@@ -659,6 +668,14 @@
         "confidence": "Strong Evidence"
       },
       {
+        "title": "1856 state census household",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Listed in the 1856 Iowa State Census with husband Thomas Ramsey and children Franklin, Henderson, Cowen, Rachel, and William.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
+      },
+      {
         "title": "1860 census household",
         "date": "1860",
         "place": "Richland Township, Decatur County, Iowa",
@@ -687,7 +704,7 @@
       "Presumed daughter of Jabez Hopkins and Rachel Clouse (parentage still unproven; working connection from profiles and census)",
       "Mother of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey",
       "Identified as Anna Hopkins in the Josiah Ramsey FamilySearch profile",
-      "1860 and 1880 federal census household in Richland Township, Decatur County, Iowa",
+      "1856, 1860, and 1880 census households in Richland Township, Decatur County, Iowa",
       "Death record: Decatur County, Iowa, 1883",
       "Burial: Wheelis Cemetery",
       "Key document: census-decatur-township.pdf",
@@ -2105,6 +2122,14 @@
         "linkedDocumentId": "1850-bloomfield-davis-iowa-census-ramsey-edwards"
       },
       {
+        "title": "1856 state census household",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Listed as head of household in the 1856 Iowa State Census with wife Armina and children Lucinda, Mary Ann, and Nervesta.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
+      },
+      {
         "title": "Decatur Township household",
         "date": "1860",
         "place": "Decatur Township, Decatur County, Iowa",
@@ -2458,7 +2483,7 @@
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Lived to age 88.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
-    "sourceCitation": "Ramsey family memorial plaque naming Franklin Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque; 1856 Iowa State Census.",
     "timeline": [
       {
         "title": "Birth",
@@ -2476,6 +2501,14 @@
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
+        "title": "1856 state census appearance",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Residing in the household of his brother Thomas Ramsey in the 1856 Iowa State Census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
+      },
+      {
         "title": "Death",
         "date": "1925",
         "place": "Iowa",
@@ -2488,6 +2521,7 @@
       "Born 1837, died 1925",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
+      "Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856",
       "Lived 88 years"
     ]
   },
@@ -2501,7 +2535,7 @@
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
-    "sourceCitation": "Ramsey family memorial plaque naming Henderson Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque; 1856 Iowa State Census.",
     "timeline": [
       {
         "title": "Birth",
@@ -2519,6 +2553,14 @@
         "linkedDocumentId": "josiah-ramsey-family-plaque"
       },
       {
+        "title": "1856 state census appearance",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Residing in the household of his brother Thomas Ramsey in the 1856 Iowa State Census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
+      },
+      {
         "title": "Death",
         "date": "1903",
         "place": "Iowa",
@@ -2531,6 +2573,7 @@
       "Born 1839, died 1903",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
+      "Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856",
       "Lived 64 years"
     ]
   },
@@ -4161,7 +4204,7 @@
     "keyEvent": "Born in Tennessee. Lived in Iowa.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Tennessee", "Iowa"],
-    "sourceCitation": "FamilySearch Record KDSF-W87.",
+    "sourceCitation": "FamilySearch Record KDSF-W87; 1856 Iowa State Census.",
     "timeline": [
       {
         "title": "Birth",
@@ -4169,11 +4212,20 @@
         "place": "Tennessee, United States",
         "summary": "Born to Thomas Ramsey and Anna Hopkins.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "1856 state census appearance",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Residing in the household of his parents Thomas and Anna Ramsey in the 1856 Iowa State Census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
       }
     ],
     "evidenceSummary": [
       "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
-      "Brother of Armina Ramsey and James Ramsey (1825-1909)"
+      "Brother of Armina Ramsey and James Ramsey (1825-1909)",
+      "Resided in the household of his parents Thomas and Anna Ramsey in Richland Township, Decatur County, Iowa in 1856"
     ]
   },
   {
@@ -4186,7 +4238,7 @@
     "keyEvent": "Lived in Tennessee and Iowa. Died in 1933.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Tennessee", "Iowa"],
-    "sourceCitation": "FamilySearch Record LHBT-J82.",
+    "sourceCitation": "FamilySearch Record LHBT-J82; 1856 Iowa State Census.",
     "timeline": [
       {
         "title": "Birth",
@@ -4194,6 +4246,14 @@
         "place": "Tennessee, United States",
         "summary": "Born to Thomas Ramsey and Anna Hopkins.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "1856 state census appearance",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Residing in the household of her parents Thomas and Anna Ramsey in the 1856 Iowa State Census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
       },
       {
         "title": "Death",
@@ -4205,7 +4265,8 @@
     ],
     "evidenceSummary": [
       "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
-      "Sister of Armina Ramsey and James Ramsey (1825-1909)"
+      "Sister of Armina Ramsey and James Ramsey (1825-1909)",
+      "Resided in the household of her parents Thomas and Anna Ramsey in Richland Township, Decatur County, Iowa in 1856"
     ]
   },
   {
@@ -4243,7 +4304,7 @@
     "keyEvent": "Born in Iowa. Lived in Iowa. Died in 1941.",
     "confidence": "Strong Evidence",
     "tags": ["Ramsey", "Iowa"],
-    "sourceCitation": "FamilySearch Record LHPK-V2X.",
+    "sourceCitation": "FamilySearch Record LHPK-V2X; 1856 Iowa State Census.",
     "timeline": [
       {
         "title": "Birth",
@@ -4251,6 +4312,14 @@
         "place": "Iowa, United States",
         "summary": "Born to Thomas Ramsey and Anna Hopkins.",
         "confidence": "Strong Evidence"
+      },
+      {
+        "title": "1856 state census appearance",
+        "date": "1856",
+        "place": "Richland Township, Decatur County, Iowa",
+        "summary": "Residing in the household of his parents Thomas and Anna Ramsey in the 1856 Iowa State Census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "decatur-county-1856-census"
       },
       {
         "title": "Death",
@@ -4262,7 +4331,8 @@
     ],
     "evidenceSummary": [
       "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
-      "Brother of Armina Ramsey and James Ramsey (1825-1909)"
+      "Brother of Armina Ramsey and James Ramsey (1825-1909)",
+      "Resided in the household of his parents Thomas and Anna Ramsey in Richland Township, Decatur County, Iowa in 1856"
     ]
   },
   {
