@@ -3837,6 +3837,50 @@
     ]
   },
   {
+    "id": "john-jack-moore",
+    "name": "John \"Jack\" Moore",
+    "lifespan": "19th-century",
+    "era": "19th-century",
+    "branch": "Moore",
+    "summary": "Son of William Moore and Isabella Law. Listed in family records.",
+    "keyEvent": "Son of William Moore and Isabella Law.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore"],
+    "timeline": [
+      {
+        "title": "Birth registration under review",
+        "date": "Date not yet confirmed",
+        "summary": "Son of William Moore and Isabella Law.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Listed as child of William Moore and Isabella Law in family tradition records"
+    ]
+  },
+  {
+    "id": "mary-moore",
+    "name": "Mary Moore",
+    "lifespan": "19th-century",
+    "era": "19th-century",
+    "branch": "Moore",
+    "summary": "Daughter of William Moore and Isabella Law. Listed in family records. Separate from sister Mary Agnes Moore.",
+    "keyEvent": "Daughter of William Moore and Isabella Law.",
+    "confidence": "Strong Evidence",
+    "tags": ["Moore"],
+    "timeline": [
+      {
+        "title": "Birth registration under review",
+        "date": "Date not yet confirmed",
+        "summary": "Daughter of William Moore and Isabella Law.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Listed as child of William Moore and Isabella Law in family tradition records"
+    ]
+  },
+  {
     "id": "norman-james-moore",
     "name": "Norman James Moore",
     "lifespan": "1899-1935",
