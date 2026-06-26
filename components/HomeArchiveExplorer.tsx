@@ -831,7 +831,8 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
   const heroPortrait = georgeWashingtonDyer?.portraitUrl ?? "/portraits/george-washington-dyer.png";
   const heroPortraitCaption = georgeWashingtonDyer?.portraitCaption ?? "Descendant-shared family portrait of George Washington Dyer.";
   const featuredPortrait2 = jonathanDyer?.portraitUrl ?? "/portraits/jonathan-dyer-feature.jpg";
-  const featuredPortrait2Caption = jonathanDyer?.portraitCaption ?? "Jonathan Dyer";
+  const featuredPortrait2Name = jonathanDyer?.name ?? "Jonathan Dyer";
+  const featuredPortrait2Caption = jonathanDyer?.portraitCaption ?? "Son of Charles Dyer (Revolutionary War veteran); father of George Washington Dyer.";
   const secondaryPreview = documentsById.get("george-washington-dyer-1880-whitman-census")?.previewUrl;
   const tertiaryPreview = documentsById.get("george-washington-dyer-1900-pine-city-census")?.previewUrl;
   const fourthPreview = documentsById.get("charles-dyer-discharge")?.previewUrl ?? "/documents/charles-dyer.pdf";
@@ -887,11 +888,11 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
               </div>
             </div>
             <div className="archive-home-hero__portrait-frame flex-1">
-              <SourcePreview src={featuredPortrait2} title={featuredPortrait2Caption} className="archive-home-hero__portrait" />
+              <SourcePreview src={featuredPortrait2} title={featuredPortrait2Name} className="archive-home-hero__portrait" />
               <div className="archive-home-hero__portrait-meta">
                 <div>
                   <div className="archive-kicker">Descendant legacy</div>
-                  <div className="archive-home-hero__portrait-name">{featuredPortrait2Caption}</div>
+                  <div className="archive-home-hero__portrait-name">{featuredPortrait2Name}</div>
                 </div>
                 <div className="archive-home-hero__portrait-note">{featuredPortrait2Caption}</div>
               </div>
