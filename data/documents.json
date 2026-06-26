@@ -928,5 +928,23 @@
     "meaning": "Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
     "whatItProves": "Fact: Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people. Meaning: Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
     "notes": "Observed variants:\n- Bowen line: Isreal (1748–1848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences."
+  },
+  {
+    "id": "1850-bloomfield-davis-iowa-census-ramsey-edwards",
+    "filename": "1850-bloomfield-davis-iowa-census-ramsey-edwards.pdf",
+    "type": "U.S. census page",
+    "date": "1850",
+    "era": "19th-century census",
+    "sourceCitation": "\"Davis, Iowa, United States records,\" images, FamilySearch (https://www.familysearch.org/ark:/61903/3:1:S3HT-D489-3HD?view=index : Jun 26, 2026), image 612 of 632; United States. National Archives and Records Administration. Image Group Number: 004181030.",
+    "previewUrl": "/documents/1850-bloomfield-davis-iowa-census-ramsey-edwards.pdf",
+    "confidence": "Primary Source",
+    "people": ["Anderson Edwards", "Armina Ramsey", "Thomas Ramsey", "Anna Hopkins Ramsey"],
+    "place": "Bloomfield Township, Davis County, Iowa, United States",
+    "branch": "Ramsey / Edwards",
+    "researchPriority": false,
+    "fact": "1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (enumerated 18 Oct 1850) shows household of Thomas Ramsey (50, VA) and Anna (40, TN) with children Josiah (16, VA), Franklin (14, TN), Henderson (12, TN), Cowen (10, TN), Rachel (5, TN); and adjacent household of Anderson Edwards (18, TN) and Armina (23, TN).",
+    "meaning": "Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
+    "whatItProves": "Fact: 1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (enumerated 18 Oct 1850) shows household of Thomas Ramsey (50, VA) and Anna (40, TN) with children Josiah (16, VA), Franklin (14, TN), Henderson (12, TN), Cowen (10, TN), Rachel (5, TN); and adjacent household of Anderson Edwards (18, TN) and Armina (23, TN). Meaning: Places the young Anderson Edwards and Armina Ramsey (married Nov 1849 in TN) in Iowa by 1850 alongside Armina's parents Thomas and Anna Ramsey and siblings, confirming the family's migration from Tennessee to Iowa and the close family connections between the Ramsey and Edwards lines.",
+    "notes": "Primary Source. 1850 census image. Directly supports the 1850 census entry in the attached FamilySearch tree record for Armina Edwards. See also 1860 Decatur census and later Washington censuses for continuity."
   }
 ]

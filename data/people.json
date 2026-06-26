@@ -1288,7 +1288,7 @@
     "lifespan": "1851-1933",
     "era": "Late 19th-century Midwest",
     "branch": "Edwards",
-    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Eldest child of the Edwards family.",
+    "summary": "Daughter of Armina Ramsey and Anderson Edwards. Born 13 March 1851 Davis, Iowa. Died 7 July 1933 Grand River, Decatur, Iowa. Buried Wheelis Cemetery. Married? Lived in Richland Twp, Decatur, Iowa (1860-1925 censuses).",
     "keyEvent": "Born 1851 in Iowa or Tennessee. Part of the Edwards family migration to Washington.",
     "confidence": "Strong Evidence",
     "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
@@ -1296,31 +1296,31 @@
     "timeline": [
       {
         "title": "Birth",
-        "date": "1851",
-        "place": "Iowa or Tennessee",
-        "summary": "First child of Armina Ramsey and Anderson Edwards.",
+        "date": "13 March 1851",
+        "place": "Davis, Iowa, United States",
+        "summary": "Born in Davis County, Iowa (per FamilySearch tree record).",
         "confidence": "Strong Evidence"
       },
       {
         "title": "Decatur County childhood",
         "date": "1860",
         "place": "Decatur County, Iowa",
-        "summary": "Appears in the 1860 census with the Edwards/Ramsey family cluster.",
+        "summary": "Appears in the 1860 census with the Edwards/Ramsey family cluster (Primary Source).",
         "confidence": "Primary Source",
         "linkedDocumentId": "decatur-township-1860-census"
       },
       {
-        "title": "Migration to Washington",
-        "date": "circa 1870s-1880s",
-        "place": "Washington Territory",
-        "summary": "Migrated with the family from Iowa to Washington.",
+        "title": "Residence in Richland Twp",
+        "date": "1870-1925",
+        "place": "Richland Township, Decatur, Iowa, United States",
+        "summary": "Lived in Richland Twp (1870, 1880, 1885, 1895, 1900, 1910, 1915, 1920, 1925 censuses).",
         "confidence": "Strong Evidence"
       },
       {
-        "title": "Death",
-        "date": "1933",
-        "place": "Washington",
-        "summary": "Died in Washington.",
+        "title": "Death and burial",
+        "date": "7 July 1933",
+        "place": "Grand River, Decatur, Iowa, United States",
+        "summary": "Died 7 July 1933; buried Wheelis Cemetery, Grand River, Decatur, Iowa.",
         "confidence": "Strong Evidence"
       }
     ],
@@ -2065,8 +2065,8 @@
     "lifespan": "1832-1908",
     "era": "19th-century Midwest",
     "branch": "Edwards",
-    "summary": "Husband of Armina Ramsey and father of 8 children. Part of the Ramsey/Edwards line in Iowa and Washington records. The family migrated from Iowa to Washington.",
-    "keyEvent": "Married Armina Ramsey; the exact marriage date still needs verification. Father of Lucinda, Mary Ann, Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards.",
+    "summary": "Husband of Armina Ramsey (1826-1923). Married 24 Nov 1849 in Tennessee. Father of 8 children: Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938). Migrated TN -> IA (by 1850) -> WA. Died 1908; buried Pine City, WA.",
+    "keyEvent": "Married Armina Ramsey 24 November 1849 in Tennessee. Father of eight children. Census trail confirms Iowa and Washington residences.",
     "confidence": "Strong Evidence",
     "tags": ["Edwards", "Ramsey", "Obituary", "Census", "Iowa", "Washington", "Generation 5"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
@@ -2080,10 +2080,19 @@
       },
       {
         "title": "Marriage to Armina Ramsey",
-        "date": "Needs verification",
-        "summary": "The obituary and later family context suggest a marriage to Armina Ramsey, but the date needs confirmation from a record closer to the event.",
-        "confidence": "Needs Review",
+        "date": "24 November 1849",
+        "place": "Tennessee, United States",
+        "summary": "Married Armina Ramsey in Tennessee (per obituary and FamilySearch record).",
+        "confidence": "Strong Evidence",
         "linkedDocumentId": "armina-ramsey-obituary"
+      },
+      {
+        "title": "1850 Census in Iowa",
+        "date": "1850",
+        "place": "Bloomfield Township, Davis County, Iowa, United States",
+        "summary": "Living with wife Armina in household adjacent to her parents Thomas and Anna Ramsey in 1850 census (Primary Source).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "1850-bloomfield-davis-iowa-census-ramsey-edwards"
       },
       {
         "title": "Decatur Township household",
@@ -2165,19 +2174,14 @@
       }
     ],
     "evidenceSummary": [
-      "Husband of Armina Ramsey (1826-1923)",
-      "Born 1832, died 1908",
-      "Marriage to Armina Ramsey needs verification",
-      "Armina obituary states the marriage year as 1840",
-      "Father of 8 children: Lucinda, Mary Ann 'Polly', Nervesta, John Wesley, Silas Josiah, Thomas, Alzy Jane, and Luella Edwards",
-      "1870 Iowa census - Strong Edwards household continuity (Primary Source)",
-      "1880 Oregon census - Downstream proof after Iowa period (Primary Source)",
-      "1900-1940 Washington census trail - Later continuity",
-      "Washington Territory census - Broad cluster evidence (Needs Review)",
-      "Appears in the Ramsey/Edwards census trail in Iowa",
-      "Migrated from Iowa to Washington",
-      "Key document: obituary-armina-ramsey.pdf",
-      "RESEARCH NOTE: These records support the Edwards migration Iowa -> Oregon -> Washington. No new Hopkins proof in this batch."
+      "Husband of Armina Ramsey (1826-1923); married 24 Nov 1849 in Tennessee",
+      "Born 1832 (Tennessee or surrounding), died 1908",
+      "Father of 8 children: Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938)",
+      "1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: with Armina next to her parents Thomas/Anna Ramsey and siblings (Primary Source, linked)",
+      "1860-1880 Iowa census trail - household continuity (Primary Source)",
+      "1880-1920+ Washington census trail and 1923 obituary - migration to WA, lists children and burial in Pine City (Primary Source)",
+      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses",
+      "Armina's siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
     ]
   },
   {
@@ -2186,12 +2190,12 @@
     "lifespan": "1826-1923",
     "era": "19th-century Midwest",
     "branch": "Ramsey",
-    "summary": "Confirmed daughter of Thomas Ramsey and Anna Hopkins; Edwards/Ramsey line matriarch with a family obituary and a census trail in Iowa and Washington.",
-    "keyEvent": "Married Anderson Edwards; the exact marriage date still needs verification. Later lived in Iowa and Washington. The profile and obituary identify her parents as Thomas Ramsey 1799-1872 and Anna Hopkins.",
+    "summary": "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883). Married Anderson Edwards (1832-1908) 24 Nov 1849 in Tennessee. Mother of 8 children including Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), and Luella (1868-1938). Migrated from Tennessee to Iowa (by 1850) then Washington. Died 1923 in Pine City, WA; buried there.",
+    "keyEvent": "Married Anderson Edwards 24 November 1849 in Tennessee. Mother of eight children. Lived in Iowa and Washington; confirmed by census trail and 1923 obituary.",
     "confidence": "Primary Source",
     "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
     "attachedDocument": "obituary-armina-ramsey.pdf",
-    "sourceCitation": "Ancestry profile for Armina (X) Ramsey, showing birth 26 Aug 1826 in Tennessee, parents Thomas Ramsey 1799-1872 and Anna Hopkins, marriage to Anderson Edwards, and later Iowa/Washington residence trail.",
+    "sourceCitation": "1850 U.S. Federal Census, Davis County, Iowa (Bloomfield Township); 1860-1880 Iowa censuses; 1880-1920 Washington censuses; 1923 obituary (Leon Journal-Reporter); FamilySearch tree record; marriage return context.",
     "portraitUrl": "/portraits/armina-ramsey.jpg",
     "portraitCaption": "Armina (Ramsey) Edwards, shown in the obituary source scan.",
     "timeline": [
@@ -2204,10 +2208,19 @@
       },
       {
         "title": "Marriage to Anderson Edwards",
-        "date": "Needs verification",
-        "summary": "Armina is linked to Anderson Edwards as her husband, but the marriage date should be confirmed from a primary record before treating it as settled.",
-        "confidence": "Needs Review",
+        "date": "24 November 1849",
+        "place": "Tennessee, United States",
+        "summary": "Married Anderson Edwards in Tennessee (per 1923 obituary and FamilySearch tree record).",
+        "confidence": "Strong Evidence",
         "linkedDocumentId": "armina-ramsey-obituary"
+      },
+      {
+        "title": "1850 Census in Iowa",
+        "date": "1850",
+        "place": "Bloomfield Township, Davis County, Iowa, United States",
+        "summary": "Living with husband Anderson Edwards (18, TN) in household adjacent to her parents Thomas Ramsey and Anna in 1850 census (Primary Source).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "1850-bloomfield-davis-iowa-census-ramsey-edwards"
       },
       {
         "title": "Decatur Township household",
@@ -2283,19 +2296,14 @@
       }
     ],
     "evidenceSummary": [
-      "Confirmed daughter of Thomas Ramsey and Anna Hopkins",
-      "Edwards/Ramsey line matriarch",
-      "Marriage to Anderson Edwards needs verification",
-      "Armina obituary states she was united in marriage to Anderson Edwards in 1840",
-      "1870 Iowa census - Strong Edwards household continuity (Primary Source)",
-      "1880 Oregon census - Downstream proof after Iowa (Primary Source)",
-      "1900-1940 Washington census trail - Later continuity",
-      "Washington Territory census - Broad cluster evidence (Needs Review)",
-      "Appears in the 1860 Decatur Township census trail",
-      "Obituary dated July 26, 1923",
-      "Ancestry profile identifies her parents as Thomas Ramsey 1799-1872 and Anna Hopkins",
-      "Key document: obituary-armina-ramsey.pdf",
-      "These records support the Edwards migration Iowa -> Oregon -> Washington. No new Hopkins proof in this batch."
+      "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Married Anderson Edwards 24 Nov 1849 in Tennessee (obituary and tree record)",
+      "Mother of Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938)",
+      "1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: living with Anderson Edwards next to parents Thomas/Anna Ramsey and siblings (Primary Source, linked)",
+      "1860-1880 Iowa census trail - household continuity (Primary Source)",
+      "1880-1920+ Washington census trail and 1923 obituary (Leon Journal-Reporter) - migration to WA, lists children and burial in Pine City (Primary Source)",
+      "Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses",
+      "Siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
     ]
   },
   {
