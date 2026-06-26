@@ -546,13 +546,15 @@
     "type": "U.S. census page",
     "date": "1920",
     "era": "20th-century census",
-    "sourceCitation": "1920 U.S. Federal Census, Washington. Edwards-line household.",
+    "sourceCitation": "1920 U.S. Federal Census, Pine City Precinct, Whitman County, Washington, Silas Josiah Edwards household.",
     "previewUrl": "/documents/edwards-1920-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Armina Ramsey"],
-    "place": "Washington",
-    "whatItProves": "Edwards-line continuity in Washington.",
-    "notes": "Continuity record only."
+    "people": ["Silas Josiah Edwards", "Nancy Ann Dyer", "Edith Ann Edwards"],
+    "place": "Pine City, Whitman County, Washington, USA",
+    "fact": "1920 U.S. census page for Pine City Precinct, Whitman County, Washington, showing the Silas J. Edwards household with wife Nancy and daughter Edith in Pine City.",
+    "meaning": "Confirms the Edwards household remained in Pine City, Whitman County, Washington in 1920 and places Nancy Ann Dyer and Edith Ann Edwards together in the family home before Edith's 1924 marriage to Hugh Christopher Moore.",
+    "whatItProves": "Fact: 1920 U.S. census page for Pine City Precinct, Whitman County, Washington, showing the Silas J. Edwards household with wife Nancy and daughter Edith in Pine City. Meaning: Confirms the Edwards household remained in Pine City, Whitman County, Washington in 1920 and places Nancy Ann Dyer and Edith Ann Edwards together in the family home before Edith's 1924 marriage to Hugh Christopher Moore.",
+    "notes": "Primary census image for the Silas Josiah Edwards household. Useful for the Dyer -> Edwards -> Moore proof chain."
   },
   {
     "id": "edwards-1930-washington-census",
@@ -560,13 +562,15 @@
     "type": "U.S. census page",
     "date": "1930",
     "era": "20th-century census",
-    "sourceCitation": "1930 U.S. Federal Census, Washington. Edwards-line household.",
+    "sourceCitation": "1930 U.S. Federal Census, Erie Voting Precinct No. 1, Whitman County, Washington, Silas Josiah Edwards household.",
     "previewUrl": "/documents/edwards-1930-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Armina Ramsey"],
-    "place": "Washington",
-    "whatItProves": "Edwards-line continuity in Washington.",
-    "notes": "Continuity record only."
+    "people": ["Silas Josiah Edwards", "Nancy Ann Dyer"],
+    "place": "Whitman County, Washington, USA",
+    "fact": "1930 U.S. census page for Whitman County, Washington, showing the Silas Josiah Edwards and Nancy Edwards household.",
+    "meaning": "Confirms Silas Josiah Edwards and Nancy Ann Dyer were still residing in Whitman County, Washington in 1930, extending the Edwards household timeline after the 1920 Pine City census.",
+    "whatItProves": "Fact: 1930 U.S. census page for Whitman County, Washington, showing the Silas Josiah Edwards and Nancy Edwards household. Meaning: Confirms Silas Josiah Edwards and Nancy Ann Dyer were still residing in Whitman County, Washington in 1930, extending the Edwards household timeline after the 1920 Pine City census.",
+    "notes": "Primary census image for the later Edwards household in Whitman County. Useful as a residence continuity record for Silas and Nancy."
   },
   {
     "id": "edwards-1940-washington-census",
@@ -616,13 +620,15 @@
     "type": "Marriage return",
     "date": "1924-05-26",
     "era": "Early 20th century",
-    "sourceCitation": "Marriage return for Edith Ann Edwards and Hugh Christopher Moore, Colfax, Washington, May 26, 1924.",
+    "sourceCitation": "Washington, County Marriages, 1855-2008, FamilySearch, entry for Hugh Christopher Moore and Edith Ann Edwards, 26 May 1924, Colfax, Whitman, Washington; citing parents James Moore, Jesse Bowen, Josiah Edwards, and Nancy Dyer.",
     "previewUrl": "/documents/edith-ann-edwards-hugh-moore-marriage-1924.jpg",
     "confidence": "Primary Source",
-    "people": ["Edith Ann Edwards", "Hugh Christopher Moore"],
+    "people": ["Edith Ann Edwards", "Hugh Christopher Moore", "Silas Josiah Edwards", "Nancy Ann Dyer", "James Moore", "Jessie Bowen"],
     "place": "Colfax, Whitman, Washington, USA",
-    "whatItProves": "Marriage of Edith Ann Edwards and Hugh Christopher Moore on May 26, 1924, in Colfax, Washington. A direct family record supporting the Edwards to Moore connection.",
-    "notes": "Primary Source. Clear marriage return for Edith Ann Edwards and Hugh Christopher Moore. This is a real family record and supports the Edwards → Moore connection directly. Edith is a highly respected anchor of the family, and this document records her marriage with dignity."
+    "fact": "Marriage entry for Hugh Christopher Moore (age 28) and Edith Ann Edwards (age 23) on 26 May 1924 in Colfax, Whitman County, Washington, naming parents James Moore and Jesse Bowen for Hugh, and Josiah Edwards and Nancy Dyer for Edith.",
+    "meaning": "Confirms the Moore and Edwards marriage in 1924 and directly ties Hugh Christopher Moore to James Moore and Jessie Bowen, and Edith Ann Edwards to Silas Josiah Edwards and Nancy Ann Dyer.",
+    "whatItProves": "Fact: Marriage entry for Hugh Christopher Moore (age 28) and Edith Ann Edwards (age 23) on 26 May 1924 in Colfax, Whitman County, Washington, naming parents James Moore and Jesse Bowen for Hugh, and Josiah Edwards and Nancy Dyer for Edith. Meaning: Confirms the Moore and Edwards marriage in 1924 and directly ties Hugh Christopher Moore to James Moore and Jessie Bowen, and Edith Ann Edwards to Silas Josiah Edwards and Nancy Ann Dyer.",
+    "notes": "Primary Source. FamilySearch extracts Edith's mother as Nancy Dyer; this aligns with the family profile for Nancy Ann Dyer Jennings. Strong bridge record for the Dyer -> Edwards -> Moore line."
   },
   {
     "id": "george-washington-dyer-1850-liberty-iowa-census",

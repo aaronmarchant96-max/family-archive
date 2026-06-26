@@ -237,6 +237,37 @@ a {
   background: rgba(243, 237, 228, 0.04);
 }
 
+.archive-home-hero__portrait-frame {
+  @apply rounded-[1.7rem] border p-3;
+  border-color: rgba(243, 237, 228, 0.14);
+  background:
+    linear-gradient(180deg, rgba(243, 237, 228, 0.09), rgba(243, 237, 228, 0.04)),
+    radial-gradient(circle at top, rgba(155, 120, 73, 0.18), transparent 48%);
+}
+
+.archive-home-hero__portrait {
+  @apply h-[30rem] w-full rounded-[1.2rem];
+}
+
+.archive-home-hero__portrait-meta {
+  @apply mt-3 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between;
+}
+
+.archive-home-hero__portrait-name {
+  @apply text-xl font-semibold tracking-tight;
+  color: rgba(243, 237, 228, 0.98);
+  font-family: var(--archive-display-font);
+}
+
+.archive-home-hero__portrait-note {
+  @apply max-w-sm text-xs leading-5;
+  color: rgba(243, 237, 228, 0.66);
+}
+
+.archive-home-hero__evidence-grid {
+  @apply mt-3 grid gap-3 sm:grid-cols-3;
+}
+
 .archive-pill {
   @apply rounded-full border px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.22em];
   border-color: rgba(243, 237, 228, 0.12);

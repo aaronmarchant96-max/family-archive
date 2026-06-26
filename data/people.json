@@ -379,6 +379,8 @@
     "confidence": "Strong Evidence",
     "tags": ["Dyer", "Civil War", "Oregon", "Washington", "Generation 3"],
     "sourceCitation": "Multiple U.S. censuses (1850 Illinois, 1880 and 1900 Washington), Washington State and Territorial Censuses (1883, 1887), Washington death and probate records, Oregon Early Oregonians Index, Find A Grave, Washington marriage and death certificates.",
+    "portraitUrl": "/portraits/george-washington-dyer.png",
+    "portraitCaption": "Descendant-shared family portrait of George Washington Dyer.",
     "timeline": [
       {
         "title": "Birth",
@@ -922,10 +924,11 @@
     "lifespan": "1871-1939",
     "era": "Late 19th-20th century",
     "branch": "Dyer",
-    "summary": "Daughter of George Washington Dyer and Elizabeth Ellen Conley. Wife of Silas Josiah Edwards. Mother of Edith Ann Edwards, the deeply respected anchor of the family and the inspiring force behind the 1978 Red Book. Born in Benton County, Oregon, she built her life in Washington and passed in Pine City in 1939 at age 68.",
-    "keyEvent": "Mother of Edith Ann Edwards (1901-1995). Married Silas Josiah Edwards; lived in Pine City, Washington. Her daughter Edith became the central figure of the family Red Book.",
+    "summary": "Also appears as Nancy Ann Dyer Jennings. Daughter of George Washington Dyer and Elizabeth Ellen Conley. She first married Augustus Grant Jennings and later married Silas Josiah Edwards. Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards. Born in Benton County, Oregon, she built her life in Whitman County, Washington, and died there in 1939.",
+    "keyEvent": "She connects the Dyer, Jennings, and Edwards families in the Red Book line and was the mother of Edith Ann Edwards (1901-1995), one of the archive's central family anchors.",
     "confidence": "Strong Evidence",
     "tags": ["Dyer", "Edwards", "Moore", "Washington", "Generation 4"],
+    "sourceCitation": "1880 and 1900 U.S. censuses; FamilySearch profile for Nancy Ann Dyer Jennings (L4NR-HRK) with attached sources for birth, death, burial, and marriages; preserved Edwards family marriage return; collateral Moore/Edwards marriage record.",
     "timeline": [
       {
         "title": "Birth",
@@ -943,6 +946,20 @@
         "linkedDocumentId": "george-washington-dyer-1880-whitman-census"
       },
       {
+        "title": "Marriage to Augustus Grant Jennings",
+        "date": "15 May 1892",
+        "place": "Pine City, Whitman, Washington, USA",
+        "summary": "Married Augustus Grant Jennings in Whitman County before the later Edwards marriage.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Birth of daughter Ora Ellen Jennings",
+        "date": "1893",
+        "place": "Washington, USA",
+        "summary": "Daughter Ora Ellen Jennings born from Nancy's first marriage.",
+        "confidence": "Strong Evidence"
+      },
+      {
         "title": "Residence with parents",
         "date": "1900",
         "place": "Pine, Whitman County, Washington, USA",
@@ -952,10 +969,10 @@
       },
       {
         "title": "Marriage to Silas Josiah Edwards",
-        "date": "Date not listed",
-        "place": "Pine City, Washington, USA",
-        "summary": "Married Silas Josiah Edwards. The marriage return in Pine City is a preserved primary family record listing parent names.",
-        "confidence": "Primary Source",
+        "date": "17 October 1898",
+        "place": "Colfax, Whitman, Washington, USA",
+        "summary": "Married Silas Josiah Edwards. The preserved family marriage return anchors the Edwards connection, and FamilySearch gives the marriage date as 17 October 1898.",
+        "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-edwards-pine-city-marriage"
       },
       {
@@ -969,26 +986,45 @@
         "title": "Residence",
         "date": "1920",
         "place": "Pine City, Whitman, Washington, USA",
-        "summary": "Living in Pine City, Washington.",
-        "confidence": "Primary Source"
+        "summary": "Living in the Silas J. Edwards household in Pine City, Whitman County, Washington.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1920-washington-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1930",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Still residing with Silas Josiah Edwards in Whitman County, Washington.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1930-washington-census"
       },
       {
         "title": "Death",
         "date": "20 October 1939",
-        "place": "Pine City, Whitman, Washington, USA",
-        "summary": "Died at age 68 in Pine City, Washington.",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Died at age 68 in Whitman County, Washington.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Burial",
+        "date": "23 October 1939",
+        "place": "Pine City Cemetery, Whitman, Washington, USA",
+        "summary": "Buried in Pine City Cemetery.",
         "confidence": "Strong Evidence"
       }
     ],
     "evidenceSummary": [
       "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909)",
+      "Also appears as Nancy Ann Dyer Jennings in later compiled and FamilySearch material",
       "Born 1 October 1871 in Benton County, Oregon",
       "Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images)",
-      "Married Silas Josiah Edwards (1859-1943) (Primary Source marriage return in Pine City)",
+      "First married Augustus Grant Jennings and had daughter Ora Ellen Jennings",
+      "Later married Silas Josiah Edwards (1859-1943); preserved family marriage return and related records anchor the Edwards connection",
+      "Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards",
       "Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978",
       "Resided in Pine City, Whitman County, Washington",
-      "Died 20 October 1939 in Pine City, Washington at age 68",
-      "Key sources include family records, censuses, and the preserved marriage return"
+      "Died 20 October 1939 in Whitman County, Washington and was buried in Pine City Cemetery",
+      "Key sources include family records, censuses, FamilySearch profile evidence, and the preserved marriage return"
     ]
   },
   {
@@ -1526,6 +1562,22 @@
         "linkedDocumentId": "edwards-washington-census-evidence"
       },
       {
+        "title": "Residence",
+        "date": "1920",
+        "place": "Pine City, Whitman County, Washington, USA",
+        "summary": "Head of household in the 1920 Pine City census with wife Nancy and daughter Edith.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1920-washington-census"
+      },
+      {
+        "title": "Residence",
+        "date": "1930",
+        "place": "Whitman County, Washington, USA",
+        "summary": "Still residing with wife Nancy in Whitman County, Washington in the 1930 census.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1930-washington-census"
+      },
+      {
         "title": "Death",
         "date": "1943",
         "place": "Washington",
@@ -1567,8 +1619,9 @@
         "title": "Residence",
         "date": "1920",
         "place": "Pine City, Whitman, Washington, USA",
-        "summary": "Edith Ann Edwards lived in Pine City, Washington, in 1920 as a single daughter in the family home.",
-        "confidence": "Primary Source"
+        "summary": "Edith Ann Edwards lived in Pine City, Washington, in 1920 as a single daughter in the Silas J. Edwards household.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "edwards-1920-washington-census"
       },
       {
         "title": "Marriage to Hugh Christopher Moore",
@@ -4763,7 +4816,3 @@
     ]
   }
 ]
-
-
-
-

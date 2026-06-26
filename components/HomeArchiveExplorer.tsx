@@ -750,11 +750,13 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
   );
 
   const selectedWebNode = familyWebLanes.flatMap((lane) => lane.nodes).find((node) => node.id === selectedNodeId) ?? familyWebLanes.flatMap((lane) => lane.nodes)[0] ?? null;
+  const georgeWashingtonDyer = people.find((person) => person.id === "george-washington-dyer");
 
-  const heroRecordPreview = documentsByFilename.get("josiah-ramsey-family-plaque.jpg")?.previewUrl ?? "/documents/josiah-ramsey-family-plaque.jpg";
-  const secondaryPreview = documentsById.get("josiah-ramsey-grave-marker")?.previewUrl;
-  const tertiaryPreview = documentsById.get("josiah-ramsey-1782-military-service")?.previewUrl;
-  const fourthPreview = documentsById.get("william-isabella-marriage-certificate")?.previewUrl ?? "/documents/real-certificate.jpg";
+  const heroPortrait = georgeWashingtonDyer?.portraitUrl ?? "/portraits/george-washington-dyer.png";
+  const heroPortraitCaption = georgeWashingtonDyer?.portraitCaption ?? "Descendant-shared family portrait of George Washington Dyer.";
+  const secondaryPreview = documentsById.get("george-washington-dyer-1880-whitman-census")?.previewUrl;
+  const tertiaryPreview = documentsById.get("george-washington-dyer-1900-pine-city-census")?.previewUrl;
+  const fourthPreview = documentsById.get("charles-dyer-discharge")?.previewUrl ?? "/documents/charles-dyer.pdf";
 
   return (
     <div className="space-y-10">
@@ -795,14 +797,23 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
         </div>
 
         <div className="archive-home-hero__wall">
-          <div className="grid gap-3 sm:grid-cols-2">
-            <RecordTile src={heroRecordPreview} title="Josiah Ramsey family plaque" caption="Memorial plaque / family grouping" />
-            <RecordTile src={secondaryPreview} title="Josiah Ramsey grave marker" caption="Memorial marker / burial memory" />
-            <RecordTile src={tertiaryPreview} title="Josiah Ramsey military record" caption="Primary service image" />
-            <RecordTile src={fourthPreview} title="Moore and Law marriage record" caption="Certified marriage copy" />
+          <div className="archive-home-hero__portrait-frame">
+            <SourcePreview src={heroPortrait} title="George Washington Dyer" className="archive-home-hero__portrait" />
+            <div className="archive-home-hero__portrait-meta">
+              <div>
+                <div className="archive-kicker">Front-door family anchor</div>
+                <div className="archive-home-hero__portrait-name">George Washington Dyer</div>
+              </div>
+              <div className="archive-home-hero__portrait-note">{heroPortraitCaption}</div>
+            </div>
+          </div>
+          <div className="archive-home-hero__evidence-grid">
+            <RecordTile src={secondaryPreview} title="1880 Whitman County census" caption="George, Ellen, and Nancy Ann Dyer" />
+            <RecordTile src={tertiaryPreview} title="1900 Pine City household" caption="Later Dyer household continuity" />
+            <RecordTile src={fourthPreview} title="Charles Dyer discharge" caption="Revolutionary line anchor" />
           </div>
           <div className="mt-4 rounded-[1.5rem] border border-[rgba(244,239,231,0.12)] bg-[rgba(244,239,231,0.04)] p-4 text-sm leading-6 text-[rgba(244,239,231,0.76)]">
-            These are real old documents and photos from the family. We show the original pieces, not just stories.
+            George Washington Dyer now leads the front page, with the Dyer household records and the earlier Charles Dyer discharge kept close by as the proof trail behind the portrait.
           </div>
         </div>
       </section>
