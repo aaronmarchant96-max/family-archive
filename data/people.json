@@ -8,7 +8,11 @@
     "summary": "Early Ramsey ancestor in Colonial Virginia, patriarch of the documented Ramsey line.",
     "keyEvent": "Established the Ramsey family in Virginia in the late 17th century.",
     "confidence": "Needs Review",
-    "tags": ["Colonial Virginia", "Ramsey Line", "Generation 1"],
+    "tags": [
+      "Colonial Virginia",
+      "Ramsey Line",
+      "Generation 1"
+    ],
     "timeline": [
       {
         "title": "Birth in Colonial Virginia",
@@ -41,7 +45,11 @@
     "summary": "Wife of William Ramsey and matriarch of the early Ramsey line.",
     "keyEvent": "Married William Ramsey in Colonial Virginia.",
     "confidence": "Needs Review",
-    "tags": ["Colonial Virginia", "Ramsey Line", "Generation 1"],
+    "tags": [
+      "Colonial Virginia",
+      "Ramsey Line",
+      "Generation 1"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -80,7 +88,12 @@
     "summary": "Revolutionary War veteran and patriarch of the Ramsey family line. Served in North Carolina Militia with confirmed 1782 pay voucher.",
     "keyEvent": "Served in North Carolina Militia during Revolutionary War; 1782 pay voucher confirms service.",
     "confidence": "Primary Source",
-    "tags": ["Revolutionary War", "North Carolina Militia", "SAR Line", "Generation 2"],
+    "tags": [
+      "Revolutionary War",
+      "North Carolina Militia",
+      "SAR Line",
+      "Generation 2"
+    ],
     "sourceCitation": "1782 North Carolina Pay Voucher for Josiah Ramsey; marriage record in Delaware (1744)",
     "timeline": [
       {
@@ -147,7 +160,11 @@
     "summary": "Wife of Josiah Ramsey Sr. and mother of Thomas Ramsey. Marriage recorded in Delaware in 1744.",
     "keyEvent": "Married Josiah Ramsey Sr. in Delaware in 1744.",
     "confidence": "Needs Review",
-    "tags": ["Ramsey", "Delaware", "Generation 2"],
+    "tags": [
+      "Ramsey",
+      "Delaware",
+      "Generation 2"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -181,7 +198,12 @@
     "summary": "Son of Josiah Ramsey Sr. and Alice Bower; father of Josiah Ramsey Jr. (1769-1835). Missing link in the Ramsey lineage.",
     "keyEvent": "Identified as the father of Josiah Ramsey Jr., establishing the connection between Josiah Sr. and Josiah Jr.",
     "confidence": "Needs Review",
-    "tags": ["Ramsey", "Missing Link", "Research Target", "Generation 3"],
+    "tags": [
+      "Ramsey",
+      "Missing Link",
+      "Research Target",
+      "Generation 3"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -215,7 +237,12 @@
     "summary": "Son of Thomas Ramsey (1799-1872) and Anna Hopkins; lived in Iowa and appears on the 1863 Civil War draft registration page in Long Creek, Decatur County.",
     "keyEvent": "Born 19 February 1825 in Tennessee and later listed on the 1863 Iowa draft registration page as a Long Creek farmer.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Iowa", "Civil War Draft", "Generation 5"],
+    "tags": [
+      "Ramsey",
+      "Iowa",
+      "Civil War Draft",
+      "Generation 5"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -277,7 +304,12 @@
     "summary": "Son of James Ramsey and Margaret Baker. Lived in Long Creek, Decatur County, Iowa, and appears in the 1880 census household there.",
     "keyEvent": "Born 7 April 1846 in Tennessee and later headed a Long Creek, Decatur County, Iowa household in 1880.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Iowa", "Long Creek", "Generation 6"],
+    "tags": [
+      "Ramsey",
+      "Iowa",
+      "Long Creek",
+      "Generation 6"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -320,10 +352,15 @@
     "summary": "Confirmed direct Revolutionary War ancestor.",
     "keyEvent": "Honorably discharged September 25, 1778 after service in the 12th Virginia Regiment at Fort Randolph.",
     "confidence": "Primary Source",
-    "tags": ["Revolutionary War", "12th Virginia Regiment", "Fort Randolph", "SAR Line"],
+    "tags": [
+      "Revolutionary War",
+      "12th Virginia Regiment",
+      "Fort Randolph",
+      "SAR Line"
+    ],
     "attachedDocument": "charles-dyer.pdf",
     "evidenceSummary": [
-      "Birth approximately 1755 (cited in son Jonathan Dyer's profile; primary birth record not located — needs verification)",
+      "Birth approximately 1755 (cited in son Jonathan Dyer's profile; primary birth record not located \u2014 needs verification)",
       "Discharged at Fort Randolph [at Point Pleasant, now WV] on September 25, 1778",
       "Served as a soldier in Captain William McKee's company of the 12th Virginia Regiment",
       "The discharge says his enlistment time had fully expired and that he had served upwards of two years",
@@ -341,7 +378,7 @@
       {
         "title": "Revolutionary War service",
         "date": "1770s",
-        "summary": "Served in Captain William McKee’s company of the 12th Virginia Regiment.",
+        "summary": "Served in Captain William McKee\u2019s company of the 12th Virginia Regiment.",
         "confidence": "Primary Source",
         "linkedDocumentId": "charles-dyer-discharge"
       },
@@ -356,7 +393,7 @@
       {
         "title": "Direct family line preserved",
         "date": "Later generations",
-        "summary": "Charles Dyer’s direct descent through Jonathan Dyer, George Washington Dyer, Nancy Ann Dyer, and the Edwards/Moore/Marchant line is supported by family records, Anne’s book, and the assembled proof chain.",
+        "summary": "Charles Dyer\u2019s direct descent through Jonathan Dyer, George Washington Dyer, Nancy Ann Dyer, and the Edwards/Moore/Marchant line is supported by family records, Anne\u2019s book, and the assembled proof chain.",
         "confidence": "Confirmed"
       }
     ],
@@ -377,7 +414,13 @@
     "summary": "Son of the Revolutionary War line through Jonathan Dyer. Husband of Elizabeth Ellen Conley. Father of Nancy Ann Dyer who connects to the Edwards and Moore families. Lived in Illinois, Iowa, Oregon, and Washington.",
     "keyEvent": "Served with the First Oregon Infantry in 1864 during the Civil War. Married Elizabeth Ellen Conley in 1866. Father of Nancy Ann Dyer (1871-1939).",
     "confidence": "Strong Evidence",
-    "tags": ["Dyer", "Civil War", "Oregon", "Washington", "Generation 3"],
+    "tags": [
+      "Dyer",
+      "Civil War",
+      "Oregon",
+      "Washington",
+      "Generation 3"
+    ],
     "sourceCitation": "Multiple U.S. censuses (1850 Illinois, 1880 and 1900 Washington), Washington State and Territorial Censuses (1883, 1887), Washington death and probate records, Oregon Early Oregonians Index, Find A Grave, Washington marriage and death certificates.",
     "portraitUrl": "/portraits/george-washington-dyer.png",
     "portraitCaption": "Descendant-shared family portrait of George Washington Dyer.",
@@ -473,7 +516,9 @@
       "Buried in Pine City Cemetery",
       "Probate filed December 1906 in Whitman County",
       "Key sources: U.S. Federal Censuses (1850, 1880, 1900 images), Washington State and Territorial Censuses, Washington Death Certificate, Washington Wills and Probate, Find A Grave, Oregon Early Oregonians Index"
-    ]
+    ],
+    "portrait": "/portraits/george-washington-dyer-feature.jpg",
+    "featured": true
   },
   {
     "id": "elizabeth-ellen-conley",
@@ -484,7 +529,12 @@
     "summary": "Wife of George Washington Dyer (1835-1906). Mother of Nancy Ann Dyer (1871-1939). Lived with her family in Oregon and then Washington, appearing with George in the 1880 and 1900 censuses in Whitman County.",
     "keyEvent": "Married George Washington Dyer in 1866. Mother of Nancy Ann Dyer born 1 October 1871 in Benton County, Oregon. Lived to 1909.",
     "confidence": "Strong Evidence",
-    "tags": ["Conley", "Dyer", "Oregon", "Washington"],
+    "tags": [
+      "Conley",
+      "Dyer",
+      "Oregon",
+      "Washington"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -548,7 +598,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan; father of Armina Ramsey and head of the 1860 Ramsey household in Decatur County, Iowa. The Ancestry profile shows him born in Tennessee and dying in Bentonville, Arkansas.",
     "keyEvent": "Appears in the 1860 Richland Township household with Anna Hopkins Ramsey and children; the Ancestry profile gives his birth as 9 December 1799 and notes that he died on 18 August 1872 in Bentonville, Arkansas while traveling as a huckster.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Census", "Davis County", "Iowa", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Census",
+      "Davis County",
+      "Iowa",
+      "Generation 4"
+    ],
     "attachedDocument": "census-decatur-township.pdf",
     "sourceCitation": "1850 & 1860 U.S. Federal Censuses; 1856 Iowa State Census; Family memorial plaque; Ancestry profile (secondary for vitals: birth 9 Dec 1799 TN, death 18 Aug 1872 Bentonville AR). Primary household records confirm residence and family group; vitals from secondary aggregator need primary confirmation.",
     "timeline": [
@@ -636,7 +692,14 @@
     "summary": "Wife of Thomas Ramsey (1799-1872); daughter of Jabez Hopkins and Rachel Clouse. Mother of Armina Ramsey Edwards and other Ramsey children. Appears in the 1860 and 1880 Decatur County census records.",
     "keyEvent": "Married Thomas Ramsey in 1824 in Hancock County, Tennessee. Mother of Armina Ramsey (1826-1923) and at least 8 other children. Died 1883 in Decatur County, Iowa.",
     "confidence": "Primary Source",
-    "tags": ["Hopkins", "Clouse", "Ramsey", "Census", "Iowa", "Generation 4"],
+    "tags": [
+      "Hopkins",
+      "Clouse",
+      "Ramsey",
+      "Census",
+      "Iowa",
+      "Generation 4"
+    ],
     "attachedDocument": "census-decatur-township.pdf",
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
     "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), which names Anna Hopkins as Josiah's mother and identifies the family in Bloomfield, Davis County, Iowa in 1850. Death record: Decatur County, Iowa, 1883.",
@@ -711,7 +774,7 @@
       "Burial: Wheelis Cemetery",
       "Key document: census-decatur-township.pdf",
       "Status: Primary source household record",
-      "Hopkins ancestry chain (Nehemiah/Elizabeth Cole → Jabez → Anna) currently has zero solid primary links — all connections hedged as unproven. Treat as research target, not established lineage."
+      "Hopkins ancestry chain (Nehemiah/Elizabeth Cole \u2192 Jabez \u2192 Anna) currently has zero solid primary links \u2014 all connections hedged as unproven. Treat as research target, not established lineage."
     ]
   },
   {
@@ -720,10 +783,15 @@
     "lifespan": "1765-after 1856",
     "era": "Early Republic Tennessee",
     "branch": "Hopkins",
-    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Strongly anchored in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain) by 1846–1849 state land grant. Appears in Tennessee and Iowa records from 1830 through 1856.",
+    "summary": "Husband of Rachel Clouse; father of Anna Hopkins Ramsey. Strongly anchored in Hancock County, Tennessee (Mulberry Creek / Powell\u2019s Mountain) by 1846\u20131849 state land grant. Appears in Tennessee and Iowa records from 1830 through 1856.",
     "keyEvent": "Married Rachel Clouse in 1801, fathered Anna Hopkins (1807-1883), and held land in Hancock County, Tennessee (Mulberry Creek area) where he resided by the late 1840s.",
     "confidence": "Strong Evidence",
-    "tags": ["Hopkins", "Clouse", "Tennessee", "Generation 3"],
+    "tags": [
+      "Hopkins",
+      "Clouse",
+      "Tennessee",
+      "Generation 3"
+    ],
     "sourceCitation": "FamilySearch-style profile for Rachel Clouse, showing her marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, an 1840 Hawkins County census image naming Jabez Hopkins, Iowa residence by 1850, death before 1856, and burial at Grand River Cemetery.",
     "timeline": [
       {
@@ -767,7 +835,7 @@
         "title": "Hancock County land grant",
         "date": "1849-08-03",
         "place": "Hancock County, Tennessee",
-        "summary": "Tennessee state land grant to Jabez Hopkins (entry 14 Sep 1846, issued 3 Aug 1849), three acres on north side of Powell’s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop. Wording: “whereon he now lives”. Strong locality and identity anchor.",
+        "summary": "Tennessee state land grant to Jabez Hopkins (entry 14 Sep 1846, issued 3 Aug 1849), three acres on north side of Powell\u2019s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop. Wording: \u201cwhereon he now lives\u201d. Strong locality and identity anchor.",
         "confidence": "Primary Source",
         "linkedDocumentId": "jabez-hopkins-hancock-tennessee-land-grant"
       },
@@ -795,11 +863,11 @@
       }
     ],
     "evidenceSummary": [
-      "Jabis/Jabez Hopkins married Rachel Clouse 14 Apr 1801 in Washington County, Virginia (minister Charles Hardy) — Primary Source",
-      "Jabez Hopkins established in Hancock County, Tennessee (Mulberry Creek / Powell’s Mountain area) by land-grant period (entry 1846, issued 1849) — Primary Source, strong locality anchor",
-      "Hopkins family cluster suggested by tax list page in same locality (Jabez Jr, Wm, widow, George) — Strong Evidence if source context confirmed",
-      "Nehemiah Hopkins married Elizabeth 11 Mar 1762 in Warren, Rhode Island — Primary Source support for earlier generation",
-      "Stronger Rhode Island → Virginia → Tennessee → Iowa coherence in the Hopkins research lane",
+      "Jabis/Jabez Hopkins married Rachel Clouse 14 Apr 1801 in Washington County, Virginia (minister Charles Hardy) \u2014 Primary Source",
+      "Jabez Hopkins established in Hancock County, Tennessee (Mulberry Creek / Powell\u2019s Mountain area) by land-grant period (entry 1846, issued 1849) \u2014 Primary Source, strong locality anchor",
+      "Hopkins family cluster suggested by tax list page in same locality (Jabez Jr, Wm, widow, George) \u2014 Strong Evidence if source context confirmed",
+      "Nehemiah Hopkins married Elizabeth 11 Mar 1762 in Warren, Rhode Island \u2014 Primary Source support for earlier generation",
+      "Stronger Rhode Island \u2192 Virginia \u2192 Tennessee \u2192 Iowa coherence in the Hopkins research lane",
       "Still not directly proven: Anna Hopkins Ramsey was daughter of Jabez and Rachel; Jabez was son of Nehemiah and Elizabeth; disputed Elizabeth Cole parentage",
       "Status: Jabez as real Tennessee figure strengthened. Anna as daughter and Nehemiah + Elizabeth as parents still unproven."
     ]
@@ -813,7 +881,12 @@
     "summary": "Mother of Anna Hopkins Ramsey. Married to Jabez Hopkins in 1801 and later appears in Tennessee and Iowa records.",
     "keyEvent": "Married Jabez Hopkins in 1801, gave birth to Anna Hopkins in 1807, and later appears in Claiborne County, Tennessee and Iowa records.",
     "confidence": "Strong Evidence",
-    "tags": ["Clouse", "Hopkins", "Tennessee", "Generation 3"],
+    "tags": [
+      "Clouse",
+      "Hopkins",
+      "Tennessee",
+      "Generation 3"
+    ],
     "sourceCitation": "Profile record showing birth in 1782, marriage to Jabez Hopkins in 1801, daughter Anna Hopkins born in 1807, residence in Claiborne County, Tennessee in 1830, Iowa residence in 1850, death before 1856, and burial at Grand River Cemetery.",
     "timeline": [
       {
@@ -867,7 +940,7 @@
       }
     ],
     "evidenceSummary": [
-      "Married Jabez Hopkins (recorded as Jabis) 14 April 1801 in Washington County, Virginia — Primary Source",
+      "Married Jabez Hopkins (recorded as Jabis) 14 April 1801 in Washington County, Virginia \u2014 Primary Source",
       "Lived in Tennessee (Claiborne/Hancock area)",
       "Iowa residence by 1850",
       "Status: Jabez + Rachel marriage is solid. Anna as their daughter still unproven."
@@ -882,7 +955,14 @@
     "summary": "Son of Charles Dyer (Revolutionary War veteran) and heir named in Charles Dyer's pension packet. Father of George Washington Dyer and part of the documented Dyer descent trail.",
     "keyEvent": "Named among the heirs in the 1855 county affidavit tied to Charles Dyer's Revolutionary War pension application. Established the Dyer line in Ohio/Oregon.",
     "confidence": "Strong Evidence",
-    "tags": ["Dyer", "Heir", "Pension affidavit", "Charles Dyer", "SAR Line", "Generation 3"],
+    "tags": [
+      "Dyer",
+      "Heir",
+      "Pension affidavit",
+      "Charles Dyer",
+      "SAR Line",
+      "Generation 3"
+    ],
     "attachedDocument": "charles-dyer.pdf",
     "sourceCitation": "The 1855 county affidavit in the Charles Dyer pension transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer. FamilySearch and Oregon records confirm his descent.",
     "timeline": [
@@ -927,7 +1007,13 @@
     "summary": "Also appears as Nancy Ann Dyer Jennings. Daughter of George Washington Dyer and Elizabeth Ellen Conley. She first married Augustus Grant Jennings and later married Silas Josiah Edwards. Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards. Born in Benton County, Oregon, she built her life in Whitman County, Washington, and died there in 1939.",
     "keyEvent": "She connects the Dyer, Jennings, and Edwards families in the Red Book line and was the mother of Edith Ann Edwards (1901-1995), one of the archive's central family anchors.",
     "confidence": "Strong Evidence",
-    "tags": ["Dyer", "Edwards", "Moore", "Washington", "Generation 4"],
+    "tags": [
+      "Dyer",
+      "Edwards",
+      "Moore",
+      "Washington",
+      "Generation 4"
+    ],
     "sourceCitation": "1880 and 1900 U.S. censuses; FamilySearch profile for Nancy Ann Dyer Jennings (L4NR-HRK) with attached sources for birth, death, burial, and marriages; preserved Edwards family marriage return; collateral Moore/Edwards marriage record.",
     "timeline": [
       {
@@ -1033,10 +1119,16 @@
     "lifespan": "1769-1835 (see josiah-ramsey-1769)",
     "era": "Revolutionary era Tennessee",
     "branch": "Ramsey",
-    "summary": "Redirect / duplicate entry. See canonical working profile 'josiah-ramsey-1769' for the reconciled Tennessee Josiah Ramsey (c.1765/1769–1834/5, husband of Elizabeth Cowan, War of 1812 service, land grant). This FS-sourced version (1769-1835) is kept for reference but should be merged into the working profile.",
+    "summary": "Redirect / duplicate entry. See canonical working profile 'josiah-ramsey-1769' for the reconciled Tennessee Josiah Ramsey (c.1765/1769\u20131834/5, husband of Elizabeth Cowan, War of 1812 service, land grant). This FS-sourced version (1769-1835) is kept for reference but should be merged into the working profile.",
     "keyEvent": "See josiah-ramsey-1769 for the working profile of this individual.",
     "confidence": "Needs Review",
-    "tags": ["Ramsey", "Cowan", "War of 1812", "Duplicate", "Redirect"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "War of 1812",
+      "Duplicate",
+      "Redirect"
+    ],
     "sourceUrl": "https://www.familysearch.org/en/tree/person/details/KP91-M2Y",
     "sourceCitation": "See josiah-ramsey-1769 for canonical details. This entry duplicates data from FamilySearch KP91-M2Y.",
     "timeline": [],
@@ -1054,7 +1146,13 @@
     "summary": "Son of Thomas Ramsey and Anna Hopkins; born in Tennessee in 1834 and living in Bloomfield, Davis County, Iowa in 1850.",
     "keyEvent": "FamilySearch lists him in Bloomfield, Davis County, Iowa in 1850 and gives his occupation as farmer.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Hopkins", "FamilySearch", "Census", "Generation 5"],
+    "tags": [
+      "Ramsey",
+      "Hopkins",
+      "FamilySearch",
+      "Census",
+      "Generation 5"
+    ],
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
     "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
     "timeline": [
@@ -1098,7 +1196,10 @@
     "summary": "Redirect stub. The War of 1812 / TN Josiah is represented in both 'josiah-ramsey-jr-1769' (FS-sourced) and 'josiah-ramsey-1769' (working profile with exclusions); see those for details. The 1834 Iowa one is 'josiah-ramsey-1834'.",
     "keyEvent": "See josiah-ramsey-1769 (working) or josiah-ramsey-jr-1769 for the c.1769-1834/5 Josiah; josiah-ramsey-1834 for the later son.",
     "confidence": "Needs Review",
-    "tags": ["Redirect", "Duplicate"]
+    "tags": [
+      "Redirect",
+      "Duplicate"
+    ]
   },
   {
     "id": "josiah-ramsey-1769",
@@ -1109,7 +1210,13 @@
     "summary": "Husband of Elizabeth Cowan; strongly supported father of Thomas Ramsey (1799-1872). Birth year and birthplace remain unresolved, the 1810 Pennsylvania attachment is excluded from the working line, and the Tennessee land grant on Mulberry Creek anchors him in Claiborne County.",
     "keyEvent": "Appears in the Tennessee family trail with Elizabeth Cowan and Thomas Ramsey; the Claiborne County land grant and family memorial anchor the Iowa line.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Working Profile", "Research Target", "Generation 3"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Working Profile",
+      "Research Target",
+      "Generation 3"
+    ],
     "sourceCitation": "Ancestry profile for Josiah (X) Ramsey, c. 1765/1769-1834, spouse Elizabeth Cowan, and child Thomas Ramsey (1799-1872); birth year, birthplace, and exact death trail remain unresolved. The 1810 Pennsylvania attachment is excluded from the working line. U.S., War of 1812 Service Records, 1812-1815, name Josiah Ramsey, 14 REG'T (MITCHISSON'S) Kentucky Militia, Lieutenant at induction, Adjutant at discharge, Roll Box 170, Microfilm Publication M602. State of Tennessee grant to Josiah Ramsey and his heirs, Claiborne County, entry no. 371, dated 22 April 1827 and surveyed 21 May 1827, for land on the waters of Mulberry Creek.",
     "attachedDocument": "josiah-ramsey-family-plaque.jpg",
     "timeline": [
@@ -1189,7 +1296,13 @@
     "summary": "Wife of Josiah Ramsey Jr. (1769-1835) and mother of at least 10 children including Thomas Ramsey (1799-1872). Died in June 1840 in Mulberry Gap, Hancock, Tennessee.",
     "keyEvent": "Married Josiah Ramsey Jr. circa 1790-1795. Mother of the Ramsey family line that migrated to Iowa. Named with Josiah Ramsey Jr. on the family memorial plaque and grave marker.",
     "confidence": "Strong Evidence",
-    "tags": ["Cowan", "Ramsey", "Memorial", "Tennessee", "Generation 3"],
+    "tags": [
+      "Cowan",
+      "Ramsey",
+      "Memorial",
+      "Tennessee",
+      "Generation 3"
+    ],
     "attachedDocument": "josiah-ramsey-grave-marker.jpg",
     "sourceCitation": "Family memorial plaque and grave marker for Josiah Ramsey Jr. and Elizabeth Cowan. FamilySearch profiles confirm their children including Thomas Ramsey (1799-1872).",
     "timeline": [
@@ -1258,7 +1371,12 @@
     "summary": "Printer of Springwell Street, Ballymena, County Antrim.",
     "keyEvent": "Married Isabella Law on March 29, 1846.",
     "confidence": "Primary Source",
-    "tags": ["Printer", "Ballymena", "Marriage record", "Moore line"],
+    "tags": [
+      "Printer",
+      "Ballymena",
+      "Marriage record",
+      "Moore line"
+    ],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -1288,7 +1406,12 @@
     "summary": "Wife of William Moore (printer). Born in Ireland, married in Ballymena in 1846, emigrated to Quebec, Canada, and later moved to New York City by 1865. Resided in New York City in 1880.",
     "keyEvent": "Married William Moore on 29 March 1846 in Ballymena, Ireland. Emigrated to Canada shortly after.",
     "confidence": "Confirmed",
-    "tags": ["Ballymena", "Bridge Street", "Brassfounder family", "New York"],
+    "tags": [
+      "Ballymena",
+      "Bridge Street",
+      "Brassfounder family",
+      "New York"
+    ],
     "attachedDocument": "real-certificate.pdf",
     "timeline": [
       {
@@ -1325,7 +1448,11 @@
     "summary": "Moore family record under review.",
     "keyEvent": "Birth registration currently being evaluated against the wider Moore and Law packet.",
     "confidence": "Needs Review",
-    "tags": ["Moore line", "Birth registration", "Needs review"],
+    "tags": [
+      "Moore line",
+      "Birth registration",
+      "Needs review"
+    ],
     "attachedDocument": "andrew-moore.pdf",
     "timeline": [
       {
@@ -1351,7 +1478,13 @@
     "summary": "Daughter of Armina Ramsey and Anderson Edwards. Born 13 March 1851 Davis, Iowa. Died 7 July 1933 Grand River, Decatur, Iowa. Buried Wheelis Cemetery. Married? Lived in Richland Twp, Decatur, Iowa (1860-1925 censuses).",
     "keyEvent": "Born 1851 in Iowa or Tennessee. Part of the Edwards family migration to Washington.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -1402,7 +1535,13 @@
     "summary": "Daughter of Armina Ramsey and Anderson Edwards. Died young at age 26.",
     "keyEvent": "Born 1853, died 1879. Second child of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -1437,7 +1576,13 @@
     "summary": "Daughter of Armina Ramsey and Anderson Edwards. Lived a long life into the 20th century.",
     "keyEvent": "Born 1855, died 1938. Third child of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -1478,7 +1623,13 @@
     "summary": "Son of Armina Ramsey and Anderson Edwards. Died at age 41.",
     "keyEvent": "Born 1858, died 1899. Fourth child and first son of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -1512,7 +1663,13 @@
     "summary": "Son of Armina Ramsey and Anderson Edwards. Lived a long life, named after his Ramsey ancestors.",
     "keyEvent": "Born 1859, died 1943. Fifth child of the Edwards family, named after Josiah Ramsey.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -1605,7 +1762,14 @@
     "summary": "Edith Ann Edwards Moore was a beloved and highly respected anchor of the family across many generations. Born in 1901 in Pine City, Washington, she married Hugh Christopher Moore in 1924 and lived a long life of 94 years, passing in Canmore, Alberta, in 1995. She is remembered with deep affection and admiration as the inspiring force behind the Red Book compiled in 1978, a treasured family archive that preserves the stories and records of those who came before. Her warmth, strength, and dedication touched many families, and she remains a central figure of respect and love in our history.",
     "keyEvent": "Married Hugh Christopher Moore on May 26, 1924, in Colfax, Washington. A deeply respected family matriarch and the inspiration for the Red Book.",
     "confidence": "Primary Source",
-    "tags": ["Edwards", "Moore", "Washington", "Alberta", "Generation 7", "Red Book"],
+    "tags": [
+      "Edwards",
+      "Moore",
+      "Washington",
+      "Alberta",
+      "Generation 7",
+      "Red Book"
+    ],
     "sourceCitation": "Family records, marriage return, and obituary context compiled for the Red Book.",
     "timeline": [
       {
@@ -1685,7 +1849,14 @@
     "summary": "Husband of Edith Ann Edwards (1901-1995), the deeply respected family anchor and inspiration for the 1978 Red Book. Born in 1895 in Saskatchewan, Canada, Hugh lived in the Canadian prairies (Saskatchewan and Alberta's Medicine Hat area), served during the First World War, married Edith in 1924 in Washington state, and shared 55 years of marriage. He passed in 1979 in Calgary, Alberta, and is buried there alongside his wife. Remembered with respect as part of the Moore-Edwards legacy that connects the Canadian and American branches of the family.",
     "keyEvent": "Married Edith Ann Edwards on May 26, 1924, in Colfax, Washington. Served in the Canadian Expeditionary Force during WWI.",
     "confidence": "Primary Source",
-    "tags": ["Moore", "Edwards", "WWI", "Saskatchewan", "Alberta", "Washington"],
+    "tags": [
+      "Moore",
+      "Edwards",
+      "WWI",
+      "Saskatchewan",
+      "Alberta",
+      "Washington"
+    ],
     "sourceCitation": "1901-1921 Canadian censuses, WWI attestation and U.S. draft records, Washington marriage return, Find A Grave.",
     "timeline": [
       {
@@ -1807,7 +1978,7 @@
       "Served in the Canadian Expeditionary Force (attestation 1917) and registered for U.S. WWI draft in Montana",
       "Married Edith Ann Edwards on 26 May 1924 in Colfax, Washington (Primary Source marriage return)",
       "Lived 84 years; died 1979 in Calgary, Alberta; buried in Calgary",
-      "Parents: James Moore (1860-1942) and Jessie Bowen (1874-1958); maternal grandparents Hugh Bowen (1843–1936) and Jennet Souster (1847–1903)",
+      "Parents: James Moore (1860-1942) and Jessie Bowen (1874-1958); maternal grandparents Hugh Bowen (1843\u20131936) and Jennet Souster (1847\u20131903)",
       "Sister Janet Hazel Moore born 9 April 1903 in Sintaluta, Saskatchewan (father James age 43, mother Jessie age 29)",
       "Key documents: multiple Canadian censuses (1901, 1906, 1916, 1921), WWI records, and Washington marriage return"
     ]
@@ -1821,7 +1992,12 @@
     "summary": "Daughter of James Moore and Jessie Bowen. Born 9 April 1903 in Sintaluta, Saskatchewan. Lived in Saskatchewan and Alberta (Medicine Hat, Calgary). Married William Kirkwood (1933, widowed 1949) and later Stanley Gillis. Died in Calgary 1992 at age 88. Sister of Hugh Christopher Moore.",
     "keyEvent": "Married William Kirkwood in 1933 in Calgary (widowed 1949); later Stanley Gillis. Died in Calgary 1992. Daughter of James Moore and Jessie Bowen; sister of Hugh Christopher Moore.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "Saskatchewan", "Alberta", "Calgary"],
+    "tags": [
+      "Moore",
+      "Saskatchewan",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "1906 and 1916 Canadian censuses (Saskatchewan and Alberta); family records for marriages and death.",
     "timeline": [
       {
@@ -1851,7 +2027,7 @@
         "title": "Marriage to William Kirkwood",
         "date": "1933",
         "place": "Calgary, Alberta, Canada",
-        "summary": "Married William Kirkwood (1907–1949) in Calgary, Alberta (currently light sourcing).",
+        "summary": "Married William Kirkwood (1907\u20131949) in Calgary, Alberta (currently light sourcing).",
         "confidence": "Strong Evidence"
       },
       {
@@ -1890,11 +2066,11 @@
       "Married William Kirkwood in 1933 in Calgary, Alberta (family records); widowed 1949",
       "Later married Stanley Gillis (1906-1978); widowed 1978 (Needs Review for details)",
       "Died 22 January 1992 in Calgary, Alberta at age 88 (family records)",
-      "Sister of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore); maternal grandparents Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903)",
-      "First marriage (William Kirkwood): currently light sourcing — needs more checking",
-      "Second marriage (Stanley Gillis): currently light sourcing — needs more checking"
+      "Sister of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore); maternal grandparents Hugh Bowen (1843\u20131936, see hugh-bowen-1843) and Jennet Souster (1847\u20131903)",
+      "First marriage (William Kirkwood): currently light sourcing \u2014 needs more checking",
+      "Second marriage (Stanley Gillis): currently light sourcing \u2014 needs more checking"
     ],
-    "notes": "Research Priorities: Confirm marriage records for both William Kirkwood (1933) and Stanley Gillis; Locate death registration or obituary for January 1992. First and second marriages currently light sourcing — needs more checking."
+    "notes": "Research Priorities: Confirm marriage records for both William Kirkwood (1933) and Stanley Gillis; Locate death registration or obituary for January 1992. First and second marriages currently light sourcing \u2014 needs more checking."
   },
   {
     "id": "jessie-bowen",
@@ -1902,10 +2078,17 @@
     "lifespan": "1874-1958",
     "era": "Late 19th-20th century",
     "branch": "Bowen / Moore",
-    "summary": "Daughter of Hugh Bowen (1843–1936) and Jennet Souster (1847–1903). Wife of James Moore (1860-1942). Mother of Hugh Christopher Moore (1895-1979) and Janet Hazel Moore (1903-1992). Migrated from Ontario to the Canadian prairies; died in Calgary 1958.",
-    "keyEvent": "Married James Moore; mother of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore) and Janet Hazel Moore (1903-1992, see janet-hazel-moore). Daughter of Hugh Bowen (1843–1936) and Jennet Souster.",
+    "summary": "Daughter of Hugh Bowen (1843\u20131936) and Jennet Souster (1847\u20131903). Wife of James Moore (1860-1942). Mother of Hugh Christopher Moore (1895-1979) and Janet Hazel Moore (1903-1992). Migrated from Ontario to the Canadian prairies; died in Calgary 1958.",
+    "keyEvent": "Married James Moore; mother of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore) and Janet Hazel Moore (1903-1992, see janet-hazel-moore). Daughter of Hugh Bowen (1843\u20131936) and Jennet Souster.",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Moore", "Ontario", "Saskatchewan", "Alberta", "Calgary"],
+    "tags": [
+      "Bowen",
+      "Moore",
+      "Ontario",
+      "Saskatchewan",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "1881 Census of Canada (Manitoba); 1901 and 1906 censuses (Saskatchewan); 1916 and 1921 censuses (Alberta); family vital records.",
     "timeline": [
       {
@@ -1927,7 +2110,7 @@
         "title": "Birth of son William Robert More",
         "date": "22 March 1894",
         "place": "Ellisboro, Saskatchewan, Canada",
-        "summary": "Son William Robert More born. Marriage to James Moore inferred ~1893–1894 based on first child.",
+        "summary": "Son William Robert More born. Marriage to James Moore inferred ~1893\u20131894 based on first child.",
         "confidence": "Strong Evidence"
       },
       {
@@ -2000,14 +2183,14 @@
     ],
     "evidenceSummary": [
       "Born 1 March 1874 in Ontario, Canada (age consistent with 1881 and later censuses)",
-      "Daughter of Hugh Bowen (1843–1936, see hugh-bowen-1843) and Jennet Souster (1847–1903); present in 1881 Manitoba census household (Primary Source)",
+      "Daughter of Hugh Bowen (1843\u20131936, see hugh-bowen-1843) and Jennet Souster (1847\u20131903); present in 1881 Manitoba census household (Primary Source)",
       "Wife of James Moore (1860-1942); mother of Hugh Christopher Moore (1895-1979, see hugh-christopher-moore) and Janet Hazel Moore (1903-1992, see janet-hazel-moore)",
       "Residences confirmed by Primary Source censuses: Manitoba 1881, Saskatchewan (Ellisboro/Qu'Appelle) 1901-1906, Alberta (Medicine Hat) 1916-1921",
       "Husband James Moore died 6 June 1942 in Calgary (family records)",
       "Died 25 September 1958 in Calgary, Alberta; buried in Calgary (family records)",
       "Key sources: 1881 Census of Canada (Manitoba), 1901-1921 Canadian censuses (Primary Source for family composition and migration)",
-      "Marriage to James Moore: date/location currently unconfirmed — appears ~1893–1894 based on first child (William Robert More, 1894). Needs more checking.",
-      "Death & burial: currently light sourcing — needs more checking"
+      "Marriage to James Moore: date/location currently unconfirmed \u2014 appears ~1893\u20131894 based on first child (William Robert More, 1894). Needs more checking.",
+      "Death & burial: currently light sourcing \u2014 needs more checking"
     ],
     "notes": "Research Priorities: Locate marriage record or registration for Jessie Bowen + James Moore; Find death registration or obituary for September 1958."
   },
@@ -2020,7 +2203,13 @@
     "summary": "Son of Armina Ramsey and Anderson Edwards. Lived to age 77, named after his Ramsey grandfather.",
     "keyEvent": "Born 1859, died 1936. Sixth child of the Edwards family, named after Thomas Ramsey.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -2062,7 +2251,13 @@
     "summary": "Daughter of Armina Ramsey and Anderson Edwards. Lived to age 73.",
     "keyEvent": "Born 1863, died 1936. Seventh child of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -2103,7 +2298,13 @@
     "summary": "Daughter of Armina Ramsey and Anderson Edwards. Youngest child, lived to age 72.",
     "keyEvent": "Born 1866, died 1938. Eighth and youngest child of the Edwards family.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Iowa", "Washington", "Generation 6"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Iowa",
+      "Washington",
+      "Generation 6"
+    ],
     "sourceCitation": "Armina Ramsey Edwards obituary, July 26, 1923, Leon Journal-Reporter, Pine City, Washington",
     "timeline": [
       {
@@ -2148,7 +2349,15 @@
     "summary": "Husband of Armina Ramsey (1826-1923). Married 24 Nov 1849 in Tennessee. Father of 8 children: Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938). Migrated TN -> IA (by 1850) -> WA. Died 1908; buried Pine City, WA.",
     "keyEvent": "Married Armina Ramsey 24 November 1849 in Tennessee. Father of eight children. Census trail confirms Iowa and Washington residences.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Ramsey", "Obituary", "Census", "Iowa", "Washington", "Generation 5"],
+    "tags": [
+      "Edwards",
+      "Ramsey",
+      "Obituary",
+      "Census",
+      "Iowa",
+      "Washington",
+      "Generation 5"
+    ],
     "attachedDocument": "obituary-armina-ramsey.pdf",
     "timeline": [
       {
@@ -2282,7 +2491,12 @@
     "summary": "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883). Married Anderson Edwards (1832-1908) 24 Nov 1849 in Tennessee. Mother of 8 children including Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), and Luella (1868-1938). Migrated from Tennessee to Iowa (by 1850) then Washington. Died 1923 in Pine City, WA; buried there.",
     "keyEvent": "Married Anderson Edwards 24 November 1849 in Tennessee. Mother of eight children. Lived in Iowa and Washington; confirmed by census trail and 1923 obituary.",
     "confidence": "Primary Source",
-    "tags": ["Ramsey", "Edwards", "Obituary", "Census"],
+    "tags": [
+      "Ramsey",
+      "Edwards",
+      "Obituary",
+      "Census"
+    ],
     "attachedDocument": "obituary-armina-ramsey.pdf",
     "sourceCitation": "1850 U.S. Federal Census, Davis County, Iowa (Bloomfield Township); 1860-1880 Iowa censuses; 1880-1920 Washington censuses; 1923 obituary (Leon Journal-Reporter); FamilySearch tree record; marriage return context.",
     "portraitUrl": "/portraits/armina-ramsey.jpg",
@@ -2413,7 +2627,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Iowa", "Tennessee", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Iowa",
+      "Tennessee",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming Alexander Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2456,7 +2676,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Iowa", "Tennessee", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Iowa",
+      "Tennessee",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming Josiah Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2499,7 +2725,12 @@
     "summary": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming Narvesta Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2535,7 +2766,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Lived to age 88.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Iowa",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque; 1856 Iowa State Census.",
     "timeline": [
       {
@@ -2587,7 +2824,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Iowa",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque; 1856 Iowa State Census.",
     "timeline": [
       {
@@ -2639,7 +2882,12 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Named after his mother's family. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming Cowan Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2676,7 +2924,13 @@
     "summary": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872). Lived to age 88.",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Iowa",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming Rachel Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2719,7 +2973,13 @@
     "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Youngest child, lived to age 88. Brother of Thomas Ramsey (1799-1872).",
     "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Named after his great-grandfather William Ramsey (1675-1745).",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Cowan", "Tennessee", "Iowa", "Generation 4"],
+    "tags": [
+      "Ramsey",
+      "Cowan",
+      "Tennessee",
+      "Iowa",
+      "Generation 4"
+    ],
     "sourceCitation": "Ramsey family memorial plaque naming William Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
     "timeline": [
       {
@@ -2761,10 +3021,16 @@
     "lifespan": "c. 1740 - after 1826",
     "era": "Colonial to Early Republic",
     "branch": "Hopkins",
-    "summary": "Husband of Elizabeth Cole. Married in Rhode Island 1762 (both of Scituate). Tennessee land grant 1825–1826 mentioning Stephen Hopkins's corner. Vermont militia 1778 record exists.",
+    "summary": "Husband of Elizabeth Cole. Married in Rhode Island 1762 (both of Scituate). Tennessee land grant 1825\u20131826 mentioning Stephen Hopkins's corner. Vermont militia 1778 record exists.",
     "keyEvent": "Married Elizabeth Cole 11 Mar 1762 in Warren, RI. Later associated with Tennessee land grant.",
     "confidence": "Strong Evidence",
-    "tags": ["Hopkins", "Cole", "Rhode Island", "Tennessee", "Generation 1-2"],
+    "tags": [
+      "Hopkins",
+      "Cole",
+      "Rhode Island",
+      "Tennessee",
+      "Generation 1-2"
+    ],
     "timeline": [
       {
         "title": "Marriage to Elizabeth Cole",
@@ -2786,13 +3052,13 @@
         "title": "Vermont militia payroll",
         "date": "November 1778",
         "place": "Vermont",
-        "summary": "Includes Nehm Hopkins, Capt. Cooley’s company, Col. Warren’s regiment. Real Revolutionary-era record, but identity bridge still needed.",
+        "summary": "Includes Nehm Hopkins, Capt. Cooley\u2019s company, Col. Warren\u2019s regiment. Real Revolutionary-era record, but identity bridge still needed.",
         "confidence": "Primary Source",
         "linkedDocumentId": "nehemiah-hopkins-vermont-militia-1778"
       }
     ],
     "evidenceSummary": [
-      "Married Elizabeth 11 March 1762 in Warren, Rhode Island — Primary Source support",
+      "Married Elizabeth 11 March 1762 in Warren, Rhode Island \u2014 Primary Source support",
       "Tennessee land grant surveyed Dec 1825, issued June 1826",
       "Mentions Stephen Hopkins corner in grant",
       "Possible Nehm Hopkins in 1778 Vermont militia payroll (identity bridge still needed)",
@@ -2809,7 +3075,12 @@
     "summary": "Wife of Nehemiah Hopkins. 1739 birth/baptism in Massachusetts/Rhode Island area. Married in Rhode Island 1762. Mother of children recorded in parish christenings.",
     "keyEvent": "Born or baptized 1739 (early New England record); married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island.",
     "confidence": "Strong Evidence",
-    "tags": ["Cole", "Hopkins", "Rhode Island", "Massachusetts"],
+    "tags": [
+      "Cole",
+      "Hopkins",
+      "Rhode Island",
+      "Massachusetts"
+    ],
     "timeline": [
       {
         "title": "Birth / baptism",
@@ -2829,11 +3100,11 @@
       }
     ],
     "evidenceSummary": [
-      "Birth/baptism 1739 (Scituate record shows daughter of David and Sarah — conflicts with working tree of Joseph Cole Sr + Freelove Mason). Needs Review until reconciled.",
-      "Married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island — Primary Source support",
+      "Birth/baptism 1739 (Scituate record shows daughter of David and Sarah \u2014 conflicts with working tree of Joseph Cole Sr + Freelove Mason). Needs Review until reconciled.",
+      "Married Nehemiah Hopkins 11 March 1762 in Warren, Rhode Island \u2014 Primary Source support",
       "Children recorded in parish (including a daughter Elizabeth of Broughton)",
       "Key documents: 1739 baptism record (under review), marriage record, and parish christenings",
-      "Note: 1739 record attached only as context for Elizabeth Cole’s early life. Not used to prove Jabez parentage or later lineage until parent conflict resolved. Freelove Mason (claimed mother) is distinct from Freelove Clouse (wife of Arthur Edwards) — do not merge across generations/lines."
+      "Note: 1739 record attached only as context for Elizabeth Cole\u2019s early life. Not used to prove Jabez parentage or later lineage until parent conflict resolved. Freelove Mason (claimed mother) is distinct from Freelove Clouse (wife of Arthur Edwards) \u2014 do not merge across generations/lines."
     ]
   },
   {
@@ -2845,7 +3116,12 @@
     "summary": "Wife of James Ramsey (1825-1909). Mother of Thomas Bentley Ramsey and other children. Married in Claiborne County, Tennessee.",
     "keyEvent": "Married James Ramsey on 8 June 1845 in Claiborne County, Tennessee.",
     "confidence": "Primary Source",
-    "tags": ["Baker", "Ramsey", "Tennessee", "Iowa"],
+    "tags": [
+      "Baker",
+      "Ramsey",
+      "Tennessee",
+      "Iowa"
+    ],
     "timeline": [
       {
         "title": "Marriage to James Ramsey",
@@ -2872,7 +3148,12 @@
     "summary": "Husband of Freelove. In Davis County, Iowa by 1850 with family including Elizabeth age 17 born Tennessee.",
     "keyEvent": "1850 census in Soap Creek Township, Davis County, Iowa with wife Freelove and children.",
     "confidence": "Primary Source",
-    "tags": ["Edwards", "Clouse", "Iowa", "Tennessee"],
+    "tags": [
+      "Edwards",
+      "Clouse",
+      "Iowa",
+      "Tennessee"
+    ],
     "timeline": [
       {
         "title": "1850 census household",
@@ -2898,7 +3179,11 @@
     "summary": "Wife of Arthur Edwards. In Davis County, Iowa household in 1850, born Virginia.",
     "keyEvent": "1850 census in Iowa with husband Arthur Edwards and family.",
     "confidence": "Primary Source",
-    "tags": ["Clouse", "Edwards", "Iowa"],
+    "tags": [
+      "Clouse",
+      "Edwards",
+      "Iowa"
+    ],
     "timeline": [
       {
         "title": "1850 census household",
@@ -2918,13 +3203,19 @@
   {
     "id": "jennet-souster",
     "name": "Jennet Souster",
-    "lifespan": "1847–1903",
+    "lifespan": "1847\u20131903",
     "era": "Late 19th century",
     "branch": "Souster / Bowen",
-    "summary": "Wife of Hugh Bowen (1843–1936). Born in Crosby, Ontario area. Married 1870, moved west with family to Manitoba and Saskatchewan. Mother of Emeline, Jessie, John, Christina, William Daniel, Herbert, Thomas Hugh, Eunice Sarah, Katherine Booth, and George Stanley Bowen. Died May 1903 in Delta, British Columbia.",
-    "keyEvent": "Married Hugh Bowen in 1870 in Leeds and Grenville, Ontario. Mother of ten children including Jessie Bowen (1874–1958).",
+    "summary": "Wife of Hugh Bowen (1843\u20131936). Born in Crosby, Ontario area. Married 1870, moved west with family to Manitoba and Saskatchewan. Mother of Emeline, Jessie, John, Christina, William Daniel, Herbert, Thomas Hugh, Eunice Sarah, Katherine Booth, and George Stanley Bowen. Died May 1903 in Delta, British Columbia.",
+    "keyEvent": "Married Hugh Bowen in 1870 in Leeds and Grenville, Ontario. Mother of ten children including Jessie Bowen (1874\u20131958).",
     "confidence": "Strong Evidence",
-    "tags": ["Souster", "Bowen", "Ontario", "Manitoba", "Saskatchewan"],
+    "tags": [
+      "Souster",
+      "Bowen",
+      "Ontario",
+      "Manitoba",
+      "Saskatchewan"
+    ],
     "sourceCitation": "Ontario marriage register 1870; family census records.",
     "timeline": [
       {
@@ -3032,13 +3323,18 @@
   {
     "id": "hugh-bowen-1843",
     "name": "Hugh Bowen",
-    "lifespan": "1843–1936",
+    "lifespan": "1843\u20131936",
     "era": "19th-20th century",
     "branch": "Bowen",
-    "summary": "Son of Israel Bowen and Margaret Wood. Born in South Elmsley, Leeds, Ontario. Married Jennet Souster in 1870. Father of ten children including Jessie Bowen (1874–1958). Moved west to Manitoba and Saskatchewan. Died in 1936.",
+    "summary": "Son of Israel Bowen and Margaret Wood. Born in South Elmsley, Leeds, Ontario. Married Jennet Souster in 1870. Father of ten children including Jessie Bowen (1874\u20131958). Moved west to Manitoba and Saskatchewan. Died in 1936.",
     "keyEvent": "Married Jennet Souster in 1870 in Leeds and Grenville, Ontario. Father of Emeline, Jessie, John, Christina, William Daniel, Herbert, Thomas Hugh, Eunice Sarah, Katherine Booth, and George Stanley Bowen.",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Ontario", "Manitoba", "Saskatchewan"],
+    "tags": [
+      "Bowen",
+      "Ontario",
+      "Manitoba",
+      "Saskatchewan"
+    ],
     "sourceCitation": "Ontario marriage register 1870; family census and vital records.",
     "timeline": [
       {
@@ -3249,9 +3545,9 @@
     "evidenceSummary": [
       "Born 3 May 1843 in South Elmsley, Leeds, Ontario, Canada",
       "Married Jennet Souster 27 November 1870 in South Crosby, Leeds and Grenville, Ontario (Primary Source marriage register)",
-      "Father of ten children: Emeline (1873–1933), Jessie (1874–1958), John (1876–1962), Christina (1879–1913), William Daniel (1882–1956), Herbert (1884–1916), Thomas Hugh (1886–1919), Eunice Sarah (1888–1958), Katherine Booth (1892–1983), George Stanley (1893–1979)",
+      "Father of ten children: Emeline (1873\u20131933), Jessie (1874\u20131958), John (1876\u20131962), Christina (1879\u20131913), William Daniel (1882\u20131956), Herbert (1884\u20131916), Thomas Hugh (1886\u20131919), Eunice Sarah (1888\u20131958), Katherine Booth (1892\u20131983), George Stanley (1893\u20131979)",
       "Moved with family to Manitoba and Saskatchewan",
-      "Parents: Israel Bowen (1798–1887, see israel-bowen-1798) and Margaret Wood (1815–1902)",
+      "Parents: Israel Bowen (1798\u20131887, see israel-bowen-1798) and Margaret Wood (1815\u20131902)",
       "Died 1936",
       "Key sources: Ontario marriage register; family vital records and censuses"
     ]
@@ -3259,13 +3555,17 @@
   {
     "id": "israel-bowen-1798",
     "name": "Israel Bowen",
-    "lifespan": "1798–1887",
+    "lifespan": "1798\u20131887",
     "era": "19th century",
     "branch": "Bowen",
-    "summary": "Son of Isreal Bowen and Isabella Lamb. Born in Lansdowne Township, Leeds County, Ontario. Married Margaret Wood in 1836. Father of Hugh Bowen (1843–1936), Daniel Neil Bowen, and other children. Died in North Crosby, Leeds, Ontario in 1887.",
+    "summary": "Son of Isreal Bowen and Isabella Lamb. Born in Lansdowne Township, Leeds County, Ontario. Married Margaret Wood in 1836. Father of Hugh Bowen (1843\u20131936), Daniel Neil Bowen, and other children. Died in North Crosby, Leeds, Ontario in 1887.",
     "keyEvent": "Married Margaret Wood in 1836 in Leeds Co., Ontario. Father of Hugh Bowen and several other children. Part of the early Bowen line in Ontario.",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Ontario", "Leeds County"],
+    "tags": [
+      "Bowen",
+      "Ontario",
+      "Leeds County"
+    ],
     "sourceCitation": "Ancestry Family Tree; Public Member Trees.",
     "timeline": [
       {
@@ -3293,7 +3593,7 @@
         "title": "Marriage to Margaret Wood",
         "date": "1836",
         "place": "Leeds Co., Ontario, Canada",
-        "summary": "Married Margaret Wood (1815–1902).",
+        "summary": "Married Margaret Wood (1815\u20131902).",
         "confidence": "Strong Evidence"
       },
       {
@@ -3372,7 +3672,7 @@
       "Born Sep 1798 in Lansdowne Township, Leeds County, Ontario, Canada",
       "Married Margaret Wood in 1836 in Leeds Co., Ontario",
       "Father of John (1836), Hugh (1843), Daniel Neil (1843), Rhoda (1847), Emmeline (1852), Charlotte (1854), Isabel (1856)",
-      "Parents: Isreal Bowen (1748–1848, see isreal-bowen-1748) and Isabella Lamb (1750–1830)",
+      "Parents: Isreal Bowen (1748\u20131848, see isreal-bowen-1748) and Isabella Lamb (1750\u20131830)",
       "Died 06 Nov 1887 in North Crosby, Leeds, Ontario, Canada",
       "Key sources: Ancestry Family Tree; Public Member Trees; Ontario records"
     ]
@@ -3380,13 +3680,19 @@
   {
     "id": "isreal-bowen-1748",
     "name": "Isreal Bowen",
-    "lifespan": "1748–1848",
+    "lifespan": "1748\u20131848",
     "era": "18th-19th century",
     "branch": "Bowen",
-    "summary": "Son of Nathan Bowen (1715–, Rehoboth MA) and Mary Mason. Born in Swansea, Bristol, Massachusetts. Married Isabella Lamb in 1794 in Shawangunk, New York. Father of John Lamb Bowen, David Bowen, Israel Bowen, and Peter Bowen. Served in militia. Died in Mooretown, Ontario, Canada in 1848 at age 100. Note: Name spelled 'Isreal' in this profile and many records (common variant of Israel).",
-    "keyEvent": "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York. Father of four children including Israel Bowen (1798–1887). Lived in Ontario, Canada after moving from Massachusetts/New York.",
+    "summary": "Son of Nathan Bowen (1715\u2013, Rehoboth MA) and Mary Mason. Born in Swansea, Bristol, Massachusetts. Married Isabella Lamb in 1794 in Shawangunk, New York. Father of John Lamb Bowen, David Bowen, Israel Bowen, and Peter Bowen. Served in militia. Died in Mooretown, Ontario, Canada in 1848 at age 100. Note: Name spelled 'Isreal' in this profile and many records (common variant of Israel).",
+    "keyEvent": "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York. Father of four children including Israel Bowen (1798\u20131887). Lived in Ontario, Canada after moving from Massachusetts/New York.",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Massachusetts", "Ontario", "New York", "Militia"],
+    "tags": [
+      "Bowen",
+      "Massachusetts",
+      "Ontario",
+      "New York",
+      "Militia"
+    ],
     "sourceCitation": "U.S. Dutch Reformed Church Records; Canada British Army and Canadian Militia Muster Rolls; Ontario and Nova Scotia Census 1800-1842; Ancestry Family Tree.",
     "timeline": [
       {
@@ -3408,7 +3714,7 @@
         "title": "Marriage to Isabella Lamb",
         "date": "02 Feb 1794",
         "place": "Shawangunk, Ulster, New York, United States",
-        "summary": "Married Isabella Lamb (1750–1830).",
+        "summary": "Married Isabella Lamb (1750\u20131830).",
         "confidence": "Strong Evidence"
       },
       {
@@ -3497,7 +3803,7 @@
       "Born 1748 in Swansea, Bristol, Massachusetts, USA",
       "Married Isabella Lamb on 2 February 1794 in Shawangunk, New York",
       "Father of John Lamb Bowen (1794), David Bowen (1796), Israel Bowen (1798), Peter Bowen (1798)",
-      "Parents: Nathan Bowen (1715–, born 18 Dec 1715 Rehoboth MA, m. Mary Mason 18 Dec 1737 Swansea MA, d. Cohansey NJ; see nathan-bowen) and Mary Mason (1713–1848); 1745 Maine death record for a Mary Bowen wife of Nathan (Primary Source, conflicts with tree 1848 date for some children)",
+      "Parents: Nathan Bowen (1715\u2013, born 18 Dec 1715 Rehoboth MA, m. Mary Mason 18 Dec 1737 Swansea MA, d. Cohansey NJ; see nathan-bowen) and Mary Mason (1713\u20131848); 1745 Maine death record for a Mary Bowen wife of Nathan (Primary Source, conflicts with tree 1848 date for some children)",
       "Military service in Ashby Loyal Volunteers, 1819 (Primary Source pay list)",
       "Residences in Leeds Township area, Ontario (1805, 1813, 1839)",
       "Died 5 April 1848 in Mooretown, Ontario, Canada at age 100",
@@ -3509,13 +3815,17 @@
   {
     "id": "nathan-bowen",
     "name": "Nathan Bowen",
-    "lifespan": "1715–",
+    "lifespan": "1715\u2013",
     "era": "18th century",
     "branch": "Bowen",
-    "summary": "Born 18 December 1715 in Rehoboth, Bristol, Massachusetts. Married Mary Mason on 18 December 1737 in Swansea, Bristol, Massachusetts. Father of Isreal Bowen (1748–1848) and other children including Rachel, Anna, and Rhoda. Died in Cohansey, Cumberland, New Jersey.",
-    "keyEvent": "Married Mary Mason 18 Dec 1737 in Swansea, Massachusetts; father of Isreal Bowen (1748–1848).",
+    "summary": "Born 18 December 1715 in Rehoboth, Bristol, Massachusetts. Married Mary Mason on 18 December 1737 in Swansea, Bristol, Massachusetts. Father of Isreal Bowen (1748\u20131848) and other children including Rachel, Anna, and Rhoda. Died in Cohansey, Cumberland, New Jersey.",
+    "keyEvent": "Married Mary Mason 18 Dec 1737 in Swansea, Massachusetts; father of Isreal Bowen (1748\u20131848).",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Massachusetts", "New Jersey"],
+    "tags": [
+      "Bowen",
+      "Massachusetts",
+      "New Jersey"
+    ],
     "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900; Maine, U.S., Death Records, 1761-1922 (wife).",
     "timeline": [
       {
@@ -3571,7 +3881,7 @@
         "title": "Marriage to Mary Mason",
         "date": "18 Dec 1737",
         "place": "Swansea, Bristol, Massachusetts, United States",
-        "summary": "Married Mary Mason (1713–1848).",
+        "summary": "Married Mary Mason (1713\u20131848).",
         "confidence": "Strong Evidence"
       },
       {
@@ -3606,7 +3916,7 @@
         "title": "Birth of son Isreal Bowen",
         "date": "1748",
         "place": "Swansea, Bristol, Massachusetts, USA",
-        "summary": "Son Isreal Bowen born (1748–1848).",
+        "summary": "Son Isreal Bowen born (1748\u20131848).",
         "confidence": "Strong Evidence"
       },
       {
@@ -3642,23 +3952,26 @@
     "evidenceSummary": [
       "Born 18 Dec 1715 in Rehoboth, Bristol, Massachusetts, USA (3 sources)",
       "Married Mary Mason 18 Dec 1737 in Swansea, Bristol, Massachusetts (1 source)",
-      "Father of children including Israel (1732–1738), Peleg (1738–1739), Rachel (1738–1819), Anna (1744–), Rhoda (1746–), and Isreal (1748–1848)",
-      "Parents: Hezekiah Bowen (1682–1751) and Elizabeth Randall (1686–1751)",
+      "Father of children including Israel (1732\u20131738), Peleg (1738\u20131739), Rachel (1738\u20131819), Anna (1744\u2013), Rhoda (1746\u2013), and Isreal (1748\u20131848)",
+      "Parents: Hezekiah Bowen (1682\u20131751) and Elizabeth Randall (1686\u20131751)",
       "Death in Cohansey, Cumberland, New Jersey (2 sources); half-siblings include Lydia, Valentine, Elizabeth, Amos, Amey, Peleg, Rachel, Seth",
-      "Wife's 1745 Maine death record (Primary Source) conflicts with some tree data listing Mary Mason to 1848 and post-1745 children — needs resolution",
+      "Wife's 1745 Maine death record (Primary Source) conflicts with some tree data listing Mary Mason to 1848 and post-1745 children \u2014 needs resolution",
       "Key sources: Public Member Trees; U.S. and International Marriage Records, 1560-1900; Maine, U.S., Death Records, 1761-1922"
     ]
   },
   {
     "id": "mary-bowen",
     "name": "Mary Bowen",
-    "lifespan": "1713–1848",
+    "lifespan": "1713\u20131848",
     "era": "18th century",
     "branch": "Bowen",
-    "summary": "Wife of Nathan Bowen (m. 1737). Mother of Isreal Bowen (1748–1848) and other children per tree. A Primary Source death record exists for a Mary Bowen (wife of Nathan) in Maine 1745 age 43.",
+    "summary": "Wife of Nathan Bowen (m. 1737). Mother of Isreal Bowen (1748\u20131848) and other children per tree. A Primary Source death record exists for a Mary Bowen (wife of Nathan) in Maine 1745 age 43.",
     "keyEvent": "Married Nathan Bowen 18 Dec 1737 in Swansea, Massachusetts. Mother of Isreal Bowen.",
     "confidence": "Strong Evidence",
-    "tags": ["Bowen", "Massachusetts"],
+    "tags": [
+      "Bowen",
+      "Massachusetts"
+    ],
     "timeline": [
       {
         "title": "Marriage to Nathan Bowen",
@@ -3692,8 +4005,8 @@
     ],
     "evidenceSummary": [
       "Wife of Nathan Bowen (married 18 Dec 1737, Swansea, MA)",
-      "Mother of Isreal Bowen (1748–1848) and listed siblings per tree",
-      "Tree lifespan 1713–1848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' — chronological conflict with 1748 birth of son Isreal (3 years after death); likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation. Open contradiction.",
+      "Mother of Isreal Bowen (1748\u20131848) and listed siblings per tree",
+      "Tree lifespan 1713\u20131848; separate Primary Source death record 11 Jul 1745 age 43 in Maine for 'Mary Bowen wife of Nathan' \u2014 chronological conflict with 1748 birth of son Isreal (3 years after death); likely different Mary Bowen or error in tree data. Do not merge without primary reconciliation. Open contradiction.",
       "Key sources: Public Member Trees; Maine death record image (Primary)"
     ]
   },
@@ -3706,7 +4019,12 @@
     "summary": "Schoolmaster in Ballymena, County Antrim. Father of William Moore (printer).",
     "keyEvent": "Identified as schoolmaster and father on William Moore's 1846 marriage record.",
     "confidence": "Needs Review",
-    "tags": ["Schoolmaster", "Ballymena", "Moore line", "Needs review"],
+    "tags": [
+      "Schoolmaster",
+      "Ballymena",
+      "Moore line",
+      "Needs review"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -3739,7 +4057,12 @@
     "summary": "Brass founder of Bridge Street, Ballymena, County Antrim. Father of Isabella Law.",
     "keyEvent": "Identified as brass founder and father on Isabella Law's 1846 marriage record.",
     "confidence": "Needs Review",
-    "tags": ["Brass founder", "Ballymena", "Bridge Street", "Needs review"],
+    "tags": [
+      "Brass founder",
+      "Ballymena",
+      "Bridge Street",
+      "Needs review"
+    ],
     "timeline": [
       {
         "title": "Daughter's Marriage",
@@ -3765,7 +4088,13 @@
     "summary": "Son of William Moore and Isabella Law. Born in Hull, Quebec; migrated west to the Canadian prairies; husband of Jessie Bowen and father of Hugh Christopher Moore and Janet Hazel Moore.",
     "keyEvent": "Married Jessie Bowen; established the Moore family in Sintaluta, Saskatchewan and later Medicine Hat/Calgary, Alberta.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore line", "Quebec", "Saskatchewan", "Alberta", "Matriarch/Patriarch"],
+    "tags": [
+      "Moore line",
+      "Quebec",
+      "Saskatchewan",
+      "Alberta",
+      "Matriarch/Patriarch"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -3834,7 +4163,10 @@
     "summary": "Son of William Moore and Isabella Law. Under research review.",
     "keyEvent": "Birth/baptism records currently being evaluated.",
     "confidence": "Needs Review",
-    "tags": ["Moore line", "Needs review"],
+    "tags": [
+      "Moore line",
+      "Needs review"
+    ],
     "timeline": [
       {
         "title": "Birth registration under review",
@@ -3857,7 +4189,11 @@
     "summary": "Son of William Moore and Isabella Law. Born in Quebec, Canada shortly after his parents emigrated from Ireland. Later moved with the family to New York City and lived there until his death in 1921.",
     "keyEvent": "Born 12 March 1847 in Quebec. Resided in New York City in 1880.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "Quebec", "New York"],
+    "tags": [
+      "Moore",
+      "Quebec",
+      "New York"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -3895,7 +4231,10 @@
     "summary": "Daughter of William Moore and Isabella Law. Born in Brooklyn, New York City, and resided there with her family.",
     "keyEvent": "Born in 1865 in Brooklyn, New York City. Married McCoy.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "New York"],
+    "tags": [
+      "Moore",
+      "New York"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -3919,7 +4258,9 @@
     "summary": "Daughter of William Moore and Isabella Law. Listed in family records.",
     "keyEvent": "Daughter of William Moore and Isabella Law.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore"],
+    "tags": [
+      "Moore"
+    ],
     "timeline": [
       {
         "title": "Birth registration under review",
@@ -3941,7 +4282,9 @@
     "summary": "Son of William Moore and Isabella Law. Listed in family records.",
     "keyEvent": "Son of William Moore and Isabella Law.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore"],
+    "tags": [
+      "Moore"
+    ],
     "timeline": [
       {
         "title": "Birth registration under review",
@@ -3963,7 +4306,9 @@
     "summary": "Daughter of William Moore and Isabella Law. Listed in family records. Separate from sister Mary Agnes Moore.",
     "keyEvent": "Daughter of William Moore and Isabella Law.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore"],
+    "tags": [
+      "Moore"
+    ],
     "timeline": [
       {
         "title": "Birth registration under review",
@@ -3985,7 +4330,11 @@
     "summary": "Son of James Moore and Jessie Bowen. Born in Saskatchewan, he lived in the Canadian prairies and passed away in Calgary in 1935 at the age of 35.",
     "keyEvent": "Born 26 Oct 1899 in Assiniboia, NWT. Identified as son of James Moore and Jessie Bowen in census records.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "Saskatchewan", "Alberta"],
+    "tags": [
+      "Moore",
+      "Saskatchewan",
+      "Alberta"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -4042,7 +4391,10 @@
     "summary": "Daughter of James Moore and Jessie Bowen. Born in Saskatchewan, she is documented in early Canadian census schedules.",
     "keyEvent": "Born 4 Nov 1897 in Assiniboia, NWT. Identified as daughter of James Moore and Jessie Bowen.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "Saskatchewan"],
+    "tags": [
+      "Moore",
+      "Saskatchewan"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -4082,7 +4434,11 @@
     "summary": "Son of James Moore and Jessie Bowen. Born on the Canadian prairies, he later moved to Idaho and passed away there in 1978.",
     "keyEvent": "Born 22 Mar 1894 in Assiniboia, NWT. Brother of Hugh Christopher Moore.",
     "confidence": "Strong Evidence",
-    "tags": ["Moore", "Saskatchewan", "Idaho"],
+    "tags": [
+      "Moore",
+      "Saskatchewan",
+      "Idaho"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -4107,26 +4463,30 @@
   {
     "id": "obadiah-bowen",
     "name": "Obadiah Bowen",
-    "lifespan": "1651–1699",
+    "lifespan": "1651\u20131699",
     "era": "17th-century New England",
     "branch": "Bowen",
-    "summary": "Early settler in Rehoboth and Swansea, Massachusetts. Married Abigail Bullock; father of Nathan Bowen (1698–1776).",
+    "summary": "Early settler in Rehoboth and Swansea, Massachusetts. Married Abigail Bullock; father of Nathan Bowen (1698\u20131776).",
     "keyEvent": "Married Abigail Bullock on 25 July 1677 in Rehoboth, Massachusetts. Father of Nathan Bowen.",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Massachusetts", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Massachusetts",
+      "Needs review"
+    ],
     "timeline": [
       {
         "title": "Birth",
         "date": "18 September 1651",
         "place": "Rehoboth, Bristol, Massachusetts, USA",
-        "summary": "Born to Obadiah Bowen (1627–1710) and Mary Clifton (1628–1697) in Rehoboth.",
+        "summary": "Born to Obadiah Bowen (1627\u20131710) and Mary Clifton (1628\u20131697) in Rehoboth.",
         "confidence": "Needs Review"
       },
       {
         "title": "Marriage",
         "date": "25 July 1677",
         "place": "Rehoboth, Bristol, Massachusetts, USA",
-        "summary": "Married Abigail Bullock (1657–1704).",
+        "summary": "Married Abigail Bullock (1657\u20131704).",
         "confidence": "Needs Review"
       },
       {
@@ -4146,8 +4506,8 @@
     ],
     "evidenceSummary": [
       "Born 18 Sep 1651 in Rehoboth to Obadiah Bowen and Mary Clifton",
-      "Married Abigail Bullock (1657–1704) on 25 Jul 1677 in Rehoboth",
-      "Father of 10 children, including Nathan Bowen (1698–1776) who anchors the subsequent Massachusetts Bowen line",
+      "Married Abigail Bullock (1657\u20131704) on 25 Jul 1677 in Rehoboth",
+      "Father of 10 children, including Nathan Bowen (1698\u20131776) who anchors the subsequent Massachusetts Bowen line",
       "Died 11 Jul 1699 in Rehoboth at age 47",
       "Sourced from Public Member Trees and Rehoboth Vital Records index entries; needs contemporary primary source verification"
     ]
@@ -4155,13 +4515,18 @@
   {
     "id": "abigail-bullock",
     "name": "Abigail Bullock",
-    "lifespan": "1657–1704",
+    "lifespan": "1657\u20131704",
     "era": "17th-century New England",
     "branch": "Bowen",
-    "summary": "Wife of Obadiah Bowen (1651–1699). Lived in Rehoboth, Massachusetts. Mother of Nathan Bowen (1698–1776).",
+    "summary": "Wife of Obadiah Bowen (1651\u20131699). Lived in Rehoboth, Massachusetts. Mother of Nathan Bowen (1698\u20131776).",
     "keyEvent": "Married Obadiah Bowen on 25 July 1677 in Rehoboth, Massachusetts.",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Bullock", "Massachusetts", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Bullock",
+      "Massachusetts",
+      "Needs review"
+    ],
     "timeline": [
       {
         "title": "Birth",
@@ -4174,7 +4539,7 @@
         "title": "Marriage",
         "date": "25 July 1677",
         "place": "Rehoboth, Bristol, Massachusetts, USA",
-        "summary": "Married Obadiah Bowen (1651–1699).",
+        "summary": "Married Obadiah Bowen (1651\u20131699).",
         "confidence": "Needs Review"
       },
       {
@@ -4195,7 +4560,7 @@
     "evidenceSummary": [
       "Born 1657 in Massachusetts; daughter of Richard Bullock and Elizabeth Ingraham (per tree listings)",
       "Married Obadiah Bowen on 25 Jul 1677 in Rehoboth",
-      "Mother of 10 children, including Nathan Bowen (1698–1776)",
+      "Mother of 10 children, including Nathan Bowen (1698\u20131776)",
       "Died 1704 in Rehoboth at age 47",
       "Sourced from Public Member Trees and Rehoboth Vital Records index entries; needs contemporary primary source verification"
     ]
@@ -4203,13 +4568,17 @@
   {
     "id": "mary-ann-edwards",
     "name": "Mary Ann Edwards",
-    "lifespan": "1853–1879",
+    "lifespan": "1853\u20131879",
     "era": "19th-century Iowa",
     "branch": "Edwards",
     "summary": "Daughter of Anderson Edwards and Armina Ramsey. Born in Davis County, Iowa. Lived in Decatur County, Iowa. Buried in Wheelis Cemetery.",
     "keyEvent": "Lived in Richland and Long Creek Townships, Decatur County, Iowa. Died 1879 at age 26.",
     "confidence": "Strong Evidence",
-    "tags": ["Edwards", "Iowa", "Wheelis Cemetery"],
+    "tags": [
+      "Edwards",
+      "Iowa",
+      "Wheelis Cemetery"
+    ],
     "sourceCitation": "FamilySearch Record KCW2-P1P; 1860, 1870 US Federal Census.",
     "timeline": [
       {
@@ -4250,13 +4619,17 @@
   {
     "id": "cowen-ramsey",
     "name": "Cowen Ramsey",
-    "lifespan": "1840–Deceased",
+    "lifespan": "1840\u2013Deceased",
     "era": "19th-century Midwest",
     "branch": "Ramsey",
     "summary": "Son of Thomas Ramsey and Anna Hopkins; brother of Armina Ramsey.",
     "keyEvent": "Born in Tennessee. Lived in Iowa.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "tags": [
+      "Ramsey",
+      "Tennessee",
+      "Iowa"
+    ],
     "sourceCitation": "FamilySearch Record KDSF-W87; 1856 Iowa State Census.",
     "timeline": [
       {
@@ -4284,13 +4657,17 @@
   {
     "id": "rachael-ramsey",
     "name": "Rachael Ramsey",
-    "lifespan": "1845–1933",
+    "lifespan": "1845\u20131933",
     "era": "19th to early 20th century",
     "branch": "Ramsey",
     "summary": "Daughter of Thomas Ramsey and Anna Hopkins; sister of Armina Ramsey.",
     "keyEvent": "Lived in Tennessee and Iowa. Died in 1933.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "tags": [
+      "Ramsey",
+      "Tennessee",
+      "Iowa"
+    ],
     "sourceCitation": "FamilySearch Record LHBT-J82; 1856 Iowa State Census.",
     "timeline": [
       {
@@ -4325,13 +4702,17 @@
   {
     "id": "narvesta-ramsey",
     "name": "Narvesta Ramsey",
-    "lifespan": "1847–Deceased",
+    "lifespan": "1847\u2013Deceased",
     "era": "19th-century Midwest",
     "branch": "Ramsey",
     "summary": "Daughter of Thomas Ramsey and Anna Hopkins; sister of Armina Ramsey.",
     "keyEvent": "Born in Tennessee. Lived in Iowa.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "tags": [
+      "Ramsey",
+      "Tennessee",
+      "Iowa"
+    ],
     "sourceCitation": "FamilySearch Record L5G1-ZDZ.",
     "timeline": [
       {
@@ -4350,13 +4731,16 @@
   {
     "id": "william-allen-ramsey",
     "name": "William Allen Ramsey",
-    "lifespan": "1853–1941",
+    "lifespan": "1853\u20131941",
     "era": "19th to early 20th century",
     "branch": "Ramsey",
     "summary": "Son of Thomas Ramsey and Anna Hopkins; younger brother of Armina Ramsey.",
     "keyEvent": "Born in Iowa. Lived in Iowa. Died in 1941.",
     "confidence": "Strong Evidence",
-    "tags": ["Ramsey", "Iowa"],
+    "tags": [
+      "Ramsey",
+      "Iowa"
+    ],
     "sourceCitation": "FamilySearch Record LHPK-V2X; 1856 Iowa State Census.",
     "timeline": [
       {
@@ -4391,27 +4775,31 @@
   {
     "id": "obadiah-bowen-1627",
     "name": "Obadiah Bowen",
-    "lifespan": "1627–1710",
+    "lifespan": "1627\u20131710",
     "era": "17th-century New England",
     "branch": "Bowen",
-    "summary": "Early Swansea and Rehoboth settler. Married Mary Clifton; father of Obadiah Bowen (1651–1699).",
-    "keyEvent": "Married Mary Clifton in 1647 in Swansea, Massachusetts. Father of Obadiah Bowen (1651–1699).",
+    "summary": "Early Swansea and Rehoboth settler. Married Mary Clifton; father of Obadiah Bowen (1651\u20131699).",
+    "keyEvent": "Married Mary Clifton in 1647 in Swansea, Massachusetts. Father of Obadiah Bowen (1651\u20131699).",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Massachusetts", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Massachusetts",
+      "Needs review"
+    ],
     "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900.",
     "timeline": [
       {
         "title": "Birth",
         "date": "3 January 1627",
         "place": "Swansea, Bristol, Massachusetts, USA",
-        "summary": "Born to Richard Bowen (1590–1674) and Ann Born (1592–1648).",
+        "summary": "Born to Richard Bowen (1590\u20131674) and Ann Born (1592\u20131648).",
         "confidence": "Needs Review"
       },
       {
         "title": "Marriage",
         "date": "1647",
         "place": "Swansea, Bristol, Massachusetts, USA",
-        "summary": "Married Mary Clifton (1628–1697).",
+        "summary": "Married Mary Clifton (1628\u20131697).",
         "confidence": "Needs Review"
       },
       {
@@ -4438,8 +4826,8 @@
     ],
     "evidenceSummary": [
       "Born 3 Jan 1627 to Richard Bowen and Ann Born",
-      "Married Mary Clifton (1628–1697) in 1647",
-      "Father of 7 children including Obadiah Bowen (1651–1699)",
+      "Married Mary Clifton (1628\u20131697) in 1647",
+      "Father of 7 children including Obadiah Bowen (1651\u20131699)",
       "Died 10 Sep 1710 in Swansea, Massachusetts at age 83",
       "Sourced from Public Member Trees and marriage index records; requires primary source confirmation"
     ]
@@ -4447,13 +4835,18 @@
   {
     "id": "mary-clifton",
     "name": "Mary Clifton",
-    "lifespan": "1628–1697",
+    "lifespan": "1628\u20131697",
     "era": "17th-century New England",
     "branch": "Bowen",
-    "summary": "Wife of Obadiah Bowen (1627–1710); mother of Obadiah Bowen (1651–1699).",
+    "summary": "Wife of Obadiah Bowen (1627\u20131710); mother of Obadiah Bowen (1651\u20131699).",
     "keyEvent": "Married Obadiah Bowen in 1647 in Swansea, Massachusetts.",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Clifton", "Massachusetts", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Clifton",
+      "Massachusetts",
+      "Needs review"
+    ],
     "sourceCitation": "Public Member Trees; U.S. and International Marriage Records, 1560-1900.",
     "timeline": [
       {
@@ -4467,7 +4860,7 @@
         "title": "Marriage",
         "date": "1647",
         "place": "Swansea, Bristol, Massachusetts, USA",
-        "summary": "Married Obadiah Bowen (1627–1710).",
+        "summary": "Married Obadiah Bowen (1627\u20131710).",
         "confidence": "Needs Review"
       },
       {
@@ -4487,8 +4880,8 @@
     ],
     "evidenceSummary": [
       "Born 1628 (approximate year and birthplace)",
-      "Married Obadiah Bowen (1627–1710) in 1647",
-      "Mother of 7 children including Obadiah Bowen (1651–1699)",
+      "Married Obadiah Bowen (1627\u20131710) in 1647",
+      "Mother of 7 children including Obadiah Bowen (1651\u20131699)",
       "Died 18 Feb 1697 in Swansea, Massachusetts at age 69",
       "Sourced from Public Member Trees and marriage index records; requires primary source confirmation"
     ]
@@ -4496,27 +4889,33 @@
   {
     "id": "richard-bowen",
     "name": "Richard Bowen",
-    "lifespan": "1590–1674",
+    "lifespan": "1590\u20131674",
     "era": "17th-century New England",
     "branch": "Bowen",
-    "summary": "Early settler in Weymouth and Rehoboth, Massachusetts. Emigrated from Glamorganshire, Wales. Married Ann Born; father of Obadiah Bowen (1627–1710).",
+    "summary": "Early settler in Weymouth and Rehoboth, Massachusetts. Emigrated from Glamorganshire, Wales. Married Ann Born; father of Obadiah Bowen (1627\u20131710).",
     "keyEvent": "Emigrated to New England around 1640; became a prominent early resident of Rehoboth, Massachusetts.",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Wales", "Massachusetts", "Immigrant", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Wales",
+      "Massachusetts",
+      "Immigrant",
+      "Needs review"
+    ],
     "sourceCitation": "Public Member Trees; Weymouth and Rehoboth town records.",
     "timeline": [
       {
         "title": "Birth",
         "date": "1590",
         "place": "Swansea, Glamorganshire, Wales",
-        "summary": "Born to James Bevan (Sir) Bowen (1550–1629) and Eleanor Griffith of Penryn (1559–1600).",
+        "summary": "Born to James Bevan (Sir) Bowen (1550\u20131629) and Eleanor Griffith of Penryn (1559\u20131600).",
         "confidence": "Needs Review"
       },
       {
         "title": "Marriage to Ann Born",
         "date": "about 1615",
         "place": "Wales",
-        "summary": "Married Ann Born (1592–1648). Note: Tree records showing marriage in Nov 1648 conflict chronologically with children's births (1616–1637) and her death (02 Nov 1648); likely represents a typo in compilation.",
+        "summary": "Married Ann Born (1592\u20131648). Note: Tree records showing marriage in Nov 1648 conflict chronologically with children's births (1616\u20131637) and her death (02 Nov 1648); likely represents a typo in compilation.",
         "confidence": "Needs Review"
       },
       {
@@ -4551,21 +4950,27 @@
     "evidenceSummary": [
       "Born 1590 in Wales to James Bevan Bowen and Eleanor Griffith",
       "Emigrated to New England around 1640, residing in Weymouth and Rehoboth, Massachusetts",
-      "Father of 8 children, including Obadiah Bowen (1627–1710)",
+      "Father of 8 children, including Obadiah Bowen (1627\u20131710)",
       "Rehoboth town records confirm death on 4 Feb 1674 at age 84",
-      "Chronological conflict: Marriage to Ann Born compiled as Nov 1648 in some databases conflicts with children's births (1616–1637) and her death date of 2 Nov 1648. Treated as an approximate 1615 marriage."
+      "Chronological conflict: Marriage to Ann Born compiled as Nov 1648 in some databases conflicts with children's births (1616\u20131637) and her death date of 2 Nov 1648. Treated as an approximate 1615 marriage."
     ]
   },
   {
     "id": "ann-born",
     "name": "Ann Born",
-    "lifespan": "1592–1648",
+    "lifespan": "1592\u20131648",
     "era": "17th century",
     "branch": "Bowen",
-    "summary": "Wife of Richard Bowen (1590–1674); mother of Obadiah Bowen (1627–1710). Emigrated from Wales to New England.",
-    "keyEvent": "Married Richard Bowen in Wales; mother of Obadiah Bowen (1627–1710).",
+    "summary": "Wife of Richard Bowen (1590\u20131674); mother of Obadiah Bowen (1627\u20131710). Emigrated from Wales to New England.",
+    "keyEvent": "Married Richard Bowen in Wales; mother of Obadiah Bowen (1627\u20131710).",
     "confidence": "Needs Review",
-    "tags": ["Bowen", "Born", "Wales", "Massachusetts", "Needs review"],
+    "tags": [
+      "Bowen",
+      "Born",
+      "Wales",
+      "Massachusetts",
+      "Needs review"
+    ],
     "sourceCitation": "Public Member Trees; Rehoboth town records.",
     "timeline": [
       {
@@ -4579,7 +4984,7 @@
         "title": "Marriage to Richard Bowen",
         "date": "about 1615",
         "place": "Wales",
-        "summary": "Married Richard Bowen (1590–1674).",
+        "summary": "Married Richard Bowen (1590\u20131674).",
         "confidence": "Needs Review"
       },
       {
@@ -4600,7 +5005,7 @@
     "evidenceSummary": [
       "Born 1592 (approximate year)",
       "Married Richard Bowen in Wales",
-      "Mother of 8 children, including Obadiah Bowen (1627–1710)",
+      "Mother of 8 children, including Obadiah Bowen (1627\u20131710)",
       "Rehoboth town records confirm death on 2 Nov 1648"
     ]
   },
@@ -4613,7 +5018,11 @@
     "summary": "Husband of Nancy Moore Marchant. Lived in Calgary, Alberta, where he worked as a draughtsman in the late 1950s. Father of Colleen Gay Lattin and Brett Marchant, and grandfather of Aaron and Shawn.",
     "keyEvent": "Listed in the 1958 Henderson's Calgary City Directory at 315 48th Avenue NE with wife Nancy Carol. Father of Colleen Lattin and Brett Marchant, grandfather of Aaron and Shawn.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Alberta", "Calgary"],
+    "tags": [
+      "Marchant",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "1958 Henderson's Calgary City Directory; 2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
@@ -4657,7 +5066,13 @@
     "summary": "Daughter of Hugh Christopher Moore and Edith Ann Edwards. Wife of David Marchant. Resided in Calgary, Alberta, in the late 1950s. Mother of Colleen Gay Lattin and Brett Marchant, and grandmother of Aaron and Shawn.",
     "keyEvent": "Listed as Mrs. Nancy Carol Marchant in the 1958 Calgary City Directory at 315 48th Avenue NE. Mother of Colleen Lattin and Brett Marchant, grandmother of Aaron and Shawn.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Moore", "Edwards", "Alberta", "Calgary"],
+    "tags": [
+      "Marchant",
+      "Moore",
+      "Edwards",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "1958 Henderson's Calgary City Directory; 2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
@@ -4702,7 +5117,11 @@
     "summary": "Daughter of David Marchant and Nancy Moore Marchant. Worked in city planning for fiber optic communications at Telus. Remembered for her dedication to the merger of AGT and Telus and volunteering at the 1988 Winter Olympics with her father Dave.",
     "keyEvent": "Worked at Telus in city planning; dedicated volunteer at the 1988 Calgary Winter Olympics.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Alberta", "Calgary"],
+    "tags": [
+      "Marchant",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "Obituary of Colleen Gay Lattin, published 20 November 2020, Calgary, Alberta.",
     "timeline": [
       {
@@ -4746,7 +5165,11 @@
     "summary": "Son of David Marchant and Nancy Moore Marchant. Brother of Colleen Gay Lattin. Husband of Christine and father of Shawn and Aaron.",
     "keyEvent": "Husband of Christine; father of Shawn and Aaron Marchant; son of David and Nancy.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Alberta", "Calgary"],
+    "tags": [
+      "Marchant",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
@@ -4773,7 +5196,12 @@
     "summary": "AI evaluator and builder in Calgary, Alberta. Son of Brett Marchant and Christine. Grandson of David Marchant and Nancy Moore Marchant. Brother of Shawn.",
     "keyEvent": "AI security and evaluation builder in Calgary; creator of PromptHound Labs.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Alberta", "Calgary", "Developer"],
+    "tags": [
+      "Marchant",
+      "Alberta",
+      "Calgary",
+      "Developer"
+    ],
     "sourceCitation": "2020 Obituary of Colleen Gay Lattin; PromptHound Labs README.",
     "timeline": [
       {
@@ -4800,7 +5228,11 @@
     "summary": "Son of Brett Marchant and Christine. Grandson of David Marchant and Nancy Moore Marchant. Brother of Aaron.",
     "keyEvent": "Son of Brett Marchant and Christine; brother of Aaron.",
     "confidence": "Strong Evidence",
-    "tags": ["Marchant", "Alberta", "Calgary"],
+    "tags": [
+      "Marchant",
+      "Alberta",
+      "Calgary"
+    ],
     "sourceCitation": "2020 Obituary of Colleen Gay Lattin.",
     "timeline": [
       {
