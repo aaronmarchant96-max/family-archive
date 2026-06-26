@@ -3767,5 +3767,264 @@
       "Listed as child of William Moore and Isabella Law in family tradition records",
       "Status: No baptism record yet confirmed in Mid-Antrim parish registers"
     ]
+  },
+  {
+    "id": "obadiah-bowen",
+    "name": "Obadiah Bowen",
+    "lifespan": "1651–1699",
+    "era": "17th-century New England",
+    "branch": "Bowen",
+    "summary": "Early settler in Rehoboth and Swansea, Massachusetts. Married Abigail Bullock; father of Nathan Bowen (1698–1776).",
+    "keyEvent": "Married Abigail Bullock on 25 July 1677 in Rehoboth, Massachusetts. Father of Nathan Bowen.",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Massachusetts", "Needs review"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "18 September 1651",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Born to Obadiah Bowen (1627–1710) and Mary Clifton (1628–1697) in Rehoboth.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage",
+        "date": "25 July 1677",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Married Abigail Bullock (1657–1704).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Nathan Bowen",
+        "date": "4 April 1698",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Son Nathan Bowen born.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "11 July 1699",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Passed away at age 47.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 18 Sep 1651 in Rehoboth to Obadiah Bowen and Mary Clifton",
+      "Married Abigail Bullock (1657–1704) on 25 Jul 1677 in Rehoboth",
+      "Father of 10 children, including Nathan Bowen (1698–1776) who anchors the subsequent Massachusetts Bowen line",
+      "Died 11 Jul 1699 in Rehoboth at age 47",
+      "Sourced from Public Member Trees and Rehoboth Vital Records index entries; needs contemporary primary source verification"
+    ]
+  },
+  {
+    "id": "abigail-bullock",
+    "name": "Abigail Bullock",
+    "lifespan": "1657–1704",
+    "era": "17th-century New England",
+    "branch": "Bowen",
+    "summary": "Wife of Obadiah Bowen (1651–1699). Lived in Rehoboth, Massachusetts. Mother of Nathan Bowen (1698–1776).",
+    "keyEvent": "Married Obadiah Bowen on 25 July 1677 in Rehoboth, Massachusetts.",
+    "confidence": "Needs Review",
+    "tags": ["Bowen", "Bullock", "Massachusetts", "Needs review"],
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1657",
+        "place": "Rehoboth, Bristol, Massachusetts, USA (likely)",
+        "summary": "Born in Rehoboth, Massachusetts.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Marriage",
+        "date": "25 July 1677",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Married Obadiah Bowen (1651–1699).",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Birth of son Nathan Bowen",
+        "date": "4 April 1698",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Son Nathan Bowen born.",
+        "confidence": "Needs Review"
+      },
+      {
+        "title": "Death",
+        "date": "1704",
+        "place": "Rehoboth, Bristol, Massachusetts, USA",
+        "summary": "Passed away at age 47.",
+        "confidence": "Needs Review"
+      }
+    ],
+    "evidenceSummary": [
+      "Born 1657 in Massachusetts; daughter of Richard Bullock and Elizabeth Ingraham (per tree listings)",
+      "Married Obadiah Bowen on 25 Jul 1677 in Rehoboth",
+      "Mother of 10 children, including Nathan Bowen (1698–1776)",
+      "Died 1704 in Rehoboth at age 47",
+      "Sourced from Public Member Trees and Rehoboth Vital Records index entries; needs contemporary primary source verification"
+    ]
+  },
+  {
+    "id": "mary-ann-edwards",
+    "name": "Mary Ann Edwards",
+    "lifespan": "1853–1879",
+    "era": "19th-century Iowa",
+    "branch": "Edwards",
+    "summary": "Daughter of Anderson Edwards and Armina Ramsey. Born in Davis County, Iowa. Lived in Decatur County, Iowa. Buried in Wheelis Cemetery.",
+    "keyEvent": "Lived in Richland and Long Creek Townships, Decatur County, Iowa. Died 1879 at age 26.",
+    "confidence": "Strong Evidence",
+    "tags": ["Edwards", "Iowa", "Wheelis Cemetery"],
+    "sourceCitation": "FamilySearch Record KCW2-P1P; 1860, 1870 US Federal Census.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "23 February 1853",
+        "place": "Davis County, Iowa, United States",
+        "summary": "Born to Anderson Edwards and Armina Ramsey.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Residence in 1860 Census",
+        "date": "1860",
+        "place": "Richland Township, Decatur, Iowa, United States",
+        "summary": "Living with parents Anderson and Armina and siblings in the census.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Residence in 1870 Census",
+        "date": "1870",
+        "place": "Richland Township, Decatur, Iowa, United States",
+        "summary": "Living in parent's household.",
+        "confidence": "Primary Source"
+      },
+      {
+        "title": "Death",
+        "date": "27 December 1879",
+        "place": "Decatur County, Iowa, United States",
+        "summary": "Passed away at age 26. Buried in Wheelis Cemetery.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Anderson Edwards (1832-1908) and Armina Ramsey (1826-1923)",
+      "Appears in 1860 and 1870 US Federal Census records in Richland, Decatur, Iowa",
+      "Wheelis Cemetery records and FamilySearch profile confirm death date of 27 Dec 1879 and burial"
+    ]
+  },
+  {
+    "id": "cowen-ramsey",
+    "name": "Cowen Ramsey",
+    "lifespan": "1840–Deceased",
+    "era": "19th-century Midwest",
+    "branch": "Ramsey",
+    "summary": "Son of Thomas Ramsey and Anna Hopkins; brother of Armina Ramsey.",
+    "keyEvent": "Born in Tennessee. Lived in Iowa.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "sourceCitation": "FamilySearch Record KDSF-W87.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1840",
+        "place": "Tennessee, United States",
+        "summary": "Born to Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Brother of Armina Ramsey and James Ramsey (1825-1909)"
+    ]
+  },
+  {
+    "id": "rachael-ramsey",
+    "name": "Rachael Ramsey",
+    "lifespan": "1845–1933",
+    "era": "19th to early 20th century",
+    "branch": "Ramsey",
+    "summary": "Daughter of Thomas Ramsey and Anna Hopkins; sister of Armina Ramsey.",
+    "keyEvent": "Lived in Tennessee and Iowa. Died in 1933.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "sourceCitation": "FamilySearch Record LHBT-J82.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1845",
+        "place": "Tennessee, United States",
+        "summary": "Born to Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1933",
+        "place": "Iowa, United States",
+        "summary": "Passed away.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Sister of Armina Ramsey and James Ramsey (1825-1909)"
+    ]
+  },
+  {
+    "id": "narvesta-ramsey",
+    "name": "Narvesta Ramsey",
+    "lifespan": "1847–Deceased",
+    "era": "19th-century Midwest",
+    "branch": "Ramsey",
+    "summary": "Daughter of Thomas Ramsey and Anna Hopkins; sister of Armina Ramsey.",
+    "keyEvent": "Born in Tennessee. Lived in Iowa.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Tennessee", "Iowa"],
+    "sourceCitation": "FamilySearch Record L5G1-ZDZ.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1847",
+        "place": "Tennessee, United States",
+        "summary": "Born to Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Sister of Armina Ramsey and James Ramsey (1825-1909)"
+    ]
+  },
+  {
+    "id": "william-allen-ramsey",
+    "name": "William Allen Ramsey",
+    "lifespan": "1853–1941",
+    "era": "19th to early 20th century",
+    "branch": "Ramsey",
+    "summary": "Son of Thomas Ramsey and Anna Hopkins; younger brother of Armina Ramsey.",
+    "keyEvent": "Born in Iowa. Lived in Iowa. Died in 1941.",
+    "confidence": "Strong Evidence",
+    "tags": ["Ramsey", "Iowa"],
+    "sourceCitation": "FamilySearch Record LHPK-V2X.",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "1853",
+        "place": "Iowa, United States",
+        "summary": "Born to Thomas Ramsey and Anna Hopkins.",
+        "confidence": "Strong Evidence"
+      },
+      {
+        "title": "Death",
+        "date": "1941",
+        "place": "Iowa, United States",
+        "summary": "Passed away.",
+        "confidence": "Strong Evidence"
+      }
+    ],
+    "evidenceSummary": [
+      "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
+      "Brother of Armina Ramsey and James Ramsey (1825-1909)"
+    ]
   }
 ]
+
+
