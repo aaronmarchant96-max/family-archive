@@ -8,7 +8,10 @@
     "sourceCitation": "Public Record Office of Northern Ireland (PRONI), Kilconriola Parish Marriage Register, marriage of William Moore and Isabella Law, 29 March 1846, Kirkinriola/Kilconriola Parish, Ballymena, County Antrim.",
     "previewUrl": "/documents/real-certificate.jpg",
     "confidence": "Primary Source",
-    "people": ["William Moore", "Isabella Law"],
+    "people": [
+      "William Moore",
+      "Isabella Law"
+    ],
     "place": "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
     "branch": "Moore",
     "researchPriority": false,
@@ -26,7 +29,10 @@
     "sourceCitation": "Delaware Marriage Records, 1744, Josiah Ramsey and spouse, Delaware Colony.",
     "previewUrl": "/documents/josiah-ramsey-1744-marriage.jpg",
     "confidence": "Needs Review",
-    "people": ["Josiah Ramsey Sr.", "Alice Bower"],
+    "people": [
+      "Josiah Ramsey Sr.",
+      "Alice Bower"
+    ],
     "place": "Delaware Colony",
     "branch": "Ramsey",
     "researchPriority": "Verify the exact name of Josiah Sr.'s wife (Alice Bower vs. Elizabeth Hollis/Grigsby) from original Delaware records.",
@@ -44,7 +50,9 @@
     "sourceCitation": "North Carolina State Archives, Revolutionary War Pay Vouchers, Josiah Ramsey pay voucher, 1782, North Carolina Militia.",
     "previewUrl": "/documents/josiah-ramsey-1782-pay-voucher.jpg",
     "confidence": "Primary Source",
-    "people": ["Josiah Ramsey Sr."],
+    "people": [
+      "Josiah Ramsey Sr."
+    ],
     "place": "North Carolina",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -52,7 +60,9 @@
     "meaning": "Confirms Josiah Ramsey Sr.'s Revolutionary War service in North Carolina, supporting patriot ancestor status.",
     "whatItProves": "Fact: Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia in 1782. Meaning: Confirms Josiah Ramsey Sr.'s Revolutionary War service in North Carolina, supporting patriot ancestor status.",
     "notes": "Key document for SAR/DAR eligibility. See also the related military service record image.",
-    "seeAlso": ["josiah-ramsey-1782-military-service"]
+    "seeAlso": [
+      "josiah-ramsey-1782-military-service"
+    ]
   },
   {
     "id": "josiah-ramsey-tennessee-land-grant",
@@ -63,7 +73,9 @@
     "sourceCitation": "State of Tennessee, Land Grants, entry no. 371, Josiah Ramsey, Claiborne County, surveyed 21 May 1827 for land on Mulberry Creek.",
     "previewUrl": "/documents/josiah-ramsey-tennessee-land-grant.jpg",
     "confidence": "Primary Source",
-    "people": ["Josiah Ramsey Jr."],
+    "people": [
+      "Josiah Ramsey Jr."
+    ],
     "place": "Claiborne County, Tennessee",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -81,7 +93,10 @@
     "sourceCitation": "Tennessee County Marriages, Hancock County, marriage of Thomas Ramsey and Anna Hopkins, 1824.",
     "previewUrl": "/documents/thomas-ramsey-anna-hopkins-marriage.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Thomas Ramsey", "Anna Hopkins Ramsey"],
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey"
+    ],
     "place": "Hancock County, Tennessee",
     "branch": "Ramsey",
     "researchPriority": "Locate and verify the original marriage record in Hancock County, Tennessee archives.",
@@ -99,7 +114,9 @@
     "sourceCitation": "U.S., War of 1812 Service Records, 1812-1815. Name: Josiah Ramsey. Company: 14 REG'T (MITCHISSON'S) Kentucky Militia. Rank at induction: Lieutenant. Rank at discharge: Adjutant. Roll Box 170. Microfilm Publication M602. (U.S. War of 1812 Service Records, Josiah Ramsey, 14th Reg't (Mitchisson's) Kentucky Militia, Lieutenant to Adjutant, M602 roll 170.)",
     "previewUrl": "/documents/josiah-ramsey-jr-1812-service.jpg",
     "confidence": "Primary Source",
-    "people": ["Josiah Ramsey Jr."],
+    "people": [
+      "Josiah Ramsey Jr."
+    ],
     "place": "Kentucky",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -122,7 +139,9 @@
     "sourceCitation": "1840 U.S. Federal Census, Hawkins County, Tennessee - Jabez Hopkins household schedule.",
     "previewUrl": "/documents/claiborne-county-1840-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Jabez Hopkins"],
+    "people": [
+      "Jabez Hopkins"
+    ],
     "place": "Hawkins County, Tennessee",
     "branch": "Hopkins",
     "researchPriority": false,
@@ -140,7 +159,9 @@
     "sourceCitation": "U.S. Civil War Draft Registration Records, 1863, 5th Congressional District of Iowa, listing James Ramsey, age 38, farmer, born in Tennessee.",
     "previewUrl": "/documents/32178_1220705228_0032-00400.jpg",
     "confidence": "Primary Source",
-    "people": ["James Ramsey"],
+    "people": [
+      "James Ramsey"
+    ],
     "place": "Long Creek, Decatur County, Iowa",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -158,7 +179,9 @@
     "sourceCitation": "1880 U.S. Federal Census, Richland Township, Decatur County, Iowa - Anna Ramsey household.",
     "previewUrl": "/documents/richland-township-1880-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Anna Hopkins Ramsey"],
+    "people": [
+      "Anna Hopkins Ramsey"
+    ],
     "place": "Richland Township, Decatur County, Iowa",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -176,7 +199,9 @@
     "sourceCitation": "1880 U.S. Federal Census, Long Creek Township, Decatur County, Iowa, Thomas Bentley Ramsey household.",
     "previewUrl": "/documents/long-creek-1880-census-thomas-bentley-ramsey.jpg",
     "confidence": "Primary Source",
-    "people": ["Thomas Bentley Ramsey"],
+    "people": [
+      "Thomas Bentley Ramsey"
+    ],
     "place": "Long Creek Township, Decatur County, Iowa",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -191,15 +216,18 @@
     "title": "Charles Dyer Pension Application R3176",
     "type": "Revolutionary War discharge record",
     "date": "1778-09-25",
-    "dateRange": "1778–1855",
+    "dateRange": "1778\u20131855",
     "era": "Revolutionary War",
     "sourceUrl": "https://revwarapps.org/r3176.pdf",
     "sourceCitation": "Southern Campaign American Revolution Pension Statements & Rosters, Pension Application of Charles Dyer R3176, transcribed and annotated by C. Leon Harris.",
     "previewUrl": "/documents/charles-dyer.pdf",
     "confidence": "Primary Source",
-    "people": ["Charles Dyer", "Jonathan Dyer"],
+    "people": [
+      "Charles Dyer",
+      "Jonathan Dyer"
+    ],
     "place": "Fort Randolph",
-    "whatItProves": "Charles Dyer’s discharge at Fort Randolph on September 25, 1778; his service in Captain William McKee’s company of the 12th Virginia Regiment; and the later county affidavit identifying his heirs and confirming the identity of the Revolutionary War pension applicant.",
+    "whatItProves": "Charles Dyer\u2019s discharge at Fort Randolph on September 25, 1778; his service in Captain William McKee\u2019s company of the 12th Virginia Regiment; and the later county affidavit identifying his heirs and confirming the identity of the Revolutionary War pension applicant.",
     "notes": "Primary source transcript and scan for the discharge record. Later affidavit material in the same transcript names Jonathan Dyer among the heirs and ties the certificate back to Charles Dyer."
   },
   {
@@ -212,7 +240,9 @@
     "sourceCitation": "Fold3 image 115273007, US Civil War Service Records, George W. Dyer, First Oregon Infantry, compiled from NARA carded records.",
     "previewUrl": "/documents/dyer-george-w-page-10.pdf",
     "confidence": "Strong Evidence",
-    "people": ["George Washington Dyer"],
+    "people": [
+      "George Washington Dyer"
+    ],
     "whatItProves": "Service with the First Oregon Infantry in 1864.",
     "notes": "Metadata only for now. Original record image stays private."
   },
@@ -225,7 +255,9 @@
     "sourceCitation": "Private archive scan of Andrew Moore birth registration.",
     "previewUrl": "/documents/andrew-moore.pdf",
     "confidence": "Needs Review",
-    "people": ["Andrew Moore"],
+    "people": [
+      "Andrew Moore"
+    ],
     "whatItProves": "Potential link to the William Moore and Isabella Law family packet.",
     "notes": "Review against the full family packet before treating as confirmed."
   },
@@ -238,7 +270,10 @@
     "sourceCitation": "Private archive scan of the Armina Ramsey Edwards obituary.",
     "previewUrl": "/documents/obituary-armina-ramsey.pdf",
     "confidence": "Strong Evidence",
-    "people": ["Armina Ramsey", "Anderson Edwards"],
+    "people": [
+      "Armina Ramsey",
+      "Anderson Edwards"
+    ],
     "place": "Pine City, Washington",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -256,7 +291,11 @@
     "sourceCitation": "Private archive photo of the Ramsey family memorial plaque naming Josiah Ramsey and Elizabeth Cowan and listing their children.",
     "previewUrl": "/documents/josiah-ramsey-family-plaque.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Josiah Ramsey", "Elizabeth Cowan", "Thomas Ramsey"],
+    "people": [
+      "Josiah Ramsey",
+      "Elizabeth Cowan",
+      "Thomas Ramsey"
+    ],
     "place": "Ramsey family memorial site",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -274,7 +313,10 @@
     "sourceCitation": "Private archive photo of the Josiah C. Ramsey and Elizabeth Cowan grave marker, dedicated 05 Sept. 1993.",
     "previewUrl": "/documents/josiah-ramsey-grave-marker.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Josiah Ramsey", "Elizabeth Cowan"],
+    "people": [
+      "Josiah Ramsey",
+      "Elizabeth Cowan"
+    ],
     "place": "Ramsey memorial site",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -293,7 +335,9 @@
     "sourceCitation": "North Carolina State Archives via FamilySearch, Revolutionary War Military Records 1779-1792, service entry for Josiah Ramsey, 16 August 1782, Washington, Beaufort, North Carolina.",
     "previewUrl": "/documents/josiah-ramsey-1782-military-service.png",
     "confidence": "Primary Source",
-    "people": ["Josiah Ramsey"],
+    "people": [
+      "Josiah Ramsey"
+    ],
     "place": "Washington, Beaufort, North Carolina",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -301,7 +345,10 @@
     "meaning": "Provides additional detail on the Revolutionary War service of the Josiah Ramsey line, complementing the pay voucher.",
     "whatItProves": "Fact: Military service record showing Josiah Ramsey with an entry dated 16 August 1782 in North Carolina records. Meaning: Provides additional detail on the Revolutionary War service of the Josiah Ramsey line, complementing the pay voucher.",
     "notes": "Private screenshot of FamilySearch record. See also the related pay voucher.",
-    "seeAlso": ["josiah-ramsey-1782-pay-voucher"]
+    "seeAlso": [
+      "josiah-ramsey-1782-pay-voucher"
+    ],
+    "title": "Josiah Ramsey military service record (1782)"
   },
   {
     "id": "decatur-township-1860-census",
@@ -313,7 +360,12 @@
     "sourceCitation": "\"Decatur, Iowa, United States records,\" images, FamilySearch, image 47 of 537; United States. National Archives and Records Administration. Image Group Number: 005166279.",
     "previewUrl": "/documents/census-decatur-township.jpg",
     "confidence": "Primary Source",
-    "people": ["Thomas Ramsey", "Anna Hopkins Ramsey", "Armina Ramsey", "Anderson Edwards"],
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey",
+      "Armina Ramsey",
+      "Anderson Edwards"
+    ],
     "place": "Decatur Township, Decatur County, Iowa",
     "branch": "Ramsey",
     "researchPriority": false,
@@ -331,7 +383,10 @@
     "sourceCitation": "Claiborne County, Tennessee marriage register. License dated 2 June 1845 for James Ramsey. Return states marriage was performed 8 June 1845.",
     "previewUrl": "/documents/james-ramsey-margaret-baker-marriage-1845.jpg",
     "confidence": "Primary Source",
-    "people": ["James Ramsey", "Margaret Baker"],
+    "people": [
+      "James Ramsey",
+      "Margaret Baker"
+    ],
     "place": "Claiborne County, Tennessee",
     "whatItProves": "James Ramsey + Margaret Baker marriage. License 2 Jun 1845, performed 8 Jun 1845. Strong Tennessee anchor.",
     "notes": "Primary source from marriage register. Strong Tennessee anchor for the James Ramsey / Margaret Baker line."
@@ -345,7 +400,12 @@
     "sourceCitation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa. Thomas Ramsey + Anna + children together. Anderson Edwards / Armina nearby in separate households.",
     "previewUrl": "/documents/thomas-ramsey-1850-bloomfield-iowa-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Thomas Ramsey", "Anna Hopkins Ramsey", "Armina Ramsey", "Anderson Edwards"],
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey",
+      "Armina Ramsey",
+      "Anderson Edwards"
+    ],
     "place": "Bloomfield Township, Davis County, Iowa",
     "whatItProves": "Thomas Ramsey + Anna + children together in 1850. Anderson Edwards / Armina nearby. Strong family-cluster record.",
     "notes": "Primary census page. Strong family-cluster record supporting the Ramsey/Edwards group and Iowa migration."
@@ -359,7 +419,10 @@
     "sourceCitation": "Washington County, Virginia marriage register / printed register extraction: Jabis Hopkins and Rachel Clouse, married 14 April 1801 by minister Charles Hardy.",
     "previewUrl": "/documents/jabez-hopkins-rachel-clouse-marriage-1801.jpg",
     "confidence": "Primary Source",
-    "people": ["Jabez Hopkins", "Rachel Clouse"],
+    "people": [
+      "Jabez Hopkins",
+      "Rachel Clouse"
+    ],
     "place": "Washington County, Virginia",
     "branch": "Hopkins",
     "researchPriority": false,
@@ -377,7 +440,10 @@
     "sourceCitation": "Printed Warren, Rhode Island intentions and marriages page. Nehemiah Hopkins and Elizabeth, March 11, 1762.",
     "previewUrl": "/documents/nehemiah-hopkins-elizabeth-1762-warren-ri.jpg",
     "confidence": "Primary Source",
-    "people": ["Nehemiah Hopkins", "Elizabeth Cole"],
+    "people": [
+      "Nehemiah Hopkins",
+      "Elizabeth Cole"
+    ],
     "place": "Warren, Rhode Island",
     "branch": "Hopkins",
     "researchPriority": false,
@@ -392,12 +458,14 @@
     "type": "Tennessee land grant",
     "date": "1826-06-05",
     "era": "Early Tennessee",
-    "sourceCitation": "Tennessee land grant to Nehemiah Hopkins, 1825–1826. Mentions Stephen Hopkins's corner.",
+    "sourceCitation": "Tennessee land grant to Nehemiah Hopkins, 1825\u20131826. Mentions Stephen Hopkins's corner.",
     "previewUrl": "/documents/nehemiah-hopkins-tennessee-land-grant-1826.jpg",
     "confidence": "Primary Source",
-    "people": ["Nehemiah Hopkins"],
+    "people": [
+      "Nehemiah Hopkins"
+    ],
     "place": "Tennessee",
-    "whatItProves": "Tennessee land grant to Nehemiah Hopkins, 1825–1826. Mentions Stephen Hopkins's corner. Strong locality record, not a parentage proof by itself.",
+    "whatItProves": "Tennessee land grant to Nehemiah Hopkins, 1825\u20131826. Mentions Stephen Hopkins's corner. Strong locality record, not a parentage proof by itself.",
     "notes": "Strong locality record for Nehemiah Hopkins in Tennessee. Not a parentage proof by itself."
   },
   {
@@ -406,10 +474,12 @@
     "type": "Militia pay roll",
     "date": "1778-11",
     "era": "Revolutionary War",
-    "sourceCitation": "Vermont militia payroll. Includes Nehm Hopkins, Capt. Cooley’s company, Col. Warren’s regiment, Nov 1778.",
+    "sourceCitation": "Vermont militia payroll. Includes Nehm Hopkins, Capt. Cooley\u2019s company, Col. Warren\u2019s regiment, Nov 1778.",
     "previewUrl": "/documents/nehemiah-hopkins-vermont-militia-1778.jpg",
     "confidence": "Primary Source",
-    "people": ["Nehemiah Hopkins"],
+    "people": [
+      "Nehemiah Hopkins"
+    ],
     "place": "Vermont",
     "whatItProves": "Vermont militia payroll includes Nehm Hopkins, Nov 1778. Real Revolutionary-era record, but identity bridge still needed.",
     "notes": "Real Revolutionary-era record. Identity bridge to the Rhode Island / Tennessee Nehemiah still needed."
@@ -423,7 +493,10 @@
     "sourceCitation": "Parish christening page. Appears to contain children of Nehemiah and Elizabeth Hopkins.",
     "previewUrl": "/documents/nehemiah-elizabeth-hopkins-parish-christenings.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Nehemiah Hopkins", "Elizabeth Cole"],
+    "people": [
+      "Nehemiah Hopkins",
+      "Elizabeth Cole"
+    ],
     "place": "Broughton parish",
     "whatItProves": "Parish christening page appears to contain children of Nehemiah and Elizabeth Hopkins.",
     "notes": "Potentially useful. Needs careful transcription before using. Could matter a lot if the entries line up."
@@ -448,11 +521,13 @@
     "type": "Tennessee state land grant",
     "date": "1849-08-03",
     "era": "1840s Tennessee",
-    "sourceCitation": "Tennessee state land grant to Jabez Hopkins, Hancock County, entry no. 1237. Entry dated 14 September 1846, grant issued 3 August 1849. Three-acre tract on north side of Powell’s Mountain, south side of Mulberry Creek, adjoining land of Joseph Bishop. Wording includes “whereon he now lives”.",
+    "sourceCitation": "Tennessee state land grant to Jabez Hopkins, Hancock County, entry no. 1237. Entry dated 14 September 1846, grant issued 3 August 1849. Three-acre tract on north side of Powell\u2019s Mountain, south side of Mulberry Creek, adjoining land of Joseph Bishop. Wording includes \u201cwhereon he now lives\u201d.",
     "previewUrl": "/documents/jabez-hopkins-hancock-tennessee-land-grant-1849.jpg",
     "confidence": "Primary Source",
-    "people": ["Jabez Hopkins"],
-    "place": "Hancock County, Tennessee (north side of Powell’s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop)",
+    "people": [
+      "Jabez Hopkins"
+    ],
+    "place": "Hancock County, Tennessee (north side of Powell\u2019s Mountain, south side of Mulberry Creek, adjoining Joseph Bishop)",
     "whatItProves": "Jabez Hopkins was residing in the Hancock County / Mulberry Creek area by the mid-1840s. Strong locality and identity anchor for the Tennessee phase.",
     "notes": "Primary Source. Does not prove alone that Anna Hopkins Ramsey was his daughter, that this bridges to the Iowa man without continuity records, or that Nehemiah and Elizabeth were his parents."
   },
@@ -465,10 +540,12 @@
     "sourceCitation": "Tax list page (poor scan quality) showing multiple Hopkins entries: Hopkins Jabez Jr, Wm, widow, George, and likely additional Hopkins households nearby.",
     "previewUrl": "/documents/hopkins-family-hancock-tennessee-tax-list.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Jabez Hopkins"],
+    "people": [
+      "Jabez Hopkins"
+    ],
     "place": "Hancock County, Tennessee area",
     "whatItProves": "Probable Hopkins family cluster in the same tax district / locality. Supports that this was not an isolated single-person record.",
-    "notes": "Strong Evidence only if the year/county/source context is confirmed from collection metadata; otherwise Needs Review. Poor scan. Does not prove which Hopkins entry is the exact line, Anna’s parentage, or Rhode Island parentage."
+    "notes": "Strong Evidence only if the year/county/source context is confirmed from collection metadata; otherwise Needs Review. Poor scan. Does not prove which Hopkins entry is the exact line, Anna\u2019s parentage, or Rhode Island parentage."
   },
   {
     "id": "elizabeth-cole-1739-baptism",
@@ -476,10 +553,12 @@
     "type": "Baptism / birth record",
     "date": "1739",
     "era": "Colonial Massachusetts / Rhode Island",
-    "sourceCitation": "Scituate births / church register page showing “Elizabeth, d. David and Sarah, Feb. 9, 1739.” (conflicts with working tree claiming daughter of Joseph Cole Sr and Freelove Mason).",
+    "sourceCitation": "Scituate births / church register page showing \u201cElizabeth, d. David and Sarah, Feb. 9, 1739.\u201d (conflicts with working tree claiming daughter of Joseph Cole Sr and Freelove Mason).",
     "previewUrl": "/documents/elizabeth-cole-1739-baptism.jpg",
     "confidence": "Needs Review",
-    "people": ["Elizabeth Cole"],
+    "people": [
+      "Elizabeth Cole"
+    ],
     "place": "Scituate / Massachusetts area",
     "whatItProves": "Real Cole-family context source showing an Elizabeth born/baptized 1739. Requires reconciliation before direct-line use.",
     "notes": "Needs Review for direct-line use. Context only unless the parent conflict (David & Sarah vs Joseph Cole Sr + Freelove Mason) is resolved. Do not attach to prove Jabez parentage or later lineage."
@@ -493,7 +572,10 @@
     "sourceCitation": "1850 U.S. Federal Census, Soap Creek Township, Davis County, Iowa. Arthur Edwards, age 63, born Tennessee; Freelove, age 62, born Virginia; Elizabeth, age 17, born Tennessee, plus younger children.",
     "previewUrl": "/documents/arthur-edwards-freelove-1850-soap-creek-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Arthur Edwards", "Freelove Clouse"],
+    "people": [
+      "Arthur Edwards",
+      "Freelove Clouse"
+    ],
     "place": "Soap Creek Township, Davis County, Iowa",
     "whatItProves": "Arthur Edwards and Freelove household in Davis County, Iowa by 1850, with Elizabeth age 17 born Tennessee. Strong evidence for the Edwards/Clouse Iowa household and migration context.",
     "notes": "Primary Source. Supports Arthur Edwards + Freelove in Iowa. Note: Freelove Clouse (this lane) is distinct from Freelove Mason (Cole/Hopkins parentage lane). Do not merge the two women."
@@ -507,7 +589,10 @@
     "sourceCitation": "1870 U.S. Federal Census, Iowa. Edwards household.",
     "previewUrl": "/documents/edwards-1870-iowa-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Iowa",
     "whatItProves": "Strong Edwards household continuity in Iowa. Supports the Iowa phase of the Edwards line and the migration west from Tennessee/Iowa into the Pacific Northwest branch.",
     "notes": "Primary Source for Edwards household continuity. Part of the Edwards migration trail across Iowa -> Oregon -> Washington."
@@ -521,7 +606,10 @@
     "sourceCitation": "1880 U.S. Federal Census, Oregon. Edwards household.",
     "previewUrl": "/documents/edwards-1880-oregon-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Oregon",
     "whatItProves": "Good downstream proof for the later Edwards branch and continuity after the Iowa period.",
     "notes": "Primary Source. Downstream proof for the Edwards branch continuity after Iowa."
@@ -535,7 +623,10 @@
     "sourceCitation": "1900 U.S. Federal Census, Washington. Later Edwards-line household.",
     "previewUrl": "/documents/edwards-1900-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Washington",
     "whatItProves": "Later Edwards-line continuity in Washington.",
     "notes": "Strong context / continuity record for the Edwards migration into Washington. Not a clean proof record by itself."
@@ -549,7 +640,11 @@
     "sourceCitation": "1920 U.S. Federal Census, Pine City Precinct, Whitman County, Washington, Silas Josiah Edwards household.",
     "previewUrl": "/documents/edwards-1920-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Silas Josiah Edwards", "Nancy Ann Dyer", "Edith Ann Edwards"],
+    "people": [
+      "Silas Josiah Edwards",
+      "Nancy Ann Dyer",
+      "Edith Ann Edwards"
+    ],
     "place": "Pine City, Whitman County, Washington, USA",
     "fact": "1920 U.S. census page for Pine City Precinct, Whitman County, Washington, showing the Silas J. Edwards household with wife Nancy and daughter Edith in Pine City.",
     "meaning": "Confirms the Edwards household remained in Pine City, Whitman County, Washington in 1920 and places Nancy Ann Dyer and Edith Ann Edwards together in the family home before Edith's 1924 marriage to Hugh Christopher Moore.",
@@ -565,7 +660,10 @@
     "sourceCitation": "1930 U.S. Federal Census, Erie Voting Precinct No. 1, Whitman County, Washington, Silas Josiah Edwards household.",
     "previewUrl": "/documents/edwards-1930-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Silas Josiah Edwards", "Nancy Ann Dyer"],
+    "people": [
+      "Silas Josiah Edwards",
+      "Nancy Ann Dyer"
+    ],
     "place": "Whitman County, Washington, USA",
     "fact": "1930 U.S. census page for Whitman County, Washington, showing the Silas Josiah Edwards and Nancy Edwards household.",
     "meaning": "Confirms Silas Josiah Edwards and Nancy Ann Dyer were still residing in Whitman County, Washington in 1930, extending the Edwards household timeline after the 1920 Pine City census.",
@@ -581,7 +679,9 @@
     "sourceCitation": "1940 U.S. Federal Census, Washington. Edwards-line household.",
     "previewUrl": "/documents/edwards-1940-washington-census.jpg",
     "confidence": "Strong Evidence",
-    "people": ["Armina Ramsey"],
+    "people": [
+      "Armina Ramsey"
+    ],
     "place": "Washington",
     "whatItProves": "Edwards-line continuity in Washington.",
     "notes": "Continuity record only."
@@ -595,7 +695,10 @@
     "sourceCitation": "Washington Territory census page showing Edwards cluster.",
     "previewUrl": "/documents/washington-territory-edwards-census.jpg",
     "confidence": "Needs Review",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Washington Territory",
     "whatItProves": "Broad Edwards cluster evidence in Washington Territory.",
     "notes": "Broad cluster evidence only, not a clean proof record by itself. Context only."
@@ -609,7 +712,12 @@
     "sourceCitation": "Marriage return for Josiah Edwards (Silas Josiah Edwards) and Nancy Ann Dyer in Pine City, with parent names written in.",
     "previewUrl": "/documents/josiah-edwards-pine-city-marriage-return-clear.jpg",
     "confidence": "Primary Source",
-    "people": ["Silas Josiah Edwards", "Nancy Ann Dyer", "Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Silas Josiah Edwards",
+      "Nancy Ann Dyer",
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Pine City, Washington",
     "whatItProves": "Marriage of Silas Josiah Edwards and Nancy Ann Dyer in Pine City. Parent names (Anderson Edwards and Armina Ramsey) are written in the return. This is a direct family record supporting the Dyer to Edwards connection.",
     "notes": "Primary Source. Direct family record of the marriage return for Josiah (Silas Josiah) Edwards and Nancy Ann Dyer in Pine City, with parent names written in. This anchors the link between the Dyer and Edwards families."
@@ -623,7 +731,14 @@
     "sourceCitation": "Washington, County Marriages, 1855-2008, FamilySearch, entry for Hugh Christopher Moore and Edith Ann Edwards, 26 May 1924, Colfax, Whitman, Washington; citing parents James Moore, Jesse Bowen, Josiah Edwards, and Nancy Dyer.",
     "previewUrl": "/documents/edith-ann-edwards-hugh-moore-marriage-1924.jpg",
     "confidence": "Primary Source",
-    "people": ["Edith Ann Edwards", "Hugh Christopher Moore", "Silas Josiah Edwards", "Nancy Ann Dyer", "James Moore", "Jessie Bowen"],
+    "people": [
+      "Edith Ann Edwards",
+      "Hugh Christopher Moore",
+      "Silas Josiah Edwards",
+      "Nancy Ann Dyer",
+      "James Moore",
+      "Jessie Bowen"
+    ],
     "place": "Colfax, Whitman, Washington, USA",
     "fact": "Marriage entry for Hugh Christopher Moore (age 28) and Edith Ann Edwards (age 23) on 26 May 1924 in Colfax, Whitman County, Washington, naming parents James Moore and Jesse Bowen for Hugh, and Josiah Edwards and Nancy Dyer for Edith.",
     "meaning": "Confirms the Moore and Edwards marriage in 1924 and directly ties Hugh Christopher Moore to James Moore and Jessie Bowen, and Edith Ann Edwards to Silas Josiah Edwards and Nancy Ann Dyer.",
@@ -639,7 +754,9 @@
     "sourceCitation": "1850 United States Federal Census, Liberty, Jefferson County, Iowa.",
     "previewUrl": "/documents/george-washington-dyer-1850-liberty-iowa-census.jpg",
     "confidence": "Primary Source",
-    "people": ["George Washington Dyer"],
+    "people": [
+      "George Washington Dyer"
+    ],
     "place": "Liberty, Jefferson County, Iowa, USA",
     "whatItProves": "George Washington Dyer, age 15, residing in Liberty, Jefferson County, Iowa in 1850.",
     "notes": "Primary Source. This census page confirms the 1850 residence of George Washington Dyer (age 15) in Iowa, as recorded in the profile facts."
@@ -653,7 +770,11 @@
     "sourceCitation": "1880 United States Federal Census, Whitman County, Washington.",
     "previewUrl": "/documents/george-washington-dyer-1880-whitman-census.jpg",
     "confidence": "Primary Source",
-    "people": ["George Washington Dyer", "Elizabeth Ellen Conley", "Nancy Ann Dyer"],
+    "people": [
+      "George Washington Dyer",
+      "Elizabeth Ellen Conley",
+      "Nancy Ann Dyer"
+    ],
     "place": "Whitman County, Washington, USA",
     "whatItProves": "George Washington Dyer, age 45, residing in Whitman County, Washington in 1880. Marital status: Married; Relation to Head of House: Self. Includes wife Elizabeth Ellen Conley and family including daughter Nancy Ann Dyer.",
     "notes": "Primary Source. Direct image of the 1880 census page confirming residence in Whitman County, Washington for George Washington Dyer and household, matching the profile facts."
@@ -667,7 +788,11 @@
     "sourceCitation": "1900 United States Federal Census, Pine City Precinct, Whitman County, Washington.",
     "previewUrl": "/documents/george-washington-dyer-1900-pine-city-census.jpg",
     "confidence": "Primary Source",
-    "people": ["George Washington Dyer", "Elizabeth Ellen Conley", "Nancy Ann Dyer"],
+    "people": [
+      "George Washington Dyer",
+      "Elizabeth Ellen Conley",
+      "Nancy Ann Dyer"
+    ],
     "place": "Pine, Whitman County, Washington, USA",
     "whatItProves": "George Washington Dyer (head of household), born November 1835 in Illinois, age 64, married 34 years, residing in Pine, Whitman County, Washington in 1900. Relation to Head of House: Head. Includes wife Elizabeth Ellen Conley.",
     "notes": "Primary Source. This census image confirms the 1900 residence details for George Washington Dyer as head in Pine, Whitman County, including birth month and year and marital status from the profile facts."
@@ -681,7 +806,13 @@
     "sourceCitation": "1901 Census of Canada, Ellisboro, Assiniboia (east/est), The Territories, Canada.",
     "previewUrl": "/documents/hugh-christopher-moore-1901-ellisboro-census.jpg",
     "confidence": "Primary Source",
-    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore", "Catherine Moore"],
+    "people": [
+      "James Moore",
+      "Jessie Bowen",
+      "Hugh Christopher Moore",
+      "Norman James Moore",
+      "Catherine Moore"
+    ],
     "place": "Ellisboro, Assiniboia, The Territories, Canada",
     "whatItProves": "James Moore (head of household), wife Jessie Bowen, and children Hugh C., Norman, and Janet M. (Catherine) residing in Ellisboro. Confirms 1901 residence fact and family composition.",
     "notes": "Primary Source. 1901 Census page for the Moore family."
@@ -695,7 +826,14 @@
     "sourceCitation": "1906 Census of Manitoba, Saskatchewan, and Alberta, Qu'Appelle, Saskatchewan.",
     "previewUrl": "/documents/hugh-christopher-moore-1906-quappelle-census.jpg",
     "confidence": "Primary Source",
-    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore", "Catherine Moore", "Janet Hazel Moore"],
+    "people": [
+      "James Moore",
+      "Jessie Bowen",
+      "Hugh Christopher Moore",
+      "Norman James Moore",
+      "Catherine Moore",
+      "Janet Hazel Moore"
+    ],
     "place": "Townships 15, 16, 17, 18 in ranges 11, 12 west of the 2nd M, Qu'Appelle, Saskatchewan, Canada",
     "whatItProves": "James Moore household including wife Jessie and children H C R (Hugh Christopher), Norman, Catherine, and Jeanette M. (Janet Hazel) in rural Saskatchewan.",
     "notes": "Primary Source. 1906 Canada Census page confirming the Moore family residence in rural Saskatchewan."
@@ -709,7 +847,14 @@
     "sourceCitation": "1916 Canada Census of Manitoba, Saskatchewan, and Alberta, Medicine Hat, Alberta.",
     "previewUrl": "/documents/hugh-christopher-moore-1916-medicine-hat-census.jpg",
     "confidence": "Primary Source",
-    "people": ["James Moore", "Jessie Bowen", "William Robert Moore", "Hugh Christopher Moore", "Catherine Moore", "Janet Hazel Moore"],
+    "people": [
+      "James Moore",
+      "Jessie Bowen",
+      "William Robert Moore",
+      "Hugh Christopher Moore",
+      "Catherine Moore",
+      "Janet Hazel Moore"
+    ],
     "place": "11th Street, Medicine Hat, Alberta, Canada",
     "whatItProves": "James Moore and wife Jessie Bowen residing in Medicine Hat with children William R., Hugh C., Kathleen (Catherine), and Janet H.",
     "notes": "Primary Source. 1916 Census page for the Moore household in Medicine Hat, Alberta, showing the family cluster with military service notes for the sons."
@@ -723,7 +868,12 @@
     "sourceCitation": "1921 Census of Canada, Township 11 Range 7W4, Medicine Hat, Alberta.",
     "previewUrl": "/documents/hugh-christopher-moore-1921-medicine-hat-census.jpg",
     "confidence": "Primary Source",
-    "people": ["James Moore", "Jessie Bowen", "Hugh Christopher Moore", "Norman James Moore"],
+    "people": [
+      "James Moore",
+      "Jessie Bowen",
+      "Hugh Christopher Moore",
+      "Norman James Moore"
+    ],
     "place": "Township 11 Range 7W4, Medicine Hat, Alberta, Canada",
     "whatItProves": "James Moore and wife Jessie Bowen residing with sons Hugh and Norman J. in Alberta. Confirms 1921 residence and household composition.",
     "notes": "Primary Source. 1921 Canada Census page for the Moore household in Medicine Hat."
@@ -737,7 +887,9 @@
     "sourceCitation": "U.S., World War I Draft Registration Cards, 1917-1918, Cascade, Montana for Hugh C. Moore.",
     "previewUrl": "/documents/hugh-christopher-moore-1917-us-wwi-draft.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore"],
+    "people": [
+      "Hugh Christopher Moore"
+    ],
     "place": "Cascade, Montana, USA",
     "whatItProves": "Hugh C. Moore, age ~21-22, born July 22 1895 (or 1896) in Blackwood, Canada; residing Cascade, Montana; occupation Lee Forest Garage, Great Falls; single. Matches 1917 residence fact.",
     "notes": "Primary Source. U.S. WWI Draft card for Hugh during his time in Montana."
@@ -751,7 +903,9 @@
     "sourceCitation": "Canada, Soldiers of the First World War, 1914-1918, attestation for Hugh Christopher Moore, CEF.",
     "previewUrl": "/documents/hugh-christopher-moore-canadian-attestation-1917.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Christopher Moore"],
+    "people": [
+      "Hugh Christopher Moore"
+    ],
     "place": "Medicine Hat, Alberta, Canada",
     "whatItProves": "Hugh Christopher Moore, born 22 Jul 1895 Sintaluta, Sask; next of kin father James Moore at 11th St, Medicine Hat; willing to serve in Canadian Over-Seas Expeditionary Force.",
     "notes": "Primary Source. Canadian Attestation Paper for Hugh's WWI service, confirming birth details and family."
@@ -765,13 +919,15 @@
     "sourceCitation": "Will Book No. 5, Washington County, Pennsylvania, page containing the will of Josiah Ramsey.",
     "previewUrl": "/documents/josiah-ramsey-will-book-5.jpg",
     "confidence": "Primary Source",
-    "people": ["Josiah Ramsey"],
+    "people": [
+      "Josiah Ramsey"
+    ],
     "place": "Washington County, Pennsylvania",
     "branch": "Ramsey",
     "researchPriority": false,
-    "fact": "Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey’s will.",
+    "fact": "Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey\u2019s will.",
     "meaning": "Proves his estate and heirs in Pennsylvania (confirms identity trail).",
-    "whatItProves": "Fact: Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey’s will. Meaning: Proves his estate and heirs in Pennsylvania (confirms identity trail).",
+    "whatItProves": "Fact: Will Book No. 5, Washington County, Pennsylvania, pages containing Josiah Ramsey\u2019s will. Meaning: Proves his estate and heirs in Pennsylvania (confirms identity trail).",
     "notes": "Primary Source. Page from official will book recording the probate of Josiah Ramsey's will, including signatures and executor details. Note: This PA 1835 will is not linked to the working Tennessee Josiah Ramsey (c.1765/69-1834 or 1769-1835) profiles; it conflicts with TN residence/land grant/death trail and may be a different person or excluded attachment."
   },
   {
@@ -783,13 +939,15 @@
     "sourceCitation": "Marriage return for Josiah Edwards, Colfax, Washington, October 17, 1895.",
     "previewUrl": "/documents/josiah-edwards-marriage-return-1895.jpg",
     "confidence": "Primary Source",
-    "people": ["Silas Josiah Edwards"],
+    "people": [
+      "Silas Josiah Edwards"
+    ],
     "place": "Colfax, Whitman, Washington, USA",
     "branch": "Edwards",
     "researchPriority": false,
     "fact": "Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA.",
-    "meaning": "Establishes Josiah’s third marriage and family continuity in the Edwards line.",
-    "whatItProves": "Fact: Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA. Meaning: Establishes Josiah’s third marriage and family continuity in the Edwards line.",
+    "meaning": "Establishes Josiah\u2019s third marriage and family continuity in the Edwards line.",
+    "whatItProves": "Fact: Marriage return for Josiah Edwards (38, farmer, third marriage) to Minnie Jennings (27, second marriage) on 17 Oct 1895 in Colfax, WA. Meaning: Establishes Josiah\u2019s third marriage and family continuity in the Edwards line.",
     "notes": "Primary Source. Official marriage return recording the union, with ages, occupations, and previous marriages noted."
   },
   {
@@ -801,7 +959,10 @@
     "sourceCitation": "U.S. Federal Census, Washington, Edwards family continuity.",
     "previewUrl": "/documents/edwards-washington-census-evidence.jpg",
     "confidence": "Primary Source",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Washington",
     "whatItProves": "Edwards family presence and continuity in Washington state. Supports migration from Iowa/Oregon.",
     "notes": "Primary Source. Census evidence for the Edwards line in Washington."
@@ -815,7 +976,10 @@
     "sourceCitation": "1880 U.S. Federal Census, Oregon, Edwards household.",
     "previewUrl": "/documents/edwards-oregon-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Oregon",
     "whatItProves": "Edwards family in Oregon during the migration period. Continuity evidence.",
     "notes": "Primary Source. Oregon census page showing the family during westward movement."
@@ -829,7 +993,9 @@
     "sourceCitation": "1881 Census of Canada, Western Extension, Manitoba Extension, Manitoba, Canada.",
     "previewUrl": "/documents/bowen-family-1881-manitoba-census.jpg",
     "confidence": "Primary Source",
-    "people": ["Jessie Bowen"],
+    "people": [
+      "Jessie Bowen"
+    ],
     "place": "Western Extension, Manitoba Extension, Manitoba, Canada",
     "whatItProves": "Jessie Bowen (age 7) living with parents Hugh Bowen and Jennet Souster and siblings in Manitoba. Confirms the 1881 residence fact and early family composition in western Canada.",
     "notes": "Primary Source. 1881 Census page for the Bowen family, listing young Jessie Bowen born in Ontario."
@@ -843,7 +1009,10 @@
     "sourceCitation": "Ontario, Canada, Marriages, 1801-1928, Leeds and Grenville Counties, marriage of Hugh Bowen and Jennet Souster, 27 November 1870.",
     "previewUrl": "/documents/hugh-bowen-jennet-souster-marriage-1870.jpg",
     "confidence": "Primary Source",
-    "people": ["Hugh Bowen", "Jennet Souster"],
+    "people": [
+      "Hugh Bowen",
+      "Jennet Souster"
+    ],
     "place": "South Crosby, Leeds and Grenville, Ontario, Canada",
     "whatItProves": "Marriage of Hugh Bowen (age 27, farmer, born South Elmsley) and Jennet Souster (age 23, born Crosby). Confirms the 1870 marriage fact and parentage details from the register.",
     "notes": "Primary Source. Ontario marriage register page recording the union of Hugh Bowen and Jennet Souster in South Crosby, with ages, residences, and parents' names."
@@ -857,7 +1026,9 @@
     "sourceCitation": "U.S., Dutch Reformed Church Records in Selected States, 1639-1989, baptism record for child of Israel Bowen and Isabella, 1794.",
     "previewUrl": "/documents/isreal-bowen-dutch-reformed-1794.jpg",
     "confidence": "Primary Source",
-    "people": ["Isreal Bowen"],
+    "people": [
+      "Isreal Bowen"
+    ],
     "place": "Shawangunk or Ulster area, New York",
     "whatItProves": "Baptism or birth record for John (son of Israel Bowen and Isabella) born 7 Dec 1794. Confirms family presence in New York around 1794 and parentage.",
     "notes": "Primary Source. Dutch Reformed Church record listing parents Israel Bowen & Isabella and child John born Dec 1794."
@@ -871,7 +1042,9 @@
     "sourceCitation": "Canada, British Army and Canadian Militia Muster Rolls and Pay Lists, 1795-1850, Ashby Loyal Volunteers, pay list for January 1819 listing Israel Bowen.",
     "previewUrl": "/documents/isreal-bowen-1819-ashby-loyal-volunteers-pay-list.jpg",
     "confidence": "Primary Source",
-    "people": ["Isreal Bowen"],
+    "people": [
+      "Isreal Bowen"
+    ],
     "place": "Canada (Ashby Loyal Volunteers)",
     "whatItProves": "Military service record showing Israel Bowen as Private in Ashby Loyal Volunteers, serving January 1819 (31 days). Confirms military involvement in Canada around 1819.",
     "notes": "Primary Source. Pay list and acquittance roll for the Ashby Loyal Volunteers, January 1819, with Israel Bowen listed."
@@ -885,7 +1058,10 @@
     "sourceCitation": "Copy of an old record of a death for Mary Bowen, wife of Nathan Bowen, died July 11, 1745, age 43.",
     "previewUrl": "/documents/nathan-bowen-mary-bowen-death-1745.jpg",
     "confidence": "Primary Source",
-    "people": ["Mary Bowen", "Nathan Bowen"],
+    "people": [
+      "Mary Bowen",
+      "Nathan Bowen"
+    ],
     "place": "Booth Maine",
     "whatItProves": "Death of Mary Bowen, wife of Nathan Bowen, on July 11, 1745, at age 43. Supports the family line for Isreal Bowen as son of Nathan and Mary.",
     "notes": "Primary Source. Official copy of an old death record for Mary Bowen, wife of Nathan Bowen."
@@ -899,7 +1075,9 @@
     "sourceCitation": "Ancestry shared photograph of the gravestone of Israel Bowen in Old Sutherland Cemetery (Old Trinity), Mooretown, Lambton County, Ontario, Canada. Inscription: 'In Memory of Israel Bowen who died April 5, 1848, Aged 100 years. A native of Swansea, Mass. U.S.'",
     "previewUrl": "/documents/isreal-bowen-1748-grave-marker.png",
     "confidence": "Strong Evidence",
-    "people": ["Isreal Bowen"],
+    "people": [
+      "Isreal Bowen"
+    ],
     "place": "Old Sutherland Cemetery (Old Trinity Anglican), Mooretown, Lambton County, Ontario, Canada",
     "whatItProves": "Gravestone confirms Israel (Isreal) Bowen died 5 April 1848 at age 100; native of Swansea, Massachusetts, USA. Provides visual evidence for death date, age at death, and place of burial.",
     "notes": "Strong evidence from cemetery monument. Spelling on stone is 'Israel Bowen'. Photo linked in Ancestry to Isreal Bowen (1748-1848)."
@@ -913,7 +1091,9 @@
     "sourceCitation": "Ancestry shared photograph of the historic plaque for 'Old Trinity' Old Sutherland Cemetery, Mooretown, Lambton County, Ontario. Notes the church built 1841-42 on land donated by Thomas Sutherland, consecrated 1845, original church demolished 1881.",
     "previewUrl": "/documents/isreal-bowen-1748-sutherland-cemetery-plaque.png",
     "confidence": "Strong Evidence",
-    "people": ["Isreal Bowen"],
+    "people": [
+      "Isreal Bowen"
+    ],
     "place": "Mooretown, Lambton County, Ontario, Canada",
     "whatItProves": "Identifies the exact historic burial location (Old Trinity / Sutherland Cemetery) in Mooretown where Isreal Bowen was interred in 1848. Confirms the place of death and burial stated in other records.",
     "notes": "Contextual evidence for burial site. The plaque was erected by the Ontario Archaeological and Historic Sites Board. Linked to Isreal Bowen in Ancestry."
@@ -933,7 +1113,7 @@
     "fact": "Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people.",
     "meaning": "Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
     "whatItProves": "Fact: Historical records and family profiles use variant spellings for the same individuals (e.g. Israel/Isreal Bowen; Jabez/Jabis Hopkins). These are not evidence of different people. Meaning: Spelling variants were common in 18th-19th century records due to phonetic spelling, literacy, and clerk variations. Use canonical profile IDs for cross-references; do not create duplicate profiles for spelling differences.",
-    "notes": "Observed variants:\n- Bowen line: Isreal (1748–1848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences."
+    "notes": "Observed variants:\n- Bowen line: Isreal (1748\u20131848 profile and some linked records) / Israel (son 1798 profile and gravestone)\n- Hopkins line: Jabez (most TN/Iowa records) / Jabis (Virginia marriage record 1801)\n\nSee individual profiles for specific notes on usage in sources. No additional profiles should be created solely for spelling differences."
   },
   {
     "id": "1850-bloomfield-davis-iowa-census-ramsey-edwards",
@@ -944,7 +1124,12 @@
     "sourceCitation": "\"Davis, Iowa, United States records,\" images, FamilySearch (https://www.familysearch.org/ark:/61903/3:1:S3HT-D489-3HD?view=index : Jun 26, 2026), image 612 of 632; United States. National Archives and Records Administration. Image Group Number: 004181030.",
     "previewUrl": "/documents/1850-bloomfield-davis-iowa-census-ramsey-edwards.pdf",
     "confidence": "Primary Source",
-    "people": ["Anderson Edwards", "Armina Ramsey", "Thomas Ramsey", "Anna Hopkins Ramsey"],
+    "people": [
+      "Anderson Edwards",
+      "Armina Ramsey",
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey"
+    ],
     "place": "Bloomfield Township, Davis County, Iowa, United States",
     "branch": "Ramsey / Edwards",
     "researchPriority": false,
@@ -962,7 +1147,12 @@
     "sourceCitation": "1880 U.S. Federal Census, Richland Township, Decatur County, Iowa - Thomas Ramsey and Anderson Edwards households.",
     "previewUrl": "/documents/richland-township-1880-iowa-census-ramsey-edwards.jpg",
     "confidence": "Primary Source",
-    "people": ["Thomas Ramsey", "Anna Hopkins Ramsey", "Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Thomas Ramsey",
+      "Anna Hopkins Ramsey",
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "Richland Township, Decatur County, Iowa, United States",
     "branch": "Ramsey / Edwards",
     "researchPriority": false,
@@ -980,7 +1170,11 @@
     "sourceCitation": "Washington State Board of Health, Bureau of Vital Statistics, Certificate of Death for Luella Jennings, St. John, Whitman County, Washington, 30 September 1938. Father: Anderson Edwards (Tennessee), Mother: Armina Ramsey (Tennessee).",
     "previewUrl": "/documents/luella-edwards-jennings-death-1938.jpg",
     "confidence": "Primary Source",
-    "people": ["Luella Edwards", "Anderson Edwards", "Armina Ramsey"],
+    "people": [
+      "Luella Edwards",
+      "Anderson Edwards",
+      "Armina Ramsey"
+    ],
     "place": "St. John, Whitman County, Washington, United States",
     "branch": "Edwards / Ramsey",
     "researchPriority": false,
@@ -998,7 +1192,10 @@
     "sourceCitation": "Henderson's Calgary City Directory, 1958, page 81981, Page 3, '48TH AVENUE NORTH EAST' section, listing David Marchant at 315, and Mrs. Nancy Carol Marchant at 315.",
     "previewUrl": "/documents/calgary-directory-1958-marchant.jpg",
     "confidence": "Primary Source",
-    "people": ["David Marchant", "Nancy Moore Marchant"],
+    "people": [
+      "David Marchant",
+      "Nancy Moore Marchant"
+    ],
     "place": "Calgary, Alberta, Canada",
     "branch": "Marchant",
     "researchPriority": false,
@@ -1047,7 +1244,14 @@
     "sourceCitation": "United States, Obituary Records, 2014-2023, FamilySearch, obituary of Colleen Gay Lattin, published 20 November 2020, Calgary, Alberta, Canada.",
     "previewUrl": "/documents/obituary-colleen-lattin-2020.txt",
     "confidence": "Primary Source",
-    "people": ["Colleen Gay Lattin", "David Marchant", "Nancy Moore Marchant", "Brett Marchant", "Aaron Marchant", "Shawn Marchant"],
+    "people": [
+      "Colleen Gay Lattin",
+      "David Marchant",
+      "Nancy Moore Marchant",
+      "Brett Marchant",
+      "Aaron Marchant",
+      "Shawn Marchant"
+    ],
     "place": "Calgary, Alberta, Canada",
     "branch": "Marchant",
     "researchPriority": false,

@@ -858,9 +858,6 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             <Stat value={people.length} label="People we know about" />
             <Stat value={documents.length} label="Original documents" />
             <Stat value={familyMemory.length} label="Family stories & notes" />
-            <Stat value={visiblePeople.length} label="People in this view" />
-            <Stat value={visibleDocuments.length} label="Documents in this view" />
-            <Stat value={visibleMemory.length} label="Stories in this view" />
           </div>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link href="#timeline" className="archive-hero-button">
@@ -968,14 +965,11 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
             {/* Active chapter panel with visual thread */}
             <div className="archive-panel space-y-4">
               <div>
-                <div className="flex items-baseline justify-between gap-2">
-                  <div>
+                <div className="flex items-baseline gap-2">
+                   <div>
                     <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--archive-accent)]">{chapters[activeChapter].range}</div>
                     <h3 className="text-2xl font-semibold tracking-tight archive-display">{chapters[activeChapter].label}</h3>
                   </div>
-                  <Link href="#timeline" className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--archive-accent)] hover:underline">
-                    Full timeline →
-                  </Link>
                 </div>
                 <p className="mt-2 max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">{chapters[activeChapter].intro}</p>
               </div>
@@ -1137,13 +1131,10 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
                     </div>
                   </div>
                   <p className="mt-3 text-sm leading-6 text-[var(--archive-text-soft)]">{place.summary}</p>
-                  <div className="mt-4 flex items-center justify-between gap-3">
+                   <div className="mt-4 flex items-center justify-between gap-3">
                     <div className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[var(--archive-accent-soft)]">
                       {place.accent}
                     </div>
-                    <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--archive-accent)] underline decoration-[rgba(139,31,43,0.28)] underline-offset-4">
-                      Jump to chapter
-                    </span>
                   </div>
                 </div>
               </button>
