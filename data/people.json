@@ -577,7 +577,7 @@
     },
     "v2_birth_year": "",
     "v2_death_year": "",
-    "v2_notes": "Birth approximately 1755 (cited in son Jonathan Dyer's profile; primary birth record not located — needs verification) | Discharged at Fort Randolph [at Point Pleasant, now WV] on September 25, 1778 | Served as a soldier in Captain William McKee's company of the 12th Virginia Regiment | The discharge says his enlistment time had fully expired and that he had served upwards of two years | A later county settlement record dated December 19, 1854 places a Charles Dyer settlement in the Virginia continental line pay records | The 1855 county affidavit names Jonathan Dyer among the heirs and identifies Charles Dyer as the Revolutionary War pension applicant"
+    "v2_notes": "Birth approximately 1755 (cited in son Jonathan Dyer's profile; primary birth record not located — needs verification) | Discharged at Fort Randolph [at Point Pleasant, now WV] on September 25, 1778 | Served as a soldier in Captain William McKee's company of the 12th Virginia Regiment | The discharge says his enlistment time had fully expired and that he had served upwards of two years | A later county settlement record dated December 19, 1854 places a Charles Dyer settlement in the Virginia continental line pay records | The 1855 county affidavit names Jonathan Dyer among the heirs and identifies Charles Dyer as the Revolutionary War pension applicant | DISAMBIGUATION NOTE: Not the William Dyer of the 15th Virginia Regiment (1778, sick in Ensign George Menzies' detachment) - that regiment was recruited in coastal/eastern Virginia, whereas this Dyer branch was established in the Shenandoah Valley (western Virginia) during the war. No primary links (wills, land patents) connect this branch to that William. | DISAMBIGUATION NOTE: Not the William Dyer of the 15th Virginia Regiment (1778, sick in Ensign George Menzies' detachment) - that regiment was recruited in coastal/eastern Virginia, whereas this Dyer branch was established in the Shenandoah Valley (western Virginia) during the war. No primary links (wills, land patents) connect this branch to that William. | DISAMBIGUATION NOTE: Not the William Dyer of the 15th Virginia Regiment (1778, sick in Ensign George Menzies' detachment) - that regiment was recruited in coastal/eastern Virginia, whereas this Dyer branch was established in the Shenandoah Valley (western Virginia) during the war. No primary links (wills, land patents) connect this branch to that William. | DISAMBIGUATION NOTE: Not the William Dyer of the 15th Virginia Regiment (1778, sick in Ensign George Menzies' detachment) - that regiment was recruited in coastal/eastern Virginia, whereas this Dyer branch was established in the Shenandoah Valley (western Virginia) during the war. No primary links (wills, land patents) connect this branch to that William."
   },
   {
     "id": "george-washington-dyer",
@@ -709,11 +709,11 @@
         "elizabeth-ellen-conley"
       ],
       "child_ids": [
-        "nancy-ann-dyer",
         "carpus-melvin-dyer",
-        "george-hollis-dyer",
+        "nancy-ann-dyer",
         "glenn-milton-dyer",
-        "fredrich-marion-dyer"
+        "fredrich-marion-dyer",
+        "george-hollis-dyer"
       ]
     },
     "relationships_summary": {
@@ -806,8 +806,8 @@
     ],
     "sourceCitation": "Ancestry profile — Elizabeth Ellen Conlee Dyer (1850–1909); Oregon, County Marriage Records, 1851-1975; 1880 & 1900 United States Federal Census; Washington, Wills and Probate Records, 1851-1970; Washington, Select Death Certificates, 1907-1960",
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
+      "mother_id": "susan-ann-barney-conlee",
+      "father_id": "james-reuben-conlee",
       "mother_name": "Susan Ann Barney Conlee",
       "father_name": "James Reuben Conlee",
       "spouse_ids": [
@@ -822,8 +822,8 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "susan-ann-barney-conlee",
+      "father_id": "james-reuben-conlee"
     },
     "v2_birth_year": "1850",
     "v2_death_year": "1909",
@@ -1487,21 +1487,26 @@
     ],
     "relationships": {
       "mother_id": "elizabeth-ellen-conley",
-      "father_id": "",
+      "father_id": "george-washington-dyer",
       "mother_name": "Elizabeth Ellen Conlee Dyer",
-      "father_name": "",
-      "spouse_ids": [],
+      "father_name": "George Washington Dyer",
+      "spouse_ids": [
+        "silas-josiah-edwards"
+      ],
       "child_ids": [
-        "george-washington-dyer"
+        "ora-ellen-jennings",
+        "ira-josiah-edwards",
+        "edith-ann-edwards",
+        "george-anderson-edwards"
       ]
     },
     "relationships_summary": {
       "mother_id": "elizabeth-ellen-conley",
-      "father_id": ""
+      "father_id": "george-washington-dyer"
     },
     "v2_birth_year": "1871",
     "v2_death_year": "1939",
-    "v2_notes": "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909) | Also appears as Nancy Ann Dyer Jennings in later compiled and FamilySearch material | Born 1 October 1871 in Benton County, Oregon | Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images) | First married Augustus Grant Jennings and had daughter Ora Ellen Jennings | Later married Silas Josiah Edwards (1859-1943); preserved family marriage return and related records anchor the Edwards connection | Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards | Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978 | Resided in Pine City, Whitman County, Washington | Died 20 October 1939 in Whitman County, Washington and was buried in Pine City Cemetery | Key sources include family records, censuses, FamilySearch profile evidence, and the preserved marriage return | ID_CONFLICT: cleared impossible father_id"
+    "v2_notes": "Daughter of George Washington Dyer (1835-1906) and Elizabeth Ellen Conley (1850-1909) | Also appears as Nancy Ann Dyer Jennings in later compiled and FamilySearch material | Born 1 October 1871 in Benton County, Oregon | Living with parents in Whitman County, Washington in 1880 and Pine in 1900 (U.S. census images) | First married Augustus Grant Jennings and had daughter Ora Ellen Jennings | Later married Silas Josiah Edwards (1859-1943); preserved family marriage return and related records anchor the Edwards connection | Mother of Ora Ellen Jennings, Ira Josiah Edwards, Edith Ann Edwards, and George Anderson Edwards | Mother of Edith Ann Edwards (1901-1995) at age 30; Edith compiled the Red Book in 1978 | Resided in Pine City, Whitman County, Washington | Died 20 October 1939 in Whitman County, Washington and was buried in Pine City Cemetery | Key sources include family records, censuses, FamilySearch profile evidence, and the preserved marriage return"
   },
   {
     "id": "josiah-ramsey-jr-1769",
@@ -1550,8 +1555,8 @@
     "lifespan": "1834-deceased",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Thomas Ramsey and Anna Hopkins; born in Tennessee in 1834 and living in Bloomfield, Davis County, Iowa in 1850.",
-    "keyEvent": "FamilySearch lists him in Bloomfield, Davis County, Iowa in 1850 and gives his occupation as farmer.",
+    "summary": "Son of Thomas Ramsey and Anna Hopkins; born in Indiana in 1834 and living in Bloomfield, Davis County, Iowa in 1850.",
+    "keyEvent": "Born 1834 in Indiana; living in Bloomfield, Iowa in 1850.",
     "confidence": "Primary Source",
     "tags": [
       "Ramsey",
@@ -1561,15 +1566,15 @@
       "Generation 5"
     ],
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
-    "sourceCitation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
+    "sourceCitation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa (Primary Source); FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3)",
     "timeline": [
       {
         "title": "Birth in Tennessee",
         "date": "1834",
-        "summary": "FamilySearch profile lists his birth year as 1834 in Tennessee and names Thomas Ramsey and Anna Hopkins as his parents.",
+        "summary": "FamilySearch profile lists his birth year as 1834 in Indiana and names Thomas Ramsey and Anna Hopkins as his parents.",
         "confidence": "Primary Source",
         "linkedDocumentId": null,
-        "place": "Tennessee, United States"
+        "place": "Indiana, United States"
       },
       {
         "title": "Bloomfield residence",
@@ -1586,6 +1591,14 @@
         "confidence": "Needs Review",
         "linkedDocumentId": null,
         "place": null
+      },
+      {
+        "title": "Frontier Proximity — Iowa",
+        "date": "18 Oct 1850",
+        "summary": "Ramsey and Edwards families enumerated as immediate physical neighbors in Davis County, Iowa.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "1850-bloomfield-davis-iowa-census-ramsey-edwards",
+        "place": "Bloomfield Township, Davis County, Iowa, USA"
       }
     ],
     "evidenceSummary": [
@@ -1611,7 +1624,7 @@
     },
     "v2_birth_year": "1834",
     "v2_death_year": "",
-    "v2_notes": "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) | Born 1834 in Tennessee | Residence in Bloomfield, Davis County, Iowa in 1850 | Occupation listed as farmer | FamilySearch profile ID: L5G1-XJ3 | FamilySearch source text ties him to Thomas Ramsey and Anna Hopkins | Family note says he went to California in 1854; keep that separate until it is independently documented."
+    "v2_notes": "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) | Born 1834 in Indiana (corrected from Tennessee per 1850 census record) | Residence in Bloomfield, Davis County, Iowa in 1850 | Occupation listed as farmer | FamilySearch profile ID: L5G1-XJ3"
   },
   {
     "id": "josiah-ramsey",
@@ -2382,18 +2395,22 @@
       "Mentioned in Armina Ramsey Edwards obituary"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "armina-ramsey",
-      "mother_name": "erson Edwards",
-      "father_name": "Armina Ramsey",
-      "spouse_ids": [],
+      "mother_id": "armina-ramsey",
+      "father_id": "anderson-edwards",
+      "mother_name": "Armina Ramsey",
+      "father_name": "Anderson Edwards",
+      "spouse_ids": [
+        "nancy-ann-dyer"
+      ],
       "child_ids": [
-        "edith-ann-edwards"
+        "ira-josiah-edwards",
+        "edith-ann-edwards",
+        "george-anderson-edwards"
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": "armina-ramsey"
+      "mother_id": "armina-ramsey",
+      "father_id": "anderson-edwards"
     },
     "v2_birth_year": "1859",
     "v2_death_year": "1943",
@@ -2492,9 +2509,9 @@
       "Key document: clear marriage return for Edith Ann Edwards and Hugh Christopher Moore"
     ],
     "relationships": {
-      "mother_id": "",
+      "mother_id": "nancy-ann-dyer",
       "father_id": "silas-josiah-edwards",
-      "mother_name": "Nancy Ann Dyer Married Hugh Christopher Moore on May 26, 1924, in Colfax, Washington (Primary Source marriage return) Lived a remarkable 94 years, passing in Canmore, Alberta, in 1995 Highly respected anchor of the family",
+      "mother_name": "Nancy Ann Dyer",
       "father_name": "Silas Josiah Edwards",
       "spouse_ids": [],
       "child_ids": [
@@ -2502,7 +2519,7 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
+      "mother_id": "nancy-ann-dyer",
       "father_id": "silas-josiah-edwards"
     },
     "v2_birth_year": "1901",
@@ -3291,7 +3308,9 @@
       "spouse_ids": [
         "armina-ramsey"
       ],
-      "child_ids": []
+      "child_ids": [
+        "silas-josiah-edwards"
+      ]
     },
     "relationships_summary": {
       "mother_id": "",
@@ -3299,7 +3318,7 @@
     },
     "v2_birth_year": "1832",
     "v2_death_year": "1908",
-    "v2_notes": "Husband of Armina Ramsey (1826-1923); married 24 Nov 1849 in Tennessee | Born 1832 (Tennessee or surrounding), died 1908 | Father of 8 children: Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938) | 1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: with Armina next to her parents Thomas/Anna Ramsey and siblings (Primary Source, linked) | 1860-1880 Iowa census trail - household continuity (Primary Source) | 1880-1920+ Washington census trail and 1923 obituary - migration to WA, lists children and burial in Pine City (Primary Source) | Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked) | Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg | Armina's siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
+    "v2_notes": "Husband of Armina Ramsey (1826-1923); married 24 Nov 1849 in Tennessee | Born 1832 (Tennessee or surrounding), died 1908 | Father of 8 children: Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938) | 1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: with Armina next to her parents Thomas/Anna Ramsey and siblings (Primary Source, linked) | 1860-1880 Iowa census trail - household continuity (Primary Source) | 1880-1920+ Washington census trail and 1923 obituary - migration to WA, lists children and burial in Pine City (Primary Source) | Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked) | Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg | Armina's siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941) | Neighbor to Ramsey family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Ramsey family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Ramsey family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Ramsey family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3."
   },
   {
     "id": "armina-ramsey",
@@ -3439,7 +3458,7 @@
     ],
     "relationships": {
       "mother_id": "",
-      "father_id": "",
+      "father_id": "thomas-ramsey-1799",
       "mother_name": "Anna Hopkins (1807-1883)",
       "father_name": "Thomas Ramsey (1799-1872)",
       "spouse_ids": [
@@ -3459,11 +3478,11 @@
     },
     "relationships_summary": {
       "mother_id": "",
-      "father_id": ""
+      "father_id": "thomas-ramsey-1799"
     },
     "v2_birth_year": "1826",
     "v2_death_year": "1923",
-    "v2_notes": "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) | Married Anderson Edwards 24 Nov 1849 in Tennessee (obituary and tree record) | Mother of Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938) | 1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: living with Anderson Edwards next to parents Thomas/Anna Ramsey and siblings (Primary Source, linked) | 1860-1880 Iowa census trail - household continuity (Primary Source) | 1880-1920+ Washington census trail and 1923 obituary (Leon Journal-Reporter) - migration to WA, lists children and burial in Pine City (Primary Source) | Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked) | Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg | Siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
+    "v2_notes": "Daughter of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883) | Married Anderson Edwards 24 Nov 1849 in Tennessee (obituary and tree record) | Mother of Lucinda (1851-1933), Mary Ann (1853-1879), Nervesta (1855-1938), John Wesley (1858-1899), Thomas (1859-1936), Silas Josiah (1859-1943), Alzy Jane (1863-1936), Luella (1868-1938) | 1850 U.S. Census, Bloomfield Twp, Davis Co, Iowa: living with Anderson Edwards next to parents Thomas/Anna Ramsey and siblings (Primary Source, linked) | 1860-1880 Iowa census trail - household continuity (Primary Source) | 1880-1920+ Washington census trail and 1923 obituary (Leon Journal-Reporter) - migration to WA, lists children and burial in Pine City (Primary Source) | Daughter Luella Edwards Jennings died 30 Sep 1938 St. John WA (Primary Source death cert, linked) | Key documents: 1850 census image, obituary-armina-ramsey.pdf, multiple Iowa/Washington censuses, luella-edwards-jennings-death-1938.jpg | Siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941) | Neighbor to Edwards family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Edwards family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Edwards family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3. | Neighbor to Edwards family in Bloomfield Township, Davis County, Iowa (1850 census) per Finding 3."
   },
   {
     "id": "alexander-ramsey-1832",
@@ -6961,7 +6980,7 @@
     },
     "v2_birth_year": "",
     "v2_death_year": "",
-    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
+    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
   },
   {
     "id": "aaron-marchant",
@@ -8150,8 +8169,8 @@
     "lifespan": "1887-1955",
     "era": "Dyer",
     "branch": "Dyer",
-    "summary": "Son of George Washington Dyer (1835–1906) and Elizabeth Ellen Conlee Dyer (1850–1909). Born 29 Jun 1887, Pine City, Whitman County, Washington. Died 1955.",
-    "keyEvent": "Born 29 Jun 1887, Pine City, Whitman County, Washington",
+    "summary": "Son of George Washington Dyer and Elizabeth Ellen Conlee. Born in Pine City, Washington about 1887. Married Lelia Fay France on 21 September 1908 in Vancouver, Clark County, Washington. Resided in Seneca, Grant County, Oregon in 1908. Farmer by trade. Witnessed by William Dyer. Died 1955.",
+    "keyEvent": "Born in Pine City, Washington; married Lelia Fay France 21 September 1908",
     "confidence": "Strong Evidence",
     "tags": [
       "Dyer",
@@ -8172,13 +8191,15 @@
       "Born 29 Jun 1887, Pine City, Whitman County, Washington",
       "Confirmed via Ancestry profile 2026-06-26"
     ],
-    "sourceCitation": "Ancestry profile — Elizabeth Ellen Conlee Dyer (1850–1909), viewed 2026-06-26",
+    "sourceCitation": "Washington, County Marriages, 1855-2008 (Primary Source); Last Will and Testament of Elizabeth Ellen Conlee Dyer (Primary Source)",
     "relationships": {
       "mother_id": "elizabeth-ellen-conley",
       "father_id": "george-washington-dyer",
       "mother_name": "Elizabeth Ellen Conlee Dyer",
       "father_name": "George Washington Dyer",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "lelia-fay-france-dyer"
+      ],
       "child_ids": []
     },
     "relationships_summary": {
@@ -8187,7 +8208,7 @@
     },
     "v2_birth_year": "1887",
     "v2_death_year": "1955",
-    "v2_notes": "Fifth child of George Washington Dyer and Elizabeth Ellen Conlee. Birth confirmed via Ancestry profile 2026-06-26."
+    "v2_notes": "Husband of Lelia Fay France. Witnessed by William Dyer."
   },
   {
     "id": "glenn-milton-dyer",
@@ -8223,8 +8244,18 @@
       "father_id": "george-washington-dyer",
       "mother_name": "Elizabeth Ellen Conlee Dyer",
       "father_name": "George Washington Dyer",
-      "spouse_ids": [],
-      "child_ids": []
+      "spouse_ids": [
+        "ruth-winnifred-addington-dyer"
+      ],
+      "child_ids": [
+        "george-dewey-dyer",
+        "minnie-elnora-dyer-bolin",
+        "leslie-milton-ted-dyer",
+        "hazel-agnes-dyer-reilly",
+        "glen-victor-dyer",
+        "mabel-eva-dyer-howry",
+        "ruth-jessie-dyer-allen"
+      ]
     },
     "relationships_summary": {
       "mother_id": "elizabeth-ellen-conley",
@@ -8285,7 +8316,7 @@
     "lifespan": "1825-1915",
     "era": "Conlee",
     "branch": "Conlee",
-    "summary": "Born 9 May 1825 in McCracken, Warren County, Kentucky. Married Susan Ann Barney on 28 March 1848 in Ft. Madison, Lee County, Iowa. Led family on the Oregon Trail circa 1851-1852 — son William Harlow Conlee was born on the trail. Settled in Polk County, Oregon, where most children were born in Dallas. Susan died 1872; James listed as widower in 1880 census in Harrison County, Indiana. Married Melissa Buell Hinshaw Van Horn on 13 June 1894 in Dallas, Polk County, Oregon. Died 23 January 1915 in Dallas, Oregon. Probate filed 10 February 1915, Polk County.",
+    "summary": "Born 9 May 1825 in McCracken, Warren County, Kentucky. Married Susan Ann Barney on 28 March 1848 in Ft. Madison, Lee County, Iowa. Led family on Oregon Trail circa 1851-1852 — son William Harlow Conlee was born on the trail. Settled in Polk County, Oregon, where most children were born in Dallas. Susan died 1872; James listed as widower in 1880 census. Married Melissa Buell Hinshaw Van Horn on 13 June 1894 in Dallas, Polk County, Oregon. Died 23 January 1915 in Dallas, Oregon.",
     "keyEvent": "Led family on Oregon Trail circa 1851-1852; settled Dallas, Polk County, Oregon; father of Elizabeth Ellen Conlee Dyer",
     "confidence": "Strong Evidence",
     "tags": [
@@ -8357,6 +8388,14 @@
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Dallas, Polk County, Oregon, USA"
+      },
+      {
+        "title": "Death in Dallas",
+        "date": "23 Jan 1915",
+        "summary": "Died 23 January 1915 in Dallas. Record #398 in Oregon Death Index.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "james-reuben-conlee-oregon-death-index",
+        "place": "Dallas, Polk County, Oregon, USA"
       }
     ],
     "evidenceSummary": [
@@ -8368,14 +8407,14 @@
       "Died 23 January 1915, Dallas, Oregon",
       "Sources: 1850/1880/1900/1910 Census, Oregon Death Index, Find A Grave"
     ],
-    "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "sourceCitation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "attachedDocument": "james-reuben-conlee.png",
     "portraitUrl": "/portraits/james-reuben-conlee.png",
     "portraitCaption": "Family-shared portrait image of James Reuben Conlee.",
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "Nancy Doyle",
+      "mother_id": "nancy-doyle-conlee",
+      "father_id": "reuben-samuel-conlee",
+      "mother_name": "Nancy Doyle Conlee",
       "father_name": "Reuben Samuel Conlee",
       "spouse_ids": [
         "susan-ann-barney-conlee"
@@ -8385,12 +8424,12 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "nancy-doyle-conlee",
+      "father_id": "reuben-samuel-conlee"
     },
     "v2_birth_year": "1825",
     "v2_death_year": "1915",
-    "v2_notes": "Father of Elizabeth Ellen Conlee Dyer (1850–1909). Oregon Trail migration confirmed: son William Harlow Conlee born on trail 1851. First wife Susan Ann Barney died 1872. Second marriage to Melissa Buell Hinshaw Van Horn Conlee 1894 (1859 marriage entry in Ancestry likely a data error — Susan still alive that year). Sources to verify: Oregon Wills and Probate Records 1849-1963, 1900/1910 census images."
+    "v2_notes": "Father of Elizabeth Ellen Conlee Dyer. Oregon Trail migration confirmed. Son John's marriage return confirms parents as J.R. Conlee and Susan Barney."
   },
   {
     "id": "susan-ann-barney-conlee",
@@ -8399,7 +8438,7 @@
     "era": "Conlee",
     "branch": "Conlee",
     "summary": "Wife of James Reuben Conlee. Born 1830. Married James on 28 March 1848 in Ft. Madison, Lee County, Iowa. Made the Oregon Trail crossing with her family circa 1851-1852. Settled in Polk County, Oregon. Mother of at least eleven children, including Elizabeth Ellen Conlee Dyer (1850–1909). Died 26 November 1872 in Dallas, Polk County, Oregon.",
-    "keyEvent": "Oregon Trail crossing circa 1851-1852; mother of Elizabeth Ellen Conlee Dyer; died Dallas, Polk County, Oregon 1872",
+    "keyEvent": "Oregon Trail crossing circa 1851-1852; mother of Elizabeth Ellen Conlee Dyer; died Dallas, Oregon 26 Nov 1872",
     "confidence": "Strong Evidence",
     "tags": [
       "Conlee",
@@ -8447,7 +8486,7 @@
       "Mother of Elizabeth Ellen Conlee Dyer (1850–1909)",
       "Died 26 November 1872, Dallas, Polk County, Oregon"
     ],
-    "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "sourceCitation": "Ancestry profile — James Reuben Conlee (1825–1915); Marriage Return 1912 of son John Barney Conlee (Primary Source); Oregon Early Oregonians Index 1800-1860",
     "relationships": {
       "mother_id": "",
       "father_id": "",
@@ -8466,6 +8505,532 @@
     },
     "v2_birth_year": "1830",
     "v2_death_year": "1872",
-    "v2_notes": "Mother of Elizabeth Ellen Conlee Dyer (1850–1909). Death date 26 Nov 1872 confirmed via Elizabeth's Ancestry profile timeline. Maiden name Barney. Sources to verify: Oregon death records, Find A Grave burial record."
+    "v2_notes": "Mother of Elizabeth Ellen Conlee Dyer (1850–1909). Maiden name Barney confirmed via son John's marriage return."
+  },
+  {
+    "id": "reuben-samuel-conlee",
+    "name": "Reuben Samuel Conlee",
+    "lifespan": "1790-1846",
+    "era": "Conlee",
+    "branch": "Conlee",
+    "summary": "Born circa 1790, likely Warren County, Kentucky. Married Nancy Doyle on 7 November 1815 in Warren County, Kentucky. Served in the Black Hawk War militia (Capt. Aaron Bannon's Company, Greene County, Illinois, 1832). Moved family to Lee County, Iowa by the 1840s. Elected to the First Iowa General Assembly, House of Representatives, representing Lee County. Died 23 December 1846 in Iowa City, Johnson County, Iowa during the legislative session.",
+    "keyEvent": "Served Black Hawk War 1832; Iowa state legislator Lee County; died in session 23 Dec 1846",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Kentucky Marriage Register Warren County (Primary Source); Marriage Bond Warren County 7 Nov 1815 (Primary Source); Illinois Militia Muster Roll 1832 Black Hawk War (Primary Source); Iowa Statistical Register First General Assembly footnote (Corroborated); Probate Estate Lee County Iowa Box 1 (Primary Source)",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "circa 1790",
+        "summary": "Born circa 1790.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": null,
+        "place": "Warren County, Kentucky, USA"
+      },
+      {
+        "title": "Marriage to Nancy Doyle",
+        "date": "7 Nov 1815",
+        "summary": "Married Nancy Doyle on 7 November 1815. Marriage bond surety: Samuel Doyle (Nancy's father).",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "reuben-conlee-nancy-doyle-marriage-bond-1815",
+        "place": "Warren County, Kentucky, USA"
+      },
+      {
+        "title": "Black Hawk War Service",
+        "date": "Jun 1832",
+        "summary": "Served as private in Capt. Aaron Bannon's Company, 2nd Regiment, 3rd Brigade, Illinois Mounted Volunteers. Enrolled June 19, 1832.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "reuben-conlee-1832-blackhawk-muster",
+        "place": "Greene County, Illinois, USA"
+      },
+      {
+        "title": "Iowa State Legislator",
+        "date": "1846",
+        "summary": "Elected to First Iowa General Assembly.",
+        "confidence": "Corroborated Compilation",
+        "linkedDocumentId": "iowa-statistical-register-reuben-conlee-legislator",
+        "place": "Iowa City, Johnson County, Iowa, USA"
+      },
+      {
+        "title": "Death in Iowa City",
+        "date": "23 Dec 1846",
+        "summary": "Died during session.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "reuben-conlee-estate-lee-county-iowa",
+        "place": "Iowa City, Johnson County, Iowa, USA"
+      }
+    ],
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "",
+      "father_name": "",
+      "spouse_ids": [
+        "nancy-doyle-conlee"
+      ],
+      "child_ids": [
+        "james-reuben-conlee",
+        "george-perry-conlee-1840"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1790",
+    "v2_death_year": "1846",
+    "v2_notes": "Father of James Reuben Conlee (1825–1915), grandfather of Elizabeth Ellen Conlee Dyer. Spelled variously: Conlee, Conley, Connellee."
+  },
+  {
+    "id": "nancy-doyle-conlee",
+    "name": "Nancy Doyle Conlee",
+    "lifespan": "1795-1857",
+    "era": "Conlee",
+    "branch": "Conlee",
+    "summary": "Born circa 1795. Married Reuben Samuel Conlee on 7 November 1815 in Warren County, Kentucky. Marriage register records her as \"Nancy Dyke\" — a spelling variant of Doyle. Father listed as Samuel Doyle (marriage bond surety). Moved with family to Iowa. Died 17 April 1857 in Fort Madison, Lee County, Iowa.",
+    "keyEvent": "Married Reuben Samuel Conlee 7 November 1815, Warren County, Kentucky",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Kentucky Marriage Register Warren County Nov 16 1815 (Primary Source); Marriage Bond Warren County 7 Nov 1815 (Primary Source); Ancestry profile James Reuben Conlee viewed 2026-06-26",
+    "timeline": [
+      {
+        "title": "Birth",
+        "date": "circa 1795",
+        "summary": "Born circa 1795.",
+        "confidence": "Needs Review",
+        "linkedDocumentId": null,
+        "place": "Kentucky"
+      },
+      {
+        "title": "Marriage to Reuben Samuel Conlee",
+        "date": "7 Nov 1815",
+        "summary": "Married Reuben Samuel Conlee. Father Samuel Doyle signed marriage bond as surety.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "reuben-conlee-nancy-doyle-marriage-bond-1815",
+        "place": "Warren County, Kentucky, USA"
+      },
+      {
+        "title": "Death in Fort Madison",
+        "date": "17 Apr 1857",
+        "summary": "Died 17 April 1857.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Fort Madison, Lee County, Iowa, USA"
+      }
+    ],
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "",
+      "father_name": "Samuel Doyle",
+      "spouse_ids": [
+        "reuben-samuel-conlee"
+      ],
+      "child_ids": [
+        "james-reuben-conlee",
+        "george-perry-conlee-1840"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1795",
+    "v2_death_year": "1857",
+    "v2_notes": "Mother of James Reuben Conlee. Doyle/Dyke/Dyle spelling variants in various records."
+  },
+  {
+    "id": "george-perry-conlee-1840",
+    "name": "George Perry Conlee",
+    "lifespan": "1840-1911",
+    "era": "Conlee",
+    "branch": "Conlee",
+    "summary": "Son of Reuben Samuel Conlee and Nancy Doyle Conlee. Born 3 June 1840 in Iowa. Brother of James Reuben Conlee. Served in the Union Army during the Civil War: Co. A, 1st Battalion, 13th U.S. Infantry. Filed invalid pension 11 August 1873. Died 17 August 1911 in Jefferson, Iowa.",
+    "keyEvent": "Civil War service Co. A, 1st Battn, 13th U.S. Inf.; invalid pension 1873; died Jefferson Iowa 1911",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "U.S. Civil War Pension Index Card — Conlee, George P., App #185711, Cert #170452, Iowa (Primary Source); Ancestry profile",
+    "timeline": [
+      {
+        "title": "Birth in Iowa",
+        "date": "3 Jun 1840",
+        "summary": "Born 3 June 1840 in Iowa.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": null,
+        "place": "Iowa"
+      },
+      {
+        "title": "Civil War Service",
+        "date": "1861",
+        "summary": "Served in Union Army.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-perry-conlee-civil-war-pension",
+        "place": "USA"
+      },
+      {
+        "title": "Invalid Pension Filed",
+        "date": "11 Aug 1873",
+        "summary": "Filed invalid pension.",
+        "confidence": "Primary Source",
+        "linkedDocumentId": "george-perry-conlee-civil-war-pension",
+        "place": "Iowa"
+      },
+      {
+        "title": "Death in Jefferson",
+        "date": "17 Aug 1911",
+        "summary": "Died 17 August 1911 in Jefferson.",
+        "confidence": "Strong Evidence",
+        "linkedDocumentId": "george-perry-conlee-civil-war-pension",
+        "place": "Jefferson, Iowa, USA"
+      }
+    ],
+    "relationships": {
+      "mother_id": "nancy-doyle-conlee",
+      "father_id": "reuben-samuel-conlee",
+      "mother_name": "Nancy Doyle Conlee",
+      "father_name": "Reuben Samuel Conlee",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "nancy-doyle-conlee",
+      "father_id": "reuben-samuel-conlee"
+    },
+    "v2_birth_year": "1840",
+    "v2_death_year": "1911",
+    "v2_notes": "Brother of James Reuben Conlee. Disambiguation: George Perry Conlee (1853–1921) is Elizabeth's brother (James's son). This George is Reuben's son."
+  },
+  {
+    "id": "ruth-winnifred-addington-dyer",
+    "name": "Ruth Winnifred Addington Dyer",
+    "lifespan": "1876-1965",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Born 1876. Married Glenn Milton Dyer on 12 April 1896 in Whitman County, Washington. Mother of seven children: George Dewey, Minnie Elnora, Leslie Milton, Hazel Agnes, Glen Victor, Mabel Eva, and Ruth Jessie. Died 1965.",
+    "keyEvent": "Married Glenn Milton Dyer on 12 April 1896; mother of seven children",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26; Washington, Marriage Records, 1854-2013",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "",
+      "father_name": "",
+      "spouse_ids": [
+        "glenn-milton-dyer"
+      ],
+      "child_ids": [
+        "george-dewey-dyer",
+        "minnie-elnora-dyer-bolin",
+        "leslie-milton-ted-dyer",
+        "hazel-agnes-dyer-reilly",
+        "glen-victor-dyer",
+        "mabel-eva-dyer-howry",
+        "ruth-jessie-dyer-allen"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1876",
+    "v2_death_year": "1965",
+    "v2_notes": "Wife of Glenn Milton Dyer."
+  },
+  {
+    "id": "george-dewey-dyer",
+    "name": "George Dewey Dyer",
+    "lifespan": "1898-1981",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Son of Glenn Milton Dyer and Ruth Winnifred Addington. Born 26 March 1898 in Pine City, Whitman, Washington. Died 1981.",
+    "keyEvent": "Born 26 March 1898 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26; U.S., Social Security Applications and Claims Index, 1936-2007",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1898",
+    "v2_death_year": "1981",
+    "v2_notes": "First child of Glenn and Ruth."
+  },
+  {
+    "id": "minnie-elnora-dyer-bolin",
+    "name": "Minnie Elnora Dyer Bolin",
+    "lifespan": "1899-1990",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Daughter of Glenn Milton Dyer and Ruth Winnifred Addington. Born 9 October 1899 in Pine City, Whitman, Washington. Married surname Bolin. Died 1990.",
+    "keyEvent": "Born 9 October 1899 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26; Washington Births, 1889-1929",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1899",
+    "v2_death_year": "1990",
+    "v2_notes": "Second child of Glenn and Ruth."
+  },
+  {
+    "id": "leslie-milton-ted-dyer",
+    "name": "Leslie Milton 'Ted' Dyer",
+    "lifespan": "1901-1983",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Son of Glenn Milton Dyer and Ruth Winnifred Addington. Born 21 September 1901 in Pine City, Whitman, Washington. Known as Ted. Died 1983.",
+    "keyEvent": "Born 21 September 1901 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26; Washington Death Index, 1940-2017",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1901",
+    "v2_death_year": "1983",
+    "v2_notes": "Third child of Glenn and Ruth."
+  },
+  {
+    "id": "hazel-agnes-dyer-reilly",
+    "name": "Hazel Agnes Dyer Reilly",
+    "lifespan": "1903-1979",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Daughter of Glenn Milton Dyer and Ruth Winnifred Addington. Born 14 August 1903 in Pine City, Whitman, Washington. Married surname Reilly. Died 1979.",
+    "keyEvent": "Born 14 August 1903 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26; Social Security Death Index",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1903",
+    "v2_death_year": "1979",
+    "v2_notes": "Fourth child of Glenn and Ruth."
+  },
+  {
+    "id": "glen-victor-dyer",
+    "name": "Glen Victor Dyer",
+    "lifespan": "1905-1905",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Son of Glenn Milton Dyer and Ruth Winnifred Addington. Born and died in 1905 in Pine City, Whitman, Washington.",
+    "keyEvent": "Born and died 1905 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1905",
+    "v2_death_year": "1905",
+    "v2_notes": "Fifth child of Glenn and Ruth. Died in infancy."
+  },
+  {
+    "id": "mabel-eva-dyer-howry",
+    "name": "Mabel Eva Dyer Howry",
+    "lifespan": "1906-1996",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Daughter of Glenn Milton Dyer and Ruth Winnifred Addington. Born 10 October 1906 in Pine City, Whitman, Washington. Married surname Howry. Died 1996.",
+    "keyEvent": "Born 10 October 1906 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1906",
+    "v2_death_year": "1996",
+    "v2_notes": "Sixth child of Glenn and Ruth."
+  },
+  {
+    "id": "ruth-jessie-dyer-allen",
+    "name": "Ruth Jessie Dyer Allen",
+    "lifespan": "1909-1993",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Daughter of Glenn Milton Dyer and Ruth Winnifred Addington. Born 21 March 1909 in Pine City, Whitman, Washington. Married surname Allen. Died 1993.",
+    "keyEvent": "Born 21 March 1909 in Pine City, Washington",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Glenn Milton Dyer (1875–1961), viewed 2026-06-26",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer",
+      "mother_name": "Ruth Winnifred Addington Dyer",
+      "father_name": "Glenn Milton Dyer",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "ruth-winnifred-addington-dyer",
+      "father_id": "glenn-milton-dyer"
+    },
+    "v2_birth_year": "1909",
+    "v2_death_year": "1993",
+    "v2_notes": "Seventh child of Glenn and Ruth."
+  },
+  {
+    "id": "ira-josiah-edwards",
+    "name": "Ira Josiah Edwards",
+    "lifespan": "1899-1978",
+    "era": "Edwards",
+    "branch": "Edwards",
+    "summary": "Son of Silas Josiah Edwards and Nancy Ann Dyer. Born 8 September 1899 in Washington, USA. Died 1978.",
+    "keyEvent": "Born 8 September 1899 in Washington, USA",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Josiah Edwards (1859–1943); 1900 U.S. Federal Census (Pine, Whitman, Washington)",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "silas-josiah-edwards",
+      "mother_name": "Nancy Ann Dyer",
+      "father_name": "Silas Josiah Edwards",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "silas-josiah-edwards"
+    },
+    "v2_birth_year": "1899",
+    "v2_death_year": "1978",
+    "v2_notes": "First child of Silas and Nancy."
+  },
+  {
+    "id": "george-anderson-edwards",
+    "name": "George Anderson Edwards",
+    "lifespan": "1904-1989",
+    "era": "Edwards",
+    "branch": "Edwards",
+    "summary": "Son of Silas Josiah Edwards and Nancy Ann Dyer. Born 30 May 1904 in Washington, USA. Died 1989.",
+    "keyEvent": "Born 30 May 1904 in Washington, USA",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Josiah Edwards (1859–1943)",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "silas-josiah-edwards",
+      "mother_name": "Nancy Ann Dyer",
+      "father_name": "Silas Josiah Edwards",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "silas-josiah-edwards"
+    },
+    "v2_birth_year": "1904",
+    "v2_death_year": "1989",
+    "v2_notes": "Third child of Silas and Nancy."
+  },
+  {
+    "id": "ora-ellen-jennings",
+    "name": "Ora Ellen Jennings",
+    "lifespan": "1892-1979",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Daughter of Nancy Ann Dyer and Augustus Grant Jennings. Born 1892 in Washington, USA. Died 1979.",
+    "keyEvent": "Born 1892 in Washington, USA",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Ancestry profile — Nancy Ann Dyer (1871–1939); FamilySearch ID L4NR-HRK",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "augustus-grant-jennings",
+      "mother_name": "Nancy Ann Dyer",
+      "father_name": "Augustus Grant Jennings",
+      "spouse_ids": [],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "nancy-ann-dyer",
+      "father_id": "augustus-grant-jennings"
+    },
+    "v2_birth_year": "1892",
+    "v2_death_year": "1979",
+    "v2_notes": "Nancy Ann Dyer's daughter from her first marriage."
+  },
+  {
+    "id": "lelia-fay-france-dyer",
+    "name": "Lelia Fay France Dyer",
+    "lifespan": "1892-?",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "Born about 1892, daughter of O. R. France and E. Jane Michel. Married George Hollis Dyer on 21 September 1908 in Vancouver, Clark County, Washington. Resided in St. John, Whitman County, Washington.",
+    "keyEvent": "Married George Hollis Dyer 21 September 1908",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Washington, County Marriages, 1855-2008 (Primary Source)",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "E. Jane Michel",
+      "father_name": "O. R. France",
+      "spouse_ids": [
+        "george-hollis-dyer"
+      ],
+      "child_ids": []
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1892",
+    "v2_death_year": "",
+    "v2_notes": "Wife of George Hollis Dyer."
   }
 ]

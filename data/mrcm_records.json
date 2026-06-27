@@ -4991,6 +4991,64 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-reuben-samuel-conlee-birth-1790-01-01-warren-county-kentucky-usa",
+    "title": "Birth",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "NEEDS_REVIEW",
+    "date": {
+      "raw": "circa 1790",
+      "iso_start": "1790-01-01",
+      "iso_end": "1790-12-31",
+      "precision": "APPROX"
+    },
+    "people_ids": [
+      "reuben-samuel-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Kentucky Marriage Register Warren County (Primary Source); Marriage Bond Warren County 7 Nov 1815 (Primary Source); Illinois Militia Muster Roll 1832 Black Hawk War (Primary Source); Iowa Statistical Register First General Assembly footnote (Corroborated); Probate Estate Lee County Iowa Box 1 (Primary Source)",
+    "artifact_access": {
+      "kind": "METADATA_ONLY",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Born circa 1790.",
+      "meaning_statement": "Born circa 1790.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "reuben-samuel-conlee-0",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/reuben-samuel-conlee",
+      "related_record_ids": []
+    },
+    "canonical_event_id": "canonical-reuben-samuel-conlee-birth-1790-01-01-warren-county-kentucky-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [],
+    "normalized_date_start": "1790-01-01",
+    "normalized_date_end": "1790-12-31",
+    "normalized_place": "Warren County, Kentucky, USA",
+    "event_key": "reuben-samuel-conlee|birth|1790-01-01|warren county, kentucky, usa",
+    "person_id": "reuben-samuel-conlee",
+    "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-hugh-dyer-birth-1791-01-01-wythe-virginia",
     "title": "Birth",
     "record_type": "FACT_EVENT",
@@ -5236,6 +5294,64 @@
     "normalized_place": "Shawangunk, Ulster, New York, United States",
     "event_key": "isreal-bowen-1748|marriage to isabella lamb|1794-01-01|shawangunk, ulster, new york, united states",
     "person_id": "isreal-bowen-1748",
+    "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-nancy-doyle-conlee-birth-1795-01-01-kentucky",
+    "title": "Birth",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "NEEDS_REVIEW",
+    "date": {
+      "raw": "circa 1795",
+      "iso_start": "1795-01-01",
+      "iso_end": "1795-12-31",
+      "precision": "APPROX"
+    },
+    "people_ids": [
+      "nancy-doyle-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Kentucky Marriage Register Warren County Nov 16 1815 (Primary Source); Marriage Bond Warren County 7 Nov 1815 (Primary Source); Ancestry profile James Reuben Conlee viewed 2026-06-26",
+    "artifact_access": {
+      "kind": "METADATA_ONLY",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Born circa 1795.",
+      "meaning_statement": "Born circa 1795.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "nancy-doyle-conlee-0",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/nancy-doyle-conlee",
+      "related_record_ids": []
+    },
+    "canonical_event_id": "canonical-nancy-doyle-conlee-birth-1795-01-01-kentucky",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "NEEDS_REVIEW",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [],
+    "normalized_date_start": "1795-01-01",
+    "normalized_date_end": "1795-12-31",
+    "normalized_place": "Kentucky",
+    "event_key": "nancy-doyle-conlee|birth|1795-01-01|kentucky",
+    "person_id": "nancy-doyle-conlee",
     "source_document_id": ""
   },
   {
@@ -6517,6 +6633,136 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-nancy-doyle-conlee-marriage-to-reuben-samuel-conlee-1815-01-01-warren-county-kentucky-usa",
+    "title": "Marriage to Reuben Samuel Conlee",
+    "record_type": "RELATION_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "7 Nov 1815",
+      "iso_start": "1815-01-01",
+      "iso_end": "1815-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "nancy-doyle-conlee",
+      "reuben-samuel-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Kentucky Marriage Bonds 1815-1816.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Married Reuben Samuel Conlee. Father Samuel Doyle signed marriage bond as surety.",
+      "meaning_statement": "Married Reuben Samuel Conlee. Father Samuel Doyle signed marriage bond as surety.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "nancy-doyle-conlee-1",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/nancy-doyle-conlee",
+      "related_record_ids": [
+        "reuben-conlee-nancy-doyle-marriage-bond-1815"
+      ]
+    },
+    "canonical_event_id": "canonical-nancy-doyle-conlee-marriage-to-reuben-samuel-conlee-1815-01-01-warren-county-kentucky-usa",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "reuben-samuel-conlee"
+    ],
+    "source_document_ids": [
+      "reuben-conlee-nancy-doyle-marriage-bond-1815"
+    ],
+    "normalized_date_start": "1815-01-01",
+    "normalized_date_end": "1815-12-31",
+    "normalized_place": "Warren County, Kentucky, USA",
+    "event_key": "nancy-doyle-conlee|marriage to reuben samuel conlee|1815-01-01|warren county, kentucky, usa",
+    "person_id": "nancy-doyle-conlee",
+    "source_document_id": "reuben-conlee-nancy-doyle-marriage-bond-1815"
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-reuben-samuel-conlee-marriage-to-nancy-doyle-1815-01-01-warren-county-kentucky-usa",
+    "title": "Marriage to Nancy Doyle",
+    "record_type": "RELATION_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "7 Nov 1815",
+      "iso_start": "1815-01-01",
+      "iso_end": "1815-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Kentucky Marriage Bonds 1815-1816.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Married Nancy Doyle on 7 November 1815. Marriage bond surety: Samuel Doyle (Nancy's father).",
+      "meaning_statement": "Married Nancy Doyle on 7 November 1815. Marriage bond surety: Samuel Doyle (Nancy's father).",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "reuben-samuel-conlee-1",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/reuben-samuel-conlee",
+      "related_record_ids": [
+        "reuben-conlee-nancy-doyle-marriage-bond-1815"
+      ]
+    },
+    "canonical_event_id": "canonical-reuben-samuel-conlee-marriage-to-nancy-doyle-1815-01-01-warren-county-kentucky-usa",
+    "event_class": "RELATION_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "nancy-doyle-conlee"
+    ],
+    "source_document_ids": [
+      "reuben-conlee-nancy-doyle-marriage-bond-1815"
+    ],
+    "normalized_date_start": "1815-01-01",
+    "normalized_date_end": "1815-12-31",
+    "normalized_place": "Warren County, Kentucky, USA",
+    "event_key": "reuben-samuel-conlee|marriage to nancy doyle|1815-01-01|warren county, kentucky, usa",
+    "person_id": "reuben-samuel-conlee",
+    "source_document_id": "reuben-conlee-nancy-doyle-marriage-bond-1815"
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-isreal-bowen-1748-military-service-1819-01-01-canada",
     "title": "Military service",
     "record_type": "FACT_EVENT",
@@ -6772,13 +7018,15 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "james-reuben-conlee"
+      "james-reuben-conlee",
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
     ],
     "place_ids": [],
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -6808,7 +7056,10 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1825-01-01",
     "normalized_date_end": "1825-12-31",
@@ -7072,6 +7323,7 @@
     },
     "people_ids": [
       "armina-ramsey",
+      "thomas-ramsey-1799",
       "alzy-jane-edwards",
       "john-wesley-edwards",
       "lucinda-edwards",
@@ -7117,6 +7369,7 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
+      "thomas-ramsey-1799",
       "alzy-jane-edwards",
       "john-wesley-edwards",
       "lucinda-edwards",
@@ -7390,7 +7643,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915); Marriage Return 1912 of son John Barney Conlee (Primary Source); Oregon Early Oregonians Index 1800-1860",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -7547,6 +7800,68 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-reuben-samuel-conlee-black-hawk-war-service-1832-01-01-greene-county-illinois-usa",
+    "title": "Black Hawk War Service",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "Jun 1832",
+      "iso_start": "1832-01-01",
+      "iso_end": "1832-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "reuben-samuel-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Illinois Militia Muster Roll 1832 Black Hawk War",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Served as private in Capt. Aaron Bannon's Company, 2nd Regiment, 3rd Brigade, Illinois Mounted Volunteers. Enrolled June 19, 1832.",
+      "meaning_statement": "Served as private in Capt. Aaron Bannon's Company, 2nd Regiment, 3rd Brigade, Illinois Mounted Volunteers. Enrolled June 19, 1832.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "reuben-samuel-conlee-2",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/reuben-samuel-conlee",
+      "related_record_ids": [
+        "reuben-conlee-1832-blackhawk-muster"
+      ]
+    },
+    "canonical_event_id": "canonical-reuben-samuel-conlee-black-hawk-war-service-1832-01-01-greene-county-illinois-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "reuben-conlee-1832-blackhawk-muster"
+    ],
+    "normalized_date_start": "1832-01-01",
+    "normalized_date_end": "1832-12-31",
+    "normalized_place": "Greene County, Illinois, USA",
+    "event_key": "reuben-samuel-conlee|black hawk war service|1832-01-01|greene county, illinois, usa",
+    "person_id": "reuben-samuel-conlee",
+    "source_document_id": "reuben-conlee-1832-blackhawk-muster"
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-alexander-ramsey-1832-birth-1832-01-01-tennessee",
     "title": "Birth",
     "record_type": "FACT_EVENT",
@@ -7659,6 +7974,64 @@
     "normalized_place": "Tennessee or Iowa",
     "event_key": "anderson-edwards|birth|1832-01-01|tennessee or iowa",
     "person_id": "anderson-edwards",
+    "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-indiana-united-states",
+    "title": "Birth in Tennessee",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "1834",
+      "iso_start": "1834-01-01",
+      "iso_end": "1834-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "josiah-ramsey-1834"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Ramsey"
+    ],
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa (Primary Source); FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3)",
+    "artifact_access": {
+      "kind": "METADATA_ONLY",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "FamilySearch profile lists his birth year as 1834 in Indiana and names Thomas Ramsey and Anna Hopkins as his parents.",
+      "meaning_statement": "FamilySearch profile lists his birth year as 1834 in Indiana and names Thomas Ramsey and Anna Hopkins as his parents.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "josiah-ramsey-1834-0",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/josiah-ramsey-1834",
+      "related_record_ids": []
+    },
+    "canonical_event_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-indiana-united-states",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [],
+    "normalized_date_start": "1834-01-01",
+    "normalized_date_end": "1834-12-31",
+    "normalized_place": "Indiana, United States",
+    "event_key": "josiah-ramsey-1834|birth in tennessee|1834-01-01|indiana, united states",
+    "person_id": "josiah-ramsey-1834",
     "source_document_id": ""
   },
   {
@@ -7778,64 +8151,6 @@
     "normalized_place": "Tennessee",
     "event_key": "josiah-ramsey-1834-memorial|birth|1834-01-01|tennessee",
     "person_id": "josiah-ramsey-1834-memorial",
-    "source_document_id": ""
-  },
-  {
-    "schema_version": "mrcm.v1",
-    "record_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-tennessee-united-states",
-    "title": "Birth in Tennessee",
-    "record_type": "FACT_EVENT",
-    "evidence_tier": "PRIMARY",
-    "date": {
-      "raw": "1834",
-      "iso_start": "1834-01-01",
-      "iso_end": "1834-12-31",
-      "precision": "YEAR"
-    },
-    "people_ids": [
-      "josiah-ramsey-1834"
-    ],
-    "place_ids": [],
-    "branches": [
-      "Ramsey"
-    ],
-    "source_citation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
-    "artifact_access": {
-      "kind": "METADATA_ONLY",
-      "url": null
-    },
-    "claims": {
-      "fact_statement": "FamilySearch profile lists his birth year as 1834 in Tennessee and names Thomas Ramsey and Anna Hopkins as his parents.",
-      "meaning_statement": "FamilySearch profile lists his birth year as 1834 in Tennessee and names Thomas Ramsey and Anna Hopkins as his parents.",
-      "uncertainty_statement": null
-    },
-    "provenance": {
-      "source_file": "timeline.csv",
-      "source_row_key": "josiah-ramsey-1834-0",
-      "etl_run_id": "sync_data_v2",
-      "generated_at_utc": null
-    },
-    "flags": {
-      "identity_bridge_required": false,
-      "contains_name_variant": false,
-      "chronology_exception_applied": false
-    },
-    "links": {
-      "ui_record_url": "/ancestors/josiah-ramsey-1834",
-      "related_record_ids": []
-    },
-    "canonical_event_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-tennessee-united-states",
-    "event_class": "FACT_EVENT",
-    "confidence_tier": "PRIMARY",
-    "conflict_tags": [],
-    "duplicate_of": null,
-    "related_person_ids": [],
-    "source_document_ids": [],
-    "normalized_date_start": "1834-01-01",
-    "normalized_date_end": "1834-12-31",
-    "normalized_place": "Tennessee, United States",
-    "event_key": "josiah-ramsey-1834|birth in tennessee|1834-01-01|tennessee, united states",
-    "person_id": "josiah-ramsey-1834",
     "source_document_id": ""
   },
   {
@@ -8429,6 +8744,69 @@
     "event_key": "jabez-hopkins|hawkins county census|1840-01-01|hawkins county, tennessee",
     "person_id": "jabez-hopkins",
     "source_document_id": "claiborne-county-1840-census"
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-george-perry-conlee-1840-birth-in-iowa-1840-01-01-iowa",
+    "title": "Birth in Iowa",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "STRONG",
+    "date": {
+      "raw": "3 Jun 1840",
+      "iso_start": "1840-01-01",
+      "iso_end": "1840-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "george-perry-conlee-1840",
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "U.S. Civil War Pension Index Card — Conlee, George P., App #185711, Cert #170452, Iowa (Primary Source); Ancestry profile",
+    "artifact_access": {
+      "kind": "METADATA_ONLY",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Born 3 June 1840 in Iowa.",
+      "meaning_statement": "Born 3 June 1840 in Iowa.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "george-perry-conlee-1840-0",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/george-perry-conlee-1840",
+      "related_record_ids": []
+    },
+    "canonical_event_id": "canonical-george-perry-conlee-1840-birth-in-iowa-1840-01-01-iowa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "STRONG",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
+    ],
+    "source_document_ids": [],
+    "normalized_date_start": "1840-01-01",
+    "normalized_date_end": "1840-12-31",
+    "normalized_place": "Iowa",
+    "event_key": "george-perry-conlee-1840|birth in iowa|1840-01-01|iowa",
+    "person_id": "george-perry-conlee-1840",
+    "source_document_id": ""
   },
   {
     "schema_version": "mrcm.v1",
@@ -9037,6 +9415,133 @@
     "event_key": "rachael-ramsey|birth|1845-01-01|tennessee, united states",
     "person_id": "rachael-ramsey",
     "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-reuben-samuel-conlee-death-in-iowa-city-1846-01-01-iowa-city-johnson-county-iowa-usa",
+    "title": "Death in Iowa City",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "STRONG",
+    "date": {
+      "raw": "23 Dec 1846",
+      "iso_start": "1846-01-01",
+      "iso_end": "1846-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "reuben-samuel-conlee",
+      "nancy-doyle-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Lee County Iowa Probate Records.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Died during session.",
+      "meaning_statement": "Died during session.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "reuben-samuel-conlee-4",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/reuben-samuel-conlee",
+      "related_record_ids": [
+        "reuben-conlee-estate-lee-county-iowa"
+      ]
+    },
+    "canonical_event_id": "canonical-reuben-samuel-conlee-death-in-iowa-city-1846-01-01-iowa-city-johnson-county-iowa-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "STRONG",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "nancy-doyle-conlee"
+    ],
+    "source_document_ids": [
+      "reuben-conlee-estate-lee-county-iowa"
+    ],
+    "normalized_date_start": "1846-01-01",
+    "normalized_date_end": "1846-12-31",
+    "normalized_place": "Iowa City, Johnson County, Iowa, USA",
+    "event_key": "reuben-samuel-conlee|death in iowa city|1846-01-01|iowa city, johnson county, iowa, usa",
+    "person_id": "reuben-samuel-conlee",
+    "source_document_id": "reuben-conlee-estate-lee-county-iowa"
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-reuben-samuel-conlee-iowa-state-legislator-1846-01-01-iowa-city-johnson-county-iowa-usa",
+    "title": "Iowa State Legislator",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "CORROBORATED_COMPILATION",
+    "date": {
+      "raw": "1846",
+      "iso_start": "1846-01-01",
+      "iso_end": "1846-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "reuben-samuel-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Iowa Statistical Register, page 21.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Elected to First Iowa General Assembly.",
+      "meaning_statement": "Elected to First Iowa General Assembly.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "reuben-samuel-conlee-3",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/reuben-samuel-conlee",
+      "related_record_ids": [
+        "iowa-statistical-register-reuben-conlee-legislator"
+      ]
+    },
+    "canonical_event_id": "canonical-reuben-samuel-conlee-iowa-state-legislator-1846-01-01-iowa-city-johnson-county-iowa-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "CORROBORATED_COMPILATION",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "iowa-statistical-register-reuben-conlee-legislator"
+    ],
+    "normalized_date_start": "1846-01-01",
+    "normalized_date_end": "1846-12-31",
+    "normalized_place": "Iowa City, Johnson County, Iowa, USA",
+    "event_key": "reuben-samuel-conlee|iowa state legislator|1846-01-01|iowa city, johnson county, iowa, usa",
+    "person_id": "reuben-samuel-conlee",
+    "source_document_id": "iowa-statistical-register-reuben-conlee-legislator"
   },
   {
     "schema_version": "mrcm.v1",
@@ -9676,7 +10181,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -9737,7 +10242,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915); Marriage Return 1912 of son John Barney Conlee (Primary Source); Oregon Early Oregonians Index 1800-1860",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -10394,6 +10899,68 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-josiah-ramsey-1834-frontier-proximity-iowa-1850-01-01-bloomfield-township-davis-county-iowa-usa",
+    "title": "Frontier Proximity — Iowa",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "18 Oct 1850",
+      "iso_start": "1850-01-01",
+      "iso_end": "1850-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "josiah-ramsey-1834"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Ramsey"
+    ],
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa, National Archives and Records Administration",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Ramsey and Edwards families enumerated as immediate physical neighbors in Davis County, Iowa.",
+      "meaning_statement": "Ramsey and Edwards families enumerated as immediate physical neighbors in Davis County, Iowa.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "ramsey-edwards-colocation-1850",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/josiah-ramsey-1834",
+      "related_record_ids": [
+        "1850-bloomfield-davis-iowa-census-ramsey-edwards"
+      ]
+    },
+    "canonical_event_id": "canonical-josiah-ramsey-1834-frontier-proximity-iowa-1850-01-01-bloomfield-township-davis-county-iowa-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "1850-bloomfield-davis-iowa-census-ramsey-edwards"
+    ],
+    "normalized_date_start": "1850-01-01",
+    "normalized_date_end": "1850-12-31",
+    "normalized_place": "Bloomfield Township, Davis County, Iowa, USA",
+    "event_key": "josiah-ramsey-1834|frontier proximity — iowa|1850-01-01|bloomfield township, davis county, iowa, usa",
+    "person_id": "josiah-ramsey-1834",
+    "source_document_id": "1850-bloomfield-davis-iowa-census-ramsey-edwards"
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-anderson-edwards-1850-census-in-iowa-1850-01-01-bloomfield-township-davis-county-iowa-united-states",
     "title": "1850 Census in Iowa",
     "record_type": "FACT_EVENT",
@@ -10411,7 +10978,7 @@
     "branches": [
       "Edwards"
     ],
-    "source_citation": "\"Davis, Iowa, United States records,\" images, FamilySearch (https://www.familysearch.org/ark:/61903/3:1:S3HT-D489-3HD?view=index : Jun 26, 2026), image 612 of 632; United States. National Archives and Records Administration. Image Group Number: 004181030.",
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa, National Archives and Records Administration",
     "artifact_access": {
       "kind": "PRIVATE",
       "url": null
@@ -10473,7 +11040,7 @@
     "branches": [
       "Ramsey"
     ],
-    "source_citation": "\"Davis, Iowa, United States records,\" images, FamilySearch (https://www.familysearch.org/ark:/61903/3:1:S3HT-D489-3HD?view=index : Jun 26, 2026), image 612 of 632; United States. National Archives and Records Administration. Image Group Number: 004181030.",
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa, National Archives and Records Administration",
     "artifact_access": {
       "kind": "PRIVATE",
       "url": null
@@ -10535,7 +11102,7 @@
     "branches": [
       "Ramsey"
     ],
-    "source_citation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa (Primary Source); FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -10587,7 +11154,9 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "elizabeth-ellen-conley"
+      "elizabeth-ellen-conley",
+      "james-reuben-conlee",
+      "susan-ann-barney-conlee"
     ],
     "place_ids": [],
     "branches": [
@@ -10623,7 +11192,10 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "james-reuben-conlee",
+      "susan-ann-barney-conlee"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1850-01-01",
     "normalized_date_end": "1850-12-31",
@@ -11014,7 +11586,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -11072,7 +11644,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915); Marriage Return 1912 of son John Barney Conlee (Primary Source); Oregon Early Oregonians Index 1800-1860",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -11490,7 +12062,7 @@
     "branches": [
       "Ramsey"
     ],
-    "source_citation": "FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3), showing parents Thomas Ramsey and Anna Hopkins, birth in Tennessee, 1850 Bloomfield residence, and occupation farmer.",
+    "source_citation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa (Primary Source); FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -12031,7 +12603,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -12748,6 +13320,67 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-nancy-doyle-conlee-death-in-fort-madison-1857-01-01-fort-madison-lee-county-iowa-usa",
+    "title": "Death in Fort Madison",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "STRONG",
+    "date": {
+      "raw": "17 Apr 1857",
+      "iso_start": "1857-01-01",
+      "iso_end": "1857-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "nancy-doyle-conlee",
+      "reuben-samuel-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Kentucky Marriage Register Warren County Nov 16 1815 (Primary Source); Marriage Bond Warren County 7 Nov 1815 (Primary Source); Ancestry profile James Reuben Conlee viewed 2026-06-26",
+    "artifact_access": {
+      "kind": "METADATA_ONLY",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Died 17 April 1857.",
+      "meaning_statement": "Died 17 April 1857.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "nancy-doyle-conlee-2",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/nancy-doyle-conlee",
+      "related_record_ids": []
+    },
+    "canonical_event_id": "canonical-nancy-doyle-conlee-death-in-fort-madison-1857-01-01-fort-madison-lee-county-iowa-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "STRONG",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "reuben-samuel-conlee"
+    ],
+    "source_document_ids": [],
+    "normalized_date_start": "1857-01-01",
+    "normalized_date_end": "1857-12-31",
+    "normalized_place": "Fort Madison, Lee County, Iowa, USA",
+    "event_key": "nancy-doyle-conlee|death in fort madison|1857-01-01|fort madison, lee county, iowa, usa",
+    "person_id": "nancy-doyle-conlee",
+    "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-john-wesley-edwards-birth-1858-01-01-iowa-or-tennessee",
     "title": "Birth",
     "record_type": "RELATION_EVENT",
@@ -12821,6 +13454,7 @@
     },
     "people_ids": [
       "silas-josiah-edwards",
+      "anderson-edwards",
       "armina-ramsey"
     ],
     "place_ids": [],
@@ -12858,6 +13492,7 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
+      "anderson-edwards",
       "armina-ramsey"
     ],
     "source_document_ids": [],
@@ -13442,6 +14077,68 @@
     "event_key": "mary-ann-edwards|residence in 1860 census|1860-01-01|richland township, decatur, iowa, united states",
     "person_id": "mary-ann-edwards",
     "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-george-perry-conlee-1840-civil-war-service-1861-01-01-usa",
+    "title": "Civil War Service",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "1861",
+      "iso_start": "1861-01-01",
+      "iso_end": "1861-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "george-perry-conlee-1840"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "U.S. Civil War Pension Index Card.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Served in Union Army.",
+      "meaning_statement": "Served in Union Army.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "george-perry-conlee-1840-1",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/george-perry-conlee-1840",
+      "related_record_ids": [
+        "george-perry-conlee-civil-war-pension"
+      ]
+    },
+    "canonical_event_id": "canonical-george-perry-conlee-1840-civil-war-service-1861-01-01-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "george-perry-conlee-civil-war-pension"
+    ],
+    "normalized_date_start": "1861-01-01",
+    "normalized_date_end": "1861-12-31",
+    "normalized_place": "USA",
+    "event_key": "george-perry-conlee-1840|civil war service|1861-01-01|usa",
+    "person_id": "george-perry-conlee-1840",
+    "source_document_id": "george-perry-conlee-civil-war-pension"
   },
   {
     "schema_version": "mrcm.v1",
@@ -14958,7 +15655,9 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "elizabeth-ellen-conley"
+      "elizabeth-ellen-conley",
+      "james-reuben-conlee",
+      "susan-ann-barney-conlee"
     ],
     "place_ids": [],
     "branches": [
@@ -14994,7 +15693,10 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "james-reuben-conlee",
+      "susan-ann-barney-conlee"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1871-01-01",
     "normalized_date_end": "1871-12-31",
@@ -15080,6 +15782,7 @@
     },
     "people_ids": [
       "nancy-ann-dyer",
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "place_ids": [],
@@ -15117,6 +15820,7 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "source_document_ids": [],
@@ -15263,7 +15967,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -15324,7 +16028,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; Oregon, Early Oregonians Index 1800-1860; 1850 U.S. Federal Census",
+    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915); Marriage Return 1912 of son John Barney Conlee (Primary Source); Oregon Early Oregonians Index 1800-1860",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -15364,6 +16068,68 @@
     "event_key": "susan-ann-barney-conlee|death in dallas, oregon|1872-01-01|dallas, polk county, oregon, usa",
     "person_id": "susan-ann-barney-conlee",
     "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-george-perry-conlee-1840-invalid-pension-filed-1873-01-01-iowa",
+    "title": "Invalid Pension Filed",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "11 Aug 1873",
+      "iso_start": "1873-01-01",
+      "iso_end": "1873-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "george-perry-conlee-1840"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "U.S. Civil War Pension Index Card.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Filed invalid pension.",
+      "meaning_statement": "Filed invalid pension.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "george-perry-conlee-1840-2",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/george-perry-conlee-1840",
+      "related_record_ids": [
+        "george-perry-conlee-civil-war-pension"
+      ]
+    },
+    "canonical_event_id": "canonical-george-perry-conlee-1840-invalid-pension-filed-1873-01-01-iowa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "george-perry-conlee-civil-war-pension"
+    ],
+    "normalized_date_start": "1873-01-01",
+    "normalized_date_end": "1873-12-31",
+    "normalized_place": "Iowa",
+    "event_key": "george-perry-conlee-1840|invalid pension filed|1873-01-01|iowa",
+    "person_id": "george-perry-conlee-1840",
+    "source_document_id": "george-perry-conlee-civil-war-pension"
   },
   {
     "schema_version": "mrcm.v1",
@@ -16160,7 +16926,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -17611,7 +18377,7 @@
     "branches": [
       "Dyer"
     ],
-    "source_citation": "Ancestry profile — Elizabeth Ellen Conlee Dyer (1850–1909), viewed 2026-06-26",
+    "source_citation": "Washington, County Marriages, 1855-2008 (Primary Source); Last Will and Testament of Elizabeth Ellen Conlee Dyer (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -17843,7 +18609,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "nancy-ann-dyer"
+      "nancy-ann-dyer",
+      "silas-josiah-edwards"
     ],
     "place_ids": [],
     "branches": [
@@ -17879,7 +18646,9 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "silas-josiah-edwards"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1892-01-01",
     "normalized_date_end": "1892-12-31",
@@ -18201,6 +18970,7 @@
     },
     "people_ids": [
       "nancy-ann-dyer",
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "place_ids": [],
@@ -18238,6 +19008,7 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "source_document_ids": [],
@@ -18268,7 +19039,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -18448,7 +19219,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "silas-josiah-edwards"
+      "silas-josiah-edwards",
+      "nancy-ann-dyer"
     ],
     "place_ids": [],
     "branches": [
@@ -18486,7 +19258,9 @@
     "confidence_tier": "PRIMARY",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "nancy-ann-dyer"
+    ],
     "source_document_ids": [
       "josiah-edwards-marriage-return-1895"
     ],
@@ -18762,7 +19536,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "nancy-ann-dyer"
+      "nancy-ann-dyer",
+      "silas-josiah-edwards"
     ],
     "place_ids": [],
     "branches": [
@@ -18800,7 +19575,9 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "silas-josiah-edwards"
+    ],
     "source_document_ids": [
       "josiah-edwards-pine-city-marriage"
     ],
@@ -19629,7 +20406,8 @@
     },
     "people_ids": [
       "edith-ann-edwards",
-      "silas-josiah-edwards"
+      "silas-josiah-edwards",
+      "nancy-ann-dyer"
     ],
     "place_ids": [],
     "branches": [
@@ -19666,7 +20444,8 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
-      "silas-josiah-edwards"
+      "silas-josiah-edwards",
+      "nancy-ann-dyer"
     ],
     "source_document_ids": [],
     "normalized_date_start": "1901-01-01",
@@ -19690,6 +20469,7 @@
     },
     "people_ids": [
       "nancy-ann-dyer",
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "place_ids": [],
@@ -19727,6 +20507,7 @@
     "conflict_tags": [],
     "duplicate_of": null,
     "related_person_ids": [
+      "george-washington-dyer",
       "elizabeth-ellen-conley"
     ],
     "source_document_ids": [],
@@ -21151,6 +21932,68 @@
   },
   {
     "schema_version": "mrcm.v1",
+    "record_id": "canonical-george-perry-conlee-1840-death-in-jefferson-1911-01-01-jefferson-iowa-usa",
+    "title": "Death in Jefferson",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "STRONG",
+    "date": {
+      "raw": "17 Aug 1911",
+      "iso_start": "1911-01-01",
+      "iso_end": "1911-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "george-perry-conlee-1840"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "U.S. Civil War Pension Index Card.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Died 17 August 1911 in Jefferson.",
+      "meaning_statement": "Died 17 August 1911 in Jefferson.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "george-perry-conlee-1840-3",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/george-perry-conlee-1840",
+      "related_record_ids": [
+        "george-perry-conlee-civil-war-pension"
+      ]
+    },
+    "canonical_event_id": "canonical-george-perry-conlee-1840-death-in-jefferson-1911-01-01-jefferson-iowa-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "STRONG",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [],
+    "source_document_ids": [
+      "george-perry-conlee-civil-war-pension"
+    ],
+    "normalized_date_start": "1911-01-01",
+    "normalized_date_end": "1911-12-31",
+    "normalized_place": "Jefferson, Iowa, USA",
+    "event_key": "george-perry-conlee-1840|death in jefferson|1911-01-01|jefferson, iowa, usa",
+    "person_id": "george-perry-conlee-1840",
+    "source_document_id": "george-perry-conlee-civil-war-pension"
+  },
+  {
+    "schema_version": "mrcm.v1",
     "record_id": "canonical-hugh-bowen-1843-death-of-daughter-christina-bowen-1913-01-01-new-westminster-british-columbia-canada",
     "title": "Death of daughter Christina Bowen",
     "record_type": "FACT_EVENT",
@@ -21230,7 +22073,7 @@
     "branches": [
       "Conlee"
     ],
-    "source_citation": "Ancestry profile — James Reuben Conlee (1825–1915), viewed 2026-06-26; 1850, 1880, 1900, 1910 U.S. Federal Census; Oregon Death Index 1898-2008; Oregon Wills and Probate Records 1849-1963; U.S. Find A Grave Index",
+    "source_citation": "Oregon Death Index 1898-2008, record #398, death 23 Jan 1915 (Primary Source); 1910 U.S. Federal Census Dallas, Polk, Oregon (Primary Source); 1850 Iowa Agricultural Schedule Lee County (Primary Source); son John's 1912 Marriage Return (Primary Source)",
     "artifact_access": {
       "kind": "METADATA_ONLY",
       "url": null
@@ -21270,6 +22113,71 @@
     "event_key": "james-reuben-conlee|death in dallas, oregon|1915-01-01|dallas, polk county, oregon, usa",
     "person_id": "james-reuben-conlee",
     "source_document_id": ""
+  },
+  {
+    "schema_version": "mrcm.v1",
+    "record_id": "canonical-james-reuben-conlee-death-in-dallas-1915-01-01-dallas-polk-county-oregon-usa",
+    "title": "Death in Dallas",
+    "record_type": "FACT_EVENT",
+    "evidence_tier": "PRIMARY",
+    "date": {
+      "raw": "23 Jan 1915",
+      "iso_start": "1915-01-01",
+      "iso_end": "1915-12-31",
+      "precision": "YEAR"
+    },
+    "people_ids": [
+      "james-reuben-conlee",
+      "susan-ann-barney-conlee"
+    ],
+    "place_ids": [],
+    "branches": [
+      "Conlee"
+    ],
+    "source_citation": "Oregon Death Index 1898-2008; entry for Conlee, James R.",
+    "artifact_access": {
+      "kind": "PRIVATE",
+      "url": null
+    },
+    "claims": {
+      "fact_statement": "Died 23 January 1915 in Dallas. Record #398 in Oregon Death Index.",
+      "meaning_statement": "Died 23 January 1915 in Dallas. Record #398 in Oregon Death Index.",
+      "uncertainty_statement": null
+    },
+    "provenance": {
+      "source_file": "timeline.csv",
+      "source_row_key": "james-reuben-conlee-8",
+      "etl_run_id": "sync_data_v2",
+      "generated_at_utc": null
+    },
+    "flags": {
+      "identity_bridge_required": false,
+      "contains_name_variant": false,
+      "chronology_exception_applied": false
+    },
+    "links": {
+      "ui_record_url": "/ancestors/james-reuben-conlee",
+      "related_record_ids": [
+        "james-reuben-conlee-oregon-death-index"
+      ]
+    },
+    "canonical_event_id": "canonical-james-reuben-conlee-death-in-dallas-1915-01-01-dallas-polk-county-oregon-usa",
+    "event_class": "FACT_EVENT",
+    "confidence_tier": "PRIMARY",
+    "conflict_tags": [],
+    "duplicate_of": null,
+    "related_person_ids": [
+      "susan-ann-barney-conlee"
+    ],
+    "source_document_ids": [
+      "james-reuben-conlee-oregon-death-index"
+    ],
+    "normalized_date_start": "1915-01-01",
+    "normalized_date_end": "1915-12-31",
+    "normalized_place": "Dallas, Polk County, Oregon, USA",
+    "event_key": "james-reuben-conlee|death in dallas|1915-01-01|dallas, polk county, oregon, usa",
+    "person_id": "james-reuben-conlee",
+    "source_document_id": "james-reuben-conlee-oregon-death-index"
   },
   {
     "schema_version": "mrcm.v1",
@@ -23832,7 +24740,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "nancy-ann-dyer"
+      "nancy-ann-dyer",
+      "silas-josiah-edwards"
     ],
     "place_ids": [],
     "branches": [
@@ -23868,7 +24777,9 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "silas-josiah-edwards"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1939-01-01",
     "normalized_date_end": "1939-12-31",
@@ -23948,7 +24859,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "nancy-ann-dyer"
+      "nancy-ann-dyer",
+      "silas-josiah-edwards"
     ],
     "place_ids": [],
     "branches": [
@@ -23984,7 +24896,9 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "silas-josiah-edwards"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1939-01-01",
     "normalized_date_end": "1939-12-31",
@@ -24484,7 +25398,8 @@
       "precision": "YEAR"
     },
     "people_ids": [
-      "silas-josiah-edwards"
+      "silas-josiah-edwards",
+      "nancy-ann-dyer"
     ],
     "place_ids": [],
     "branches": [
@@ -24520,7 +25435,9 @@
     "confidence_tier": "STRONG",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "nancy-ann-dyer"
+    ],
     "source_document_ids": [],
     "normalized_date_start": "1943-01-01",
     "normalized_date_end": "1943-12-31",
@@ -27237,7 +28154,8 @@
       "precision": "UNKNOWN"
     },
     "people_ids": [
-      "silas-josiah-edwards"
+      "silas-josiah-edwards",
+      "nancy-ann-dyer"
     ],
     "place_ids": [],
     "branches": [
@@ -27275,7 +28193,9 @@
     "confidence_tier": "PRIMARY",
     "conflict_tags": [],
     "duplicate_of": null,
-    "related_person_ids": [],
+    "related_person_ids": [
+      "nancy-ann-dyer"
+    ],
     "source_document_ids": [
       "josiah-edwards-pine-city-marriage"
     ],
