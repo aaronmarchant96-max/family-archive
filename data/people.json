@@ -6961,7 +6961,7 @@
     },
     "v2_birth_year": "",
     "v2_death_year": "",
-    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
+    "v2_notes": "Son of David and Nancy Marchant; brother of Colleen Lattin | Husband of Christine; father of Shawn and Aaron Marchant | Father of Aaron and Shawn; grandson line anchored by David and Nancy | ID_CONFLICT: spouse Christine is not represented as a profile | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids | ID_CONFLICT: removed self/role-collision relationship ids"
   },
   {
     "id": "aaron-marchant",
@@ -8195,8 +8195,8 @@
     "lifespan": "1875-1961",
     "era": "Dyer",
     "branch": "Dyer",
-    "summary": "Son of George Washington Dyer (1835–1906) and Elizabeth Ellen Conlee Dyer (1850–1909). Born 7 Nov 1875, Dallas, Polk County, Oregon. Died 1961.",
-    "keyEvent": "Born 7 Nov 1875, Dallas, Polk County, Oregon",
+    "summary": "Son of George Washington Dyer (1835–1906) and Elizabeth Ellen Conlee Dyer (1850–1909). Born 7 Nov 1875 in Dallas, Polk County, Oregon. Married Ruth Winnifred Addington on 12 Apr 1896 in Whitman County, Washington. Father of George Dewey Dyer, Minnie Elnora Dyer Bolin, Leslie Milton \"Ted\" Dyer, Hazel Agnes Dyer Reilly, Glen Victor Dyer, Mabel Eva Dyer Howry, and Ruth Jessie Dyer Allen. Died 11 Sep 1961 in Spokane, Washington.",
+    "keyEvent": "Born 7 Nov 1875 in Dallas, Oregon; married Ruth Winnifred Addington on 12 Apr 1896; died 11 Sep 1961 in Spokane.",
     "confidence": "Strong Evidence",
     "tags": [
       "Dyer",
@@ -8217,7 +8217,7 @@
       "Born 7 Nov 1875, Dallas, Polk County, Oregon",
       "Confirmed via Ancestry profile 2026-06-26"
     ],
-    "sourceCitation": "Ancestry profile — Elizabeth Ellen Conlee Dyer (1850–1909), viewed 2026-06-26",
+    "sourceCitation": "Ancestry profile screenshot provided 2026-06-26; Washington marriage and death indexes; U.S. Federal censuses; family record image in screenshot",
     "relationships": {
       "mother_id": "elizabeth-ellen-conley",
       "father_id": "george-washington-dyer",
@@ -8232,7 +8232,7 @@
     },
     "v2_birth_year": "1875",
     "v2_death_year": "1961",
-    "v2_notes": "Third child of George Washington Dyer and Elizabeth Ellen Conlee. Birth confirmed via Ancestry profile 2026-06-26."
+    "v2_notes": "Screenshot-confirmed family profile. The spouse and children are visible in the screenshot, but the corresponding source rows are not yet in v2, so the relationship ID fields stay blank until those people are added."
   },
   {
     "id": "fredrich-marion-dyer",

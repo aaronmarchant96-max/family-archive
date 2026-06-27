@@ -311,7 +311,7 @@ export function HomeArchiveExplorer({ people, documents, familyMemory, minYear, 
           { name: "William Moore", href: "/ancestors/william-moore" },
           { name: "Isabella Law", href: "/ancestors/isabella-law" }
         ],
-        linkedDocuments: [{ label: "real certifcate .pdf", href: "/documents/william-isabella-marriage-certificate" }]
+        linkedDocuments: [{ label: "real-certificate.pdf", href: "/documents/william-isabella-marriage-certificate" }]
       },
       {
         id: "decatur-township-1860",
