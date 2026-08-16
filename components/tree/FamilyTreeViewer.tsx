@@ -11,6 +11,7 @@ import {
 } from "../../lib/familyTreeEngine";
 import { ConfidenceBadge } from "../ConfidenceBadge";
 import { SourcePreview } from "../SourcePreview";
+import { ContributeModal } from "../contribute/ContributeModal";
 
 interface FamilyTreeViewerProps {
   rawPeople: any[];
@@ -35,6 +36,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const [highlightedNodeId, setHighlightedNodeId] = useState<string | null>(null);
   const [showMinimapMobile, setShowMinimapMobile] = useState(false);
   const [activeEpochId, setActiveEpochId] = useState<string>("colonial");
+  const [isContributeOpen, setIsContributeOpen] = useState(false);
 
   // Search filtering
   const searchResults = useMemo(() => {
@@ -672,14 +674,33 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               </div>
             ) : null}
 
-            <Link
-              href={`/ancestors/${activeNode.id}`}
-              className="block w-full rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-3 text-center text-xs font-semibold uppercase tracking-widest text-white shadow-md transition hover:bg-[var(--archive-accent-soft)] active:scale-95"
-            >
-              View Full Ancestor Dossier
-            </Link>
+            <div className="grid grid-cols-2 gap-2 pt-1">
+              <button
+                type="button"
+                onClick={() => setIsContributeOpen(true)}
+                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2.5 text-center text-xs font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
+              >
+                + Add Memory
+              </button>
+              <Link
+                href={`/ancestors/${activeNode.id}`}
+                className="rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-white shadow transition hover:bg-[var(--archive-accent-soft)] active:scale-95 flex items-center justify-center"
+              >
+                Full Dossier
+              </Link>
+            </div>
           </div>
         </div>
+      )}
+
+      {/* Contribute Modal */}
+      {activeNode && (
+        <ContributeModal
+          targetPersonId={activeNode.id}
+          targetPersonName={activeNode.name}
+          isOpen={isContributeOpen}
+          onClose={() => setIsContributeOpen(false)}
+        />
       )}
     </div>
   );

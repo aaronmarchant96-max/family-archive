@@ -1,3 +1,10 @@
+export interface NodePosition3D {
+  x: number;
+  y: number;
+  z: number;
+  isEstimatedDate: boolean;
+}
+
 export interface PersonGraphNode {
   id: string;
   name: string;
@@ -20,6 +27,7 @@ export interface PersonGraphNode {
   x: number;
   y: number;
   generation: number;
+  pos3D?: NodePosition3D;
 }
 
 export interface TreeEdge {
@@ -140,11 +148,54 @@ const NODE_WIDTH = 240;
 const NODE_HEIGHT = 100;
 const X_GAP = 70;
 const LAYER_HEIGHT = 220;
+const BASE_YEAR = 1950;
+const YEAR_SCALE = 4; // 1 year = 4 units on Z axis in 3D WebGL
 
-function parseYear(val: unknown): number | undefined {
-  if (!val) return undefined;
-  const match = String(val).match(/\b(\d{4})\b/);
-  return match ? parseInt(match[1], 10) : undefined;
+/**
+ * Extracts a numeric year from integer, string ("c. 1640", "1675-1745"), or null inputs.
+ * Guarantees a finite integer year with explicit isEstimated flag.
+ */
+export function parseBirthYear(rawYear: number | string | null | undefined): { year: number; isEstimated: boolean } {
+  if (typeof rawYear === "number" && Number.isFinite(rawYear)) {
+    return { year: Math.round(rawYear), isEstimated: false };
+  }
+
+  if (typeof rawYear === "string") {
+    const match = rawYear.match(/\b(\d{4})\b/);
+    if (match) {
+      return { year: parseInt(match[1], 10), isEstimated: true };
+    }
+  }
+
+  // Explicit fallback for completely missing records (mid-point anchor)
+  return { year: 1900, isEstimated: true };
+}
+
+/**
+ * Calculates explicit 3D space coordinates for constellation nodes.
+ * Guarantees finite non-NaN coordinates for WebGL rendering pipelines.
+ */
+export function calculateNodePosition3D(
+  node: { birthYear?: number | string | null; generation?: number; lifespan?: string; v2_birth_year?: string },
+  branchXOffset: number
+): NodePosition3D {
+  const { year, isEstimated } = parseBirthYear(node.birthYear || node.v2_birth_year || node.lifespan);
+
+  // Structural check: Ensure finite non-NaN values for WebGL consumption
+  const safeGeneration = typeof node.generation === "number" && Number.isFinite(node.generation) ? node.generation : 0;
+  const safeBranchOffset = typeof branchXOffset === "number" && Number.isFinite(branchXOffset) ? branchXOffset : 0;
+
+  const x = safeBranchOffset;
+  const y = safeGeneration * 120;
+  // Z axis maps chronological depth relative to modern era
+  const z = (year - BASE_YEAR) * YEAR_SCALE;
+
+  return {
+    x,
+    y,
+    z,
+    isEstimatedDate: isEstimated
+  };
 }
 
 export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
@@ -156,8 +207,8 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
     const branch = raw.branch || "Unknown";
     branchCounts[branch] = (branchCounts[branch] || 0) + 1;
 
-    const bYear = parseYear(raw.v2_birth_year || raw.birthYear || raw.lifespan);
-    const dYear = parseYear(raw.v2_death_year || raw.deathYear || raw.lifespan);
+    const { year: bYear } = parseBirthYear(raw.v2_birth_year || raw.birthYear || raw.lifespan);
+    const { year: dYear } = parseBirthYear(raw.v2_death_year || raw.deathYear || raw.lifespan);
 
     const rels = raw.relationships || {};
     const fatherId = rels.father_id || "";
@@ -238,7 +289,7 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
     });
   }
 
-  // Position nodes
+  // Position nodes in 2D and 3D
   let maxNodesInGen = 0;
   for (const gen in genGroups) {
     maxNodesInGen = Math.max(maxNodesInGen, genGroups[gen].length);
@@ -255,6 +306,8 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
     row.forEach((node, idx) => {
       node.x = Math.round(startX + idx * (NODE_WIDTH + X_GAP));
       node.y = Math.round(140 + gen * LAYER_HEIGHT);
+      // Compute 3D WebGL node coordinates
+      node.pos3D = calculateNodePosition3D(node, (idx - row.length / 2) * 160);
     });
   }
 
