@@ -11,10 +11,7 @@ import { TranscriptViewer } from "../../../components/TranscriptViewer";
 
 const documents = documentsData as DocumentCardProps[];
 const people = peopleData as AncestorCardProps[];
-
-export function generateStaticParams() {
-  return documents.map((document) => ({ id: document.id }));
-}
+export const dynamic = "force-dynamic";
 
 function slugify(value: string) {
   return value

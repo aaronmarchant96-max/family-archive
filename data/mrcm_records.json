@@ -7978,8 +7978,8 @@
   },
   {
     "schema_version": "mrcm.v1",
-    "record_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-indiana-united-states",
-    "title": "Birth in Tennessee",
+    "record_id": "canonical-josiah-ramsey-1834-birth-in-indiana-1834-01-01-indiana-united-states",
+    "title": "Birth in Indiana",
     "record_type": "FACT_EVENT",
     "evidence_tier": "PRIMARY",
     "date": {
@@ -8020,7 +8020,7 @@
       "ui_record_url": "/ancestors/josiah-ramsey-1834",
       "related_record_ids": []
     },
-    "canonical_event_id": "canonical-josiah-ramsey-1834-birth-in-tennessee-1834-01-01-indiana-united-states",
+    "canonical_event_id": "canonical-josiah-ramsey-1834-birth-in-indiana-1834-01-01-indiana-united-states",
     "event_class": "FACT_EVENT",
     "confidence_tier": "PRIMARY",
     "conflict_tags": [],
@@ -8030,7 +8030,7 @@
     "normalized_date_start": "1834-01-01",
     "normalized_date_end": "1834-12-31",
     "normalized_place": "Indiana, United States",
-    "event_key": "josiah-ramsey-1834|birth in tennessee|1834-01-01|indiana, united states",
+    "event_key": "josiah-ramsey-1834|birth in indiana|1834-01-01|indiana, united states",
     "person_id": "josiah-ramsey-1834",
     "source_document_id": ""
   },

@@ -6,6 +6,8 @@ import type { AncestorCardProps } from "../components/AncestorCard";
 import type { DocumentCardProps } from "../components/DocumentCard";
 import type { FamilyMemoryEntry } from "../components/MemoryCard";
 
+export const dynamic = "force-dynamic";
+
 const people = peopleData as AncestorCardProps[];
 const documents = documentsData as DocumentCardProps[];
 const familyMemory = familyMemoryData as FamilyMemoryEntry[];

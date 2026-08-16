@@ -8,10 +8,7 @@ import { SourcePreview } from "../../../components/SourcePreview";
 
 const people = peopleData as AncestorCardProps[];
 const documents = documentsData as Array<{ id: string; filename: string; previewUrl?: string; sourceCitation?: string }>;
-
-export function generateStaticParams() {
-  return people.map((person) => ({ id: person.id }));
-}
+export const dynamic = "force-dynamic";
 
 export default function AncestorPreviewPage({ params }: { params: { id: string } }) {
   const person = people.find((entry) => entry.id === params.id);
