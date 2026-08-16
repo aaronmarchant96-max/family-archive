@@ -1,1 +1,145 @@
-[]
+[
+  {
+    "id": "place-delaware-colony",
+    "name": "New Castle / Kent Co., Delaware",
+    "lat": 39.66,
+    "lng": -75.56,
+    "era": "Colonial",
+    "branches": ["Ramsey", "Bower"],
+    "confidence": "Needs Review",
+    "sourceCitation": "1744 Delaware Colony marriage register (under review); Holy Trinity (Old Swedes) church records.",
+    "historicalContext": "Early colonial settlement of Josiah Ramsey Sr. (1728–1811); 1744 Delaware marriage to Alice Bower remains under review vs. alternative Elizabeth Hollis/Grigsby connection."
+  },
+  {
+    "id": "place-nc-guilford",
+    "name": "Guilford / Rowan Co., North Carolina",
+    "lat": 36.07,
+    "lng": -79.79,
+    "era": "Revolutionary",
+    "branches": ["Ramsey"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1782 North Carolina Revolutionary War Pay Voucher for Josiah Ramsey Sr.",
+    "historicalContext": "Militia service and settlement during the American Revolution."
+  },
+  {
+    "id": "place-claiborne-tn",
+    "name": "Mulberry Gap, Claiborne/Hancock Co., Tennessee",
+    "lat": 36.56,
+    "lng": -83.39,
+    "era": "Early Republic",
+    "branches": ["Ramsey", "Cowan", "Edwards"],
+    "confidence": "Primary Source",
+    "sourceCitation": "State of Tennessee Land Grant Entry No. 371 (surveyed 1827, issued 1828) on Mulberry Creek; 1830 & 1840 Federal Censuses for Claiborne County.",
+    "historicalContext": "Frontier homestead of Josiah Ramsey, Elizabeth Cowan, and Thomas Ramsey."
+  },
+  {
+    "id": "place-washington-ky",
+    "name": "Rolling Fork, Washington Co., Kentucky",
+    "lat": 37.68,
+    "lng": -85.29,
+    "era": "Early Republic",
+    "branches": ["Dyer"],
+    "confidence": "Strong Evidence",
+    "sourceCitation": "Washington County, Kentucky tax lists and family birth records for Jonathan Dyer (1802).",
+    "historicalContext": "Dyer family settlement prior to Indiana westward migration."
+  },
+  {
+    "id": "place-floyd-in",
+    "name": "Floyd / Harrison Co., Indiana",
+    "lat": 38.21,
+    "lng": -86.12,
+    "era": "Pioneer",
+    "branches": ["Dyer"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1822 Harrison County Marriage Register (Jonathan Dyer & Fannie Bufford); Indiana probate records.",
+    "historicalContext": "Indiana frontier settlement of the Dyer family."
+  },
+  {
+    "id": "place-davis-ia",
+    "name": "Bloomfield, Davis Co., Iowa",
+    "lat": 40.75,
+    "lng": -92.41,
+    "era": "Pioneer",
+    "branches": ["Ramsey", "Edwards"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1850 U.S. Federal Census for Bloomfield Township, Davis County, Iowa (Roll M432_182).",
+    "historicalContext": "Joint Ramsey and Edwards homestead cluster in Iowa."
+  },
+  {
+    "id": "place-decatur-ia",
+    "name": "Long Creek, Decatur Co., Iowa",
+    "lat": 40.74,
+    "lng": -93.75,
+    "era": "Civil War Era",
+    "branches": ["Ramsey", "Baker"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1863 Iowa Civil War Draft Registration; 1860/1870 Federal Censuses for Decatur County.",
+    "historicalContext": "Civil War era farming homestead of James Ramsey and Margaret Baker."
+  },
+  {
+    "id": "place-polk-or",
+    "name": "Dallas / Salt Creek, Polk Co., Oregon",
+    "lat": 44.92,
+    "lng": -123.31,
+    "era": "Oregon Trail",
+    "branches": ["Dyer"],
+    "confidence": "Primary Source",
+    "sourceCitation": "Oregon Donation Land Claims and Salt Creek Cemetery inscriptions.",
+    "historicalContext": "Oregon Trail terminus for Jonathan Dyer and George Washington Dyer."
+  },
+  {
+    "id": "place-whitman-wa",
+    "name": "Pine City / St. John, Whitman Co., Washington",
+    "lat": 47.14,
+    "lng": -117.47,
+    "era": "Turn of Century",
+    "branches": ["Edwards", "Dyer"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1900/1920 Federal Censuses (Whitman Co., WA); 1923 Armina Ramsey Edwards obituary.",
+    "historicalContext": "Pacific Northwest agricultural homesteads of Edwards and Dyer lines."
+  },
+  {
+    "id": "place-calgary-ab",
+    "name": "Calgary, Alberta, Canada",
+    "lat": 51.04,
+    "lng": -114.07,
+    "era": "Modern Era",
+    "branches": ["Marchant", "Moore"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1958 Henderson's Calgary City Directory; 2020 Colleen Gay Lattin obituary.",
+    "historicalContext": "20th-century urban residence of David Marchant and Nancy Moore Marchant."
+  },
+  {
+    "id": "place-ballymena-antrim",
+    "name": "Ballymena, County Antrim, Ireland",
+    "lat": 54.86,
+    "lng": -6.28,
+    "era": "Colonial / 19th c.",
+    "branches": ["Moore", "Law"],
+    "confidence": "Primary Source",
+    "sourceCitation": "1846 Kirkinriola Parish Marriage Register (William Moore & Isabella Law, Springwell St).",
+    "historicalContext": "Ancestral origins of the Moore (schoolmasters/painters) and Law (brassfounders) families."
+  },
+  {
+    "id": "place-bristol-ma",
+    "name": "Swansea / Rehoboth, Bristol Co., Massachusetts",
+    "lat": 41.75,
+    "lng": -71.19,
+    "era": "Colonial",
+    "branches": ["Bowen"],
+    "confidence": "Primary Source",
+    "sourceCitation": "Swansea and Rehoboth Town Vital Records (1715 birth, 1737 marriage).",
+    "historicalContext": "18th-century New England roots of Nathan Bowen and Isreal Bowen."
+  },
+  {
+    "id": "place-lambton-on",
+    "name": "Mooretown, Lambton Co., Ontario, Canada",
+    "lat": 42.84,
+    "lng": -82.44,
+    "era": "Early 19th c.",
+    "branches": ["Bowen"],
+    "confidence": "Primary Source",
+    "sourceCitation": "Old Sutherland Cemetery grave marker (1848) and 1819 Ashby Loyal Volunteers militia muster.",
+    "historicalContext": "Canadian settlement and centenarian burial of Isreal Bowen (1748–1848)."
+  }
+]

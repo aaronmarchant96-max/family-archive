@@ -13,6 +13,8 @@ import {
 import { ConfidenceBadge } from "../ConfidenceBadge";
 import { SourcePreview } from "../SourcePreview";
 import { ContributeModal } from "../contribute/ContributeModal";
+import { DualAncestorComparator } from "./DualAncestorComparator";
+import { MigrationMapView } from "./MigrationMapView";
 
 interface FamilyTreeViewerProps {
   rawPeople: any[];
@@ -21,6 +23,10 @@ interface FamilyTreeViewerProps {
 
 export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps) {
   const graph = useMemo<FamilyTreeGraph>(() => buildFamilyTreeGraph(rawPeople), [rawPeople]);
+
+  // View mode: Tree Constellation vs Spatio-Temporal Migration Map
+  const [viewMode, setViewMode] = useState<"tree" | "migration">("tree");
+  const [isComparatorOpen, setIsComparatorOpen] = useState(false);
 
   // Viewport transformation state & ref for 60fps gesture performance
   const [zoom, setZoom] = useState(0.75);
@@ -593,68 +599,103 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             ))}
           </div>
 
-          {/* Quick Confidence & Patriot Filter Chips */}
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
-            <button
-              type="button"
-              onClick={() =>
-                setSelectedConfidence((prev) => (prev === "Primary Source" ? "" : "Primary Source"))
-              }
-              className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
-                selectedConfidence === "Primary Source"
-                  ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-xs"
-                  : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
-              }`}
-            >
-              🟢 Primary Sources Only
-            </button>
-            <button
-              type="button"
-              onClick={() =>
-                setSelectedConfidence((prev) => (prev === "Needs Review" ? "" : "Needs Review"))
-              }
-              className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
-                selectedConfidence === "Needs Review"
-                  ? "border-amber-600 bg-amber-50 text-amber-900 shadow-xs"
-                  : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
-              }`}
-            >
-              🟠 Needs Review
-            </button>
-            <button
-              type="button"
-              onClick={() => setFilterPatriotsOnly((prev) => !prev)}
-              className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
-                filterPatriotsOnly
-                  ? "border-amber-500 bg-amber-100 text-amber-950 font-bold shadow-xs"
-                  : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
-              }`}
-            >
-              ⭐ Patriots / SAR
-            </button>
+          {/* Quick Confidence & Patriot Filter Chips & View Switcher */}
+          <div className="flex items-center justify-between gap-2 overflow-x-auto no-scrollbar py-0.5">
+            <div className="flex items-center gap-1.5 shrink-0">
+              <button
+                type="button"
+                onClick={() =>
+                  setSelectedConfidence((prev) => (prev === "Primary Source" ? "" : "Primary Source"))
+                }
+                className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
+                  selectedConfidence === "Primary Source"
+                    ? "border-emerald-600 bg-emerald-50 text-emerald-900 shadow-xs"
+                    : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
+                }`}
+              >
+                🟢 Primary Sources Only
+              </button>
+              <button
+                type="button"
+                onClick={() =>
+                  setSelectedConfidence((prev) => (prev === "Needs Review" ? "" : "Needs Review"))
+                }
+                className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
+                  selectedConfidence === "Needs Review"
+                    ? "border-amber-600 bg-amber-50 text-amber-900 shadow-xs"
+                    : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
+                }`}
+              >
+                🟠 Needs Review
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilterPatriotsOnly((prev) => !prev)}
+                className={`rounded-full border px-2.5 py-1 text-[11px] font-semibold transition shrink-0 ${
+                  filterPatriotsOnly
+                    ? "border-amber-500 bg-amber-100 text-amber-950 font-bold shadow-xs"
+                    : "border-black/5 bg-white/60 text-black/70 hover:bg-white"
+                }`}
+              >
+                ⭐ Patriots / SAR
+              </button>
+            </div>
+
+            {/* Workbench Modes: Tree vs Migration Map + Comparator */}
+            <div className="flex items-center gap-1.5 shrink-0 pl-2 border-l border-black/10">
+              <button
+                type="button"
+                onClick={() => setViewMode((prev) => (prev === "tree" ? "migration" : "tree"))}
+                className={`rounded-full border px-3 py-1 text-[11px] font-semibold transition shadow-xs ${
+                  viewMode === "migration"
+                    ? "border-amber-600 bg-amber-500 text-white font-bold"
+                    : "border-black/10 bg-white/80 text-black/80 hover:bg-white"
+                }`}
+              >
+                {viewMode === "migration" ? "🌳 Tree View" : "🗺️ Migration Map"}
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsComparatorOpen(true)}
+                className="rounded-full border border-black/10 bg-white/80 px-3 py-1 text-[11px] font-semibold text-black/80 hover:bg-white shadow-xs"
+              >
+                ⚖️ Compare
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Canvas Viewport */}
-      <div
-        ref={containerRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        style={{
-          touchAction: "none",
-          overscrollBehavior: "contain"
-        }}
-        className={`relative overflow-hidden border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none transition-all duration-200 ${
-          isFullscreen
-            ? "fixed inset-0 z-50 rounded-none h-screen w-screen"
-            : "h-[70vh] min-h-[540px] sm:h-[760px] w-full rounded-[2rem]"
-        } ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
-      >
+      {/* Canvas Viewport or Migration Map View */}
+      {viewMode === "migration" ? (
         <div
-          ref={contentRef}
+          className={`relative overflow-hidden border border-[rgba(18,20,24,0.12)] bg-[#0c1015] shadow-inner transition-all duration-200 ${
+            isFullscreen
+              ? "fixed inset-0 z-50 rounded-none h-screen w-screen"
+              : "h-[70vh] min-h-[540px] sm:h-[760px] w-full rounded-[2rem]"
+          }`}
+        >
+          <MigrationMapView allNodes={graph.nodes} onSelectNode={focusNode} />
+        </div>
+      ) : (
+        <div
+          ref={containerRef}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          style={{
+            touchAction: "none",
+            overscrollBehavior: "contain"
+          }}
+          className={`relative overflow-hidden border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none transition-all duration-200 ${
+            isFullscreen
+              ? "fixed inset-0 z-50 rounded-none h-screen w-screen"
+              : "h-[70vh] min-h-[540px] sm:h-[760px] w-full rounded-[2rem]"
+          } ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
+        >
+          <div
+            ref={contentRef}
           style={{
             transform: `translate3d(${pan.x}px, ${pan.y}px, 0) scale(${zoom})`,
             transformOrigin: "0 0",
@@ -953,6 +994,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           </div>
         </div>
       </div>
+      )}
 
       {/* Responsive Inspector Drawer */}
       {activeNode && (
@@ -1235,24 +1277,32 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             ) : null}
 
             {/* Action Buttons */}
-            <div className="grid grid-cols-3 gap-2 pt-1">
+            <div className="grid grid-cols-4 gap-1.5 pt-1">
               <button
                 type="button"
                 onClick={handleCopyShareLink}
-                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2.5 text-center text-xs font-semibold text-[var(--archive-text)] shadow-xs transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
+                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2 text-center text-xs font-semibold text-[var(--archive-text)] shadow-xs transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
               >
-                {copyFeedback ? "✓ Copied!" : "🔗 Share"}
+                {copyFeedback ? "✓" : "🔗 Share"}
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsComparatorOpen(true)}
+                title="Open Side-by-Side Ancestor Comparator"
+                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2 text-center text-xs font-semibold text-[var(--archive-text)] shadow-xs transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
+              >
+                ⚖️ Diff
               </button>
               <button
                 type="button"
                 onClick={() => setIsContributeOpen(true)}
-                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2.5 text-center text-xs font-semibold text-[var(--archive-text)] shadow-xs transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
+                className="rounded-full border border-[rgba(18,20,24,0.15)] bg-white/80 py-2 text-center text-xs font-semibold text-[var(--archive-text)] shadow-xs transition hover:bg-white hover:border-[var(--archive-accent)] active:scale-95"
               >
                 + Memory
               </button>
               <Link
                 href={`/ancestors/${activeNode.id}`}
-                className="rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-2.5 text-center text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition hover:bg-[var(--archive-accent-soft)] active:scale-95 flex items-center justify-center"
+                className="rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-2 text-center text-xs font-semibold uppercase tracking-wider text-white shadow-xs transition hover:bg-[var(--archive-accent-soft)] active:scale-95 flex items-center justify-center"
               >
                 Dossier
               </Link>
@@ -1264,6 +1314,19 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             </div>
           </div>
         </div>
+      )}
+
+      {/* Dual Ancestor Comparator Modal */}
+      {isComparatorOpen && (
+        <DualAncestorComparator
+          initialNodeA={activeNode || graph.nodes[0]}
+          allNodes={graph.nodes}
+          onClose={() => setIsComparatorOpen(false)}
+          onSelectNode={(node) => {
+            focusNode(node);
+            setIsComparatorOpen(false);
+          }}
+        />
       )}
 
       {/* Contribute Modal */}

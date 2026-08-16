@@ -8,6 +8,7 @@ import type { DocumentCardProps } from "../../../components/DocumentCard";
 import type { AncestorCardProps } from "../../../components/AncestorCard";
 import { SourcePreview } from "../../../components/SourcePreview";
 import { TranscriptViewer } from "../../../components/TranscriptViewer";
+import { DocumentScanViewer } from "../../../components/documents/DocumentScanViewer";
 
 const documents = documentsData as DocumentCardProps[];
 const people = peopleData as AncestorCardProps[];
@@ -182,13 +183,8 @@ export default function DocumentDetailPage({ params }: { params: { id: string } 
         narrative={notes}
       />
 
-      {document.previewUrl ? (
-        <section className="archive-panel space-y-4">
-          <div className="archive-section__title">Primary source scan</div>
-          <div className="overflow-hidden rounded-2xl border border-[rgba(18,20,24,0.08)] bg-[rgba(18,20,24,0.03)]">
-            <SourcePreview src={document.previewUrl} title={document.filename} className="h-[34rem] w-full" />
-          </div>
-        </section>
+      {document.previewUrl || (document as any).regions?.length ? (
+        <DocumentScanViewer document={document as any} />
       ) : null}
 
       {/* Structured Transcript for Charles Dyer with search */}

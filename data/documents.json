@@ -80,7 +80,25 @@
     "narrative": "Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia in 1782. Confirms Josiah Ramsey Sr.'s Revolutionary War service in North Carolina, supporting patriot ancestor status.",
     "extractedSnippet": "Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia in 1782.",
     "v2_date_year": "1782",
-    "evidence_tier": "Primary Source"
+    "evidence_tier": "Primary Source",
+    "regions": [
+      {
+        "id": "region-voucher-amount",
+        "label": "Militia Pay Disbursement Amount & Date",
+        "page": 1,
+        "bbox": { "x": 12, "y": 28, "width": 76, "height": 22 },
+        "provesFact": "Disbursement of military pay to Josiah Ramsey for North Carolina militia service in 1782.",
+        "transcription": "State of North Carolina, Hillsborough District — Josiah Ramsey allowed four pounds, two shillings."
+      },
+      {
+        "id": "region-voucher-auditor-signatures",
+        "label": "Board of Auditors Signatures",
+        "page": 1,
+        "bbox": { "x": 15, "y": 62, "width": 70, "height": 25 },
+        "provesFact": "Official validation by North Carolina District Auditors.",
+        "transcription": "By order of the Board of Auditors."
+      }
+    ]
   },
   {
     "id": "josiah-ramsey-tennessee-land-grant",
@@ -400,7 +418,17 @@
     "narrative": "Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey. Provides supporting evidence for the family group and burial of the Tennessee/Iowa Ramsey line.",
     "extractedSnippet": "Memorial plaque names Josiah Ramsey, Elizabeth Cowan, and lists their children including Thomas Ramsey.",
     "v2_date_year": "",
-    "evidence_tier": "Strong Evidence"
+    "evidence_tier": "Strong Evidence",
+    "regions": [
+      {
+        "id": "region-plaque-inscription",
+        "label": "Josiah Ramsey & Elizabeth Cowan Plaque Dedication",
+        "page": 1,
+        "bbox": { "x": 10, "y": 25, "width": 80, "height": 45 },
+        "provesFact": "Memorial plaque inscription naming Josiah Ramsey and Elizabeth Cowan and listing children.",
+        "transcription": "Josiah Ramsey (1769–1835) & Elizabeth Cowan (1772–1848) • Pioneer Family Memorial"
+      }
+    ]
   },
   {
     "id": "josiah-ramsey-grave-marker",
@@ -539,7 +567,17 @@
     "branch": "",
     "extractedSnippet": "Thomas Ramsey + Anna + children together in 1850. Anderson Edwards / Armina nearby. Strong family-cluster record.",
     "v2_date_year": "1850",
-    "evidence_tier": "Primary Source"
+    "evidence_tier": "Primary Source",
+    "regions": [
+      {
+        "id": "region-census-1850-ramsey-household",
+        "label": "Thomas Ramsey Household (Lines 12–18)",
+        "page": 1,
+        "bbox": { "x": 5, "y": 38, "width": 90, "height": 20 },
+        "provesFact": "Enumeration of Thomas Ramsey (age 51, born TN) and family in Bloomfield, Davis County, Iowa.",
+        "transcription": "Thomas Ramsey, 51, M, Farmer, Born Tennessee; Anna, 50, F, Born VA; Alexander, 18, M; Narvesta, 15, F; Franklin, 13, M; Henderson, 11, M; Cowan, 8, M; Rachel, 5, F."
+      }
+    ]
   },
   {
     "id": "jabez-hopkins-rachel-clouse-marriage",
