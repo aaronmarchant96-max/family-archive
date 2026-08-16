@@ -4,6 +4,7 @@ import { useMemo, useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import {
   buildFamilyTreeGraph,
+  getConnectedLineage,
   BRANCH_COLORS,
   type PersonGraphNode,
   type FamilyTreeGraph,
@@ -56,9 +57,35 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const [searchQuery, setSearchQuery] = useState("");
   const [activeNode, setActiveNode] = useState<PersonGraphNode | null>(null);
   const [highlightedNodeId, setHighlightedNodeId] = useState<string | null>(null);
+  const [isFocusMode, setIsFocusMode] = useState(true);
   const [showMinimapMobile, setShowMinimapMobile] = useState(false);
   const [activeEpochId, setActiveEpochId] = useState<string>("colonial");
   const [isContributeOpen, setIsContributeOpen] = useState(false);
+
+  // Multi-generational connected lineage focus set
+  const focusedLineageSet = useMemo<Set<string> | null>(() => {
+    if (!isFocusMode) return null;
+    const targetId = activeNode?.id || highlightedNodeId;
+    if (!targetId) return null;
+    return getConnectedLineage(targetId, graph.nodeMap);
+  }, [isFocusMode, activeNode?.id, highlightedNodeId, graph.nodeMap]);
+
+  // SVG Export handler
+  const handleExportSvg = useCallback(() => {
+    const svgEl = document.querySelector(".tree-relationship-svg") as SVGElement;
+    if (!svgEl) return;
+    const serializer = new XMLSerializer();
+    const svgStr = serializer.serializeToString(svgEl);
+    const blob = new Blob([svgStr], { type: "image/svg+xml;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `family-lineage-tree-${new Date().toISOString().slice(0, 10)}.svg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }, []);
 
   // Search filtering
   const searchResults = useMemo(() => {
@@ -434,6 +461,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
 
           {/* 2. SVG Relationship Edges */}
           <svg
+            className="tree-relationship-svg"
             style={{
               position: "absolute",
               top: 0,
@@ -448,10 +476,16 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               const target = graph.nodeMap[edge.targetId];
               if (!source || !target) return null;
 
-              const isHighlighted =
+              const isEdgeInFocus =
+                !focusedLineageSet ||
+                (focusedLineageSet.has(edge.sourceId) && focusedLineageSet.has(edge.targetId));
+
+              const isBranchMatch =
                 !selectedBranch ||
                 source.branch === selectedBranch ||
                 target.branch === selectedBranch;
+
+              const isHighlighted = isEdgeInFocus && isBranchMatch;
 
               const sx = source.x + 120;
               const sy = source.y + 100;
@@ -468,12 +502,14 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   fill="none"
                   stroke={
                     isHighlighted
-                      ? BRANCH_COLORS[source.branch] || "rgba(225, 216, 203, 0.4)"
+                      ? focusedLineageSet
+                        ? "#f59e0b"
+                        : BRANCH_COLORS[source.branch] || "rgba(225, 216, 203, 0.4)"
                       : "rgba(255, 255, 255, 0.05)"
                   }
-                  strokeWidth={isHighlighted ? 2.5 : 1}
+                  strokeWidth={isHighlighted ? (focusedLineageSet ? 3.5 : 2.5) : 1}
                   strokeDasharray={edge.type === "spouse" ? "4,4" : undefined}
-                  opacity={isHighlighted ? 0.75 : 0.15}
+                  opacity={isHighlighted ? 0.85 : 0.08}
                   className="transition-all duration-300"
                 />
               );
@@ -483,8 +519,11 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           {/* 3. Ancestor Nodes */}
           {graph.nodes.map((node) => {
             const isBranchMatch = !selectedBranch || node.branch === selectedBranch;
+            const isNodeInFocus = !focusedLineageSet || focusedLineageSet.has(node.id);
             const isSelected = activeNode?.id === node.id;
             const isHighlighted = highlightedNodeId === node.id;
+
+            const finalOpacity = isNodeInFocus && isBranchMatch ? 1 : 0.16;
 
             return (
               <div
@@ -499,7 +538,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   top: node.y,
                   width: 240,
                   height: 100,
-                  opacity: isBranchMatch ? 1 : 0.22
+                  opacity: finalOpacity
                 }}
                 className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-150 hover:-translate-y-1 hover:shadow-2xl active:scale-95 ${
                   isSelected
@@ -523,11 +562,19 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   {node.name}
                 </div>
 
-                <div className="flex items-center justify-between text-[11px] opacity-75">
-                  <span>{node.lifespan}</span>
-                  <span className="text-[10px] uppercase tracking-wider text-[var(--archive-accent-soft)]">
-                    Gen {node.generation + 1}
-                  </span>
+                <div className="space-y-0.5">
+                  <div className="flex items-center justify-between text-[11px] opacity-75">
+                    <span>{node.lifespan}</span>
+                    <span className="text-[10px] uppercase tracking-wider text-[var(--archive-accent-soft)]">
+                      Gen {node.generation + 1}
+                    </span>
+                  </div>
+                  {node.location && (
+                    <div className="truncate text-[10px] text-[#e1d8cb]/60 flex items-center gap-1">
+                      <span className="text-amber-400 text-[10px]">📍</span>
+                      <span className="truncate">{node.location}</span>
+                    </div>
+                  )}
                 </div>
               </div>
             );
@@ -559,6 +606,14 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             className="px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#e1d8cb] hover:text-white"
           >
             Reset
+          </button>
+          <button
+            type="button"
+            onClick={handleExportSvg}
+            title="Download SVG layout of lineage tree"
+            className="px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-emerald-400 hover:text-emerald-300 border-l border-white/10"
+          >
+            Export SVG
           </button>
           <button
             type="button"
@@ -618,15 +673,34 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                 {activeNode.name}
               </h2>
               <div className="text-xs text-[var(--archive-text-soft)]">{activeNode.lifespan}</div>
+              {activeNode.location && (
+                <div className="text-xs text-[var(--archive-accent)] flex items-center gap-1 mt-1 font-medium">
+                  <span>📍</span> {activeNode.location}
+                </div>
+              )}
             </div>
-            <button
-              type="button"
-              onClick={() => setActiveNode(null)}
-              aria-label="Close drawer"
-              className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-base font-semibold text-[var(--archive-text)] transition hover:bg-[rgba(18,20,24,0.16)] active:scale-95"
-            >
-              ✕
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setIsFocusMode((prev) => !prev)}
+                title="Toggle lineage focus mode (highlights direct ancestors and descendants)"
+                className={`text-[10px] px-2.5 py-1.5 rounded-full border transition font-medium ${
+                  isFocusMode
+                    ? "bg-amber-100/90 border-amber-300 text-amber-900 shadow-sm"
+                    : "bg-black/5 border-black/10 text-black/60 hover:bg-black/10"
+                }`}
+              >
+                {isFocusMode ? "⚡ Lineage Focus: ON" : "Lineage Focus: OFF"}
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveNode(null)}
+                aria-label="Close drawer"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-base font-semibold text-[var(--archive-text)] transition hover:bg-[rgba(18,20,24,0.16)] active:scale-95"
+              >
+                ✕
+              </button>
+            </div>
           </div>
 
           <div className="mt-4 space-y-4 text-sm text-[var(--archive-text)]">
@@ -636,6 +710,21 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               </span>
               <ConfidenceBadge label={activeNode.confidence} />
             </div>
+
+            {/* Military / Revolutionary War Patriot Badge */}
+            {activeNode.sarLineStatus && (
+              <div className="rounded-2xl border border-amber-400/40 bg-amber-50/80 p-3.5 leading-5 text-amber-950 shadow-sm">
+                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-amber-900 flex items-center gap-1.5">
+                  <span className="text-sm">⭐</span> Revolutionary War Patriot
+                </div>
+                <div className="text-xs font-semibold text-amber-950">
+                  {activeNode.sarLineStatus.patriotAncestor || activeNode.name} — {activeNode.sarLineStatus.service}
+                </div>
+                <div className="text-[11px] text-amber-900/80 mt-1">
+                  Verified Record: <span className="font-medium">{activeNode.sarLineStatus.keyRecord}</span> ({activeNode.sarLineStatus.status})
+                </div>
+              </div>
+            )}
 
             {activeNode.summary && (
               <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5 leading-6">
@@ -652,6 +741,16 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   Key Historical Event
                 </div>
                 {activeNode.keyEvent}
+              </div>
+            )}
+
+            {/* Source Citation & Evidence */}
+            {activeNode.sourceCitation && (
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5 leading-6">
+                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                  Source Citation & Evidence
+                </div>
+                <div className="text-xs text-[var(--archive-text-soft)] italic">{activeNode.sourceCitation}</div>
               </div>
             )}
 

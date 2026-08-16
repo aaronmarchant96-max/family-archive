@@ -202,7 +202,8 @@
         "alice-bower"
       ],
       "child_ids": [
-        "josiah-ramsey-jr-1769"
+        "thomas-ramsey-before-1805",
+        "josiah-ramsey-1769"
       ]
     },
     "relationships_summary": {
@@ -211,7 +212,7 @@
     },
     "v2_birth_year": "1728",
     "v2_death_year": "1811",
-    "v2_notes": "Revolutionary War veteran with 1782 North Carolina pay voucher | Father of Thomas Ramsey (died before 1805) and Josiah Ramsey Jr. (1769-1835) | Marriage to Alice Bower in 1744 Delaware (needs verification) | Possible second marriage to Elizabeth Hollis/Grigsby | SAR/DAR eligible patriot ancestor | Status: Primary source confirmed for military service"
+    "v2_notes": "Revolutionary War veteran with 1782 North Carolina pay voucher | Father of Thomas Ramsey (died before 1805) and Josiah Ramsey (c. 1765/1769-1834) | Marriage to Alice Bower in 1744 Delaware (needs verification) | Possible second marriage to Elizabeth Hollis/Grigsby | SAR/DAR eligible patriot ancestor | Status: Primary source confirmed for military service"
   },
   {
     "id": "alice-bower",
@@ -260,7 +261,9 @@
       "spouse_ids": [
         "josiah-ramsey-sr-1728"
       ],
-      "child_ids": []
+      "child_ids": [
+        "thomas-ramsey-before-1805"
+      ]
     },
     "relationships_summary": {
       "mother_id": "",
@@ -273,11 +276,11 @@
   {
     "id": "thomas-ramsey-before-1805",
     "name": "Thomas Ramsey",
-    "lifespan": "????-before 1805",
+    "lifespan": "c. 1750-before 1805",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Sr. and Alice Bower; father of Josiah Ramsey Jr. (1769-1835). Missing link in the Ramsey lineage.",
-    "keyEvent": "Identified as the father of Josiah Ramsey Jr., establishing the connection between Josiah Sr. and Josiah Jr.",
+    "summary": "Son of Josiah Ramsey Sr. and Alice Bower; father of Josiah Ramsey (c. 1765/1769–1834). Connecting generation in the Ramsey lineage.",
+    "keyEvent": "Identified as the son of Josiah Ramsey Sr. and father of Josiah Ramsey, bridging Generation 2 and Generation 3.",
     "confidence": "Needs Review",
     "tags": [
       "Ramsey",
@@ -305,29 +308,29 @@
     ],
     "evidenceSummary": [
       "Son of Josiah Ramsey Sr. (1728-1811) and Alice Bower",
-      "Father of Josiah Ramsey Jr. (1769-1835)",
+      "Father of Josiah Ramsey (c. 1765/1769-1834)",
       "Missing link between Generation 2 and Generation 3",
       "RESEARCH PRIORITY: Find birth record, marriage record, and death record",
       "Possible locations: Delaware, Virginia, Maryland, or North Carolina"
     ],
     "sourceCitation": "",
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "alice-bower",
+      "father_id": "josiah-ramsey-sr-1728",
+      "mother_name": "Alice Bower",
+      "father_name": "Josiah Ramsey Sr.",
       "spouse_ids": [],
       "child_ids": [
-        "josiah-ramsey-jr-1769"
+        "josiah-ramsey-1769"
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "alice-bower",
+      "father_id": "josiah-ramsey-sr-1728"
     },
-    "v2_birth_year": "1805",
-    "v2_death_year": "",
-    "v2_notes": "Son of Josiah Ramsey Sr. (1728-1811) and Alice Bower | Father of Josiah Ramsey Jr. (1769-1835) | Missing link between Generation 2 and Generation 3 | RESEARCH PRIORITY: Find birth record, marriage record, and death record | Possible locations: Delaware, Virginia, Maryland, or North Carolina"
+    "v2_birth_year": "1750",
+    "v2_death_year": "1804",
+    "v2_notes": "Son of Josiah Ramsey Sr. (1728-1811) and Alice Bower | Father of Josiah Ramsey (c. 1765/1769-1834) | Connecting generation between Generation 2 and Generation 3 | RESEARCH PRIORITY: Find birth record, marriage record, and death record | Possible locations: Delaware, Virginia, Maryland, or North Carolina"
   },
   {
     "id": "james-ramsey-1825",
@@ -926,22 +929,26 @@
       "Status: Strong evidence for family group and Iowa residence; birth/death dates from secondary Ancestry profile"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
-      "spouse_ids": [],
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
+      "spouse_ids": [
+        "anna-hopkins-ramsey"
+      ],
       "child_ids": [
-        "armina-ramsey"
+        "armina-ramsey",
+        "james-ramsey-1825",
+        "josiah-ramsey-1834"
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1799",
     "v2_death_year": "1872",
-    "v2_notes": "Child of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Husband of Anna Hopkins (1807-1883) | Father of Armina Ramsey (1826-1923), Alexander Ramsey (1832-1915), Josiah Ramsey (1834-1910), and other children | 1850 federal census household in Bloomfield Township, Davis County, Iowa (Primary Source, with nearby Edwards households) | 1856 state census household in Richland Township, Decatur County, Iowa (Primary Source) | 1860 federal census household in Richland Township, Decatur County, Iowa (Primary Source) | Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan | Ancestry profile gives birth 9 Dec 1799 TN and death 18 Aug 1872 Bentonville AR (secondary source; vitals need primary confirmation) | Key documents: 1850, 1856, and 1860 censuses (strong for residence and family); memorial plaque | Status: Strong evidence for family group and Iowa residence; birth/death dates from secondary Ancestry profile"
+    "v2_notes": "Child of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Husband of Anna Hopkins (1807-1883) | Father of Armina Ramsey (1826-1923), James Ramsey (1825-1909), Josiah Ramsey (1834-deceased), and other children | 1850 federal census household in Bloomfield Township, Davis County, Iowa (Primary Source, with nearby Edwards households) | 1856 state census household in Richland Township, Decatur County, Iowa (Primary Source) | 1860 federal census household in Richland Township, Decatur County, Iowa (Primary Source) | Family memorial plaque names Thomas Ramsey among the children of Josiah Ramsey and Elizabeth Cowan | Ancestry profile gives birth 9 Dec 1799 TN and death 18 Aug 1872 Bentonville AR (secondary source; vitals need primary confirmation) | Key documents: 1850, 1856, and 1860 censuses (strong for residence and family); memorial plaque | Status: Strong evidence for family group and Iowa residence; birth/death dates from secondary Ancestry profile"
   },
   {
     "id": "anna-hopkins-ramsey",
@@ -1046,8 +1053,14 @@
       "father_id": "jabez-hopkins",
       "mother_name": "Rachel Clouse",
       "father_name": "Jabez Hopkins",
-      "spouse_ids": [],
-      "child_ids": []
+      "spouse_ids": [
+        "thomas-ramsey-1799"
+      ],
+      "child_ids": [
+        "armina-ramsey",
+        "james-ramsey-1825",
+        "josiah-ramsey-1834"
+      ]
     },
     "relationships_summary": {
       "mother_id": "rachel-clouse",
@@ -1611,16 +1624,16 @@
       "Family note says he went to California in 1854; keep that separate until it is independently documented."
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
+      "mother_id": "anna-hopkins-ramsey",
+      "father_id": "thomas-ramsey-1799",
       "mother_name": "Anna Hopkins",
       "father_name": "Thomas Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "anna-hopkins-ramsey",
+      "father_id": "thomas-ramsey-1799"
     },
     "v2_birth_year": "1834",
     "v2_death_year": "",
@@ -1748,21 +1761,30 @@
     ],
     "relationships": {
       "mother_id": "",
-      "father_id": "",
+      "father_id": "thomas-ramsey-before-1805",
       "mother_name": "",
-      "father_name": "",
+      "father_name": "Thomas Ramsey",
       "spouse_ids": [
         "elizabeth-cowan"
       ],
-      "child_ids": []
+      "child_ids": [
+        "thomas-ramsey-1799",
+        "alexander-ramsey-1832",
+        "narvesta-ramsey-1835",
+        "franklin-ramsey-1837",
+        "henderson-ramsey-1839",
+        "cowan-ramsey-1842",
+        "rachel-ramsey-1845",
+        "william-ramsey-1853"
+      ]
     },
     "relationships_summary": {
       "mother_id": "",
-      "father_id": ""
+      "father_id": "thomas-ramsey-before-1805"
     },
-    "v2_birth_year": "1765",
-    "v2_death_year": "1769",
-    "v2_notes": "Husband of Elizabeth Cowan | Spouse: Elizabeth Cowan | Strongly supported father of Thomas Ramsey (1799-1872) | Birth year and birthplace unresolved (cross-referenced duplicate profile josiah-ramsey-jr-1769 with 1769-1835 dates) | 1810 Pennsylvania attachment excluded from the working line | War of 1812 service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia | Rank at induction: Lieutenant; rank at discharge: Adjutant | State of Tennessee land grant places Josiah Ramsey on Mulberry Creek in Claiborne County | Tennessee residence trail | Family memorial plaque supports the family group | Open questions: exact birth year/place, exact military identity, and a contemporary probate/deed bridge. Duplicate representation in josiah-ramsey-jr-1769 should be merged or one marked canonical."
+    "v2_birth_year": "1769",
+    "v2_death_year": "1834",
+    "v2_notes": "Husband of Elizabeth Cowan | Spouse: Elizabeth Cowan | Strongly supported father of Thomas Ramsey (1799-1872) | Birth year unresolved (1765 Census vs 1769 Family Bible conflict; FamilySearch ID: KP91-M2Y) | 1810 Pennsylvania attachment excluded from the working line | War of 1812 service record names Josiah Ramsey in the 14 REG'T (MITCHISSON'S) Kentucky Militia | Rank at induction: Lieutenant; rank at discharge: Adjutant | State of Tennessee land grant places Josiah Ramsey on Mulberry Creek in Claiborne County | Tennessee residence trail | Family memorial plaque supports the family group"
   },
   {
     "id": "elizabeth-cowan",
@@ -1770,9 +1792,9 @@
     "lifespan": "1770-1840",
     "era": "Cowan",
     "branch": "Cowan",
-    "summary": "Spouse of Josiah Ramsey Jr. Birth year unverified; requires source documentation to confirm chronological plausibility against children's birth dates.",
-    "keyEvent": "Mother of 8 children with Josiah Ramsey Jr., spanning 1832–1853",
-    "confidence": "Needs Review",
+    "summary": "Spouse of Josiah Ramsey (c. 1765/1769–1834). Mother of Thomas Ramsey (1799-1872) and children spanning the Tennessee and Iowa line.",
+    "keyEvent": "Mother of Thomas Ramsey (1799-1872) and children on the Ramsey family memorial plaque.",
+    "confidence": "Strong Evidence",
     "tags": [
       "Cowan",
       "Ramsey",
@@ -1781,7 +1803,7 @@
       "Generation 3"
     ],
     "attachedDocument": "josiah-ramsey-grave-marker.jpg",
-    "sourceCitation": "Family memorial plaque and grave marker for Josiah Ramsey Jr. and Elizabeth Cowan. FamilySearch profiles confirm their children including Thomas Ramsey (1799-1872).",
+    "sourceCitation": "Family memorial plaque and grave marker for Josiah Ramsey and Elizabeth Cowan. FamilySearch profiles confirm their children including Thomas Ramsey (1799-1872).",
     "timeline": [
       {
         "title": "Birth",
@@ -1792,9 +1814,9 @@
         "place": "Maryland or Tennessee"
       },
       {
-        "title": "Marriage to Josiah Ramsey Jr.",
+        "title": "Marriage to Josiah Ramsey",
         "date": "circa 1790-1795",
-        "summary": "Married Josiah Ramsey Jr., establishing the Tennessee Ramsey family line.",
+        "summary": "Married Josiah Ramsey, establishing the Tennessee Ramsey family line.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee or Maryland"
@@ -1810,7 +1832,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Elizabeth Cowan with Josiah Ramsey Jr. and lists their children, including Thomas Ramsey (1799-1872).",
+        "summary": "The memorial plaque names Elizabeth Cowan with Josiah Ramsey and lists their children, including Thomas Ramsey (1799-1872).",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -1818,7 +1840,7 @@
       {
         "title": "Grave marker",
         "date": "1993-09-05",
-        "summary": "The grave marker names Elizabeth Cowan with Josiah C. Ramsey Jr. and records the memorial dedication date.",
+        "summary": "The grave marker names Elizabeth Cowan with Josiah C. Ramsey and records the memorial dedication date.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-grave-marker",
         "place": "Ramsey memorial site"
@@ -1833,25 +1855,33 @@
       }
     ],
     "evidenceSummary": [
-      "Wife of Josiah Ramsey Jr. (1769-1835)",
-      "Mother of Thomas Ramsey (1799-1872) and at least 9 other children",
+      "Wife of Josiah Ramsey (c. 1765/1769-1834)",
+      "Mother of Thomas Ramsey (1799-1872) and children on the memorial plaque",
       "Named on the Ramsey family memorial plaque",
-      "Named on the Josiah C. Ramsey Jr. and Elizabeth Cowan grave marker",
+      "Named on the Josiah C. Ramsey and Elizabeth Cowan grave marker",
       "Died June 1840 in Mulberry Gap, Hancock, Tennessee",
       "Key memorial records are private scans in the archive",
       "Supports the Ramsey line through Thomas Ramsey to Iowa"
     ],
-    "bio": "Elizabeth Cowan (spouse of Josiah Ramsey Jr., 1769–1835). Mother of Alexander, Josiah, Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey. Birth year unverified; chronological plausibility of late children (born 1853) against presumed birth year (c. 1770) requires source verification.",
+    "bio": "Elizabeth Cowan (spouse of Josiah Ramsey, c. 1765/1769–1834). Mother of Thomas, Alexander, Narvesta, Franklin, Henderson, Cowan, Rachel, and William Ramsey.",
     "relationships": {
       "mother_id": "",
       "father_id": "",
       "mother_name": "",
       "father_name": "",
       "spouse_ids": [
-        "josiah-ramsey-jr-1769",
         "josiah-ramsey-1769"
       ],
-      "child_ids": []
+      "child_ids": [
+        "thomas-ramsey-1799",
+        "alexander-ramsey-1832",
+        "narvesta-ramsey-1835",
+        "franklin-ramsey-1837",
+        "henderson-ramsey-1839",
+        "cowan-ramsey-1842",
+        "rachel-ramsey-1845",
+        "william-ramsey-1853"
+      ]
     },
     "relationships_summary": {
       "mother_id": "",
@@ -3535,20 +3565,20 @@
       "Lived 83 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1832",
     "v2_death_year": "1915",
-    "v2_notes": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1832, died 1915 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 83 years"
+    "v2_notes": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1832, died 1915 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 83 years"
   },
   {
     "id": "josiah-ramsey-1834-memorial",
@@ -3556,8 +3586,8 @@
     "lifespan": "1834-1910",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3566,12 +3596,12 @@
       "Tennessee",
       "Generation 4"
     ],
-    "sourceCitation": "Ramsey family memorial plaque naming Josiah Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque naming Josiah Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
     "timeline": [
       {
         "title": "Birth",
         "date": "1834",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3579,7 +3609,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Josiah Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Josiah Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -3594,23 +3624,23 @@
       }
     ],
     "evidenceSummary": [
-      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1834, died 1910",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
       "Lived 76 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1834",
     "v2_death_year": "1910",
@@ -3658,20 +3688,20 @@
       "RESEARCH NOTE: Death date unknown"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1835",
     "v2_death_year": "",
-    "v2_notes": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1835 | Sister of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | RESEARCH NOTE: Death date unknown"
+    "v2_notes": "Daughter of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1835 | Sister of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | RESEARCH NOTE: Death date unknown"
   },
   {
     "id": "franklin-ramsey-1837",
@@ -3679,8 +3709,8 @@
     "lifespan": "1837-1925",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Lived to age 88.",
+    "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan. Lived to age 88.",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3694,7 +3724,7 @@
       {
         "title": "Birth",
         "date": "1837",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3702,7 +3732,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Franklin Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Franklin Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -3725,7 +3755,7 @@
       }
     ],
     "evidenceSummary": [
-      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1837, died 1925",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
@@ -3733,20 +3763,20 @@
       "Lived 88 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1837",
     "v2_death_year": "1925",
-    "v2_notes": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1837, died 1925 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856 | Lived 88 years"
+    "v2_notes": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1837, died 1925 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856 | Lived 88 years"
   },
   {
     "id": "henderson-ramsey-1839",
@@ -3754,8 +3784,8 @@
     "lifespan": "1839-1903",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3769,7 +3799,7 @@
       {
         "title": "Birth",
         "date": "1839",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3777,7 +3807,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Henderson Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Henderson Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -3800,7 +3830,7 @@
       }
     ],
     "evidenceSummary": [
-      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1839, died 1903",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
@@ -3808,20 +3838,20 @@
       "Lived 64 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1839",
     "v2_death_year": "1903",
-    "v2_notes": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1839, died 1903 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856 | Lived 64 years"
+    "v2_notes": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1839, died 1903 | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Resided in the household of his brother Thomas Ramsey in Richland Township, Decatur County, Iowa in 1856 | Lived 64 years"
   },
   {
     "id": "cowan-ramsey-1842",
@@ -3829,8 +3859,8 @@
     "lifespan": "1842-?",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Named after his mother's family. Brother of Thomas Ramsey (1799-1872).",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Named after his mother's family. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3838,12 +3868,12 @@
       "Tennessee",
       "Generation 4"
     ],
-    "sourceCitation": "Ramsey family memorial plaque naming Cowan Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque naming Cowan Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
     "timeline": [
       {
         "title": "Birth",
         "date": "1842",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee. Named after his Cowan ancestors.",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee. Named after his Cowan ancestors.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3851,14 +3881,14 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Cowan Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Cowan Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
       }
     ],
     "evidenceSummary": [
-      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1842",
       "Named after Cowan family",
       "Brother of Thomas Ramsey (1799-1872)",
@@ -3866,20 +3896,20 @@
       "RESEARCH NOTE: Death date unknown"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1842",
     "v2_death_year": "",
-    "v2_notes": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1842 | Named after Cowan family | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | RESEARCH NOTE: Death date unknown"
+    "v2_notes": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1842 | Named after Cowan family | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | RESEARCH NOTE: Death date unknown"
   },
   {
     "id": "rachel-ramsey-1845",
@@ -3887,8 +3917,8 @@
     "lifespan": "1845-1933",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872). Lived to age 88.",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan.",
+    "summary": "Daughter of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Sister of Thomas Ramsey (1799-1872). Lived to age 88.",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan.",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3897,12 +3927,12 @@
       "Iowa",
       "Generation 4"
     ],
-    "sourceCitation": "Ramsey family memorial plaque naming Rachel Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque naming Rachel Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
     "timeline": [
       {
         "title": "Birth",
         "date": "1845",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee.",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3910,7 +3940,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names Rachel Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names Rachel Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -3925,27 +3955,27 @@
       }
     ],
     "evidenceSummary": [
-      "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Daughter of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1845, died 1933",
       "Sister of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
       "Lived 88 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1845",
     "v2_death_year": "1933",
-    "v2_notes": "Daughter of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1845, died 1933 | Sister of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 88 years"
+    "v2_notes": "Daughter of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1845, died 1933 | Sister of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 88 years"
   },
   {
     "id": "william-ramsey-1853",
@@ -3953,8 +3983,8 @@
     "lifespan": "1853-1941",
     "era": "Ramsey",
     "branch": "Ramsey",
-    "summary": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan. Youngest child, lived to age 88. Brother of Thomas Ramsey (1799-1872).",
-    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey Jr. and Elizabeth Cowan. Named after his great-grandfather William Ramsey (1675-1745).",
+    "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Youngest child, lived to age 88. Brother of Thomas Ramsey (1799-1872).",
+    "keyEvent": "Listed on the Ramsey family memorial plaque as a child of Josiah Ramsey and Elizabeth Cowan. Named after his great-grandfather William Ramsey (1675-1745).",
     "confidence": "Strong Evidence",
     "tags": [
       "Ramsey",
@@ -3963,12 +3993,12 @@
       "Iowa",
       "Generation 4"
     ],
-    "sourceCitation": "Ramsey family memorial plaque naming William Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan",
+    "sourceCitation": "Ramsey family memorial plaque naming William Ramsey among the children of Josiah Ramsey and Elizabeth Cowan",
     "timeline": [
       {
         "title": "Birth",
         "date": "1853",
-        "summary": "Born to Josiah Ramsey Jr. and Elizabeth Cowan in Tennessee. Named after his great-grandfather William Ramsey (1675-1745).",
+        "summary": "Born to Josiah Ramsey and Elizabeth Cowan in Tennessee. Named after his great-grandfather William Ramsey (1675-1745).",
         "confidence": "Strong Evidence",
         "linkedDocumentId": null,
         "place": "Tennessee"
@@ -3976,7 +4006,7 @@
       {
         "title": "Family memorial plaque",
         "date": "1993",
-        "summary": "The memorial plaque names William Ramsey among the children of Josiah Ramsey Jr. and Elizabeth Cowan.",
+        "summary": "The memorial plaque names William Ramsey among the children of Josiah Ramsey and Elizabeth Cowan.",
         "confidence": "Strong Evidence",
         "linkedDocumentId": "josiah-ramsey-family-plaque",
         "place": "Ramsey family memorial site"
@@ -3991,29 +4021,29 @@
       }
     ],
     "evidenceSummary": [
-      "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840)",
+      "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840)",
       "Born 1853, died 1941",
-      "Youngest child of Josiah Jr. and Elizabeth",
+      "Youngest child of Josiah and Elizabeth",
       "Named after William Ramsey (1675-1745)",
       "Brother of Thomas Ramsey (1799-1872)",
       "Named on the Ramsey family memorial plaque",
       "Lived 88 years"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769",
+      "mother_name": "Elizabeth Cowan",
+      "father_name": "Josiah Ramsey",
       "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-cowan",
+      "father_id": "josiah-ramsey-1769"
     },
     "v2_birth_year": "1853",
     "v2_death_year": "1941",
-    "v2_notes": "Son of Josiah Ramsey Jr. (1769-1835) and Elizabeth Cowan (1770-1840) | Born 1853, died 1941 | Youngest child of Josiah Jr. and Elizabeth | Named after William Ramsey (1675-1745) | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 88 years"
+    "v2_notes": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan (1770-1840) | Born 1853, died 1941 | Youngest child of Josiah and Elizabeth | Named after William Ramsey (1675-1745) | Brother of Thomas Ramsey (1799-1872) | Named on the Ramsey family memorial plaque | Lived 88 years"
   },
   {
     "id": "nehemiah-hopkins",

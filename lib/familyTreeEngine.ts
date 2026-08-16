@@ -16,9 +16,11 @@ export interface PersonGraphNode {
   confidence: string;
   summary: string;
   keyEvent: string;
+  location?: string;
   tags?: string[];
   attachedDocument?: string;
   sourceCitation?: string;
+  sarLineStatus?: any;
   fatherId?: string;
   motherId?: string;
   spouseIds: string[];
@@ -215,6 +217,7 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
     const motherId = rels.mother_id || "";
     const spouseIds = Array.isArray(rels.spouse_ids) ? rels.spouse_ids.filter(Boolean) : [];
     const childIds = Array.isArray(rels.child_ids) ? rels.child_ids.filter(Boolean) : [];
+    const location = raw.birth_place || raw.location || raw.residence || (Array.isArray(raw.timeline) && raw.timeline.find((t: any) => t && t.place)?.place) || "";
 
     nodeMap[raw.id] = {
       id: raw.id,
@@ -227,9 +230,11 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
       confidence: raw.confidence || "Needs Review",
       summary: raw.summary || "",
       keyEvent: raw.keyEvent || "",
+      location: location ? String(location).trim() : undefined,
       tags: raw.tags || [],
       attachedDocument: raw.attachedDocument,
       sourceCitation: raw.sourceCitation,
+      sarLineStatus: raw.sarLineStatus,
       fatherId: fatherId || undefined,
       motherId: motherId || undefined,
       spouseIds,
@@ -402,4 +407,55 @@ export function buildFamilyTreeGraph(rawPeople: any[]): FamilyTreeGraph {
     },
     branches
   };
+}
+
+/**
+ * Computes the full set of connected ancestor and descendant IDs for a given focused node.
+ * Includes parents, grandparents, children, grandchildren, and direct spouses.
+ */
+export function getConnectedLineage(nodeId: string, nodeMap: Record<string, PersonGraphNode>): Set<string> {
+  const lineage = new Set<string>();
+  if (!nodeId || !nodeMap[nodeId]) return lineage;
+
+  lineage.add(nodeId);
+
+  // Recursive ancestor traversal
+  const traceAncestors = (currId: string) => {
+    const curr = nodeMap[currId];
+    if (!curr) return;
+    if (curr.fatherId && nodeMap[curr.fatherId] && !lineage.has(curr.fatherId)) {
+      lineage.add(curr.fatherId);
+      traceAncestors(curr.fatherId);
+    }
+    if (curr.motherId && nodeMap[curr.motherId] && !lineage.has(curr.motherId)) {
+      lineage.add(curr.motherId);
+      traceAncestors(curr.motherId);
+    }
+  };
+
+  // Recursive descendant traversal
+  const traceDescendants = (currId: string) => {
+    const curr = nodeMap[currId];
+    if (!curr) return;
+    const children = curr.childIds || [];
+    for (const childId of children) {
+      if (nodeMap[childId] && !lineage.has(childId)) {
+        lineage.add(childId);
+        traceDescendants(childId);
+      }
+    }
+  };
+
+  traceAncestors(nodeId);
+  traceDescendants(nodeId);
+
+  // Direct spouses of the focused ancestor
+  const active = nodeMap[nodeId];
+  if (active && active.spouseIds) {
+    for (const spId of active.spouseIds) {
+      if (nodeMap[spId]) lineage.add(spId);
+    }
+  }
+
+  return lineage;
 }

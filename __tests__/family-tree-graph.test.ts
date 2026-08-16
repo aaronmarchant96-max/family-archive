@@ -1,6 +1,7 @@
 import peopleData from "../data/people.json";
 import {
   buildFamilyTreeGraph,
+  getConnectedLineage,
   parseBirthYear,
   calculateNodePosition3D
 } from "../lib/familyTreeEngine";
@@ -76,5 +77,31 @@ describe("Family tree graph engine", () => {
   test("computes valid positive canvas bounds", () => {
     expect(graph.bounds.width).toBeGreaterThan(1000);
     expect(graph.bounds.height).toBeGreaterThan(500);
+  });
+
+  test("getConnectedLineage traces multi-generational ancestor and descendant chains", () => {
+    const lineage = getConnectedLineage("josiah-ramsey-1769", graph.nodeMap);
+    expect(lineage.has("josiah-ramsey-1769")).toBe(true);
+    // Ancestors: father Thomas Ramsey (before 1805) and grandfather Josiah Ramsey Sr. (1728)
+    expect(lineage.has("thomas-ramsey-before-1805")).toBe(true);
+    expect(lineage.has("josiah-ramsey-sr-1728")).toBe(true);
+    // Descendants: son Thomas Ramsey (1799) and granddaughter Armina Ramsey
+    expect(lineage.has("thomas-ramsey-1799")).toBe(true);
+    expect(lineage.has("armina-ramsey")).toBe(true);
+    // Spouse: Elizabeth Cowan
+    expect(lineage.has("elizabeth-cowan")).toBe(true);
+  });
+
+  test("populates location metadata on nodes from historical records", () => {
+    const sr = graph.nodeMap["josiah-ramsey-sr-1728"];
+    expect(sr).toBeDefined();
+    expect(sr.location).toBeDefined();
+    expect(sr.location).toContain("Delaware");
+  });
+
+  test("aligns Thomas Ramsey (before 1805) to Generation 2 (Gen 3 display)", () => {
+    const tr = graph.nodeMap["thomas-ramsey-before-1805"];
+    expect(tr).toBeDefined();
+    expect(tr.generation).toBe(2); // 0-indexed: Gen 1 (0), Gen 2 (1), Gen 3 (2)
   });
 });
