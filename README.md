@@ -54,6 +54,30 @@ A private living archive for family records, source-linked review, evidence-tier
 
 ---
 
+## Evidence Tiering & Provenance Discipline
+
+The archive classifies all claims and records into explicit confidence tiers to keep confirmed historical evidence distinct from family tradition and open research questions:
+
+| Confidence Tier | Visual Badge | Criteria & Standard of Proof |
+| :--- | :--- | :--- |
+| **Primary Source** | 🟢 Green | Contemporary civil/church registers, wills, census returns, or original land grants. |
+| **Confirmed** | 🟢 Green | Multiple independent primary sources agree; direct parent-child proof chain established. |
+| **Strong Evidence** | 🔵 Blue | Official military discharge affidavits, gravestones, town records, or verified census clusters. |
+| **Corroborated Compilation** | 🔵 Blue | Preserved family bibles, county histories, or published genealogies with cross-source agreement. |
+| **Needs Review / Proof** | 🟠 Amber | Competing source records, birth year disputes, or unverified secondary tree compilations. |
+
+---
+
+## Revolutionary War (SAR / DAR) Patriot Proof Chains
+
+The archive maintains primary source evidence packages for several verified patriot ancestors:
+
+- **Josiah Ramsey Sr. (1728–1811):** North Carolina Militia service supported by original 1782 Hillsborough District Pay Voucher and 1827/1828 Tennessee land grants.
+- **Charles Dyer (1753–1844):** Continental Army service in Captain William McKee's company, 12th Virginia Regiment; anchored by original 1778 Fort Randolph Discharge Certificate and 1855 court affidavit.
+- **Nehemiah Hopkins (1743–1824):** Vermont Militia service (1778) and subsequent Tennessee land grants.
+
+---
+
 ## Data Schema & Types (`lib/types/genealogy.ts`)
 
 - `PersonRecord`: 133+ ancestor profiles with structured birth-year dispute arrays (`birth_year_sources`), aliases, SAR service status, and bidirectional parent/child relationships.
@@ -81,6 +105,15 @@ npm test
 | `contribution-store.test.ts` | Contribution storage, deduplication, and review workflows |
 | `genealogy-v2-schema.test.ts` | V2 schema validation and backward compatibility |
 | `children-of-frontier.test.ts` | Historical event timeline parsing and educational module tests |
+
+---
+
+## Tech Stack & Architecture
+
+- **Framework:** Next.js 14.2 (App Router) + TypeScript + Tailwind CSS
+- **Visualization:** Hardware-accelerated 60fps SVG/Canvas coordinate mapping engine
+- **Testing:** Jest + ts-jest with strict schema assertions and full-graph snapshot pinning
+- **Deployment:** Vercel Edge Platform
 
 ---
 
