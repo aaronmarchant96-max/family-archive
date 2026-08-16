@@ -21,13 +21,35 @@ interface FamilyTreeViewerProps {
 export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps) {
   const graph = useMemo<FamilyTreeGraph>(() => buildFamilyTreeGraph(rawPeople), [rawPeople]);
 
-  // Viewport transformation state
+  // Viewport transformation state & ref for 60fps gesture performance
   const [zoom, setZoom] = useState(0.75);
   const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
+  const stateRef = useRef({ zoom: 0.75, panX: 0, panY: 0, isDragging: false });
   const dragStartRef = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
   const touchDistanceRef = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  // Keep stateRef synced with React state
+  useEffect(() => {
+    stateRef.current.zoom = zoom;
+    stateRef.current.panX = pan.x;
+    stateRef.current.panY = pan.y;
+    stateRef.current.isDragging = isDragging;
+  }, [zoom, pan, isDragging]);
+
+  // Direct GPU transform updater
+  const updateTransform = useCallback((newPanX: number, newPanY: number, newZoom: number) => {
+    stateRef.current.panX = newPanX;
+    stateRef.current.panY = newPanY;
+    stateRef.current.zoom = newZoom;
+    if (contentRef.current) {
+      contentRef.current.style.transform = `translate3d(${newPanX}px, ${newPanY}px, 0) scale(${newZoom})`;
+    }
+    setPan({ x: newPanX, y: newPanY });
+    setZoom(newZoom);
+  }, []);
 
   // Interaction state
   const [selectedBranch, setSelectedBranch] = useState<string>("");
@@ -47,7 +69,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     ).slice(0, 8);
   }, [searchQuery, graph.nodes]);
 
-  // Center on specific node
+  // Center on specific node with smooth spring glide
   const focusNode = useCallback((node: PersonGraphNode) => {
     if (!containerRef.current) return;
     const { clientWidth, clientHeight } = containerRef.current;
@@ -55,12 +77,11 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     const targetZoom = isMobile ? 0.95 : 1.05;
     const targetX = clientWidth / 2 - (node.x + 120) * targetZoom;
     const targetY = (isMobile ? clientHeight * 0.32 : clientHeight / 2) - (node.y + 50) * targetZoom;
-    setZoom(targetZoom);
-    setPan({ x: targetX, y: targetY });
+    updateTransform(targetX, targetY, targetZoom);
     setHighlightedNodeId(node.id);
     setActiveNode(node);
     setSearchQuery("");
-  }, []);
+  }, [updateTransform]);
 
   // Jump to specific historical epoch
   const jumpToEpoch = useCallback((epoch: EpochStrata) => {
@@ -70,12 +91,29 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     const targetZoom = isMobile ? 0.65 : 0.8;
     const targetX = (clientWidth - graph.bounds.width * targetZoom) / 2;
     const targetY = clientHeight * 0.2 - epoch.yStart * targetZoom;
-    setZoom(targetZoom);
-    setPan({ x: targetX, y: targetY });
+    updateTransform(targetX, targetY, targetZoom);
     setActiveEpochId(epoch.id);
-  }, [graph.bounds.width]);
+  }, [graph.bounds.width, updateTransform]);
 
-  // Mouse pan handlers
+  // Reset / Initial View: Centered nicely on the earliest generation
+  const resetView = useCallback(() => {
+    if (!containerRef.current) return;
+    const { clientWidth } = containerRef.current;
+    const isMobile = clientWidth < 640;
+    const initialZoom = isMobile ? 0.6 : 0.75;
+    const initialX = (clientWidth - graph.bounds.width * initialZoom) / 2;
+    const initialY = isMobile ? 30 : 50;
+    updateTransform(initialX, initialY, initialZoom);
+    setSelectedBranch("");
+    setHighlightedNodeId(null);
+    setActiveEpochId("colonial");
+  }, [graph.bounds.width, updateTransform]);
+
+  useEffect(() => {
+    resetView();
+  }, [resetView]);
+
+  // Mouse drag handlers
   const handleMouseDown = (e: React.MouseEvent) => {
     if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
       return;
@@ -84,97 +122,110 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     dragStartRef.current = {
       x: e.clientX,
       y: e.clientY,
-      panX: pan.x,
-      panY: pan.y
+      panX: stateRef.current.panX,
+      panY: stateRef.current.panY
     };
   };
 
   const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging) return;
+    if (!stateRef.current.isDragging) return;
     const dx = e.clientX - dragStartRef.current.x;
     const dy = e.clientY - dragStartRef.current.y;
-    setPan({
-      x: dragStartRef.current.panX + dx,
-      y: dragStartRef.current.panY + dy
-    });
+    const nextPanX = dragStartRef.current.panX + dx;
+    const nextPanY = dragStartRef.current.panY + dy;
+    updateTransform(nextPanX, nextPanY, stateRef.current.zoom);
   };
 
   const handleMouseUp = () => {
     setIsDragging(false);
   };
 
-  // Touch handlers for mobile pan & pinch-zoom
-  const handleTouchStart = (e: React.TouchEvent) => {
-    if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
-      return;
-    }
-    if (e.touches.length === 1) {
-      setIsDragging(true);
-      dragStartRef.current = {
-        x: e.touches[0].clientX,
-        y: e.touches[0].clientY,
-        panX: pan.x,
-        panY: pan.y
-      };
-      touchDistanceRef.current = null;
-    } else if (e.touches.length === 2) {
-      setIsDragging(false);
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      touchDistanceRef.current = Math.hypot(dx, dy);
-    }
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (e.touches.length === 1 && isDragging) {
-      const dx = e.touches[0].clientX - dragStartRef.current.x;
-      const dy = e.touches[0].clientY - dragStartRef.current.y;
-      setPan({
-        x: dragStartRef.current.panX + dx,
-        y: dragStartRef.current.panY + dy
-      });
-    } else if (e.touches.length === 2 && touchDistanceRef.current !== null) {
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      const currentDist = Math.hypot(dx, dy);
-      const scaleDelta = currentDist / touchDistanceRef.current;
-      touchDistanceRef.current = currentDist;
-      setZoom((prev) => Math.min(Math.max(prev * scaleDelta, 0.35), 2.2));
-    }
-  };
-
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-    touchDistanceRef.current = null;
-  };
-
-  // Wheel zoom
-  const handleWheel = (e: React.WheelEvent) => {
-    e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
-    const newZoom = Math.min(Math.max(zoom * zoomFactor, 0.35), 2.2);
-    setZoom(newZoom);
-  };
-
-  // Reset / Initial View: Centered nicely on the earliest generation
-  const resetView = useCallback(() => {
-    if (!containerRef.current) return;
-    const { clientWidth } = containerRef.current;
-    const isMobile = clientWidth < 640;
-    const initialZoom = isMobile ? 0.6 : 0.75;
-    setZoom(initialZoom);
-    setPan({
-      x: (clientWidth - graph.bounds.width * initialZoom) / 2,
-      y: isMobile ? 30 : 50
-    });
-    setSelectedBranch("");
-    setHighlightedNodeId(null);
-    setActiveEpochId("colonial");
-  }, [graph.bounds.width]);
-
+  // Attach non-passive native wheel & touch listeners to guarantee NO page scroll hijacking
   useEffect(() => {
-    resetView();
-  }, [resetView]);
+    const container = containerRef.current;
+    if (!container) return;
+
+    // Non-passive wheel handler: stops page scroll and zooms directly toward cursor
+    const handleNativeWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const rect = container.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      const currentZoom = stateRef.current.zoom;
+      const currentPanX = stateRef.current.panX;
+      const currentPanY = stateRef.current.panY;
+
+      const zoomFactor = e.deltaY < 0 ? 1.12 : 0.89;
+      const nextZoom = Math.min(Math.max(currentZoom * zoomFactor, 0.3), 2.4);
+
+      // Natural Google Maps / Figma cursor-centered zoom math
+      const nextPanX = mouseX - (mouseX - currentPanX) * (nextZoom / currentZoom);
+      const nextPanY = mouseY - (mouseY - currentPanY) * (nextZoom / currentZoom);
+
+      updateTransform(nextPanX, nextPanY, nextZoom);
+    };
+
+    // Non-passive touch handlers for iOS/Android
+    const handleNativeTouchStart = (e: TouchEvent) => {
+      if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
+        return;
+      }
+      if (e.touches.length === 1) {
+        setIsDragging(true);
+        dragStartRef.current = {
+          x: e.touches[0].clientX,
+          y: e.touches[0].clientY,
+          panX: stateRef.current.panX,
+          panY: stateRef.current.panY
+        };
+        touchDistanceRef.current = null;
+      } else if (e.touches.length === 2) {
+        setIsDragging(false);
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistanceRef.current = Math.hypot(dx, dy);
+      }
+    };
+
+    const handleNativeTouchMove = (e: TouchEvent) => {
+      e.preventDefault(); // Stop outer page scroll bounce on mobile
+      if (e.touches.length === 1 && stateRef.current.isDragging) {
+        const dx = e.touches[0].clientX - dragStartRef.current.x;
+        const dy = e.touches[0].clientY - dragStartRef.current.y;
+        const nextPanX = dragStartRef.current.panX + dx;
+        const nextPanY = dragStartRef.current.panY + dy;
+        updateTransform(nextPanX, nextPanY, stateRef.current.zoom);
+      } else if (e.touches.length === 2 && touchDistanceRef.current !== null) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const currentDist = Math.hypot(dx, dy);
+        const scaleDelta = currentDist / touchDistanceRef.current;
+        touchDistanceRef.current = currentDist;
+        const nextZoom = Math.min(Math.max(stateRef.current.zoom * scaleDelta, 0.3), 2.4);
+        updateTransform(stateRef.current.panX, stateRef.current.panY, nextZoom);
+      }
+    };
+
+    const handleNativeTouchEnd = () => {
+      setIsDragging(false);
+      touchDistanceRef.current = null;
+    };
+
+    container.addEventListener("wheel", handleNativeWheel, { passive: false });
+    container.addEventListener("touchstart", handleNativeTouchStart, { passive: false });
+    container.addEventListener("touchmove", handleNativeTouchMove, { passive: false });
+    container.addEventListener("touchend", handleNativeTouchEnd, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", handleNativeWheel);
+      container.removeEventListener("touchstart", handleNativeTouchStart);
+      container.removeEventListener("touchmove", handleNativeTouchMove);
+      container.removeEventListener("touchend", handleNativeTouchEnd);
+    };
+  }, [updateTransform]);
 
   // Attached document lookup for active node
   const activeDocument = useMemo(() => {
@@ -203,7 +254,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           <div className="tree-ui-control hidden sm:flex items-center gap-2">
             <button
               type="button"
-              onClick={() => setZoom((z) => Math.min(z + 0.15, 2.2))}
+              onClick={() => updateTransform(pan.x, pan.y, Math.min(zoom + 0.18, 2.4))}
               aria-label="Zoom in"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)] active:scale-95"
             >
@@ -211,7 +262,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             </button>
             <button
               type="button"
-              onClick={() => setZoom((z) => Math.max(z - 0.15, 0.35))}
+              onClick={() => updateTransform(pan.x, pan.y, Math.max(zoom - 0.18, 0.3))}
               aria-label="Zoom out"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)] active:scale-95"
             >
@@ -334,20 +385,23 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchEnd={handleTouchEnd}
-        onWheel={handleWheel}
-        className={`relative h-[68vh] min-h-[500px] sm:h-[750px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none touch-none ${
+        style={{
+          touchAction: "none",
+          overscrollBehavior: "contain"
+        }}
+        className={`relative h-[70vh] min-h-[520px] sm:h-[750px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
       >
         <div
+          ref={contentRef}
           style={{
-            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+            transform: `translate3d(${pan.x}px, ${pan.y}px, 0) scale(${zoom})`,
             transformOrigin: "0 0",
             width: graph.bounds.width,
-            height: graph.bounds.height
+            height: graph.bounds.height,
+            willChange: isDragging ? "transform" : "auto",
+            backfaceVisibility: "hidden"
           }}
           className="absolute left-0 top-0 transition-transform duration-75 ease-out"
         >
@@ -447,7 +501,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   height: 100,
                   opacity: isBranchMatch ? 1 : 0.22
                 }}
-                className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-2xl active:scale-95 ${
+                className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-150 hover:-translate-y-1 hover:shadow-2xl active:scale-95 ${
                   isSelected
                     ? "border-[var(--archive-accent)] bg-[#f4efe7] text-[var(--archive-text)] ring-4 ring-[rgba(127,29,45,0.3)]"
                     : isHighlighted
@@ -481,10 +535,10 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         </div>
 
         {/* Floating Canvas Controls */}
-        <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5 rounded-full border border-white/10 bg-[#0c1015]/85 p-1.5 shadow-2xl backdrop-blur-md">
+        <div className="tree-ui-control absolute bottom-4 left-4 z-20 flex items-center gap-1.5 rounded-full border border-white/10 bg-[#0c1015]/85 p-1.5 shadow-2xl backdrop-blur-md">
           <button
             type="button"
-            onClick={() => setZoom((z) => Math.min(z + 0.15, 2.2))}
+            onClick={() => updateTransform(pan.x, pan.y, Math.min(zoom + 0.18, 2.4))}
             aria-label="Zoom in"
             className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-[#f4efe7] hover:bg-white/20 active:scale-95"
           >
@@ -492,7 +546,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           </button>
           <button
             type="button"
-            onClick={() => setZoom((z) => Math.max(z - 0.15, 0.35))}
+            onClick={() => updateTransform(pan.x, pan.y, Math.max(zoom - 0.18, 0.3))}
             aria-label="Zoom out"
             className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-[#f4efe7] hover:bg-white/20 active:scale-95"
           >
@@ -552,10 +606,9 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         </div>
       </div>
 
-      {/* Responsive Inspector Drawer (Bottom Sheet on Mobile, Slide-out on Desktop) */}
+      {/* Responsive Inspector Drawer */}
       {activeNode && (
         <div className="fixed inset-x-0 bottom-0 z-50 flex max-h-[85vh] w-full flex-col rounded-t-[2rem] border-t border-[rgba(18,20,24,0.15)] bg-[#f4efe7] p-5 sm:p-6 shadow-2xl overflow-y-auto sm:inset-y-0 sm:right-0 sm:left-auto sm:max-w-md sm:rounded-none sm:border-l sm:border-t-0 animate-in slide-in-from-bottom sm:slide-in-from-right duration-200">
-          {/* Mobile Sheet Drag Handle Indicator */}
           <div className="sm:hidden mx-auto mb-3 h-1.5 w-12 rounded-full bg-[rgba(18,20,24,0.18)]" />
 
           <div className="flex items-start justify-between border-b border-[rgba(18,20,24,0.08)] pb-4">
