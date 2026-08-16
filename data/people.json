@@ -194,21 +194,20 @@
       "note": "Documented service in North Carolina Militia. SAR proof packet in progress."
     },
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "elizabeth-kilker",
+      "father_id": "william-ramsey-1675",
+      "mother_name": "Elizabeth Kilker",
+      "father_name": "William Ramsey",
       "spouse_ids": [
         "alice-bower"
       ],
       "child_ids": [
-        "thomas-ramsey-before-1805",
-        "josiah-ramsey-1769"
+        "thomas-ramsey-before-1805"
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "elizabeth-kilker",
+      "father_id": "william-ramsey-1675"
     },
     "v2_birth_year": "1728",
     "v2_death_year": "1811",
@@ -402,8 +401,8 @@
     ],
     "sourceCitation": "",
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
+      "mother_id": "anna-hopkins-ramsey",
+      "father_id": "thomas-ramsey-1799",
       "mother_name": "Anna Hopkins",
       "father_name": "Thomas Ramsey (1799-1872)",
       "spouse_ids": [
@@ -414,8 +413,8 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "anna-hopkins-ramsey",
+      "father_id": "thomas-ramsey-1799"
     },
     "v2_birth_year": "1825",
     "v2_death_year": "1909",
@@ -568,6 +567,7 @@
         "hugh-dyer",
         "james-dyer-1789",
         "john-dyer-1785",
+        "jonathan-dyer",
         "letitia-dyer-hackley",
         "mary-dyer-1781",
         "nancy-dyer-1797",
@@ -1349,10 +1349,10 @@
     "burial": "Salt Creek Cemetery, Polk County, Oregon",
     "birthPlace": "Rolling Fork, Washington County, Kentucky",
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "",
-      "father_name": "",
+      "mother_id": "mary-hurst",
+      "father_id": "charles-dyer",
+      "mother_name": "Mary Hurst",
+      "father_name": "Charles Dyer",
       "spouse_ids": [
         "fannie-bufford",
         "nancy-boley-dyer",
@@ -1371,8 +1371,8 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "mary-hurst",
+      "father_id": "charles-dyer"
     },
     "v2_birth_year": "1802",
     "v2_death_year": "1892",
@@ -1525,6 +1525,9 @@
     "id": "josiah-ramsey-jr-1769",
     "name": "Josiah Ramsey Jr.",
     "lifespan": "1769-1835 (see josiah-ramsey-1769)",
+    "status": "retired",
+    "merged_into": "josiah-ramsey-1769",
+    "redirect_reason": "Consolidated into canonical working profile josiah-ramsey-1769.",
     "era": "Ramsey",
     "branch": "Ramsey",
     "summary": "Redirect / duplicate entry. See canonical working profile 'josiah-ramsey-1769' for the reconciled Tennessee Josiah Ramsey (c.1765/1769–1834/5, husband of Elizabeth Cowan, War of 1812 service, land grant). This FS-sourced version (1769-1835) is kept for reference but should be merged into the working profile.",
@@ -1573,55 +1576,35 @@
     "confidence": "Primary Source",
     "tags": [
       "Ramsey",
-      "Hopkins",
-      "FamilySearch",
-      "Census",
-      "Generation 5"
+      "Davis County",
+      "Iowa",
+      "Generation 4"
     ],
     "sourceUrl": "https://ancestors.familysearch.org/en/L5G1-XJ3/josiah-ramsey-1834",
-    "sourceCitation": "1850 U.S. Federal Census, Bloomfield Township, Davis County, Iowa (Primary Source); FamilySearch ancestor profile for Josiah Ramsey (L5G1-XJ3)",
+    "sourceCitation": "1850 U.S. Federal Census for Bloomfield, Davis County, Iowa (Roll M432_182, Page 298B), line 35, household of Thomas Ramsey. Josiah Ramsey, age 16, male, farmer, born Indiana.",
     "timeline": [
       {
-        "title": "Birth in Indiana",
+        "title": "Birth",
         "date": "1834",
-        "summary": "FamilySearch profile lists his birth year as 1834 in Indiana and names Thomas Ramsey and Anna Hopkins as his parents.",
+        "summary": "Born in Indiana (or Tennessee) to Thomas Ramsey and Anna Hopkins.",
         "confidence": "Primary Source",
         "linkedDocumentId": null,
-        "place": "Indiana, United States"
+        "place": "Indiana"
       },
       {
-        "title": "Bloomfield residence",
+        "title": "1850 Census Appearance",
         "date": "1850",
-        "summary": "Profile lists him in Bloomfield, Davis County, Iowa, with occupation as farmer.",
+        "summary": "Recorded as a 16-year-old farmer living in the household of Thomas Ramsey in Bloomfield, Davis County, Iowa.",
         "confidence": "Primary Source",
         "linkedDocumentId": null,
-        "place": "Bloomfield, Davis, Iowa, United States"
-      },
-      {
-        "title": "Family memory note",
-        "date": "1854",
-        "summary": "A family note says Josiah went to California in 1854 and was never heard from again.",
-        "confidence": "Needs Review",
-        "linkedDocumentId": null,
-        "place": null
-      },
-      {
-        "title": "Frontier Proximity — Iowa",
-        "date": "18 Oct 1850",
-        "summary": "Ramsey and Edwards families enumerated as immediate physical neighbors in Davis County, Iowa.",
-        "confidence": "Primary Source",
-        "linkedDocumentId": "1850-bloomfield-davis-iowa-census-ramsey-edwards",
-        "place": "Bloomfield Township, Davis County, Iowa, USA"
+        "place": "Bloomfield, Davis County, Iowa"
       }
     ],
     "evidenceSummary": [
-      "Son of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883)",
-      "Born 1834 in Tennessee",
-      "Residence in Bloomfield, Davis County, Iowa in 1850",
-      "Occupation listed as farmer",
-      "FamilySearch profile ID: L5G1-XJ3",
-      "FamilySearch source text ties him to Thomas Ramsey and Anna Hopkins",
-      "Family note says he went to California in 1854; keep that separate until it is independently documented."
+      "1850 U.S. Census for Bloomfield, Davis County, Iowa places Josiah Ramsey, age 16, in the household of Thomas Ramsey",
+      "Born in Indiana c. 1834 (FamilySearch record notes Tennessee, but primary census lists Indiana)",
+      "Occupation: Farmer",
+      "FamilySearch profile ID: L5G1-XJ3"
     ],
     "relationships": {
       "mother_id": "anna-hopkins-ramsey",
@@ -1643,6 +1626,9 @@
     "id": "josiah-ramsey",
     "name": "Josiah Ramsey",
     "lifespan": "1834-deceased",
+    "status": "retired",
+    "merged_into": "josiah-ramsey-1769",
+    "redirect_reason": "Consolidated into canonical working profile josiah-ramsey-1769.",
     "era": "Ramsey",
     "branch": "Ramsey",
     "summary": "Redirect stub. The War of 1812 / TN Josiah is represented in both 'josiah-ramsey-jr-1769' (FS-sourced) and 'josiah-ramsey-1769' (working profile with exclusions); see those for details. The 1834 Iowa one is 'josiah-ramsey-1834'.",
@@ -1679,6 +1665,26 @@
     "summary": "Husband of Elizabeth Cowan; strongly supported father of Thomas Ramsey (1799-1872). Birth year and birthplace remain unresolved, the 1810 Pennsylvania attachment is excluded from the working line, and the Tennessee land grant on Mulberry Creek anchors him in Claiborne County.",
     "keyEvent": "Appears in the Tennessee family trail with Elizabeth Cowan and Thomas Ramsey; the Claiborne County land grant and family memorial anchor the Iowa line.",
     "confidence": "Strong Evidence",
+    "aliases": [
+      "Josiah Ramsey Jr.",
+      "Josiah Ramsey (Claiborne County)"
+    ],
+    "relational_notes": "Identified as 'Josiah Ramsey Jr.' on 1790s–1810s East Tennessee muster and tax records to distinguish from elder Josiah Ramsey Sr. (1728–1805).",
+    "birth_year_disputed": true,
+    "birth_year_sources": [
+      {
+        "year": 1765,
+        "source": "1830 & 1840 US Federal Census (Claiborne Co., TN, age bracket 60-70 / 70-80)",
+        "type": "Census Record",
+        "confidence": "Primary Source"
+      },
+      {
+        "year": 1769,
+        "source": "Ramsey Family Plaque & Family Bible Tradition",
+        "type": "Family Memorial / Plaque",
+        "confidence": "Strong Evidence"
+      }
+    ],
     "tags": [
       "Ramsey",
       "Cowan",
@@ -1928,9 +1934,9 @@
     "sourceCitation": "",
     "relationships": {
       "mother_id": "",
-      "father_id": "",
+      "father_id": "simon-moore",
       "mother_name": "",
-      "father_name": "",
+      "father_name": "Simon Moore",
       "spouse_ids": [
         "isabella-law"
       ],
@@ -1946,7 +1952,7 @@
     },
     "relationships_summary": {
       "mother_id": "",
-      "father_id": ""
+      "father_id": "simon-moore"
     },
     "v2_birth_year": "",
     "v2_death_year": "",
@@ -1997,9 +2003,9 @@
     "sourceCitation": "",
     "relationships": {
       "mother_id": "",
-      "father_id": "",
+      "father_id": "patrick-law-ballymena",
       "mother_name": "",
-      "father_name": "",
+      "father_name": "Patrick Law",
       "spouse_ids": [
         "william-moore"
       ],
@@ -2015,7 +2021,7 @@
     },
     "relationships_summary": {
       "mother_id": "",
-      "father_id": ""
+      "father_id": "patrick-law-ballymena"
     },
     "v2_birth_year": "1823",
     "v2_death_year": "1880",
@@ -3487,7 +3493,7 @@
       "Siblings (Ramsey): James (1825-1909), Alexander (1832-1915), Josiah (1834-deceased), Franklin (1837-1925), Henderson (1839-1903), Cowen (1840-deceased), Rachael (1845-1933), Narvesta (1847-deceased), William Allen (1853-1941)"
     ],
     "relationships": {
-      "mother_id": "",
+      "mother_id": "anna-hopkins-ramsey",
       "father_id": "thomas-ramsey-1799",
       "mother_name": "Anna Hopkins (1807-1883)",
       "father_name": "Thomas Ramsey (1799-1872)",
@@ -3507,7 +3513,7 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
+      "mother_id": "anna-hopkins-ramsey",
       "father_id": "thomas-ramsey-1799"
     },
     "v2_birth_year": "1826",
@@ -3584,6 +3590,9 @@
     "id": "josiah-ramsey-1834-memorial",
     "name": "Josiah Ramsey",
     "lifespan": "1834-1910",
+    "status": "retired",
+    "merged_into": "josiah-ramsey-1834",
+    "redirect_reason": "Reconciled with son Josiah Ramsey (1834) profile.",
     "era": "Ramsey",
     "branch": "Ramsey",
     "summary": "Son of Josiah Ramsey (c. 1765/1769-1834) and Elizabeth Cowan. Brother of Thomas Ramsey (1799-1872).",
@@ -4157,9 +4166,9 @@
     "sourceCitation": "",
     "relationships": {
       "mother_id": "",
-      "father_id": "david-marchant",
-      "mother_name": "Sarah — conflicts with working tree of Joseph Cole Sr + Freelove Mason)",
-      "father_name": "David",
+      "father_id": "",
+      "mother_name": "Sarah",
+      "father_name": "David Cole",
       "spouse_ids": [
         "nehemiah-hopkins"
       ],
@@ -4167,7 +4176,7 @@
     },
     "relationships_summary": {
       "mother_id": "",
-      "father_id": "david-marchant"
+      "father_id": ""
     },
     "v2_birth_year": "1739",
     "v2_death_year": "",
@@ -5051,7 +5060,7 @@
       "Key sources: U.S. Dutch Reformed Church Records 1794; Canada Militia Pay List 1819; Ontario/Nova Scotia Census; Ancestry Family Tree; cemetery gravestone and historic plaque photos"
     ],
     "relationships": {
-      "mother_id": "",
+      "mother_id": "mary-bowen",
       "father_id": "nathan-bowen",
       "mother_name": "Mary Mason",
       "father_name": "Nathan Bowen (1715–, Rehoboth MA)",
@@ -5061,7 +5070,7 @@
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
+      "mother_id": "mary-bowen",
       "father_id": "nathan-bowen"
     },
     "v2_birth_year": "1748",
@@ -5231,18 +5240,20 @@
       "Key sources: Public Member Trees; U.S. and International Marriage Records, 1560-1900; Maine, U.S., Death Records, 1761-1922"
     ],
     "relationships": {
-      "mother_id": "",
-      "father_id": "",
-      "mother_name": "Elizabeth R",
-      "father_name": "Hezekiah Bowen (1682–1751)",
-      "spouse_ids": [],
+      "mother_id": "abigail-bullock",
+      "father_id": "obadiah-bowen",
+      "mother_name": "Abigail Bullock",
+      "father_name": "Obadiah Bowen",
+      "spouse_ids": [
+        "mary-bowen"
+      ],
       "child_ids": [
         "isreal-bowen-1748"
       ]
     },
     "relationships_summary": {
-      "mother_id": "",
-      "father_id": ""
+      "mother_id": "abigail-bullock",
+      "father_id": "obadiah-bowen"
     },
     "v2_birth_year": "1715",
     "v2_death_year": "",
@@ -6815,9 +6826,7 @@
       ],
       "child_ids": [
         "brett-marchant",
-        "colleen-gay-lattin",
-        "elizabeth-cole-hopkins",
-        "shawn-marchant"
+        "colleen-gay-lattin"
       ]
     },
     "relationships_summary": {
@@ -6888,8 +6897,7 @@
       ],
       "child_ids": [
         "brett-marchant",
-        "colleen-gay-lattin",
-        "shawn-marchant"
+        "colleen-gay-lattin"
       ]
     },
     "relationships_summary": {
@@ -7125,8 +7133,7 @@
         "jonathan-dyer"
       ],
       "child_ids": [
-        "nimrod-hurst-dyer",
-        "robert-harvey-moore"
+        "nimrod-hurst-dyer"
       ]
     },
     "relationships_summary": {

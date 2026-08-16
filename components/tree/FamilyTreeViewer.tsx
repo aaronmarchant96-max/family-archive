@@ -1034,6 +1034,58 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               <ConfidenceBadge label={activeNode.confidence} />
             </div>
 
+            {/* Aliases & Alternate Historical Names */}
+            {activeNode.aliases && activeNode.aliases.length > 0 && (
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5 space-y-1">
+                <div className="text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                  Alternate Historical Names / Aliases
+                </div>
+                <div className="flex flex-wrap gap-1.5 pt-0.5">
+                  {activeNode.aliases.map((alias) => (
+                    <span
+                      key={alias}
+                      className="rounded-md border border-[rgba(18,20,24,0.12)] bg-[#f4efe7] px-2 py-0.5 text-xs font-medium text-[var(--archive-text)]"
+                    >
+                      {alias}
+                    </span>
+                  ))}
+                </div>
+                {activeNode.relationalNotes && (
+                  <p className="text-[11px] text-[var(--archive-text-soft)] pt-1 italic leading-4">
+                    {activeNode.relationalNotes}
+                  </p>
+                )}
+              </div>
+            )}
+
+            {/* Disputed Birth Year & Multi-Source Reconciliation */}
+            {activeNode.birthYearDisputed && activeNode.birthYearSources && (
+              <div className="rounded-2xl border border-amber-500/30 bg-amber-50/70 p-3.5 space-y-2">
+                <div className="flex items-center justify-between">
+                  <div className="text-[11px] font-semibold uppercase tracking-wider text-amber-900 flex items-center gap-1">
+                    <span>⚖️</span> Disputed Birth Date Sources
+                  </div>
+                  <span className="text-[10px] bg-amber-200/80 text-amber-900 px-2 py-0.5 rounded-full font-medium">
+                    Evidence Conflict
+                  </span>
+                </div>
+                <div className="space-y-1.5 pt-0.5">
+                  {activeNode.birthYearSources.map((src, i) => (
+                    <div
+                      key={i}
+                      className="rounded-xl border border-amber-400/20 bg-white/80 p-2.5 text-xs text-amber-950"
+                    >
+                      <div className="flex items-center justify-between font-semibold">
+                        <span>Year: {src.year}</span>
+                        {src.confidence && <ConfidenceBadge label={src.confidence} />}
+                      </div>
+                      <div className="text-[11px] text-amber-900/80 mt-0.5">{src.source}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Military / Revolutionary War Patriot Badge */}
             {activeNode.sarLineStatus && (
               <div className="rounded-2xl border border-amber-400/40 bg-amber-50/80 p-3.5 leading-5 text-amber-950 shadow-sm">

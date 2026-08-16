@@ -79,17 +79,58 @@ describe("Family tree graph engine", () => {
     expect(graph.bounds.height).toBeGreaterThan(500);
   });
 
-  test("getConnectedLineage traces multi-generational ancestor and descendant chains", () => {
+  test("getConnectedLineage traces exact snapshot ancestor and descendant set for Josiah Ramsey", () => {
     const lineage = getConnectedLineage("josiah-ramsey-1769", graph.nodeMap);
-    expect(lineage.has("josiah-ramsey-1769")).toBe(true);
-    // Ancestors: father Thomas Ramsey (before 1805) and grandfather Josiah Ramsey Sr. (1728)
-    expect(lineage.has("thomas-ramsey-before-1805")).toBe(true);
-    expect(lineage.has("josiah-ramsey-sr-1728")).toBe(true);
-    // Descendants: son Thomas Ramsey (1799) and granddaughter Armina Ramsey
-    expect(lineage.has("thomas-ramsey-1799")).toBe(true);
-    expect(lineage.has("armina-ramsey")).toBe(true);
-    // Spouse: Elizabeth Cowan
-    expect(lineage.has("elizabeth-cowan")).toBe(true);
+
+    // Exact expected key ancestors and descendants
+    const expectedNodes = [
+      "william-ramsey-1675",
+      "josiah-ramsey-sr-1728",
+      "alice-bower",
+      "thomas-ramsey-before-1805",
+      "josiah-ramsey-1769",
+      "elizabeth-cowan",
+      "thomas-ramsey-1799",
+      "alexander-ramsey-1832",
+      "narvesta-ramsey-1835",
+      "franklin-ramsey-1837",
+      "henderson-ramsey-1839",
+      "cowan-ramsey-1842",
+      "rachel-ramsey-1845",
+      "william-ramsey-1853",
+      "armina-ramsey",
+      "josiah-ramsey-1834"
+    ];
+
+    for (const expectedId of expectedNodes) {
+      expect(lineage.has(expectedId)).toBe(true);
+    }
+  });
+
+  test("preserves structured disputed birth year sources for Josiah Ramsey", () => {
+    const jr = graph.nodeMap["josiah-ramsey-1769"];
+    expect(jr).toBeDefined();
+    expect(jr.birthYearDisputed).toBe(true);
+    expect(Array.isArray(jr.birthYearSources)).toBe(true);
+    expect(jr.birthYearSources!.length).toBe(2);
+
+    const years = jr.birthYearSources!.map((s) => s.year);
+    expect(years).toContain(1765);
+    expect(years).toContain(1769);
+
+    expect(jr.aliases).toContain("Josiah Ramsey Jr.");
+  });
+
+  test("resolves retired duplicate stubs via merged_into transparent redirection", () => {
+    const stub = graph.nodeMap["josiah-ramsey-jr-1769"];
+    expect(stub).toBeDefined();
+    expect(stub.status).toBe("retired");
+    expect(stub.mergedInto).toBe("josiah-ramsey-1769");
+
+    const memorial = graph.nodeMap["josiah-ramsey-1834-memorial"];
+    expect(memorial).toBeDefined();
+    expect(memorial.status).toBe("retired");
+    expect(memorial.mergedInto).toBe("josiah-ramsey-1834");
   });
 
   test("populates location metadata on nodes from historical records", () => {
