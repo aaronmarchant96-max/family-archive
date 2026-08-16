@@ -6,7 +6,8 @@ import {
   buildFamilyTreeGraph,
   BRANCH_COLORS,
   type PersonGraphNode,
-  type FamilyTreeGraph
+  type FamilyTreeGraph,
+  type EpochStrata
 } from "../../lib/familyTreeEngine";
 import { ConfidenceBadge } from "../ConfidenceBadge";
 import { SourcePreview } from "../SourcePreview";
@@ -20,8 +21,8 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const graph = useMemo<FamilyTreeGraph>(() => buildFamilyTreeGraph(rawPeople), [rawPeople]);
 
   // Viewport transformation state
-  const [zoom, setZoom] = useState(0.8);
-  const [pan, setPan] = useState({ x: 100, y: 50 });
+  const [zoom, setZoom] = useState(0.75);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const dragStartRef = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
   const touchDistanceRef = useRef<number | null>(null);
@@ -33,6 +34,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const [activeNode, setActiveNode] = useState<PersonGraphNode | null>(null);
   const [highlightedNodeId, setHighlightedNodeId] = useState<string | null>(null);
   const [showMinimapMobile, setShowMinimapMobile] = useState(false);
+  const [activeEpochId, setActiveEpochId] = useState<string>("colonial");
 
   // Search filtering
   const searchResults = useMemo(() => {
@@ -43,20 +45,33 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     ).slice(0, 8);
   }, [searchQuery, graph.nodes]);
 
-  // Center on node
+  // Center on specific node
   const focusNode = useCallback((node: PersonGraphNode) => {
     if (!containerRef.current) return;
     const { clientWidth, clientHeight } = containerRef.current;
     const isMobile = clientWidth < 640;
-    const targetZoom = isMobile ? 0.9 : 1.0;
+    const targetZoom = isMobile ? 0.95 : 1.05;
     const targetX = clientWidth / 2 - (node.x + 120) * targetZoom;
-    const targetY = (isMobile ? clientHeight * 0.35 : clientHeight / 2) - (node.y + 50) * targetZoom;
+    const targetY = (isMobile ? clientHeight * 0.32 : clientHeight / 2) - (node.y + 50) * targetZoom;
     setZoom(targetZoom);
     setPan({ x: targetX, y: targetY });
     setHighlightedNodeId(node.id);
     setActiveNode(node);
     setSearchQuery("");
   }, []);
+
+  // Jump to specific historical epoch
+  const jumpToEpoch = useCallback((epoch: EpochStrata) => {
+    if (!containerRef.current) return;
+    const { clientWidth, clientHeight } = containerRef.current;
+    const isMobile = clientWidth < 640;
+    const targetZoom = isMobile ? 0.65 : 0.8;
+    const targetX = (clientWidth - graph.bounds.width * targetZoom) / 2;
+    const targetY = clientHeight * 0.2 - epoch.yStart * targetZoom;
+    setZoom(targetZoom);
+    setPan({ x: targetX, y: targetY });
+    setActiveEpochId(epoch.id);
+  }, [graph.bounds.width]);
 
   // Mouse pan handlers
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -86,7 +101,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     setIsDragging(false);
   };
 
-  // Touch handlers for mobile pan & 2-finger pinch zoom
+  // Touch handlers for mobile pan & pinch-zoom
   const handleTouchStart = (e: React.TouchEvent) => {
     if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
       return;
@@ -139,19 +154,20 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     setZoom(newZoom);
   };
 
-  // Reset view
+  // Reset / Initial View: Centered nicely on the earliest generation
   const resetView = useCallback(() => {
     if (!containerRef.current) return;
-    const { clientWidth, clientHeight } = containerRef.current;
+    const { clientWidth } = containerRef.current;
     const isMobile = clientWidth < 640;
-    const initialZoom = isMobile ? 0.55 : 0.8;
+    const initialZoom = isMobile ? 0.6 : 0.75;
     setZoom(initialZoom);
     setPan({
       x: (clientWidth - graph.bounds.width * initialZoom) / 2,
-      y: isMobile ? 20 : 40
+      y: isMobile ? 30 : 50
     });
     setSelectedBranch("");
     setHighlightedNodeId(null);
+    setActiveEpochId("colonial");
   }, [graph.bounds.width]);
 
   useEffect(() => {
@@ -168,7 +184,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
 
   return (
     <div className="relative flex flex-col gap-4 pb-16 sm:pb-4">
-      {/* Top Header & Search Bar */}
+      {/* Top Header & Search Control Center */}
       <div className="archive-panel space-y-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-1">
@@ -256,6 +272,27 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           )}
         </div>
 
+        {/* Quick Historical Epoch Jump Bar */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar text-xs font-semibold text-[var(--archive-text)]">
+          <span className="text-[10px] uppercase tracking-wider text-[var(--archive-text-soft)] mr-1 shrink-0">
+            Jump to Era:
+          </span>
+          {graph.epochs.map((epoch) => (
+            <button
+              key={epoch.id}
+              type="button"
+              onClick={() => jumpToEpoch(epoch)}
+              className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs transition shrink-0 ${
+                activeEpochId === epoch.id
+                  ? "border-[rgba(127,29,45,0.5)] bg-[rgba(127,29,45,0.15)] text-[var(--archive-accent)] font-semibold shadow-sm"
+                  : "border-[rgba(18,20,24,0.08)] bg-white/70 text-[var(--archive-text)] hover:bg-white"
+              }`}
+            >
+              {epoch.name} <span className="text-[10px] opacity-60">({epoch.timeRange})</span>
+            </button>
+          ))}
+        </div>
+
         {/* Branch Filter Horizontal Scroll Bar */}
         <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
           <button
@@ -299,7 +336,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
         onWheel={handleWheel}
-        className={`relative h-[65vh] min-h-[480px] sm:h-[720px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none touch-none ${
+        className={`relative h-[68vh] min-h-[500px] sm:h-[750px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none touch-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
       >
@@ -325,17 +362,17 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                 borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
                 background: epoch.accent
               }}
-              className="pointer-events-none flex flex-col justify-start p-4"
+              className="pointer-events-none flex flex-col justify-start p-6"
             >
               <div className="flex items-baseline gap-3">
-                <span className="font-serif text-base sm:text-lg font-semibold tracking-wide text-[#e1d8cb]/90">
+                <span className="font-serif text-lg sm:text-xl font-semibold tracking-wide text-[#e1d8cb]/90">
                   {epoch.name}
                 </span>
-                <span className="text-xs font-mono font-medium tracking-wider text-[#e1d8cb]/50">
+                <span className="text-xs font-mono font-medium tracking-wider text-[#e1d8cb]/60">
                   {epoch.timeRange}
                 </span>
               </div>
-              <span className="text-[11px] sm:text-xs text-[#e1d8cb]/40">{epoch.historicalContext}</span>
+              <span className="text-xs text-[#e1d8cb]/50 mt-0.5">{epoch.historicalContext}</span>
             </div>
           ))}
 
@@ -441,7 +478,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           })}
         </div>
 
-        {/* Floating Mobile/Desktop Canvas Controls */}
+        {/* Floating Canvas Controls */}
         <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5 rounded-full border border-white/10 bg-[#0c1015]/85 p-1.5 shadow-2xl backdrop-blur-md">
           <button
             type="button"
@@ -476,7 +513,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           </button>
         </div>
 
-        {/* Minimap Radar Overlay (Always on desktop, toggleable on mobile) */}
+        {/* Minimap Radar Overlay */}
         <div
           className={`pointer-events-none absolute bottom-4 right-4 z-20 flex flex-col items-end gap-1.5 transition ${
             showMinimapMobile ? "block" : "hidden sm:flex"
