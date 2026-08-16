@@ -82,29 +82,47 @@ describe("Family tree graph engine", () => {
   test("getConnectedLineage traces exact snapshot ancestor and descendant set for Josiah Ramsey", () => {
     const lineage = getConnectedLineage("josiah-ramsey-1769", graph.nodeMap);
 
-    // Exact expected key ancestors and descendants
-    const expectedNodes = [
-      "william-ramsey-1675",
-      "josiah-ramsey-sr-1728",
-      "alice-bower",
-      "thomas-ramsey-before-1805",
-      "josiah-ramsey-1769",
-      "elizabeth-cowan",
-      "thomas-ramsey-1799",
+    const exact36NodeSnapshot = [
+      "aaron-marchant",
       "alexander-ramsey-1832",
-      "narvesta-ramsey-1835",
-      "franklin-ramsey-1837",
-      "henderson-ramsey-1839",
-      "cowan-ramsey-1842",
-      "rachel-ramsey-1845",
-      "william-ramsey-1853",
+      "alice-bower",
+      "alzy-jane-edwards",
       "armina-ramsey",
-      "josiah-ramsey-1834"
+      "brett-marchant",
+      "colleen-gay-lattin",
+      "cowan-ramsey-1842",
+      "edith-ann-edwards",
+      "elizabeth-cowan",
+      "elizabeth-kilker",
+      "franklin-ramsey-1837",
+      "george-anderson-edwards",
+      "henderson-ramsey-1839",
+      "ira-josiah-edwards",
+      "james-ramsey-1825",
+      "john-wesley-edwards",
+      "josiah-ramsey-1769",
+      "josiah-ramsey-1834",
+      "josiah-ramsey-sr-1728",
+      "lucinda-edwards",
+      "luella-edwards",
+      "mary-ann-edwards",
+      "mary-ann-polly-edwards",
+      "nancy-moore-marchant",
+      "narvesta-ramsey-1835",
+      "nervesta-edwards",
+      "rachel-ramsey-1845",
+      "shawn-marchant",
+      "silas-josiah-edwards",
+      "thomas-bentley-ramsey-1846",
+      "thomas-edwards-1859",
+      "thomas-ramsey-1799",
+      "thomas-ramsey-before-1805",
+      "william-ramsey-1675",
+      "william-ramsey-1853"
     ];
 
-    for (const expectedId of expectedNodes) {
-      expect(lineage.has(expectedId)).toBe(true);
-    }
+    expect(lineage.size).toBe(36);
+    expect(Array.from(lineage).sort()).toEqual(exact36NodeSnapshot.sort());
   });
 
   test("preserves structured disputed birth year sources for Josiah Ramsey", () => {

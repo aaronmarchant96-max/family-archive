@@ -1504,6 +1504,7 @@
       "mother_name": "Elizabeth Ellen Conlee Dyer",
       "father_name": "George Washington Dyer",
       "spouse_ids": [
+        "augustus-grant-jennings",
         "silas-josiah-edwards"
       ],
       "child_ids": [
@@ -1552,9 +1553,7 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [
-        "elizabeth-cowan"
-      ],
+      "spouse_ids": [],
       "child_ids": []
     },
     "relationships_summary": {
@@ -5318,7 +5317,9 @@
       "father_id": "",
       "mother_name": "",
       "father_name": "",
-      "spouse_ids": [],
+      "spouse_ids": [
+        "nathan-bowen"
+      ],
       "child_ids": [
         "isreal-bowen-1748"
       ]
@@ -9013,6 +9014,37 @@
     "v2_birth_year": "1904",
     "v2_death_year": "1989",
     "v2_notes": "Third child of Silas and Nancy."
+  },
+  {
+    "id": "augustus-grant-jennings",
+    "name": "Augustus Grant Jennings",
+    "lifespan": "c. 1865-deceased",
+    "era": "Dyer",
+    "branch": "Dyer",
+    "summary": "First husband of Nancy Ann Dyer. Father of Ora Ellen Jennings (1892-1979). Married in Washington.",
+    "keyEvent": "First husband of Nancy Ann Dyer; father of Ora Ellen Jennings.",
+    "confidence": "Strong Evidence",
+    "sourceCitation": "FamilySearch and Ancestry records for Nancy Ann Dyer (1871-1939) and daughter Ora Ellen Jennings (1892-1979).",
+    "timeline": [],
+    "relationships": {
+      "mother_id": "",
+      "father_id": "",
+      "mother_name": "",
+      "father_name": "",
+      "spouse_ids": [
+        "nancy-ann-dyer"
+      ],
+      "child_ids": [
+        "ora-ellen-jennings"
+      ]
+    },
+    "relationships_summary": {
+      "mother_id": "",
+      "father_id": ""
+    },
+    "v2_birth_year": "1865",
+    "v2_death_year": "",
+    "v2_notes": "First husband of Nancy Ann Dyer | Father of Ora Ellen Jennings"
   },
   {
     "id": "ora-ellen-jennings",

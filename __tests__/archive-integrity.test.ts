@@ -360,52 +360,73 @@ describe("Archive integrity", () => {
     expect(duplicates).toEqual([]);
   });
 
-  test("all parent-child relationships agree bidirectionally", () => {
+  test("all family relationships agree bidirectionally with zero dangling references or spousal asymmetry", () => {
     const personMap = new Map<string, any>();
     for (const p of peopleData as any[]) {
       personMap.set(p.id, p);
     }
 
-    const asymmetricErrors: string[] = [];
+    const integrityErrors: string[] = [];
 
     for (const p of peopleData as any[]) {
       if (p.status === "retired") continue;
       const rels = p.relationships || {};
 
-      // 1. If child has father_id, father's child_ids must contain child
+      // 1. Dangling Father Reference & Bidirectional Parent-Child Agreement
       if (rels.father_id) {
         const father = personMap.get(rels.father_id);
-        if (father && father.status !== "retired") {
+        if (!father) {
+          integrityErrors.push(`Person ${p.id} has dangling father_id '${rels.father_id}' (record not found)`);
+        } else if (father.status !== "retired") {
           const fatherChildren = father.relationships?.child_ids || [];
           if (!fatherChildren.includes(p.id)) {
-            asymmetricErrors.push(
+            integrityErrors.push(
               `Child ${p.id} has father_id '${rels.father_id}', but father's child_ids does not include ${p.id}`
             );
           }
         }
       }
 
-      // 2. If child has mother_id, mother's child_ids must contain child
+      // 2. Dangling Mother Reference & Bidirectional Parent-Child Agreement
       if (rels.mother_id) {
         const mother = personMap.get(rels.mother_id);
-        if (mother && mother.status !== "retired") {
+        if (!mother) {
+          integrityErrors.push(`Person ${p.id} has dangling mother_id '${rels.mother_id}' (record not found)`);
+        } else if (mother.status !== "retired") {
           const motherChildren = mother.relationships?.child_ids || [];
           if (!motherChildren.includes(p.id)) {
-            asymmetricErrors.push(
+            integrityErrors.push(
               `Child ${p.id} has mother_id '${rels.mother_id}', but mother's child_ids does not include ${p.id}`
             );
           }
         }
       }
 
-      // 3. If parent has child_ids, each child must point back with father_id or mother_id
+      // 3. Dangling Spouse Reference & Spousal Bidirectional Symmetry
+      for (const spouseId of rels.spouse_ids || []) {
+        const spouse = personMap.get(spouseId);
+        if (!spouse) {
+          integrityErrors.push(`Person ${p.id} has dangling spouse_id '${spouseId}' (record not found)`);
+        } else if (spouse.status !== "retired") {
+          const spouseSpouses = spouse.relationships?.spouse_ids || [];
+          if (!spouseSpouses.includes(p.id)) {
+            integrityErrors.push(
+              `Person ${p.id} lists spouse '${spouseId}', but spouse does not list ${p.id} back`
+            );
+          }
+        }
+      }
+
+      // 4. Dangling Child Reference & Downward Parent-Child Agreement
       for (const childId of rels.child_ids || []) {
         const child = personMap.get(childId);
-        if (child && child.status !== "retired") {
+        if (!child) {
+          integrityErrors.push(`Person ${p.id} has dangling child_id '${childId}' (record not found)`);
+        } else if (child.status !== "retired") {
           const childRels = child.relationships || {};
           const pointsBack = childRels.father_id === p.id || childRels.mother_id === p.id;
           if (!pointsBack) {
-            asymmetricErrors.push(
+            integrityErrors.push(
               `Parent ${p.id} lists child '${childId}', but child does not point back with father_id/mother_id`
             );
           }
@@ -413,6 +434,6 @@ describe("Archive integrity", () => {
       }
     }
 
-    expect(asymmetricErrors).toEqual([]);
+    expect(integrityErrors).toEqual([]);
   });
 });
