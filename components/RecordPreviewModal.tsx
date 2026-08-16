@@ -62,14 +62,24 @@ export function RecordPreviewModal({
         className="max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-[2rem] border border-[rgba(18,20,24,0.08)] bg-[#f4efe7] p-6 shadow-2xl shadow-black/60"
         onClick={(event) => event.stopPropagation()}
       >
-        <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="flex items-start justify-between gap-4 border-b border-[rgba(18,20,24,0.08)] pb-4">
           <div>
             <div className="archive-kicker">Private record preview</div>
-            <h2 id="record-preview-title" className="mt-2 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
+            <h2 id="record-preview-title" className="mt-1 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
               {title}
             </h2>
           </div>
-          <ConfidenceBadge label={confidence} />
+          <div className="flex items-center gap-3">
+            <ConfidenceBadge label={confidence} />
+            <button
+              type="button"
+              onClick={onClose}
+              aria-label="Close modal"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-lg font-medium text-[var(--archive-text)] transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+            >
+              ✕
+            </button>
+          </div>
         </div>
 
         <div className="mt-5 grid gap-3 md:grid-cols-2">

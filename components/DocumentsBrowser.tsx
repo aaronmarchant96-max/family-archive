@@ -198,49 +198,70 @@ export function DocumentsBrowser({ documents }: { documents: DocumentCardProps[]
           </div>
         </div>
 
-        <label className="block">
-          <span className="sr-only">Search documents</span>
-          <input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search by person, place, year, or type of record"
-            className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
-          />
-        </label>
+        <div className="relative">
+          <label className="block">
+            <span className="sr-only">Search documents</span>
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search by person, place, year, or type of record..."
+              className="w-full rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-3.5 pr-10 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] shadow-sm focus:border-[rgba(127,29,45,0.5)] focus:ring-2 focus:ring-[rgba(127,29,45,0.12)]"
+            />
+          </label>
+          {query && (
+            <button
+              type="button"
+              onClick={() => setQuery("")}
+              aria-label="Clear search query"
+              className="absolute right-3 top-1/2 -translate-y-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-xs text-[var(--archive-text-soft)] hover:bg-[rgba(18,20,24,0.16)] hover:text-[var(--archive-text)]"
+            >
+              ✕
+            </button>
+          )}
+        </div>
 
         {suggestion && (
-          <div className="text-sm text-[var(--archive-text-soft)] mt-1">
-            Did you mean{" "}
+          <div className="text-sm text-[var(--archive-text-soft)] mt-1 flex items-center gap-1.5">
+            <span>Did you mean:</span>
             <button
+              type="button"
               onClick={() => setQuery(suggestion)}
-              className="underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
+              className="font-medium underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
             >
               {suggestion}
             </button>
-            ?
           </div>
         )}
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap items-center gap-3 pt-1">
           <select
             value={filterType}
             onChange={(e) => setFilterType(e.target.value)}
-            className="rounded-xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1.5 text-sm text-[var(--archive-text)]"
+            className="rounded-xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-3.5 py-2 text-xs font-medium text-[var(--archive-text)] shadow-sm focus:border-[rgba(127,29,45,0.4)]"
           >
-            <option value="">All Record Types</option>
+            <option value="">All Record Types ({uniqueTypes.length})</option>
             {uniqueTypes.map(t => <option key={t} value={t}>{t}</option>)}
           </select>
           <select
             value={filterBranch}
             onChange={(e) => setFilterBranch(e.target.value)}
-            className="rounded-xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1.5 text-sm text-[var(--archive-text)]"
+            className="rounded-xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-3.5 py-2 text-xs font-medium text-[var(--archive-text)] shadow-sm focus:border-[rgba(127,29,45,0.4)]"
           >
-            <option value="">All Branches</option>
+            <option value="">All Branches ({uniqueBranches.length})</option>
             {uniqueBranches.map(b => <option key={b} value={b}>{b}</option>)}
           </select>
-          {(filterType || filterBranch) && (
-            <button onClick={() => { setFilterType(""); setFilterBranch(""); }} className="text-xs underline text-[var(--archive-accent)]">Clear filters</button>
+          {(filterType || filterBranch || query) && (
+            <button
+              type="button"
+              onClick={() => { setFilterType(""); setFilterBranch(""); setQuery(""); }}
+              className="rounded-xl border border-[rgba(127,29,45,0.25)] bg-[rgba(127,29,45,0.06)] px-3 py-1.5 text-xs font-medium text-[var(--archive-accent)] hover:bg-[rgba(127,29,45,0.12)]"
+            >
+              Reset all filters
+            </button>
           )}
+          <div className="ml-auto text-xs text-[var(--archive-text-soft)]">
+            Showing <strong className="text-[var(--archive-text)]">{filteredDocuments.length}</strong> of {documents.length} records
+          </div>
         </div>
       </div>
 

@@ -207,34 +207,51 @@ export function AncestorsBrowser({ people }: { people: AncestorCardProps[] }) {
           </div>
         </div>
 
-        <label className="block">
-          <span className="sr-only">Search ancestors</span>
-          <input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search ancestors by name, era, branch, tag, or note"
-            className="w-full rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] focus:border-[rgba(127,29,45,0.4)]"
-          />
-        </label>
+        <div className="relative">
+          <label className="block">
+            <span className="sr-only">Search ancestors</span>
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search ancestors by name, era, branch, tag, or note..."
+              className="w-full rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-3.5 pr-10 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] shadow-sm focus:border-[rgba(127,29,45,0.5)] focus:ring-2 focus:ring-[rgba(127,29,45,0.12)]"
+            />
+          </label>
+          {query && (
+            <button
+              type="button"
+              onClick={() => setQuery("")}
+              aria-label="Clear search query"
+              className="absolute right-3 top-1/2 -translate-y-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-xs text-[var(--archive-text-soft)] hover:bg-[rgba(18,20,24,0.16)] hover:text-[var(--archive-text)]"
+            >
+              ✕
+            </button>
+          )}
+        </div>
 
-        <div className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
-          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟢 Primary</span>
-          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🔵 Strong</span>
-          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟠 Needs Review</span>
-          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟡 Family Memory</span>
-          <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟣 Compilation</span>
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-1">
+          <div className="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--archive-text-soft)]">
+            <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟢 Primary</span>
+            <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🔵 Strong</span>
+            <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟠 Needs Review</span>
+            <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟡 Family Memory</span>
+            <span className="rounded-full border border-[rgba(18,20,24,0.08)] bg-white/70 px-3 py-1">🟣 Compilation</span>
+          </div>
+          <div className="text-xs text-[var(--archive-text-soft)]">
+            Showing <strong className="text-[var(--archive-text)]">{visiblePeople.length}</strong> of {people.length} ancestors
+          </div>
         </div>
 
         {suggestion && (
-          <div className="text-sm text-[var(--archive-text-soft)] mt-1">
-            Did you mean{" "}
+          <div className="text-sm text-[var(--archive-text-soft)] mt-1 flex items-center gap-1.5">
+            <span>Did you mean:</span>
             <button
+              type="button"
               onClick={() => setQuery(suggestion)}
-              className="underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
+              className="font-medium underline text-[var(--archive-accent)] hover:text-[var(--archive-accent-soft)]"
             >
               {suggestion}
             </button>
-            ?
           </div>
         )}
       </div>
