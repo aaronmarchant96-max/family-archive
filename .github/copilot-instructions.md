@@ -1,3 +1,8 @@
+<!--
+CARDO REI methodology applied to this document.
+Reference: [CARDO REI Methodology](PROMPTHOUND-DOCS/CARDO-REI.md)
+-->
+
 # Living Red Book Archive — Project Rules
 
 These rules govern all development, data entry, and research work on the Living Red Book genealogical archive.
