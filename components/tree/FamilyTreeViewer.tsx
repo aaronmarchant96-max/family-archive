@@ -1,0 +1,557 @@
+"use client";
+
+import { useMemo, useState, useRef, useEffect, useCallback } from "react";
+import Link from "next/link";
+import {
+  buildFamilyTreeGraph,
+  BRANCH_COLORS,
+  type PersonGraphNode,
+  type FamilyTreeGraph,
+  type TreeEdge
+} from "../../lib/familyTreeEngine";
+import { ConfidenceBadge } from "../ConfidenceBadge";
+import { SourcePreview } from "../SourcePreview";
+
+interface FamilyTreeViewerProps {
+  rawPeople: any[];
+  documents: Array<{ id: string; filename: string; previewUrl?: string; sourceCitation?: string }>;
+}
+
+export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps) {
+  const graph = useMemo<FamilyTreeGraph>(() => buildFamilyTreeGraph(rawPeople), [rawPeople]);
+
+  // Viewport transformation state
+  const [zoom, setZoom] = useState(0.85);
+  const [pan, setPan] = useState({ x: 100, y: 50 });
+  const [isDragging, setIsDragging] = useState(false);
+  const dragStartRef = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Interaction state
+  const [selectedBranch, setSelectedBranch] = useState<string>("");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [activeNode, setActiveNode] = useState<PersonGraphNode | null>(null);
+  const [highlightedNodeId, setHighlightedNodeId] = useState<string | null>(null);
+
+  // Search filtering
+  const searchResults = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const q = searchQuery.toLowerCase().trim();
+    return graph.nodes.filter(
+      (n) => n.name.toLowerCase().includes(q) || n.branch.toLowerCase().includes(q) || n.lifespan.includes(q)
+    ).slice(0, 8);
+  }, [searchQuery, graph.nodes]);
+
+  // Center on node
+  const focusNode = useCallback((node: PersonGraphNode) => {
+    if (!containerRef.current) return;
+    const { clientWidth, clientHeight } = containerRef.current;
+    const targetZoom = 1.0;
+    const targetX = clientWidth / 2 - (node.x + 120) * targetZoom;
+    const targetY = clientHeight / 2 - (node.y + 50) * targetZoom;
+    setZoom(targetZoom);
+    setPan({ x: targetX, y: targetY });
+    setHighlightedNodeId(node.id);
+    setActiveNode(node);
+    setSearchQuery("");
+  }, []);
+
+  // Mouse pan handlers
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
+      return;
+    }
+    setIsDragging(true);
+    dragStartRef.current = {
+      x: e.clientX,
+      y: e.clientY,
+      panX: pan.x,
+      panY: pan.y
+    };
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return;
+    const dx = e.clientX - dragStartRef.current.x;
+    const dy = e.clientY - dragStartRef.current.y;
+    setPan({
+      x: dragStartRef.current.panX + dx,
+      y: dragStartRef.current.panY + dy
+    });
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  // Wheel zoom
+  const handleWheel = (e: React.WheelEvent) => {
+    e.preventDefault();
+    const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
+    const newZoom = Math.min(Math.max(zoom * zoomFactor, 0.35), 2.2);
+    setZoom(newZoom);
+  };
+
+  // Reset view
+  const resetView = () => {
+    if (!containerRef.current) return;
+    const { clientWidth } = containerRef.current;
+    const initialZoom = 0.8;
+    setZoom(initialZoom);
+    setPan({ x: (clientWidth - graph.bounds.width * initialZoom) / 2, y: 40 });
+    setSelectedBranch("");
+    setHighlightedNodeId(null);
+  };
+
+  useEffect(() => {
+    resetView();
+  }, [graph.bounds.width]);
+
+  // Attached document lookup for active node
+  const activeDocument = useMemo(() => {
+    if (!activeNode?.attachedDocument) return null;
+    return documents.find(
+      (d) => d.filename.toLowerCase() === activeNode.attachedDocument?.toLowerCase()
+    );
+  }, [activeNode, documents]);
+
+  return (
+    <div className="relative flex flex-col gap-4">
+      {/* Top Header & Search Bar */}
+      <div className="archive-panel space-y-4">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div className="space-y-1.5">
+            <div className="archive-kicker">Interactive Constellation</div>
+            <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
+              Family Lineage Tree
+            </h1>
+            <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
+              Pan, zoom, and explore 7 generations across historical epochs. Click any ancestor to inspect verified evidence and relationships.
+            </p>
+          </div>
+
+          {/* Zoom & View Controls */}
+          <div className="tree-ui-control flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.min(z + 0.15, 2.2))}
+              aria-label="Zoom in"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              onClick={() => setZoom((z) => Math.max(z - 0.15, 0.35))}
+              aria-label="Zoom out"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+            >
+              −
+            </button>
+            <button
+              type="button"
+              onClick={resetView}
+              className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+            >
+              Reset View
+            </button>
+          </div>
+        </div>
+
+        {/* Search Input with Autocomplete */}
+        <div className="relative">
+          <label className="block">
+            <span className="sr-only">Search family tree</span>
+            <input
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search by name, branch, or year to jump to an ancestor..."
+              className="w-full rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] shadow-sm focus:border-[rgba(127,29,45,0.5)] focus:ring-2 focus:ring-[rgba(127,29,45,0.12)]"
+            />
+          </label>
+          {searchQuery && (
+            <button
+              type="button"
+              onClick={() => setSearchQuery("")}
+              className="absolute right-3 top-1/2 -translate-y-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-xs text-[var(--archive-text-soft)] hover:bg-[rgba(18,20,24,0.16)]"
+            >
+              ✕
+            </button>
+          )}
+
+          {/* Autocomplete Dropdown */}
+          {searchResults.length > 0 && (
+            <div className="absolute left-0 right-0 top-full z-40 mt-1 max-h-64 overflow-y-auto rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white p-2 shadow-xl">
+              {searchResults.map((node) => (
+                <div
+                  key={node.id}
+                  onClick={() => focusNode(node)}
+                  className="flex cursor-pointer items-center justify-between rounded-xl px-3 py-2 text-sm text-[var(--archive-text)] transition hover:bg-[rgba(127,29,45,0.06)]"
+                >
+                  <div>
+                    <span className="font-semibold">{node.name}</span>{" "}
+                    <span className="text-xs text-[var(--archive-text-soft)]">({node.lifespan})</span>
+                  </div>
+                  <span
+                    className="rounded-full px-2.5 py-0.5 text-[10px] font-semibold text-white"
+                    style={{ backgroundColor: BRANCH_COLORS[node.branch] || "#6b7280" }}
+                  >
+                    {node.branch}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Branch Filter Pills */}
+        <div className="flex flex-wrap items-center gap-2 pt-1">
+          <button
+            type="button"
+            onClick={() => setSelectedBranch("")}
+            className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
+              !selectedBranch
+                ? "border-[rgba(127,29,45,0.4)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
+                : "border-[rgba(18,20,24,0.08)] bg-white/70 text-[var(--archive-text)] hover:bg-white"
+            }`}
+          >
+            All Branches ({graph.nodes.length})
+          </button>
+          {graph.branches.slice(0, 8).map((b) => (
+            <button
+              key={b.name}
+              type="button"
+              onClick={() => setSelectedBranch(selectedBranch === b.name ? "" : b.name)}
+              className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold transition ${
+                selectedBranch === b.name
+                  ? "border-[rgba(127,29,45,0.4)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
+                  : "border-[rgba(18,20,24,0.08)] bg-white/70 text-[var(--archive-text)] hover:bg-white"
+              }`}
+            >
+              <span className="h-2 w-2 rounded-full" style={{ backgroundColor: b.color }} />
+              <span>{b.name}</span>
+              <span className="text-[10px] opacity-70">({b.count})</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Canvas Viewport */}
+      <div
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onWheel={handleWheel}
+        className={`relative h-[720px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none ${
+          isDragging ? "cursor-grabbing" : "cursor-grab"
+        }`}
+      >
+        <div
+          style={{
+            transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+            transformOrigin: "0 0",
+            width: graph.bounds.width,
+            height: graph.bounds.height
+          }}
+          className="absolute left-0 top-0 transition-transform duration-75 ease-out"
+        >
+          {/* 1. Historical Epoch Strata Background Bands */}
+          {graph.epochs.map((epoch) => (
+            <div
+              key={epoch.id}
+              style={{
+                position: "absolute",
+                top: epoch.yStart,
+                left: 0,
+                width: graph.bounds.width,
+                height: epoch.yEnd - epoch.yStart,
+                borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
+                background: epoch.accent
+              }}
+              className="pointer-events-none flex flex-col justify-start p-4"
+            >
+              <div className="flex items-baseline gap-3">
+                <span className="font-serif text-lg font-semibold tracking-wide text-[#e1d8cb]/90">
+                  {epoch.name}
+                </span>
+                <span className="text-xs font-mono font-medium tracking-wider text-[#e1d8cb]/50">
+                  {epoch.timeRange}
+                </span>
+              </div>
+              <span className="text-xs text-[#e1d8cb]/40">{epoch.historicalContext}</span>
+            </div>
+          ))}
+
+          {/* 2. SVG Relationship Edges */}
+          <svg
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: graph.bounds.width,
+              height: graph.bounds.height,
+              pointerEvents: "none"
+            }}
+          >
+            <defs>
+              <linearGradient id="edge-default" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="rgba(225, 216, 203, 0.25)" />
+                <stop offset="100%" stopColor="rgba(225, 216, 203, 0.45)" />
+              </linearGradient>
+            </defs>
+            {graph.edges.map((edge) => {
+              const source = graph.nodeMap[edge.sourceId];
+              const target = graph.nodeMap[edge.targetId];
+              if (!source || !target) return null;
+
+              const isHighlighted =
+                !selectedBranch ||
+                source.branch === selectedBranch ||
+                target.branch === selectedBranch;
+
+              const sx = source.x + 120;
+              const sy = source.y + 100;
+              const tx = target.x + 120;
+              const ty = target.y;
+
+              const midY = (sy + ty) / 2;
+              const pathD = `M ${sx} ${sy} C ${sx} ${midY}, ${tx} ${midY}, ${tx} ${ty}`;
+
+              return (
+                <path
+                  key={edge.id}
+                  d={pathD}
+                  fill="none"
+                  stroke={
+                    isHighlighted
+                      ? BRANCH_COLORS[source.branch] || "rgba(225, 216, 203, 0.4)"
+                      : "rgba(255, 255, 255, 0.05)"
+                  }
+                  strokeWidth={isHighlighted ? 2.5 : 1}
+                  strokeDasharray={edge.type === "spouse" ? "4,4" : undefined}
+                  opacity={isHighlighted ? 0.75 : 0.15}
+                  className="transition-all duration-300"
+                />
+              );
+            })}
+          </svg>
+
+          {/* 3. Ancestor Nodes */}
+          {graph.nodes.map((node) => {
+            const isBranchMatch = !selectedBranch || node.branch === selectedBranch;
+            const isSelected = activeNode?.id === node.id;
+            const isHighlighted = highlightedNodeId === node.id;
+
+            return (
+              <div
+                key={node.id}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setActiveNode(node);
+                }}
+                style={{
+                  position: "absolute",
+                  left: node.x,
+                  top: node.y,
+                  width: 240,
+                  height: 100,
+                  opacity: isBranchMatch ? 1 : 0.22
+                }}
+                className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-2xl ${
+                  isSelected
+                    ? "border-[var(--archive-accent)] bg-[#f4efe7] text-[var(--archive-text)] ring-4 ring-[rgba(127,29,45,0.3)]"
+                    : isHighlighted
+                    ? "border-amber-400 bg-[#f4efe7] text-[var(--archive-text)] ring-2 ring-amber-400"
+                    : "border-[rgba(255,255,255,0.12)] bg-[#181d24] text-[#e1d8cb] hover:border-[rgba(225,216,203,0.4)]"
+                }`}
+              >
+                <div className="flex items-start justify-between gap-1.5">
+                  <span
+                    className="rounded-full px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-white"
+                    style={{ backgroundColor: BRANCH_COLORS[node.branch] || "#6b7280" }}
+                  >
+                    {node.branch}
+                  </span>
+                  <ConfidenceBadge label={node.confidence} />
+                </div>
+
+                <div className="truncate font-semibold tracking-tight leading-tight text-sm">
+                  {node.name}
+                </div>
+
+                <div className="flex items-center justify-between text-[11px] opacity-75">
+                  <span>{node.lifespan}</span>
+                  <span className="text-[10px] uppercase tracking-wider text-[var(--archive-accent-soft)]">
+                    Gen {node.generation + 1}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Minimap Radar Overlay */}
+        <div className="pointer-events-none absolute bottom-4 right-4 z-20 flex flex-col items-end gap-1.5">
+          <div className="rounded-xl border border-white/10 bg-[#0c1015]/85 p-2 shadow-2xl backdrop-blur-md">
+            <div className="mb-1 text-[9px] font-semibold uppercase tracking-widest text-[#e1d8cb]/60">
+              Minimap Radar
+            </div>
+            <div
+              style={{ width: 140, height: 80 }}
+              className="relative overflow-hidden rounded-lg bg-[#141a22]"
+            >
+              {graph.nodes.map((node) => {
+                const mx = (node.x / graph.bounds.width) * 140;
+                const my = (node.y / graph.bounds.height) * 80;
+                return (
+                  <div
+                    key={`mini-${node.id}`}
+                    style={{
+                      position: "absolute",
+                      left: mx,
+                      top: my,
+                      width: 2.5,
+                      height: 2.5,
+                      backgroundColor: BRANCH_COLORS[node.branch] || "#6b7280"
+                    }}
+                    className="rounded-full"
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Slide-out Ancestor Inspector Drawer */}
+      {activeNode && (
+        <div className="fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col border-l border-[rgba(18,20,24,0.12)] bg-[#f4efe7] p-6 shadow-2xl overflow-y-auto">
+          <div className="flex items-start justify-between border-b border-[rgba(18,20,24,0.08)] pb-4">
+            <div>
+              <div className="archive-kicker">Ancestor Profile</div>
+              <h2 className="mt-1 text-2xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
+                {activeNode.name}
+              </h2>
+              <div className="text-xs text-[var(--archive-text-soft)]">{activeNode.lifespan}</div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setActiveNode(null)}
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-sm font-semibold text-[var(--archive-text)] hover:bg-[rgba(18,20,24,0.16)]"
+            >
+              ✕
+            </button>
+          </div>
+
+          <div className="mt-4 space-y-4 text-sm text-[var(--archive-text)]">
+            <div className="flex items-center justify-between">
+              <span className="font-semibold text-xs uppercase tracking-wider text-[var(--archive-accent)]">
+                Branch: {activeNode.branch}
+              </span>
+              <ConfidenceBadge label={activeNode.confidence} />
+            </div>
+
+            {activeNode.summary && (
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5 leading-6">
+                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                  Summary
+                </div>
+                {activeNode.summary}
+              </div>
+            )}
+
+            {activeNode.keyEvent && (
+              <div className="rounded-2xl border border-[rgba(127,29,45,0.12)] bg-[rgba(127,29,45,0.05)] p-3.5 leading-6">
+                <div className="mb-1 text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                  Key Historical Event
+                </div>
+                {activeNode.keyEvent}
+              </div>
+            )}
+
+            {/* Relationship Links */}
+            <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5 space-y-2">
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                Family Relationships
+              </div>
+              {activeNode.fatherId && graph.nodeMap[activeNode.fatherId] && (
+                <div className="text-xs">
+                  <span className="text-[var(--archive-text-soft)]">Father: </span>
+                  <button
+                    type="button"
+                    onClick={() => focusNode(graph.nodeMap[activeNode.fatherId!])}
+                    className="font-medium underline hover:text-[var(--archive-accent)]"
+                  >
+                    {graph.nodeMap[activeNode.fatherId].name}
+                  </button>
+                </div>
+              )}
+              {activeNode.motherId && graph.nodeMap[activeNode.motherId] && (
+                <div className="text-xs">
+                  <span className="text-[var(--archive-text-soft)]">Mother: </span>
+                  <button
+                    type="button"
+                    onClick={() => focusNode(graph.nodeMap[activeNode.motherId!])}
+                    className="font-medium underline hover:text-[var(--archive-accent)]"
+                  >
+                    {graph.nodeMap[activeNode.motherId].name}
+                  </button>
+                </div>
+              )}
+              {activeNode.childIds.length > 0 && (
+                <div className="text-xs">
+                  <span className="text-[var(--archive-text-soft)]">Children: </span>
+                  <div className="mt-1 flex flex-wrap gap-1.5">
+                    {activeNode.childIds.map((cId) => {
+                      const child = graph.nodeMap[cId];
+                      if (!child) return null;
+                      return (
+                        <button
+                          key={cId}
+                          type="button"
+                          onClick={() => focusNode(child)}
+                          className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white px-2 py-0.5 text-[11px] hover:border-[var(--archive-accent)]"
+                        >
+                          {child.name}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Attached Document Scan */}
+            {activeDocument?.previewUrl ? (
+              <div className="rounded-2xl border border-[rgba(18,20,24,0.08)] bg-white/70 p-3.5">
+                <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-[var(--archive-accent)]">
+                  Attached Primary Record
+                </div>
+                <SourcePreview
+                  src={activeDocument.previewUrl}
+                  title={activeDocument.filename}
+                  className="h-44 w-full rounded-xl"
+                />
+                <Link
+                  href={`/documents/${activeDocument.id}`}
+                  className="mt-2 block text-center text-xs font-semibold text-[var(--archive-accent)] hover:underline"
+                >
+                  View full document record →
+                </Link>
+              </div>
+            ) : null}
+
+            <Link
+              href={`/ancestors/${activeNode.id}`}
+              className="block w-full rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-white shadow transition hover:bg-[var(--archive-accent-soft)]"
+            >
+              View Full Ancestor Dossier
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}

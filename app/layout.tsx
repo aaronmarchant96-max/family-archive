@@ -37,6 +37,9 @@ export default function RootLayout({
                 <Link className="archive-nav__link text-sm px-3 py-1.5" href="/documents">
                   Documents
                 </Link>
+                <Link className="archive-nav__link text-sm px-3 py-1.5" href="/tree">
+                  Family Tree
+                </Link>
               </nav>
             </div>
             <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.24em] text-slate-200 self-start lg:self-auto">
