@@ -375,3 +375,13 @@ a {
 .archive-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(155,120,73,0.45)] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

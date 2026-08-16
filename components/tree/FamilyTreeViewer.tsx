@@ -6,8 +6,7 @@ import {
   buildFamilyTreeGraph,
   BRANCH_COLORS,
   type PersonGraphNode,
-  type FamilyTreeGraph,
-  type TreeEdge
+  type FamilyTreeGraph
 } from "../../lib/familyTreeEngine";
 import { ConfidenceBadge } from "../ConfidenceBadge";
 import { SourcePreview } from "../SourcePreview";
@@ -21,10 +20,11 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const graph = useMemo<FamilyTreeGraph>(() => buildFamilyTreeGraph(rawPeople), [rawPeople]);
 
   // Viewport transformation state
-  const [zoom, setZoom] = useState(0.85);
+  const [zoom, setZoom] = useState(0.8);
   const [pan, setPan] = useState({ x: 100, y: 50 });
   const [isDragging, setIsDragging] = useState(false);
   const dragStartRef = useRef({ x: 0, y: 0, panX: 0, panY: 0 });
+  const touchDistanceRef = useRef<number | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Interaction state
@@ -32,6 +32,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const [searchQuery, setSearchQuery] = useState("");
   const [activeNode, setActiveNode] = useState<PersonGraphNode | null>(null);
   const [highlightedNodeId, setHighlightedNodeId] = useState<string | null>(null);
+  const [showMinimapMobile, setShowMinimapMobile] = useState(false);
 
   // Search filtering
   const searchResults = useMemo(() => {
@@ -46,9 +47,10 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   const focusNode = useCallback((node: PersonGraphNode) => {
     if (!containerRef.current) return;
     const { clientWidth, clientHeight } = containerRef.current;
-    const targetZoom = 1.0;
+    const isMobile = clientWidth < 640;
+    const targetZoom = isMobile ? 0.9 : 1.0;
     const targetX = clientWidth / 2 - (node.x + 120) * targetZoom;
-    const targetY = clientHeight / 2 - (node.y + 50) * targetZoom;
+    const targetY = (isMobile ? clientHeight * 0.35 : clientHeight / 2) - (node.y + 50) * targetZoom;
     setZoom(targetZoom);
     setPan({ x: targetX, y: targetY });
     setHighlightedNodeId(node.id);
@@ -84,6 +86,51 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
     setIsDragging(false);
   };
 
+  // Touch handlers for mobile pan & 2-finger pinch zoom
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if ((e.target as HTMLElement).closest(".tree-interactive-node") || (e.target as HTMLElement).closest(".tree-ui-control")) {
+      return;
+    }
+    if (e.touches.length === 1) {
+      setIsDragging(true);
+      dragStartRef.current = {
+        x: e.touches[0].clientX,
+        y: e.touches[0].clientY,
+        panX: pan.x,
+        panY: pan.y
+      };
+      touchDistanceRef.current = null;
+    } else if (e.touches.length === 2) {
+      setIsDragging(false);
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchDistanceRef.current = Math.hypot(dx, dy);
+    }
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (e.touches.length === 1 && isDragging) {
+      const dx = e.touches[0].clientX - dragStartRef.current.x;
+      const dy = e.touches[0].clientY - dragStartRef.current.y;
+      setPan({
+        x: dragStartRef.current.panX + dx,
+        y: dragStartRef.current.panY + dy
+      });
+    } else if (e.touches.length === 2 && touchDistanceRef.current !== null) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const currentDist = Math.hypot(dx, dy);
+      const scaleDelta = currentDist / touchDistanceRef.current;
+      touchDistanceRef.current = currentDist;
+      setZoom((prev) => Math.min(Math.max(prev * scaleDelta, 0.35), 2.2));
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+    touchDistanceRef.current = null;
+  };
+
   // Wheel zoom
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
@@ -93,19 +140,23 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   };
 
   // Reset view
-  const resetView = () => {
+  const resetView = useCallback(() => {
     if (!containerRef.current) return;
-    const { clientWidth } = containerRef.current;
-    const initialZoom = 0.8;
+    const { clientWidth, clientHeight } = containerRef.current;
+    const isMobile = clientWidth < 640;
+    const initialZoom = isMobile ? 0.55 : 0.8;
     setZoom(initialZoom);
-    setPan({ x: (clientWidth - graph.bounds.width * initialZoom) / 2, y: 40 });
+    setPan({
+      x: (clientWidth - graph.bounds.width * initialZoom) / 2,
+      y: isMobile ? 20 : 40
+    });
     setSelectedBranch("");
     setHighlightedNodeId(null);
-  };
+  }, [graph.bounds.width]);
 
   useEffect(() => {
     resetView();
-  }, [graph.bounds.width]);
+  }, [resetView]);
 
   // Attached document lookup for active node
   const activeDocument = useMemo(() => {
@@ -116,27 +167,27 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
   }, [activeNode, documents]);
 
   return (
-    <div className="relative flex flex-col gap-4">
+    <div className="relative flex flex-col gap-4 pb-16 sm:pb-4">
       {/* Top Header & Search Bar */}
       <div className="archive-panel space-y-4">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div className="space-y-1.5">
+        <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between">
+          <div className="space-y-1">
             <div className="archive-kicker">Interactive Constellation</div>
-            <h1 className="text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
+            <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[var(--archive-text)] archive-display">
               Family Lineage Tree
             </h1>
-            <p className="max-w-3xl text-sm leading-6 text-[var(--archive-text-soft)]">
-              Pan, zoom, and explore 7 generations across historical epochs. Click any ancestor to inspect verified evidence and relationships.
+            <p className="max-w-3xl text-xs sm:text-sm leading-5 sm:leading-6 text-[var(--archive-text-soft)]">
+              Pan, pinch to zoom, and explore 7 generations across historical epochs. Tap any ancestor to inspect verified evidence and relationships.
             </p>
           </div>
 
-          {/* Zoom & View Controls */}
-          <div className="tree-ui-control flex items-center gap-2">
+          {/* Desktop Zoom & View Controls */}
+          <div className="tree-ui-control hidden sm:flex items-center gap-2">
             <button
               type="button"
               onClick={() => setZoom((z) => Math.min(z + 0.15, 2.2))}
               aria-label="Zoom in"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)] active:scale-95"
             >
               +
             </button>
@@ -144,14 +195,14 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               type="button"
               onClick={() => setZoom((z) => Math.max(z - 0.15, 0.35))}
               aria-label="Zoom out"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 text-base font-semibold text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)] active:scale-95"
             >
               −
             </button>
             <button
               type="button"
               onClick={resetView}
-              className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)]"
+              className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[var(--archive-text)] shadow-sm transition hover:bg-white hover:border-[rgba(127,29,45,0.4)] active:scale-95"
             >
               Reset View
             </button>
@@ -165,7 +216,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             <input
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by name, branch, or year to jump to an ancestor..."
+              placeholder="Search by name, branch, or year to jump to ancestor..."
               className="w-full rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white/80 px-4 py-3 text-sm text-[var(--archive-text)] outline-none placeholder:text-[var(--archive-text-soft)] shadow-sm focus:border-[rgba(127,29,45,0.5)] focus:ring-2 focus:ring-[rgba(127,29,45,0.12)]"
             />
           </label>
@@ -173,6 +224,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             <button
               type="button"
               onClick={() => setSearchQuery("")}
+              aria-label="Clear search"
               className="absolute right-3 top-1/2 -translate-y-1/2 flex h-6 w-6 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-xs text-[var(--archive-text-soft)] hover:bg-[rgba(18,20,24,0.16)]"
             >
               ✕
@@ -181,12 +233,12 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
 
           {/* Autocomplete Dropdown */}
           {searchResults.length > 0 && (
-            <div className="absolute left-0 right-0 top-full z-40 mt-1 max-h-64 overflow-y-auto rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white p-2 shadow-xl">
+            <div className="absolute left-0 right-0 top-full z-40 mt-1 max-h-64 overflow-y-auto rounded-2xl border border-[rgba(18,20,24,0.12)] bg-white p-2 shadow-2xl">
               {searchResults.map((node) => (
                 <div
                   key={node.id}
                   onClick={() => focusNode(node)}
-                  className="flex cursor-pointer items-center justify-between rounded-xl px-3 py-2 text-sm text-[var(--archive-text)] transition hover:bg-[rgba(127,29,45,0.06)]"
+                  className="flex cursor-pointer items-center justify-between rounded-xl px-3 py-2.5 text-sm text-[var(--archive-text)] transition hover:bg-[rgba(127,29,45,0.06)] active:bg-[rgba(127,29,45,0.12)]"
                 >
                   <div>
                     <span className="font-semibold">{node.name}</span>{" "}
@@ -204,12 +256,12 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           )}
         </div>
 
-        {/* Branch Filter Pills */}
-        <div className="flex flex-wrap items-center gap-2 pt-1">
+        {/* Branch Filter Horizontal Scroll Bar */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
           <button
             type="button"
             onClick={() => setSelectedBranch("")}
-            className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
+            className={`whitespace-nowrap rounded-full border px-3 py-1 text-xs font-semibold transition shrink-0 ${
               !selectedBranch
                 ? "border-[rgba(127,29,45,0.4)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
                 : "border-[rgba(18,20,24,0.08)] bg-white/70 text-[var(--archive-text)] hover:bg-white"
@@ -217,12 +269,12 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           >
             All Branches ({graph.nodes.length})
           </button>
-          {graph.branches.slice(0, 8).map((b) => (
+          {graph.branches.slice(0, 10).map((b) => (
             <button
               key={b.name}
               type="button"
               onClick={() => setSelectedBranch(selectedBranch === b.name ? "" : b.name)}
-              className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-semibold transition ${
+              className={`flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1 text-xs font-semibold transition shrink-0 ${
                 selectedBranch === b.name
                   ? "border-[rgba(127,29,45,0.4)] bg-[rgba(127,29,45,0.12)] text-[var(--archive-accent)]"
                   : "border-[rgba(18,20,24,0.08)] bg-white/70 text-[var(--archive-text)] hover:bg-white"
@@ -243,8 +295,11 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         onWheel={handleWheel}
-        className={`relative h-[720px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none ${
+        className={`relative h-[65vh] min-h-[480px] sm:h-[720px] w-full overflow-hidden rounded-[2rem] border border-[rgba(18,20,24,0.12)] bg-[#12151a] shadow-inner select-none touch-none ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
       >
@@ -273,14 +328,14 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               className="pointer-events-none flex flex-col justify-start p-4"
             >
               <div className="flex items-baseline gap-3">
-                <span className="font-serif text-lg font-semibold tracking-wide text-[#e1d8cb]/90">
+                <span className="font-serif text-base sm:text-lg font-semibold tracking-wide text-[#e1d8cb]/90">
                   {epoch.name}
                 </span>
                 <span className="text-xs font-mono font-medium tracking-wider text-[#e1d8cb]/50">
                   {epoch.timeRange}
                 </span>
               </div>
-              <span className="text-xs text-[#e1d8cb]/40">{epoch.historicalContext}</span>
+              <span className="text-[11px] sm:text-xs text-[#e1d8cb]/40">{epoch.historicalContext}</span>
             </div>
           ))}
 
@@ -295,12 +350,6 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
               pointerEvents: "none"
             }}
           >
-            <defs>
-              <linearGradient id="edge-default" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stopColor="rgba(225, 216, 203, 0.25)" />
-                <stop offset="100%" stopColor="rgba(225, 216, 203, 0.45)" />
-              </linearGradient>
-            </defs>
             {graph.edges.map((edge) => {
               const source = graph.nodeMap[edge.sourceId];
               const target = graph.nodeMap[edge.targetId];
@@ -359,7 +408,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                   height: 100,
                   opacity: isBranchMatch ? 1 : 0.22
                 }}
-                className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-2xl ${
+                className={`tree-interactive-node group flex cursor-pointer flex-col justify-between rounded-2xl border p-3 shadow-lg transition duration-200 hover:-translate-y-1 hover:shadow-2xl active:scale-95 ${
                   isSelected
                     ? "border-[var(--archive-accent)] bg-[#f4efe7] text-[var(--archive-text)] ring-4 ring-[rgba(127,29,45,0.3)]"
                     : isHighlighted
@@ -392,8 +441,47 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
           })}
         </div>
 
-        {/* Minimap Radar Overlay */}
-        <div className="pointer-events-none absolute bottom-4 right-4 z-20 flex flex-col items-end gap-1.5">
+        {/* Floating Mobile/Desktop Canvas Controls */}
+        <div className="absolute bottom-4 left-4 z-20 flex items-center gap-1.5 rounded-full border border-white/10 bg-[#0c1015]/85 p-1.5 shadow-2xl backdrop-blur-md">
+          <button
+            type="button"
+            onClick={() => setZoom((z) => Math.min(z + 0.15, 2.2))}
+            aria-label="Zoom in"
+            className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-[#f4efe7] hover:bg-white/20 active:scale-95"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onClick={() => setZoom((z) => Math.max(z - 0.15, 0.35))}
+            aria-label="Zoom out"
+            className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-[#f4efe7] hover:bg-white/20 active:scale-95"
+          >
+            −
+          </button>
+          <button
+            type="button"
+            onClick={resetView}
+            aria-label="Reset viewport"
+            className="px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-[#e1d8cb] hover:text-white"
+          >
+            Reset
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowMinimapMobile((prev) => !prev)}
+            className="sm:hidden px-2 py-1 text-[11px] font-semibold uppercase tracking-wider text-amber-300 hover:text-amber-200 border-l border-white/10"
+          >
+            {showMinimapMobile ? "Hide Map" : "Radar"}
+          </button>
+        </div>
+
+        {/* Minimap Radar Overlay (Always on desktop, toggleable on mobile) */}
+        <div
+          className={`pointer-events-none absolute bottom-4 right-4 z-20 flex flex-col items-end gap-1.5 transition ${
+            showMinimapMobile ? "block" : "hidden sm:flex"
+          }`}
+        >
           <div className="rounded-xl border border-white/10 bg-[#0c1015]/85 p-2 shadow-2xl backdrop-blur-md">
             <div className="mb-1 text-[9px] font-semibold uppercase tracking-widest text-[#e1d8cb]/60">
               Minimap Radar
@@ -425,9 +513,12 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
         </div>
       </div>
 
-      {/* Slide-out Ancestor Inspector Drawer */}
+      {/* Responsive Inspector Drawer (Bottom Sheet on Mobile, Slide-out on Desktop) */}
       {activeNode && (
-        <div className="fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col border-l border-[rgba(18,20,24,0.12)] bg-[#f4efe7] p-6 shadow-2xl overflow-y-auto">
+        <div className="fixed inset-x-0 bottom-0 z-50 flex max-h-[85vh] w-full flex-col rounded-t-[2rem] border-t border-[rgba(18,20,24,0.15)] bg-[#f4efe7] p-5 sm:p-6 shadow-2xl overflow-y-auto sm:inset-y-0 sm:right-0 sm:left-auto sm:max-w-md sm:rounded-none sm:border-l sm:border-t-0 animate-in slide-in-from-bottom sm:slide-in-from-right duration-200">
+          {/* Mobile Sheet Drag Handle Indicator */}
+          <div className="sm:hidden mx-auto mb-3 h-1.5 w-12 rounded-full bg-[rgba(18,20,24,0.18)]" />
+
           <div className="flex items-start justify-between border-b border-[rgba(18,20,24,0.08)] pb-4">
             <div>
               <div className="archive-kicker">Ancestor Profile</div>
@@ -439,7 +530,8 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
             <button
               type="button"
               onClick={() => setActiveNode(null)}
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-sm font-semibold text-[var(--archive-text)] hover:bg-[rgba(18,20,24,0.16)]"
+              aria-label="Close drawer"
+              className="flex h-9 w-9 items-center justify-center rounded-full bg-[rgba(18,20,24,0.08)] text-base font-semibold text-[var(--archive-text)] transition hover:bg-[rgba(18,20,24,0.16)] active:scale-95"
             >
               ✕
             </button>
@@ -512,7 +604,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
                           key={cId}
                           type="button"
                           onClick={() => focusNode(child)}
-                          className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white px-2 py-0.5 text-[11px] hover:border-[var(--archive-accent)]"
+                          className="rounded-full border border-[rgba(18,20,24,0.12)] bg-white px-2.5 py-1 text-[11px] font-medium hover:border-[var(--archive-accent)] active:scale-95"
                         >
                           {child.name}
                         </button>
@@ -545,7 +637,7 @@ export function FamilyTreeViewer({ rawPeople, documents }: FamilyTreeViewerProps
 
             <Link
               href={`/ancestors/${activeNode.id}`}
-              className="block w-full rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-2.5 text-center text-xs font-semibold uppercase tracking-widest text-white shadow transition hover:bg-[var(--archive-accent-soft)]"
+              className="block w-full rounded-full border border-[rgba(127,29,45,0.3)] bg-[var(--archive-accent)] py-3 text-center text-xs font-semibold uppercase tracking-widest text-white shadow-md transition hover:bg-[var(--archive-accent-soft)] active:scale-95"
             >
               View Full Ancestor Dossier
             </Link>
