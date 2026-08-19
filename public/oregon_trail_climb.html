@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyer's Oregon Trail Climb</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1510;
+            color: #d4a373;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0 0 5px 0;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: #faedcd;
+            text-shadow: 2px 2px #000;
+        }
+        .meta {
+            margin-bottom: 10px;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #ccd5ae;
+        }
+        canvas {
+            border: 4px solid #d4a373;
+            background: #283618;
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+        }
+        .controls {
+            margin-top: 10px;
+            font-size: 11px;
+            color: #faedcd;
+            max-width: 360px;
+            text-align: center;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>OREGON TRAIL CLIMB</h1>
+    <div class="meta">Pioneer: James R. Conlee • Year: 1851</div>
+    <canvas id="gameCanvas" width="360" height="500"></canvas>
+    <div class="controls">
+        Use <b>Left & Right Arrow Keys</b> to move.<br>
+        Press <b>Spacebar</b> to jump up the ledges.<br>
+        Avoid the falling boulders! Reach 1,851 miles to reach Oregon.
+    </div>
+
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Game State Variables
+        let gameOver = false;
+        let victory = false;
+        let altitude = 0; // Altitude in miles (target 1851)
+        const targetAltitude = 1851;
+
+        // Player Variables
+        const player = {
+            x: 180,
+            y: 400,
+            width: 16,
+            height: 24,
+            vx: 0,
+            vy: 0,
+            speed: 4,
+            jumpForce: 7.5,
+            grounded: false
+        };
+
+        // Physics Settings
+        const gravity = 0.3;
+        const friction = 0.8;
+
+        // Platforms (Mountain Ledges)
+        const platforms = [];
+        const platformHeight = 8;
+        
+        // Spawn initial platforms
+        function initPlatforms() {
+            platforms.length = 0;
+            // Ground
+            platforms.push({ x: 0, y: 480, width: canvas.width });
+            
+            // Random steps going up
+            for (let i = 0; i < 7; i++) {
+                platforms.push({
+                    x: Math.random() * (canvas.width - 70),
+                    y: 400 - (i * 70),
+                    width: 70 + Math.random() * 30
+                });
+            }
+        }
+
+        // Boulders (Obstacles)
+        const boulders = [];
+        let boulderTimer = 0;
+
+        // Key Listeners
+        const keys = {};
+        window.addEventListener("keydown", e => keys[e.code] = true);
+        window.addEventListener("keyup", e => keys[e.code] = false);
+
+        // Reset Game
+        function resetGame() {
+            player.x = 180;
+            player.y = 400;
+            player.vx = 0;
+            player.vy = 0;
+            altitude = 0;
+            boulders.length = 0;
+            gameOver = false;
+            victory = false;
+            initPlatforms();
+        }
+
+        // AABB Collision Detection
+        function checkCollision(p, plat) {
+            return p.x < plat.x + plat.width &&
+                   p.x + p.width > plat.x &&
+                   p.y + p.height >= plat.y &&
+                   p.y + p.height <= plat.y + 10 && // Only land on top surface
+                   p.vy >= 0; // Only land when falling down
+        }
+
+        // Game Update Logic
+        function update() {
+            if (gameOver || victory) {
+                if (keys["Space"]) resetGame();
+                return;
+            }
+
+            // Input Handling
+            if (keys["ArrowLeft"]) player.vx = -player.speed;
+            else if (keys["ArrowRight"]) player.vx = player.speed;
+            else player.vx *= friction;
+
+            if (keys["Space"] && player.grounded) {
+                player.vy = -player.jumpForce;
+                player.grounded = false;
+            }
+
+            // Gravity
+            player.vy += gravity;
+
+            // Update Positions
+            player.x += player.vx;
+            player.y += player.vy;
+
+            // Screen boundaries (Loop horizontal wrap)
+            if (player.x < -player.width) player.x = canvas.width;
+            if (player.x > canvas.width) player.x = -player.width;
+
+            // Platform Collisions
+            player.grounded = false;
+            for (let plat of platforms) {
+                if (checkCollision(player, plat)) {
+                    player.y = plat.y - player.height;
+                    player.vy = 0;
+                    player.grounded = true;
+                }
+            }
+
+            // Camera Scrolling (Simulates climbing up)
+            if (player.y < canvas.height / 2) {
+                const diff = (canvas.height / 2) - player.y;
+                player.y = canvas.height / 2;
+                
+                // Track altitude progress
+                altitude += Math.floor(diff * 0.5);
+                if (altitude >= targetAltitude) {
+                    altitude = targetAltitude;
+                    victory = true;
+                }
+
+                // Move platforms down
+                for (let plat of platforms) {
+                    plat.y += diff;
+                }
+
+                // Move boulders down
+                for (let b of boulders) {
+                    b.y += diff;
+                }
+            }
+
+            // Recycle off-screen platforms and generate new ones at the top
+            for (let i = platforms.length - 1; i >= 0; i--) {
+                if (platforms[i].y > canvas.height) {
+                    platforms.splice(i, 1);
+                    // Spawn new platform above the highest one
+                    let highestY = canvas.height;
+                    for (let p of platforms) {
+                        if (p.y < highestY) highestY = p.y;
+                    }
+                    platforms.push({
+                        x: Math.random() * (canvas.width - 80),
+                        y: highestY - 70,
+                        width: 70 + Math.random() * 30
+                    });
+                }
+            }
+
+            // Spawn Falling Boulders
+            boulderTimer++;
+            if (boulderTimer > 80 && !victory) {
+                boulders.push({
+                    x: Math.random() * (canvas.width - 12),
+                    y: -20,
+                    size: 12,
+                    speed: 2 + Math.random() * 3
+                });
+                boulderTimer = 0;
+            }
+
+            // Update Boulders and Check Hit
+            for (let i = boulders.length - 1; i >= 0; i--) {
+                const b = boulders[i];
+                b.y += b.speed;
+
+                // Hit Detection
+                if (b.x < player.x + player.width &&
+                    b.x + b.size > player.x &&
+                    b.y < player.y + player.height &&
+                    b.y + b.size > player.y) {
+                    gameOver = true;
+                }
+
+                // Remove off-screen
+                if (b.y > canvas.height) {
+                    boulders.splice(i, 1);
+                }
+            }
+
+            // Fall off screen lose condition
+            if (player.y > canvas.height) {
+                gameOver = true;
+            }
+        }
+
+        // Render Game Assets
+        function draw() {
+            // Clear Frame
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Mountain/Dirt background accents
+            ctx.fillStyle = "#606c38";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Platforms (Ledges)
+            for (let plat of platforms) {
+                ctx.fillStyle = "#dda15e";
+                ctx.fillRect(plat.x, plat.y, plat.width, platformHeight);
+                // Grass topping on ledges
+                ctx.fillStyle = "#ccd5ae";
+                ctx.fillRect(plat.x, plat.y, plat.width, 2);
+            }
+
+            // Draw Pioneer (Wagon shape or block)
+            ctx.fillStyle = "#faedcd";
+            ctx.fillRect(player.x, player.y, player.width, player.height);
+            // Draw a simple pioneer hat/face
+            ctx.fillStyle = "#d4a373";
+            ctx.fillRect(player.x + 2, player.y + 4, 12, 6); // face
+            ctx.fillStyle = "#d4a373";
+            ctx.fillRect(player.x - 2, player.y + 2, 20, 2); // hat brim
+            ctx.fillStyle = "#1a1510";
+            ctx.fillRect(player.x + 3, player.y, 10, 3); // hat top
+
+            // Draw Boulders
+            ctx.fillStyle = "#1a1510";
+            for (let b of boulders) {
+                ctx.beginPath();
+                ctx.arc(b.x + b.size/2, b.y + b.size/2, b.size/2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // Draw UI Stats
+            ctx.fillStyle = "#000000";
+            ctx.fillRect(0, 0, canvas.width, 26);
+            ctx.fillStyle = "#faedcd";
+            ctx.font = "11px 'Courier New'";
+            ctx.fillText(`PROGRESS: ${altitude} / 1,851 MILES`, 10, 18);
+
+            // Overlay Screens
+            if (gameOver) {
+                ctx.fillStyle = "rgba(26,21,16,0.85)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#d45050";
+                ctx.font = "20px 'Courier New'";
+                ctx.textAlign = "center";
+                ctx.fillText("TRAIL ACCIDENT!", canvas.width/2, 200);
+                ctx.fillStyle = "#faedcd";
+                ctx.font = "12px 'Courier New'";
+                ctx.fillText("The wilderness took its toll.", canvas.width/2, 240);
+                ctx.fillText("Press SPACEBAR to try again.", canvas.width/2, 280);
+                ctx.textAlign = "left"; // reset
+            }
+
+            if (victory) {
+                ctx.fillStyle = "rgba(40,54,24,0.9)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "#ccd5ae";
+                ctx.font = "20px 'Courier New'";
+                ctx.textAlign = "center";
+                ctx.fillText("WELCOME TO OREGON!", canvas.width/2, 180);
+                ctx.fillStyle = "#faedcd";
+                ctx.font = "11px 'Courier New'";
+                ctx.fillText("James R. Conlee & family arrived in 1851.", canvas.width/2, 220);
+                ctx.fillText("You successfully crossed the Rockies!", canvas.width/2, 250);
+                ctx.fillText("Press SPACEBAR to climb again.", canvas.width/2, 300);
+                ctx.textAlign = "left"; // reset
+            }
+        }
+
+        // Loop Runner
+        function loop() {
+            update();
+            draw();
+            requestAnimationFrame(loop);
+        }
+
+        // Run
+        resetGame();
+        loop();
+    </script>
+</body>
+</html>

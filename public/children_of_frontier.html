@@ -1,0 +1,2809 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Children of the Frontier</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --mud: #5e4b3a;
+      --olive: #6b8e23;
+      --sand: #d2b48c;
+      --amber: #e8a33d;
+      --void: #141210;
+      --blood: #a33d2d;
+      --panel: rgba(20, 18, 16, 0.92);
+      --line: rgba(210, 180, 140, 0.18);
+      --text: #f6ead3;
+      --muted: #cbb48b;
+      --teal: #66c7b2;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top, rgba(232, 163, 61, 0.06), transparent 24%),
+        linear-gradient(180deg, #1a1510 0%, #0e0b09 100%);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .shell {
+      width: min(100%, 1240px);
+      padding: 16px 14px 24px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: end;
+      margin-bottom: 10px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+
+    h1 { font-size: clamp(28px, 3vw, 42px); }
+
+    .eyebrow {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+    .statusline {
+      color: var(--sand);
+      text-align: right;
+      font-size: 12px;
+      max-width: 46ch;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hud {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr)) 1.4fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hud-item {
+      min-height: 66px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hud-item::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 3px;
+      background: linear-gradient(180deg, rgba(232,163,61,0.9), rgba(107,142,35,0.7));
+      opacity: 0.9;
+    }
+
+    .hud-item span {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .hud-item strong {
+      font-size: 20px;
+      color: var(--text);
+    }
+
+    .wheel-row {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .wheel {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid var(--sand);
+      position: relative;
+      opacity: 0.45;
+    }
+
+    .wheel::before,
+    .wheel::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 12px;
+      height: 1px;
+      background: var(--sand);
+      transform: translate(-50%, -50%);
+    }
+
+    .wheel::after {
+      width: 1px;
+      height: 12px;
+    }
+
+    .wheel.on {
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(232, 163, 61, 0.12);
+    }
+
+    .crew-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .crew-card {
+      background:
+        linear-gradient(180deg, rgba(29, 23, 19, 0.98), rgba(15, 11, 9, 0.98));
+      border: 1px solid rgba(210, 180, 140, 0.16);
+      border-radius: 16px;
+      padding: 12px;
+      min-height: 88px;
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 10px;
+      align-items: start;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.03);
+    }
+
+    .crew-card h3 {
+      font-size: 15px;
+      line-height: 1.1;
+      margin-bottom: 2px;
+    }
+
+    .crew-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid rgba(232, 163, 61, 0.45);
+      background:
+        radial-gradient(circle at 50% 36%, rgba(255,255,255,0.18), transparent 20%),
+        linear-gradient(180deg, rgba(232, 163, 61, 0.16), rgba(14, 11, 9, 0.95));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .crew-avatar::before {
+      content: "";
+      position: absolute;
+      inset: 8px 12px 18px;
+      border-radius: 999px 999px 14px 14px;
+      background: rgba(243, 227, 192, 0.82);
+      box-shadow:
+        0 -8px 0 rgba(243, 227, 192, 0.22),
+        0 14px 0 rgba(243, 227, 192, 0.18);
+      opacity: 0.9;
+    }
+
+    .crew-body {
+      min-width: 0;
+    }
+
+    .crew-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .crew-role {
+      color: #f0c87c;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .trait {
+      color: var(--amber);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+
+    .trait-line {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .trait-pill {
+      padding: 3px 7px;
+      border-radius: 999px;
+      font-size: 10px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      background: rgba(232, 163, 61, 0.1);
+      border: 1px solid rgba(232, 163, 61, 0.16);
+      color: #f6ead3;
+    }
+
+    .trait-pill.good {
+      background: rgba(102, 199, 178, 0.12);
+      border-color: rgba(102, 199, 178, 0.2);
+    }
+
+    .trait-pill.bad {
+      background: rgba(163, 61, 45, 0.16);
+      border-color: rgba(163, 61, 45, 0.28);
+    }
+
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.08);
+      overflow: hidden;
+      margin-top: 6px;
+      position: relative;
+    }
+
+    .bar > div {
+      height: 100%;
+      width: 50%;
+      background: linear-gradient(90deg, var(--olive), var(--amber));
+      transition: width 120ms linear;
+    }
+
+    .bar.morale > div {
+      background: linear-gradient(90deg, var(--teal), var(--amber));
+    }
+
+    .status-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+      font-size: 11px;
+    }
+
+    .stat-note {
+      margin-top: 8px;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.35;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .tag {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(232, 163, 61, 0.1);
+      color: var(--sand);
+      border: 1px solid rgba(232, 163, 61, 0.14);
+    }
+
+    .tag.bad {
+      background: rgba(163, 61, 45, 0.16);
+      color: #efb4a9;
+      border-color: rgba(163, 61, 45, 0.24);
+    }
+
+    .stage {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 3px solid rgba(210, 180, 140, 0.24);
+      background: #12100d;
+      box-shadow: 0 20px 52px rgba(0,0,0,0.42);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: linear-gradient(180deg, #271f18 0%, #17120f 100%);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: rgba(8, 6, 5, 0.58);
+      backdrop-filter: blur(2px);
+    }
+
+    .overlay.show {
+      display: flex;
+    }
+
+    .overlay-card {
+      width: min(100%, 640px);
+      background: rgba(14, 11, 9, 0.96);
+      border: 1px solid rgba(210, 180, 140, 0.2);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .overlay-actions,
+    .action-row,
+    .choice-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 16px;
+      background: var(--amber);
+      color: #23170f;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button.ghost {
+      background: rgba(232, 163, 61, 0.12);
+      color: var(--text);
+      border: 1px solid rgba(232, 163, 61, 0.16);
+    }
+
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 12px 0;
+    }
+
+    .console {
+      background: var(--panel);
+      border: 1px solid rgba(210, 180, 140, 0.16);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .console-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid rgba(210, 180, 140, 0.14);
+      background: rgba(0,0,0,0.18);
+    }
+
+    .console-title {
+      color: var(--sand);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 11px;
+    }
+
+    .trail-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      flex: 1 1 320px;
+      color: #f2dcc0;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+
+    .trail-chip {
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(232, 163, 61, 0.12);
+      border: 1px solid rgba(232, 163, 61, 0.18);
+    }
+
+    .event-panel {
+      padding: 14px;
+      border-bottom: 1px solid rgba(210, 180, 140, 0.12);
+      min-height: 130px;
+    }
+
+    .event-panel h2 {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .event-panel p {
+      margin: 0 0 10px;
+      line-height: 1.5;
+      color: #ead9bf;
+    }
+
+    .choice-row {
+      margin-top: 10px;
+      width: 100%;
+      flex: 1 1 100%;
+      justify-content: flex-end;
+    }
+
+    .choice-card {
+      flex: 1 1 180px;
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: rgba(232, 163, 61, 0.13);
+      border: 1px solid rgba(232, 163, 61, 0.32);
+      color: var(--text);
+      text-align: left;
+      line-height: 1.25;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+    }
+
+    .choice-card:hover:not(:disabled) {
+      background: rgba(232, 163, 61, 0.2);
+      border-color: rgba(232, 163, 61, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .choice-card strong {
+      display: block;
+      color: #fff6e7;
+      margin-bottom: 3px;
+    }
+
+    .choice-card small {
+      display: block;
+      color: #f0dec0;
+      margin-top: 4px;
+      line-height: 1.35;
+    }
+
+    .log-panel {
+      max-height: 220px;
+      overflow: auto;
+      padding: 12px 14px 14px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .log-line {
+      margin-bottom: 6px;
+      color: #e9dcc2;
+    }
+
+    .log-line.system {
+      color: #f0c87c;
+    }
+
+    .log-line.bad {
+      color: #efb4a9;
+    }
+
+    .log-line.good {
+      color: #b8f0dc;
+    }
+
+    .hint {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 980px) {
+      .hud,
+      .crew-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Cardo Rei / trail management build</div>
+        <h1>Children of the Frontier</h1>
+      </div>
+      <div class="statusline" id="statusLine">Choose a clan and begin the trail.</div>
+    </header>
+
+    <section class="hud" aria-label="caravan resources">
+      <div class="hud-item">
+        <span>Distance</span>
+        <strong id="distanceValue">0 / 1851</strong>
+      </div>
+      <div class="hud-item">
+        <span>Rations</span>
+        <strong id="rationsValue">64</strong>
+      </div>
+      <div class="hud-item">
+        <span>Ammo</span>
+        <strong id="ammoValue">24</strong>
+      </div>
+      <div class="hud-item">
+        <span>Medicine</span>
+        <strong id="medicineValue">6</strong>
+      </div>
+      <div class="hud-item">
+        <span>Karma</span>
+        <strong id="karmaValue">50</strong>
+      </div>
+      <div class="hud-item">
+        <span>Weather</span>
+        <strong id="weatherValue">Clear</strong>
+      </div>
+      <div class="hud-item">
+        <span>Caravan Wheels</span>
+        <div class="wheel-row" id="wheelRow"></div>
+      </div>
+    </section>
+
+    <section class="crew-grid" id="crewGrid" aria-label="crew status"></section>
+
+    <main class="stage">
+      <canvas id="gameCanvas" width="1100" height="440"></canvas>
+
+      <div class="overlay show" id="startOverlay">
+        <div class="overlay-card">
+          <div class="eyebrow">v1 caravan run</div>
+          <h2 id="startTitle">Pick your starting family group.</h2>
+          <p id="startCopy">
+            You will manage rations, ammo, medicine, karma, wagon integrity, and 5 wagon wheels while weather and moral choices shape the trail.
+          </p>
+          <div class="overlay-actions">
+            <button id="dyerButton">Dyer Clan</button>
+            <button id="ramseyButton" class="ghost">Ramsey Clan</button>
+            <button id="startButton">Start Run</button>
+          </div>
+          <div class="hint">
+            A/D move through menus if needed. ESC pauses. `Travel Day` is the main loop. `Hunt` opens the shooting minigame. `Camp` lets you rest.
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay" id="pauseOverlay">
+        <div class="overlay-card">
+          <div class="eyebrow">Paused</div>
+          <h2>Paused</h2>
+          <p id="pauseStats">Run stats will appear here.</p>
+          <div class="overlay-actions">
+            <button id="resumeButton">Resume</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay" id="endOverlay">
+        <div class="overlay-card">
+          <div class="eyebrow" id="endEyebrow">Run complete</div>
+          <h2 id="endTitle">The trail is done.</h2>
+          <p id="endCopy"></p>
+          <div class="overlay-actions">
+            <button id="restartButton">Run Again</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="controls" aria-label="primary actions">
+      <button id="travelButton">Travel Day</button>
+      <button id="huntButton">Hunt</button>
+      <button id="campButton">Camp</button>
+      <button id="helpButton" class="ghost">How it works</button>
+    </section>
+
+    <section class="console" aria-label="trail console">
+      <div class="console-head">
+        <div class="console-title" id="consoleTitle">Trail Console</div>
+        <div class="trail-meta" id="trailMeta"></div>
+        <div class="choice-row" id="choiceRow"></div>
+      </div>
+      <div class="event-panel" id="eventPanel">
+        <h2>Trail ready.</h2>
+        <p>Choose a clan, then travel day by day. Events stop the caravan. The hunt opens a separate mouse-and-shoot screen.</p>
+      </div>
+      <div class="log-panel" id="logPanel" aria-live="polite"></div>
+    </section>
+  </div>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const statusLine = document.getElementById("statusLine");
+    const startOverlay = document.getElementById("startOverlay");
+    const pauseOverlay = document.getElementById("pauseOverlay");
+    const endOverlay = document.getElementById("endOverlay");
+    const endEyebrow = document.getElementById("endEyebrow");
+    const endTitle = document.getElementById("endTitle");
+    const endCopy = document.getElementById("endCopy");
+    const pauseStats = document.getElementById("pauseStats");
+
+    const crewGrid = document.getElementById("crewGrid");
+    const logPanel = document.getElementById("logPanel");
+    const eventPanel = document.getElementById("eventPanel");
+    const choiceRow = document.getElementById("choiceRow");
+    const consoleTitle = document.getElementById("consoleTitle");
+
+    const distanceValue = document.getElementById("distanceValue");
+    const rationsValue = document.getElementById("rationsValue");
+    const ammoValue = document.getElementById("ammoValue");
+    const medicineValue = document.getElementById("medicineValue");
+    const karmaValue = document.getElementById("karmaValue");
+    const weatherValue = document.getElementById("weatherValue");
+    const wheelRow = document.getElementById("wheelRow");
+    const trailMeta = document.getElementById("trailMeta");
+
+    const dyerButton = document.getElementById("dyerButton");
+    const ramseyButton = document.getElementById("ramseyButton");
+    const startButton = document.getElementById("startButton");
+    const travelButton = document.getElementById("travelButton");
+    const huntButton = document.getElementById("huntButton");
+    const campButton = document.getElementById("campButton");
+    const helpButton = document.getElementById("helpButton");
+    const resumeButton = document.getElementById("resumeButton");
+    const restartButton = document.getElementById("restartButton");
+
+    const W = canvas.width;
+    const H = canvas.height;
+    const DESTINATION = 1851;
+    const CHECKPOINTS = [450, 900, 1350];
+    const EVENT_GATES = Array.from({ length: 22 }, (_, i) => (i + 1) * 85);
+    const WEATHER_SEGMENT = 150;
+
+    // Procedural sound synthesizer (ZzFX derivative)
+    function playSound(type, freq, duration) {
+      try {
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.04, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) { console.warn("AudioContext blocked by browser security.", e); }
+    }
+
+    const CLANS = {
+      dyer: {
+        name: "Dyer Clan",
+        intro: "The Dyers know the edge of the map and a little about surviving it.",
+        crew: [
+          { name: "George Washington Dyer", trait: "Resilient" },
+          { name: "Elizabeth Ellen Conlee", trait: "Wise" },
+          { name: "Glenn Milton Dyer", trait: "Athletic" },
+          { name: "George Hollis Dyer", trait: "Charming" }
+        ]
+      },
+      ramsey: {
+        name: "Ramsey Clan",
+        intro: "The Ramseys carry a different branch of grit. The trail will not care.",
+        crew: [
+          { name: "Armina Ramsey", trait: "Resilient" },
+          { name: "Anderson Edwards", trait: "Athletic" },
+          { name: "Silas Josiah Edwards", trait: "Charming" },
+          { name: "Edith Ann Edwards", trait: "Wise" }
+        ]
+      }
+    };
+
+    const EVENT_DECK = [
+      {
+        id: "flooded_ford",
+        title: "Flooded Ford",
+        text: "A creek has swallowed the old crossing. The wagon can move, but the wheels are already thinking twice.",
+        options: [
+          { label: "Take the long ridge", detail: "Safer, slower, and kinder to the axle.", apply() { addKarma(8); addDistance(-10); addWagon(-1); logLine("The caravan spends an hour climbing the ridge instead of gambling the ford.", "system"); } },
+          { label: "Push straight through", detail: "Fast if the axle holds, costly if it doesn't.", apply() { addKarma(-10); addWagon(-12); injureCrew("random", 8, "Flooded ford"); logLine("The wagon slams through mud that does not forgive haste.", "bad"); } },
+          { label: "Lighten the load", detail: "Cut loose a little cargo to save the frame.", apply() { addKarma(-5); addRations(-6); addWagon(6); logLine("You throw excess weight into the water and the wagon breathes easier.", "system"); } },
+          { label: "[RESILIENT] Brace the axles", detail: "A resilient hand can keep the wheels together.", trait: "Resilient", apply() { addKarma(14); addWagon(10); healCrew("Resilient", 4); logLine("A steady shoulder and a stubborn grip carry the wagon through.", "good"); } }
+        ]
+      },
+      {
+        id: "fever_wagon",
+        title: "Fever in the Wagon",
+        text: "One of the younger voices is feverish. The lantern light makes every breath sound worse.",
+        options: [
+          { label: "Use medicine", detail: "Spend medicine now to keep health intact.", apply() { addMedicine(-1); healCrew("lowest", 18); addKarma(8); logLine("The fever backs off under clean cloth and bitter medicine.", "good"); } },
+          { label: "Camp and wait", detail: "Lose time, preserve the body.", apply() { addDistance(-6); addKarma(6); addMorale(2); logLine("The caravan waits out the fever in silence and mud.", "system"); } },
+          { label: "Keep moving", detail: "A hard choice that risks health.", apply() { addKarma(-14); injureCrew("all", 6, "Fever worsened by travel"); addWagon(-1); logLine("You choose motion over mercy. Nobody likes the answer.", "bad"); } },
+          { label: "[WISE] Brew a field remedy", detail: "Wisdom can stretch what little you have.", trait: "Wise", apply() { addMedicine(-1); addKarma(16); healCrew("lowest", 22); addRations(-1); logLine("The remedy is rough, but it works.", "good"); } }
+        ]
+      },
+      {
+        id: "starving_settler",
+        title: "Starving Settler Family",
+        text: "A family by the road has nothing left but pride and one cracked pot. They are hungry enough to make the choice feel loud.",
+        options: [
+          { label: "Share rations", detail: "The kind thing costs food.", apply() { addRations(-8); addKarma(20); addMorale(4); logLine("You share and the caravan eats the price gladly.", "good"); } },
+          { label: "Move on", detail: "Keep what you have and carry the guilt.", apply() { addKarma(-16); addMorale(-3); logLine("You pass by and the trail gets a little colder.", "bad"); } },
+          { label: "Take their tools", detail: "Useful, ugly, and not free.", apply() { addKarma(-22); addAmmo(4); addMedicine(1); logLine("You barter with force, then pretend it was necessity.", "bad"); } },
+          { label: "[CHARMING] Talk them into trade", detail: "Charm can turn a shortage into a bargain.", trait: "Charming", apply() { addKarma(12); addRations(6); addAmmo(-1); logLine("A soft voice and a clean promise win a small trade.", "good"); } }
+        ]
+      },
+      {
+        id: "broken_axle",
+        title: "Broken Axle",
+        text: "The axle cracks with an ugly sound. The wagon lurches; the trail does not stop for anyone.",
+        options: [
+          { label: "Repair with time", detail: "The safest repair still burns daylight.", apply() { addKarma(6); addWagon(12); addDistance(-8); logLine("You spend the day under the wagon instead of on it.", "system"); } },
+          { label: "Patch it hard", detail: "A quick fix can hold or fail at speed.", apply() { addKarma(-8); addWagon(6); injureCrew("random", 5, "Axle splinter"); logLine("The repair works, but nobody trusts it.", "bad"); } },
+          { label: "Break spare ammo for metal", detail: "Ammo can buy strength in a pinch.", apply() { addAmmo(-4); addWagon(10); addKarma(4); logLine("You cannibalize a little comfort for a stronger wheel.", "system"); } },
+          { label: "[ATHLETIC] Lift and reset", detail: "A strong back keeps the wagon moving.", trait: "Athletic", apply() { addKarma(10); addWagon(14); addMorale(2); logLine("A pair of strong arms saves the day.", "good"); } }
+        ]
+      },
+      {
+        id: "trading_post",
+        title: "Dusty Trading Post",
+        text: "A trader with tired eyes offers supplies at a price that changes every time he blinks.",
+        options: [
+          { label: "Buy rations", detail: "Reliable, but expensive.", apply() { addAmmo(-2); addRations(10); addKarma(4); logLine("You buy your way back toward comfort.", "system"); } },
+          { label: "Refuse and leave", detail: "Hold the line on your own terms.", apply() { addKarma(5); addMorale(-2); logLine("The trader shrugs. The trail resumes.", "system"); } },
+          { label: "Steal a crate", detail: "Fast gains. Bad consequences.", apply() { addKarma(-20); addAmmo(2); addRations(8); injureCrew("random", 7, "Caught stealing supplies"); logLine("The crate is yours, but so is the memory.", "bad"); } },
+          { label: "[CHARMING] Haggle for a favor", detail: "Charm can pull food out of a closed hand.", trait: "Charming", apply() { addKarma(14); addRations(12); addAmmo(-1); logLine("The trader smiles despite himself and gives in.", "good"); } }
+        ]
+      },
+      {
+        id: "mudslide_pass",
+        title: "Mudslide Pass",
+        text: "A ridge above the trail has given way. The path is half road, half argument with gravity.",
+        options: [
+          { label: "Wait for daylight", detail: "Lose time to save the wheels.", apply() { addKarma(6); addDistance(-6); addWagon(4); logLine("You wait out the worst of the slide and keep the wagon whole.", "system"); } },
+          { label: "Force the wagon uphill", detail: "A hard climb can cost health.", apply() { addKarma(-8); addWagon(-8); injureCrew("all", 4, "Mudslide climb"); logLine("Every step up the pass costs something from everyone.", "bad"); } },
+          { label: "Cut a new track", detail: "Time spent with tools can save the frame.", apply() { addKarma(10); addWagon(10); addAmmo(-1); logLine("You carve a path through the mud and call it progress.", "good"); } },
+          { label: "[WISE] Find the runoff line", detail: "A wise choice can read the mountain.", trait: "Wise", apply() { addKarma(16); addDistance(-2); addWagon(12); logLine("The runoff line holds. The wagon follows the shape of the land.", "good"); } }
+        ]
+      },
+      {
+        id: "cattle_stampede",
+        title: "Cattle Stampede",
+        text: "A stampede rips through camp at dusk. The world becomes dust, hooves, and a very loud kind of fear.",
+        options: [
+          { label: "Scatter and hide", detail: "No pride, no immediate damage.", apply() { addKarma(8); addMorale(-1); logLine("The herd passes by and leaves your nerves behind.", "system"); } },
+          { label: "Drive them away with shots", detail: "Ammo buys distance.", apply() { addAmmo(-4); addKarma(4); addMorale(1); logLine("The shots work. The cows change their minds.", "good"); } },
+          { label: "Hold the wagon line", detail: "If it fails, somebody gets hurt.", apply() { addKarma(-12); addWagon(-10); injureCrew("random", 10, "Stampede impact"); logLine("You hold the line. The line holds back briefly.", "bad"); } },
+          { label: "[ATHLETIC] Run the herd off", detail: "A strong body can turn panic aside.", trait: "Athletic", apply() { addKarma(12); addAmmo(1); addMorale(2); logLine("A fast dash and a hard shout push the herd wide.", "good"); } }
+        ]
+      },
+      {
+        id: "smallpox_cabin",
+        title: "Abandoned Cabin",
+        text: "A cabin sits alone under a bad sky. The air around it feels wrong. Someone was sick here, and maybe still is.",
+        options: [
+          { label: "Leave it be", detail: "Safer, but with no reward.", apply() { addKarma(6); addMorale(-1); logLine("You keep the wagon outside the door and your heads clear.", "system"); } },
+          { label: "Burn the bedding", detail: "Wasteful, but protective.", apply() { addKarma(10); addAmmo(-1); healCrew("all", 4); logLine("You burn the bedding and call it caution.", "good"); } },
+          { label: "Loot the cabin", detail: "Risk a sickness spike.", apply() { addKarma(-18); addMedicine(2); injureCrew("all", 6, "Cabin sickness"); logLine("You take what the cabin offers and pay the price later.", "bad"); } },
+          { label: "[RESILIENT] Clean the rooms first", detail: "Resilience can handle the unpleasant work.", trait: "Resilient", apply() { addKarma(12); addMedicine(1); addMorale(3); logLine("The room is scrubbed before anybody sleeps inside it.", "good"); } }
+        ]
+      },
+      {
+        id: "wrong_turn_fog",
+        title: "Wrong Turn in Fog",
+        text: "The map is honest. The world is not. Fog blunts the road until every direction feels borrowed.",
+        options: [
+          { label: "Hold position", detail: "Don't compound the error.", apply() { addKarma(8); addDistance(-4); logLine("You wait for the world to stop lying.", "system"); } },
+          { label: "Press on blindly", detail: "Fast and dangerous.", apply() { addKarma(-14); addDistance(-12); addMorale(-4); logLine("The wagon wanders and the trail gets expensive.", "bad"); } },
+          { label: "Use ammo as signal markers", detail: "Waste ammo to keep your bearings.", apply() { addAmmo(-3); addKarma(6); addDistance(-2); logLine("The trail looks less hostile when marked in steel.", "good"); } },
+          { label: "[WISE] Read the drift", detail: "A wise crew member can work a way through it.", trait: "Wise", apply() { addKarma(14); addDistance(6); addMorale(2); logLine("A careful eye spots the route that the fog forgot to hide.", "good"); } }
+        ]
+      },
+      {
+        id: "border_checkpoint",
+        title: "Hard Border Checkpoint",
+        text: "A line of officers stands across the road. They do not look eager to make exceptions.",
+        options: [
+          { label: "Pay the toll", detail: "Simple, expensive, and boring.", apply() { addAmmo(-2); addKarma(5); logLine("The caravan passes after a small, irritating payment.", "system"); } },
+          { label: "Answer every question", detail: "Truth can work if you are patient.", apply() { addKarma(12); addMorale(2); logLine("You answer cleanly and the officers lose interest.", "good"); } },
+          { label: "Slip the fence at dusk", detail: "A risky route through weeds and wire.", apply() { addKarma(-18); addWagon(-6); injureCrew("random", 5, "Fence scrape"); logLine("The fence yields, but not without a reminder.", "bad"); } },
+          { label: "[CHARMING] Win the officer over", detail: "Charm can save the whole line.", trait: "Charming", apply() { addKarma(18); addRations(4); addAmmo(1); logLine("A smile and a clean story get you a better result than the road deserved.", "good"); } }
+        ]
+      },
+      {
+        id: "wagon_firelight",
+        title: "Firelight and Song",
+        text: "The camp quiets enough for someone to start singing under their breath. For a minute, the trail feels farther away.",
+        options: [
+          { label: "Join the song", detail: "A little morale goes a long way.", apply() { addKarma(6); addMorale(5); logLine("The song softens the edges of the day.", "good"); } },
+          { label: "Stay silent and listen", detail: "Let someone else carry the mood.", apply() { addKarma(2); addMorale(2); logLine("The caravan listens instead of speaking and somehow rests easier.", "system"); } },
+          { label: "Keep watch instead", detail: "Safety over comfort.", apply() { addKarma(-4); addAmmo(1); logLine("You spend the song looking at the dark instead of the fire.", "system"); } },
+          { label: "[WISE] Tell an old road story", detail: "A wise voice can make a hard camp gentler.", trait: "Wise", apply() { addKarma(12); addMorale(6); addRations(1); logLine("The story lands well. Everyone eats the memory without complaint.", "good"); } }
+        ]
+      },
+      {
+        id: "split_fence_briar",
+        title: "Split Fence Briar",
+        text: "A broken fence line has snagged the wagon path. The briars want a piece of the day.",
+        options: [
+          { label: "Cut through slowly", detail: "Time for the safe route.", apply() { addKarma(6); addDistance(-4); addWagon(4); logLine("You work the wagon through the briars and keep the frame intact.", "system"); } },
+          { label: "Ram the gap", detail: "Fast, rough, and expensive.", apply() { addKarma(-10); addWagon(-8); injureCrew("random", 4, "Fence splinter"); logLine("The wagon forces its way through and pays for the insult.", "bad"); } },
+          { label: "Trim a new path", detail: "A careful hand can clear the road.", apply() { addKarma(10); addAmmo(-1); addDistance(2); logLine("A few cuts and the trail opens up again.", "good"); } },
+          { label: "[RESILIENT] Pull the snag free", detail: "Resilience can outlast the thorns.", trait: "Resilient", apply() { addKarma(14); addWagon(8); addMorale(2); logLine("The snag gives way under patient hands.", "good"); } }
+        ]
+      },
+      {
+        id: "night_fighters",
+        title: "Night Watchers",
+        text: "Shapes linger near the edge of camp after dark. They are probably coyotes. Probably.",
+        options: [
+          { label: "Light a bigger fire", detail: "Costs fuel, clears doubt.", apply() { addKarma(5); addAmmo(-1); logLine("The bigger flame pushes the dark back a few steps.", "system"); } },
+          { label: "Throw scraps away from camp", detail: "Feed the night and move on.", apply() { addRations(-2); addKarma(10); logLine("The shadows take the offering and leave the wagon alone.", "good"); } },
+          { label: "Shoo them off with noise", detail: "Loud and not very elegant.", apply() { addKarma(-4); addMorale(1); logLine("The noise works. So does embarrassment.", "system"); } },
+          { label: "[ATHLETIC] Chase them down", detail: "A strong runner can turn fear into distance.", trait: "Athletic", apply() { addKarma(12); addMorale(3); addDistance(1); logLine("The shapes scatter and the camp laughs afterward.", "good"); } }
+        ]
+      },
+      {
+        id: "washout_creek",
+        title: "Washout Creek",
+        text: "A creek has carved a shallow trench through the road. The wagon can cross, but only if somebody decides how much road to trust.",
+        options: [
+          { label: "Cross at the narrow point", detail: "A little risk for a little speed.", apply() { addKarma(4); addWagon(-4); addDistance(6); logLine("The wagon shudders over the creek but keeps moving.", "system"); } },
+          { label: "Find stones and fill the rut", detail: "Slow work, fewer broken pieces.", apply() { addKarma(8); addWagon(6); addDistance(-3); logLine("You spend the hour making a road where one was missing.", "good"); } },
+          { label: "Wait for the water to settle", detail: "Time is cheaper than damage.", apply() { addKarma(2); addDistance(-5); addMorale(1); logLine("The creek calms and the caravan follows.", "system"); } },
+          { label: "[WISE] Read the current", detail: "Wisdom can spot the crossing line.", trait: "Wise", apply() { addKarma(14); addDistance(8); addWagon(2); logLine("The water tells you where to go if you are patient enough to hear it.", "good"); } }
+        ]
+      },
+      {
+        id: "settler_orchard",
+        title: "Abandoned Orchard",
+        text: "A small orchard stands half-wild beside the trail. The fruit is real. So is the theft.",
+        options: [
+          { label: "Pick a basket", detail: "Light, practical, and morally complicated.", apply() { addRations(6); addKarma(-4); logLine("The caravan eats well and calls it survival.", "system"); } },
+          { label: "Leave it untouched", detail: "Keep your conscience cleaner.", apply() { addKarma(8); addMorale(2); logLine("You leave the fruit hanging and the road feels less ashamed.", "good"); } },
+          { label: "Barter with a fence note", detail: "Leave payment and move on.", apply() { addAmmo(-1); addRations(4); addKarma(10); logLine("You trade with a note and a clean hand. It somehow works.", "good"); } },
+          { label: "[CHARMING] Ask permission from the wind", detail: "Charm can turn a dead orchard into a gift.", trait: "Charming", apply() { addKarma(12); addRations(8); addMorale(2); logLine("A soft apology is enough to make the harvest feel borrowed, not stolen.", "good"); } }
+        ]
+      }
+    ];
+
+    const WEATHER_STATES = ["Clear", "Rainy", "Snowy", "Dusty", "Foggy"];
+    const WEATHER_SEED = 9173;
+    const CAMPFIRE_LINES = [
+      "Somebody passes a cup around the fire and nobody complains about the taste.",
+      "The youngest voice asks how far the stars can see.",
+      "A hand on the wagon rail says more than a speech would have.",
+      "The road quiets long enough for the crew to remember they are still together.",
+      "Someone sharpens a knife that does not need sharpening, just to hear the sound.",
+      "The lantern throws a warm circle and nobody wants to step outside it.",
+      "A short story gets retold badly and somehow becomes funnier on the second pass.",
+      "The camp feels small until someone starts naming the rooms they wish they had.",
+      "Everyone talks like they are managing a tiny shelter from the weather."
+    ];
+    const RANDOM_SCENARIOS = [
+      {
+        title: "Stray Lantern",
+        text: "A lantern burns alone beside the road. Whoever left it behind is long gone.",
+        apply() { addKarma(3); logLine("You pass the lantern and keep its warmth as a memory.", "system"); },
+        tags: ["any"],
+        weight: 1
+      },
+      {
+        title: "Loose Wheel Pin",
+        text: "A wheel pin works loose and rattles like it wants attention.",
+        apply() { addWagon(-2); addAmmo(-1); logLine("You fix the pin before it becomes a worse story.", "bad"); },
+        tags: ["any"],
+        weight: 1
+      },
+      {
+        title: "Roadside Berry Patch",
+        text: "A patch of wild berries grows where the trail bends toward shade.",
+        apply() { addRations(3); addMorale(2); logLine("Sweet fruit cuts the dust in half for one afternoon.", "good"); },
+        tags: ["any"],
+        weight: 1.1
+      },
+      {
+        title: "Clear Water",
+        text: "A spring runs cold and clean enough to matter.",
+        apply() { addMedicine(1); addKarma(2); logLine("The crew drinks carefully and keeps the bottle for later.", "good"); },
+        tags: ["any"],
+        weight: 0.95
+      },
+      {
+        title: "Distant Thunder",
+        text: "Thunder rolls far away. The storm has not arrived yet, but it has opinions.",
+        apply() { addKarma(1); addMorale(1); logLine("The wagon keeps moving under a sky that is still deciding.", "system"); },
+        tags: ["any", "rainy"],
+        weight: 0.9
+      },
+      {
+        title: "Lost Button",
+        text: "A coat button disappears into the dirt. Tiny losses can still feel personal.",
+        apply() { addMorale(-1); logLine("Nothing breaks, but the mood slips a little.", "system"); },
+        tags: ["any"],
+        weight: 0.8
+      },
+      {
+        title: "Careful Trade",
+        text: "Another family leaves a message on a fence post asking for honest trade.",
+        apply() { addAmmo(-1); addRations(4); addKarma(4); logLine("You leave a fair exchange and take only what was offered.", "good"); },
+        tags: ["any"],
+        weight: 1
+      },
+      {
+        title: "Prayer at Dusk",
+        text: "Someone whispers a prayer into the wind and the rest of the camp goes quiet.",
+        apply() { addKarma(5); addMorale(2); logLine("The silence after the prayer feels earned.", "good"); },
+        tags: ["any"],
+        weight: 0.9
+      },
+      {
+        title: "Bent Horseshoe",
+        text: "A bent horseshoe is found near the wheel rut, half-buried and still warm from the sun.",
+        apply() { addWagon(2); addAmmo(1); logLine("Useful metal is still useful metal.", "system"); },
+        tags: ["any"],
+        weight: 0.9
+      },
+      {
+        title: "Drifting Smoke",
+        text: "Smoke from a distant camp drifts across the trail and makes everyone check the sky twice.",
+        apply() { addKarma(2); addMorale(1); logLine("The horizon stays honest for one more hour.", "system"); },
+        tags: ["any", "foggy"],
+        weight: 0.85
+      },
+      {
+        title: "Muddy Sideslip",
+        text: "Rain has turned the verge into a slick ribbon of mud and the wagon wants to drift.",
+        apply() { addWagon(-3); addKarma(2); logLine("You slow the team and keep the wagon from yawing off the road.", "bad"); },
+        tags: ["rainy", "any"],
+        weight: 1.2
+      },
+      {
+        title: "Tin Roof Refuge",
+        text: "A little shack with a tin roof leaks only where it means to. Someone left it standing for travelers.",
+        apply() { addMorale(3); addWagon(1); logLine("You spend a minute under better shelter than the road usually offers.", "good"); },
+        tags: ["rainy", "any"],
+        weight: 1
+      },
+      {
+        title: "Frozen Ruts",
+        text: "The ruts have frozen hard enough to chatter the wheels like teeth.",
+        apply() { addWagon(-2); addMorale(1); logLine("The ice bites, but the trail stays honest.", "system"); },
+        tags: ["snowy", "any"],
+        weight: 1
+      },
+      {
+        title: "Blanket Share",
+        text: "One blanket gets folded into two and nobody complains out loud.",
+        apply() { addMorale(4); addKarma(3); logLine("The crew rides the cold a little better afterward.", "good"); },
+        tags: ["snowy", "any"],
+        weight: 1
+      },
+      {
+        title: "Dust Cloud Relay",
+        text: "A dust cloud ahead looks like trouble until it becomes a signal from another wagon.",
+        apply() { addKarma(4); addAmmo(-1); addDistance(2); logLine("You follow the dust line and make better time for it.", "system"); },
+        tags: ["dusty", "any"],
+        weight: 1.1
+      },
+      {
+        title: "Ridge Line Signal",
+        text: "Someone waves from a ridge and points out a cleaner route through the bad ground.",
+        apply() { addDistance(5); addKarma(3); logLine("You take the hint and save the axle a headache.", "good"); },
+        tags: ["dusty", "any"],
+        weight: 1
+      },
+      {
+        title: "Lantern Chain",
+        text: "A line of lanterns appears in the fog like a promise somebody almost kept.",
+        apply() { addKarma(2); addMorale(3); logLine("The wagons ahead become a little easier to trust.", "system"); },
+        tags: ["foggy", "any"],
+        weight: 1.2
+      },
+      {
+        title: "Wrong-Road Post",
+        text: "A marker post has been turned around by rain and time. It points the wrong way with conviction.",
+        apply() { addDistance(-3); addKarma(1); logLine("You right the post and keep the trail from lying twice.", "system"); },
+        tags: ["foggy", "any"],
+        weight: 0.9
+      },
+      {
+        title: "Waystation Child",
+        text: "A child at a waystation asks if the caravan is carrying stories or just cargo.",
+        apply() { addKarma(4); addMorale(2); logLine("The question lands better than the answer.", "good"); },
+        tags: ["any"],
+        weight: 1
+      },
+      {
+        title: "Broken Harness",
+        text: "Leather snaps on the lead animal and the whole line jerks sideways.",
+        apply() { addWagon(-4); addAmmo(-1); logLine("You stop the team before the damage becomes a story with a body count.", "bad"); },
+        tags: ["any"],
+        weight: 1.05
+      },
+      {
+        title: "Coyote Circle",
+        text: "Coyotes keep to a perfect ring around camp and howl like they paid for the privilege.",
+        apply() { addMorale(-2); addKarma(2); logLine("The night gets noisier, but not closer.", "system"); },
+        tags: ["any"],
+        weight: 0.85
+      },
+      {
+        title: "Passing Mule Train",
+        text: "A mule train clatters past and leaves behind a cleaner road and a little envy.",
+        apply() { addDistance(3); addKarma(2); logLine("You follow the firmer track they leave behind.", "system"); },
+        tags: ["any"],
+        weight: 0.95
+      }
+    ];
+
+    const ARCHIVE_RECORDS = [
+      {
+        recordId: "william-isabella-marriage-certificate",
+        title: "William Moore and Isabella Law",
+        date: "29 March 1846",
+        place: "Kirkinriola/Kilconriola Parish, Ballymena, County Antrim",
+        personLabel: "William Moore",
+        evidenceTier: "Primary Source",
+        snippet: "Certified copy of the marriage register entry for William Moore (painter, Springwell Street) and Isabella Law (daughter of Patrick Law, brassfounder, Bridge Street).",
+        summary: "Primary marriage entry tying the Moore-Law line to Ballymena."
+      },
+      {
+        recordId: "josiah-ramsey-1782-pay-voucher",
+        title: "Josiah Ramsey Revolutionary Pay Voucher",
+        date: "1782",
+        place: "North Carolina",
+        personLabel: "Josiah Ramsey Sr.",
+        evidenceTier: "Primary Source",
+        snippet: "Pay voucher for Josiah Ramsey Sr. for service in the North Carolina Militia.",
+        summary: "Confirms Revolutionary War service."
+      },
+      {
+        recordId: "thomas-ramsey-anna-hopkins-marriage",
+        title: "Thomas Ramsey and Anna Hopkins",
+        date: "1824",
+        place: "Hancock County, Tennessee",
+        personLabel: "Thomas Ramsey",
+        evidenceTier: "Strong Evidence",
+        snippet: "Marriage record of Thomas Ramsey (1799-1872) and Anna Hopkins (1807-1883).",
+        summary: "Anchors the Ramsey-Hopkins Tennessee branch."
+      },
+      {
+        recordId: "george-washington-dyer-1850-liberty-iowa-census",
+        title: "George Washington Dyer in Liberty",
+        date: "1850",
+        place: "Liberty, Jefferson County, Iowa",
+        personLabel: "George Washington Dyer",
+        evidenceTier: "Primary Source",
+        snippet: "George Washington Dyer, age 15, residing in Liberty, Jefferson County, Iowa.",
+        summary: "Early residence anchor for the Dyer line."
+      },
+      {
+        recordId: "george-washington-dyer-1900-pine-city-census",
+        title: "George Washington Dyer in Pine City",
+        date: "1900",
+        place: "Pine, Whitman County, Washington",
+        personLabel: "George Washington Dyer",
+        evidenceTier: "Primary Source",
+        snippet: "George Washington Dyer, head of household in Pine, Whitman County, Washington.",
+        summary: "Later Dyer settlement record in Washington."
+      },
+      {
+        recordId: "nancy-ann-dyer-birth",
+        title: "Nancy Ann Dyer Birth",
+        date: "1 October 1871",
+        place: "Benton County, Oregon",
+        personLabel: "Nancy Ann Dyer",
+        evidenceTier: "Strong Evidence",
+        snippet: "Born to George Washington Dyer and Elizabeth Ellen Conley.",
+        summary: "Birth anchor for the Nancy Dyer line."
+      },
+      {
+        recordId: "nancy-ann-dyer-residence-1880",
+        title: "Nancy Ann Dyer in Whitman County",
+        date: "1880",
+        place: "Whitman County, Washington",
+        personLabel: "Nancy Ann Dyer",
+        evidenceTier: "Primary Source",
+        snippet: "Living with parents George Washington Dyer and Elizabeth Ellen Conley in Whitman County, Washington.",
+        summary: "Residence anchor after the Oregon birth."
+      },
+      {
+        recordId: "edwards-1920-washington-census",
+        title: "Edwards Household in Pine City",
+        date: "1920",
+        place: "Pine City, Whitman County, Washington",
+        personLabel: "Silas Josiah Edwards",
+        evidenceTier: "Strong Evidence",
+        snippet: "Silas J. Edwards household with wife Nancy and daughter Edith in Pine City.",
+        summary: "A bridge record linking Dyer, Edwards, and Moore."
+      },
+      {
+        recordId: "edith-ann-edwards-hugh-moore-marriage",
+        title: "Edith Ann Edwards and Hugh Christopher Moore",
+        date: "26 May 1924",
+        place: "Colfax, Whitman County, Washington",
+        personLabel: "Edith Ann Edwards",
+        evidenceTier: "Primary Source",
+        snippet: "Marriage entry naming parents Josiah Edwards and Nancy Dyer.",
+        summary: "Primary bridge record for the Moore family."
+      },
+      {
+        recordId: "charles-dyer-discharge",
+        title: "Charles Dyer at Fort Randolph",
+        date: "25 September 1778",
+        place: "Fort Randolph",
+        personLabel: "Charles Dyer",
+        evidenceTier: "Primary Source",
+        snippet: "Honorably discharged after service in the 12th Virginia Regiment.",
+        summary: "Revolutionary service anchor for the Dyer line."
+      },
+      {
+        recordId: "josiah-ramsey-tennessee-land-grant",
+        title: "Josiah Ramsey Land Grant",
+        date: "1828",
+        place: "Claiborne County, Tennessee",
+        personLabel: "Josiah Ramsey Jr.",
+        evidenceTier: "Primary Source",
+        snippet: "State of Tennessee grant to Josiah Ramsey and heirs on the waters of Mulberry Creek.",
+        summary: "Locates the Ramsey line in frontier Tennessee."
+      },
+      {
+        recordId: "armina-ramsey-1850-census",
+        title: "Armina Ramsey and Anderson Edwards in Iowa",
+        date: "1850",
+        place: "Bloomfield Township, Davis County, Iowa",
+        personLabel: "Armina Ramsey",
+        evidenceTier: "Primary Source",
+        snippet: "Thomas Ramsey household plus adjacent Anderson Edwards household in the 1850 census.",
+        summary: "A family-cluster record showing the Ramsey/Edwards migration."
+      }
+    ];
+
+    const EVIDENCE_TIERS = [
+      "Primary Source",
+      "Strong Evidence",
+      "Corroborated Compilation",
+      "Family Memory",
+      "Needs Review"
+    ];
+
+    const state = {
+      mode: "menu",
+      clanKey: "dyer",
+      crew: [],
+      distance: 0,
+      day: 1,
+      rations: 64,
+      ammo: 24,
+      medicine: 6,
+      karma: 50,
+      wagonIntegrity: 100,
+      wheels: 5,
+      bestDistance: 0,
+      nextEventAt: 100,
+      nextCheckpointIndex: 0,
+      eventIndex: 0,
+      activeEvent: null,
+      selectedChoice: null,
+      checkpointSnapshot: null,
+      pausedMode: "travel",
+      weather: "Clear",
+      weatherTransition: 0,
+      displayDistance: 0,
+      log: [],
+      particles: [],
+      hunt: null,
+      crosshair: { x: W / 2, y: H / 2 },
+      introTextShown: false,
+      lastScenarioId: null,
+      lastArchiveRecordId: null
+    };
+
+    function clamp(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function rand(seed) {
+      const x = Math.sin(seed * 999 + WEATHER_SEED) * 10000;
+      return x - Math.floor(x);
+    }
+
+    function randRange(seed, min, max) {
+      return min + rand(seed) * (max - min);
+    }
+
+    function pickFromSeed(seed, items) {
+      return items[Math.floor(rand(seed) * items.length) % items.length];
+    }
+
+    function pickWeighted(items) {
+      const total = items.reduce((sum, item) => sum + (item.weight || 1), 0);
+      let roll = Math.random() * total;
+      for (const item of items) {
+        roll -= item.weight || 1;
+        if (roll <= 0) return item;
+      }
+      return items[items.length - 1];
+    }
+
+    function evidenceTierRank(tier) {
+      switch (tier) {
+        case "Primary Source":
+          return 4;
+        case "Strong Evidence":
+          return 3;
+        case "Corroborated Compilation":
+          return 2;
+        case "Family Memory":
+          return 1;
+        case "Needs Review":
+        default:
+          return 0;
+      }
+    }
+
+    function evidenceTierLabel(tier) {
+      if (tier === "Corroborated Compilation") return "Family Memory";
+      return tier;
+    }
+
+    function evidenceTierKarma(tier) {
+      switch (tier) {
+        case "Primary Source":
+          return 20;
+        case "Strong Evidence":
+          return 12;
+        case "Corroborated Compilation":
+          return 8;
+        case "Family Memory":
+          return 5;
+        case "Needs Review":
+        default:
+          return -8;
+      }
+    }
+
+    function evidenceChoiceOutcome(choiceTier, recordTier) {
+      const karma = evidenceTierKarma(choiceTier) - Math.max(0, evidenceTierRank(recordTier) - evidenceTierRank(choiceTier));
+      if (evidenceTierRank(choiceTier) >= evidenceTierRank(recordTier)) {
+        return { karma, morale: 2, note: "The choice matches or exceeds the record's confidence." };
+      }
+      return { karma, morale: -2, note: "You leaned on a weaker source tier." };
+    }
+
+    function buildArchiveEvent(record) {
+      return {
+        id: `archive-${record.recordId}`,
+        title: `${record.personLabel}: ${record.title}`,
+        text: `${record.date} • ${record.place}. ${record.snippet}`,
+        sourceTier: record.evidenceTier,
+        recordId: record.recordId,
+        options: [
+          {
+            label: "Trust the strongest source",
+            detail: `Use the ${evidenceTierLabel(record.evidenceTier)} and move decisively.`,
+            apply() {
+              const result = evidenceChoiceOutcome("Primary Source", record.evidenceTier);
+              addKarma(result.karma);
+              addMorale(result.morale);
+              addDistance(3);
+              logLine(`Archive review: ${record.personLabel} accepted as a strong trail anchor. ${result.note}`, "good");
+            }
+          },
+          {
+            label: "Cross-check the details",
+            detail: "Safer, slower, and good for uncertain records.",
+            apply() {
+              const result = evidenceChoiceOutcome("Strong Evidence", record.evidenceTier);
+              addKarma(result.karma);
+              addMorale(result.morale);
+              addAmmo(1);
+              logLine(`Archive review: ${record.personLabel} cross-checked. ${result.note}`, "system");
+            }
+          },
+          {
+            label: "Mark Needs Review",
+            detail: "Keep the record visible without overstating it.",
+            apply() {
+              const result = evidenceChoiceOutcome("Needs Review", record.evidenceTier);
+              addKarma(result.karma);
+              addMorale(result.morale);
+              addWagon(-1);
+              logLine(`Archive review: ${record.personLabel} routed to review. ${result.note}`, "bad");
+            }
+          }
+        ]
+      };
+    }
+
+    function deepCloneCrew(crew) {
+      return crew.map((member) => ({ ...member }));
+    }
+
+    function livingCrew() {
+      return state.crew.filter((member) => member.alive);
+    }
+
+    function livingCount() {
+      return livingCrew().length;
+    }
+
+    function hasTrait(trait) {
+      return livingCrew().some((member) => member.trait === trait);
+    }
+
+    function getTraitName(trait) {
+      return trait.toUpperCase();
+    }
+
+    function logLine(text, kind = "system") {
+      const line = document.createElement("div");
+      line.className = `log-line ${kind}`;
+      line.textContent = text;
+      logPanel.appendChild(line);
+      while (logPanel.children.length > 60) {
+        logPanel.removeChild(logPanel.firstChild);
+      }
+      logPanel.scrollTop = logPanel.scrollHeight;
+    }
+
+    function setStatus(text) {
+      statusLine.textContent = text;
+    }
+
+    function setConsoleTitle(text) {
+      consoleTitle.textContent = text;
+    }
+
+    function setEventPanel(title, text, subtitle = "") {
+      eventPanel.innerHTML = `
+        <div class="eyebrow">${subtitle}</div>
+        <h2>${title}</h2>
+        <p>${text}</p>
+      `;
+    }
+
+    function updateHUD() {
+      distanceValue.textContent = `${Math.floor(state.distance)} / ${DESTINATION}`;
+      rationsValue.textContent = String(Math.max(0, Math.floor(state.rations)));
+      ammoValue.textContent = String(Math.max(0, Math.floor(state.ammo)));
+      medicineValue.textContent = String(Math.max(0, Math.floor(state.medicine)));
+      karmaValue.textContent = String(Math.max(0, Math.round(state.karma)));
+      weatherValue.textContent = state.weather;
+      const nextCheckpoint = state.nextCheckpointIndex < CHECKPOINTS.length ? CHECKPOINTS[state.nextCheckpointIndex] : DESTINATION;
+      const nextEvent = Math.max(0, Math.round(state.nextEventAt - state.distance));
+      trailMeta.innerHTML = `
+        <span class="trail-chip">Day ${state.day}</span>
+        <span class="trail-chip">${state.mode}</span>
+        <span class="trail-chip">Next checkpoint ${nextCheckpoint} mi</span>
+        <span class="trail-chip">Next event ${nextEvent} mi</span>
+        <span class="trail-chip">${state.weather}</span>
+      `;
+      pauseStats.textContent = `Day ${state.day}. Distance ${Math.floor(state.distance)}. Checkpoint ${state.checkpointSnapshot ? Math.floor(state.checkpointSnapshot.distance) : 0}. Secrets are not tracked here, but the trail remembers.`;
+      wheelRow.innerHTML = "";
+      for (let i = 0; i < 5; i += 1) {
+        const wheel = document.createElement("div");
+        wheel.className = `wheel${i < state.wheels ? " on" : ""}`;
+        wheelRow.appendChild(wheel);
+      }
+
+      crewGrid.innerHTML = "";
+      for (const member of state.crew) {
+        const card = document.createElement("article");
+        card.className = "crew-card";
+        const healthPct = clamp(member.health, 0, 100);
+        const moralePct = clamp(member.morale, 0, 100);
+        const woundedState = member.alive ? (member.injured ? "Strained" : "Stable") : "Lost";
+        const moodState = member.alive ? (member.despondent ? "Low morale" : "Steady") : "Out";
+        const accent = !member.alive ? "rgba(163, 61, 45, 0.72)" : healthPct < 35 ? "rgba(163, 61, 45, 0.52)" : moralePct < 40 ? "rgba(232, 163, 61, 0.62)" : "rgba(102, 199, 178, 0.56)";
+        card.style.borderLeft = `4px solid ${accent}`;
+        card.innerHTML = `
+          <div class="crew-avatar" aria-hidden="true"></div>
+          <div class="crew-body">
+            <div class="crew-head">
+              <div>
+                <div class="crew-role">${member.alive ? "Trail member" : "Grave log"}</div>
+                <h3>${member.name}</h3>
+              </div>
+              <div class="trait-line">
+                <span class="trait-pill">${member.trait}</span>
+                <span class="trait-pill ${member.alive ? "good" : "bad"}">${woundedState}</span>
+              </div>
+            </div>
+            <div class="trait">${member.despondent ? "Despondent" : "Holding on"}${member.alive ? "" : " · DEAD"}</div>
+            <div>Health ${Math.round(healthPct)}</div>
+          <div class="bar"><div style="width:${healthPct}%"></div></div>
+          <div>Morale ${Math.round(moralePct)}</div>
+          <div class="bar morale"><div style="width:${moralePct}%"></div></div>
+            <div class="stat-note">${moodState} · Wagon crew UI</div>
+          </div>
+        `;
+        const tags = document.createElement("div");
+        tags.className = "status-tags";
+        if (!member.alive) {
+          tags.innerHTML = `<span class="tag bad">Grave Log</span>`;
+        } else {
+          tags.innerHTML = `
+            ${member.injured ? '<span class="tag bad">Injured</span>' : '<span class="tag">Fit</span>'}
+            ${member.despondent ? '<span class="tag bad">Despondent</span>' : ''}
+          `;
+        }
+        card.querySelector(".crew-body").appendChild(tags);
+        crewGrid.appendChild(card);
+      }
+    }
+
+    function makeCrew(clanKey) {
+      return CLANS[clanKey].crew.map((member) => ({
+        name: member.name,
+        trait: member.trait,
+        alive: true,
+        health: 100,
+        morale: 100,
+        injured: false,
+        despondent: false
+      }));
+    }
+
+    function snapshotState() {
+      return {
+        distance: state.distance,
+        day: state.day,
+        rations: state.rations,
+        ammo: state.ammo,
+        medicine: state.medicine,
+        karma: state.karma,
+        wagonIntegrity: state.wagonIntegrity,
+        wheels: state.wheels,
+        nextEventAt: state.nextEventAt,
+        nextCheckpointIndex: state.nextCheckpointIndex,
+        eventIndex: state.eventIndex,
+        crew: deepCloneCrew(state.crew),
+        logCount: logPanel.children.length
+      };
+    }
+
+    function restoreSnapshot() {
+      if (!state.checkpointSnapshot) return;
+      const snap = state.checkpointSnapshot;
+      state.distance = snap.distance;
+      state.day = snap.day;
+      state.rations = snap.rations;
+      state.ammo = snap.ammo;
+      state.medicine = snap.medicine;
+      state.karma = 50;
+      state.wagonIntegrity = snap.wagonIntegrity;
+      // state.wheels is preserved across rollbacks to keep the retry deduction
+      state.nextEventAt = snap.nextEventAt;
+      state.nextCheckpointIndex = snap.nextCheckpointIndex;
+      state.eventIndex = snap.eventIndex;
+      state.crew = deepCloneCrew(snap.crew);
+      state.activeEvent = null;
+      state.selectedChoice = null;
+      state.hunt = null;
+      state.mode = "travel";
+      state.weather = weatherForDistance(state.distance).name;
+      setConsoleTitle("Trail Console");
+      setEventPanel("Back at the last checkpoint.", "Karma collapsed, so the caravan pulled itself back to the latest safe mark. The choice that caused the collapse is gone, but the trail remains.", "checkpoint retry");
+      rebuildChoices([]);
+      setStatus("Karma collapsed. The caravan rolled back to the checkpoint.");
+      logLine(`The caravan snaps back to ${Math.floor(state.distance)} miles with Karma restored to 50.`, "bad");
+      updateHUD();
+      checkForEndState();
+    }
+
+    function saveCheckpoint(label) {
+      state.checkpointSnapshot = snapshotState();
+      state.checkpointSnapshot.label = label;
+      logLine(`${label} reached at ${Math.floor(state.distance)} miles. Patience restored through structure, not luck.`, "good");
+      state.karma = clamp(state.karma + 5, 0, 100);
+      playSound("sine", 587, 0.45);
+      
+      // Save checkpoint state to LocalStorage
+      try {
+        localStorage.setItem("childrenOfFrontierSave", JSON.stringify(snapshotState()));
+        logLine("Caravan progress saved to local ledger.", "system");
+      } catch (e) { console.warn("LocalStorage save failed", e); }
+    }
+
+    function addDistance(delta) {
+      state.distance = clamp(state.distance + delta, 0, DESTINATION);
+      state.bestDistance = Math.max(state.bestDistance, state.distance);
+    }
+
+    function addRations(delta) {
+      state.rations = clamp(state.rations + delta, 0, 999);
+    }
+
+    function addAmmo(delta) {
+      state.ammo = clamp(state.ammo + delta, 0, 999);
+    }
+
+    function addMedicine(delta) {
+      state.medicine = clamp(state.medicine + delta, 0, 999);
+    }
+
+    function addWagon(delta) {
+      state.wagonIntegrity = clamp(state.wagonIntegrity + delta, 0, 100);
+    }
+
+    function addMorale(delta, target = "all") {
+      const crew = target === "all" ? livingCrew() : pickCrew(target);
+      for (const member of crew) {
+        member.morale = clamp(member.morale + delta, 0, 100);
+        member.despondent = member.morale <= 0;
+      }
+    }
+
+    function addKarma(delta) {
+      state.karma = clamp(state.karma + delta, 0, 100);
+      if (state.karma === 0) {
+        playSound("sawtooth", 92, 0.7);
+        loseWheel("Karma collapsed");
+      }
+    }
+
+    function pickCrew(mode) {
+      const crew = livingCrew();
+      if (crew.length === 0) return [];
+      if (mode === "random") return [crew[Math.floor(Math.random() * crew.length)]];
+      if (mode === "lowest") {
+        return [crew.slice().sort((a, b) => a.health - b.health)[0]];
+      }
+      if (mode === "highest") {
+        return [crew.slice().sort((a, b) => b.health - a.health)[0]];
+      }
+      return crew;
+    }
+
+    function healCrew(mode, amount) {
+      for (const member of pickCrew(mode)) {
+        member.health = clamp(member.health + amount, 0, 100);
+        if (member.health > 0) {
+          member.injured = member.health < 70;
+        }
+      }
+    }
+
+    function injureCrew(mode, amount, cause) {
+      for (const member of pickCrew(mode)) {
+        member.health = clamp(member.health - amount, 0, 100);
+        member.injured = member.health < 70;
+        if (member.health <= 0 && member.alive) {
+          member.alive = false;
+          member.despondent = false;
+          graveLog(member.name, cause || "trail hardship");
+          logLine(`${member.name} died at ${Math.floor(state.distance)} miles from ${cause || "trail hardship"}.`, "bad");
+        }
+      }
+      if (livingCount() === 0) {
+        endGame(false, "The trail goes quiet. No one left in the wagon can keep it moving.");
+      }
+    }
+
+    const graveLogEntries = [];
+
+    function graveLog(name, cause) {
+      graveLogEntries.push({
+        name,
+        miles: Math.floor(state.distance),
+        cause
+      });
+    }
+
+    function weatherForDistance(distance) {
+      const segment = Math.floor(distance / WEATHER_SEGMENT);
+      const previous = Math.floor((distance - 1) / WEATHER_SEGMENT);
+      const seed = segment + 13;
+      const weather = pickFromSeed(seed, WEATHER_STATES);
+      return {
+        name: weather,
+        changed: segment !== previous,
+        segment
+      };
+    }
+
+    function weatherEffects(weatherName) {
+      switch (weatherName) {
+        case "Rainy":
+          return { wagonDecay: 2, rations: 1, travelMultiplier: 1, particle: "rain" };
+        case "Snowy":
+          return { wagonDecay: 1, rations: 2, travelMultiplier: 1, particle: "snow" };
+        case "Dusty":
+          return { wagonDecay: 1, rations: 1, travelMultiplier: 0.5, particle: "dust" };
+        case "Foggy":
+          return { wagonDecay: 1, rations: 1, travelMultiplier: 1, particle: "fog" };
+        default:
+          return { wagonDecay: 1, rations: 1, travelMultiplier: 1, particle: "clear" };
+      }
+    }
+
+    function updateWeather() {
+      const info = weatherForDistance(state.distance);
+      if (state.weather !== info.name) {
+        state.weather = info.name;
+        state.weatherTransition = 1;
+        logLine(`Weather shifts to ${info.name}.`, "system");
+      }
+      if (state.weatherTransition > 0) {
+        state.weatherTransition = Math.max(0, state.weatherTransition - 0.02);
+      }
+    }
+
+    function maybeFogLoss() {
+      if (state.weather !== "Foggy") return;
+      if (Math.random() > 0.25) return;
+      const pool = [];
+      if (state.rations > 0) pool.push("rations");
+      if (state.ammo > 0) pool.push("ammo");
+      if (state.medicine > 0) pool.push("medicine");
+      if (state.karma > 0) pool.push("karma");
+      if (pool.length === 0) return;
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+      if (pick === "rations") addRations(-2);
+      if (pick === "ammo") addAmmo(-1);
+      if (pick === "medicine") addMedicine(-1);
+      if (pick === "karma") state.karma = clamp(state.karma - 5, 0, 100);
+      logLine(`Fog takes something small from the caravan: ${pick}.`, "bad");
+    }
+
+    function triggerRandomScenario() {
+      if (state.mode !== "travel") return;
+      if (Math.random() > 0.42) return;
+      if (Math.random() < 0.45 && ARCHIVE_RECORDS.length) {
+        const archivePool = ARCHIVE_RECORDS.filter((record) => record.recordId !== state.lastArchiveRecordId);
+        const record = pickWeighted((archivePool.length ? archivePool : ARCHIVE_RECORDS).map((item) => ({ ...item, weight: item.weight || (evidenceTierRank(item.evidenceTier) + 1) })));
+        state.lastArchiveRecordId = record.recordId;
+        const event = buildArchiveEvent(record);
+        logLine(`Archive ingestion: ${record.title} (${record.evidenceTier}).`, "system");
+        setStatus(`Archive ingestion: ${record.personLabel}.`);
+        showEvent(event);
+        return;
+      }
+      const weatherTag = state.weather.toLowerCase();
+      const pool = RANDOM_SCENARIOS.filter((scenario) => {
+        const tags = scenario.tags || ["any"];
+        return tags.includes("any") || tags.includes(weatherTag);
+      });
+      const candidates = pool.filter((scenario) => scenario.title !== state.lastScenarioId);
+      const scenario = pickWeighted((candidates.length ? candidates : pool).map((item) => ({ ...item })));
+      state.lastScenarioId = scenario.title;
+      logLine(`Roadside scene: ${scenario.title}.`, "system");
+      setStatus(`Roadside scene: ${scenario.title}.`);
+      scenario.apply();
+    }
+
+    function dailyConsume() {
+      const effect = weatherEffects(state.weather);
+      const need = livingCount() * effect.rations;
+      state.rations -= need;
+      if (state.rations < 0) {
+        const deficit = Math.abs(state.rations);
+        state.rations = 0;
+        for (const member of livingCrew()) {
+          member.health = clamp(member.health - (4 + deficit * 2), 0, 100);
+          member.morale = clamp(member.morale - 5, 0, 100);
+          member.despondent = member.morale <= 0;
+        }
+        logLine("The wagon runs dry on food. Health starts to slip.", "bad");
+      } else {
+        for (const member of livingCrew()) {
+          member.morale = clamp(member.morale + 1, 0, 100);
+        }
+      }
+      addWagon(-effect.wagonDecay);
+      if (state.wagonIntegrity < 25) {
+        for (const member of livingCrew()) {
+          member.health = clamp(member.health - 1, 0, 100);
+        }
+        addRations(-1);
+      }
+      if (effect.wagonDecay > 1) {
+        logLine("Rain hammers the wood and doubles wagon wear.", "system");
+      }
+      if (state.weather === "Snowy") {
+        logLine("Snow drives the ration count upward.", "system");
+      }
+      if (state.weather === "Dusty") {
+        logLine("Dust blunts the day's travel.", "system");
+      }
+      if (state.weather === "Foggy") {
+        logLine("Fog closes around the road and makes everything feel borrowed.", "system");
+      }
+      maybeFogLoss();
+      for (const member of livingCrew()) {
+        if (member.morale <= 0 && !member.despondent) {
+          member.despondent = true;
+          logLine(`${member.name} turns despondent and refuses the next hunt.`, "bad");
+        }
+      }
+    }
+
+    function campDialogue() {
+      const lines = [];
+      const weather = state.weather;
+      const injured = livingCrew().filter((member) => member.injured);
+      const despondent = livingCrew().filter((member) => member.despondent);
+      if (weather === "Rainy") lines.push("The canvas drums overhead. Nobody likes sleeping in wet wood.");
+      if (weather === "Snowy") lines.push("Cold bites through the blankets and into the ribs.");
+      if (weather === "Dusty") lines.push("Dust settles on the cups, the maps, and the patience of everyone present.");
+      if (weather === "Foggy") lines.push("Fog makes the fire look smaller than it is.");
+      if (injured.length) lines.push(`${injured[0].name} rubs a sore shoulder and says the road left its mark.`);
+      if (despondent.length) lines.push(`${despondent[0].name} stays quiet and refuses to pretend the day was easy.`);
+      lines.push(pickFromSeed(state.day + Math.floor(state.distance / 8), CAMPFIRE_LINES));
+      if (!lines.length) lines.push("The crew trades short stories and keeps the fire alive.");
+      for (const line of lines.slice(0, 2)) {
+        logLine(line, "system");
+      }
+    }
+
+    function pickEvent() {
+      const event = EVENT_DECK[state.eventIndex % EVENT_DECK.length];
+      state.eventIndex += 1;
+      return event;
+    }
+
+    function showEvent(event) {
+      state.activeEvent = event;
+      state.mode = "event";
+      setConsoleTitle("Incident Console");
+      setEventPanel(event.title, event.text, "travel event");
+      renderChoices(event);
+      logLine(event.text, "system");
+      setStatus(`Event: ${event.title}.`);
+    }
+
+    function renderChoices(event) {
+      choiceRow.innerHTML = "";
+      event.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        const available = !option.trait || hasTrait(option.trait);
+        button.className = "choice-card";
+        button.choiceIndex = index;
+        if (button.dataset) button.dataset.index = String(index);
+        if (typeof button.setAttribute === "function") {
+          button.setAttribute("aria-disabled", "false");
+        }
+        button.innerHTML = `
+          <strong>${index + 1}. ${option.label}</strong>
+          <small>${option.detail}${option.trait ? ` Trait bonus: ${option.trait}` : ""}</small>
+        `;
+        button.addEventListener("click", () => resolveEvent(index));
+        choiceRow.appendChild(button);
+      });
+      setStatus("Choose a response.");
+    }
+
+    function resolveEvent(choiceIndex) {
+      if (!state.activeEvent || state.mode !== "event") return;
+      const option = state.activeEvent.options[choiceIndex];
+      if (!option) return;
+      if (option.trait && !hasTrait(option.trait)) {
+        logLine(`Nobody alive matches ${option.trait}, so the caravan forces the choice anyway.`, "system");
+      }
+      option.apply();
+      updateCrewMoraleAndHealth();
+      if (state.mode !== "event") return;
+      logLine(`Choice ${choiceIndex + 1} resolved: ${option.label}.`, "good");
+      state.activeEvent = null;
+      state.mode = "travel";
+      setConsoleTitle("Trail Console");
+      setEventPanel("Travel resumes.", "The caravan moves again after the incident. Check the rations, then keep going.", "trail state");
+      rebuildChoices([]);
+      campDialogue();
+      advanceDayAfterAction();
+    }
+
+    function rebuildChoices(buttons) {
+      choiceRow.innerHTML = "";
+      buttons.forEach((button) => choiceRow.appendChild(button));
+    }
+
+    function updateCrewMoraleAndHealth() {
+      for (const member of state.crew) {
+        member.morale = clamp(member.morale, 0, 100);
+        member.health = clamp(member.health, 0, 100);
+        member.despondent = member.morale <= 0;
+        member.injured = member.health < 70 && member.alive;
+        if (member.health <= 0 && member.alive) {
+          member.alive = false;
+          graveLog(member.name, "trail event");
+          logLine(`${member.name} died during the event.`, "bad");
+        }
+      }
+      if (livingCount() === 0) {
+        endGame(false, "The last living voice fell silent.");
+      }
+      updateHUD();
+    }
+
+    function checkForCheckpoint() {
+      if (state.nextCheckpointIndex >= CHECKPOINTS.length) return;
+      const checkpointMiles = CHECKPOINTS[state.nextCheckpointIndex];
+      if (state.distance >= checkpointMiles) {
+        saveCheckpoint(`Checkpoint ${state.nextCheckpointIndex + 1}`);
+        state.nextCheckpointIndex += 1;
+      }
+    }
+
+    function checkForEvent() {
+      if (state.distance < state.nextEventAt) return false;
+      const event = pickEvent();
+      state.nextEventAt += 100;
+      showEvent(event);
+      return true;
+    }
+
+    function checkForEndState() {
+      if (state.distance >= DESTINATION) {
+        endGame(true, "The wagon reaches the end of the trail. The family keeps its story.");
+      }
+      if (state.wheels <= 0) {
+        endGame(false, "The caravan runs out of wheels. The trail takes the rest.");
+      }
+    }
+
+    function loseWheel(reason) {
+      state.wheels -= 1;
+      logLine(`${reason}. One wagon wheel is lost.`, "bad");
+      if (state.wheels <= 0) {
+        updateHUD();
+        checkForEndState();
+        return;
+      }
+      restoreSnapshot();
+    }
+
+    function advanceThroughDistance(miles) {
+      let remaining = miles;
+      while (remaining > 0 && state.mode === "travel") {
+        const nextCheckpoint = state.nextCheckpointIndex < CHECKPOINTS.length ? CHECKPOINTS[state.nextCheckpointIndex] : DESTINATION;
+        const nextMark = Math.min(nextCheckpoint, state.nextEventAt, DESTINATION);
+        const step = Math.min(remaining, Math.max(1, nextMark - state.distance));
+        addDistance(step);
+        remaining -= step;
+        checkForCheckpoint();
+        if (checkForEvent()) break;
+        if (state.distance >= DESTINATION) break;
+      }
+      updateHUD();
+    }
+
+    function advanceDayAfterAction() {
+      state.day += 1;
+      updateWeather();
+      updateHUD();
+      checkForEndState();
+    }
+
+    function travelDay() {
+      if (state.mode !== "travel") return;
+      const weather = weatherForDistance(state.distance);
+      const effect = weatherEffects(weather.name);
+      let miles = Math.round(randRange(state.day + state.distance, 68, 84));
+      miles = Math.max(12, Math.round(miles * effect.travelMultiplier));
+      if (state.wagonIntegrity <= 25) miles -= 8;
+      if (state.wagonIntegrity <= 0) miles -= 12;
+      miles = Math.max(10, miles);
+      dailyConsume();
+      if (state.mode !== "travel") return;
+      advanceThroughDistance(miles);
+      if (state.mode === "travel") {
+        triggerRandomScenario();
+      }
+      if (state.mode !== "event" && state.mode !== "defeat" && state.mode !== "victory") {
+        campDialogue();
+        advanceDayAfterAction();
+      }
+    }
+
+    function campNight() {
+      if (state.mode !== "travel") return;
+      const rationCost = Math.max(2, livingCount());
+      addRations(-rationCost);
+      addMorale(6, "all");
+      healCrew("lowest", 6);
+      addWagon(3);
+      logLine("The family camps early. The fire helps more than the food does.", "system");
+      campDialogue();
+      updateCrewMoraleAndHealth();
+      advanceDayAfterAction();
+      updateHUD();
+    }
+
+    function enterHunt() {
+      if (state.mode !== "travel") return;
+      if (state.ammo <= 0) {
+        logLine("No ammo left for the hunt.", "bad");
+        return;
+      }
+      state.pausedMode = "hunt";
+      state.mode = "hunt";
+      state.hunt = {
+        timeLeft: 14,
+        animals: [],
+        shots: [],
+        score: 0,
+        nextSpawn: 0.32,
+        nextAnimalId: 1,
+        result: "",
+        streak: 0
+      };
+      choiceRow.innerHTML = "";
+      setConsoleTitle("Hunting Screen");
+      setEventPanel("Hunt mode", "Move the crosshair over animals and click to shoot. Shots are scarce, animals move fast, and deer are worth less unless you are accurate.", "hunt minigame");
+      logLine("Hunt mode begins. The trail pauses while the bow is drawn.", "system");
+    }
+
+    function endHunt() {
+      if (!state.hunt) return;
+      const gained = state.hunt.score;
+      addRations(gained);
+      state.mode = "travel";
+      state.hunt = null;
+      state.particles = state.particles.filter((particle) => particle.type !== "hunt-shot");
+      setConsoleTitle("Trail Console");
+      setEventPanel("Travel resumes.", `The hunt ends with ${gained} rations recovered.`, "hunt summary");
+      logLine(`Hunt complete. +${gained} rations.`, "good");
+      campDialogue();
+      advanceDayAfterAction();
+    }
+
+    function fireShot() {
+      if (state.mode !== "hunt" || !state.hunt) return;
+      if (state.ammo <= 0) return;
+      state.ammo -= 1;
+      playSound("sawtooth", 380, 0.08); // Fire gunshot sound
+      state.hunt.shots.push({ x: state.crosshair.x, y: state.crosshair.y, life: 0.18 });
+      const hitAnimal = state.hunt.animals.find((animal) => {
+        const dx = animal.x - state.crosshair.x;
+        const dy = animal.y - state.crosshair.y;
+        return Math.hypot(dx, dy) < animal.hitRadius;
+      });
+      if (hitAnimal) {
+        hitAnimal.hit = true;
+        playSound("triangle", 220, 0.15); // Hit splat sound
+        state.hunt.streak += 1;
+        const gain = hitAnimal.type === "buffalo" ? 18 : 11;
+        const streakBonus = Math.min(6, state.hunt.streak);
+        state.hunt.score += Math.max(6, Math.round((gain + streakBonus) * (livingCrew().some((m) => m.despondent) ? 0.8 : 1)));
+        state.particles.push({ x: hitAnimal.x, y: hitAnimal.y, life: 22, type: "puff", color: "#d2b48c" });
+        logLine(`Shot landed on a ${hitAnimal.type}.`, "good");
+      } else {
+        state.hunt.streak = 0;
+        logLine("The shot misses into the grass.", "system");
+      }
+      updateHUD();
+    }
+
+    function endGame(victory, message) {
+      state.mode = victory ? "victory" : "defeat";
+      playSound("sine", victory ? 523 : 130, 0.8);
+      endOverlay.classList.add("show");
+      endEyebrow.textContent = victory ? "Destination reached" : "Run ended";
+      endTitle.textContent = victory ? "The road gives up at last." : "The caravan fell short.";
+      endCopy.textContent = `${message} Distance reached: ${Math.floor(state.bestDistance)} miles. Wheels left: ${state.wheels}. Grave log entries: ${graveLogEntries.length}.`;
+      setStatus(victory ? "Victory." : "Defeat.");
+      const graves = graveLogEntries.map((entry) => `${entry.name} fell at ${entry.miles} miles (${entry.cause}).`);
+      if (graves.length) {
+        logLine("Grave Log:", "system");
+        for (const line of graves) logLine(line, "bad");
+      }
+      
+      // Post metrics to Next.js API /api/log-run to append to JSONL database
+      fetch("/api/log-run", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          clanName: CLANS[state.clanKey].name,
+          outcome: state.mode,
+          milesReached: Math.floor(state.bestDistance),
+          daysElapsed: state.day,
+          wheelsRemaining: state.wheels,
+          graveLog: graveLogEntries
+        })
+      }).then(r => r.json())
+        .then(d => { if (d.success) logLine("Run logged to the family database ledger.", "system"); })
+        .catch(e => console.warn("Failed database log-run post", e));
+
+      updateHUD();
+    }
+
+    function applyChoiceTemplate(choice) {
+      if (choice.trait && !hasTrait(choice.trait)) return;
+      choice.apply();
+    }
+
+    function restartRun() {
+      state.mode = "menu";
+      state.activeEvent = null;
+      state.selectedChoice = null;
+      state.checkpointSnapshot = null;
+      state.nextEventAt = 100;
+      state.nextCheckpointIndex = 0;
+      state.eventIndex = 0;
+      state.log = [];
+      state.particles = [];
+      state.hunt = null;
+      state.bestDistance = 0;
+      state.displayDistance = 0;
+      graveLogEntries.length = 0;
+      logPanel.innerHTML = "";
+      setConsoleTitle("Trail Console");
+      setEventPanel("Trail ready.", "Choose a clan, then travel day by day. Events stop the caravan. Hunting is optional, but food is not.", "ready");
+      startOverlay.classList.add("show");
+      pauseOverlay.classList.remove("show");
+      endOverlay.classList.remove("show");
+      setStatus("Choose a clan and begin the trail.");
+      updateHUD();
+    }
+
+    function selectClan(clanKey) {
+      state.clanKey = clanKey;
+      state.crew = makeCrew(clanKey);
+      const clan = CLANS[clanKey];
+      document.getElementById("startTitle").textContent = clan.name;
+      document.getElementById("startCopy").textContent = clan.intro;
+      dyerButton.classList.toggle("ghost", clanKey !== "dyer");
+      ramseyButton.classList.toggle("ghost", clanKey !== "ramsey");
+      logLine(`${clan.name} selected.`, "good");
+      updateHUD();
+    }
+
+    function startRun() {
+      state.mode = "travel";
+      state.distance = 0;
+      state.day = 1;
+      state.rations = 64;
+      state.ammo = 24;
+      state.medicine = 6;
+      state.karma = 50;
+      state.wagonIntegrity = 100;
+      state.wheels = 5;
+      state.bestDistance = 0;
+      state.nextEventAt = 100;
+      state.nextCheckpointIndex = 0;
+      state.eventIndex = 0;
+      state.activeEvent = null;
+      state.selectedChoice = null;
+      state.checkpointSnapshot = snapshotState();
+      state.weather = "Clear";
+      state.weatherTransition = 1;
+      state.displayDistance = 0;
+      state.particles = [];
+      state.hunt = null;
+      state.crosshair = { x: W / 2, y: H / 2 };
+      state.crew = makeCrew(state.clanKey);
+      if (!state.crew.length) state.crew = makeCrew("dyer");
+      state.checkpointSnapshot = snapshotState();
+      startOverlay.classList.remove("show");
+      pauseOverlay.classList.remove("show");
+      endOverlay.classList.remove("show");
+      setConsoleTitle("Trail Console");
+      setEventPanel("Trail begins.", `The ${CLANS[state.clanKey].name} sets out with a full cart and enough trouble to fill the horizon.`, "session start");
+      logLine(`Run started with the ${CLANS[state.clanKey].name}.`, "good");
+      campDialogue();
+      updateWeather();
+      updateHUD();
+    }
+
+    function updateParticles(dt) {
+      const effect = weatherEffects(state.weather);
+      if (state.mode === "travel" || state.mode === "hunt" || state.mode === "event") {
+        if (effect.particle === "rain") {
+          for (let i = 0; i < 6; i += 1) {
+            state.particles.push({
+              type: "rain",
+              x: Math.random() * W,
+              y: -20,
+              vx: -2,
+              vy: 14 + Math.random() * 8,
+              life: 0.9
+            });
+          }
+        } else if (effect.particle === "snow") {
+          for (let i = 0; i < 4; i += 1) {
+            state.particles.push({
+              type: "snow",
+              x: Math.random() * W,
+              y: -20,
+              vx: -0.5 + Math.random() * 1,
+              vy: 1.2 + Math.random() * 1.6,
+              life: 1.2
+            });
+          }
+        } else if (effect.particle === "dust") {
+          for (let i = 0; i < 5; i += 1) {
+            state.particles.push({
+              type: "dust",
+              x: Math.random() * W,
+              y: 220 + Math.random() * 120,
+              vx: -18 - Math.random() * 6,
+              vy: (Math.random() - 0.5) * 0.4,
+              life: 0.8
+            });
+          }
+        }
+      }
+
+      for (const particle of state.particles) {
+        particle.x += (particle.vx || 0) * dt * 60;
+        particle.y += (particle.vy || 0) * dt * 60;
+        particle.life -= dt;
+      }
+      state.particles = state.particles.filter((particle) => particle.life > 0);
+    }
+
+    function drawTrailScene() {
+      const bg = ctx.createLinearGradient(0, 0, 0, H);
+      bg.addColorStop(0, "#21263b");
+      bg.addColorStop(1, "#141210");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+
+      const horizon = 110;
+      ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
+      ctx.fillRect(0, horizon, W, 1);
+
+      // Distant hills.
+      ctx.fillStyle = "rgba(91, 75, 58, 0.35)";
+      ctx.beginPath();
+      ctx.moveTo(0, 160);
+      ctx.lineTo(120, 110);
+      ctx.lineTo(280, 145);
+      ctx.lineTo(420, 96);
+      ctx.lineTo(650, 150);
+      ctx.lineTo(860, 114);
+      ctx.lineTo(1100, 152);
+      ctx.lineTo(1100, H);
+      ctx.lineTo(0, H);
+      ctx.closePath();
+      ctx.fill();
+
+      // Trail line and markers.
+      const startX = 70;
+      const trailY = 290;
+      const trailW = W - 160;
+      ctx.strokeStyle = "rgba(210, 180, 140, 0.16)";
+      ctx.lineWidth = 6;
+      ctx.beginPath();
+      ctx.moveTo(startX, trailY);
+      ctx.lineTo(startX + trailW, trailY);
+      ctx.stroke();
+
+      ctx.strokeStyle = "rgba(232, 163, 61, 0.26)";
+      ctx.lineWidth = 2;
+      ctx.setLineDash([10, 8]);
+      ctx.beginPath();
+      ctx.moveTo(startX, trailY);
+      ctx.lineTo(startX + trailW, trailY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      for (const checkpoint of CHECKPOINTS) {
+        const x = startX + (checkpoint / DESTINATION) * trailW;
+        ctx.fillStyle = "rgba(102, 199, 178, 0.25)";
+        ctx.fillRect(x - 4, trailY - 42, 8, 84);
+        ctx.fillStyle = "#66c7b2";
+        ctx.fillRect(x - 10, trailY - 54, 20, 16);
+      }
+
+      for (const eventGate of EVENT_GATES) {
+        const x = startX + (eventGate / DESTINATION) * trailW;
+        ctx.fillStyle = "rgba(232, 163, 61, 0.18)";
+        ctx.fillRect(x - 2, trailY - 18, 4, 36);
+      }
+
+      ctx.fillStyle = "rgba(38, 28, 21, 0.72)";
+      ctx.beginPath();
+      ctx.moveTo(startX + 8, trailY + 34);
+      ctx.lineTo(startX + trailW - 8, trailY + 34);
+      ctx.lineTo(startX + trailW - 8, trailY + 38);
+      ctx.lineTo(startX + 8, trailY + 38);
+      ctx.closePath();
+      ctx.fill();
+
+      const wagonX = startX + (state.displayDistance / DESTINATION) * trailW;
+      drawWagon(wagonX, trailY);
+
+      drawTrailWeatherOverlay();
+    }
+
+    function drawWagon(x, y) {
+      ctx.save();
+      ctx.translate(x, y);
+      ctx.fillStyle = "rgba(0, 0, 0, 0.22)";
+      ctx.beginPath();
+      ctx.ellipse(-4, 22, 118, 12, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Hitch and team.
+      ctx.strokeStyle = "#d2b48c";
+      ctx.lineWidth = 4;
+      ctx.beginPath();
+      ctx.moveTo(-84, -6);
+      ctx.lineTo(-44, -6);
+      ctx.stroke();
+      ctx.fillStyle = "#413129";
+      ctx.beginPath();
+      ctx.ellipse(-110, -2, 14, 10, 0, 0, Math.PI * 2);
+      ctx.ellipse(-84, -2, 14, 10, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "#d2b48c";
+      ctx.fillRect(-117, -12, 4, 20);
+      ctx.fillRect(-91, -12, 4, 20);
+      ctx.strokeStyle = "#d9cfb0";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(-123, -14);
+      ctx.lineTo(-116, -22);
+      ctx.moveTo(-109, -14);
+      ctx.lineTo(-102, -22);
+      ctx.moveTo(-97, -14);
+      ctx.lineTo(-90, -22);
+      ctx.stroke();
+      ctx.fillStyle = "#d2b48c";
+      ctx.fillRect(-130, -18, 5, 10);
+
+      // Main wagon body.
+      ctx.fillStyle = "#2b221b";
+      ctx.fillRect(-38, -26, 84, 32);
+      ctx.fillStyle = "#5e4b3a";
+      ctx.fillRect(-34, -30, 76, 12);
+      ctx.fillStyle = "#3e3026";
+      ctx.beginPath();
+      ctx.moveTo(-34, -26);
+      ctx.quadraticCurveTo(-16, -58, 0, -58);
+      ctx.quadraticCurveTo(18, -58, 34, -26);
+      ctx.closePath();
+      ctx.fill();
+      ctx.fillStyle = "#f0e3c0";
+      ctx.beginPath();
+      ctx.moveTo(-28, -32);
+      ctx.quadraticCurveTo(-12, -50, 0, -50);
+      ctx.quadraticCurveTo(12, -50, 28, -32);
+      ctx.closePath();
+      ctx.fill();
+      ctx.strokeStyle = "rgba(242, 220, 192, 0.5)";
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(-30, -20);
+      ctx.lineTo(30, -20);
+      ctx.moveTo(-20, -44);
+      ctx.lineTo(-20, -8);
+      ctx.moveTo(0, -48);
+      ctx.lineTo(0, -8);
+      ctx.moveTo(20, -44);
+      ctx.lineTo(20, -8);
+      ctx.stroke();
+      ctx.strokeStyle = "#d2b48c";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(-38, -8);
+      // Animated rotating wheels
+      const rotation = (state.displayDistance * 0.15) % (Math.PI * 2);
+      
+      const drawRotatingWheel = (wheelX) => {
+        ctx.save();
+        ctx.translate(wheelX, 12);
+        ctx.rotate(rotation);
+        
+        ctx.fillStyle = "#d2b48c";
+        ctx.beginPath();
+        ctx.arc(0, 0, 13, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.strokeStyle = "#a33d2d";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        // Draw spoke lines
+        ctx.moveTo(-13, 0); ctx.lineTo(13, 0);
+        ctx.moveTo(0, -13); ctx.lineTo(0, 13);
+        ctx.stroke();
+        ctx.restore();
+      };
+
+      drawRotatingWheel(-24);
+      drawRotatingWheel(24);
+
+      ctx.fillStyle = "#f6ead3";
+      ctx.fillRect(-14, -72, 28, 14);
+      ctx.fillStyle = "rgba(232, 163, 61, 0.18)";
+      ctx.fillRect(-10, -64, 20, 4);
+      ctx.fillStyle = "#7d5f49";
+      ctx.fillRect(34, -24, 16, 20);
+      ctx.fillStyle = "rgba(232, 163, 61, 0.16)";
+      ctx.beginPath();
+      ctx.arc(46, -10, 10, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = "rgba(255,255,255,0.04)";
+      ctx.fillRect(-26, -54, 48, 5);
+      ctx.restore();
+    }
+
+    function drawHuntScene() {
+      const bg = ctx.createLinearGradient(0, 0, 0, H);
+      bg.addColorStop(0, "#253044");
+      bg.addColorStop(1, "#17120f");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+
+      ctx.fillStyle = "rgba(232, 163, 61, 0.06)";
+      ctx.beginPath();
+      ctx.arc(110, 60, 90, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(91, 75, 58, 0.55)";
+      ctx.fillRect(0, 320, W, H - 320);
+
+      for (let i = 0; i < 4; i += 1) {
+        ctx.fillStyle = `rgba(107, 142, 35, ${0.1 + i * 0.04})`;
+        ctx.fillRect(i * 280 - 50, 250 + i * 10, 230, 80);
+      }
+
+      for (const animal of state.hunt.animals) {
+        ctx.save();
+        ctx.translate(animal.x, animal.y);
+        if (animal.type === "deer") {
+          ctx.fillStyle = "#5f4339";
+          ctx.beginPath();
+          ctx.ellipse(0, 0, 16, 6, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = "#4e372d";
+          ctx.beginPath();
+          ctx.ellipse(12, -5, 6, 4, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = "#34231f";
+          ctx.fillRect(-10, 6, 2, 12);
+          ctx.fillRect(-2, 6, 2, 13);
+          ctx.fillRect(7, 6, 2, 13);
+          ctx.fillRect(15, 6, 2, 12);
+          ctx.strokeStyle = "#cdbfa1";
+          ctx.lineWidth = 1.25;
+          ctx.beginPath();
+          ctx.moveTo(11, -8);
+          ctx.lineTo(16, -15);
+          ctx.moveTo(12, -8);
+          ctx.lineTo(9, -15);
+          ctx.moveTo(15, -8);
+          ctx.lineTo(20, -15);
+          ctx.moveTo(16, -8);
+          ctx.lineTo(19, -15);
+          ctx.stroke();
+          ctx.strokeStyle = "#efdcb3";
+          ctx.beginPath();
+          ctx.moveTo(17, -4);
+          ctx.lineTo(21, -4);
+          ctx.stroke();
+        } else {
+          ctx.fillStyle = "#3a261b";
+          ctx.beginPath();
+          ctx.ellipse(0, 0, 22, 12, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = "#4f3627";
+          ctx.beginPath();
+          ctx.ellipse(12, -6, 8, 7, 0, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.fillStyle = "#2b1a12";
+          ctx.fillRect(-14, 8, 4, 15);
+          ctx.fillRect(-4, 8, 4, 16);
+          ctx.fillRect(6, 8, 4, 16);
+          ctx.fillRect(16, 8, 4, 15);
+          ctx.fillStyle = "#6d4f37";
+          ctx.beginPath();
+          ctx.arc(21, -7, 7, Math.PI * 0.15, Math.PI * 1.85);
+          ctx.fill();
+          ctx.strokeStyle = "#b08b63";
+          ctx.lineWidth = 1.4;
+          ctx.beginPath();
+          ctx.moveTo(12, -11);
+          ctx.lineTo(18, -17);
+          ctx.moveTo(14, -11);
+          ctx.lineTo(11, -19);
+          ctx.moveTo(17, -11);
+          ctx.lineTo(23, -17);
+          ctx.moveTo(19, -11);
+          ctx.lineTo(18, -19);
+          ctx.stroke();
+          ctx.strokeStyle = "rgba(243, 227, 192, 0.15)";
+          ctx.beginPath();
+          ctx.moveTo(-18, 2);
+          ctx.lineTo(18, 2);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      ctx.save();
+      ctx.strokeStyle = "rgba(232, 163, 61, 0.8)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(state.crosshair.x, state.crosshair.y, 18, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(state.crosshair.x - 24, state.crosshair.y);
+      ctx.lineTo(state.crosshair.x + 24, state.crosshair.y);
+      ctx.moveTo(state.crosshair.x, state.crosshair.y - 24);
+      ctx.lineTo(state.crosshair.x, state.crosshair.y + 24);
+      ctx.stroke();
+      ctx.restore();
+
+      drawTrailWeatherOverlay(true);
+    }
+
+    function drawTrailWeatherOverlay(huntMode = false) {
+      const weather = weatherEffects(state.weather).particle;
+      if (weather === "fog") {
+        ctx.fillStyle = "rgba(200, 200, 200, 0.18)";
+        ctx.fillRect(0, 0, W, H);
+      }
+      for (const particle of state.particles) {
+        if (particle.type === "rain") {
+          ctx.strokeStyle = "rgba(102, 164, 255, 0.8)";
+          ctx.beginPath();
+          ctx.moveTo(particle.x, particle.y);
+          ctx.lineTo(particle.x + particle.vx * 0.3, particle.y + 16);
+          ctx.stroke();
+        } else if (particle.type === "snow") {
+          ctx.fillStyle = "rgba(255,255,255,0.9)";
+          ctx.beginPath();
+          ctx.arc(particle.x, particle.y, 2, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (particle.type === "dust") {
+          ctx.strokeStyle = "rgba(208, 180, 140, 0.45)";
+          ctx.beginPath();
+          ctx.moveTo(particle.x, particle.y);
+          ctx.lineTo(particle.x + 18, particle.y);
+          ctx.stroke();
+        } else if (particle.type === "puff") {
+          ctx.fillStyle = `rgba(210, 180, 140, ${particle.life / 22})`;
+          ctx.beginPath();
+          ctx.arc(particle.x, particle.y, 10 - particle.life * 0.2, 0, Math.PI * 2);
+          ctx.fill();
+        } else if (particle.type === "hunt-shot") {
+          ctx.fillStyle = `rgba(232, 163, 61, ${particle.life / 0.12})`;
+          ctx.beginPath();
+          ctx.arc(particle.x, particle.y, 3 + particle.life * 8, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      if (huntMode) {
+      ctx.fillStyle = "rgba(232, 163, 61, 0.12)";
+      ctx.fillRect(0, 0, W, H);
+      ctx.fillStyle = "rgba(38, 28, 21, 0.28)";
+      ctx.fillRect(0, 300, W, 140);
+    }
+    }
+
+    function updateHunt(dt) {
+      if (!state.hunt) return;
+      state.hunt.timeLeft -= dt;
+      state.hunt.nextSpawn -= dt;
+      if (state.hunt.nextSpawn <= 0) {
+        const type = Math.random() < 0.42 ? "buffalo" : "deer";
+        const sprint = 1 + Math.random() * 0.45;
+        const spawnLeft = Math.random() < 0.5;
+        
+        state.hunt.animals.push({
+          id: state.hunt.nextAnimalId += 1,
+          type,
+          x: spawnLeft ? -40 : W + 40,
+          y: 232 + Math.random() * 84,
+          vx: (type === "buffalo" ? 118 : 146) * sprint * (spawnLeft ? 1 : -1),
+          vy: (Math.random() - 0.5) * (type === "buffalo" ? 18 : 28),
+          size: type === "buffalo" ? 19 : 13,
+          hit: false,
+          hitRadius: type === "buffalo" ? 22 : 16,
+          bob: Math.random() * Math.PI * 2
+        });
+        state.hunt.nextSpawn = 0.34 + Math.random() * 0.42;
+      }
+      for (const animal of state.hunt.animals) {
+        animal.x += animal.vx * dt;
+        animal.y += animal.vy * dt;
+        animal.bob += dt * 8;
+        animal.y += Math.sin(animal.bob) * dt * 1.8;
+        animal.vy *= 0.995;
+      }
+      state.hunt.animals = state.hunt.animals.filter((animal) => {
+        const offLeft = animal.vx < 0 && animal.x < -70;
+        const offRight = animal.vx > 0 && animal.x > W + 70;
+        return !offLeft && !offRight && animal.y > 170 && animal.y < 360 && !animal.hit;
+      });
+      if (state.hunt.timeLeft <= 0) {
+        endHunt();
+      }
+    }
+
+    function updateTravel(dt) {
+      state.displayDistance = lerp(state.displayDistance, state.distance, 0.24);
+      updateWeather();
+      updateHUD();
+      if (state.weatherTransition > 0) {
+        state.weatherTransition = Math.max(0, state.weatherTransition - dt * 0.8);
+      }
+    }
+
+    function updatePaused() {
+      updateHUD();
+    }
+
+    function frame(now) {
+      if (!frame.last) frame.last = now;
+      const dt = clamp((now - frame.last) / 1000, 0, 0.033);
+      frame.last = now;
+
+      if (state.mode === "travel") {
+        updateTravel(dt);
+      } else if (state.mode === "hunt") {
+        updateHunt(dt);
+      } else if (state.mode === "paused") {
+        updatePaused();
+      }
+
+      updateParticles(dt);
+      updateHUD();
+
+      ctx.clearRect(0, 0, W, H);
+      if (state.mode === "hunt") drawHuntScene();
+      else drawTrailScene();
+
+      if (state.mode === "menu") {
+        drawTrailScene();
+      }
+
+      requestAnimationFrame(frame);
+    }
+
+    window.addEventListener("mousemove", (event) => {
+      const rect = canvas.getBoundingClientRect();
+      state.crosshair.x = clamp((event.clientX - rect.left) * (canvas.width / rect.width), 0, W);
+      state.crosshair.y = clamp((event.clientY - rect.top) * (canvas.height / rect.height), 0, H);
+    });
+
+    canvas.addEventListener("click", () => {
+      if (state.mode === "hunt") fireShot();
+    });
+
+    function updateCrewStatEffects() {
+      for (const member of state.crew) {
+        member.despondent = member.morale <= 0 && member.alive;
+        member.injured = member.health < 70 && member.alive;
+      }
+      updateHUD();
+    }
+
+    function dealEventEffect(callback) {
+      callback();
+      updateCrewStatEffects();
+      checkForEndState();
+      if (state.karma > 0 && state.mode === "travel") {
+        advanceDayAfterAction();
+      }
+      updateHUD();
+    }
+
+    function updateButtons() {
+      const actionable = state.mode === "travel";
+      travelButton.disabled = !actionable;
+      huntButton.disabled = !actionable || state.ammo <= 0;
+      campButton.disabled = !actionable;
+    }
+
+    function travelAction() {
+      if (state.mode !== "travel") return;
+      travelDay();
+      if (state.mode === "event") {
+        renderChoices(state.activeEvent);
+      }
+      updateButtons();
+    }
+
+    function pauseToggle() {
+      if (state.mode === "paused") {
+        state.mode = state.pausedMode;
+        pauseOverlay.classList.remove("show");
+        setStatus("Back on the trail.");
+        return;
+      }
+      if (state.mode === "travel" || state.mode === "hunt") {
+        state.pausedMode = state.mode;
+        state.mode = "paused";
+        pauseOverlay.classList.add("show");
+        setStatus("Paused.");
+      }
+      updateButtons();
+    }
+
+    function helpToggle() {
+      const text = document.getElementById("startCopy");
+      text.textContent = "Travel advances the wagon, events interrupt the road, and hunting is a separate click-based screen. Rain wears the wagon faster. Snow consumes more food. Dust slows the trail. Fog can steal random resources. New roadside scenarios now appear between stretches of travel, and the trail ledger keeps the run readable at a glance. If an event ever looks stuck, Enter will choose the first available option.";
+      startOverlay.classList.add("show");
+      setTimeout(() => startOverlay.classList.remove("show"), 2200);
+    }
+
+    function beginFromSelection() {
+      if (!state.crew.length) {
+        selectClan("dyer");
+      }
+      startRun();
+      updateButtons();
+    }
+
+    dyerButton.addEventListener("click", () => selectClan("dyer"));
+    ramseyButton.addEventListener("click", () => selectClan("ramsey"));
+    startButton.addEventListener("click", beginFromSelection);
+    travelButton.addEventListener("click", travelAction);
+    huntButton.addEventListener("click", enterHunt);
+    campButton.addEventListener("click", campNight);
+    helpButton.addEventListener("click", helpToggle);
+    resumeButton.addEventListener("click", pauseToggle);
+    restartButton.addEventListener("click", restartRun);
+
+    window.addEventListener("keydown", (event) => {
+      if (event.code === "Escape") {
+        event.preventDefault();
+        if (state.mode === "menu") return;
+        if (state.mode === "paused") {
+          pauseToggle();
+        } else {
+          pauseToggle();
+        }
+        return;
+      }
+      if (state.mode === "menu" && event.code === "Digit1") {
+        selectClan("dyer");
+        return;
+      }
+      if (state.mode === "menu" && event.code === "Digit2") {
+        selectClan("ramsey");
+        return;
+      }
+      if (state.mode === "menu" && event.code === "Enter") {
+        beginFromSelection();
+        return;
+      }
+      if (state.mode === "event" && event.code === "Enter") {
+        const firstEnabled = Array.from(choiceRow.querySelectorAll("button")).find((button) => !button.disabled);
+        if (firstEnabled) {
+          const index = Number(firstEnabled.choiceIndex ?? firstEnabled.dataset?.index ?? 0);
+          resolveEvent(index);
+        }
+        return;
+      }
+      if (event.code === "Digit1" && state.mode === "event") resolveEvent(0);
+      if (event.code === "Digit2" && state.mode === "event") resolveEvent(1);
+      if (event.code === "Digit3" && state.mode === "event") resolveEvent(2);
+      if (event.code === "Digit4" && state.mode === "event") resolveEvent(3);
+      if (event.code === "Space" && state.mode === "hunt") {
+        event.preventDefault();
+        fireShot();
+      }
+    });
+
+    function updateDynamicEventPanel() {
+      if (state.mode === "menu") {
+        setConsoleTitle("Trail Console");
+        setEventPanel("Trail ready.", "Choose a clan, then guide the wagon. The trail is built around Karma, weather, checkpoints, and the grave log.", "ready");
+      } else if (state.mode === "travel") {
+        const weather = weatherEffects(state.weather);
+        setEventPanel(
+          "Travel Day",
+          `Weather: ${state.weather}. Wagon decay: ${weather.wagonDecay}/day. Food use: ${weather.rations} per living crew. The trail is visible on the canvas.`,
+          "travel mode"
+        );
+      } else if (state.mode === "event" && state.activeEvent) {
+        setEventPanel(state.activeEvent.title, state.activeEvent.text, "moral event");
+      } else if (state.mode === "hunt") {
+        setEventPanel("Hunt Mode", "Use the mouse crosshair to shoot running deer or buffalo. Each shot costs 1 ammo.", "hunting minigame");
+      }
+    }
+
+    function normalizeCrewAfterStart() {
+      for (const member of state.crew) {
+        member.health = 100;
+        member.morale = 100;
+        member.alive = true;
+        member.injured = false;
+        member.despondent = false;
+      }
+    }
+
+    function forceUpdate() {
+      updateHUD();
+      updateButtons();
+      updateDynamicEventPanel();
+    }
+
+    function initializeMenu() {
+      restartRun();
+      selectClan("dyer");
+      normalizeCrewAfterStart();
+      forceUpdate();
+      logLine("The trail waits at the edge of the map.", "system");
+      
+      // Fetch dynamic database profiles and events from Next.js game-data API
+      fetch("/api/game-data")
+        .then((r) => r.json())
+        .then((data) => {
+          if (data.success) {
+            // Overwrite static CLANS configuration with real database profiles
+            Object.assign(CLANS, data.crews);
+            // Append real events to our EVENT_DECK
+            data.dynamicEvents.forEach((ev) => {
+              // Wrap action evaluations securely
+              const options = ev.options.map((opt) => ({
+                label: opt.label,
+                detail: opt.detail,
+                apply: new Function(`with(this) { ${opt.apply} }`).bind(window)
+              }));
+              EVENT_DECK.push({
+                id: ev.id,
+                title: ev.title,
+                text: ev.text,
+                options
+              });
+            });
+            logLine("Historical genealogy database connected successfully.", "good");
+            selectClan(state.clanKey); // Reload selector to display updated names
+          }
+        })
+        .catch((e) => console.warn("Next.js game-data API offline. Falling back to static mock data.", e));
+
+      // Attempt to load saved run from LocalStorage
+      try {
+        const saved = localStorage.getItem("childrenOfFrontierSave");
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          logLine(`Found saved checkpoint at day ${parsed.day}. Press Travel to resume.`, "system");
+          const resumeBtn = document.createElement("button");
+          resumeBtn.textContent = "Resume Saved Run";
+          resumeBtn.addEventListener("click", () => {
+            state.checkpointSnapshot = parsed;
+            restoreSnapshot();
+            startOverlay.classList.remove("show");
+            updateButtons();
+          });
+          document.querySelector(".overlay-actions")?.appendChild(resumeBtn);
+        }
+      } catch (e) { console.warn("LocalStorage read failed", e); }
+
+      logLine("Cardo Rei: collect, analyze, record, distinguish, organize, review, evaluate, iterate.", "system");
+      if (!initializeMenu.started) {
+        initializeMenu.started = true;
+        requestAnimationFrame(frame);
+      }
+    }
+
+    initializeMenu();
+  </script>
+</body>
+</html>
